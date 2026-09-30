@@ -48,14 +48,6 @@
   font-weight: 700;
 }
 
-.photoSource {
-  margin: 0 0 1rem;
-  color: #555;
-  font-size: 0.72rem;
-  font-style: italic;
-  line-height: 1.35;
-}
-
 .figure {
   margin: 0 0 1.35rem;
   max-width: min(12.5rem, 100%);
@@ -72,7 +64,8 @@
 .poem {
   margin: 0 0 1.5rem;
   padding: 1.15rem 1.25rem 1.35rem;
-  background: #eef5fb;
+  /* Match light-gray sky/background of /images/rm02/rm2.jpg */
+  background: #dddddd;
   color: #000;
 }
 

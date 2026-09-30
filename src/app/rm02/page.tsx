@@ -34,11 +34,6 @@ export default function Rm02Page() {
             <p className={styles.titleBarByline}>... by Ogden Nash</p>
           </header>
 
-          <p className={styles.photoSource}>
-            Photos Source: &quot;The Mighty Fair&quot; program catalogue of the
-            1985 New York World&apos;s Fair Retrospecive FLUSHING GALLERY
-          </p>
-
           <figure className={styles.figure}>
             <Image
               src="/images/rm02/rm2.jpg"
