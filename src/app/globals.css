@@ -1,0 +1,112 @@
+:root {
+  /*
+   * Live header palette — http://nywf64.com
+   * Navy #26346e · Burgundy #990000 · Maroon #800000 · Midnight #191970
+   */
+  --navy: #26346e;
+  --navy-deep: #191970;
+  --burgundy: #990000;
+  --burgundy-deep: #800000;
+  --paper: #ffffff;
+  /* Overview content band (was #f1f0ec light grey) */
+  --overview-section-bg: #ffffff;
+  --mist: #e8eef5;
+  --ink: #26346e;
+  --ink-soft: #3a4570;
+  --chrome: #f4f6fa;
+  --line: color-mix(in srgb, var(--navy) 35%, transparent);
+
+  --font-body: Arial, Helvetica, sans-serif;
+  --font-display: Arial, Helvetica, sans-serif;
+  --font-script-face: var(--font-script), "Brush Script MT", cursive;
+  --font-condensed-face: "Arial Narrow", Arial, sans-serif;
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  /* Legacy-style desktop column; mobile < 910 stays full width */
+  --max: 910px;
+  /*
+   * Letter-page hero frame height = SiteHeader banner img height at column width
+   * (site-header-banner-v4.jpg 2172×305). Matches header .banner img, not wrap pad.
+   */
+  --letter-hero-height: calc(min(100vw, var(--max)) * 305 / 2172);
+}
+
+/**
+ * Shared page shell — homepage, letter pages, overviews, hubs.
+ * Desktop: centered 910px column. Narrow viewports: width 100% (no inset).
+ */
+.pageShell {
+  width: 100%;
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Match SiteHeader mobile bannerWrap heights (letter heroes only use --letter-hero-height) */
+@media (max-width: 720px) {
+  :root {
+    --letter-hero-height: clamp(5.5rem, 22vw, 8.5rem);
+  }
+}
+
+@media (max-width: 420px) {
+  :root {
+    --letter-hero-height: 5.25rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  color: var(--ink);
+  background: var(--paper);
+  font-family: var(--font-body);
+  font-size: 1.05rem;
+  line-height: 1.55;
+  -webkit-font-smoothing: antialiased;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+a {
+  color: inherit;
+}
+
+button {
+  font: inherit;
+  background: none;
+  border: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--burgundy) 28%, transparent);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
