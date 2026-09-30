@@ -14,11 +14,11 @@ export const FISHER_MENU_TOPICS: AttractionTopic[] = [
     ],
   },
   {
-    label: "New York World's Fair Memories Page 2",
+    label: "New York World's Fair Memories (… continued)",
     href: "/fisher02",
     parts: [
       { text: "New York World's Fair Memories", italic: true },
-      { text: " Page 2" },
+      { text: " (… continued)" },
     ],
   },
 ];
