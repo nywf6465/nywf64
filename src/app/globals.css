@@ -42,7 +42,8 @@
   margin-right: auto;
 }
 
-/* Match SiteHeader mobile bannerWrap heights (letter heroes only use --letter-hero-height) */
+/* Letter heroes keep a readable frame on narrow screens.
+   Site header below 640px uses its own emblem + hamburger layout. */
 @media (max-width: 720px) {
   :root {
     --letter-hero-height: clamp(5.5rem, 22vw, 8.5rem);

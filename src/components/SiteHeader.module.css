@@ -164,36 +164,66 @@
   outline-offset: -2px;
 }
 
-/* Mobile: keep emblem + hamburger readable — crop center-left rather than squash */
-@media (max-width: 720px) {
+/* Desktop: hamburger lives in the banner art. Phone: show it as its own slice. */
+.menuGlyph {
+  display: none;
+}
+
+/*
+  Phone: a full-width cover crop of banner v4 clips the hamburger off the right.
+  Show the emblem (and the rocket line, stopping before the tagline) at a
+  readable size, and pin the banner’s own hamburger art beside it.
+  Emblem + line ink ends before the tagline (~x=1040 of 2172).
+  Hamburger center is ~95.4% across the art.
+*/
+@media (max-width: 640px) {
   .bannerWrap {
-    height: clamp(5.5rem, 22vw, 8.5rem);
+    display: flex;
+    align-items: stretch;
+    padding-bottom: 0.35rem;
   }
 
   .bannerLink {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+    aspect-ratio: 1040 / 305;
+    overflow: hidden;
   }
 
   .banner {
-    object-fit: cover;
-    object-position: left center;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(2172 / 1040 * 100%);
     height: 100%;
+    max-width: none;
+    object-fit: fill;
+  }
+
+  .menuGlyph {
+    display: block;
+    position: relative;
+    flex: 0 0 3.5rem;
+    width: 3.5rem;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .menuGlyph img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    transform: translateX(-95.4%);
+    pointer-events: none;
+    user-select: none;
   }
 
   .menuHotspot {
-    width: 18%;
-    min-width: 3.25rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .bannerWrap {
-    height: 5.25rem;
-  }
-
-  .banner {
-    object-position: 8% center;
+    width: 3.5rem;
+    min-width: 3.5rem;
   }
 }

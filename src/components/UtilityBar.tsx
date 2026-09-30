@@ -1,3 +1,7 @@
+"use client";
+
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import styles from "./UtilityBar.module.css";
 
 const items = [
@@ -7,7 +11,7 @@ const items = [
     icon: "search",
   },
   {
-    href: "#contact",
+    href: "/contact",
     label: "Contact",
     icon: "mail",
   },
@@ -24,20 +28,25 @@ const items = [
 ] as const;
 
 export function UtilityBar() {
+  const pathname = usePathname();
+
   return (
     <nav className={styles.bar} aria-label="Site utilities">
       <ul className={styles.list}>
         {items.map((item) => (
           <li key={item.href} className={styles.item}>
-            <a className={styles.link} href={item.href}>
+            <Link
+              className={styles.link}
+              href={item.href}
+              aria-current={pathname === item.href ? "page" : undefined}
+            >
               <Icon name={item.icon} />
               <span>{item.label}</span>
-            </a>
+            </Link>
           </li>
         ))}
       </ul>
       <div id="search" className={styles.hook} hidden aria-hidden="true" />
-      <div id="contact" className={styles.hook} hidden aria-hidden="true" />
       <div id="links" className={styles.hook} hidden aria-hidden="true" />
     </nav>
   );
