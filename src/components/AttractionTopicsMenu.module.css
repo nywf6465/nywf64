@@ -1,0 +1,177 @@
+/* Nav menu — navy panel, white topic rows; slides in from left */
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 55;
+  background: color-mix(in srgb, var(--navy-deep, #191970) 45%, transparent);
+  border: 0;
+  cursor: pointer;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 60;
+  /* Viewport-tall hit area for slide; panel itself hugs topic cards */
+  height: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0.85rem 0 0.85rem 0.85rem;
+  box-sizing: border-box;
+  display: flex;
+  align-items: flex-start; /* do not stretch panel to full viewport */
+  background: transparent;
+  border: 0;
+  transform: translateX(-105%);
+  transition: transform 280ms var(--ease-out, cubic-bezier(0.22, 1, 0.36, 1));
+  pointer-events: none;
+}
+
+.drawer[data-open] {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  width: min(18.5rem, calc(100vw - 1.7rem));
+  /* Height fits cards; cap at viewport so long menus scroll inside */
+  height: auto;
+  max-height: 100%;
+  margin: 0;
+  /* Small navy padding after the last card only — not a tall empty column */
+  padding: 0.55rem 0.55rem 0.75rem;
+  box-sizing: border-box;
+  background: #26346e;
+  border-radius: 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  box-shadow: 8px 0 24px color-mix(in srgb, #000 18%, transparent);
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  padding: 0.55rem 0.65rem 0.7rem;
+  color: #fff;
+  flex-shrink: 0;
+}
+
+.headerTitle {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.95rem, 2.8vw, 1.05rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #fff;
+}
+
+.close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 2rem;
+  height: 2rem;
+  margin: -0.25rem -0.2rem -0.25rem 0;
+  padding: 0;
+  border: 0;
+  border-radius: 0.25rem;
+  background: transparent;
+  color: #fff;
+  cursor: pointer;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+}
+
+.close:hover,
+.close:focus-visible {
+  color: #fff;
+  background: color-mix(in srgb, #fff 16%, transparent);
+}
+
+.close:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.closeGlyph {
+  display: block;
+  font-size: 1.55rem;
+  font-weight: 400;
+  line-height: 1;
+  transform: translateY(-0.05rem);
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  /* Grow with cards only; shrink + scroll when longer than max-height */
+  flex: 0 1 auto;
+  min-height: 0;
+}
+
+.item {
+  margin: 0;
+}
+
+.row {
+  display: block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.72rem 0.85rem;
+  background: #fff;
+  color: #26346e;
+  border-radius: 0.4rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.95rem, 2.6vw, 1.05rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-decoration: none;
+  text-align: left;
+}
+
+.row:hover,
+.row:focus-visible {
+  color: #990000;
+}
+
+.rowActive {
+  color: #990000;
+  background: #f3ebe8;
+}
+
+.rowActive:hover,
+.rowActive:focus-visible {
+  color: #990000;
+}
+
+.row:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 2px;
+}
+
+.italic {
+  font-style: italic;
+  font-weight: inherit;
+}
+
+@media (max-width: 420px) {
+  .drawer {
+    padding: 0.65rem 0 0.65rem 0.55rem;
+  }
+
+  .panel {
+    width: min(17rem, calc(100vw - 1.2rem));
+  }
+}

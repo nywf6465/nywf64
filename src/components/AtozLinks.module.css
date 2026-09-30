@@ -1,0 +1,112 @@
+/* A-to-Z letter cards — guidebook-style rows matching atoz-links-list mockup */
+
+.section {
+  width: 100%;
+  background: #fff;
+  padding: 1.35rem 0 2.75rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  max-width: 40rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+}
+
+.item {
+  margin: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 2.1rem minmax(1.25rem, 2.5rem) minmax(0, 1fr) auto;
+  align-items: center;
+  column-gap: 0.35rem;
+  text-decoration: none;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  background: linear-gradient(180deg, #eef4fb 0%, #e4eef8 100%);
+  border: 1px solid #c5d4e6;
+  border-radius: 0.55rem;
+  padding: 0.55rem 0.7rem 0.55rem 0.85rem;
+  min-height: 2.85rem;
+  box-sizing: border-box;
+  transition: border-color 120ms ease, background-color 120ms ease;
+}
+
+.row:hover,
+.row:focus-visible {
+  border-color: #990000;
+  background: linear-gradient(180deg, #f7eaea 0%, #f0e0e0 100%);
+}
+
+.row:focus-visible {
+  outline: 2px solid #990000;
+  outline-offset: 3px;
+}
+
+.letter {
+  font-size: clamp(1.55rem, 4vw, 1.85rem);
+  font-weight: 700;
+  line-height: 1;
+  color: #990000;
+  text-align: center;
+}
+
+.dots {
+  display: block;
+  height: 0;
+  border-top: 2px dotted #9aabb8;
+  margin-top: 0.15rem;
+  min-width: 1rem;
+}
+
+.range {
+  font-size: clamp(0.92rem, 2.2vw, 1.05rem);
+  font-weight: 700;
+  line-height: 1.25;
+  color: #26346e;
+  min-width: 0;
+}
+
+.from,
+.end {
+  color: inherit;
+}
+
+.toWord {
+  color: #7a8fa3;
+  font-weight: 400;
+}
+
+.linkIndicator {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.05rem;
+  height: 2.05rem;
+  border-radius: 50%;
+  background: #26346e;
+  color: #fff;
+  flex-shrink: 0;
+  transition: background-color 120ms ease;
+}
+
+.row:hover .linkIndicator,
+.row:focus-visible .linkIndicator {
+  background: #990000;
+}
+
+@media (max-width: 420px) {
+  .row {
+    grid-template-columns: 1.75rem minmax(0.75rem, 1.5rem) minmax(0, 1fr) auto;
+    padding: 0.5rem 0.55rem 0.5rem 0.65rem;
+  }
+
+  .letter {
+    font-size: 1.45rem;
+  }
+}
