@@ -22,6 +22,11 @@ export const RM_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "Booklet: The Fair, The City and The Critics",
-    href: "/rm04",
+    href: "/rm03",
+    parts: [
+      { text: "Booklet: " },
+      { text: "The Fair, The City and The Critics", italic: true },
+    ],
   },
 ];
+

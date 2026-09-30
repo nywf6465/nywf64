@@ -115,7 +115,7 @@ export default function Rm02Page() {
         </div>
       </article>
 
-      <Nav2Bar previousHref="/rm01" nextHref="/rm04" hideOverview />
+      <Nav2Bar previousHref="/rm01" nextHref="/rm03" />
     </>
   );
 }
