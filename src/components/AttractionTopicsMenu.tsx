@@ -27,16 +27,6 @@ export type AttractionTopicsMenuProps = {
   title?: string;
   /** Optional id for aria-controls from the nav bar. */
   id?: string;
-  /**
-   * When true, lock document scroll while open (pinned / click-open menus).
-   * Hover peeks leave page scroll alone.
-   */
-  lockScroll?: boolean;
-  /**
-   * Dimmed overlay that closes on click. Only for pinned menus — a hover-peek
-   * backdrop would sit over the Explore control and flicker the drawer.
-   */
-  showBackdrop?: boolean;
 };
 
 function TopicLabel({ topic }: { topic: AttractionTopic }): ReactNode {
@@ -55,7 +45,8 @@ function TopicLabel({ topic }: { topic: AttractionTopic }): ReactNode {
 /**
  * Nav menu — prototype model for attraction pages (not the site hamburger).
  * User term: **nav menu**. Slides in from the left over a dimmed backdrop.
- * Close via header X, backdrop, or Escape.
+ * Opens on click/tap of the nav bar control; close via X, backdrop, Escape,
+ * or a topic link.
  */
 export function AttractionTopicsMenu({
   topics,
@@ -63,21 +54,19 @@ export function AttractionTopicsMenu({
   onClose,
   title = "Explore This Attraction",
   id,
-  lockScroll = true,
-  showBackdrop = true,
 }: AttractionTopicsMenuProps) {
   const generatedId = useId();
   const menuId = id ?? generatedId;
   const pathname = usePathname() || "/";
 
   useEffect(() => {
-    if (!open || !lockScroll) return;
+    if (!open) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = prev;
     };
-  }, [open, lockScroll]);
+  }, [open]);
 
   useEffect(() => {
     if (!open) return;
@@ -90,7 +79,7 @@ export function AttractionTopicsMenu({
 
   return (
     <>
-      {open && showBackdrop ? (
+      {open ? (
         <button
           type="button"
           className={styles.backdrop}

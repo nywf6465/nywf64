@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useId, useRef, useState } from "react";
+import { useCallback, useId, useState } from "react";
 import { NavBar } from "@/components/NavBar";
 import {
   AttractionTopicsMenu,
@@ -9,8 +9,8 @@ import {
 
 /**
  * Attraction page chrome: full-bleed **nav bar** that opens the **nav menu**.
- * Hover peeks the menu; leaving the explore control closes it unless pinned.
- * Click pins the menu open until X, a topic link, Escape, or backdrop.
+ * Click/tap opens the menu; hover does not. Menu stays open until X, a topic
+ * link, Escape, or a click/tap outside (backdrop).
  */
 export function AttractionNavChrome({
   topics,
@@ -29,26 +29,13 @@ export function AttractionNavChrome({
   menuTitle?: string;
 }) {
   const [open, setOpen] = useState(false);
-  const [pinned, setPinned] = useState(false);
   const menuId = useId();
-  const pinnedRef = useRef(false);
-  pinnedRef.current = pinned;
 
   const close = useCallback(() => {
-    setPinned(false);
     setOpen(false);
   }, []);
 
-  const openHover = useCallback(() => {
-    setOpen(true);
-  }, []);
-
-  const leaveHover = useCallback(() => {
-    if (!pinnedRef.current) setOpen(false);
-  }, []);
-
-  const openPinned = useCallback(() => {
-    setPinned(true);
+  const openMenu = useCallback(() => {
     setOpen(true);
   }, []);
 
@@ -56,18 +43,13 @@ export function AttractionNavChrome({
     menuTitle ??
     `Explore This ${exploreNoun.charAt(0)}${exploreNoun.slice(1).toLowerCase()}`;
 
-  const peeking = open && !pinned;
-
   return (
     <>
       <NavBar
-        onHoverOpen={openHover}
-        onHoverLeave={leaveHover}
-        onClickOpen={openPinned}
+        onClickOpen={openMenu}
         menuId={menuId}
         menuOpen={open}
         exploreNoun={exploreNoun}
-        elevate={peeking}
       />
       <AttractionTopicsMenu
         id={menuId}
@@ -75,8 +57,6 @@ export function AttractionNavChrome({
         open={open}
         onClose={close}
         title={resolvedMenuTitle}
-        lockScroll={pinned}
-        showBackdrop={pinned}
       />
     </>
   );

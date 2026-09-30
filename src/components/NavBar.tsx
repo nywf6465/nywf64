@@ -1,14 +1,9 @@
 "use client";
 
-import { useEffect, useRef } from "react";
 import styles from "./NavBar.module.css";
 
 export type NavBarProps = {
-  /** Opens the nav menu while hovering the explore control. */
-  onHoverOpen: () => void;
-  /** Closes an unpinned hover menu when the pointer leaves the explore control. */
-  onHoverLeave: () => void;
-  /** Pins the nav menu open until closed via X, link, Escape, or backdrop. */
+  /** Opens the nav menu on click/tap (hover does not open). */
   onClickOpen: () => void;
   /** Optional aria relationship to the nav menu panel id. */
   menuId?: string;
@@ -18,11 +13,6 @@ export type NavBarProps = {
    * Noun in “EXPLORE THIS …”, e.g. ATTRACTION (default) or PERSON.
    */
   exploreNoun?: string;
-  /**
-   * Lift the bar above the sliding menu during hover-peek so the drawer
-   * does not steal pointer events and flicker the menu open/closed.
-   */
-  elevate?: boolean;
   /**
    * @deprecated No longer shown on the grey nav bar (redundant with page chrome).
    * Kept optional so existing AttractionNavChrome call sites keep compiling.
@@ -34,49 +24,26 @@ export type NavBarProps = {
  * Nav bar — prototype model for attraction pages.
  * User term: **nav bar**. Full-bleed width matching the site header.
  * Grey strip with left-justified hamburger + EXPLORE THIS ATTRACTION.
- * Hover peeks the nav menu; click pins it open.
+ * Click/tap opens the nav menu; hover does not.
  */
 export function NavBar({
-  onHoverOpen,
-  onHoverLeave,
   onClickOpen,
   menuId,
   menuOpen = false,
   exploreNoun = "ATTRACTION",
-  elevate = false,
 }: NavBarProps) {
   const exploreText = `EXPLORE THIS ${exploreNoun}`;
   const aria = `Explore this ${exploreNoun.toLowerCase()}`;
-  const exploreRef = useRef<HTMLButtonElement>(null);
-  const hoverOpenRef = useRef(onHoverOpen);
-  const hoverLeaveRef = useRef(onHoverLeave);
-  hoverOpenRef.current = onHoverOpen;
-  hoverLeaveRef.current = onHoverLeave;
-
-  // Native mouseenter/leave so hover peek works reliably (including automation).
-  useEffect(() => {
-    const el = exploreRef.current;
-    if (!el) return;
-    const enter = () => hoverOpenRef.current();
-    const leave = () => hoverLeaveRef.current();
-    el.addEventListener("mouseenter", enter);
-    el.addEventListener("mouseleave", leave);
-    return () => {
-      el.removeEventListener("mouseenter", enter);
-      el.removeEventListener("mouseleave", leave);
-    };
-  }, []);
 
   return (
     <div
-      className={elevate ? `${styles.bar} ${styles.barElevated}` : styles.bar}
+      className={styles.bar}
       role="navigation"
       aria-label={aria}
       data-nav-bar=""
     >
       <div className={styles.inner}>
         <button
-          ref={exploreRef}
           type="button"
           className={styles.explore}
           onClick={onClickOpen}
