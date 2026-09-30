@@ -14,6 +14,12 @@
   box-sizing: border-box;
 }
 
+/* Above drawer (z-index 60) during hover-peek so the menu cannot steal hover. */
+.barElevated {
+  position: relative;
+  z-index: 70;
+}
+
 .inner {
   display: flex;
   align-items: center;

@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useId, useState } from "react";
+import { useCallback, useId, useRef, useState } from "react";
 import { NavBar } from "@/components/NavBar";
 import {
   AttractionTopicsMenu,
@@ -31,6 +31,8 @@ export function AttractionNavChrome({
   const [open, setOpen] = useState(false);
   const [pinned, setPinned] = useState(false);
   const menuId = useId();
+  const pinnedRef = useRef(false);
+  pinnedRef.current = pinned;
 
   const close = useCallback(() => {
     setPinned(false);
@@ -42,8 +44,8 @@ export function AttractionNavChrome({
   }, []);
 
   const leaveHover = useCallback(() => {
-    if (!pinned) setOpen(false);
-  }, [pinned]);
+    if (!pinnedRef.current) setOpen(false);
+  }, []);
 
   const openPinned = useCallback(() => {
     setPinned(true);
@@ -54,6 +56,8 @@ export function AttractionNavChrome({
     menuTitle ??
     `Explore This ${exploreNoun.charAt(0)}${exploreNoun.slice(1).toLowerCase()}`;
 
+  const peeking = open && !pinned;
+
   return (
     <>
       <NavBar
@@ -63,6 +67,7 @@ export function AttractionNavChrome({
         menuId={menuId}
         menuOpen={open}
         exploreNoun={exploreNoun}
+        elevate={peeking}
       />
       <AttractionTopicsMenu
         id={menuId}
@@ -71,6 +76,7 @@ export function AttractionNavChrome({
         onClose={close}
         title={resolvedMenuTitle}
         lockScroll={pinned}
+        showBackdrop={pinned}
       />
     </>
   );

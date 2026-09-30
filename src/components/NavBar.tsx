@@ -19,6 +19,11 @@ export type NavBarProps = {
    */
   exploreNoun?: string;
   /**
+   * Lift the bar above the sliding menu during hover-peek so the drawer
+   * does not steal pointer events and flicker the menu open/closed.
+   */
+  elevate?: boolean;
+  /**
    * @deprecated No longer shown on the grey nav bar (redundant with page chrome).
    * Kept optional so existing AttractionNavChrome call sites keep compiling.
    */
@@ -38,6 +43,7 @@ export function NavBar({
   menuId,
   menuOpen = false,
   exploreNoun = "ATTRACTION",
+  elevate = false,
 }: NavBarProps) {
   const exploreText = `EXPLORE THIS ${exploreNoun}`;
   const aria = `Explore this ${exploreNoun.toLowerCase()}`;
@@ -63,7 +69,7 @@ export function NavBar({
 
   return (
     <div
-      className={styles.bar}
+      className={elevate ? `${styles.bar} ${styles.barElevated}` : styles.bar}
       role="navigation"
       aria-label={aria}
       data-nav-bar=""

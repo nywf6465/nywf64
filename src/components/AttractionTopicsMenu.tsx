@@ -32,6 +32,11 @@ export type AttractionTopicsMenuProps = {
    * Hover peeks leave page scroll alone.
    */
   lockScroll?: boolean;
+  /**
+   * Dimmed overlay that closes on click. Only for pinned menus — a hover-peek
+   * backdrop would sit over the Explore control and flicker the drawer.
+   */
+  showBackdrop?: boolean;
 };
 
 function TopicLabel({ topic }: { topic: AttractionTopic }): ReactNode {
@@ -59,6 +64,7 @@ export function AttractionTopicsMenu({
   title = "Explore This Attraction",
   id,
   lockScroll = true,
+  showBackdrop = true,
 }: AttractionTopicsMenuProps) {
   const generatedId = useId();
   const menuId = id ?? generatedId;
@@ -84,7 +90,7 @@ export function AttractionTopicsMenu({
 
   return (
     <>
-      {open ? (
+      {open && showBackdrop ? (
         <button
           type="button"
           className={styles.backdrop}
