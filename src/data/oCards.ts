@@ -2,8 +2,19 @@ import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
  * O-page link cards — fountains-model layout.
- * O-specific rows: Oklahoma … Oregon (empty until cards arrive).
+ * O-specific rows: Oklahoma … Oregon.
  */
 export type OCard = FountainsCard;
 
-export const O_CARDS: OCard[] = [];
+const OKLAHOMA: OCard = {
+  id: "oklahoma",
+  href: "/oklahomaoverview",
+  title: "Oklahoma",
+  body: 'This "pavilion" is actually a park with winding pathways arranged around a lake and a large outdoor map of the state.',
+  pavilionSrc: "/images/oklahoma/oklahoma-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Oklahoma",
+};
+
+export const O_CARDS: OCard[] = [OKLAHOMA];

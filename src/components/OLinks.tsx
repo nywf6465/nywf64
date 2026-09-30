@@ -5,7 +5,7 @@ import styles from "./FountainsLinks.module.css";
 
 /**
  * O-letter links section — same fountains link-card model as `/B` / `/N`.
- * O-specific rows live in `oCards.ts` (empty until cards arrive).
+ * O-specific rows live in `oCards.ts`.
  */
 
 function LinkIndicator() {
