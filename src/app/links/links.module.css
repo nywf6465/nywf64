@@ -137,7 +137,7 @@
 
 .description {
   margin: 0;
-  color: #800020;
+  color: var(--burgundy);
   font-size: 0.95rem;
   line-height: 1.45;
 }
