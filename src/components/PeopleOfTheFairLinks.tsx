@@ -17,7 +17,7 @@ const PEOPLE = [
   {
     id: "greg-dawson",
     title: "Meet the late Greg Dawson",
-    href: "/people/greg-dawson",
+    href: "/dawson01",
     hoverSrc: "/images/people-hover/greg-dawson.jpg",
     left: "50.355%",
     top: "1.073%",
