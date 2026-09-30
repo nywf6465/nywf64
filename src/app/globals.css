@@ -42,16 +42,10 @@
   margin-right: auto;
 }
 
-/* Match SiteHeader mobile bannerWrap heights (letter heroes only use --letter-hero-height) */
-@media (max-width: 720px) {
+/* Match SiteHeader mobile bannerWrap height (letter heroes only use --letter-hero-height) */
+@media (max-width: 640px) {
   :root {
-    --letter-hero-height: clamp(5.5rem, 22vw, 8.5rem);
-  }
-}
-
-@media (max-width: 420px) {
-  :root {
-    --letter-hero-height: 5.25rem;
+    --letter-hero-height: 4.5rem;
   }
 }
 
