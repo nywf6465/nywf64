@@ -27,7 +27,7 @@ const PEOPLE = [
   {
     id: "albert-fisher",
     title: "Introducing Albert Fisher",
-    href: "/people/albert-fisher",
+    href: "/fisher01",
     hoverSrc: "/images/people-hover/albert-fisher.jpg",
     left: "0.889%",
     top: "20.708%",
