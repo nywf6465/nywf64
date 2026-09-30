@@ -1,0 +1,38 @@
+import Link from "next/link";
+import { FirnatNavChrome } from "@/components/FirnatNavChrome";
+import { Nav2Bar } from "@/components/Nav2Bar";
+
+/** Shared stub shell for firnat menu topic landings. */
+export function FirnatTopicStub({ title }: { title: string }) {
+  return (
+    <>
+      <FirnatNavChrome />
+      <main
+        style={{
+          maxWidth: 720,
+          margin: "0 auto",
+          padding: "2.5rem 1.25rem 3rem",
+          fontFamily: "Arial, Helvetica, sans-serif",
+        }}
+      >
+        <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
+          <Link href="/firnatoverview" style={{ color: "#990000" }}>
+            ← First National City Bank overview
+          </Link>
+        </p>
+        <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
+          {title}
+        </h1>
+        <p style={{ margin: "1rem 0 0", color: "#26346e", lineHeight: 1.5 }}>
+          Placeholder page — full First National City Bank content will connect
+          here.
+        </p>
+      </main>
+      <Nav2Bar
+        previousHref="/firnatoverview"
+        overviewHref="/firnatoverview"
+        nextHref="/firnat01"
+      />
+    </>
+  );
+}

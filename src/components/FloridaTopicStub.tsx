@@ -1,0 +1,40 @@
+import Link from "next/link";
+import { FloridaNavChrome } from "@/components/FloridaNavChrome";
+import { Nav2Bar } from "@/components/Nav2Bar";
+
+/**
+ * Shared stub shell for Florida menu topic landings.
+ * Stack: nav bar (Florida menu) → placeholder main → nav2.
+ */
+export function FloridaTopicStub({ title }: { title: string }) {
+  return (
+    <>
+      <FloridaNavChrome />
+      <main
+        style={{
+          maxWidth: 720,
+          margin: "0 auto",
+          padding: "2.5rem 1.25rem 3rem",
+          fontFamily: "Arial, Helvetica, sans-serif",
+        }}
+      >
+        <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
+          <Link href="/floridaoverview" style={{ color: "#990000" }}>
+            ← Florida overview
+          </Link>
+        </p>
+        <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
+          {title}
+        </h1>
+        <p style={{ margin: "1rem 0 0", color: "#26346e", lineHeight: 1.5 }}>
+          Placeholder page — full Florida Pavilion content will connect here.
+        </p>
+      </main>
+      <Nav2Bar
+        previousHref="/floridaoverview"
+        overviewHref="/floridaoverview"
+        nextHref="/florida01"
+      />
+    </>
+  );
+}
