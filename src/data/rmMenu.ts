@@ -5,10 +5,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const RM_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Introduction",
-    href: "/rm01",
-  },
-  {
     label: "My Encounter with Robert Moses ... by Bill Young",
     href: "/rm01",
     parts: [
