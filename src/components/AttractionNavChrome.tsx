@@ -8,8 +8,8 @@ import {
 } from "@/components/AttractionTopicsMenu";
 
 /**
- * Attraction page chrome: full-bleed **nav bar** that opens the **nav menu**.
- * Replaces the temporary “Open nav menu” button.
+ * Attraction page chrome: full-bleed **nav bar** that opens the **nav menu**
+ * on hover (or click) over the hamburger + “Explore This …” control.
  */
 export function AttractionNavChrome({
   topics,

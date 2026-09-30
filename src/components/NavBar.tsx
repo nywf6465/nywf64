@@ -24,7 +24,7 @@ export type NavBarProps = {
  * Nav bar — prototype model for attraction pages.
  * User term: **nav bar**. Full-bleed width matching the site header.
  * Grey strip with left-justified hamburger + EXPLORE THIS ATTRACTION.
- * Opens the nav menu.
+ * Opens the nav menu on hover (and click for touch / keyboard).
  */
 export function NavBar({
   onExplore,
@@ -46,6 +46,7 @@ export function NavBar({
         <button
           type="button"
           className={styles.explore}
+          onMouseEnter={onExplore}
           onClick={onExplore}
           aria-expanded={menuOpen}
           aria-controls={menuId}
