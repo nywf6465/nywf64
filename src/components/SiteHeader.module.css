@@ -164,36 +164,71 @@
   outline-offset: -2px;
 }
 
-/* Mobile: keep emblem + hamburger readable — crop center-left rather than squash */
-@media (max-width: 720px) {
+/* Desktop: hamburger lives in the banner art. Phone: show it as its own slice. */
+.menuGlyph {
+  display: none;
+}
+
+/*
+  Phone: don’t cover-crop the banner (that hid the hamburger) and don’t
+  zoom the left art so hard that “Space Age World’s Fair” is clipped.
+  Scale emblem + full tagline into the space left of the menu, and pin the
+  banner’s own hamburger art on the right.
+  Branding ink ends just before the hamburger (~x=1990 of 2172).
+  Hamburger center is ~95.4% across the art.
+*/
+@media (max-width: 640px) {
   .bannerWrap {
-    height: clamp(5.5rem, 22vw, 8.5rem);
+    --banner-vis-end: 1990;
+    --menu-glyph-w: 2.75rem;
+    display: flex;
+    align-items: stretch;
+    height: auto;
+    padding-bottom: 0.25rem;
   }
 
   .bannerLink {
-    position: absolute;
-    inset: 0;
+    position: relative;
+    flex: 1 1 auto;
+    min-width: 0;
+    aspect-ratio: 1990 / 305;
+    overflow: hidden;
   }
 
   .banner {
-    object-fit: cover;
-    object-position: left center;
-    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
     height: 100%;
+    width: calc(2172 / 1990 * 100%);
+    max-width: none;
+    object-fit: fill;
+  }
+
+  .menuGlyph {
+    display: block;
+    position: relative;
+    flex: 0 0 var(--menu-glyph-w);
+    width: var(--menu-glyph-w);
+    align-self: stretch;
+    overflow: hidden;
+    pointer-events: none;
+  }
+
+  .menuGlyph img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    height: 100%;
+    width: auto;
+    max-width: none;
+    transform: translateX(-95.4%);
+    pointer-events: none;
+    user-select: none;
   }
 
   .menuHotspot {
-    width: 18%;
-    min-width: 3.25rem;
-  }
-}
-
-@media (max-width: 420px) {
-  .bannerWrap {
-    height: 5.25rem;
-  }
-
-  .banner {
-    object-position: 8% center;
+    width: var(--menu-glyph-w);
+    min-width: var(--menu-glyph-w);
   }
 }

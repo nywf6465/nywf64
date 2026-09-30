@@ -25,20 +25,20 @@ export default function ContactPage() {
     <main className={styles.main}>
       <article className={styles.article} aria-labelledby="contact-title">
         <header className={styles.intro}>
-          <p className={styles.kicker}>Get in Touch</p>
+          <p className={styles.kicker}>Contact</p>
           <div className={styles.divider} aria-hidden="true">
             <span className={styles.rule} />
             <Star color="#26346e" size={13} />
             <span className={styles.rule} />
           </div>
           <h1 id="contact-title" className={styles.title}>
-            Contact
+            Get in touch
           </h1>
         </header>
 
         <div className={styles.body}>
           <p>
-            I&apos;m Bill Young, the creator of{" "}
+            I&apos;m Bill Young, the curator of{" "}
             <Link href="/" className={styles.inlineLink}>
               <BrandName />
             </Link>
@@ -70,7 +70,11 @@ export default function ContactPage() {
 
           <p>
             I read every message and will respond as soon as I can. Thank you
-            for your interest in the Fair.
+            for your interest in{" "}
+            <Link href="/" className={styles.inlineLink}>
+              <BrandName />
+            </Link>
+            .
           </p>
         </div>
 

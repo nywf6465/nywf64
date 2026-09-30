@@ -212,6 +212,21 @@ export function SiteHeader() {
           />
         </Link>
 
+        {/*
+          Phone: the full-width banner crop clips the hamburger. Show the same
+          art’s hamburger slice on the right so the icon stays visible.
+        */}
+        <span className={styles.menuGlyph} aria-hidden="true">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/images/site-header-banner-v4.jpg"
+            alt=""
+            width={2172}
+            height={305}
+            draggable={false}
+          />
+        </span>
+
         <button
           type="button"
           className={styles.menuHotspot}
