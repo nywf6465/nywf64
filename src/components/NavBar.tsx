@@ -10,7 +10,11 @@ export type NavBarProps = {
   /** Whether the nav menu is open (for aria-expanded). */
   menuOpen?: boolean;
   /**
-   * @deprecated No longer shown in the nav bar (redundant with page chrome).
+   * Noun in “EXPLORE THIS …”, e.g. ATTRACTION (default) or PERSON.
+   */
+  exploreNoun?: string;
+  /**
+   * @deprecated No longer shown on the grey nav bar (redundant with page chrome).
    * Kept optional so existing AttractionNavChrome call sites keep compiling.
    */
   label?: string;
@@ -26,12 +30,16 @@ export function NavBar({
   onExplore,
   menuId,
   menuOpen = false,
+  exploreNoun = "ATTRACTION",
 }: NavBarProps) {
+  const exploreText = `EXPLORE THIS ${exploreNoun}`;
+  const aria = `Explore this ${exploreNoun.toLowerCase()}`;
+
   return (
     <div
       className={styles.bar}
       role="navigation"
-      aria-label="Explore this attraction"
+      aria-label={aria}
       data-nav-bar=""
     >
       <div className={styles.inner}>
@@ -41,14 +49,14 @@ export function NavBar({
           onClick={onExplore}
           aria-expanded={menuOpen}
           aria-controls={menuId}
-          aria-label="Explore this attraction — open nav menu"
+          aria-label={`${aria} — open nav menu`}
         >
           <span className={styles.hamburger} aria-hidden="true">
             <span />
             <span />
             <span />
           </span>
-          <span className={styles.exploreText}>EXPLORE THIS ATTRACTION</span>
+          <span className={styles.exploreText}>{exploreText}</span>
         </button>
       </div>
     </div>

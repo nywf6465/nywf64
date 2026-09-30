@@ -1,20 +1,4 @@
-/* Robert Moses — hero banner + legacy article body */
-
-.hero {
-  position: relative;
-  width: 100%;
-  background: #fff;
-  margin-top: 0;
-}
-
-.heroArt {
-  display: block;
-  width: 100%;
-  height: auto;
-  aspect-ratio: 910 / 50;
-  object-fit: cover;
-  object-position: center;
-}
+/* Robert Moses — legacy article body (shared hero via RmHero) */
 
 .article {
   width: 100%;

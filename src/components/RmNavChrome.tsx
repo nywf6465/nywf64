@@ -9,6 +9,11 @@ import { RM_MENU_TOPICS } from "@/data/rmMenu";
  */
 export function RmNavChrome() {
   return (
-    <AttractionNavChrome topics={RM_MENU_TOPICS} navLabel="Robert Moses" />
+    <AttractionNavChrome
+      topics={RM_MENU_TOPICS}
+      navLabel="Robert Moses"
+      exploreNoun="PERSON"
+      menuTitle="Explore This Person"
+    />
   );
 }

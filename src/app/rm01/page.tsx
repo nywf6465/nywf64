@@ -1,10 +1,10 @@
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { RmHero } from "@/components/RmHero";
 import { RmNavChrome } from "@/components/RmNavChrome";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./rm01.module.css";
-import heroBottomBar from "@/styles/heroBottomBar.module.css";
 
 export const metadata: Metadata = {
   title: "My Encounter with Robert Moses — nywf64.com",
@@ -21,20 +21,7 @@ export const metadata: Metadata = {
 export default function Rm01Page() {
   return (
     <>
-      <section className={styles.hero} aria-label="Robert Moses">
-        <div className={heroBottomBar.photoFrame}>
-          <Image
-            src="/images/rm01/banner.jpg"
-            alt="Robert Moses — nywf64.com"
-            width={910}
-            height={50}
-            priority
-            sizes="100vw"
-            className={styles.heroArt}
-            unoptimized
-          />
-        </div>
-      </section>
+      <RmHero />
 
       <RmNavChrome />
 
