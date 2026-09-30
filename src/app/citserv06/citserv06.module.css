@@ -1,0 +1,193 @@
+/* Cities Service — Paul Lavalle (legacy citserv06) */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(40rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.bioRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 1.25rem 1.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.portrait {
+  display: block;
+  width: min(13.75rem, 42%);
+  height: auto;
+  margin: 0;
+  border: 1px solid #999;
+  flex: 0 0 auto;
+}
+
+.bioCopy {
+  flex: 1 1 16rem;
+  min-width: min(16rem, 100%);
+}
+
+.bioCopy > p {
+  margin: 0 0 1rem;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.bioCopy > p:last-child {
+  margin-bottom: 0;
+}
+
+.source {
+  margin: 0 0 1.5rem;
+  color: #555;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #bbb;
+  margin: 0 0 1.5rem;
+}
+
+.sectionHeading {
+  margin: 0 0 1rem;
+  color: #26346e;
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.sectionHeading em {
+  font-style: italic;
+}
+
+.albumRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1.25rem 1.5rem;
+  margin: 0 0 1.25rem;
+}
+
+.albumJacket {
+  display: block;
+  width: min(22.5rem, 100%);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #999;
+}
+
+.conductorWrap {
+  flex: 0 0 auto;
+  width: min(17.2rem, 100%);
+  margin: 0 auto;
+}
+
+.conductorPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #999;
+}
+
+.conductorCaption {
+  margin: 0.4rem 0 0;
+  color: #555;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.albumCopy {
+  flex: 1 1 16rem;
+  min-width: min(16rem, 100%);
+}
+
+.albumCopy > p {
+  margin: 0 0 1rem;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.note {
+  margin: 1.5rem 0 0;
+  padding: 0.9rem 1rem;
+  border: 1px solid #bbb;
+  color: #000;
+  font-size: 0.95rem;
+  line-height: 1.55;
+}
+
+.note p {
+  margin: 0 0 0.85rem;
+}
+
+.note p:last-child {
+  margin-bottom: 0;
+}
+
+.note em {
+  font-style: italic;
+}
+
+.logoWrap {
+  margin-top: 1.5rem;
+}
+
+.logo {
+  display: block;
+  width: min(7.5rem, 40%);
+  height: auto;
+}

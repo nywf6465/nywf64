@@ -37,7 +37,7 @@ const PEOPLE = [
   {
     id: "paul-lavalle",
     title: "Paul Lavalle",
-    href: "/people/paul-lavalle",
+    href: "/citserv06",
     hoverSrc: "/images/people-hover/paul-lavalle.jpg",
     left: "50.355%",
     top: "20.708%",
