@@ -143,7 +143,8 @@ export default function Rm01Page() {
       </article>
 
       <Nav2Bar
-        previousHref="/rm01"
+        previousHref="/people"
+        explicitPrevious
         nextHref="/rm02"
         hideOverview
       />
