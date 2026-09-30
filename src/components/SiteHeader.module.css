@@ -1,0 +1,199 @@
+.header {
+  position: relative;
+  z-index: 40;
+  width: 100%;
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+  background: #fff;
+  /* Header object ends on the burgundy rule — no white beneath it.
+     Normal block flow above heroes; never overlap via negative hero margins. */
+  padding-bottom: 0;
+  margin-bottom: 0;
+  box-sizing: border-box;
+  isolation: isolate;
+}
+
+.bannerWrap {
+  position: relative;
+  width: 100%;
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 0;
+  background: #fff;
+  /* Desktop: scale banner inside 910 shell — no cover-crop of branding.
+     Small pad under ink so logo isn’t hard against the burgundy rule;
+     do not close that space by pulling the hero up. */
+  padding-bottom: 0.4rem;
+  overflow: hidden;
+}
+
+.bannerDivider {
+  /* Flush thick burgundy rule hard against banner ink. */
+  margin: 0;
+  padding: 0;
+  position: relative;
+  z-index: 1;
+}
+
+.bannerLink {
+  display: block;
+  position: relative;
+  z-index: 1;
+  line-height: 0;
+}
+
+.bannerLink:focus-visible {
+  outline: 2px solid var(--burgundy);
+  outline-offset: -4px;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.menuHotspot {
+  position: absolute;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  width: min(12%, 5.5rem);
+  z-index: 2;
+  cursor: pointer;
+  background: transparent;
+  border: 0;
+  padding: 0;
+}
+
+.menuHotspot:focus-visible {
+  outline: 2px solid var(--burgundy);
+  outline-offset: -4px;
+}
+
+.backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 45;
+  background: color-mix(in srgb, var(--navy-deep) 45%, transparent);
+  border: 0;
+  cursor: pointer;
+}
+
+.drawer {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 50;
+  height: 100%;
+  height: 100dvh;
+  margin: 0;
+  padding: 0;
+  background: transparent;
+  border: 0;
+  transform: translateX(105%);
+  transition: transform 280ms var(--ease-out);
+  pointer-events: none;
+}
+
+.drawer[data-open] {
+  transform: translateX(0);
+  pointer-events: auto;
+}
+
+/*
+  Art is 1024×1536 with ink ~x=249–774 (526px). Panel shows that column
+  plus ~40px art-space white padding each side (not the full empty margins).
+*/
+.panel {
+  --art-w: 1024;
+  --art-h: 1536;
+  --content-x: 249;
+  --content-w: 526;
+  --pad-x: 40; /* art pixels of white each side of content */
+  --vis-x: 209; /* content-x - pad-x */
+  --vis-w: 606; /* content-w + 2*pad-x */
+  --scale-h: min(100dvh, calc(92vw * var(--art-h) / var(--vis-w)));
+
+  position: relative;
+  height: 100%;
+  width: min(calc(var(--scale-h) * var(--vis-w) / var(--art-h)), 92vw);
+  margin-left: auto;
+  line-height: 0;
+  overflow: hidden;
+  background: #fff;
+  box-shadow: -8px 0 24px color-mix(in srgb, #000 18%, transparent);
+}
+
+.frame {
+  position: absolute;
+  top: 0;
+  left: calc(-1 * var(--scale-h) * var(--vis-x) / var(--art-h));
+  height: var(--scale-h);
+  width: calc(var(--scale-h) * var(--art-w) / var(--art-h));
+}
+
+.menuArt {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  pointer-events: none;
+  user-select: none;
+}
+
+.closeHotspot,
+.navHotspot {
+  position: absolute;
+  z-index: 1;
+  display: block;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+  text-indent: -9999px;
+  overflow: hidden;
+}
+
+.closeHotspot:focus-visible,
+.navHotspot:focus-visible {
+  outline: 2px solid #990000;
+  outline-offset: -2px;
+}
+
+/* Mobile: keep emblem + hamburger readable — crop center-left rather than squash */
+@media (max-width: 720px) {
+  .bannerWrap {
+    height: clamp(5.5rem, 22vw, 8.5rem);
+  }
+
+  .bannerLink {
+    position: absolute;
+    inset: 0;
+  }
+
+  .banner {
+    object-fit: cover;
+    object-position: left center;
+    width: 100%;
+    height: 100%;
+  }
+
+  .menuHotspot {
+    width: 18%;
+    min-width: 3.25rem;
+  }
+}
+
+@media (max-width: 420px) {
+  .bannerWrap {
+    height: 5.25rem;
+  }
+
+  .banner {
+    object-position: 8% center;
+  }
+}

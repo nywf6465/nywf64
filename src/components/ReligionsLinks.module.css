@@ -1,0 +1,119 @@
+/* Religions links section — same chrome as Disney Shows */
+
+.section {
+  width: 100%;
+  background: #fff;
+  padding: 1.25rem 0 2.75rem;
+}
+
+.list {
+  list-style: none;
+  margin: 0 auto;
+  padding: 0 1.25rem;
+  max-width: 52rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2.25rem;
+}
+
+.item {
+  margin: 0;
+}
+
+/* Row: pavilion (image) left; body right of pavilion; title beneath pavilion; link indicator right of title */
+.row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 12rem) minmax(0, 1fr) auto;
+  grid-template-areas:
+    "pavilion body indicator"
+    "title title indicator";
+  column-gap: 1.15rem;
+  row-gap: 0.45rem;
+  align-items: start;
+  text-decoration: none;
+  color: #990000;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.row:hover,
+.row:focus-visible {
+  color: #26346e;
+}
+
+.row:focus-visible {
+  outline: 2px solid #990000;
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+.pavilion {
+  grid-area: pavilion;
+  display: block;
+  line-height: 0;
+}
+
+.pavilionArt {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+
+.title {
+  grid-area: title;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1rem, 2.4vw, 1.2rem);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.3;
+  text-decoration: none;
+  color: inherit;
+  padding-top: 0.15rem;
+}
+
+.body {
+  grid-area: body;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.92rem, 2.1vw, 1.05rem);
+  font-weight: 400;
+  line-height: 1.45;
+  color: inherit;
+  padding-top: 0.1rem;
+}
+
+.linkIndicator {
+  grid-area: indicator;
+  align-self: end;
+  justify-self: end;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.05rem;
+  height: 2.05rem;
+  margin-bottom: 0.1rem;
+  border-radius: 50%;
+  background: #26346e;
+  color: #fff;
+  flex-shrink: 0;
+  transition: background-color 120ms ease;
+}
+
+.row:hover .linkIndicator,
+.row:focus-visible .linkIndicator {
+  background: #990000;
+}
+
+@media (max-width: 560px) {
+  .row {
+    grid-template-columns: minmax(0, 1fr) auto;
+    grid-template-areas:
+      "pavilion pavilion"
+      "body indicator"
+      "title indicator";
+    column-gap: 0.75rem;
+  }
+
+  .pavilion {
+    max-width: 14rem;
+  }
+}

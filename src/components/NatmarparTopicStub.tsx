@@ -1,0 +1,38 @@
+import Link from "next/link";
+import { NatmarparNavChrome } from "@/components/NatmarparNavChrome";
+import { Nav2Bar } from "@/components/Nav2Bar";
+
+/** Shared stub shell for National Maritime Union Park menu topic landings. */
+export function NatmarparTopicStub({ title }: { title: string }) {
+  return (
+    <>
+      <NatmarparNavChrome />
+      <main
+        style={{
+          maxWidth: 720,
+          margin: "0 auto",
+          padding: "2.5rem 1.25rem 3rem",
+          fontFamily: "Arial, Helvetica, sans-serif",
+        }}
+      >
+        <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
+          <Link href="/natmarparoverview" style={{ color: "#990000" }}>
+            ← National Maritime Union Park overview
+          </Link>
+        </p>
+        <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
+          National Maritime Union Park {title}
+        </h1>
+        <p style={{ margin: "1rem 0 0", color: "#26346e", lineHeight: 1.5 }}>
+          Placeholder page — full National Maritime Union Park content will
+          connect here.
+        </p>
+      </main>
+      <Nav2Bar
+        previousHref="/natmarparoverview"
+        overviewHref="/natmarparoverview"
+        nextHref="/natmarpar01"
+      />
+    </>
+  );
+}

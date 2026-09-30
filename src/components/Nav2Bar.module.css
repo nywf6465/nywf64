@@ -1,0 +1,140 @@
+/* Nav2 bar — white bordered strip; full width like site footer.
+   Height is synced in JS to the nav bar when both are on the page. */
+
+.wrap {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0;
+  background: transparent;
+}
+
+.bar {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr auto 1fr;
+  align-items: stretch;
+  width: 100%;
+  box-sizing: border-box;
+  /* Fallback until JS syncs to nav bar height — keep short so padding/type cannot inflate */
+  height: 2.75rem;
+  min-height: 0;
+  max-height: none;
+  padding: 0;
+  margin: 0;
+  background: #ffffff;
+  border: 1px solid #26346e;
+  border-radius: 0.25rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  overflow: hidden;
+}
+
+/* Letter A–Z pages: PREVIOUS | NEXT only (no Overview middle). */
+.barNoOverview {
+  grid-template-columns: 1fr auto 1fr;
+}
+
+.section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  place-content: center;
+  min-width: 0;
+  min-height: 0;
+  height: 100%;
+  margin: 0;
+  padding: 0 0.5rem;
+  text-decoration: none;
+  text-align: center;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1;
+  box-sizing: border-box;
+}
+
+.section:hover,
+.section:focus-visible {
+  color: #990000;
+}
+
+.section:focus-visible {
+  outline: 2px solid #990000;
+  outline-offset: -3px;
+}
+
+.sideCluster {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.35rem;
+  line-height: 1;
+}
+
+.overviewCluster {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.05rem;
+  line-height: 1;
+  text-align: center;
+}
+
+.divider {
+  width: 1px;
+  align-self: stretch;
+  margin: 0.35rem 0;
+  background: #26346e;
+  flex-shrink: 0;
+}
+
+.sideLabel {
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  line-height: 1;
+}
+
+.arrow {
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1;
+}
+
+.overviewLabel {
+  font-size: 0.68rem;
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+.icon {
+  display: block;
+  color: inherit;
+  flex-shrink: 0;
+  width: 1.35rem;
+  height: 1rem;
+}
+
+@media (max-width: 560px) {
+  .section {
+    padding: 0 0.3rem;
+  }
+
+  .sideLabel {
+    font-size: 0.65rem;
+  }
+
+  .overviewLabel {
+    font-size: 0.58rem;
+  }
+
+  .icon {
+    width: 1.1rem;
+    height: 0.85rem;
+  }
+
+  .arrow {
+    font-size: 0.8rem;
+  }
+}
