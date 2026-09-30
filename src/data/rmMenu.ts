@@ -29,6 +29,3 @@ export const RM_MENU_TOPICS: AttractionTopic[] = [
     href: "/rm04",
   },
 ];
-
-/** Current published RM body page (legacy rm02.html content lives on /rm01). */
-export const RM_CURRENT_HREF = "/rm01";
