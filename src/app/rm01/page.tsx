@@ -144,8 +144,8 @@ export default function Rm01Page() {
 
       <Nav2Bar
         previousHref="/rm01"
-        overviewHref="/rm01"
         nextHref="/rm02"
+        hideOverview
       />
     </>
   );
