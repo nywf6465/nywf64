@@ -14,7 +14,7 @@ export const RM_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "The Promised Land of Mr. Moses ... by Ogden Nash",
-    href: "/rm03",
+    href: "/rm02",
     parts: [
       { text: "The Promised Land of Mr. Moses", italic: true },
       { text: " ... by Ogden Nash" },

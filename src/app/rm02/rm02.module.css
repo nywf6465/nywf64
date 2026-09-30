@@ -1,0 +1,123 @@
+/* Robert Moses — Ogden Nash poem body (shared hero via RmHero) */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 1rem clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.photoSource {
+  margin: 0 0 1rem;
+  color: #555;
+  font-size: 0.72rem;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.figure {
+  margin: 0 0 1.35rem;
+  max-width: min(12.5rem, 100%);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #999;
+}
+
+.poemHeading {
+  margin: 0 0 0.35rem;
+  color: #000099;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.poemByline {
+  margin: 0 0 1.25rem;
+  color: #000099;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.poem {
+  margin: 0 0 1.5rem;
+  padding: 1.15rem 1.25rem 1.35rem;
+  background: #999;
+  color: #fff;
+}
+
+.poem p {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.poem p:last-child {
+  margin-bottom: 0;
+}
+
+.dropCap {
+  font-size: 1.65rem;
+  line-height: 1;
+}
+
+.stanzaBreak {
+  height: 0.85rem;
+}
+
+.logoWrap {
+  margin-top: 1.5rem;
+}
+
+.logo {
+  display: block;
+  width: min(7.5rem, 40%);
+  height: auto;
+}
