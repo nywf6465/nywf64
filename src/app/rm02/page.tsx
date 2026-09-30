@@ -50,9 +50,6 @@ export default function Rm02Page() {
             />
           </figure>
 
-          <h2 className={styles.poemHeading}>The Promised Land of Mr. Moses</h2>
-          <p className={styles.poemByline}>By OGDEN NASH</p>
-
           <div className={styles.poem}>
             <p>
               <span className={styles.dropCap}>W</span>hence, oh whence did the
@@ -119,17 +116,6 @@ export default function Rm02Page() {
             <p>If your parents are late in getting home;</p>
             <p>Nobody departs, until it closes,</p>
             <p>From the Promised Land of Mr. Moses.</p>
-          </div>
-
-          <div className={styles.logoWrap}>
-            <Image
-              src="/images/about/nywf64-logo.gif"
-              alt="nywf64.com"
-              width={300}
-              height={100}
-              className={styles.logo}
-              unoptimized
-            />
           </div>
         </div>
       </article>

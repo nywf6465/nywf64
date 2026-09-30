@@ -69,27 +69,11 @@
   border: 1px solid #999;
 }
 
-.poemHeading {
-  margin: 0 0 0.35rem;
-  color: #000099;
-  font-size: 1.25rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
-.poemByline {
-  margin: 0 0 1.25rem;
-  color: #000099;
-  font-size: 1rem;
-  font-weight: 700;
-  line-height: 1.3;
-}
-
 .poem {
   margin: 0 0 1.5rem;
   padding: 1.15rem 1.25rem 1.35rem;
-  background: #999;
-  color: #fff;
+  background: #eef5fb;
+  color: #000;
 }
 
 .poem p {
@@ -110,14 +94,4 @@
 
 .stanzaBreak {
   height: 0.85rem;
-}
-
-.logoWrap {
-  margin-top: 1.5rem;
-}
-
-.logo {
-  display: block;
-  width: min(7.5rem, 40%);
-  height: auto;
 }
