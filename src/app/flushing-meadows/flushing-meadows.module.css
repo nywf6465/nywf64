@@ -1,0 +1,20 @@
+/* Exact Flushing Meadows Park hero — full image, no crop, no overlays */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
