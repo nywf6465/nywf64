@@ -47,6 +47,7 @@ export function NavBar({
           type="button"
           className={styles.explore}
           onMouseEnter={onExplore}
+          onPointerEnter={onExplore}
           onClick={onExplore}
           aria-expanded={menuOpen}
           aria-controls={menuId}
