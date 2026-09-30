@@ -1,0 +1,20 @@
+/* Exact Information Booth hero — full image, no crop, no hotspots */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #0a1230;
+  margin-top: 0;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
