@@ -1,0 +1,235 @@
+/* About — full legacy Welcome letter; brand navy/burgundy; Arial */
+
+.main {
+  position: relative;
+  margin-top: 0;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem) 1.15rem clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--ink);
+  background:
+    radial-gradient(
+      ellipse 90% 40% at 50% -8%,
+      color-mix(in srgb, var(--mist) 80%, #fff) 0%,
+      transparent 58%
+    ),
+    linear-gradient(180deg, #f3f6fb 0%, #fff 22%, #fff 78%, #f5f7fb 100%);
+}
+
+.article {
+  position: relative;
+  width: min(42rem, 100%);
+  margin: 0 auto;
+  animation: rise 560ms var(--ease-out) both;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: clamp(1rem, 2.5vw, 1.4rem);
+}
+
+.kicker {
+  margin: 0 0 0.85rem;
+  color: #26346e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.rule {
+  flex: 1 1 auto;
+  max-width: 7.5rem;
+  height: 1.5px;
+  background: #26346e;
+}
+
+.title {
+  margin: 0;
+  color: #26346e;
+  font-family: var(--font-body);
+  font-size: clamp(1.55rem, 3.4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.body {
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.62;
+  color: #1e2748;
+}
+
+.body > p {
+  margin: 0 0 1.1rem;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.brandNavy {
+  color: #191970;
+}
+
+.brandBurgundy {
+  color: maroon;
+}
+
+.emphasis {
+  color: #990000;
+  font-weight: 800;
+}
+
+.heroArt {
+  margin: 0 auto 1.15rem;
+  width: fit-content;
+  animation: floatIn 700ms var(--ease-out) 80ms both;
+}
+
+.heroImg {
+  width: min(17.2rem, 100%);
+  height: auto;
+  border: 1px solid color-mix(in srgb, var(--navy) 22%, transparent);
+}
+
+.compare {
+  margin: 0.35rem 0 1.25rem;
+}
+
+.comparePair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem;
+  align-items: start;
+}
+
+.compareImg {
+  width: 100%;
+  height: auto;
+  border: 1px solid color-mix(in srgb, var(--navy) 18%, transparent);
+}
+
+.compareCaption {
+  margin-top: 0.55rem;
+  color: #3a4570;
+  font-size: 0.82rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.jetsonBlock {
+  display: flow-root;
+  margin: 0 0 1.1rem;
+}
+
+.jetson {
+  float: left;
+  margin: 0.15rem 1rem 0.5rem 0;
+  animation: floatIn 720ms var(--ease-out) 120ms both;
+}
+
+.jetsonImg {
+  width: clamp(4.6rem, 13vw, 5.75rem);
+  height: auto;
+}
+
+.closing {
+  margin-top: 0.25rem !important;
+  color: #26346e;
+  font-size: clamp(1.05rem, 1.7vw, 1.18rem);
+  font-weight: 700;
+  font-style: italic;
+}
+
+.signoff {
+  margin-top: clamp(1.5rem, 3.5vw, 2.1rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--navy) 18%, transparent);
+}
+
+.signature {
+  margin: 0;
+  color: #26346e;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.milestone {
+  margin: 0.35rem 0 0;
+  color: #1e2748;
+  font-size: 0.98rem;
+}
+
+.milestone strong {
+  color: #990000;
+  font-weight: 800;
+}
+
+.logoWrap {
+  margin: 1.35rem 0 0.85rem;
+}
+
+.logo {
+  width: min(18.75rem, 100%);
+  height: auto;
+}
+
+.disclaimer {
+  margin: 0;
+  max-width: 22rem;
+  color: #5a6488;
+  font-size: 0.72rem;
+  line-height: 1.45;
+  font-family: "Arial Narrow", Arial, sans-serif;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.45rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes floatIn {
+  from {
+    opacity: 0;
+    transform: translateY(0.55rem) scale(0.97);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@media (max-width: 560px) {
+  .comparePair {
+    gap: 0.45rem;
+  }
+
+  .compareCaption {
+    font-size: 0.74rem;
+  }
+
+  .jetsonImg {
+    width: 4.85rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article,
+  .heroArt,
+  .jetson {
+    animation: none;
+  }
+}

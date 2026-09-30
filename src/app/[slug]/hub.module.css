@@ -1,0 +1,57 @@
+.page {
+  min-height: 100vh;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #26346e;
+}
+
+.main {
+  width: min(40rem, calc(100% - 2.25rem));
+  margin: 0 auto;
+  padding: clamp(2rem, 5vw, 3.25rem) 0 clamp(2.5rem, 6vw, 4rem);
+}
+
+.crumb {
+  margin: 0 0 1rem;
+  font-size: 0.85rem;
+  font-weight: 600;
+}
+
+.crumb a {
+  color: #990000;
+  text-decoration: none;
+}
+
+.crumb a:hover,
+.crumb a:focus-visible {
+  text-decoration: underline;
+}
+
+.title {
+  margin: 0;
+  font-size: clamp(1.6rem, 3.5vw, 2.25rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.lede {
+  margin: 1rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.55;
+  color: #3a4570;
+}
+
+.back {
+  margin: 1.75rem 0 0;
+  font-weight: 700;
+}
+
+.back a {
+  color: #990000;
+  text-decoration: none;
+}
+
+.back a:hover,
+.back a:focus-visible {
+  text-decoration: underline;
+}
