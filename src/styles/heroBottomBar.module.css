@@ -1,0 +1,22 @@
+/**
+ * Flush burgundy bar under every hero photo.
+ * Matches header StarDivider: 4px solid #990000.
+ *
+ * Apply `photoFrame` on the hero image wrapper (`.heroFrame` / `.frame`)
+ * so the bar sits directly under the image with no gap.
+ *
+ * Page width is owned by the shared `.pageShell` (max-width: 910px in
+ * globals.css). Heroes stay width:100% / height:auto inside that shell —
+ * no separate hero max-width, no crop / object-fit.
+ */
+
+.photoFrame::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 4px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: #990000;
+}

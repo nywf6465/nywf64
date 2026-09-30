@@ -1,0 +1,22 @@
+/**
+ * Pavilion overview heroes only (`/*overview` routes).
+ * Image height matches SiteHeader banner via `--letter-hero-height`.
+ * Height is on the img (not the frame) so `heroBottomBar.photoFrame::after`
+ * (4px burgundy) is not clipped by overflow.
+ * Homepage / letter pages do not import this module.
+ */
+
+.frame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  background: #fff;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: var(--letter-hero-height);
+  object-fit: contain;
+  object-position: center center;
+}

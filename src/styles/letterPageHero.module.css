@@ -1,0 +1,22 @@
+/**
+ * Letter-page heroes only (/A–/W). Display height matches SiteHeader banner
+ * img at the same column width (header banner v4: 2172×305).
+ * Homepage and pavilion overview heroes do not import this module.
+ */
+
+.frame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  height: var(--letter-hero-height);
+  overflow: hidden;
+  background: #fff;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center center;
+}
