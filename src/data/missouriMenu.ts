@@ -1,0 +1,34 @@
+import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
+
+/**
+ * missouri menu — nav-menu topics for all routes beginning with `missouri`.
+ * Labels match `media/missouri-menu-topics-source.jpg` (+ Overview at top).
+ * Guidebook & Souvenir Map Entries is one topic (wrapped in source).
+ * Non-Overview routes: `missouri01`…`missouri05`.
+ */
+export const MISSOURI_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/missourioverview",
+  },
+  {
+    label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
+    href: "/missouri01",
+  },
+  {
+    label: "World's Fair Information Manual",
+    href: "/missouri02",
+  },
+  {
+    label: "Gallery of Photographs",
+    href: "/missouri03",
+  },
+  {
+    label: "Rendezvous in Space",
+    href: "/missouri04",
+  },
+  {
+    label: "Magazine: Missouri Business 3/64",
+    href: "/missouri05",
+  },
+];
