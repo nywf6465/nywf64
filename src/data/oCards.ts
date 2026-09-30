@@ -6,6 +6,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type OCard = FountainsCard;
 
+<<<<<<< HEAD
 const OREGON: OCard = {
   id: "oregon",
   href: "/oregonoverview",
@@ -18,3 +19,17 @@ const OREGON: OCard = {
 };
 
 export const O_CARDS: OCard[] = [OREGON];
+=======
+const OKLAHOMA: OCard = {
+  id: "oklahoma",
+  href: "/oklahomaoverview",
+  title: "Oklahoma",
+  body: 'This "pavilion" is actually a park with winding pathways arranged around a lake and a large outdoor map of the state.',
+  pavilionSrc: "/images/oklahoma/oklahoma-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Oklahoma",
+};
+
+export const O_CARDS: OCard[] = [OKLAHOMA];
+>>>>>>> origin/cursor/oklahomaoverview-page-535c
