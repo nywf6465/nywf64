@@ -7,7 +7,7 @@ const PEOPLE = [
   {
     id: "robert-moses",
     title: "Could there have been a Fair without Robert Moses?",
-    href: "/people/robert-moses",
+    href: "/rm01",
     hoverSrc: "/images/people-hover/robert-moses.jpg",
     left: "0.889%",
     top: "1.073%",
