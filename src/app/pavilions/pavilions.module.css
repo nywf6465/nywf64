@@ -1,0 +1,34 @@
+/* Exact Pavilions hero — full image, no crop, no overlays */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/*
+ * Blank space under hero = vertical gap between first and second link sets
+ * in pavilions-links.jpg (1536×2610):
+ *   second top 38.774% − (first last top 24.751% + height 7.471%) = 6.552% of art height
+ *   = 171px at 1536px frame width → aspect-ratio 1536 / 171
+ * Same width constraint as PavilionsLinks .frame so the height tracks exactly.
+ */
+.afterHeroGap {
+  width: min(1536px, 100%);
+  margin: 0 auto;
+  aspect-ratio: 1536 / 171;
+  background: #fff;
+}

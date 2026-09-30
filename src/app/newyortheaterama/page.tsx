@@ -1,0 +1,12 @@
+import type { Metadata } from "next";
+import { NewyorTopicStub } from "@/components/NewyorTopicStub";
+
+export const metadata: Metadata = {
+  title: "newyortheaterama — New York State Pavilion — nywf64.com",
+  description:
+    "newyortheaterama at the 1964/1965 New York World's Fair — New York State Pavilion on nywf64.com.",
+};
+
+export default function Page() {
+  return <NewyorTopicStub title={"newyortheaterama"} />;
+}

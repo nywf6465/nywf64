@@ -1,0 +1,42 @@
+/* Exact Fountains hero — full image, no crop, no overlays (Disney Shows pattern) */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+/* Exact guidebook banner beneath hero — full-bleed, no overlays */
+.banner {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  line-height: 0;
+  /* Modest gap under hero (same pattern as Disney Shows / Pavilions mid-banner) */
+  margin-top: 0;
+}
+
+.bannerFrame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+}
+
+.bannerArt {
+  display: block;
+  width: 100%;
+  height: auto;
+}
