@@ -23,16 +23,16 @@ export default function Fisher02Page() {
       <FisherNavChrome />
 
       <article className={styles.article} aria-labelledby="fisher02-title">
-        <div className={styles.articleInner}>
-          <header className={styles.titleBar}>
-            <h1 id="fisher02-title" className={styles.titleBarMain}>
-              <em>New York World&apos;s Fair Memories</em>
-            </h1>
-            <p className={styles.titleBarByline}>
-              ... an essay by Albert Fisher (Page 2)
-            </p>
-          </header>
+        <header className={styles.titleBar}>
+          <h1 id="fisher02-title" className={styles.titleBarMain}>
+            <em>New York World&apos;s Fair Memories</em>
+          </h1>
+          <p className={styles.titleBarByline}>
+            ... an essay by Albert Fisher (Page 2)
+          </p>
+        </header>
 
+        <div className={styles.articleInner}>
           <div className={styles.body}>
             <p>
               When I interviewed the famous conductor and composer Leonard Bernstein for my World&apos;s Fair radio series, I learned a hard lesson about preparedness. We met at the Top Of The Fair restaurant where he had just landed via helicopter from Manhattan. I made the awful mistake of beginning the interview by asking: &quot;Is it Leonard BernSTEEN ... or BernSTINE&quot;? He responded with a coldness that would freeze hot coffee on the spot: &quot;Bernstein&quot; he replied. From that moment on, the only responses I could get out of him were a short and curt &quot;yes&quot; and &quot;no.&quot; He was not happy with me and I was not prepared. I learned my lesson.

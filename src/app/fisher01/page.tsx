@@ -25,16 +25,16 @@ export default function Fisher01Page() {
       <FisherNavChrome />
 
       <article className={styles.article} aria-labelledby="fisher01-title">
-        <div className={styles.articleInner}>
-          <header className={styles.titleBar}>
-            <h1 id="fisher01-title" className={styles.titleBarMain}>
-              <em>New York World&apos;s Fair Memories</em>
-            </h1>
-            <p className={styles.titleBarByline}>
-              ... an essay by Albert Fisher
-            </p>
-          </header>
+        <header className={styles.titleBar}>
+          <h1 id="fisher01-title" className={styles.titleBarMain}>
+            <em>New York World&apos;s Fair Memories</em>
+          </h1>
+          <p className={styles.titleBarByline}>
+            ... an essay by Albert Fisher
+          </p>
+        </header>
 
+        <div className={styles.articleInner}>
           <p className={styles.subtitle}>
             Albert Fisher was the Director of Television for the Thomas Deegan
             Company/New York World&apos;s Fair 1964-1965 Corporation
