@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useEffect, useId, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { StarDivider } from "./StarDivider";
 import styles from "./SiteHeader.module.css";
 
@@ -176,25 +176,59 @@ const CLOSE_HOTSPOT = {
 
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
+  const [pinned, setPinned] = useState(false);
   const menuId = useId();
+  const hotspotRef = useRef<HTMLButtonElement>(null);
+  const pinnedRef = useRef(false);
+  pinnedRef.current = pinned;
+
+  const close = useCallback(() => {
+    setPinned(false);
+    setOpen(false);
+  }, []);
+
+  const openHover = useCallback(() => {
+    setOpen(true);
+  }, []);
+
+  const leaveHover = useCallback(() => {
+    if (!pinnedRef.current) setOpen(false);
+  }, []);
+
+  const openPinned = useCallback(() => {
+    setPinned(true);
+    setOpen(true);
+  }, []);
+
+  // Hover peeks the menu; leave closes unless click-pinned (native events).
+  useEffect(() => {
+    const el = hotspotRef.current;
+    if (!el) return;
+    el.addEventListener("mouseenter", openHover);
+    el.addEventListener("mouseleave", leaveHover);
+    return () => {
+      el.removeEventListener("mouseenter", openHover);
+      el.removeEventListener("mouseleave", leaveHover);
+    };
+  }, [openHover, leaveHover]);
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    if (!open || !pinned) return;
+    const prev = document.body.style.overflow;
+    document.body.style.overflow = "hidden";
     return () => {
-      document.body.style.overflow = "";
+      document.body.style.overflow = prev;
     };
-  }, [open]);
+  }, [open, pinned]);
 
   useEffect(() => {
     if (!open) return;
     const onKeyDown = (event: KeyboardEvent) => {
-      if (event.key === "Escape") setOpen(false);
+      if (event.key === "Escape") close();
     };
     window.addEventListener("keydown", onKeyDown);
     return () => window.removeEventListener("keydown", onKeyDown);
-  }, [open]);
-
-  const close = () => setOpen(false);
+  }, [open, close]);
 
   return (
     <header className={styles.header}>
@@ -228,12 +262,17 @@ export function SiteHeader() {
         </span>
 
         <button
+          ref={hotspotRef}
           type="button"
-          className={styles.menuHotspot}
+          className={
+            pinned
+              ? `${styles.menuHotspot} ${styles.menuHotspotPinned}`
+              : styles.menuHotspot
+          }
           aria-expanded={open}
           aria-controls={menuId}
           aria-label={open ? "Close menu" : "Open menu"}
-          onClick={() => setOpen((v) => !v)}
+          onClick={openPinned}
         />
       </div>
 

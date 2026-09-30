@@ -61,7 +61,8 @@
   top: 0;
   bottom: 0;
   width: min(12%, 5.5rem);
-  z-index: 2;
+  /* Above the site drawer (z-index 50) so hover isn’t cancelled when the menu slides in. */
+  z-index: 55;
   cursor: pointer;
   background: transparent;
   border: 0;
@@ -71,6 +72,12 @@
 .menuHotspot:focus-visible {
   outline: 2px solid var(--burgundy);
   outline-offset: -4px;
+}
+
+/* While click-pinned, sit under the drawer so menu links remain clickable. */
+.menuHotspotPinned {
+  z-index: 2;
+  pointer-events: none;
 }
 
 .backdrop {
