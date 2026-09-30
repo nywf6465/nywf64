@@ -1,0 +1,187 @@
+/* Contact — legacy letter, same editorial frame as About */
+
+.main {
+  position: relative;
+  margin-top: 0;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem) 1.15rem clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--ink);
+  background:
+    radial-gradient(
+      ellipse 90% 40% at 50% -8%,
+      color-mix(in srgb, var(--mist) 80%, #fff) 0%,
+      transparent 58%
+    ),
+    linear-gradient(180deg, #f3f6fb 0%, #fff 22%, #fff 78%, #f5f7fb 100%);
+}
+
+.article {
+  position: relative;
+  width: min(42rem, 100%);
+  margin: 0 auto;
+  animation: rise 560ms var(--ease-out) both;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: clamp(1rem, 2.5vw, 1.4rem);
+}
+
+.kicker {
+  margin: 0 0 0.85rem;
+  color: #26346e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.rule {
+  flex: 1 1 auto;
+  max-width: 7.5rem;
+  height: 1.5px;
+  background: #26346e;
+}
+
+.title {
+  margin: 0;
+  color: #26346e;
+  font-family: var(--font-body);
+  font-size: clamp(1.55rem, 3.4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.body {
+  font-size: clamp(0.95rem, 1.4vw, 1.05rem);
+  line-height: 1.62;
+  color: #1e2748;
+}
+
+.body > p {
+  margin: 0 0 1.1rem;
+}
+
+.body a {
+  color: #26346e;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-offset: 0.14em;
+}
+
+.body a:hover,
+.body a:focus-visible {
+  color: #990000;
+}
+
+.emailLabel {
+  margin-bottom: 0.35rem !important;
+  color: #26346e;
+  font-size: clamp(1.15rem, 2.2vw, 1.35rem);
+  font-weight: 800;
+  letter-spacing: -0.01em;
+}
+
+.email {
+  margin-bottom: 1.35rem !important;
+  font-size: clamp(1.2rem, 2.4vw, 1.45rem);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.email a {
+  color: #990000;
+  text-decoration-thickness: 2px;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.brandNavy {
+  color: #191970;
+}
+
+.brandBurgundy {
+  color: maroon;
+}
+
+.welcome {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.please {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.warning {
+  color: #990000;
+  font-weight: 800;
+}
+
+.closing {
+  margin-top: 0.35rem !important;
+  color: #26346e;
+  font-size: clamp(1.05rem, 1.7vw, 1.2rem);
+  font-weight: 700;
+}
+
+.spaceAge {
+  color: #ff3300;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.signoff {
+  margin-top: clamp(0.4rem, 1.5vw, 0.8rem);
+  padding-top: 1.15rem;
+  border-top: 1px solid color-mix(in srgb, var(--navy) 18%, transparent);
+}
+
+.signature {
+  margin: 0;
+  color: #26346e;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.slash {
+  color: #26346e;
+  font-weight: 700;
+}
+
+.logoWrap {
+  margin: 1rem 0 0;
+}
+
+.logo {
+  width: 2.875rem;
+  height: auto;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.45rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article {
+    animation: none;
+  }
+}
