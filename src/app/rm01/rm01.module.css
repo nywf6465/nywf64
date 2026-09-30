@@ -48,78 +48,44 @@
   font-weight: 700;
 }
 
+.figure {
+  margin: 0 0 1.35rem;
+  max-width: min(18.5rem, 100%);
+}
+
 .photo {
   display: block;
-  width: min(18.5rem, 100%);
+  width: 100%;
   height: auto;
-  margin: 0 0 0.65rem;
+  margin: 0;
 }
 
 .caption {
-  margin: 0 0 1.25rem;
-  color: #222;
-  font-size: 0.82rem;
-  font-weight: 700;
-  line-height: 1.4;
+  margin: 0.4rem 0 0;
+  color: #555;
+  font-size: 0.72rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.35;
 }
 
-.body p {
+.body > p {
   margin: 0 0 1rem;
   color: #000;
   font-size: 1rem;
   line-height: 1.55;
 }
 
-.body p:last-child {
+.body > p:last-child {
   margin-bottom: 0;
 }
 
-.signoff {
-  margin-top: 1.25rem;
+.logoWrap {
+  margin-top: 1.5rem;
 }
 
-.signature {
-  margin: 0;
-  color: #000;
-  font-size: 1rem;
-  line-height: 1.55;
-}
-
-.brandLine {
-  margin: 0.35rem 0 0;
-  font-size: 1.15rem;
-  font-weight: 700;
-  line-height: 1.2;
-}
-
-.brandNavy {
-  color: #0066cc;
-}
-
-.brandBurgundy {
-  color: #ff3300;
-}
-
-.brandDotCom {
-  color: #0066cc;
-  font-size: 0.75em;
-  font-weight: 400;
-}
-
-.moreWrap {
-  display: flex;
-  justify-content: flex-end;
-  width: min(56.875rem, 100%);
-  margin: 1.25rem auto 0;
-}
-
-.moreLink {
-  display: inline-block;
-  line-height: 0;
-}
-
-.moreButton {
+.logo {
   display: block;
-  width: 75px;
-  height: 25px;
+  width: min(7.5rem, 40%);
+  height: auto;
 }

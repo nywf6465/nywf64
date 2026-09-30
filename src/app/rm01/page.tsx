@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { RmHero } from "@/components/RmHero";
 import { RmNavChrome } from "@/components/RmNavChrome";
 import { Nav2Bar } from "@/components/Nav2Bar";
@@ -35,20 +34,22 @@ export default function Rm01Page() {
           </header>
 
           <div className={styles.body}>
-            <Image
-              src="/images/rm01/rm3.jpg"
-              alt="Adlai Stevenson, Robert Moses and Walt Disney at the Illinois Pavilion"
-              width={296}
-              height={193}
-              className={styles.photo}
-              unoptimized
-            />
-            <p className={styles.caption}>
-              (Left to right) Adlai Stevenson, Robert Moses and Walt Disney at
-              the opening of Disney&apos;s &quot;Great Moments with Mr.
-              Lincoln&quot; at the Illinois Pavilion, New York World&apos;s
-              Fair, April, 1964.
-            </p>
+            <figure className={styles.figure}>
+              <Image
+                src="/images/rm01/rm3.jpg"
+                alt="Adlai Stevenson, Robert Moses and Walt Disney at the Illinois Pavilion"
+                width={296}
+                height={193}
+                className={styles.photo}
+                unoptimized
+              />
+              <figcaption className={styles.caption}>
+                (Left to right) Adlai Stevenson, Robert Moses and Walt Disney at
+                the opening of Disney&apos;s &quot;Great Moments with Mr.
+                Lincoln&quot; at the Illinois Pavilion, New York World&apos;s
+                Fair, April, 1964.
+              </figcaption>
+            </figure>
 
             <p>
               Robert Moses was the head of the New York World&apos;s Fair. To
@@ -128,31 +129,16 @@ export default function Rm01Page() {
             </p>
           </div>
 
-          <footer className={styles.signoff}>
-            <p className={styles.signature}>Bill Young</p>
-            <p className={styles.brandLine}>
-              <span className={styles.brandNavy}>nywf</span>
-              <span className={styles.brandBurgundy}>64</span>
-              <span className={styles.brandDotCom}>.com</span>
-            </p>
-          </footer>
-        </div>
-
-        <div className={styles.moreWrap}>
-          <Link
-            href="/rm03"
-            className={styles.moreLink}
-            aria-label="More content"
-          >
+          <div className={styles.logoWrap}>
             <Image
-              src="/images/rm01/morebutton.gif"
-              alt=""
-              width={75}
-              height={25}
-              className={styles.moreButton}
+              src="/images/about/nywf64-logo.gif"
+              alt="nywf64.com"
+              width={300}
+              height={100}
+              className={styles.logo}
               unoptimized
             />
-          </Link>
+          </div>
         </div>
       </article>
 
