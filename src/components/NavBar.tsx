@@ -1,10 +1,15 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import styles from "./NavBar.module.css";
 
 export type NavBarProps = {
-  /** Opens the nav menu (left-slide). */
-  onExplore: () => void;
+  /** Opens the nav menu while hovering the explore control. */
+  onHoverOpen: () => void;
+  /** Closes an unpinned hover menu when the pointer leaves the explore control. */
+  onHoverLeave: () => void;
+  /** Pins the nav menu open until closed via X, link, Escape, or backdrop. */
+  onClickOpen: () => void;
   /** Optional aria relationship to the nav menu panel id. */
   menuId?: string;
   /** Whether the nav menu is open (for aria-expanded). */
@@ -24,16 +29,37 @@ export type NavBarProps = {
  * Nav bar — prototype model for attraction pages.
  * User term: **nav bar**. Full-bleed width matching the site header.
  * Grey strip with left-justified hamburger + EXPLORE THIS ATTRACTION.
- * Opens the nav menu on hover (and click for touch / keyboard).
+ * Hover peeks the nav menu; click pins it open.
  */
 export function NavBar({
-  onExplore,
+  onHoverOpen,
+  onHoverLeave,
+  onClickOpen,
   menuId,
   menuOpen = false,
   exploreNoun = "ATTRACTION",
 }: NavBarProps) {
   const exploreText = `EXPLORE THIS ${exploreNoun}`;
   const aria = `Explore this ${exploreNoun.toLowerCase()}`;
+  const exploreRef = useRef<HTMLButtonElement>(null);
+  const hoverOpenRef = useRef(onHoverOpen);
+  const hoverLeaveRef = useRef(onHoverLeave);
+  hoverOpenRef.current = onHoverOpen;
+  hoverLeaveRef.current = onHoverLeave;
+
+  // Native mouseenter/leave so hover peek works reliably (including automation).
+  useEffect(() => {
+    const el = exploreRef.current;
+    if (!el) return;
+    const enter = () => hoverOpenRef.current();
+    const leave = () => hoverLeaveRef.current();
+    el.addEventListener("mouseenter", enter);
+    el.addEventListener("mouseleave", leave);
+    return () => {
+      el.removeEventListener("mouseenter", enter);
+      el.removeEventListener("mouseleave", leave);
+    };
+  }, []);
 
   return (
     <div
@@ -44,11 +70,10 @@ export function NavBar({
     >
       <div className={styles.inner}>
         <button
+          ref={exploreRef}
           type="button"
           className={styles.explore}
-          onMouseEnter={onExplore}
-          onPointerEnter={onExplore}
-          onClick={onExplore}
+          onClick={onClickOpen}
           aria-expanded={menuOpen}
           aria-controls={menuId}
           aria-label={`${aria} — open nav menu`}

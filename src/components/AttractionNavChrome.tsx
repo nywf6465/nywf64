@@ -8,8 +8,9 @@ import {
 } from "@/components/AttractionTopicsMenu";
 
 /**
- * Attraction page chrome: full-bleed **nav bar** that opens the **nav menu**
- * on hover (or click) over the hamburger + “Explore This …” control.
+ * Attraction page chrome: full-bleed **nav bar** that opens the **nav menu**.
+ * Hover peeks the menu; leaving the explore control closes it unless pinned.
+ * Click pins the menu open until X, a topic link, Escape, or backdrop.
  */
 export function AttractionNavChrome({
   topics,
@@ -28,9 +29,27 @@ export function AttractionNavChrome({
   menuTitle?: string;
 }) {
   const [open, setOpen] = useState(false);
+  const [pinned, setPinned] = useState(false);
   const menuId = useId();
-  const close = useCallback(() => setOpen(false), []);
-  const openMenu = useCallback(() => setOpen(true), []);
+
+  const close = useCallback(() => {
+    setPinned(false);
+    setOpen(false);
+  }, []);
+
+  const openHover = useCallback(() => {
+    setOpen(true);
+  }, []);
+
+  const leaveHover = useCallback(() => {
+    if (!pinned) setOpen(false);
+  }, [pinned]);
+
+  const openPinned = useCallback(() => {
+    setPinned(true);
+    setOpen(true);
+  }, []);
+
   const resolvedMenuTitle =
     menuTitle ??
     `Explore This ${exploreNoun.charAt(0)}${exploreNoun.slice(1).toLowerCase()}`;
@@ -38,7 +57,9 @@ export function AttractionNavChrome({
   return (
     <>
       <NavBar
-        onExplore={openMenu}
+        onHoverOpen={openHover}
+        onHoverLeave={leaveHover}
+        onClickOpen={openPinned}
         menuId={menuId}
         menuOpen={open}
         exploreNoun={exploreNoun}
@@ -49,6 +70,7 @@ export function AttractionNavChrome({
         open={open}
         onClose={close}
         title={resolvedMenuTitle}
+        lockScroll={pinned}
       />
     </>
   );

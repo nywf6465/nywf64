@@ -27,6 +27,11 @@ export type AttractionTopicsMenuProps = {
   title?: string;
   /** Optional id for aria-controls from the nav bar. */
   id?: string;
+  /**
+   * When true, lock document scroll while open (pinned / click-open menus).
+   * Hover peeks leave page scroll alone.
+   */
+  lockScroll?: boolean;
 };
 
 function TopicLabel({ topic }: { topic: AttractionTopic }): ReactNode {
@@ -53,19 +58,20 @@ export function AttractionTopicsMenu({
   onClose,
   title = "Explore This Attraction",
   id,
+  lockScroll = true,
 }: AttractionTopicsMenuProps) {
   const generatedId = useId();
   const menuId = id ?? generatedId;
   const pathname = usePathname() || "/";
 
   useEffect(() => {
-    if (!open) return;
+    if (!open || !lockScroll) return;
     const prev = document.body.style.overflow;
     document.body.style.overflow = "hidden";
     return () => {
       document.body.style.overflow = prev;
     };
-  }, [open]);
+  }, [open, lockScroll]);
 
   useEffect(() => {
     if (!open) return;
