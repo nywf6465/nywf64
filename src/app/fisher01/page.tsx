@@ -185,7 +185,12 @@ export default function Fisher01Page() {
         </div>
       </article>
 
-      <Nav2Bar previousHref="/fisher01" nextHref="/fisher02" hideOverview />
+      <Nav2Bar
+        previousHref="/people"
+        explicitPrevious
+        nextHref="/fisher02"
+        hideOverview
+      />
     </>
   );
 }
