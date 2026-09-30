@@ -1,0 +1,44 @@
+import Link from "next/link";
+import { IllinoisNavChrome } from "@/components/IllinoisNavChrome";
+import { Nav2Bar } from "@/components/Nav2Bar";
+
+/**
+ * Shared stub shell for Illinois menu topic landings.
+ * Stack: nav bar (illinois menu) → placeholder main → nav2.
+ */
+export function IllinoisTopicStub({
+  title,
+}: {
+  title: string;
+}) {
+  return (
+    <>
+      <IllinoisNavChrome />
+      <main
+        style={{
+          maxWidth: 720,
+          margin: "0 auto",
+          padding: "2.5rem 1.25rem 3rem",
+          fontFamily: "Arial, Helvetica, sans-serif",
+        }}
+      >
+        <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
+          <Link href="/illinoisoverview" style={{ color: "#990000" }}>
+            ← Illinois overview
+          </Link>
+        </p>
+        <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
+          {title}
+        </h1>
+        <p style={{ margin: "1rem 0 0", color: "#26346e", lineHeight: 1.5 }}>
+          Placeholder page — full Illinois Pavilion content will connect here.
+        </p>
+      </main>
+      <Nav2Bar
+        previousHref="/illinoisoverview"
+        overviewHref="/illinoisoverview"
+        nextHref="#"
+      />
+    </>
+  );
+}
