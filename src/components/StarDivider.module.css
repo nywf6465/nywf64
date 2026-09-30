@@ -1,0 +1,12 @@
+/* Solid thick burgundy line — no star (site-wide header/footer rule) */
+
+.divider {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  box-sizing: border-box;
+  height: 4px;
+  background: #990000;
+  border: 0;
+}

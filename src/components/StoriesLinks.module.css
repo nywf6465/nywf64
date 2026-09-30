@@ -1,0 +1,75 @@
+/* Stories link panels — hover crops swap burgundy↔navy on text/arrows only; five panels stack seamlessly */
+
+.section {
+  width: 100%;
+  background: #fff;
+  padding-top: 2.25rem;
+  padding-bottom: 2.5rem;
+}
+
+.stack {
+  width: min(1686px, 100%);
+  margin: 0 auto;
+  line-height: 0;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  line-height: 0;
+  margin: 0;
+  padding: 0;
+}
+
+/*
+ * Panel JPGs carry uneven white edge padding around the cards.
+ * Pull later frames up (negative margin as % of stack width) so
+ * card-to-card gutters match the tightest junction — especially
+ * closing the large panel 3→4 gap. Source images / hotspots / hover
+ * crops are unchanged.
+ */
+.frame:nth-child(2) {
+  margin-top: -0.12%;
+}
+
+.frame:nth-child(4) {
+  margin-top: -7.542%;
+}
+
+.frame:nth-child(5) {
+  margin-top: -3.31%;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hotspot {
+  position: absolute;
+  z-index: 1;
+  border-radius: 0.55rem;
+  overflow: hidden;
+}
+
+.hoverArt {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: fill;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 120ms ease;
+}
+
+.hotspot:hover .hoverArt,
+.hotspot:focus-visible .hoverArt {
+  opacity: 1;
+}
+
+.hotspot:focus-visible {
+  outline: 2px solid #990000;
+  outline-offset: 2px;
+}
