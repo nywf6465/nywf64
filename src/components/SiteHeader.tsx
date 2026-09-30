@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useCallback, useEffect, useId, useState } from "react";
+import { useCallback, useEffect, useId, useRef, useState } from "react";
 import { StarDivider } from "./StarDivider";
 import styles from "./SiteHeader.module.css";
 
@@ -177,6 +177,7 @@ const CLOSE_HOTSPOT = {
 export function SiteHeader() {
   const [open, setOpen] = useState(false);
   const menuId = useId();
+  const hotspotRef = useRef<HTMLButtonElement>(null);
 
   const close = useCallback(() => {
     setOpen(false);
@@ -185,6 +186,16 @@ export function SiteHeader() {
   const openMenu = useCallback(() => {
     setOpen(true);
   }, []);
+
+  // Hover opens and pins — menu stays until a link, X, backdrop, or Escape.
+  useEffect(() => {
+    const el = hotspotRef.current;
+    if (!el) return;
+    el.addEventListener("mouseenter", openMenu);
+    return () => {
+      el.removeEventListener("mouseenter", openMenu);
+    };
+  }, [openMenu]);
 
   useEffect(() => {
     if (!open) return;
@@ -236,6 +247,7 @@ export function SiteHeader() {
         </span>
 
         <button
+          ref={hotspotRef}
           type="button"
           className={
             open
