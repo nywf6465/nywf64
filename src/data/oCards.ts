@@ -6,20 +6,6 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type OCard = FountainsCard;
 
-<<<<<<< HEAD
-const OREGON: OCard = {
-  id: "oregon",
-  href: "/oregonoverview",
-  title: "Oregon",
-  body: "A continuous carnival of the Northwest includes log-rolling, canoe tilting and a wrestling match between a man and a bear.",
-  pavilionSrc: "/images/oregon/oregon-icon.png",
-  pavilionWidth: 761,
-  pavilionHeight: 331,
-  pavilionAlt: "Oregon",
-};
-
-export const O_CARDS: OCard[] = [OREGON];
-=======
 const OKLAHOMA: OCard = {
   id: "oklahoma",
   href: "/oklahomaoverview",
@@ -31,5 +17,15 @@ const OKLAHOMA: OCard = {
   pavilionAlt: "Oklahoma",
 };
 
-export const O_CARDS: OCard[] = [OKLAHOMA];
->>>>>>> origin/cursor/oklahomaoverview-page-535c
+const OREGON: OCard = {
+  id: "oregon",
+  href: "/oregonoverview",
+  title: "Oregon",
+  body: "A continuous carnival of the Northwest includes log-rolling, canoe tilting and a wrestling match between a man and a bear.",
+  pavilionSrc: "/images/oregon/oregon-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Oregon",
+};
+
+export const O_CARDS: OCard[] = [OKLAHOMA, OREGON];
