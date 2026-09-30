@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import type { ReactNode } from "react";
 import { Star } from "@/components/Star";
 import styles from "./links.module.css";
@@ -168,28 +167,6 @@ export default function LinksPage() {
           />
           <LinkSection heading="Other Websites of Interest" items={OTHER} />
         </div>
-
-        <footer className={styles.signoff}>
-          <p className={styles.siteLine}>
-            <Link href="/" className={styles.inlineLink}>
-              <span className={styles.brand}>
-                <span className={styles.brandNavy}>nywf</span>
-                <span className={styles.brandBurgundy}>64</span>
-                <span className={styles.brandNavy}>.com</span>
-              </span>
-            </Link>
-          </p>
-          <div className={styles.logoWrap}>
-            <Image
-              src="/images/about/nywf64-logo.gif"
-              alt="nywf64.com — New York World’s Fair 1964/1965"
-              width={300}
-              height={100}
-              className={styles.logo}
-              unoptimized
-            />
-          </div>
-        </footer>
       </article>
     </main>
   );

@@ -1,4 +1,4 @@
-/* Links — Contact page chrome; legacy blue titles + tomato descriptions */
+/* Links — Contact page chrome; navy titles + burgundy descriptions */
 
 .main {
   position: relative;
@@ -118,7 +118,7 @@
 }
 
 .titleLink {
-  color: #0066cc;
+  color: var(--navy);
   font-size: 0.98rem;
   font-weight: 600;
   line-height: 1.35;
@@ -137,54 +137,9 @@
 
 .description {
   margin: 0;
-  color: #ff6347;
+  color: #800020;
   font-size: 0.95rem;
   line-height: 1.45;
-}
-
-.signoff {
-  margin-top: clamp(1.75rem, 3.5vw, 2.4rem);
-  padding-top: 1.25rem;
-  border-top: 1px solid color-mix(in srgb, var(--navy) 18%, transparent);
-}
-
-.siteLine {
-  margin: 0;
-  font-size: 0.98rem;
-}
-
-.brand {
-  font-weight: 700;
-}
-
-.brandNavy {
-  color: #191970;
-}
-
-.brandBurgundy {
-  color: maroon;
-}
-
-.inlineLink {
-  color: inherit;
-  font-weight: 700;
-  text-decoration: underline;
-  text-decoration-color: color-mix(in srgb, var(--burgundy) 55%, transparent);
-  text-underline-offset: 0.14em;
-}
-
-.inlineLink:hover,
-.inlineLink:focus-visible {
-  color: var(--burgundy);
-}
-
-.logoWrap {
-  margin: 1.35rem 0 0;
-}
-
-.logo {
-  width: min(18.75rem, 100%);
-  height: auto;
 }
 
 @keyframes rise {
