@@ -42,10 +42,11 @@
   margin-right: auto;
 }
 
-/* Match SiteHeader mobile bannerWrap height (letter heroes only use --letter-hero-height) */
+/* Match SiteHeader mobile banner row height (letter heroes only use --letter-hero-height) */
 @media (max-width: 640px) {
   :root {
-    --letter-hero-height: 4.5rem;
+    /* (viewport − hamburger glyph) × banner art ratio for the visible brand slice */
+    --letter-hero-height: calc((100vw - 2.75rem) * 305 / 1990);
   }
 }
 

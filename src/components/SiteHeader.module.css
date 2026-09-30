@@ -170,17 +170,20 @@
 }
 
 /*
-  Phone: a full-width cover crop clips the hamburger off the right and makes
-  the header feel oversized. Keep a compact row: emblem on the left, the
-  banner’s own hamburger art pinned on the right.
-  Emblem + rocket line ends before the tagline (~x=1040 of 2172).
+  Phone: don’t cover-crop the banner (that hid the hamburger) and don’t
+  zoom the left art so hard that “Space Age World’s Fair” is clipped.
+  Scale emblem + full tagline into the space left of the menu, and pin the
+  banner’s own hamburger art on the right.
+  Branding ink ends just before the hamburger (~x=1990 of 2172).
   Hamburger center is ~95.4% across the art.
 */
 @media (max-width: 640px) {
   .bannerWrap {
+    --banner-vis-end: 1990;
+    --menu-glyph-w: 2.75rem;
     display: flex;
     align-items: stretch;
-    height: 4.5rem;
+    height: auto;
     padding-bottom: 0.25rem;
   }
 
@@ -188,7 +191,7 @@
     position: relative;
     flex: 1 1 auto;
     min-width: 0;
-    height: 100%;
+    aspect-ratio: 1990 / 305;
     overflow: hidden;
   }
 
@@ -197,16 +200,17 @@
     top: 0;
     left: 0;
     height: 100%;
-    width: auto;
+    width: calc(2172 / 1990 * 100%);
     max-width: none;
+    object-fit: fill;
   }
 
   .menuGlyph {
     display: block;
     position: relative;
-    flex: 0 0 3rem;
-    width: 3rem;
-    height: 100%;
+    flex: 0 0 var(--menu-glyph-w);
+    width: var(--menu-glyph-w);
+    align-self: stretch;
     overflow: hidden;
     pointer-events: none;
   }
@@ -224,7 +228,7 @@
   }
 
   .menuHotspot {
-    width: 3rem;
-    min-width: 3rem;
+    width: var(--menu-glyph-w);
+    min-width: var(--menu-glyph-w);
   }
 }
