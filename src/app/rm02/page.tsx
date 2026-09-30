@@ -26,14 +26,14 @@ export default function Rm02Page() {
       <RmNavChrome />
 
       <article className={styles.article} aria-labelledby="rm02-title">
-        <div className={styles.articleInner}>
-          <header className={styles.titleBar}>
-            <h1 id="rm02-title" className={styles.titleBarMain}>
-              <em>The Promised Land of Mr. Moses</em>
-            </h1>
-            <p className={styles.titleBarByline}>... by Ogden Nash</p>
-          </header>
+        <header className={styles.titleBar}>
+          <h1 id="rm02-title" className={styles.titleBarMain}>
+            <em>The Promised Land of Mr. Moses</em>
+          </h1>
+          <p className={styles.titleBarByline}>... by Ogden Nash</p>
+        </header>
 
+        <div className={styles.articleInner}>
           <figure className={styles.figure}>
             <Image
               src="/images/rm02/rm2.jpg"

@@ -27,14 +27,14 @@ export default function Rm03Page() {
       <RmNavChrome />
 
       <article className={styles.article} aria-labelledby="rm03-title">
-        <div className={styles.articleInner}>
-          <header className={styles.titleBar}>
-            <h1 id="rm03-title" className={styles.titleBarMain}>
-              Booklet:{" "}
-              <em>The Fair, The City and The Critics</em>
-            </h1>
-          </header>
+        <header className={styles.titleBar}>
+          <h1 id="rm03-title" className={styles.titleBarMain}>
+            Booklet:{" "}
+            <em>The Fair, The City and The Critics</em>
+          </h1>
+        </header>
 
+        <div className={styles.articleInner}>
           <div className={styles.coverWrap}>
             <a
               className={styles.coverLink}

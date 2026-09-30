@@ -4,21 +4,27 @@
   width: 100%;
   box-sizing: border-box;
   background: #fff;
-  padding: 0 1rem clamp(2rem, 4vw, 3rem);
+  /* No horizontal pad — title bar matches nav2 full pageShell width */
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
 }
 
 .articleInner {
   width: min(37.5rem, 100%);
   margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
   font-family: Arial, Helvetica, sans-serif;
 }
 
+/* Full width of pageShell — same length as nav2 bar */
 .titleBar {
   display: flex;
   flex-wrap: wrap;
   align-items: baseline;
   justify-content: center;
   gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
   margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
   padding: 0.55rem 0.85rem;
   background:

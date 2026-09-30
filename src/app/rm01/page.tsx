@@ -25,14 +25,14 @@ export default function Rm01Page() {
       <RmNavChrome />
 
       <article className={styles.article} aria-labelledby="rm01-title">
-        <div className={styles.articleInner}>
-          <header className={styles.titleBar}>
-            <h1 id="rm01-title" className={styles.titleBarMain}>
-              <em>My Encounter with Robert Moses</em> ...
-            </h1>
-            <p className={styles.titleBarByline}>by Bill Young</p>
-          </header>
+        <header className={styles.titleBar}>
+          <h1 id="rm01-title" className={styles.titleBarMain}>
+            <em>My Encounter with Robert Moses</em> ...
+          </h1>
+          <p className={styles.titleBarByline}>by Bill Young</p>
+        </header>
 
+        <div className={styles.articleInner}>
           <div className={styles.body}>
             <figure className={styles.figure}>
               <Image
