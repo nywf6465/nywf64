@@ -21,7 +21,7 @@ const items = [
     icon: "globe",
   },
   {
-    href: "#links",
+    href: "/links",
     label: "Links",
     icon: "link",
   },
@@ -47,7 +47,6 @@ export function UtilityBar() {
         ))}
       </ul>
       <div id="search" className={styles.hook} hidden aria-hidden="true" />
-      <div id="links" className={styles.hook} hidden aria-hidden="true" />
     </nav>
   );
 }

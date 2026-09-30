@@ -1,0 +1,215 @@
+/* Links — Contact page chrome; legacy blue titles + tomato descriptions */
+
+.main {
+  position: relative;
+  margin-top: 0;
+  padding: clamp(1.5rem, 3.5vw, 2.5rem) 1.15rem clamp(2.5rem, 5vw, 3.5rem);
+  color: var(--ink);
+  background:
+    radial-gradient(
+      ellipse 90% 40% at 50% -8%,
+      color-mix(in srgb, var(--mist) 80%, #fff) 0%,
+      transparent 58%
+    ),
+    linear-gradient(180deg, #f3f6fb 0%, #fff 22%, #fff 78%, #f5f7fb 100%);
+}
+
+.article {
+  position: relative;
+  width: min(48rem, 100%);
+  margin: 0 auto;
+  animation: rise 560ms var(--ease-out) both;
+}
+
+.intro {
+  text-align: center;
+  margin-bottom: clamp(1.25rem, 3vw, 1.75rem);
+}
+
+.kicker {
+  margin: 0 0 0.85rem;
+  color: #26346e;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.7rem;
+  margin-bottom: 1rem;
+}
+
+.rule {
+  flex: 1 1 auto;
+  max-width: 7.5rem;
+  height: 1.5px;
+  background: #26346e;
+}
+
+.title {
+  margin: 0;
+  color: #26346e;
+  font-family: var(--font-body);
+  font-size: clamp(1.55rem, 3.4vw, 2rem);
+  font-weight: 800;
+  line-height: 1.15;
+  letter-spacing: -0.01em;
+}
+
+.body {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.75rem, 3.5vw, 2.4rem);
+}
+
+.sectionTitle {
+  margin: 0 0 0.85rem;
+  color: #333;
+  font-family: var(--font-body);
+  font-size: clamp(1.15rem, 2.4vw, 1.45rem);
+  font-weight: 800;
+  line-height: 1.25;
+}
+
+.sectionTitle em {
+  font-style: italic;
+  font-weight: 800;
+}
+
+.list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: 3.25rem minmax(9rem, 12.5rem) minmax(0, 1fr);
+  gap: 0.75rem 0.9rem;
+  align-items: start;
+  padding: 0.85rem 0;
+  border-bottom: 1px solid color-mix(in srgb, #999 45%, transparent);
+}
+
+.row:first-child {
+  padding-top: 0.15rem;
+}
+
+.row:last-child {
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+
+.iconLink {
+  display: block;
+  width: 50px;
+  line-height: 0;
+}
+
+.icon {
+  display: block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+}
+
+.titleLink {
+  color: #0066cc;
+  font-size: 0.98rem;
+  font-weight: 600;
+  line-height: 1.35;
+  text-decoration: none;
+}
+
+.titleLink:hover,
+.titleLink:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.titleLink em {
+  font-style: italic;
+}
+
+.description {
+  margin: 0;
+  color: #ff6347;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.signoff {
+  margin-top: clamp(1.75rem, 3.5vw, 2.4rem);
+  padding-top: 1.25rem;
+  border-top: 1px solid color-mix(in srgb, var(--navy) 18%, transparent);
+}
+
+.siteLine {
+  margin: 0;
+  font-size: 0.98rem;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.brandNavy {
+  color: #191970;
+}
+
+.brandBurgundy {
+  color: maroon;
+}
+
+.inlineLink {
+  color: inherit;
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: color-mix(in srgb, var(--burgundy) 55%, transparent);
+  text-underline-offset: 0.14em;
+}
+
+.inlineLink:hover,
+.inlineLink:focus-visible {
+  color: var(--burgundy);
+}
+
+.logoWrap {
+  margin: 1.35rem 0 0;
+}
+
+.logo {
+  width: min(18.75rem, 100%);
+  height: auto;
+}
+
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(0.45rem);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 3.25rem minmax(0, 1fr);
+  }
+
+  .description {
+    grid-column: 2;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .article {
+    animation: none;
+  }
+}
