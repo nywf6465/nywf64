@@ -27,9 +27,7 @@ export default function Fisher02Page() {
           <h1 id="fisher02-title" className={styles.titleBarMain}>
             <em>New York World&apos;s Fair Memories</em>
           </h1>
-          <p className={styles.titleBarByline}>
-            ... an essay by Albert Fisher (Page 2)
-          </p>
+          <p className={styles.titleBarByline}>(… continued)</p>
         </header>
 
         <div className={styles.articleInner}>
