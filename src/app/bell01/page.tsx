@@ -10,8 +10,10 @@ export const metadata: Metadata = {
 };
 
 /**
- * Bell System guidebook page — canonical Official Guidebook & Souvenir Map page.
+ * Bell System guidebook page — canonical “guidebook” standard instance.
  * Body from legacy bell01.html. Layout: GuidebookSouvenirPage (/bell01).
+ * Future attraction `*01` guidebooks should copy this page and fill props from
+ * their legacy HTML (see AGENTS.md “Guidebook standard”).
  */
 export default function Bell01Page() {
   return (
