@@ -1,0 +1,170 @@
+/*
+ * Postcard pages (“postcard” standard).
+ * Canonical instance: /bell03. Legacy attraction postcard pages use this layout.
+ *
+ * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav. Keep it
+ * on every postcard conversion (see AGENTS.md).
+ *
+ * Stack: hero → attraction nav → navy title bar → centered postcard entries →
+ * Nav2Bar.
+ * Title bar text: “Postcards”.
+ *
+ * Body (legacy ~650px table that expands for 450+300 images, centered):
+ * stacked postcard entries. Each entry is front image (left) + reverse image
+ * with meta lines beneath it (right), then Arial Narrow source line(s).
+ * Front/reverse keep border="1".
+ *
+ * Type: Arial for meta lines; Arial Narrow for source lines. “Unauthorized
+ * Postcard” is red, matching legacy color="red".
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  /* Legacy table width="650" but 450+300 fronts/reverses expand it in browsers. */
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 1.75rem;
+}
+
+.entry {
+  width: 100%;
+}
+
+.row {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+}
+
+.front {
+  flex: 0 1 auto;
+  max-width: 100%;
+}
+
+.frontImg {
+  display: block;
+  width: min(450px, 100%);
+  height: auto;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.side {
+  flex: 0 1 300px;
+  width: min(300px, 100%);
+  max-width: 100%;
+}
+
+.reverseImg {
+  display: block;
+  width: min(300px, 100%);
+  height: auto;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.meta {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.meta li {
+  margin: 0;
+}
+
+.unauthorized {
+  color: #f00;
+}
+
+.sources {
+  margin: 0.45rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.sources li {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .row {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .side {
+    flex-basis: auto;
+    width: min(300px, 100%);
+  }
+
+  .meta,
+  .sources {
+    width: min(450px, 100%);
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

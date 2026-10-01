@@ -1,12 +1,6 @@
-import type { Metadata } from "next";
-import { BellTopicStub } from "@/components/BellTopicStub";
+import { redirect } from "next/navigation";
 
-export const metadata: Metadata = {
-  title: "bellpostcards — Bell System Pavilion — nywf64.com",
-  description:
-    "bellpostcards at the 1964/1965 New York World's Fair — Bell System Pavilion on nywf64.com.",
-};
-
-export default function Page() {
-  return <BellTopicStub title={"bellpostcards"} />;
+/** Legacy stub route — Postcards live at /bell03. */
+export default function BellPostcardsRedirectPage() {
+  redirect("/bell03");
 }
