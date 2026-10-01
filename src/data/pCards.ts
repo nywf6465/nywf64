@@ -50,9 +50,22 @@ const PAVILION_OF_AMERICAN_INTERIORS: PCard = {
   pavilionAlt: "Pavilion of American Interiors",
 };
 
+const PAVILION_OF_PARIS: PCard = {
+  id: "pavpar",
+  href: "/pavparoverview",
+  title: "Pavilion of Paris",
+  body: "A sidewalk cafe, a well-stocked wine cellar and charming shops help recreate the lighthearted atmosphere of Paris.",
+  pavilionSrc: "/images/pavpar/pavpar-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Pavilion of Paris",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
   PARKER_PEN,
   PAVILION_OF_AMERICAN_INTERIORS,
+  PAVILION_OF_PARIS,
 ];
+
