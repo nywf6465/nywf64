@@ -111,10 +111,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  align-self: flex-end;
+  align-self: flex-start;
   gap: 0.35rem;
   flex: 0 0 auto;
-  padding-top: 0.15rem;
+  padding-top: 0;
 }
 
 .areaMap {
