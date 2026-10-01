@@ -61,11 +61,24 @@ const PAVILION_OF_PARIS: PCard = {
   pavilionAlt: "Pavilion of Paris",
 };
 
+const PENNSYLVANIA: PCard = {
+  id: "pennsy",
+  href: "/pennsyoverview",
+  title: "Pennsylvania",
+  body: "The Pennsylvania exhibit features a full-sized replica of the Liberty Bell. The bell can be rung by visitors.",
+  pavilionSrc: "/images/pennsy/pennsy-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Pennsylvania",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
   PARKER_PEN,
   PAVILION_OF_AMERICAN_INTERIORS,
   PAVILION_OF_PARIS,
+  PENNSYLVANIA,
 ];
+
 
