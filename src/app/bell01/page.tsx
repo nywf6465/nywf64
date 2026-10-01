@@ -170,7 +170,7 @@ export default function Bell01Page() {
           width: 60,
           height: 54,
         },
-        locateHref: "http://nywf64.com/bellmap.shtml",
+        locateHref: "/bellmap",
       }}
     />
   );
