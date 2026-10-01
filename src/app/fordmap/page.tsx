@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { FordNavChrome } from "@/components/FordNavChrome";
+import { LocateMapTitleBar } from "@/components/LocateMapTitleBar";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./fordmap.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
@@ -15,8 +16,8 @@ export const metadata: Metadata = {
 
 /**
  * Ford locate-it map page (`/fordmap`).
- * Stack matches other ford pages: hero → FordNavChrome → body → Nav2Bar.
- * Body content is left-justified (same standards as `/bellmap`).
+ * Stack: hero → FordNavChrome → navy title bar → left-justified body → Nav2Bar.
+ * Title bar (“1964 Official Souvenir Map”) is the map-page standard.
  */
 export default function FordMapPage() {
   return (
@@ -40,7 +41,8 @@ export default function FordMapPage() {
 
       <FordNavChrome />
 
-      <article className={styles.article} aria-label="Locate it map">
+      <article className={styles.article} aria-labelledby="fordmap-title">
+        <LocateMapTitleBar titleId="fordmap-title" />
         <div className={styles.articleInner}>
           <div className={styles.intro}>
             <p className={styles.introLead}>
