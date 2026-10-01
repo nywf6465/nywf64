@@ -5,7 +5,7 @@ import styles from "./FountainsLinks.module.css";
 
 /**
  * P-letter links section — same fountains link-card model as `/B` / `/N` / `/O`.
- * P-specific rows live in `pCards.ts` (empty until cards arrive).
+ * P-specific rows live in `pCards.ts`.
  */
 
 function LinkIndicator() {
