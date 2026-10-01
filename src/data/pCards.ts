@@ -118,6 +118,18 @@ const POOL_OF_INDUSTRY: PCard = {
   pavilionAlt: "Pool of Industry ",
 };
 
+/** Identical to the Pool of Reflections row on the Fountains links page. */
+const POOL_OF_REFLECTIONS: PCard = {
+  id: "pool-of-reflections",
+  href: "/poorefoverview",
+  title: "Pool of Reflections",
+  body: "The Pool of Reflections is a series of five water ponds at stepped heights with water flowing from higher to lower levels forming a long cascading type pool.",
+  pavilionSrc: "/images/fountains/pool-of-reflections-icon.png",
+  pavilionWidth: 762,
+  pavilionHeight: 330,
+  pavilionAlt: "Pool of Reflections",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
@@ -129,7 +141,9 @@ export const P_CARDS: PCard[] = [
   PHILIPPINES,
   POLYNESIA,
   POOL_OF_INDUSTRY,
+  POOL_OF_REFLECTIONS,
 ];
+
 
 
 
