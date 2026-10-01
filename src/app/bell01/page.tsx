@@ -26,7 +26,7 @@ export default function Bell01Page() {
       }}
       nav={<BellNavChrome />}
       previousHref="/belloverview"
-      nextHref="/bellmanual"
+      nextHref="/bell02"
       guide1964={{
         cover: {
           src: "/images/bell01/guide1964.jpg",

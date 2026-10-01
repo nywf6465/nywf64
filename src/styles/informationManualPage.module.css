@@ -1,0 +1,173 @@
+/*
+ * World's Fair Information Manual pages (“manual” standard).
+ * Canonical instance: /bell02. Legacy attraction `*02` pages use this layout.
+ *
+ * Stack: hero → attraction nav → navy title bar → centered body → Nav2Bar.
+ * Title bar text: “World's Fair Information Manual”.
+ *
+ * Body (legacy ~600px table, centered):
+ * 1) Two-column fact sheet (underlined labels)
+ * 2) Primary figure + Arial Narrow source caption
+ * 3) FEATURES heading + labeled sections
+ * 4) Optional rule + secondary figure (title + source)
+ *
+ * Type: Times for body copy with no legacy face; Arial Narrow for source
+ * lines; Arial for the secondary figure title when face="Arial".
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.facts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 1.25rem;
+  margin: 0 0 1.1rem;
+}
+
+.factBlock {
+  margin: 0 0 0.85rem;
+}
+
+.factLabel {
+  margin: 0 0 0.2rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.factLines {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.factLines li {
+  margin: 0;
+}
+
+.figure {
+  margin: 0 0 0.85rem;
+  text-align: center;
+}
+
+.figureArt {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.figureArtBordered {
+  border: 1px solid #000;
+}
+
+.figureCaption {
+  margin: 0.35rem 0 0;
+  text-align: left;
+}
+
+.figureTitle {
+  margin: 0.45rem 0 0.15rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.figureSource {
+  margin: 0.25rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.3;
+  text-align: left;
+}
+
+.featuresHeading {
+  margin: 0.75rem 0 0.65rem;
+  font-weight: 400;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.feature {
+  margin: 0 0 0.75rem;
+}
+
+.featureLabel {
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.featureBody {
+  margin: 0;
+}
+
+/* Inline underlined names inside feature copy (legacy <U>). */
+.u {
+  text-decoration: underline;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1.1rem 0 0.85rem;
+}
+
+@media (max-width: 720px) {
+  .facts {
+    grid-template-columns: 1fr;
+  }
+}

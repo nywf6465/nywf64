@@ -1,0 +1,203 @@
+import type { ReactNode } from "react";
+import Image from "next/image";
+import { Nav2Bar } from "@/components/Nav2Bar";
+import styles from "@/styles/informationManualPage.module.css";
+import heroBottomBar from "@/styles/heroBottomBar.module.css";
+import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
+
+/**
+ * World's Fair Information Manual page (“manual” standard).
+ * Canonical instance: /bell02. Legacy attraction `*02` pages use this layout.
+ *
+ * Stack: hero → attraction nav → navy title bar → centered body → Nav2Bar.
+ */
+
+export type ManualImage = {
+  src: string;
+  width: number;
+  height: number;
+  alt?: string;
+  /** Optional centered title above the source (e.g. “The Bell System”). */
+  title?: ReactNode;
+  /** Arial Narrow source / credit line under the figure. */
+  source?: ReactNode;
+  /** Legacy second figure uses border="1". */
+  bordered?: boolean;
+};
+
+export type ManualFactField = {
+  label: string;
+  lines: ReactNode[];
+};
+
+export type ManualFeature = {
+  /** Underlined lead label (e.g. Exterior, Interior). */
+  label?: string;
+  body: ReactNode;
+};
+
+export type InformationManualPageProps = {
+  heroLabel: string;
+  hero: {
+    src: string;
+    width: number;
+    height: number;
+    alt?: string;
+  };
+  nav: ReactNode;
+  factsLeft: ManualFactField[];
+  factsRight: ManualFactField[];
+  primaryFigure: ManualImage;
+  features: ManualFeature[];
+  secondaryFigure?: ManualImage;
+  previousHref: string;
+  nextHref: string;
+  overviewHref?: string;
+  titleId?: string;
+  /**
+   * Navy title-bar text. Defaults to the standard manual heading.
+   */
+  title?: string;
+  featuresHeading?: string;
+};
+
+const DEFAULT_TITLE = "World's Fair Information Manual";
+
+function FactColumn({
+  fields,
+  label,
+}: {
+  fields: ManualFactField[];
+  label: string;
+}) {
+  return (
+    <div aria-label={label}>
+      {fields.map((field) => (
+        <div key={field.label} className={styles.factBlock}>
+          <p className={styles.factLabel}>{field.label}</p>
+          <ul className={styles.factLines}>
+            {field.lines.map((line, index) => (
+              <li key={`${field.label}-${index}`}>{line}</li>
+            ))}
+          </ul>
+        </div>
+      ))}
+    </div>
+  );
+}
+
+function ManualFigure({ figure }: { figure: ManualImage }) {
+  return (
+    <figure className={styles.figure}>
+      <Image
+        src={figure.src}
+        alt={figure.alt ?? ""}
+        width={figure.width}
+        height={figure.height}
+        className={
+          figure.bordered
+            ? `${styles.figureArt} ${styles.figureArtBordered}`
+            : styles.figureArt
+        }
+        unoptimized
+      />
+      {figure.title || figure.source ? (
+        <figcaption className={styles.figureCaption}>
+          {figure.title ? (
+            <p className={styles.figureTitle}>{figure.title}</p>
+          ) : null}
+          {figure.source ? (
+            <p className={styles.figureSource}>{figure.source}</p>
+          ) : null}
+        </figcaption>
+      ) : null}
+    </figure>
+  );
+}
+
+export function InformationManualPage({
+  heroLabel,
+  hero,
+  nav,
+  factsLeft,
+  factsRight,
+  primaryFigure,
+  features,
+  secondaryFigure,
+  previousHref,
+  nextHref,
+  overviewHref,
+  titleId = "information-manual-title",
+  title = DEFAULT_TITLE,
+  featuresHeading = "FEATURES",
+}: InformationManualPageProps) {
+  return (
+    <>
+      <section className={styles.hero} aria-label={heroLabel}>
+        <div
+          className={`${overviewHeroStyles.frame} ${heroBottomBar.photoFrame}`}
+        >
+          <Image
+            src={hero.src}
+            alt={hero.alt ?? ""}
+            width={hero.width}
+            height={hero.height}
+            priority
+            sizes="100vw"
+            className={overviewHeroStyles.art}
+            unoptimized
+          />
+        </div>
+      </section>
+
+      {nav}
+
+      <article className={styles.article} aria-labelledby={titleId}>
+        <header className={styles.titleBar}>
+          <h1 id={titleId} className={styles.titleBarMain}>
+            {title}
+          </h1>
+        </header>
+
+        <div className={styles.articleInner}>
+          <div className={styles.facts}>
+            <FactColumn fields={factsLeft} label="Exhibit facts" />
+            <FactColumn fields={factsRight} label="Site and construction facts" />
+          </div>
+
+          <ManualFigure figure={primaryFigure} />
+
+          <p className={styles.featuresHeading}>{featuresHeading}</p>
+          {features.map((feature, index) => (
+            <p
+              key={feature.label ?? `feature-${index}`}
+              className={styles.feature}
+            >
+              {feature.label ? (
+                <>
+                  <span className={styles.featureLabel}>{feature.label}</span>
+                  {": "}
+                </>
+              ) : null}
+              <span className={styles.featureBody}>{feature.body}</span>
+            </p>
+          ))}
+
+          {secondaryFigure ? (
+            <>
+              <hr className={styles.rule} />
+              <ManualFigure figure={secondaryFigure} />
+            </>
+          ) : null}
+        </div>
+      </article>
+
+      <Nav2Bar
+        previousHref={previousHref}
+        explicitPrevious
+        overviewHref={overviewHref}
+        nextHref={nextHref}
+      />
+    </>
+  );
+}
