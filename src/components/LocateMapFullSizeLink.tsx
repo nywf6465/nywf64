@@ -31,8 +31,7 @@ export function LocateMapFullSizeLink({
     <p className={styles.mapNote}>
       <Link href={href} className={styles.mapNoteLink}>
         <span className={styles.mapNoteText}>
-          See a <i>full-size</i> version of the 1964 Official Souvenir Map (
-          <b>LARGE&nbsp;download</b>).
+          See a <i>full-size</i> version of the 1964 Official Souvenir Map.
         </span>
         <LinkIndicator />
       </Link>
