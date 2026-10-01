@@ -1,0 +1,38 @@
+/*
+ * Locate-it map pages (e.g. /bellmap, /fordmap).
+ *
+ * Standard stack: hero → attraction nav → navy title bar → left-justified
+ * body → Nav2Bar.
+ *
+ * Title bar matches GuidebookSouvenirPage (/bell01, /ford01): full-width
+ * navy banner beneath the nav, centered Arial title.
+ * Title text for every map page: "1964 Official Souvenir Map".
+ */
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
