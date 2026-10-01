@@ -210,7 +210,6 @@ export default function Bell01Page() {
                 </Link>
               </div>
             </div>
-            <p className={styles.revised}>Revised 2.24.07</p>
           </section>
         </div>
       </article>
