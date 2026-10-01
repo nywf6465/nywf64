@@ -60,7 +60,6 @@ export default function Bell01Page() {
               className={styles.cover}
               unoptimized
             />
-            <hr className={styles.coverRule} />
             <Image
               src="/images/bell01/bell-logo-1964.gif"
               alt=""
@@ -127,7 +126,6 @@ export default function Bell01Page() {
               className={styles.cover}
               unoptimized
             />
-            <hr className={styles.coverRule} />
             <Image
               src="/images/bell01/bell-logo-1965.gif"
               alt=""
