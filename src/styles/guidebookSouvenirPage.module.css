@@ -1,0 +1,233 @@
+/*
+ * Official Guidebook & Souvenir Map pages.
+ * Canonical instance: /bell01. Legacy *01.html pages share this layout.
+ *
+ * Three columns, silver dividers, stacking under 720px.
+ * Captions are three lines at the lower right of each cover.
+ * Locate It sits at the upper right of the map cover.
+ * Covers keep a 1px frame and have no rule under them.
+ * The legacy "Revised" line is not part of this layout.
+ *
+ * Times New Roman is the face for text whose legacy <font> tag sets no face.
+ * Arial is the face where the legacy tag sets face="Arial".
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  /* Legacy title bar: face="Arial,Helvetica,Geneva,Swiss,SunSans-Regular" */
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  width: 100%;
+}
+
+.col {
+  min-width: 0;
+  padding: 0.45rem 0.7rem 1.1rem;
+  border-left: 2px solid silver;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #000;
+}
+
+.entryHead {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.35rem;
+  margin: 0 0 1.1rem;
+}
+
+.intro {
+  margin: 0;
+  color: #990000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: left;
+  white-space: nowrap;
+}
+
+.cover {
+  display: block;
+  width: 136px;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+  flex: 0 0 auto;
+}
+
+.mapSide {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: stretch;
+  align-self: stretch;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.mapCover {
+  display: block;
+  width: 110px;
+  height: auto;
+  border: 1px solid #000;
+  flex: 0 0 auto;
+}
+
+.locate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-self: flex-start;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+  padding-top: 0;
+}
+
+.areaMap {
+  display: block;
+  width: 60px;
+  height: auto;
+}
+
+.locateLink {
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: normal;
+  text-decoration: underline;
+}
+
+.logo {
+  display: block;
+  width: 144px;
+  height: auto;
+  margin: 0.35rem auto 0.35rem;
+}
+
+.pavilionName {
+  margin: 0 0 0.55rem;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.pavilionNameSans {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.copy,
+.highlight,
+.admission,
+.summary {
+  margin: 0 0 0.7rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: normal;
+  text-align: left;
+}
+
+.summary {
+  font-style: italic;
+}
+
+.admission {
+  font-style: italic;
+}
+
+.admission strong {
+  font-style: italic;
+  font-weight: 700;
+}
+
+/* 1964 asterisk is <b><font size="+1"> — roman, one step larger than the italic line. */
+.admission strong.admissionStar {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-size: 18px;
+  font-weight: 700;
+}
+
+.highlightsLabel {
+  margin: 0.15rem 0 0.45rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+  text-align: center;
+}
+
+.highlight strong {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+/* 1965 highlight labels are face="Arial" size="-1". */
+.highlightSans strong {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 720px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .col {
+    border-left: 0;
+    border-top: 2px solid silver;
+    padding-top: 0.9rem;
+  }
+
+  .col:first-child {
+    border-top: 0;
+  }
+}

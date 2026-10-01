@@ -11,7 +11,7 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
-    href: "/bellguidebook",
+    href: "/bell01",
   },
   {
     label: "World's Fair Information Manual",
