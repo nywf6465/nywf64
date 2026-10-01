@@ -2,7 +2,7 @@ import Link from "next/link";
 import { PanamgNavChrome } from "@/components/PanamgNavChrome";
 import { Nav2Bar } from "@/components/Nav2Bar";
 
-/** Shared stub shell for panamg (Panama menu) topic landings. */
+/** Shared stub shell for panamg / panama menu topic landings. */
 export function PanamgTopicStub({ title }: { title: string }) {
   return (
     <>
@@ -17,21 +17,21 @@ export function PanamgTopicStub({ title }: { title: string }) {
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
           <Link href="/panamgoverview" style={{ color: "#990000" }}>
-            ← Avis Pan American Highway Rides overview
+            ← Pan American Highway Gardens overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
           {title}
         </h1>
         <p style={{ margin: "1rem 0 0", color: "#26346e", lineHeight: 1.5 }}>
-          Placeholder page — full Avis Pan American Highway Rides content will
+          Placeholder page — full Pan American Highway Gardens content will
           connect here.
         </p>
       </main>
       <Nav2Bar
         previousHref="/panamgoverview"
         overviewHref="/panamgoverview"
-        nextHref="/panamg01"
+        nextHref="/panama01"
       />
     </>
   );

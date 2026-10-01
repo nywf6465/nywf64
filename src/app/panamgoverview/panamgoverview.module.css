@@ -1,4 +1,4 @@
-/* Avis Pan American Highway Rides overview — same layout as overview prototype */
+/* Pan American Highway Gardens overview — same layout as overview prototype */
 
 .hero {
   position: relative;
@@ -68,9 +68,7 @@
   line-height: 0;
   border: 1px solid #0a0a0a;
   background: #fff;
-  /* Thin outer frame; asset already carries a 2px black line border. */
-  /* Match isolated photo (958×776) — no black letterbox. */
-  aspect-ratio: 958 / 776;
+  aspect-ratio: 1518 / 1036;
   overflow: hidden;
 }
 

@@ -17,4 +17,15 @@ const PAKISTAN: PCard = {
   pavilionAlt: "Pakistan",
 };
 
-export const P_CARDS: PCard[] = [PAKISTAN];
+const PAN_AMERICAN_HIGHWAY_GARDENS: PCard = {
+  id: "panamg",
+  href: "/panamgoverview",
+  title: "Pan American Highway Gardens",
+  body: "Fairgoers stroll past large paintings of scenes along the new Pan American Highway through Latin America.",
+  pavilionSrc: "/images/panamg/panamg-icon.png",
+  pavilionWidth: 866,
+  pavilionHeight: 291,
+  pavilionAlt: "Pan American Highway Gardens",
+};
+
+export const P_CARDS: PCard[] = [PAKISTAN, PAN_AMERICAN_HIGHWAY_GARDENS];

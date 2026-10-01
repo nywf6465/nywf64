@@ -7,28 +7,25 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Avis Pan American Highway Rides — Overview — nywf64.com",
+  title: "Pan American Highway Gardens — Overview — nywf64.com",
   description:
-    "Avis Pan American Highway Rides overview at the 1964/1965 New York World’s Fair — Attractions from A to Z on nywf64.com.",
+    "Pan American Highway Gardens overview at the 1964/1965 New York World’s Fair — Attractions from A to Z on nywf64.com.",
 };
 
 /**
- * Avis Pan American Highway Rides overview — follows the **overview** prototype
- * (same stack as /avisoverview / /autthroverview).
+ * Pan American Highway Gardens overview — follows the **overview** prototype
+ * (same stack as /alaskaoverview / /pakistoverview).
  */
 export default function PanamgOverviewPage() {
   return (
     <>
-      <section
-        className={styles.hero}
-        aria-label="Avis Pan American Highway Rides"
-      >
+      <section className={styles.hero} aria-label="Pan American Highway Gardens">
         <div className={`${overviewHeroStyles.frame} ${heroBottomBar.photoFrame}`}>
           <Image
             src="/images/panamgoverview/hero-banner.jpg"
-            alt="Avis Pan American Highway Rides at the 1964/1965 New York World’s Fair"
-            width={1912}
-            height={823}
+            alt="Pan American Highway Gardens at the 1964/1965 New York World’s Fair"
+            width={2164}
+            height={727}
             priority
             sizes="100vw"
             className={overviewHeroStyles.art}
@@ -41,23 +38,23 @@ export default function PanamgOverviewPage() {
 
       <section
         className={styles.overview}
-        aria-label="Avis Pan American Highway Rides overview"
+        aria-label="Pan American Highway Gardens overview"
       >
         <div className={styles.overviewInner}>
           <div className={styles.copy}>
             <p className={styles.sectionTitle}>OVERVIEW</p>
             <p className={styles.body}>
-              Visitors drive miniature cars along a &quot;transcontinental&quot;
-              road.
+              Fairgoers stroll past large paintings of scenes along the new Pan
+              American Highway through Latin America.
             </p>
           </div>
 
           <div className={styles.photoWrap}>
             <Image
               src="/images/panamgoverview/photo.jpg"
-              alt="Avis Pan American Highway Rides"
-              width={958}
-              height={776}
+              alt="Pan American Highway Gardens at the 1964/1965 New York World’s Fair"
+              width={1518}
+              height={1036}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
@@ -69,7 +66,7 @@ export default function PanamgOverviewPage() {
       <Nav2Bar
         previousHref="/panamgoverview"
         overviewHref="/panamgoverview"
-        nextHref="/panamg01"
+        nextHref="/panama01"
       />
     </>
   );
