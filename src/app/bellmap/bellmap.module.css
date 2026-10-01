@@ -17,7 +17,7 @@
 
 .articleInner {
   width: 100%;
-  max-width: 1359px;
+  max-width: 1206px;
   margin: 0;
   padding: 0.75rem clamp(0.75rem, 2vw, 1.25rem) 0;
   box-sizing: border-box;
@@ -75,7 +75,7 @@
 
 .mapWrap {
   width: 100%;
-  max-width: 1359px;
+  max-width: 1206px;
   margin: 0;
   line-height: 0;
   text-align: left;
@@ -87,7 +87,7 @@
 .mapArt {
   display: block;
   width: 100%;
-  max-width: 1359px;
+  max-width: 1206px;
   height: auto;
   margin: 0;
 }

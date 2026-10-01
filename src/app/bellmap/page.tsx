@@ -59,8 +59,8 @@ export default function BellMapPage() {
             <Image
               src="/images/bellmap/locate-map.jpg"
               alt="Bell System Pavilion location on the Industrial Area of the 1964 Official Souvenir Map, with a red arrow pointing to Bell System"
-              width={1359}
-              height={1213}
+              width={1206}
+              height={1253}
               sizes="100vw"
               className={styles.mapArt}
               unoptimized
@@ -72,7 +72,7 @@ export default function BellMapPage() {
       <Nav2Bar
         previousHref="/bell01"
         overviewHref="/belloverview"
-        nextHref="/bell01"
+        nextHref="/bell02"
       />
     </>
   );
