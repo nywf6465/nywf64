@@ -130,6 +130,17 @@ const POOL_OF_REFLECTIONS: PCard = {
   pavilionAlt: "Pool of Reflections",
 };
 
+const PORT_AUTHORITY_HELIPORT: PCard = {
+  id: "poraut",
+  href: "/porautoverview",
+  title: "Port Authority Heliport",
+  body: "Rising 120 feet on four mammoth tapered columns, this structure is the aerial gateway to the Fair.",
+  pavilionSrc: "/images/poraut/poraut-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Port Authority Heliport",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
@@ -142,7 +153,9 @@ export const P_CARDS: PCard[] = [
   POLYNESIA,
   POOL_OF_INDUSTRY,
   POOL_OF_REFLECTIONS,
+  PORT_AUTHORITY_HELIPORT,
 ];
+
 
 
 
