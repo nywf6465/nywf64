@@ -43,13 +43,14 @@ export type GuidebookHighlight = {
 export type GuidebookYearContent = {
   cover: GuidebookImage;
   logo: GuidebookImage;
-  name: string;
+  /** Pavilion name; may include line breaks (e.g. PORT AUTHORITY / HELIPORT). */
+  name: ReactNode;
   nameFace?: GuidebookFace;
   /** Italic lead sentence. Typical of the 1965 column. */
   summary?: ReactNode;
   copy: ReactNode;
-  /** Sentence after the admission mark, such as "Admission: free." */
-  admission?: string;
+  /** Sentence(s) after the admission mark, such as "Admission: free." */
+  admission?: string | string[];
   highlights?: GuidebookHighlight[];
 };
 
@@ -69,9 +70,14 @@ export type GuidebookSouvenirPageProps = {
   previousHref: string;
   nextHref: string;
   titleId?: string;
+  /**
+   * Navy title-bar text. Defaults to the standard guidebook heading.
+   * Some legacy pages append “Entries” (e.g. Port Authority).
+   */
+  title?: string;
 };
 
-const TITLE = "1964 & 1965 Official Guidebook & Souvenir Map";
+const DEFAULT_TITLE = "1964 & 1965 Official Guidebook & Souvenir Map";
 
 function Caption1964() {
   return (
@@ -114,22 +120,32 @@ function Admission({
   text,
 }: {
   year: 1964 | 1965;
-  text: string;
+  text: string | string[];
 }) {
+  const lines = Array.isArray(text) ? text : [text];
+
   if (year === 1964) {
     return (
-      <p className={styles.admission}>
-        <strong className={styles.admissionStar}>* </strong>
-        {text}
-      </p>
+      <>
+        {lines.map((line) => (
+          <p key={line} className={styles.admission}>
+            <strong className={styles.admissionStar}>* </strong>
+            {line}
+          </p>
+        ))}
+      </>
     );
   }
 
   return (
-    <p className={styles.admission}>
-      <strong>&para; </strong>
-      {text}
-    </p>
+    <>
+      {lines.map((line) => (
+        <p key={line} className={styles.admission}>
+          <strong>&para; </strong>
+          {line}
+        </p>
+      ))}
+    </>
   );
 }
 
@@ -259,6 +275,7 @@ export function GuidebookSouvenirPage({
   previousHref,
   nextHref,
   titleId = "guidebook-souvenir-title",
+  title = DEFAULT_TITLE,
 }: GuidebookSouvenirPageProps) {
   return (
     <>
@@ -282,7 +299,7 @@ export function GuidebookSouvenirPage({
       <article className={styles.article} aria-labelledby={titleId}>
         <header className={styles.titleBar}>
           <h1 id={titleId} className={styles.titleBarMain}>
-            {TITLE}
+            {title}
           </h1>
         </header>
 
