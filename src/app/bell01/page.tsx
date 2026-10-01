@@ -49,17 +49,23 @@ export default function Bell01Page() {
 
         <div className={styles.columns}>
           <section className={styles.col} aria-label="1964 Official Guide Book">
-            <p className={styles.intro}>
-              The description of this exhibit from the 1964 Official Guide Book
-            </p>
-            <Image
-              src="/images/bell01/guide1964.jpg"
-              alt="Cover — 1964 Guidebook"
-              width={136}
-              height={216}
-              className={styles.cover}
-              unoptimized
-            />
+            <div className={styles.entryHead}>
+              <Image
+                src="/images/bell01/guide1964.jpg"
+                alt="Cover — 1964 Guidebook"
+                width={136}
+                height={216}
+                className={styles.cover}
+                unoptimized
+              />
+              <p className={styles.intro}>
+                The description of this
+                <br />
+                exhibit from the 1964
+                <br />
+                Official Guide Book
+              </p>
+            </div>
             <Image
               src="/images/bell01/bell-logo-1964.gif"
               alt=""
@@ -115,17 +121,23 @@ export default function Bell01Page() {
           </section>
 
           <section className={styles.col} aria-label="1965 Official Guide Book">
-            <p className={styles.intro}>
-              The description of this exhibit from the 1965 Official Guide Book
-            </p>
-            <Image
-              src="/images/bell01/guide1965.jpg"
-              alt="Cover — 1965 Guidebook"
-              width={136}
-              height={216}
-              className={styles.cover}
-              unoptimized
-            />
+            <div className={styles.entryHead}>
+              <Image
+                src="/images/bell01/guide1965.jpg"
+                alt="Cover — 1965 Guidebook"
+                width={136}
+                height={216}
+                className={styles.cover}
+                unoptimized
+              />
+              <p className={styles.intro}>
+                The description of this
+                <br />
+                exhibit from the 1965
+                <br />
+                Official Guide Book
+              </p>
+            </div>
             <Image
               src="/images/bell01/bell-logo-1965.gif"
               alt=""
@@ -179,10 +191,7 @@ export default function Bell01Page() {
             className={styles.col}
             aria-label="1964 Official Souvenir Map"
           >
-            <p className={styles.intro}>
-              The location of this exhibit on the 1964 Official Souvenir Map
-            </p>
-            <div className={styles.mapRow}>
+            <div className={styles.entryHead}>
               <Image
                 src="/images/bell01/souvenir-map.jpg"
                 alt="Cover — 1964 Official Souvenir Map"
@@ -191,23 +200,32 @@ export default function Bell01Page() {
                 className={styles.mapCover}
                 unoptimized
               />
-              <div className={styles.locate}>
-                <Link href="http://nywf64.com/bellmap.shtml">
-                  <Image
-                    src="/images/bell01/industry-map.gif"
-                    alt="Industrial area map"
-                    width={60}
-                    height={54}
-                    className={styles.areaMap}
-                    unoptimized
-                  />
-                </Link>
-                <Link
-                  href="http://nywf64.com/bellmap.shtml"
-                  className={styles.locateLink}
-                >
-                  Locate It
-                </Link>
+              <div className={styles.mapSide}>
+                <div className={styles.locate}>
+                  <Link href="http://nywf64.com/bellmap.shtml">
+                    <Image
+                      src="/images/bell01/industry-map.gif"
+                      alt="Industrial area map"
+                      width={60}
+                      height={54}
+                      className={styles.areaMap}
+                      unoptimized
+                    />
+                  </Link>
+                  <Link
+                    href="http://nywf64.com/bellmap.shtml"
+                    className={styles.locateLink}
+                  >
+                    Locate It
+                  </Link>
+                </div>
+                <p className={styles.intro}>
+                  The location of this
+                  <br />
+                  exhibit on the 1964
+                  <br />
+                  Official Souvenir Map
+                </p>
               </div>
             </div>
           </section>
