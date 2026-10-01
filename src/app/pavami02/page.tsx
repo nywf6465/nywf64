@@ -1,0 +1,12 @@
+import type { Metadata } from "next";
+import { PavamiTopicStub } from "@/components/PavamiTopicStub";
+
+export const metadata: Metadata = {
+  title: "World's Fair Information Manual — Pavilion of American Interiors — nywf64.com",
+  description:
+    "World's Fair Information Manual — Pavilion of American Interiors at the 1964/1965 New York World’s Fair on nywf64.com.",
+};
+
+export default function Page() {
+  return <PavamiTopicStub title={"World's Fair Information Manual"} />;
+}

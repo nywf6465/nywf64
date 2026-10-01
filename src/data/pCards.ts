@@ -39,8 +39,20 @@ const PARKER_PEN: PCard = {
   pavilionAlt: "Parker Pen",
 };
 
+const PAVILION_OF_AMERICAN_INTERIORS: PCard = {
+  id: "pavami",
+  href: "/pavamioverview",
+  title: "Pavilion of American Interiors",
+  body: "More than 120 manufacturers and interior designers display a wide range of house furnishings and fittings.",
+  pavilionSrc: "/images/pavami/pavami-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 330,
+  pavilionAlt: "Pavilion of American Interiors",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
   PARKER_PEN,
+  PAVILION_OF_AMERICAN_INTERIORS,
 ];
