@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { FordNavChrome } from "@/components/FordNavChrome";
+import { LocateMapFullSizeLink } from "@/components/LocateMapFullSizeLink";
 import { LocateMapTitleBar } from "@/components/LocateMapTitleBar";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./fordmap.module.css";
@@ -49,12 +49,7 @@ export default function FordMapPage() {
               <strong>Locate it!</strong> The location of this pavilion or
               exhibit is indicated below.
             </p>
-            <p className={styles.mapNote}>
-              <Link href="/maps/1964-official-souvenir-map">
-                See a <i>full-size</i> version of the 1964 Official Souvenir Map
-                (<b>LARGE&nbsp;download</b>).
-              </Link>
-            </p>
+            <LocateMapFullSizeLink />
           </div>
 
           <div className={styles.mapWrap}>
