@@ -28,4 +28,19 @@ const PAN_AMERICAN_HIGHWAY_GARDENS: PCard = {
   pavilionAlt: "Pan American Highway Gardens",
 };
 
-export const P_CARDS: PCard[] = [PAKISTAN, PAN_AMERICAN_HIGHWAY_GARDENS];
+const PARKER_PEN: PCard = {
+  id: "parpen",
+  href: "/parpenoverview",
+  title: "Parker Pen",
+  body: "Visitors to the pavilion are put in touch with 'pen friends' of similar age and interests in many parts of the world.",
+  pavilionSrc: "/images/parpen/parpen-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Parker Pen",
+};
+
+export const P_CARDS: PCard[] = [
+  PAKISTAN,
+  PAN_AMERICAN_HIGHWAY_GARDENS,
+  PARKER_PEN,
+];
