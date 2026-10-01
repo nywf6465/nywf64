@@ -72,6 +72,18 @@ const PENNSYLVANIA: PCard = {
   pavilionAlt: "Pennsylvania",
 };
 
+/** Identical to the Pepsi-Cola row on The Disney Shows links page. */
+const PEPSI_COLA: PCard = {
+  id: "pepsi",
+  href: "/pepsioverview",
+  title: 'Pepsi-Cola — "It\'s a Small World"',
+  body: "A salute to the children of the world, designed by Walt Disney, presents animated figures frolicking in miniature settings of many lands.",
+  pavilionSrc: "/images/disney-shows/pepsi01-pavilion.png",
+  pavilionWidth: 762,
+  pavilionHeight: 330,
+  pavilionAlt: "Pepsi-Cola",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
@@ -79,6 +91,8 @@ export const P_CARDS: PCard[] = [
   PAVILION_OF_AMERICAN_INTERIORS,
   PAVILION_OF_PARIS,
   PENNSYLVANIA,
+  PEPSI_COLA,
 ];
+
 
 
