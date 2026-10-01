@@ -87,7 +87,7 @@ export default function Bell01Page() {
               duty.
             </p>
             <p className={styles.admission}>
-              <strong>* </strong>Admission: free.
+              <strong className={styles.admissionStar}>* </strong>Admission: free.
             </p>
             <p className={styles.highlightsLabel}>Highlights</p>
             <p className={styles.highlight}>
@@ -136,7 +136,9 @@ export default function Bell01Page() {
               className={styles.logo}
               unoptimized
             />
-            <p className={styles.pavilionName}>BELL SYSTEM</p>
+            <p className={`${styles.pavilionName} ${styles.pavilionNameSans}`}>
+              BELL SYSTEM
+            </p>
             <p className={styles.summary}>
               The history of communications, from smoke signal to satellites,
               is shown in a 15-minute ride
@@ -148,7 +150,7 @@ export default function Bell01Page() {
               communications. Nearby rises a 140-foot microwave tower which
               transmits TV shows originating at the Fair.
             </p>
-            <p className={styles.highlight}>
+            <p className={`${styles.highlight} ${styles.highlightSans}`}>
               <strong>FROM TOM-TOM TO TELSTAR. </strong>
               The visitor, sitting in a moving armchair fitted with stereo
               earphones, sees filmed and three-dimensional scenes that include
@@ -156,7 +158,7 @@ export default function Bell01Page() {
               the advent of the telephone and a communications satellite
               orbiting in space
             </p>
-            <p className={styles.highlight}>
+            <p className={`${styles.highlight} ${styles.highlightSans}`}>
               <strong>PHONES AND FUN. </strong>
               In the exhibit hall, visitors can test their musical pitch or
               play tic-tac-toe. New &quot;see-as-you-talk&quot; picture-phones
@@ -165,7 +167,7 @@ export default function Bell01Page() {
               visual symbols on a TV screen. The products of more than 80 years
               of research by the Bell System are also on display.
             </p>
-            <p className={styles.highlight}>
+            <p className={`${styles.highlight} ${styles.highlightSans}`}>
               <strong>PUBLIC TELEPHONES. </strong>
               Telephone directories from most major cities may be consulted,
               and attendants help place calls anywhere in the world.
