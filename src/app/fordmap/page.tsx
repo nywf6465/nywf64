@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import { FordNavChrome } from "@/components/FordNavChrome";
 import { LocateMapFullSizeLink } from "@/components/LocateMapFullSizeLink";
+import { LocateMapIntroLead } from "@/components/LocateMapIntroLead";
 import { LocateMapTitleBar } from "@/components/LocateMapTitleBar";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./fordmap.module.css";
@@ -45,10 +46,7 @@ export default function FordMapPage() {
         <LocateMapTitleBar titleId="fordmap-title" />
         <div className={styles.articleInner}>
           <div className={styles.intro}>
-            <p className={styles.introLead}>
-              <strong>Locate it!</strong> The location of this pavilion or
-              exhibit is indicated below.
-            </p>
+            <LocateMapIntroLead />
             <LocateMapFullSizeLink />
           </div>
 
