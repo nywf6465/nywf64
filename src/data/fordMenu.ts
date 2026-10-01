@@ -11,7 +11,7 @@ export const FORD_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
-    href: "/fordguidebook",
+    href: "/ford01",
   },
   {
     label: "World's Fair Information Manual",
