@@ -1,6 +1,9 @@
 /*
  * Locate-it map pages (e.g. /bellmap, /fordmap, /unistamap, /porautmap).
  *
+ * HARD RULE — navy title banner beneath the nav on every locate-it page. Use
+ * LocateMapTitleBar; never omit it (see AGENTS.md).
+ *
  * Standard stack: hero → attraction nav → navy title bar → left-justified
  * body → Nav2Bar.
  *

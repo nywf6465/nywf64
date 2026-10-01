@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 /**
  * Albert Fisher page stack (modeled on rm01):
- * site header → hero → Fisher nav → essay body → nav2 → site footer
+ * site header → hero → Fisher nav → navy title banner → essay body → nav2 → site footer
  *
  * Body from legacy fisher02.html, remapped to /fisher01.
  */

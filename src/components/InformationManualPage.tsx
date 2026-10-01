@@ -9,6 +9,10 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * World's Fair Information Manual page (“manual” standard).
  * Canonical instance: /bell02. Legacy attraction `*02` pages use this layout.
  *
+ * HARD RULE — navy title banner: every legacy conversion must keep the full-width
+ * navy (`#26346e`) title bar immediately beneath the attraction nav. This layout
+ * renders it; do not bypass InformationManualPage or omit the bar on custom ports.
+ *
  * Stack: hero → attraction nav → navy title bar → centered body → Nav2Bar.
  */
 

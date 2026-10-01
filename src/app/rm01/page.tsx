@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 
 /**
  * Robert Moses page stack:
- * site header → hero banner → nav bar (RM menu) → legacy article body → nav2 → site footer
+ * site header → hero banner → nav bar (RM menu) → navy title banner →
+ * legacy article body → nav2 → site footer
  *
  * Body imported from legacy rm02.html (“My Encounter with Robert Moses”).
  */

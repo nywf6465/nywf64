@@ -11,6 +11,11 @@ import {
  * Attraction page chrome: full-bleed **nav bar** that opens the **nav menu**.
  * Click/tap opens the menu; hover does not. Menu stays open until X, a topic
  * link, Escape, or a click/tap outside (backdrop).
+ *
+ * HARD RULE — on legacy content pages, the navy (`#26346e`) title banner must
+ * follow immediately after this chrome (GuidebookSouvenirPage /
+ * InformationManualPage / LocateMapTitleBar / equivalent `.titleBar`). Do not
+ * put body copy directly under the nav.
  */
 export function AttractionNavChrome({
   topics,

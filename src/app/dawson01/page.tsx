@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 
 /**
  * Greg Dawson page stack (modeled on rm01 / fisher01):
- * site header → hero → Dawson nav → intro body → nav2 → site footer
+ * site header → hero → Dawson nav → navy title banner → intro body → nav2 → site footer
  *
  * Body from legacy dawson01.html.
  */
