@@ -10,7 +10,11 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * Official Guidebook & Souvenir Map page.
  * Canonical instance: /bell01. Legacy attraction `*01` pages use this layout.
  *
- * Stack: hero → attraction nav → title bar → three columns → nav2.
+ * HARD RULE — navy title banner: every legacy conversion must keep the full-width
+ * navy (`#26346e`) title bar immediately beneath the attraction nav. This layout
+ * renders it; do not bypass GuidebookSouvenirPage or omit the bar on custom ports.
+ *
+ * Stack: hero → attraction nav → navy title bar → three columns → nav2.
  * Columns: 1964 Official Guide Book, 1965 Official Guide Book,
  * 1964 Official Souvenir Map.
  *

@@ -2,6 +2,10 @@
  * Official Guidebook & Souvenir Map pages.
  * Canonical instance: /bell01. Legacy *01.html pages share this layout.
  *
+ * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav. Keep it
+ * on every guidebook conversion (see AGENTS.md).
+ *
+ * Stack: hero → attraction nav → navy title bar → three columns → nav2.
  * Three columns, silver dividers, stacking under 720px.
  * Captions are three lines at the lower right of each cover.
  * Locate It sits at the upper right of the map cover.
