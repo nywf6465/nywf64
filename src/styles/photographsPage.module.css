@@ -12,7 +12,7 @@
  * Body: named sections (e.g. Commercial Photographs, Fairgoer Photographs).
  * Each section heading sits above a light-grey (#ccc) tray that holds the
  * bordered photograph cards. Captions (bold title + Arial Narrow SOURCE) sit
- * under each photo.
+ * under each photo. Photographs are left-aligned in the tray (not centered).
  */
 
 .hero {
@@ -98,7 +98,7 @@
   display: flex;
   flex-wrap: wrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-start;
   gap: 0.65rem 0.85rem;
 }
 
@@ -147,14 +147,14 @@
 @media (max-width: 720px) {
   .photos {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .card {
     width: 100%;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .caption {
