@@ -106,6 +106,18 @@ const POLYNESIA: PCard = {
   pavilionAlt: "Polynesia",
 };
 
+/** Identical to the Pool of Industry row on the Fountains links page. */
+const POOL_OF_INDUSTRY: PCard = {
+  id: "pool-of-industry",
+  href: "/poolinoverview",
+  title: "Pool of Industry ",
+  body: "A gigantic symphony of fireworks, water, color and music occurs every evening.",
+  pavilionSrc: "/images/fountains/pool-of-industry-icon.png",
+  pavilionWidth: 762,
+  pavilionHeight: 330,
+  pavilionAlt: "Pool of Industry ",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
@@ -116,7 +128,9 @@ export const P_CARDS: PCard[] = [
   PEPSI_COLA,
   PHILIPPINES,
   POLYNESIA,
+  POOL_OF_INDUSTRY,
 ];
+
 
 
 
