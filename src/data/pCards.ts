@@ -141,6 +141,18 @@ const PORT_AUTHORITY_HELIPORT: PCard = {
   pavilionAlt: "Port Authority Heliport",
 };
 
+/** Identical to the Protestant & Orthodox Center row on the Religions links page. */
+const PROTESTANT_AND_ORTHODOX_CENTER: PCard = {
+  id: "protestant-and-orthodox-center",
+  href: "/proortoverview",
+  title: "Protestant & Orthodox Center",
+  body: "An allegorical film and religious exhibits and art works illustrate the theme 'Jesus Christ, the Light of the World.'",
+  pavilionSrc: "/images/religions/protestant-and-orthodox-center-icon.png",
+  pavilionWidth: 762,
+  pavilionHeight: 330,
+  pavilionAlt: "Protestant & Orthodox Center",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
@@ -154,7 +166,9 @@ export const P_CARDS: PCard[] = [
   POOL_OF_INDUSTRY,
   POOL_OF_REFLECTIONS,
   PORT_AUTHORITY_HELIPORT,
+  PROTESTANT_AND_ORTHODOX_CENTER,
 ];
+
 
 
 
