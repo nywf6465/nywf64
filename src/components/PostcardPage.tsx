@@ -6,15 +6,23 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 /**
- * Postcard page (“postcard” standard).
- * Canonical instance: /bell03. Legacy attraction postcard pages use this layout.
+ * Postcards page (“postcards” standard).
+ * Canonical instance: /bell03. Legacy attraction postcard galleries use this layout.
  *
- * HARD RULE — navy title banner: every legacy conversion must keep the full-width
- * navy (`#26346e`) title bar immediately beneath the attraction nav. This layout
- * renders it; do not bypass PostcardPage or omit the bar on custom ports.
+ * HARD RULE — navy title banner: keep the full-width navy (`#26346e`) title bar
+ * immediately beneath the attraction nav. This layout renders “Postcards”; do
+ * not omit it on custom ports.
  *
  * Stack: hero → attraction nav → navy title bar → centered postcard entries →
  * Nav2Bar.
+ *
+ * Body recipe (from legacy bell03.html / /bell03):
+ * 1) Front (left, bordered) + reverse (right, bordered)
+ * 2) Meta lines under the reverse (Official / Unauthorized, numbers)
+ * 3) Arial Narrow source line(s) under the pair
+ *
+ * For new postcard pages, copy src/app/bell03/page.tsx and fill `entries` from
+ * the legacy HTML — see AGENTS.md “Postcards standard”.
  */
 
 export type PostcardImage = {

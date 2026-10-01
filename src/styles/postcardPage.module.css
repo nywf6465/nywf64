@@ -1,9 +1,9 @@
 /*
- * Postcard pages (“postcard” standard).
- * Canonical instance: /bell03. Legacy attraction postcard pages use this layout.
+ * Postcards pages (“postcards” standard).
+ * Canonical instance: /bell03. Legacy attraction postcard galleries use this layout.
+ * See AGENTS.md “Postcards standard” and PostcardPage.tsx.
  *
- * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav. Keep it
- * on every postcard conversion (see AGENTS.md).
+ * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav.
  *
  * Stack: hero → attraction nav → navy title bar → centered postcard entries →
  * Nav2Bar.
