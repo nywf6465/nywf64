@@ -15,7 +15,7 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "World's Fair Information Manual",
-    href: "/bellmanual",
+    href: "/bell02",
   },
   {
     label: "Postcards",
