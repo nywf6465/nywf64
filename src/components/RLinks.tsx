@@ -5,7 +5,7 @@ import styles from "./FountainsLinks.module.css";
 
 /**
  * R-letter links section — same fountains link-card model as `/B` / `/N` / `/O` / `/P`.
- * R-specific rows live in `rCards.ts` (empty until cards arrive).
+ * R-specific rows live in `rCards.ts`.
  */
 
 function LinkIndicator() {
