@@ -1,0 +1,194 @@
+/* Bell System — 1964 & 1965 guidebook (legacy bell01.html), three columns */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+  width: 100%;
+}
+
+.col {
+  min-width: 0;
+  padding: 0.45rem 0.7rem 1.1rem;
+  border-left: 2px solid silver;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.intro {
+  margin: 0 0 0.55rem;
+  color: #990000;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.cover {
+  display: block;
+  width: 136px;
+  height: auto;
+  margin: 0 0 0.35rem;
+  border: 1px solid #000;
+}
+
+.coverRule {
+  width: 136px;
+  height: 0;
+  margin: 0 0 0.75rem;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.mapRow {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 0.4rem;
+}
+
+.mapCover {
+  display: block;
+  width: 110px;
+  height: auto;
+  border: 1px solid #000;
+  flex: 0 0 auto;
+}
+
+.locate {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  flex: 0 0 auto;
+  padding-top: 0.15rem;
+}
+
+.areaMap {
+  display: block;
+  width: 60px;
+  height: auto;
+}
+
+.locateLink {
+  color: #000;
+  font-size: 0.75rem;
+  font-style: italic;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.logo {
+  display: block;
+  width: 144px;
+  height: auto;
+  margin: 0.35rem auto 0.35rem;
+}
+
+.pavilionName {
+  margin: 0 0 0.55rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.copy,
+.highlight,
+.admission,
+.summary {
+  margin: 0 0 0.7rem;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.summary {
+  font-style: italic;
+}
+
+.admission {
+  font-style: italic;
+}
+
+.admission strong {
+  font-style: normal;
+}
+
+.highlightsLabel {
+  margin: 0.15rem 0 0.45rem;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.highlight strong {
+  font-size: 0.75rem;
+}
+
+.revised {
+  margin: 0.2rem 0 0;
+  color: #26346e;
+  font-size: 0.68rem;
+  line-height: 1.3;
+  text-align: right;
+}
+
+@media (max-width: 720px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .col {
+    border-left: 0;
+    border-top: 2px solid silver;
+    padding-top: 0.9rem;
+  }
+
+  .col:first-child {
+    border-top: 0;
+  }
+}
