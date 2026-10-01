@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { BellNavChrome } from "@/components/BellNavChrome";
+import { LocateMapTitleBar } from "@/components/LocateMapTitleBar";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./bellmap.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
@@ -15,8 +16,8 @@ export const metadata: Metadata = {
 
 /**
  * Bell System locate-it map page (`/bellmap`).
- * Stack matches other bell pages: hero → BellNavChrome → body → Nav2Bar.
- * Body content is left-justified (not centered like the legacy page).
+ * Stack: hero → BellNavChrome → navy title bar → left-justified body → Nav2Bar.
+ * Title bar (“1964 Official Souvenir Map”) is the map-page standard.
  */
 export default function BellMapPage() {
   return (
@@ -40,7 +41,8 @@ export default function BellMapPage() {
 
       <BellNavChrome />
 
-      <article className={styles.article} aria-label="Locate it map">
+      <article className={styles.article} aria-labelledby="bellmap-title">
+        <LocateMapTitleBar titleId="bellmap-title" />
         <div className={styles.articleInner}>
           <div className={styles.intro}>
             <p className={styles.introLead}>
