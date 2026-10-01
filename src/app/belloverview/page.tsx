@@ -64,7 +64,7 @@ export default function BellOverviewPage() {
       <Nav2Bar
         previousHref="/belloverview"
         overviewHref="/belloverview"
-        nextHref="/bell02"
+        nextHref="/bell01"
       />
     </>
   );
