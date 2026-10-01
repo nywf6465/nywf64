@@ -102,30 +102,36 @@
   gap: 0.65rem 0.85rem;
 }
 
+/*
+ * Card width is set inline from the photo’s pixel width so captions wrap to
+ * the image and left-aligned rows can sit side-by-side.
+ */
 .card {
-  flex: 0 1 auto;
+  flex: 0 0 auto;
+  box-sizing: content-box;
   max-width: 100%;
 }
 
 .frame {
-  display: inline-block;
-  max-width: 100%;
+  display: block;
+  width: 100%;
   border: 2px solid #000;
   background: #fff;
   line-height: 0;
+  box-sizing: border-box;
 }
 
 .photo {
   display: block;
-  width: auto;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
 .caption {
   margin: 0.4rem 0 0;
-  max-width: 100%;
   text-align: left;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 .captionTitle {
@@ -151,13 +157,6 @@
   }
 
   .card {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .caption {
-    width: min(100%, 400px);
+    max-width: 100%;
   }
 }

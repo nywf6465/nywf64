@@ -121,6 +121,7 @@ export function PhotographsPage({
                       <figure
                         key={`${section.heading}-${photo.image.src}-${index}`}
                         className={styles.card}
+                        style={{ width: photo.image.width }}
                       >
                         <div className={styles.frame}>
                           <Image
