@@ -171,17 +171,6 @@ export default function Fisher01Page() {
               I had met Merv Griffin at the Seattle World&apos;s Fair two years earlier. I did not know who he was and spent an entire day taking him around the Fair with a camera crew from <em>The Tonight Show</em> and everywhere we went, I introduced him as &quot;Marv Griffith.&quot; My innocent error laid the foundation for a friendship that would last a lifetime. I took Merv and his family on many trips around the New York World&apos;s Fair and when my stint at the Fair ended, Merv offered me the job as head of promotion, publicity and public relations for his soon-to-start TV series: <em>&quot;The Merv Griffin Show.&quot;</em> I remained with Merv for 5 years and, to this day, still consider him to be one of the most influential people in my life.
             </p>
           </div>
-
-          <div className={styles.logoWrap}>
-            <Image
-              src="/images/about/nywf64-logo.gif"
-              alt="nywf64.com"
-              width={300}
-              height={100}
-              className={styles.logo}
-              unoptimized
-            />
-          </div>
         </div>
       </article>
 
