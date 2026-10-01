@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { InSiteHistoryTracker } from "@/components/InSiteHistoryTracker";
+import { ScrollToTop } from "@/components/ScrollToTop";
 import { SiteHeader } from "@/components/SiteHeader";
 import { SiteFooter } from "@/components/SiteFooter";
 import "./globals.css";
@@ -22,10 +23,11 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="en" data-scroll-behavior="smooth">
       <body>
         <div className="pageShell">
           <InSiteHistoryTracker />
+          <ScrollToTop />
           <SiteHeader />
           {children}
           <SiteFooter />
