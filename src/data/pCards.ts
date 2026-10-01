@@ -84,6 +84,17 @@ const PEPSI_COLA: PCard = {
   pavilionAlt: "Pepsi-Cola",
 };
 
+const PHILIPPINES: PCard = {
+  id: "philip",
+  href: "/philipoverview",
+  title: "Philippines",
+  body: "Folk dance, music and wood carvings illustrate the history and culture of this island republic",
+  pavilionSrc: "/images/philip/philip-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Philippines",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
@@ -92,7 +103,9 @@ export const P_CARDS: PCard[] = [
   PAVILION_OF_PARIS,
   PENNSYLVANIA,
   PEPSI_COLA,
+  PHILIPPINES,
 ];
+
 
 
 
