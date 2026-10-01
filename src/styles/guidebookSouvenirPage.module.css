@@ -1,4 +1,16 @@
-/* Bell System — 1964 & 1965 guidebook (legacy bell01.html), three columns */
+/*
+ * Official Guidebook & Souvenir Map pages.
+ * Canonical instance: /bell01. Legacy *01.html pages share this layout.
+ *
+ * Three columns, silver dividers, stacking under 720px.
+ * Captions are three lines at the lower right of each cover.
+ * Locate It sits at the upper right of the map cover.
+ * Covers keep a 1px frame and have no rule under them.
+ * The legacy "Revised" line is not part of this layout.
+ *
+ * Times New Roman is the face for text whose legacy <font> tag sets no face.
+ * Arial is the face where the legacy tag sets face="Arial".
+ */
 
 .hero {
   position: relative;
@@ -54,7 +66,6 @@
   min-width: 0;
   padding: 0.45rem 0.7rem 1.1rem;
   border-left: 2px solid silver;
-  /* Unspecified <font> tags on the legacy page use the browser default, Times. */
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: normal;
@@ -148,7 +159,6 @@
   text-align: center;
 }
 
-/* 1965 column pavilion name is face="Arial" in the legacy page. */
 .pavilionNameSans {
   font-family: Arial, Helvetica, sans-serif;
 }
