@@ -1,5 +1,5 @@
 /*
- * Locate-it map pages (e.g. /bellmap, /fordmap).
+ * Locate-it map pages (e.g. /bellmap, /fordmap, /unistamap, /porautmap).
  *
  * Standard stack: hero → attraction nav → navy title bar → left-justified
  * body → Nav2Bar.
@@ -7,6 +7,9 @@
  * Title bar matches GuidebookSouvenirPage (/bell01, /ford01): full-width
  * navy banner beneath the nav, centered Arial title.
  * Title text for every map page: "1964 Official Souvenir Map".
+ *
+ * Intro lead (“Locate it!”) uses navy (#26346e) for the emphasized words —
+ * not sky blue. Use LocateMapIntroLead on every new map page.
  */
 
 .titleBar {
@@ -35,6 +38,22 @@
   font-size: 16px;
   font-weight: 700;
   line-height: normal;
+}
+
+/* “Locate it!” lead — navy emphasis is the map-page standard. */
+.introLead {
+  margin: 0;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.introLead strong {
+  color: #26346e;
+  font-weight: 700;
 }
 
 /*
