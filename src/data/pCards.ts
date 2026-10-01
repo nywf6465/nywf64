@@ -95,6 +95,17 @@ const PHILIPPINES: PCard = {
   pavilionAlt: "Philippines",
 };
 
+const POLYNESIA: PCard = {
+  id: "polyne",
+  href: "/polyneoverview",
+  title: "Polynesia",
+  body: "Life in a South Seas village is recreated by fire dancers and pearl divers amid thatch-roofed huts and a palm-shaded lagoon.",
+  pavilionSrc: "/images/polyne/polyne-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Polynesia",
+};
+
 export const P_CARDS: PCard[] = [
   PAKISTAN,
   PAN_AMERICAN_HIGHWAY_GARDENS,
@@ -104,7 +115,9 @@ export const P_CARDS: PCard[] = [
   PENNSYLVANIA,
   PEPSI_COLA,
   PHILIPPINES,
+  POLYNESIA,
 ];
+
 
 
 
