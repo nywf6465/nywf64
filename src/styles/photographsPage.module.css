@@ -110,6 +110,7 @@
   flex: 0 0 auto;
   box-sizing: content-box;
   max-width: 100%;
+  margin: 0; /* kill UA figure margins (often 1em 40px) so cards sit flush left */
 }
 
 .frame {
