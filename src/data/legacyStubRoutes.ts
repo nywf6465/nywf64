@@ -12162,6 +12162,18 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/sprogfountoverview",
     nextHref: "/sprogfount01",
   },
+  "thrrid01": {
+    slug: "thrrid01",
+    title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
+    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map Entries — Thrill Rides — nywf64.com",
+    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map Entries at the Thrill Rides — 1964/1965 New York World",
+    nav: "ThrridNavChrome",
+    overviewHref: "/thrridoverview",
+    overviewLabel: "Thrill Rides overview",
+    placeholder: "Thrill Rides content",
+    previousHref: "/thrridoverview",
+    nextHref: "/thrrid01",
+  },
   "towers01": {
     slug: "towers01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
