@@ -450,18 +450,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/amexoverview",
     nextHref: "/amex01",
   },
-  "amex10": {
-    slug: "amex10",
-    title: "Rob Bianco",
-    metaTitle: "Rob Bianco",
-    metaDescription: "Rob Bianco",
-    nav: "AmexNavChrome",
-    overviewHref: "/amexoverview",
-    overviewLabel: "American Express overview",
-    placeholder: "American Express content",
-    previousHref: "/amexoverview",
-    nextHref: "/amex01",
-  },
   "amex11": {
     slug: "amex11",
     title: "A Tribute to Rob Bianco",
