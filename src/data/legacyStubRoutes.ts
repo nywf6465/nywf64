@@ -714,18 +714,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/amptheoverview",
     nextHref: "/ampthe01",
   },
-  "ampthe04": {
-    slug: "ampthe04",
-    title: "Wonder World Playbill",
-    metaTitle: "Wonder World Playbill — Amphitheatre — nywf64.com",
-    metaDescription: "Wonder World Playbill — Amphitheatre at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AmptheNavChrome",
-    overviewHref: "/amptheoverview",
-    overviewLabel: "Amphitheatre overview",
-    placeholder: "Amphitheatre content",
-    previousHref: "/amptheoverview",
-    nextHref: "/ampthe01",
-  },
   "archamer01": {
     slug: "archamer01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
