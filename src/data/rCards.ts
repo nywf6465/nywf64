@@ -2,7 +2,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
  * R-page link cards — fountains-model layout.
- * R-specific rows: RCA, Rheingold, Russian Orthodox Church.
+ * R-specific rows: RCA, Rheingold, Rocket Thrower, Russian Orthodox Church.
  */
 export type RCard = FountainsCard;
 
@@ -28,6 +28,17 @@ const RHEINGOLD: RCard = {
   pavilionAlt: "Rheingold",
 };
 
+const ROCKET_THROWER: RCard = {
+  id: "rocket-thrower",
+  href: "/rocthroverview",
+  title: "The Rocket Thrower",
+  body: "Second only to Unisphere in prominence and importance, The Rocket Thrower is a bronze sculpture of a stylized figure balanced on an ascending curve reaching toward a constellation of stars.",
+  pavilionSrc: "/images/rocthr/rocthr-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "The Rocket Thrower",
+};
+
 /** Identical to the Russian Orthodox row on the Religions links page. */
 const RUSSIAN_ORTHODOX: RCard = {
   id: "russian-orthodox",
@@ -40,4 +51,9 @@ const RUSSIAN_ORTHODOX: RCard = {
   pavilionAlt: "Russian Orthodox Church",
 };
 
-export const R_CARDS: RCard[] = [RCA, RHEINGOLD, RUSSIAN_ORTHODOX];
+export const R_CARDS: RCard[] = [
+  RCA,
+  RHEINGOLD,
+  ROCKET_THROWER,
+  RUSSIAN_ORTHODOX,
+];
