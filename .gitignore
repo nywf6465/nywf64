@@ -17,6 +17,9 @@
 /.next/
 /out/
 
+# build-time footer stamp (scripts/write-site-updated.mjs)
+/src/lib/site-updated.stamp
+
 # production
 /build
 

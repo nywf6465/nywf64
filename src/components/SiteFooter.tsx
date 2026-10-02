@@ -3,7 +3,7 @@ import { UtilityBar } from "./UtilityBar";
 import { StarDivider } from "./StarDivider";
 import styles from "./SiteFooter.module.css";
 
-/** Site-wide footer: utility links + copyright + Updated date (newest src/public mtime). */
+/** Site-wide footer: utility links + copyright + Updated date (build stamp). */
 export function SiteFooter() {
   const updated = getSiteUpdated();
   return (
