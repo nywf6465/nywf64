@@ -4,8 +4,9 @@ import type { NextConfig } from "next";
  * When the legacy dump is available, map planned routes to static archive
  * content HTML (not .shtml chrome). Stems from src/lib/legacy.ts.
  *
- * Footer “Updated” date is computed at render from newest src/public mtime
- * (see src/lib/siteUpdated.ts) — not baked into env at config load.
+ * Footer “Updated” date: build-time stamp via scripts/write-site-updated.mjs
+ * (see src/lib/siteUpdated.ts). Do not walk public/ at request time — that
+ * made Next trace the whole asset tree into every lambda (Vercel ENOSPC).
  */
 
 const nextConfig: NextConfig = {
@@ -20,10 +21,11 @@ const nextConfig: NextConfig = {
     "*.cursorapi.com",
     "*.trycloudflare.com",
   ],
-  // Keep serverless traces lean — large site (~1400 routes) was failing Vercel
-  // packaging with "no space left on device" while building the erofs artifact.
+  // Keep serverless traces lean — packaging failed with "no space left on
+  // device" when every route NFT included ~235MB of public/ (footer mtime walk).
   outputFileTracingExcludes: {
     "*": [
+      "public/**",
       "node_modules/next/dist/docs/**",
       "node_modules/**/*.md",
       "node_modules/**/*.markdown",
