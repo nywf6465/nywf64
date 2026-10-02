@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "Pamphlet: Cornerstone Laying Ceremony \u2014 Argentina at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return (
     <ArgentTopicStub title={"Pamphlet: Cornerstone Laying Ceremony"} />

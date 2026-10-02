@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "A World's Fair Phantom \u2014 Heartland States U.S.A. at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <HeartlandTopicStub title={"A World's Fair Phantom"} />;
 }

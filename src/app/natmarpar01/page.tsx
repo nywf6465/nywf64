@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "National Maritime Union Park 1964 & 1965 Official Guidebook & Souvenir Map Entries — National Maritime Union Park at the 1964/1965 New York World's Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return (
     <NatmarparTopicStub title="1964 & 1965 Official Guidebook & Souvenir Map Entries" />

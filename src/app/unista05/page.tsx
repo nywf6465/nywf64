@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Executive Order 11014 at the 1964/1965 New York World's Fair — United States Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <UnistaTopicStub title={"Executive Order 11014"} />;
 }

@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Wonder World Playbill \u2014 Amphitheatre at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <AmptheTopicStub title={"Wonder World Playbill"} />;
 }

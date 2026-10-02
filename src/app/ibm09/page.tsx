@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Brochure: Welcome to the IBM Pavilion (Version 1) at the 1964/1965 New York World's Fair — IBM Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <IbmTopicStub title={"Brochure: Welcome to the IBM Pavilion (Version 1)"} />;
 }

@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Article: World's Fair Jewel Gets a New Setting at the 1964/1965 New York World's Fair \u2014 Johnson Wax Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <JohwaxTopicStub title={"Article: World's Fair Jewel Gets a New Setting"} />;
 }

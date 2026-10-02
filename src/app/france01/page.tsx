@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "1964 & 1965 Official Guide Book & Souvenir Map — France at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <FranceTopicStub title="1964 & 1965 Official Guide Book & Souvenir Map" />;
 }

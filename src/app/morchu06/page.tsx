@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Brochure: Man's Search for Happiness \u2014 Mormon Church at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <MorchuTopicStub title={"Brochure: Man's Search for Happiness"} />;
 }

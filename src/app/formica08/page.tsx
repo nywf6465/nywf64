@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Master Bedroom & Master Bath — Formica at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <FormicaTopicStub title="Master Bedroom & Master Bath" />;
 }

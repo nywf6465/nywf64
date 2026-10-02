@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "Brochure: News of the World of Refreshment 1965 — Coca-Cola at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return (
     <CokeTopicStub

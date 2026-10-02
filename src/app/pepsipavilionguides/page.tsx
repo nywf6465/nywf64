@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Pavilion Guides at the 1964/1965 New York World's Fair \u2014 Pepsi-Cola Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <PepsiTopicStub title={"Pavilion Guides"} />;
 }

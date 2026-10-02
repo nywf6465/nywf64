@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Brochure: Tempting New Recipes from the Theater of Food \u2014 Festival of Gas at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <FesgasTopicStub title="Brochure: Tempting New Recipes from the Theater of Food" />;
 }

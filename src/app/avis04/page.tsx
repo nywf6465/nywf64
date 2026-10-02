@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Pamphlet: Dedication Day \u2014 Avis Antique Car Ride at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <AvisTopicStub title={"Pamphlet: Dedication Day"} />;
 }

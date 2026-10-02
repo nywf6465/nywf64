@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Epilogue: Distinctive Church Meets Wrecking Ball \u2014 Christian Science at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <ChrsciTopicStub title={"Epilogue: Distinctive Church Meets Wrecking Ball"} />;
 }

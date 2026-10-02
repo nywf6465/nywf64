@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Listen to Audio of the \"Information Machine\" Show! at the 1964/1965 New York World's Fair — IBM Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <IbmTopicStub title={"Listen to Audio of the \"Information Machine\" Show!"} />;
 }

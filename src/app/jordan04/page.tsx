@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Jordan Gallery of Photographs \u2014 Jordan at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <JordanTopicStub title={'Gallery of Photographs'} />;
 }

@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Audio Selections from The Wonderful World of Chemistry at the 1964/1965 New York World's Fair \u2014 DuPont Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <DupontTopicStub title={"Audio Selections from The Wonderful World of Chemistry"} />;
 }

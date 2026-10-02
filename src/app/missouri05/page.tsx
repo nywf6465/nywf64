@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Missouri Magazine: Missouri Business 3/64 — Missouri at the 1964/1965 New York World's Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <MissouriTopicStub title='Magazine: Missouri Business 3/64' />;
 }
