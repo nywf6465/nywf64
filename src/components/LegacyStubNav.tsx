@@ -147,6 +147,7 @@ import { RcaNavChrome } from "@/components/RcaNavChrome";
 import { RusortNavChrome } from "@/components/RusortNavChrome";
 import { SersciNavChrome } from "@/components/SersciNavChrome";
 import { SolfountNavChrome } from "@/components/SolfountNavChrome";
+import { SimmonNavChrome } from "@/components/SimmonNavChrome";
 import { SpainNavChrome } from "@/components/SpainNavChrome";
 import { SprogfountNavChrome } from "@/components/SprogfountNavChrome";
 import { TowersNavChrome } from "@/components/TowersNavChrome";
@@ -304,6 +305,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   RusortNavChrome,
   SersciNavChrome,
   SolfountNavChrome,
+  SimmonNavChrome,
   SpainNavChrome,
   SprogfountNavChrome,
   TowersNavChrome,
