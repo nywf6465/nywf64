@@ -11814,6 +11814,140 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/rusortoverview",
     nextHref: "/rusort01",
   },
+  "scopap01": {
+    slug: "scopap01",
+    title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
+    metaTitle:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — Scott Paper — nywf64.com",
+    metaDescription:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap02": {
+    slug: "scopap02",
+    title: "World's Fair Information Manual",
+    metaTitle: "World's Fair Information Manual — Scott Paper — nywf64.com",
+    metaDescription:
+      "World's Fair Information Manual — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap03": {
+    slug: "scopap03",
+    title: "Advertising",
+    metaTitle: "Advertising — Scott Paper — nywf64.com",
+    metaDescription:
+      "Advertising — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap04": {
+    slug: "scopap04",
+    title: "Gallery of Photographs",
+    metaTitle: "Gallery of Photographs — Scott Paper — nywf64.com",
+    metaDescription:
+      "Gallery of Photographs — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap05": {
+    slug: "scopap05",
+    title: "Pavilion & Exhibit Concept",
+    metaTitle: "Pavilion & Exhibit Concept — Scott Paper — nywf64.com",
+    metaDescription:
+      "Pavilion & Exhibit Concept — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap06": {
+    slug: "scopap06",
+    title: "Press Release & Floor Plan",
+    metaTitle: "Press Release & Floor Plan — Scott Paper — nywf64.com",
+    metaDescription:
+      "Press Release & Floor Plan — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap07": {
+    slug: "scopap07",
+    title: "The Scott Enchanted Forest at the World's Fair",
+    metaTitle:
+      "The Scott Enchanted Forest at the World's Fair — Scott Paper — nywf64.com",
+    metaDescription:
+      "The Scott Enchanted Forest at the World's Fair — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap08": {
+    slug: "scopap08",
+    title: "Brochure: Explore the Enchanted Forest",
+    metaTitle:
+      "Brochure: Explore the Enchanted Forest — Scott Paper — nywf64.com",
+    metaDescription:
+      "Brochure: Explore the Enchanted Forest — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap09": {
+    slug: "scopap09",
+    title: "Scott Enterprise Magazine",
+    metaTitle: "Scott Enterprise Magazine — Scott Paper — nywf64.com",
+    metaDescription:
+      "Scott Enterprise Magazine — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
+  "scopap10": {
+    slug: "scopap10",
+    title: "A Brief History of Scott Paper Before and After 1964",
+    metaTitle:
+      "A Brief History of Scott Paper Before and After 1964 — Scott Paper — nywf64.com",
+    metaDescription:
+      "A Brief History of Scott Paper Before and After 1964 — Scott Paper at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "ScopapNavChrome",
+    overviewHref: "/scopapoverview",
+    overviewLabel: "Scott Paper overview",
+    placeholder: "Scott Paper content",
+    previousHref: "/scopapoverview",
+    nextHref: "/scopap01",
+  },
   "sersci01": {
     slug: "sersci01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
@@ -11826,6 +11960,7 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/serscioverview",
     nextHref: "/sersci01",
   },
+
   "sersci02": {
     slug: "sersci02",
     title: "World",
