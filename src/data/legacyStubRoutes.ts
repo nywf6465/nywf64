@@ -630,18 +630,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/amindoverview",
     nextHref: "/amind01",
   },
-  "amind02": {
-    slug: "amind02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "AmindNavChrome",
-    overviewHref: "/amindoverview",
-    overviewLabel: "American Indian Exposition overview",
-    placeholder: "American Indian Exposition content",
-    previousHref: "/amindoverview",
-    nextHref: "/amind01",
-  },
   "amprid01": {
     slug: "amprid01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
