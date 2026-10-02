@@ -1,5 +1,5 @@
 /**
- * Footer “Updated mm.dd.yyyy” stamp.
+ * Footer “nywf64.com Last Updated mm.dd.yyyy” stamp.
  *
  * Default: newest mtime under `src/` and `public/` (recursive), computed at
  * render/request time — not baked when next.config loads.

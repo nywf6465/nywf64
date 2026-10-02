@@ -4,7 +4,7 @@ import type { NextConfig } from "next";
  * When the legacy dump is available, map planned routes to static archive
  * content HTML (not .shtml chrome). Stems from src/lib/legacy.ts.
  *
- * Footer “Updated” date is computed at render from newest src/public mtime
+ * Footer “Last Updated” date is computed at render from newest src/public mtime
  * (see src/lib/siteUpdated.ts) — not baked into env at config load.
  */
 
