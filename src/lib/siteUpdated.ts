@@ -1,5 +1,5 @@
 /**
- * Footer “Updated mm.dd.yyyy” stamp.
+ * Footer “nywf64.com was last updated on mm.dd.yyyy” stamp.
  *
  * Prefer env override, else the single file written by
  * `scripts/write-site-updated.mjs` at build time. Do NOT walk `public/` or
