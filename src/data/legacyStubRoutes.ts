@@ -666,18 +666,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/ampridoverview",
     nextHref: "/amprid01",
   },
-  "amprid03": {
-    slug: "amprid03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Amphicar Ride — nywf64.com",
-    metaDescription: "Photograph Album — Amphicar Ride at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AmpridNavChrome",
-    overviewHref: "/ampridoverview",
-    overviewLabel: "Amphicar Ride overview",
-    placeholder: "Amphicar Ride content",
-    previousHref: "/ampridoverview",
-    nextHref: "/amprid01",
-  },
   "ampthe01": {
     slug: "ampthe01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
