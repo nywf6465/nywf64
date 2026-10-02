@@ -234,18 +234,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/alaskaoverview",
     nextHref: "/alaska01",
   },
-  "alaska04": {
-    slug: "alaska04",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Alaska — nywf64.com",
-    metaDescription: "Photograph Album — Alaska at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AlaskaNavChrome",
-    overviewHref: "/alaskaoverview",
-    overviewLabel: "Alaska overview",
-    placeholder: "Alaska pavilion content",
-    previousHref: "/alaskaoverview",
-    nextHref: "/alaska01",
-  },
   "allsta01": {
     slug: "allsta01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
