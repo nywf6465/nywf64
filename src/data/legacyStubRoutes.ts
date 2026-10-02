@@ -270,18 +270,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/allstaoverview",
     nextHref: "/allsta01",
   },
-  "allsta03": {
-    slug: "allsta03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — All-State Properties & Macy",
-    metaDescription: "Photograph Album — All-State Properties & Macy",
-    nav: "AllstaNavChrome",
-    overviewHref: "/allstaoverview",
-    overviewLabel: "All-State Properties & Macy's overview",
-    placeholder: "All-State Properties & Macy's content",
-    previousHref: "/allstaoverview",
-    nextHref: "/allsta01",
-  },
   "amerisr01": {
     slug: "amerisr01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
