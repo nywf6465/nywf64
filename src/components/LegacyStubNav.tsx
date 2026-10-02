@@ -307,6 +307,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   SolfountNavChrome,
   SpainNavChrome,
   SprogfountNavChrome,
+  SwedenNavChrome,
   TowersNavChrome,
   TwothoNavChrome,
   UnisphNavChrome,
