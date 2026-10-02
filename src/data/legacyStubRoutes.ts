@@ -11610,6 +11610,117 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/porautoverview",
     nextHref: "/poraut01",
   },
+  "prebuilt01": {
+    slug: "prebuilt01",
+    title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
+    metaTitle:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — Press Building & Public Relations — nywf64.com",
+    metaDescription:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — Press Building & Public Relations at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PrebuiNavChrome",
+    overviewHref: "/prebuioverview",
+    overviewLabel: "Press Building & Public Relations overview",
+    placeholder: "Press Building content",
+    previousHref: "/prebuioverview",
+    nextHref: "/prebuilt02",
+  },
+  "prebuilt02": {
+    slug: "prebuilt02",
+    title: "World's Fair Information Manual",
+    metaTitle:
+      "World's Fair Information Manual — Press Building & Public Relations — nywf64.com",
+    metaDescription:
+      "World's Fair Information Manual — Press Building & Public Relations at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PrebuiNavChrome",
+    overviewHref: "/prebuioverview",
+    overviewLabel: "Press Building & Public Relations overview",
+    placeholder: "Press Building content",
+    previousHref: "/prebuilt01",
+    nextHref: "/prebuilt03",
+  },
+  "prebuilt03": {
+    slug: "prebuilt03",
+    title: "Construction",
+    metaTitle: "Construction — Press Building & Public Relations — nywf64.com",
+    metaDescription:
+      "Construction — Press Building & Public Relations at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PrebuiNavChrome",
+    overviewHref: "/prebuioverview",
+    overviewLabel: "Press Building & Public Relations overview",
+    placeholder: "Press Building content",
+    previousHref: "/prebuilt02",
+    nextHref: "/prebuilt04",
+  },
+  "prebuilt04": {
+    slug: "prebuilt04",
+    title: "Dedication & Purpose",
+    metaTitle:
+      "Dedication & Purpose — Press Building & Public Relations — nywf64.com",
+    metaDescription:
+      "Dedication & Purpose — Press Building & Public Relations at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PrebuiNavChrome",
+    overviewHref: "/prebuioverview",
+    overviewLabel: "Press Building & Public Relations overview",
+    placeholder: "Press Building content",
+    previousHref: "/prebuilt03",
+    nextHref: "/prebuilt05",
+  },
+  "prebuilt05": {
+    slug: "prebuilt05",
+    title: "The Communications & Public Relations Department",
+    metaTitle:
+      "The Communications & Public Relations Department — Press Building & Public Relations — nywf64.com",
+    metaDescription:
+      "The Communications & Public Relations Department — Press Building & Public Relations at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PrebuiNavChrome",
+    overviewHref: "/prebuioverview",
+    overviewLabel: "Press Building & Public Relations overview",
+    placeholder: "Press Building content",
+    previousHref: "/prebuilt04",
+    nextHref: "/prebuilt06",
+  },
+  "prebuilt06": {
+    slug: "prebuilt06",
+    title: "An Interview with Greg Dawson",
+    metaTitle:
+      "An Interview with Greg Dawson — Press Building & Public Relations — nywf64.com",
+    metaDescription:
+      "An Interview with Greg Dawson — Press Building & Public Relations at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PrebuiNavChrome",
+    overviewHref: "/prebuioverview",
+    overviewLabel: "Press Building & Public Relations overview",
+    placeholder: "Press Building content",
+    previousHref: "/prebuilt05",
+    nextHref: "/prebuilt07",
+  },
+  "prebuilt07": {
+    slug: "prebuilt07",
+    title: "The End of World's Fairs or Just Bad Press?",
+    metaTitle:
+      "The End of World's Fairs or Just Bad Press? — Press Building & Public Relations — nywf64.com",
+    metaDescription:
+      "The End of World's Fairs or Just Bad Press? — Press Building & Public Relations at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PrebuiNavChrome",
+    overviewHref: "/prebuioverview",
+    overviewLabel: "Press Building & Public Relations overview",
+    placeholder: "Press Building content",
+    previousHref: "/prebuilt06",
+    nextHref: "/prebuilt08",
+  },
+  "prebuilt08": {
+    slug: "prebuilt08",
+    title: "Demolition of the Press Building",
+    metaTitle:
+      "Demolition of the Press Building — Press Building & Public Relations — nywf64.com",
+    metaDescription:
+      "Demolition of the Press Building — Press Building & Public Relations at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PrebuiNavChrome",
+    overviewHref: "/prebuioverview",
+    overviewLabel: "Press Building & Public Relations overview",
+    placeholder: "Press Building content",
+    previousHref: "/prebuilt07",
+    nextHref: "/prebuilt08",
+  },
   "proort01": {
     slug: "proort01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
