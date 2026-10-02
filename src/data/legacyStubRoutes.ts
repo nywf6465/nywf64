@@ -438,18 +438,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/amex08",
     nextHref: "/amex10",
   },
-  "amex12": {
-    slug: "amex12",
-    title: "Essay: We",
-    metaTitle: "Essay: We",
-    metaDescription: "Essay: We",
-    nav: "AmexNavChrome",
-    overviewHref: "/amexoverview",
-    overviewLabel: "American Express overview",
-    placeholder: "American Express content",
-    previousHref: "/amexoverview",
-    nextHref: "/amex01",
-  },
   "amf01": {
     slug: "amf01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
