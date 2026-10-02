@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "newyorlighting at the 1964/1965 New York World's Fair — New York State Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <NewyorTopicStub title={"newyorlighting"} />;
 }

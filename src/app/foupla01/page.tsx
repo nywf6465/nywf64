@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "1964 & 1965 Official Guidebook & Souvenir Map at the Fountain of the Planets — 1964/1965 New York World's Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <FouplaTopicStub title={"1964 & 1965 Official Guidebook & Souvenir Map"} />;
 }

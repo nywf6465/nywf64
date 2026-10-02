@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "indones Photograph Album II \u2014 Indonesia at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <IndonesTopicStub title={'Photograph Album II'} />;
 }

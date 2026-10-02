@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "The Magic Skyway - Transcript of the 1965 Show at the 1964/1965 New York World's Fair \u2014 Ford Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <FordTopicStub title={"The Magic Skyway - Transcript of the 1965 Show"} />;
 }

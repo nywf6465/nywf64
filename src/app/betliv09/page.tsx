@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Lists of Sub-Exhibitors \u2014 Better Living Center at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <BetlivTopicStub title={"Lists of Sub-Exhibitors"} />;
 }

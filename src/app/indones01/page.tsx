@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "indones 1964 & 1965 Official Guidebook & Souvenir Map \u2014 Indonesia at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <IndonesTopicStub title={'1964 & 1965 Official Guidebook & Souvenir Map'} />;
 }

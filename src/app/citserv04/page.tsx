@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Photograph Album \u2014 Cities Service World's Fair Band of America on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <CitservTopicStub title={"Photograph Album"} />;
 }

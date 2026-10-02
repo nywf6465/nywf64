@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Article: People in Motion at the 1964/1965 New York World's Fair — IBM Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <IbmTopicStub title={"Article: People in Motion"} />;
 }

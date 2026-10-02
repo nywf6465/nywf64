@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Photograph Album at the Fountain of Progress South — 1964/1965 New York World's Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <SprogfountTopicStub title={"Photograph Album"} />;
 }

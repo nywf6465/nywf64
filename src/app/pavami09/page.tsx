@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     'Celestial Centerpiece: A Legacy — Pavilion of American Interiors at the 1964/1965 New York World’s Fair on nywf64.com.',
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <PavamiTopicStub title={'Celestial Centerpiece: A Legacy'} />;
 }

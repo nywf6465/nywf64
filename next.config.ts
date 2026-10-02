@@ -20,6 +20,22 @@ const nextConfig: NextConfig = {
     "*.cursorapi.com",
     "*.trycloudflare.com",
   ],
+  // Keep serverless traces lean — large site (~1400 routes) was failing Vercel
+  // packaging with "no space left on device" while building the erofs artifact.
+  outputFileTracingExcludes: {
+    "*": [
+      "node_modules/next/dist/docs/**",
+      "node_modules/**/*.md",
+      "node_modules/**/*.markdown",
+      "node_modules/**/README*",
+      "node_modules/**/LICENSE*",
+      "node_modules/**/CHANGELOG*",
+      "node_modules/@types/**",
+      "node_modules/typescript/**",
+      "node_modules/eslint/**",
+      "node_modules/eslint-config-next/**",
+    ],
+  },
   async redirects() {
     return [
       // Retarget mistaken `us*` prefix → canonical `unista*` United States routes

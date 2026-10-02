@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Article: Lighting at the Fair - Ford Pavilion at the 1964/1965 New York World's Fair \u2014 Ford Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <FordTopicStub title={"Article: Lighting at the Fair - Ford Pavilion"} />;
 }

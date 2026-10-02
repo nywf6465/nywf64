@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "1964 & 1965 Official Guidebook & Souvenir Map \u2014 Cities Service World's Fair Band of America on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return (
     <CitservTopicStub

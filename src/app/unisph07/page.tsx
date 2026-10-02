@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Pamphlet: United States Steel Unisphere Ceremonies at the 1964/1965 New York World's Fair — Unisphere on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <UnisphTopicStub title={"Pamphlet: United States Steel Unisphere Ceremonies"} />;
 }

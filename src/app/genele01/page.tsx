@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "genele01 at the 1964/1965 New York World's Fair — General Electric Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <GeneleTopicStub title={"genele01"} />;
 }

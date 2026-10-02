@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Brochure: Board the Bounty \u2014 Bounty at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <BountyTopicStub title={"Brochure: Board the Bounty"} />;
 }

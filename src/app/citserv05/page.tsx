@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "About the World's Fair Band of America \u2014 Cities Service Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return (
     <CitservTopicStub title={"About the World's Fair Band of America"} />

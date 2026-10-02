@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Book: Man in the Fifth Dimension \u2014 Billy Graham at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <BilgraTopicStub title={"Book: Man in the Fifth Dimension"} />;
 }

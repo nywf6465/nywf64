@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Article: Christian Scientists swap one landmark for another \u2014 Christian Science at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <ChrsciTopicStub title={"Article: Christian Scientists swap one landmark for another"} />;
 }

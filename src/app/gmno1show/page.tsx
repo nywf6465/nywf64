@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Article: Will this be the No. 1 Show? at the 1964/1965 New York World's Fair \u2014 General Motors Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <GmTopicStub title={"Article: Will this be the No. 1 Show?"} />;
 }

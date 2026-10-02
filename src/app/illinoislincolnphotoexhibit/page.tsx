@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "The Lincoln Photo Exhibit at the 1964/1965 New York World's Fair — Illinois Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <IllinoisTopicStub title={"The Lincoln Photo Exhibit"} />;
 }

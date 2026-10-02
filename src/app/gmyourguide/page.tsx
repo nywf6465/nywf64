@@ -6,6 +6,8 @@ export const metadata: Metadata = {
   description: "Brochure: Your Guide to the General Motors Futurama at the 1964/1965 New York World's Fair \u2014 General Motors Pavilion on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <GmTopicStub title={"Brochure: Your Guide to the General Motors Futurama"} />;
 }

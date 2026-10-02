@@ -8,6 +8,8 @@ export const metadata: Metadata = {
     "Brochure: Art from Central America and Panama \u2014 Central America at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return (
     <CenamerTopicStub

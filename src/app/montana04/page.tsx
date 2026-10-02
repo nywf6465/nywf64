@@ -7,6 +7,8 @@ export const metadata: Metadata = {
     "Montana Gallery of Photographs — Montana at the 1964/1965 New York World's Fair on nywf64.com.",
 };
 
+export const dynamic = 'force-dynamic';
+
 export default function Page() {
   return <MontanaTopicStub title="Gallery of Photographs" />;
 }
