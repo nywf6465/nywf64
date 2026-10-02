@@ -258,19 +258,17 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/allstaoverview",
     nextHref: "/allsta01",
   },
-  "allsta03": {
-    slug: "allsta03",
-    title: "Photograph Album",
-    metaTitle:
-      "Photograph Album — All-State Properties & Macy's — nywf64.com",
-    metaDescription:
-      "Photograph Album — All-State Properties & Macy's at the 1964/1965 New York World’s Fair on nywf64.com.",
+  "allsta02": {
+    slug: "allsta02",
+    title: "World",
+    metaTitle: "World",
+    metaDescription: "World",
     nav: "AllstaNavChrome",
     overviewHref: "/allstaoverview",
     overviewLabel: "All-State Properties & Macy's overview",
     placeholder: "All-State Properties & Macy's content",
-    previousHref: "/allsta02",
-    nextHref: "/allstaoverview",
+    previousHref: "/allstaoverview",
+    nextHref: "/allsta01",
   },
   "amerisr01": {
     slug: "amerisr01",
