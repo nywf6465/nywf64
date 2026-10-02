@@ -11910,6 +11910,85 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/serscioverview",
     nextHref: "/sersci01",
   },
+  "sierra01": {
+    slug: "sierra01",
+    title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
+    metaTitle:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — Sierra Leone — nywf64.com",
+    metaDescription:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — Sierra Leone at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SierraNavChrome",
+    overviewHref: "/sierraoverview",
+    overviewLabel: "Sierra Leone overview",
+    placeholder: "Sierra Leone content",
+    previousHref: "/sierraoverview",
+    nextHref: "/sierra01",
+  },
+  "sierra02": {
+    slug: "sierra02",
+    title: "World's Fair Information Manual",
+    metaTitle: "World's Fair Information Manual — Sierra Leone — nywf64.com",
+    metaDescription:
+      "World's Fair Information Manual — Sierra Leone at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SierraNavChrome",
+    overviewHref: "/sierraoverview",
+    overviewLabel: "Sierra Leone overview",
+    placeholder: "Sierra Leone content",
+    previousHref: "/sierraoverview",
+    nextHref: "/sierra01",
+  },
+  "sierra03": {
+    slug: "sierra03",
+    title: "Advertising",
+    metaTitle: "Advertising — Sierra Leone — nywf64.com",
+    metaDescription:
+      "Advertising — Sierra Leone at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SierraNavChrome",
+    overviewHref: "/sierraoverview",
+    overviewLabel: "Sierra Leone overview",
+    placeholder: "Sierra Leone content",
+    previousHref: "/sierraoverview",
+    nextHref: "/sierra01",
+  },
+  "sierra04": {
+    slug: "sierra04",
+    title: "Gallery of Photographs",
+    metaTitle: "Gallery of Photographs — Sierra Leone — nywf64.com",
+    metaDescription:
+      "Gallery of Photographs — Sierra Leone at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SierraNavChrome",
+    overviewHref: "/sierraoverview",
+    overviewLabel: "Sierra Leone overview",
+    placeholder: "Sierra Leone content",
+    previousHref: "/sierraoverview",
+    nextHref: "/sierra01",
+  },
+  "sierra05": {
+    slug: "sierra05",
+    title: "Pamphlet: Groundbreaking",
+    metaTitle: "Pamphlet: Groundbreaking — Sierra Leone — nywf64.com",
+    metaDescription:
+      "Pamphlet: Groundbreaking — Sierra Leone at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SierraNavChrome",
+    overviewHref: "/sierraoverview",
+    overviewLabel: "Sierra Leone overview",
+    placeholder: "Sierra Leone content",
+    previousHref: "/sierraoverview",
+    nextHref: "/sierra01",
+  },
+  "sierra06": {
+    slug: "sierra06",
+    title: "Sierra Leone Since the Fair",
+    metaTitle: "Sierra Leone Since the Fair — Sierra Leone — nywf64.com",
+    metaDescription:
+      "Sierra Leone Since the Fair — Sierra Leone at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SierraNavChrome",
+    overviewHref: "/sierraoverview",
+    overviewLabel: "Sierra Leone overview",
+    placeholder: "Sierra Leone content",
+    previousHref: "/sierraoverview",
+    nextHref: "/sierra01",
+  },
   "solfount01": {
     slug: "solfount01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
@@ -11922,6 +12001,7 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/solfountoverview",
     nextHref: "/solfount01",
   },
+
   "solfount02": {
     slug: "solfount02",
     title: "World",
