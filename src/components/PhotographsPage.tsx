@@ -36,8 +36,8 @@ export type PhotographImage = {
 
 export type PhotographCard = {
   image: PhotographImage;
-  /** Bold Arial title under the photo. */
-  title: ReactNode;
+  /** Bold Arial title under the photo. Omit when legacy has SOURCE only. */
+  title?: ReactNode;
   /** Arial Narrow SOURCE / credit line under the title. */
   source: ReactNode;
 };
