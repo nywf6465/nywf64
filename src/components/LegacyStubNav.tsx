@@ -142,6 +142,7 @@ import { PolyneNavChrome } from "@/components/PolyneNavChrome";
 import { PoolinNavChrome } from "@/components/PoolinNavChrome";
 import { PoorefNavChrome } from "@/components/PoorefNavChrome";
 import { PorautNavChrome } from "@/components/PorautNavChrome";
+import { PrebuiNavChrome } from "@/components/PrebuiNavChrome";
 import { ProortNavChrome } from "@/components/ProortNavChrome";
 import { RcaNavChrome } from "@/components/RcaNavChrome";
 import { RusortNavChrome } from "@/components/RusortNavChrome";
@@ -299,6 +300,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   PoolinNavChrome,
   PoorefNavChrome,
   PorautNavChrome,
+  PrebuiNavChrome,
   ProortNavChrome,
   RcaNavChrome,
   RusortNavChrome,
