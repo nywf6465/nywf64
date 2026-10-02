@@ -104,6 +104,13 @@
   text-align: left;
 }
 
+.omittedNote a,
+.statusNote a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
 .mapEntry {
   margin-top: 0.85rem;
 }
