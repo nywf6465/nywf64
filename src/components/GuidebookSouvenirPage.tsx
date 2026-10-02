@@ -18,6 +18,10 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * Locate It sits at the upper right of the map cover. Covers keep a 1px frame
  * and have no rule beneath them. The legacy "Revised" line is not shown.
  *
+ * When a year sets `omittedFromGuide`, the column shows only the not-included
+ * note and cover. Optional `map.entry` places a pavilion block under the map
+ * column (legacy amind01 layout).
+ *
  * Type follows the legacy font tags: Times New Roman where no face is set,
  * Arial where face="Arial" is set, at the original HTML size steps.
  * 1964 pavilion names and highlight labels default to Times. 1965 pavilion
@@ -42,22 +46,47 @@ export type GuidebookHighlight = {
 
 export type GuidebookYearContent = {
   cover: GuidebookImage;
-  logo: GuidebookImage;
+  logo?: GuidebookImage;
   /** Pavilion name; may include line breaks (e.g. PORT AUTHORITY / HELIPORT). */
-  name: ReactNode;
+  name?: ReactNode;
   nameFace?: GuidebookFace;
   /** Italic lead sentence. Typical of the 1965 column. */
   summary?: ReactNode;
-  copy: ReactNode;
+  copy?: ReactNode;
   /** Sentence(s) after the admission mark, such as "Admission: free." */
   admission?: string | string[];
   highlights?: GuidebookHighlight[];
+  /**
+   * When true, show the legacy “not included in the Official Guide Book”
+   * note above the cover and omit logo / name / copy (e.g. /amind01).
+   */
+  omittedFromGuide?: boolean;
+  /**
+   * Optional burgundy italic status note. When `omittedFromGuide` is true,
+   * replaces the default not-included sentence. When false, shown under the
+   * cover caption block (e.g. /ampthe01 1965 Wonder World / Florida note).
+   */
+  statusNote?: ReactNode;
+};
+
+export type GuidebookMapEntry = {
+  logo: GuidebookImage;
+  name: ReactNode;
+  nameFace?: GuidebookFace;
+  copy: ReactNode;
+  /** Burgundy italic note under the entry (e.g. “never built”). */
+  note?: ReactNode;
 };
 
 export type GuidebookMapContent = {
   cover: GuidebookImage;
   areaMap: GuidebookImage;
   locateHref: string;
+  /**
+   * Optional pavilion block below the map header when guide years omit
+   * an entry (legacy layout used by /amind01).
+   */
+  entry?: GuidebookMapEntry;
 };
 
 export type GuidebookSouvenirPageProps = {
@@ -149,6 +178,25 @@ function Admission({
   );
 }
 
+function OmittedFromGuideNote({
+  year,
+  note,
+}: {
+  year: 1964 | 1965;
+  note?: ReactNode;
+}) {
+  return (
+    <p className={styles.omittedNote}>
+      {note ?? (
+        <>
+          A description of this exhibit was not included in the {year} Official
+          Guide Book
+        </>
+      )}
+    </p>
+  );
+}
+
 function GuideColumn({
   year,
   guide,
@@ -161,6 +209,26 @@ function GuideColumn({
   const nameFace = guide.nameFace ?? (year === 1965 ? "arial" : "times");
   const defaultLabelFace: GuidebookFace = year === 1965 ? "arial" : "times";
   const highlights = guide.highlights ?? [];
+  const omitted = Boolean(guide.omittedFromGuide);
+
+  if (omitted) {
+    return (
+      <section className={styles.col} aria-label={label}>
+        <OmittedFromGuideNote year={year} note={guide.statusNote} />
+        <Image
+          src={guide.cover.src}
+          alt={
+            guide.cover.alt ??
+            (year === 1964 ? "Cover — 1964 Guidebook" : "Cover — 1965 Guidebook")
+          }
+          width={guide.cover.width}
+          height={guide.cover.height}
+          className={styles.cover}
+          unoptimized
+        />
+      </section>
+    );
+  }
 
   return (
     <section className={styles.col} aria-label={label}>
@@ -178,25 +246,32 @@ function GuideColumn({
         />
         {year === 1964 ? <Caption1964 /> : <Caption1965 />}
       </div>
-      <Image
-        src={guide.logo.src}
-        alt={guide.logo.alt ?? ""}
-        width={guide.logo.width}
-        height={guide.logo.height}
-        className={styles.logo}
-        unoptimized
-      />
-      <p
-        className={
-          nameFace === "arial"
-            ? `${styles.pavilionName} ${styles.pavilionNameSans}`
-            : styles.pavilionName
-        }
-      >
-        {guide.name}
-      </p>
+      {guide.statusNote ? (
+        <p className={styles.omittedNote}>{guide.statusNote}</p>
+      ) : null}
+      {guide.logo ? (
+        <Image
+          src={guide.logo.src}
+          alt={guide.logo.alt ?? ""}
+          width={guide.logo.width}
+          height={guide.logo.height}
+          className={styles.logo}
+          unoptimized
+        />
+      ) : null}
+      {guide.name ? (
+        <p
+          className={
+            nameFace === "arial"
+              ? `${styles.pavilionName} ${styles.pavilionNameSans}`
+              : styles.pavilionName
+          }
+        >
+          {guide.name}
+        </p>
+      ) : null}
       {guide.summary ? <p className={styles.summary}>{guide.summary}</p> : null}
-      <p className={styles.copy}>{guide.copy}</p>
+      {guide.copy ? <p className={styles.copy}>{guide.copy}</p> : null}
       {year === 1964 && guide.admission ? (
         <Admission year={1964} text={guide.admission} />
       ) : null}
@@ -231,6 +306,9 @@ function GuideColumn({
 }
 
 function MapColumn({ map }: { map: GuidebookMapContent }) {
+  const entry = map.entry;
+  const nameFace = entry?.nameFace ?? "times";
+
   return (
     <section className={styles.col} aria-label="1964 Official Souvenir Map">
       <div className={styles.entryHead}>
@@ -261,6 +339,29 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           <CaptionMap />
         </div>
       </div>
+      {entry ? (
+        <div className={styles.mapEntry}>
+          <Image
+            src={entry.logo.src}
+            alt={entry.logo.alt ?? ""}
+            width={entry.logo.width}
+            height={entry.logo.height}
+            className={styles.logo}
+            unoptimized
+          />
+          <p
+            className={
+              nameFace === "arial"
+                ? `${styles.pavilionName} ${styles.pavilionNameSans}`
+                : styles.pavilionName
+            }
+          >
+            {entry.name}
+          </p>
+          <p className={styles.copy}>{entry.copy}</p>
+          {entry.note ? <p className={styles.statusNote}>{entry.note}</p> : null}
+        </div>
+      ) : null}
     </section>
   );
 }
