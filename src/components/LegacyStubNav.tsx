@@ -149,6 +149,7 @@ import { SersciNavChrome } from "@/components/SersciNavChrome";
 import { SolfountNavChrome } from "@/components/SolfountNavChrome";
 import { SpainNavChrome } from "@/components/SpainNavChrome";
 import { SprogfountNavChrome } from "@/components/SprogfountNavChrome";
+import { SwedenNavChrome } from "@/components/SwedenNavChrome";
 import { TowersNavChrome } from "@/components/TowersNavChrome";
 import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
