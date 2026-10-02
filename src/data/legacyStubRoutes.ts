@@ -330,18 +330,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/amerisroverview",
     nextHref: "/amerisr01",
   },
-  "amerisr05": {
-    slug: "amerisr05",
-    title: "Pamphlet: Dedication Ceremony",
-    metaTitle: "Pamphlet: Dedication Ceremony — American-Israel Pavilion — nywf64.com",
-    metaDescription: "Pamphlet: Dedication Ceremony — American-Israel Pavilion at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AmerisrNavChrome",
-    overviewHref: "/amerisroverview",
-    overviewLabel: "American-Israel Pavilion overview",
-    placeholder: "American-Israel Pavilion content",
-    previousHref: "/amerisroverview",
-    nextHref: "/amerisr01",
-  },
   "amex01": {
     slug: "amex01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
