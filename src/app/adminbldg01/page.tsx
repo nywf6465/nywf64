@@ -260,17 +260,6 @@ export default function Adminbldg01Page() {
               serving as Park Department offices.
             </p>
           </div>
-
-          <div className={styles.logoWrap}>
-            <Image
-              src="/images/about/nywf64-logo.gif"
-              alt="nywf64.com"
-              width={300}
-              height={100}
-              className={styles.logo}
-              unoptimized
-            />
-          </div>
         </div>
       </article>
 
