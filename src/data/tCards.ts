@@ -8,13 +8,13 @@ export type TCard = FountainsCard;
 
 export const T_CARDS: TCard[] = [
   {
-    id: "transportation-and-travel",
-    href: "/trantravoverview",
-    title: "Transportation & Travel",
-    body: "All modes of travel, from underwater to lunar, are explored in exhibits by various industries and agencies.",
-    pavilionSrc: "/images/trantrav/transportation-and-travel-icon.jpg",
+    id: "travelers-insurance",
+    href: "/travelersoverview",
+    title: "Travelers Insurance",
+    body: "Visitors walk past dioramas that dramatize the story of life on earth, from the first cell to man's leap into space.",
+    pavilionSrc: "/images/travelers/travelers-insurance-icon.jpg",
     pavilionWidth: 761,
     pavilionHeight: 331,
-    pavilionAlt: "Transportation & Travel",
+    pavilionAlt: "Travelers Insurance",
   },
 ];
