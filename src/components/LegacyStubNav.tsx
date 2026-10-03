@@ -154,6 +154,7 @@ import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
 import { UnistaNavChrome } from "@/components/UnistaNavChrome";
 import { UspoNavChrome } from "@/components/UspoNavChrome";
+import { UsrubNavChrome } from "@/components/UsrubNavChrome";
 import { VaticanNavChrome } from "@/components/VaticanNavChrome";
 
 const STUB_NAV: Record<string, ComponentType> = {
@@ -312,6 +313,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   UnisphNavChrome,
   UnistaNavChrome,
   UspoNavChrome,
+  UsrubNavChrome,
   VaticanNavChrome,
 };
 

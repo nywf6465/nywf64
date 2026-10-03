@@ -2,7 +2,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
  * U-page link cards — fountains-model layout.
- * U-specific rows: U.S. Post Office …
+ * U-specific rows: U.S. Post Office, U.S. Rubber …
  */
 export type UCard = FountainsCard;
 
@@ -17,4 +17,15 @@ const US_POST_OFFICE: UCard = {
   pavilionAlt: "U.S. Post Office",
 };
 
-export const U_CARDS: UCard[] = [US_POST_OFFICE];
+const US_RUBBER: UCard = {
+  id: "us-rubber",
+  href: "/usruboverview",
+  title: "U.S. Rubber",
+  body: "Visitors soar 80 feet in the air around a giant auto tire for a spectacular view of the Fair.",
+  pavilionSrc: "/images/usrub/us-rubber-icon.jpg",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "U.S. Rubber",
+};
+
+export const U_CARDS: UCard[] = [US_POST_OFFICE, US_RUBBER];
