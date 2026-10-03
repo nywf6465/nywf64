@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SWISS_SKY_RIDE: SCard = {
-  id: "swiss-sky-ride",
-  href: "/swiskyoverview",
-  title: "Swiss Sky Ride",
-  body: "Passengers ride high across the Fairgrounds in cable cars for a spectacular view of the Fair.",
-  pavilionSrc: "/images/swisky/swiss-sky-ride-icon.jpg",
+const SWITZERLAND: SCard = {
+  id: "switzerland",
+  href: "/switzoverview",
+  title: "Switzerland",
+  body: "In a cluster of Alpine chalets, Swiss industries display tourist attractions, watches, chocolates and cheese.",
+  pavilionSrc: "/images/switz/switzerland-icon.jpg",
   pavilionWidth: 761,
   pavilionHeight: 331,
-  pavilionAlt: "Swiss Sky Ride",
+  pavilionAlt: "Switzerland",
 };
 
-export const S_CARDS: SCard[] = [SWISS_SKY_RIDE];
+export const S_CARDS: SCard[] = [SWITZERLAND];
