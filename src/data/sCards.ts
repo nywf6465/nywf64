@@ -6,15 +6,16 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SPACE_PARK: SCard = {
-  id: "space-park",
-  href: "/spacparkoverview",
-  title: "Space Park",
-  body: "The dramatic vehicles that are carrying the United States into the Space Age are on display.",
-  pavilionSrc: "/images/spacpark/space-park-icon.jpg",
-  pavilionWidth: 761,
-  pavilionHeight: 331,
-  pavilionAlt: "Space Park",
+/** Same ICON/TEXT/title/href as Top Ten Spain row. */
+const SPAIN: SCard = {
+  id: "spain",
+  href: "/spainoverview",
+  title: "Spain & The Fair's Most Beautiful Pavilion",
+  body: "In a striking modern pavilion, the atmosphere of old Spain forms a setting for great art, fine dining and entertainment.",
+  pavilionSrc: "/images/top-ten/spain-pavilion.png",
+  pavilionWidth: 762,
+  pavilionHeight: 330,
+  pavilionAlt: "Spain",
 };
 
-export const S_CARDS: SCard[] = [SPACE_PARK];
+export const S_CARDS: SCard[] = [SPAIN];
