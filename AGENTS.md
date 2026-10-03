@@ -86,6 +86,7 @@ Legacy pages often show a wide **Photograph Scrap Book** banner image under the 
 4. **Alignment** — on **desktop**, center photograph cards in the tray (`justify-content: center`). On **mobile** (max-width 720px), keep cards **left-aligned** in a single column. Do not left-justify the tray on desktop.
 
 
+
 ### Type
 
 - Title bar: Arial bold white on navy `#26346e`  
