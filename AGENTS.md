@@ -40,6 +40,8 @@ Legacy pages often show a wide **Photograph Scrap Book** banner image under the 
 1. **Sections** — keep legacy section labels exactly (e.g. `Commercial Photographs`, `Fairgoer Photographs`)  
 2. **Section tray** — light grey background `#cccccc` behind the photos in that section  
 3. **Photo cards** — 2px black border around each image; bold Arial title under the photo; Arial Narrow `SOURCE:` / copyright line under the title  
+4. **Alignment** — on **desktop**, center photograph cards in the tray (`justify-content: center`). On **mobile** (max-width 720px), keep cards **left-aligned** in a single column. Do not left-justify the tray on desktop.
+
 4. Photos in a section sit in a wrapping row, **left-aligned** in the grey tray (not centered; stack left-aligned on narrow viewports)
 
 ### Type
