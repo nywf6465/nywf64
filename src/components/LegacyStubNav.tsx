@@ -146,13 +146,10 @@ import { ProortNavChrome } from "@/components/ProortNavChrome";
 import { RcaNavChrome } from "@/components/RcaNavChrome";
 import { RusortNavChrome } from "@/components/RusortNavChrome";
 import { SersciNavChrome } from "@/components/SersciNavChrome";
-import { SocmobilNavChrome } from "@/components/SocmobilNavChrome";
 import { SolfountNavChrome } from "@/components/SolfountNavChrome";
-import { SpacparkNavChrome } from "@/components/SpacparkNavChrome";
 import { SpainNavChrome } from "@/components/SpainNavChrome";
-import { SudanNavChrome } from "@/components/SudanNavChrome";
 import { SprogfountNavChrome } from "@/components/SprogfountNavChrome";
-import { SwedenNavChrome } from "@/components/SwedenNavChrome";
+import { SwiskyNavChrome } from "@/components/SwiskyNavChrome";
 import { TowersNavChrome } from "@/components/TowersNavChrome";
 import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
@@ -307,13 +304,10 @@ const STUB_NAV: Record<string, ComponentType> = {
   RcaNavChrome,
   RusortNavChrome,
   SersciNavChrome,
-  SocmobilNavChrome,
   SolfountNavChrome,
-  SpacparkNavChrome,
   SpainNavChrome,
-  SudanNavChrome,
   SprogfountNavChrome,
-  SwedenNavChrome,
+  SwiskyNavChrome,
   TowersNavChrome,
   TwothoNavChrome,
   UnisphNavChrome,
