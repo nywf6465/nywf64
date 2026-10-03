@@ -114,8 +114,12 @@
 }
 
 .bodyCopyPlain {
-  composes: bodyCopy;
+  margin: 0 0 0.95rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
   font-style: normal;
+  color: #000;
 }
 
 .alternatives {
