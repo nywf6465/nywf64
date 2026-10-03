@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SIERRA_LEONE: SCard = {
-  id: "sierra-leone",
-  href: "/sierraoverview",
-  title: "Sierra Leone",
-  body: "Two troupes perform intricate dances, and acrobats entertain with feats of skill and precision.",
-  pavilionSrc: "/images/sierra/sierra-leone-icon.jpg",
+const SIMMONS: SCard = {
+  id: "simmons",
+  href: "/simmonoverview",
+  title: "Simmons",
+  body: "Visitors can take half-hour naps in rest alcoves or view model rooms cleverly designed to provide extra sleeping space.",
+  pavilionSrc: "/images/simmon/simmons-icon.jpg",
   pavilionWidth: 760,
   pavilionHeight: 330,
-  pavilionAlt: "Sierra Leone",
+  pavilionAlt: "Simmons",
 };
 
-export const S_CARDS: SCard[] = [SIERRA_LEONE];
+export const S_CARDS: SCard[] = [SIMMONS];
