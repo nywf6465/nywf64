@@ -6,4 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type WCard = FountainsCard;
 
-export const W_CARDS: WCard[] = [];
+export const W_CARDS: WCard[] = [
+  {
+    id: "wisconsin",
+    href: "/wisconsinoverview",
+    title: "Wisconsin",
+    body: "A big, stylized tepee rises above state exhibits, including the world's largest cheese.",
+    pavilionSrc: "/images/wisconsin/wisconsin-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "Wisconsin",
+  },
+];
