@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type TCard = FountainsCard;
 
-const THRILL_RIDES: TCard = {
-  id: "thrill-rides",
-  href: "/thrridoverview",
-  title: "Thrill Rides",
-  body: "Three different rides provide the traditional fun of a fair.",
-  pavilionSrc: "/images/thrrid/thrill-rides-icon.jpg",
+const TIPARILLO_BAND_PAVILION: TCard = {
+  id: "tiparillo-band-pavilion",
+  href: "/tipbandoverview",
+  title: "Tiparillo Band Pavilion",
+  body: "Free concerts and dancing are offered at a bandshell and large outdoor dance floor.",
+  pavilionSrc: "/images/tipband/tiparillo-band-pavilion-icon.jpg",
   pavilionWidth: 761,
   pavilionHeight: 331,
-  pavilionAlt: "Thrill Rides",
+  pavilionAlt: "Tiparillo Band Pavilion",
 };
 
-export const T_CARDS: TCard[] = [THRILL_RIDES];
+export const T_CARDS: TCard[] = [TIPARILLO_BAND_PAVILION];
