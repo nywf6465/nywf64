@@ -6,4 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type WCard = FountainsCard;
 
-export const W_CARDS: WCard[] = [];
+export const W_CARDS: WCard[] = [
+  {
+    id: "worlds-fair-marina",
+    href: "/wfmaroverview",
+    title: "World's Fair Marina",
+    body: "Fairgoers can watch yachtsmen and small-boat buffs at work, and tour a Coast Guard exhibit.",
+    pavilionSrc: "/images/wfmar/worlds-fair-marina-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "World's Fair Marina",
+  },
+];
