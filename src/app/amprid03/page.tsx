@@ -61,6 +61,7 @@ export default function Amprid03Page() {
                 height: 400,
                 alt: "Amphicar Ride photographs from the 1965 Official Guide",
               },
+              title: "1965 Official Guide",
               source: (
                 <>
                   SOURCE: <em>1965 Official Guide, 1964-1965 New York World&apos;s Fair</em>

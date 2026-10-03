@@ -12,14 +12,15 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * HARD RULE — navy title banner: keep the full-width navy (`#26346e`) title bar
  * immediately beneath the attraction nav. This layout renders “Advertising”.
  *
- * Stack: hero → attraction nav → navy title bar → bordered ad collage → Nav2Bar.
+ * Stack: hero → attraction nav → navy title bar → bordered ad collage(es) → Nav2Bar.
  *
- * Body recipe (from legacy amex04.html):
- * 1) Bordered collage of advertisement tiles in a column grid
- * 2) Arial Narrow source line(s) under the collage
+ * Body recipe (from legacy amex04.html / unisph04.html):
+ * 1) One or more bordered collages of advertisement tiles in a column grid
+ * 2) Arial Narrow source line(s) under each collage as needed
+ * 3) Optional featured advertisement image, source, and body copy
  *
- * For new advertising pages, copy src/app/amex04/page.tsx and fill `tiles`
- * from the legacy HTML.
+ * For new advertising pages, copy src/app/amex04/page.tsx or src/app/unisph04/page.tsx
+ * and fill collage tiles from the legacy HTML.
  */
 
 export type AdvertisingImage = {
@@ -27,6 +28,21 @@ export type AdvertisingImage = {
   width: number;
   height: number;
   alt?: string;
+};
+
+export type AdvertisingCollage = {
+  tiles: AdvertisingImage[];
+  /** Grid column count (legacy amex04 / unisph04 use 2). */
+  columns?: number;
+  /** Arial Narrow source line(s) under this collage. */
+  sources?: ReactNode[];
+};
+
+export type AdvertisingFeature = {
+  image: AdvertisingImage;
+  source?: ReactNode;
+  /** Gray Arial body paragraphs under the featured ad. */
+  body?: ReactNode;
 };
 
 export type AdvertisingPageProps = {
@@ -38,11 +54,20 @@ export type AdvertisingPageProps = {
     alt?: string;
   };
   nav: ReactNode;
-  tiles: AdvertisingImage[];
-  /** Grid column count for the collage (legacy amex04 uses 2). */
+  /**
+   * Simple single-collage API (amex04). Ignored when `collages` is provided.
+   */
+  tiles?: AdvertisingImage[];
+  /** Grid column count for the simple `tiles` collage. */
   columns?: number;
-  /** Arial Narrow source line(s) under the collage. */
-  sources: ReactNode[];
+  /** Source lines for the simple `tiles` collage. */
+  sources?: ReactNode[];
+  /** Multi-collage API (unisph04). Takes precedence over `tiles`. */
+  collages?: AdvertisingCollage[];
+  /** Optional featured advertisement below the collages. */
+  feature?: AdvertisingFeature;
+  /** Show a horizontal rule before the featured advertisement. */
+  featureDivider?: boolean;
   previousHref: string;
   nextHref: string;
   overviewHref?: string;
@@ -53,6 +78,43 @@ export type AdvertisingPageProps = {
 
 const DEFAULT_TITLE = "Advertising";
 
+function CollageBlock({
+  collage,
+  defaultColumns,
+}: {
+  collage: AdvertisingCollage;
+  defaultColumns: number;
+}) {
+  const columns = collage.columns ?? defaultColumns;
+  return (
+    <div className={styles.collageWrap}>
+      <div
+        className={styles.collage}
+        style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}
+        role="group"
+        aria-label="Advertisements"
+      >
+        {collage.tiles.map((tile, index) => (
+          <Image
+            key={`${tile.src}-${index}`}
+            src={tile.src}
+            alt={tile.alt ?? ""}
+            width={tile.width}
+            height={tile.height}
+            className={styles.tile}
+            unoptimized
+          />
+        ))}
+      </div>
+      {(collage.sources ?? []).map((source, index) => (
+        <p key={index} className={styles.source}>
+          {source}
+        </p>
+      ))}
+    </div>
+  );
+}
+
 export function AdvertisingPage({
   heroLabel,
   hero,
@@ -60,12 +122,27 @@ export function AdvertisingPage({
   tiles,
   columns = 2,
   sources,
+  collages,
+  feature,
+  featureDivider = false,
   previousHref,
   nextHref,
   overviewHref,
   titleId = "advertising-title",
   title = DEFAULT_TITLE,
 }: AdvertisingPageProps) {
+  const resolvedCollages: AdvertisingCollage[] =
+    collages ??
+    (tiles
+      ? [
+          {
+            tiles,
+            columns,
+            sources,
+          },
+        ]
+      : []);
+
   return (
     <>
       <section className={styles.hero} aria-label={heroLabel}>
@@ -95,30 +172,36 @@ export function AdvertisingPage({
         </header>
 
         <div className={styles.articleInner}>
-          <div className={styles.collageWrap}>
-            <div
-              className={styles.collage}
-              style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}
-              role="group"
-              aria-label="Advertisements"
-            >
-              {tiles.map((tile, index) => (
-                <Image
-                  key={`${tile.src}-${index}`}
-                  src={tile.src}
-                  alt={tile.alt ?? ""}
-                  width={tile.width}
-                  height={tile.height}
-                  className={styles.tile}
-                  unoptimized
-                />
-              ))}
-            </div>
-            {sources.map((source, index) => (
-              <p key={index} className={styles.source}>
-                {source}
-              </p>
+          <div className={styles.blocks}>
+            {resolvedCollages.map((collage, index) => (
+              <CollageBlock
+                key={`collage-${index}`}
+                collage={collage}
+                defaultColumns={columns}
+              />
             ))}
+
+            {feature ? (
+              <>
+                {featureDivider ? <hr className={styles.divider} /> : null}
+                <div className={styles.feature}>
+                  <Image
+                    src={feature.image.src}
+                    alt={feature.image.alt ?? ""}
+                    width={feature.image.width}
+                    height={feature.image.height}
+                    className={styles.featureArt}
+                    unoptimized
+                  />
+                  {feature.source ? (
+                    <p className={styles.source}>{feature.source}</p>
+                  ) : null}
+                  {feature.body ? (
+                    <div className={styles.featureBody}>{feature.body}</div>
+                  ) : null}
+                </div>
+              </>
+            ) : null}
           </div>
         </div>
       </article>

@@ -4,11 +4,12 @@
  *
  * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav.
  *
- * Stack: hero → attraction nav → navy title bar → centered ad collage → Nav2Bar.
+ * Stack: hero → attraction nav → navy title bar → centered ad collage(es) → Nav2Bar.
  * Title bar text: “Advertising”.
  *
- * Body (from legacy amex04.html): bordered collage of ad tiles in a fixed column
- * grid, with Arial Narrow source line(s) under the collage.
+ * Body (from legacy amex04.html / unisph04.html): bordered collage of ad tiles in a
+ * fixed column grid, with Arial Narrow source line(s) under the collage. Optional
+ * featured advertisement image and body copy (unisph04).
  */
 
 .hero {
@@ -62,6 +63,14 @@
   color: #000;
 }
 
+.blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+}
+
 .collageWrap {
   display: flex;
   flex-direction: column;
@@ -92,6 +101,45 @@
   line-height: 1.35;
   text-align: left;
   color: #000;
+}
+
+.divider {
+  width: min(600px, 100%);
+  margin: 0.25rem 0 0;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.featureArt {
+  display: block;
+  width: auto;
+  max-width: min(470px, 100%);
+  height: auto;
+}
+
+.featureBody {
+  width: min(600px, 100%);
+  margin: 0.85rem 0 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  line-height: 1.45;
+  text-align: center;
+  color: #696969;
+}
+
+.featureBody p {
+  margin: 0 0 1em;
+}
+
+.featureBody p:last-child {
+  margin-bottom: 0;
 }
 
 @media (max-width: 640px) {
