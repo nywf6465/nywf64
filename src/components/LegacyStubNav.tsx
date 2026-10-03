@@ -152,6 +152,7 @@ import { SpacparkNavChrome } from "@/components/SpacparkNavChrome";
 import { SpainNavChrome } from "@/components/SpainNavChrome";
 import { SudanNavChrome } from "@/components/SudanNavChrome";
 import { SprogfountNavChrome } from "@/components/SprogfountNavChrome";
+import { SwedenNavChrome } from "@/components/SwedenNavChrome";
 import { TowersNavChrome } from "@/components/TowersNavChrome";
 import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
@@ -312,6 +313,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   SpainNavChrome,
   SudanNavChrome,
   SprogfountNavChrome,
+  SwedenNavChrome,
   TowersNavChrome,
   TwothoNavChrome,
   UnisphNavChrome,
