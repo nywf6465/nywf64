@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SINCLAIR: SCard = {
-  id: "sinclair",
-  href: "/sinclairoverview",
-  title: "Sinclair",
-  body: "Life as it existed 165 million years ago is re-created in a display of life-sized dinosaurs.",
-  pavilionSrc: "/images/sinclair/sinclair-icon.jpg",
+const SINGER_BOWL: SCard = {
+  id: "singer-bowl",
+  href: "/singeroverview",
+  title: "Singer Bowl",
+  body: "Music festivals, sports events and variety shows are held in this open-air stadium seating 15,000.",
+  pavilionSrc: "/images/singer/singer-bowl-icon.jpg",
   pavilionWidth: 760,
   pavilionHeight: 330,
-  pavilionAlt: "Sinclair",
+  pavilionAlt: "Singer Bowl",
 };
 
-export const S_CARDS: SCard[] = [SINCLAIR];
+export const S_CARDS: SCard[] = [SINGER_BOWL];
