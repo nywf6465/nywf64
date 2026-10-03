@@ -12342,18 +12342,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/unisphoverview",
     nextHref: "/unisph01",
   },
-  "unisph11": {
-    slug: "unisph11",
-    title: "Brochure: Graphic Standards Manual",
-    metaTitle: "Brochure: Graphic Standards Manual — Unisphere — nywf64.com",
-    metaDescription: "Brochure: Graphic Standards Manual at the 1964/1965 New York World",
-    nav: "UnisphNavChrome",
-    overviewHref: "/unisphoverview",
-    overviewLabel: "Unisphere overview",
-    placeholder: "Unisphere content",
-    previousHref: "/unisphoverview",
-    nextHref: "/unisph01",
-  },
   "unisph12": {
     slug: "unisph12",
     title: "Why Unisphere?",
