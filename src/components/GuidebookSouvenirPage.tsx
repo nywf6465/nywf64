@@ -61,6 +61,12 @@ export type GuidebookYearContent = {
    * note above the cover and omit logo / name / copy (e.g. /amind01).
    */
   omittedFromGuide?: boolean;
+  /**
+   * Optional burgundy italic status note. When `omittedFromGuide` is true,
+   * replaces the default not-included sentence. When false, shown under the
+   * cover caption block (e.g. /ampthe01 1965 Wonder World / Florida note).
+   */
+  statusNote?: ReactNode;
 };
 
 export type GuidebookMapEntry = {
@@ -172,11 +178,21 @@ function Admission({
   );
 }
 
-function OmittedFromGuideNote({ year }: { year: 1964 | 1965 }) {
+function OmittedFromGuideNote({
+  year,
+  note,
+}: {
+  year: 1964 | 1965;
+  note?: ReactNode;
+}) {
   return (
     <p className={styles.omittedNote}>
-      A description of this exhibit was not included in the {year} Official
-      Guide Book
+      {note ?? (
+        <>
+          A description of this exhibit was not included in the {year} Official
+          Guide Book
+        </>
+      )}
     </p>
   );
 }
@@ -198,7 +214,7 @@ function GuideColumn({
   if (omitted) {
     return (
       <section className={styles.col} aria-label={label}>
-        <OmittedFromGuideNote year={year} />
+        <OmittedFromGuideNote year={year} note={guide.statusNote} />
         <Image
           src={guide.cover.src}
           alt={
@@ -230,6 +246,9 @@ function GuideColumn({
         />
         {year === 1964 ? <Caption1964 /> : <Caption1965 />}
       </div>
+      {guide.statusNote ? (
+        <p className={styles.omittedNote}>{guide.statusNote}</p>
+      ) : null}
       {guide.logo ? (
         <Image
           src={guide.logo.src}
