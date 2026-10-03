@@ -14931,6 +14931,60 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/unistaoverview",
     nextHref: "/unista01",
   },
+  "uspo01": {
+    slug: "uspo01",
+    title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
+    metaTitle:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — U.S. Post Office — nywf64.com",
+    metaDescription:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — U.S. Post Office at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "UspoNavChrome",
+    overviewHref: "/uspooverview",
+    overviewLabel: "U.S. Post Office overview",
+    placeholder: "U.S. Post Office content",
+    previousHref: "/uspooverview",
+    nextHref: "/uspo01",
+  },
+  "uspo02": {
+    slug: "uspo02",
+    title: "World's Fair Information Manual",
+    metaTitle: "World's Fair Information Manual — U.S. Post Office — nywf64.com",
+    metaDescription:
+      "World's Fair Information Manual — U.S. Post Office at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "UspoNavChrome",
+    overviewHref: "/uspooverview",
+    overviewLabel: "U.S. Post Office overview",
+    placeholder: "U.S. Post Office content",
+    previousHref: "/uspooverview",
+    nextHref: "/uspo01",
+  },
+  "uspo03": {
+    slug: "uspo03",
+    title: "Gallery of Photographs",
+    metaTitle: "Gallery of Photographs — U.S. Post Office — nywf64.com",
+    metaDescription:
+      "Gallery of Photographs — U.S. Post Office at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "UspoNavChrome",
+    overviewHref: "/uspooverview",
+    overviewLabel: "U.S. Post Office overview",
+    placeholder: "U.S. Post Office content",
+    previousHref: "/uspooverview",
+    nextHref: "/uspo01",
+  },
+  "uspo04": {
+    slug: "uspo04",
+    title: "Postal Bulletin - World's Fair Commemorative Stamp",
+    metaTitle:
+      "Postal Bulletin - World's Fair Commemorative Stamp — U.S. Post Office — nywf64.com",
+    metaDescription:
+      "Postal Bulletin - World's Fair Commemorative Stamp — U.S. Post Office at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "UspoNavChrome",
+    overviewHref: "/uspooverview",
+    overviewLabel: "U.S. Post Office overview",
+    placeholder: "U.S. Post Office content",
+    previousHref: "/uspooverview",
+    nextHref: "/uspo01",
+  },
   "vatican01": {
     slug: "vatican01",
     title: "vatican01",
