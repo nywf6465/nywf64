@@ -154,6 +154,7 @@ import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
 import { UnistaNavChrome } from "@/components/UnistaNavChrome";
 import { VaticanNavChrome } from "@/components/VaticanNavChrome";
+import { WisconsinNavChrome } from "@/components/WisconsinNavChrome";
 
 const STUB_NAV: Record<string, ComponentType> = {
   AdminbldgNavChrome,
