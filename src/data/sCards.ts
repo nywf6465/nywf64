@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SHEA_STADIUM: SCard = {
-  id: "shea-stadium",
-  href: "/sheastaoverview",
-  title: "Shea Stadium",
-  body: "This home of two teams — the New York Mets (baseball) and Jets (football) — is one of the most modern stadiums in the world.",
-  pavilionSrc: "/images/sheasta/shea-stadium-icon.jpg",
+const SIERRA_LEONE: SCard = {
+  id: "sierra-leone",
+  href: "/sierraoverview",
+  title: "Sierra Leone",
+  body: "Two troupes perform intricate dances, and acrobats entertain with feats of skill and precision.",
+  pavilionSrc: "/images/sierra/sierra-leone-icon.jpg",
   pavilionWidth: 760,
   pavilionHeight: 330,
-  pavilionAlt: "Shea Stadium",
+  pavilionAlt: "Sierra Leone",
 };
 
-export const S_CARDS: SCard[] = [SHEA_STADIUM];
+export const S_CARDS: SCard[] = [SIERRA_LEONE];
