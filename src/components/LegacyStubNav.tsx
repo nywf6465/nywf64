@@ -154,6 +154,7 @@ import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
 import { UnistaNavChrome } from "@/components/UnistaNavChrome";
 import { VaticanNavChrome } from "@/components/VaticanNavChrome";
+import { WfmarNavChrome } from "@/components/WfmarNavChrome";
 
 const STUB_NAV: Record<string, ComponentType> = {
   AdminbldgNavChrome,
@@ -311,6 +312,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   UnisphNavChrome,
   UnistaNavChrome,
   VaticanNavChrome,
+  WfmarNavChrome,
 };
 
 export function LegacyStubNav({ name }: { name: string }) {
