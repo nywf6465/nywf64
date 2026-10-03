@@ -2,7 +2,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
  * U-page link cards — fountains-model layout.
- * U-specific rows: U.S. Post Office, U.S. Rubber …
+ * U-specific rows: U.S. Post Office, U.S. Rubber, Unisphere …
  */
 export type UCard = FountainsCard;
 
@@ -28,4 +28,15 @@ const US_RUBBER: UCard = {
   pavilionAlt: "U.S. Rubber",
 };
 
-export const U_CARDS: UCard[] = [US_POST_OFFICE, US_RUBBER];
+const UNISPHERE: UCard = {
+  id: "unisphere",
+  href: "/unisphoverview",
+  title: "Unisphere",
+  body: "Symbol of the Fair, this 12-story high stainless-steel model of the earth was built and presented by United States Steel.",
+  pavilionSrc: "/images/unisphere/unisphere-icon.jpg",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Unisphere",
+};
+
+export const U_CARDS: UCard[] = [US_POST_OFFICE, US_RUBBER, UNISPHERE];
