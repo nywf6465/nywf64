@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type TCard = FountainsCard;
 
-const THAILAND: TCard = {
-  id: "thailand",
-  href: "/thaioverview",
-  title: "Thailand",
-  body: "Inspired by a Buddhist shrine, this ornate pavilion houses the ancient treasures and modern products of an exotic land.",
-  pavilionSrc: "/images/thai/thailand-icon.jpg",
+const THRILL_RIDES: TCard = {
+  id: "thrill-rides",
+  href: "/thrridoverview",
+  title: "Thrill Rides",
+  body: "Three different rides provide the traditional fun of a fair.",
+  pavilionSrc: "/images/thrrid/thrill-rides-icon.jpg",
   pavilionWidth: 761,
   pavilionHeight: 331,
-  pavilionAlt: "Thailand",
+  pavilionAlt: "Thrill Rides",
 };
 
-export const T_CARDS: TCard[] = [THAILAND];
+export const T_CARDS: TCard[] = [THRILL_RIDES];
