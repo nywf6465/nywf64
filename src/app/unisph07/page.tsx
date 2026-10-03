@@ -33,8 +33,8 @@ export default function Unisph07Page() {
           <Image
             src="/images/unisphoverview/hero-banner.jpg"
             alt="Unisphere at the 1964/1965 New York World’s Fair"
-            width={1914}
-            height={822}
+            width={1902}
+            height={827}
             priority
             sizes="100vw"
             className={overviewHeroStyles.art}
