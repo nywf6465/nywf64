@@ -6,16 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type TCard = FountainsCard;
 
-/** Same ICON/TEXT/title/href as Religions “Two Thousand Tribes” row. */
-const TWO_THOUSAND_TRIBES: TCard = {
-  id: "two-thousand-tribes",
-  href: "/twothooverview",
-  title: "Two Thousand Tribes",
-  body: "The ancient artifacts and modern progress of tribal groups around the world are shown in a large stylized aboriginal hut.",
-  pavilionSrc: "/images/religions/two-thousand-tribes-icon.png",
-  pavilionWidth: 762,
-  pavilionHeight: 330,
-  pavilionAlt: "Two Thousand Tribes",
-};
-
-export const T_CARDS: TCard[] = [TWO_THOUSAND_TRIBES];
+export const T_CARDS: TCard[] = [
+  {
+    id: "tower-of-light",
+    href: "/twrlitoverview",
+    title: "Tower of Light",
+    body: "A musical show depicts the benefits of electricity. Pointing skyward from the pavilion is the world's most powerful searchlight.",
+    pavilionSrc: "/images/twrlit/tower-of-light-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "Tower of Light",
+  },
+];
