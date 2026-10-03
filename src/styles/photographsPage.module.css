@@ -1,0 +1,167 @@
+/*
+ * Photograph Album pages (“photographs” standard).
+ * Canonical instance: /aertow03. Legacy attraction photograph album pages use
+ * this layout.
+ *
+ * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav.
+ * Do NOT include the legacy “Photograph Scrap Book” banner image.
+ *
+ * Stack: hero → attraction nav → navy title bar → photograph sections → Nav2Bar.
+ * Title bar text: “Photograph Album”.
+ *
+ * Body: named sections (e.g. Commercial Photographs, Fairgoer Photographs).
+ * Each section heading sits above a light-grey (#ccc) tray that holds the
+ * bordered photograph cards. Captions (bold title + Arial Narrow SOURCE) sit
+ * under each photo.
+ *
+ * Alignment: on desktop, photograph cards are centered in the tray. On mobile
+ * (max-width 720px), cards stay left-aligned in a single column.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 910px;
+  margin: 0 auto;
+  padding: 0.35rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.section {
+  width: 100%;
+}
+
+.sectionHeading {
+  margin: 0 0 0.35rem;
+  padding: 0 0.15rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: left;
+}
+
+/* Legacy section tray: bgcolor="#cccccc" */
+.tray {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0.65rem;
+  background: #ccc;
+}
+
+.photos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.65rem 0.85rem;
+}
+
+/*
+ * Card width is set inline from the photo’s pixel width so captions wrap to
+ * the image and desktop rows can sit side-by-side when centered in the tray.
+ */
+.card {
+  flex: 0 0 auto;
+  box-sizing: content-box;
+  max-width: 100%;
+  margin: 0; /* kill UA figure margins (often 1em 40px) */
+}
+
+.frame {
+  display: block;
+  width: 100%;
+  border: 2px solid #000;
+  background: #fff;
+  line-height: 0;
+  box-sizing: border-box;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  text-align: left;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.captionTitle {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.captionSource {
+  margin: 0.15rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+@media (max-width: 720px) {
+  .photos {
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+  }
+
+  .card {
+    max-width: 100%;
+  }
+}
