@@ -12,8 +12,8 @@ const SIERRA_LEONE: SCard = {
   title: "Sierra Leone",
   body: "Two troupes perform intricate dances, and acrobats entertain with feats of skill and precision.",
   pavilionSrc: "/images/sierra/sierra-leone-icon.jpg",
-  pavilionWidth: 760,
-  pavilionHeight: 330,
+  pavilionWidth: 761,
+  pavilionHeight: 331,
   pavilionAlt: "Sierra Leone",
 };
 
