@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type TCard = FountainsCard;
 
-const TEXAS_PAVILIONS: TCard = {
-  id: "texas-pavilions",
-  href: "/texasoverview",
-  title: "Texas Pavilions & Music Hall",
-  body: '"Friendship at the Fair" is the theme of an exuberant multiple exhibit which has been produced for the state by Dallas showman Angus G. Wynne Jr., in association with Compass Fair, Inc.',
-  pavilionSrc: "/images/texas/texas-pavilions-icon.jpg",
+const THAILAND: TCard = {
+  id: "thailand",
+  href: "/thaioverview",
+  title: "Thailand",
+  body: "Inspired by a Buddhist shrine, this ornate pavilion houses the ancient treasures and modern products of an exotic land.",
+  pavilionSrc: "/images/thai/thailand-icon.jpg",
   pavilionWidth: 761,
   pavilionHeight: 331,
-  pavilionAlt: "Texas Pavilions & Music Hall",
+  pavilionAlt: "Thailand",
 };
 
-export const T_CARDS: TCard[] = [TEXAS_PAVILIONS];
+export const T_CARDS: TCard[] = [THAILAND];
