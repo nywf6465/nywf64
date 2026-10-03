@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SERMONS_FROM_SCIENCE: SCard = {
-  id: "sermons-from-science",
-  href: "/serscioverview",
-  title: "Sermons from Science",
-  body: "Demonstrations of scientific marvels and color films on nature illustrate the compatibility of faith with modern-day science.",
-  pavilionSrc: "/images/sersci/sermons-from-science-icon.jpg",
+const SEVEN_UP: SCard = {
+  id: "seven-up",
+  href: "/sevupoverview",
+  title: "Seven-Up",
+  body: "This open-air cafe offers musical entertainment and an international sandwich buffet.",
+  pavilionSrc: "/images/sevup/seven-up-icon.jpg",
   pavilionWidth: 760,
   pavilionHeight: 330,
-  pavilionAlt: "Sermons from Science",
+  pavilionAlt: "Seven-Up",
 };
 
-export const S_CARDS: SCard[] = [SERMONS_FROM_SCIENCE];
+export const S_CARDS: SCard[] = [SEVEN_UP];
