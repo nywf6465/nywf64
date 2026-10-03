@@ -150,18 +150,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/africaoverview",
     nextHref: "/africa01",
   },
-  "africa02": {
-    slug: "africa02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "AfricaNavChrome",
-    overviewHref: "/africaoverview",
-    overviewLabel: "Africa overview",
-    placeholder: "Africa pavilion content",
-    previousHref: "/africaoverview",
-    nextHref: "/africa01",
-  },
   "africa03": {
     slug: "africa03",
     title: "Postcards",
@@ -171,7 +159,7 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     overviewHref: "/africaoverview",
     overviewLabel: "Africa overview",
     placeholder: "Africa pavilion content",
-    previousHref: "/africaoverview",
+    previousHref: "/africa02",
     nextHref: "/africa01",
   },
   "africa04": {
