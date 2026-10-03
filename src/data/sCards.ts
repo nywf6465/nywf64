@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SOCONY_MOBIL: SCard = {
-  id: "socony-mobil",
-  href: "/socmobiloverview",
-  title: "Socony Mobil",
-  body: "Visitors take part in a simulated cross-country driving game that tests their skills at the wheel.",
-  pavilionSrc: "/images/socmobil/socony-mobil-icon.jpg",
-  pavilionWidth: 760,
+const SOLAR_FOUNTAIN: SCard = {
+  id: "solar-fountain",
+  href: "/solfountoverview",
+  title: "Solar Fountain",
+  body: "A central dome supports a 30-foot high column of water while a starburst circles around the dome. Wobbling jets of water surrounding the dome simulate the sun's gases.",
+  pavilionSrc: "/images/fountains/solar-fountain-icon.png",
+  pavilionWidth: 762,
   pavilionHeight: 330,
-  pavilionAlt: "Socony Mobil",
+  pavilionAlt: "Solar Fountain",
 };
 
-export const S_CARDS: SCard[] = [SOCONY_MOBIL];
+export const S_CARDS: SCard[] = [SOLAR_FOUNTAIN];
