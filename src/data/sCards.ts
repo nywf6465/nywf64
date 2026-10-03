@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SANTA_MARIA: SCard = {
-  id: "santa-maria",
-  href: "/sanmaroverview",
-  title: "Santa Maria",
-  body: "A full-sized replica of Columbus' flagship is moored at the end of a 15th Century Spanish wharf.",
-  pavilionSrc: "/images/sanmar/santa-maria-icon.jpg",
+const SCHAEFER: SCard = {
+  id: "schaefer",
+  href: "/schcenoverview",
+  title: "Schaefer",
+  body: "A restaurant, bar and beer garden offer food and drink in a sporting atmosphere; a model of an old brewery is on view.",
+  pavilionSrc: "/images/schcen/schaefer-icon.jpg",
   pavilionWidth: 760,
   pavilionHeight: 330,
-  pavilionAlt: "Santa Maria",
+  pavilionAlt: "Schaefer",
 };
 
-export const S_CARDS: SCard[] = [SANTA_MARIA];
+export const S_CARDS: SCard[] = [SCHAEFER];
