@@ -142,15 +142,11 @@ import { PolyneNavChrome } from "@/components/PolyneNavChrome";
 import { PoolinNavChrome } from "@/components/PoolinNavChrome";
 import { PoorefNavChrome } from "@/components/PoorefNavChrome";
 import { PorautNavChrome } from "@/components/PorautNavChrome";
-import { PrebuiNavChrome } from "@/components/PrebuiNavChrome";
 import { ProortNavChrome } from "@/components/ProortNavChrome";
 import { RcaNavChrome } from "@/components/RcaNavChrome";
-import { RheingNavChrome } from "@/components/RheingNavChrome";
-import { RocthrNavChrome } from "@/components/RocthrNavChrome";
 import { RusortNavChrome } from "@/components/RusortNavChrome";
-import { SchcenNavChrome } from "@/components/SchcenNavChrome";
+import { ScopapNavChrome } from "@/components/ScopapNavChrome";
 import { SersciNavChrome } from "@/components/SersciNavChrome";
-import { SanmarNavChrome } from "@/components/SanmarNavChrome";
 import { SolfountNavChrome } from "@/components/SolfountNavChrome";
 import { SpainNavChrome } from "@/components/SpainNavChrome";
 import { SprogfountNavChrome } from "@/components/SprogfountNavChrome";
@@ -304,15 +300,11 @@ const STUB_NAV: Record<string, ComponentType> = {
   PoolinNavChrome,
   PoorefNavChrome,
   PorautNavChrome,
-  PrebuiNavChrome,
   ProortNavChrome,
   RcaNavChrome,
-  RheingNavChrome,
-  RocthrNavChrome,
   RusortNavChrome,
-  SchcenNavChrome,
+  ScopapNavChrome,
   SersciNavChrome,
-  SanmarNavChrome,
   SolfountNavChrome,
   SpainNavChrome,
   SprogfountNavChrome,

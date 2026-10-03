@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SCHAEFER: SCard = {
-  id: "schaefer",
-  href: "/schcenoverview",
-  title: "Schaefer",
-  body: "A restaurant, bar and beer garden offer food and drink in a sporting atmosphere; a model of an old brewery is on view.",
-  pavilionSrc: "/images/schcen/schaefer-icon.jpg",
+const SCOTT_PAPER: SCard = {
+  id: "scott-paper",
+  href: "/scopapoverview",
+  title: "Scott Paper",
+  body: 'A tour through an "Enchanted Forest" tells the story of paper from woodland to home.',
+  pavilionSrc: "/images/scopap/scott-paper-icon.jpg",
   pavilionWidth: 760,
   pavilionHeight: 330,
-  pavilionAlt: "Schaefer",
+  pavilionAlt: "Scott Paper",
 };
 
-export const S_CARDS: SCard[] = [SCHAEFER];
+export const S_CARDS: SCard[] = [SCOTT_PAPER];
