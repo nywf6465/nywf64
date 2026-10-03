@@ -3,8 +3,8 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 /**
  * Adminbldg menu — nav-menu topics for all routes beginning with `adminbldg`.
  * Overview at top; Introduction omitted (legacy adminbldg01).
- * At the Fair is remapped to /adminbldg01 (legacy adminbldg02.html).
- * After the Fair remains /adminbldg03.
+ * At the Fair → /adminbldg01 (legacy adminbldg02.html).
+ * After the Fair → /adminbldg02 (legacy adminbldg03.html).
  */
 export const ADMINBLDG_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -17,6 +17,6 @@ export const ADMINBLDG_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "After the Fair",
-    href: "/adminbldg03",
+    href: "/adminbldg02",
   },
 ];

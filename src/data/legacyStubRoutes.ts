@@ -66,18 +66,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/foufaioverview",
     nextHref: "/Foucault01",
   },
-  "adminbldg03": {
-    slug: "adminbldg03",
-    title: "After the Fair",
-    metaTitle: "After the Fair — Administration Building — nywf64.com",
-    metaDescription: "After the Fair — Administration Building at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AdminbldgNavChrome",
-    overviewHref: "/adminbldgoverview",
-    overviewLabel: "Administration Building overview",
-    placeholder: "Administration Building content",
-    previousHref: "/adminbldg01",
-    nextHref: "/adminbldg03",
-  },
   "aertow01": {
     slug: "aertow01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
