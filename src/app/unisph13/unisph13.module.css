@@ -1,0 +1,182 @@
+/*
+ * Unisphere — Essay: I Think we have a Light Out! (/unisph13).
+ * Body from legacy unisph13.html. nywf64.com bottom logo omitted.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.articleInner {
+  width: min(52.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.bodyCopy {
+  width: min(37.5rem, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body p {
+  margin: 0 0 0.95rem;
+  font-family: Times, "Times New Roman", serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.dropCap::first-letter {
+  float: left;
+  font-size: 2.4rem;
+  font-weight: 700;
+  line-height: 0.9;
+  padding: 0.1rem 0.15rem 0 0;
+  font-family: Times, "Times New Roman", serif;
+}
+
+.photoBlock {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 1rem 0 1.25rem;
+  width: min(52.3rem, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.photoCaption {
+  margin: 0;
+  font-family: Times, "Times New Roman", serif;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  color: #000;
+  text-align: center;
+}
+
+.photoFrame {
+  display: inline-block;
+  border: 1px solid #000;
+  line-height: 0;
+  max-width: 100%;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  max-width: 431px;
+  height: auto;
+}
+
+.photoSource {
+  margin: 0.35rem 0 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: #000;
+}
+
+.webmasterBox {
+  margin: 1.5rem 0 0.75rem;
+  border: 1px solid #000;
+  padding: 0.85rem 1rem;
+  box-sizing: border-box;
+}
+
+.webmasterBox p {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.webmasterBox p:last-child {
+  margin-bottom: 0;
+}
+
+.brandNywf {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+  font-weight: 700;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-size: 0.85em;
+}
+
+.copyright {
+  margin: 1rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #000;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .photoBlock {
+    grid-template-columns: 1fr;
+  }
+
+  .photoCaption {
+    order: 2;
+  }
+}
