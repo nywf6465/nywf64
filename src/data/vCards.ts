@@ -6,4 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type VCard = FountainsCard;
 
-export const V_CARDS: VCard[] = [];
+export const V_CARDS: VCard[] = [
+  {
+    id: "venezuela",
+    href: "/veneerview",
+    title: "Venezuela",
+    body: "Among the pavilion's features are guitar and dance recitles, memorabilia of Simon Bolivar and early and modern Venezuelan art.",
+    pavilionSrc: "/images/veneze/venezuela-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 330,
+    pavilionAlt: "Venezuela",
+  },
+];
