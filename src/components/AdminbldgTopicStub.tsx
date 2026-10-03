@@ -31,7 +31,7 @@ export function AdminbldgTopicStub({ title }: { title: string }) {
       <Nav2Bar
         previousHref="/adminbldgoverview"
         overviewHref="/adminbldgoverview"
-        nextHref="/adminbldg02"
+        nextHref="/adminbldg01"
       />
     </>
   );
