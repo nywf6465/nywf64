@@ -25,8 +25,8 @@ export default function UnisphOverviewPage() {
           <Image
             src="/images/unisphoverview/hero-banner.jpg"
             alt="Unisphere at the 1964/1965 New York World’s Fair"
-            width={1914}
-            height={822}
+            width={1902}
+            height={827}
             priority
             sizes="100vw"
             className={overviewHeroStyles.art}
@@ -51,8 +51,8 @@ export default function UnisphOverviewPage() {
             <Image
               src="/images/unisphoverview/photo.jpg"
               alt="Unisphere — stainless-steel model of the earth"
-              width={958}
-              height={1117}
+              width={1539}
+              height={1022}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

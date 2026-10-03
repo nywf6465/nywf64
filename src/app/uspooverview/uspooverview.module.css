@@ -1,4 +1,4 @@
-/* Unisphere overview — same layout as overview prototype */
+/* U.S. Post Office overview — same layout as overview prototype */
 
 .hero {
   position: relative;
@@ -68,7 +68,7 @@
   line-height: 0;
   border: 1px solid #0a0a0a;
   background: #fff;
-  aspect-ratio: 1539 / 1022;
+  aspect-ratio: 1526 / 1031;
   overflow: hidden;
 }
 
