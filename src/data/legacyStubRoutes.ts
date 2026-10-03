@@ -11898,6 +11898,46 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/serscioverview",
     nextHref: "/sersci01",
   },
+  "sanmar01": {
+    slug: "sanmar01",
+    title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
+    metaTitle:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — Santa Maria — nywf64.com",
+    metaDescription:
+      "1964 & 1965 Official Guidebook & Souvenir Map Entries — Santa Maria at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SanmarNavChrome",
+    overviewHref: "/sanmaroverview",
+    overviewLabel: "Santa Maria overview",
+    placeholder: "Santa Maria content",
+    previousHref: "/sanmaroverview",
+    nextHref: "/sanmar01",
+  },
+  "sanmar02": {
+    slug: "sanmar02",
+    title: "Postcards",
+    metaTitle: "Postcards — Santa Maria — nywf64.com",
+    metaDescription:
+      "Postcards — Santa Maria at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SanmarNavChrome",
+    overviewHref: "/sanmaroverview",
+    overviewLabel: "Santa Maria overview",
+    placeholder: "Santa Maria content",
+    previousHref: "/sanmaroverview",
+    nextHref: "/sanmar01",
+  },
+  "sanmar03": {
+    slug: "sanmar03",
+    title: "Gallery of Photographs",
+    metaTitle: "Gallery of Photographs — Santa Maria — nywf64.com",
+    metaDescription:
+      "Gallery of Photographs — Santa Maria at the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "SanmarNavChrome",
+    overviewHref: "/sanmaroverview",
+    overviewLabel: "Santa Maria overview",
+    placeholder: "Santa Maria content",
+    previousHref: "/sanmaroverview",
+    nextHref: "/sanmar01",
+  },
   "solfount01": {
     slug: "solfount01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
