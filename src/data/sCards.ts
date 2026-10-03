@@ -6,15 +6,15 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
-const SOLAR_FOUNTAIN: SCard = {
-  id: "solar-fountain",
-  href: "/solfountoverview",
-  title: "Solar Fountain",
-  body: "A central dome supports a 30-foot high column of water while a starburst circles around the dome. Wobbling jets of water surrounding the dome simulate the sun's gases.",
-  pavilionSrc: "/images/fountains/solar-fountain-icon.png",
-  pavilionWidth: 762,
-  pavilionHeight: 330,
-  pavilionAlt: "Solar Fountain",
+const SPACE_PARK: SCard = {
+  id: "space-park",
+  href: "/spacparkoverview",
+  title: "Space Park",
+  body: "The dramatic vehicles that are carrying the United States into the Space Age are on display.",
+  pavilionSrc: "/images/spacpark/space-park-icon.jpg",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Space Park",
 };
 
-export const S_CARDS: SCard[] = [SOLAR_FOUNTAIN];
+export const S_CARDS: SCard[] = [SPACE_PARK];
