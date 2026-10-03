@@ -56,6 +56,10 @@ export type InformationManualPageProps = {
   source?: ReactNode;
   features: ManualFeature[];
   secondaryFigure?: ManualImage;
+  /**
+   * Optional bordered note after FEATURES (e.g. webmaster’s note on /amind02).
+   */
+  note?: ReactNode;
   previousHref: string;
   nextHref: string;
   overviewHref?: string;
@@ -131,6 +135,7 @@ export function InformationManualPage({
   source,
   features,
   secondaryFigure,
+  note,
   previousHref,
   nextHref,
   overviewHref,
@@ -193,6 +198,8 @@ export function InformationManualPage({
           {!primaryFigure && source ? (
             <p className={styles.figureSource}>{source}</p>
           ) : null}
+
+          {note ? <aside className={styles.note}>{note}</aside> : null}
 
           {secondaryFigure ? (
             <>
