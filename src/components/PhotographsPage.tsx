@@ -21,7 +21,7 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * 1) Named sections (Commercial Photographs, Fairgoer Photographs, …)
  * 2) Each section: heading, then light-grey (#ccc) tray of photo cards
  * 3) Each card: 2px bordered photo, bold title + Arial Narrow SOURCE under it
- * 4) Photographs are left-aligned in the tray (not centered)
+ * 4) Desktop: photograph cards are centered in the tray; mobile: left-aligned
  *
  * For new albums, copy src/app/aertow03/page.tsx and fill `sections` from the
  * legacy HTML — see AGENTS.md “Photographs standard”.
