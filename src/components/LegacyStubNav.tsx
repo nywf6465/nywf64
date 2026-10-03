@@ -184,6 +184,16 @@ import { UnisphNavChrome } from "@/components/UnisphNavChrome";
 import { UnistaNavChrome } from "@/components/UnistaNavChrome";
 import { UspoNavChrome } from "@/components/UspoNavChrome";
 import { UsrubNavChrome } from "@/components/UsrubNavChrome";
+import { UndrghomeNavChrome } from "@/components/UndrghomeNavChrome";
+import { UarNavChrome } from "@/components/UarNavChrome";
+import { UnNavChrome } from "@/components/UnNavChrome";
+import { WalwaxNavChrome } from "@/components/WalwaxNavChrome";
+import { WeshouNavChrome } from "@/components/WeshouNavChrome";
+import { WesvirNavChrome } from "@/components/WesvirNavChrome";
+import { WisconsinNavChrome } from "@/components/WisconsinNavChrome";
+import { WorfooNavChrome } from "@/components/WorfooNavChrome";
+import { WfmarNavChrome } from "@/components/WfmarNavChrome";
+import { WfpavNavChrome } from "@/components/WfpavNavChrome";
 import { VaticanNavChrome } from "@/components/VaticanNavChrome";
 import { VenezeNavChrome } from "@/components/VenezeNavChrome";
 
@@ -369,12 +379,23 @@ const STUB_NAV: Record<string, ComponentType> = {
   TravelersNavChrome,
   TwothoNavChrome,
   TwrlitNavChrome,
+  UarNavChrome,
+  UndrghomeNavChrome,
   UnisphNavChrome,
   UnistaNavChrome,
+  UnNavChrome,
   UspoNavChrome,
   UsrubNavChrome,
   VaticanNavChrome,
   VenezeNavChrome,
+  WalwaxNavChrome,
+  WeshouNavChrome,
+  WesvirNavChrome,
+  WfmarNavChrome,
+  WfpavNavChrome,
+  WisconsinNavChrome,
+  WorfooNavChrome,
+
 };
 
 export function LegacyStubNav({ name }: { name: string }) {
