@@ -79,33 +79,14 @@ export type GuidebookMapEntry = {
   note?: ReactNode;
 };
 
-export type GuidebookLocateLink = {
-  areaMap: GuidebookImage;
-  locateHref: string;
-};
-
 export type GuidebookMapContent = {
   cover: GuidebookImage;
+  areaMap: GuidebookImage;
   /**
-   * Single Locate It thumbnail (default). Prefer `locates` when the exhibit
-   * has more than one area pin.
-   */
-  areaMap?: GuidebookImage;
-  /**
-   * When omitted, Locate It remains visible but is not linked (e.g. never-built
-   * exhibits with no locate-it map page).
+   * Locate It destination. When omitted, the area-map thumbnail and
+   * “Locate It” label remain visible but are not links (e.g. /archamer01).
    */
   locateHref?: string;
-  /**
-   * Multiple Locate It thumbnails (e.g. Arlington Hat industrial/international/
-   * state/transport pins). When set, overrides `areaMap` + `locateHref`.
-   */
-  locates?: GuidebookLocateLink[];
-  /**
-   * Noun in the map-column caption (“exhibit”, “fountain”, …).
-   * Defaults to “exhibit”.
-   */
-  subjectNoun?: string;
   /**
    * Optional pavilion block below the map header when guide years omit
    * an entry (legacy layout used by /amind01).
@@ -156,12 +137,12 @@ function Caption1965() {
   );
 }
 
-function CaptionMap({ subjectNoun = "exhibit" }: { subjectNoun?: string }) {
+function CaptionMap() {
   return (
     <p className={styles.intro}>
       The location of this
       <br />
-      {subjectNoun} on the 1964
+      exhibit on the 1964
       <br />
       Official Souvenir Map
     </p>
@@ -332,22 +313,10 @@ function GuideColumn({
 function MapColumn({ map }: { map: GuidebookMapContent }) {
   const entry = map.entry;
   const nameFace = entry?.nameFace ?? "times";
-  const locates: GuidebookLocateLink[] =
-    map.locates ??
-    (map.areaMap
-      ? [{ areaMap: map.areaMap, locateHref: map.locateHref ?? "" }]
-      : []);
-  const multiLocate = locates.length > 1;
 
   return (
     <section className={styles.col} aria-label="1964 Official Souvenir Map">
-      <div
-        className={
-          multiLocate
-            ? `${styles.entryHead} ${styles.entryHeadMultiLocate}`
-            : styles.entryHead
-        }
-      >
+      <div className={styles.entryHead}>
         <Image
           src={map.cover.src}
           alt={map.cover.alt ?? "Cover — 1964 Official Souvenir Map"}
@@ -357,44 +326,38 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           unoptimized
         />
         <div className={styles.mapSide}>
-          <div className={styles.locates}>
-            {locates.map((item, index) => (
-              <div
-                key={item.locateHref || `locate-${index}`}
-                className={styles.locate}
-              >
-                {item.locateHref ? (
-                  <Link href={item.locateHref}>
-                    <Image
-                      src={item.areaMap.src}
-                      alt={item.areaMap.alt ?? "Area map"}
-                      width={item.areaMap.width}
-                      height={item.areaMap.height}
-                      className={styles.areaMap}
-                      unoptimized
-                    />
-                  </Link>
-                ) : (
+          <div className={styles.locate}>
+            {map.locateHref ? (
+              <>
+                <Link href={map.locateHref}>
                   <Image
-                    src={item.areaMap.src}
-                    alt={item.areaMap.alt ?? "Area map"}
-                    width={item.areaMap.width}
-                    height={item.areaMap.height}
+                    src={map.areaMap.src}
+                    alt={map.areaMap.alt ?? "Industrial area map"}
+                    width={map.areaMap.width}
+                    height={map.areaMap.height}
                     className={styles.areaMap}
                     unoptimized
                   />
-                )}
-                {item.locateHref ? (
-                  <Link href={item.locateHref} className={styles.locateLink}>
-                    Locate It
-                  </Link>
-                ) : (
-                  <span className={styles.locateLink}>Locate It</span>
-                )}
-              </div>
-            ))}
+                </Link>
+                <Link href={map.locateHref} className={styles.locateLink}>
+                  Locate It
+                </Link>
+              </>
+            ) : (
+              <>
+                <Image
+                  src={map.areaMap.src}
+                  alt={map.areaMap.alt ?? "Industrial area map"}
+                  width={map.areaMap.width}
+                  height={map.areaMap.height}
+                  className={styles.areaMap}
+                  unoptimized
+                />
+                <span className={styles.locateLink}>Locate It</span>
+              </>
+            )}
           </div>
-          <CaptionMap subjectNoun={map.subjectNoun} />
+          <CaptionMap />
         </div>
       </div>
       {entry ? (
