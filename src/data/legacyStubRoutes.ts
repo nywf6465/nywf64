@@ -750,18 +750,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/belviloverview",
     nextHref: "/belvil01",
   },
-  "berlin06": {
-    slug: "berlin06",
-    title: "A Spherical View of Berlin",
-    metaTitle: "A Spherical View of Berlin — Berlin — nywf64.com",
-    metaDescription: "A Spherical View of Berlin — Berlin at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "BerlinNavChrome",
-    overviewHref: "/berlinoverview",
-    overviewLabel: "Berlin overview",
-    placeholder: "Berlin content",
-    previousHref: "/berlinoverview",
-    nextHref: "/berlin01",
-  },
   "betliv02": {
     slug: "betliv02",
     title: "World",
