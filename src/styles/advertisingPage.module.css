@@ -7,9 +7,10 @@
  * Stack: hero → attraction nav → navy title bar → centered ad collage(es) → Nav2Bar.
  * Title bar text: “Advertising”.
  *
- * Body (from legacy amex04.html / unisph04.html): bordered collage of ad tiles in a
- * fixed column grid, with Arial Narrow source line(s) under the collage. Optional
- * featured advertisement image and body copy (unisph04).
+ * Body (from legacy amex04.html / unisph04.html / bell04.html): bordered collage
+ * of ad tiles in a fixed column grid, with Arial Narrow source line(s) under the
+ * collage. Optional featured advertisement image and body copy (unisph04). Optional
+ * reconstructed typeset advertisement (`content`, /bell04).
  */
 
 .hero {
@@ -142,8 +143,106 @@
   margin-bottom: 0;
 }
 
+.recreation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(600px, 100%);
+}
+
+.lead,
+.logo,
+.side {
+  display: block;
+  height: auto;
+}
+
+.lead {
+  width: auto;
+  max-width: min(460px, 100%);
+}
+
+.headline {
+  width: 100%;
+  margin: 0.65rem 0 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.headlineLead {
+  font-size: 24px;
+}
+
+.headlineRest {
+  font-size: 18px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 8px 12px;
+  align-items: start;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.copy {
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.copy p {
+  margin: 0 0 0.85em;
+}
+
+.copy p:last-child {
+  margin-bottom: 0;
+}
+
+.side {
+  justify-self: center;
+  width: auto;
+  max-width: 100%;
+}
+
+.caption {
+  width: 75%;
+  margin: 0.45rem 0 0.85rem auto;
+  padding: 0 8px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.35;
+  color: #000;
+}
+
+.logo {
+  width: auto;
+  max-width: min(460px, 100%);
+  align-self: flex-start;
+  margin-left: 8px;
+}
+
 @media (max-width: 640px) {
   .collage {
+    width: 100%;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .caption {
     width: 100%;
   }
 }

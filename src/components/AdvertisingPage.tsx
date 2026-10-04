@@ -12,15 +12,17 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * HARD RULE — navy title banner: keep the full-width navy (`#26346e`) title bar
  * immediately beneath the attraction nav. This layout renders “Advertising”.
  *
- * Stack: hero → attraction nav → navy title bar → bordered ad collage(es) → Nav2Bar.
+ * Stack: hero → attraction nav → navy title bar → ad body → Nav2Bar.
  *
- * Body recipe (from legacy amex04.html / unisph04.html):
+ * Body recipe (from legacy amex04.html / unisph04.html / bell04.html):
  * 1) One or more bordered collages of advertisement tiles in a column grid
  * 2) Arial Narrow source line(s) under each collage as needed
  * 3) Optional featured advertisement image, body copy, then source
+ * 4) Optional reconstructed advertisement (`content`) when the legacy page
+ *    is a typeset ad rather than a tile collage (canonical: /bell04)
  *
- * For new advertising pages, copy src/app/amex04/page.tsx or src/app/unisph04/page.tsx
- * and fill collage tiles from the legacy HTML.
+ * For new advertising pages, copy src/app/amex04/page.tsx, src/app/unisph04/page.tsx,
+ * or src/app/bell04/page.tsx and fill from the legacy HTML.
  */
 
 export type AdvertisingImage = {
@@ -67,6 +69,11 @@ export type AdvertisingPageProps = {
   collages?: AdvertisingCollage[];
   /** Optional featured advertisement below the collages. */
   feature?: AdvertisingFeature;
+  /**
+   * Reconstructed advertisement (legacy bell04). Renders after collages and
+   * before `feature`. Use with `sources` when there is no tile collage.
+   */
+  content?: ReactNode;
   /** Show a horizontal rule before the featured advertisement. */
   featureDivider?: boolean;
   previousHref: string;
@@ -125,6 +132,7 @@ export function AdvertisingPage({
   sources,
   collages,
   feature,
+  content,
   featureDivider = false,
   previousHref,
   nextHref,
@@ -181,6 +189,16 @@ export function AdvertisingPage({
                 defaultColumns={columns}
               />
             ))}
+
+            {content ? <div className={styles.recreation}>{content}</div> : null}
+
+            {content && !tiles && !collages
+              ? (sources ?? []).map((source, index) => (
+                  <p key={`content-source-${index}`} className={styles.source}>
+                    {source}
+                  </p>
+                ))
+              : null}
 
             {feature ? (
               <>
