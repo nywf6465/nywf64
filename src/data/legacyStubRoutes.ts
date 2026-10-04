@@ -1170,18 +1170,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/avisoverview",
     nextHref: "/avis01",
   },
-  "barbuf01": {
-    slug: "barbuf01",
-    title: "1964 & 1965 Official Guidebook & Souvenir Map",
-    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Bar, Buffet and Cafeteria — nywf64.com",
-    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map — Bar, Buffet and Cafeteria at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "BarbufNavChrome",
-    overviewHref: "/barbufoverview",
-    overviewLabel: "Bar, Buffet and Cafeteria overview",
-    placeholder: "Bar, Buffet and Cafeteria content",
-    previousHref: "/barbufoverview",
-    nextHref: "/barbuf01",
-  },
   "barbuf02": {
     slug: "barbuf02",
     title: "Photograph Album",

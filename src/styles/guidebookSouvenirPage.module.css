@@ -104,7 +104,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  /* Keep Locate It + caption flush to the map cover (upper/lower right),
+     not centered in the leftover column width. */
+  align-items: flex-start;
   align-self: stretch;
   flex: 1 1 auto;
   min-width: 0;
@@ -125,6 +127,8 @@
   align-self: flex-start;
   gap: 0.35rem;
   flex: 0 0 auto;
+  width: max-content;
+  max-width: 100%;
   padding-top: 0;
 }
 
