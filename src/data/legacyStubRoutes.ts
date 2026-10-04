@@ -774,18 +774,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/argentoverview",
     nextHref: "/argent01",
   },
-  "argent03": {
-    slug: "argent03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Argentina — nywf64.com",
-    metaDescription: "Photograph Album — Argentina at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "ArgentNavChrome",
-    overviewHref: "/argentoverview",
-    overviewLabel: "Argentina overview",
-    placeholder: "Argentina content",
-    previousHref: "/argentoverview",
-    nextHref: "/argent01",
-  },
   "argent04": {
     slug: "argent04",
     title: "Pamphlet: Cornerstone Laying Ceremony",
