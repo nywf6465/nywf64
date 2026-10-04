@@ -112,21 +112,8 @@ export default function Unisph13Page() {
             </p>
           </div>
 
-          <div className={styles.photoBlock}>
-            <p className={styles.photoCaption}>
-              Lights representing the
-              <br />
-              capitals of the countries of the world
-              <br />
-              appear as pinpoints of light
-              <br />
-              on the surface of Unisphere
-              <br />
-              in this photo of the
-              <br />
-              armillary sphere at dusk.
-            </p>
-            <div>
+          <figure className={styles.photoBlock}>
+            <div className={styles.photoMedia}>
               <span className={styles.photoFrame}>
                 <Image
                   src="/images/unisph13/unisph241.jpg"
@@ -142,7 +129,12 @@ export default function Unisph13Page() {
                 D.C.
               </p>
             </div>
-          </div>
+            <figcaption className={styles.photoCaption}>
+              Lights representing the capitals of the countries of the world
+              appear as pinpoints of light on the surface of Unisphere in this
+              photo of the armillary sphere at dusk.
+            </figcaption>
+          </figure>
 
           <div className={styles.bodyCopy}>
             <p>
