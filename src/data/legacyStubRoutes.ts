@@ -762,18 +762,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/argentoverview",
     nextHref: "/argent01",
   },
-  "argent02": {
-    slug: "argent02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "ArgentNavChrome",
-    overviewHref: "/argentoverview",
-    overviewLabel: "Argentina overview",
-    placeholder: "Argentina content",
-    previousHref: "/argentoverview",
-    nextHref: "/argent01",
-  },
   "argent03": {
     slug: "argent03",
     title: "Photograph Album",
