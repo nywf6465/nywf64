@@ -834,11 +834,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/austriaoverview",
     nextHref: "/austria01",
   },
-  "austria03": {
-    slug: "austria03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Austria — nywf64.com",
-    metaDescription: "Photograph Album — Austria at the 1964/1965 New York World’s Fair on nywf64.com.",
+  "austria02": {
+    slug: "austria02",
+    title: "World",
+    metaTitle: "World",
+    metaDescription: "World",
     nav: "AustriaNavChrome",
     overviewHref: "/austriaoverview",
     overviewLabel: "Austria overview",
