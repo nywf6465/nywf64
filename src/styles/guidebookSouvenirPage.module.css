@@ -4,7 +4,8 @@
  *
  * Three columns, silver dividers, stacking under 720px.
  * Captions are three lines at the lower right of each cover.
- * Locate It sits at the upper right of the map cover.
+ * Locate It sits at the upper right of the map cover. Multiple Locate It
+ * links (e.g. Arlington Hat) sit in two equal columns next to the map.
  * Covers keep a 1px frame and have no rule under them.
  * The legacy "Revised" line is not part of this layout.
  *
@@ -88,6 +89,22 @@
   align-self: flex-start;
   width: max-content;
   max-width: 100%;
+}
+
+.locatesTwoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: start;
+  align-self: stretch;
+  width: 100%;
+  max-width: 100%;
+}
+
+.locatesTwoCol .locate {
+  width: 100%;
+  max-width: 100%;
+  align-self: stretch;
 }
 
 .entryHeadMultiLocate {

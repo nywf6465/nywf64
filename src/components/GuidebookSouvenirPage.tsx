@@ -15,7 +15,8 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * 1964 Official Souvenir Map.
  *
  * Each caption is three lines, left aligned at the lower right of its cover.
- * Locate It sits at the upper right of the map cover. When `map.locateHref`
+ * Locate It sits at the upper right of the map cover. Multiple Locate It
+ * links sit in two equal columns next to the map. When `map.locateHref`
  * is omitted, Locate It stays visible but is not a link. Covers keep a 1px
  * frame and have no rule beneath them. The legacy "Revised" line is not shown.
  *
@@ -357,7 +358,13 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           unoptimized
         />
         <div className={styles.mapSide}>
-          <div className={styles.locates}>
+          <div
+            className={
+              multiLocate
+                ? `${styles.locates} ${styles.locatesTwoCol}`
+                : styles.locates
+            }
+          >
             {locates.map((item, index) => (
               <div
                 key={item.locateHref || `locate-${index}`}
