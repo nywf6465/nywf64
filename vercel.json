@@ -3,7 +3,7 @@
   "git": {
     "deploymentEnabled": {
       "main": true,
-      "cursor-*": false,
+      "cursor-*": true,
       "docs-*": false
     }
   }

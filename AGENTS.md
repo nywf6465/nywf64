@@ -14,7 +14,7 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 Every legacy content page has a blue (navy `#26346e`) title banner at the top of the article. When creating or converting pages from legacy HTML, **always** include this banner **immediately beneath the attraction nav bar** (after `*NavChrome` / `AttractionNavChrome`). Never ship a legacy conversion that jumps from nav straight into body copy.
 
-Required stack for legacy attraction / essay / map / manual / postcards pages:
+Required stack for legacy attraction / essay / map / manual / postcards / photographs pages:
 
 `SiteHeader` → hero → attraction nav → **navy title banner** → body → `Nav2Bar`
 
@@ -60,3 +60,93 @@ Desktop keeps front + reverse side by side (content max-width ~760px so 450+300 
 7. Update the attraction menu “Postcards” topic to `/<slug>03`
 
 Do **not** rebuild this layout from scratch — extend `PostcardPage` if a later gallery needs a shared option.
+
+## Photographs standard (Photograph Album)
+
+Canonical instance: **`/aertow03`** via `PhotographsPage` + `photographsPage.module.css`.  
+Legacy attraction photograph album pages (menu label “Photograph Album”) use this layout.
+
+### When to use it
+
+Use the **photographs** standard when the legacy page is a Photograph Album: navy bar titled “Photograph Album”, named photo sections, photos on a light-grey tray with titles and SOURCE lines.
+
+### Required stack
+
+hero (attraction overview banner) → `*NavChrome` → navy title bar **Photograph Album** → photograph sections → `Nav2Bar` (`explicitPrevious`)
+
+### Omit the Scrap Book banner
+
+Legacy pages often show a wide **Photograph Scrap Book** banner image under the title bar. **Do not include it** on photographs conversions. Start content with the first section heading after the navy title bar.
+
+### Body recipe (match `/aertow03` / legacy `aertow03.html`)
+
+1. **Sections** — keep legacy section labels exactly (e.g. `Commercial Photographs`, `Fairgoer Photographs`)  
+2. **Section tray** — light grey background `#cccccc` behind the photos in that section  
+3. **Photo cards** — 2px black border around each image; bold Arial title under the photo; Arial Narrow `SOURCE:` / copyright line under the title  
+4. **Alignment** — on **desktop**, center photograph cards in the tray (`justify-content: center`). On **mobile** (max-width 720px), keep cards **left-aligned** in a single column.
+
+### Type
+
+- Title bar: Arial bold white on navy `#26346e`  
+- Section headings: Arial  
+- Photo titles: Arial bold  
+- SOURCE lines: Arial Narrow
+
+### Build checklist for a new photographs page (e.g. `/ford03`)
+
+1. Fetch legacy album HTML and photo assets into `public/images/<slug>03/` — **skip** `Photo Scrapbook Banner.jpg`  
+2. Add `src/app/<slug>03/page.tsx` that renders `<PhotographsPage …>` (copy `/aertow03`)  
+3. Reuse the attraction overview `hero-banner.jpg` for the hero  
+4. Pass `nav={<SlugNavChrome />}`, wire `previousHref` / `nextHref`  
+5. Map each legacy section to `sections[]` with `heading` + `photos[]`  
+6. Point menu “Photograph Album” (or stub routes) to `/<slug>03`
+
+Do **not** rebuild this layout from scratch — extend `PhotographsPage` if a later album needs a shared option.
+
+## Brochure standard
+
+Canonical instance: **`/unisph09`** via `BrochurePage` + `brochurePage.module.css`.  
+Legacy attraction brochure, pamphlet, and presentation PDF-download pages use this layout (menu labels such as “Brochure: …”, “Pamphlet: …”, or “Presentation: …”).
+
+### When to use it
+
+Use the **brochure** standard when the legacy page is a single PDF download: navy title bar naming the document, a bordered cover image that links to the PDF, and one short instructional paragraph. Do **not** use this for multi-page filmstrips, photo albums, or guidebook text pages.
+
+### Required stack
+
+hero (attraction overview banner) → `*NavChrome` → navy title bar → bordered cover (links to PDF) → one instructional paragraph → `Nav2Bar` (`explicitPrevious`)
+
+### Omit Adobe Reader content
+
+Legacy pages almost always include:
+
+1. A **second paragraph** requiring Adobe Reader  
+2. An **Adobe Reader logo / icon** linking to adobe.com  
+
+**Always remove both** before shipping. Keep only the first paragraph that explains the PDF and “Click or tap the image above”.
+
+### Body recipe (match `/unisph09` / legacy `unisph09.html`)
+
+1. **Title bar** — use the legacy navy-bar wording exactly (including “Brochure:”, “Pamphlet:”, or “Presentation:” prefixes)  
+2. **Cover** — bordered (`1px` black) image linking to the PDF in a new tab; use legacy cover dimensions  
+3. **Copy** — one Arial paragraph: document saved in **PDF format**; bold underlined “Click or tap the image above”; mention the *zoom feature*  
+4. **Document noun** — pass `documentNoun` (`brochure` / `pamphlet` / `presentation`) so the paragraph matches the legacy wording
+
+### Type
+
+- Title bar: Arial bold white on navy `#26346e`  
+- Body: Arial (~0.95rem, line-height ~1.55)  
+- Tap hint: bold + underline
+
+### Build checklist for a new brochure page (e.g. `/ford07`)
+
+1. Fetch legacy HTML; note title-bar text, cover image, PDF href, and document noun  
+2. Download cover → `public/images/<slug>/…` and PDF → `public/pdf/<attraction>/…`  
+3. Add `src/app/<slug>/page.tsx` that renders `<BrochurePage …>` (copy `/unisph09`)  
+4. Reuse the attraction overview `hero-banner.jpg` for the hero  
+5. Pass `nav={<SlugNavChrome />}`, wire `previousHref` / `nextHref` to menu neighbors  
+6. Set `title`, `cover`, `pdfHref`, `pdfAriaLabel`, and `documentNoun`  
+7. **Delete** the Adobe Reader paragraph and logo (never port them)  
+8. Remove the slug from `LEGACY_STUB_ROUTES`
+
+Do **not** rebuild this layout from scratch — extend `BrochurePage` if a later PDF page needs a shared option.

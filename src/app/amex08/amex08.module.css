@@ -1,0 +1,147 @@
+/*
+ * American Express — The Money Tree feature page.
+ * Stack: overview hero → AmexNavChrome → navy title bar → article → Nav2Bar.
+ * Body from legacy amex08.html.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.sectionHeading {
+  margin: 0 0 0.85rem;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.lede p {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.lede p:last-child {
+  margin-bottom: 0;
+}
+
+.source {
+  margin: 0.85rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1.5rem 0;
+}
+
+.jacketFigure {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.jacket {
+  display: block;
+  width: min(350px, 100%);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.jacketSource {
+  margin: 0 0 0.65rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.jacketCopy {
+  margin: 0 0 1.25rem;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.jacketCopyTitle {
+  font-weight: 700;
+  font-style: italic;
+}
+
+.jacketCopy em {
+  font-style: italic;
+}
+
+.photoFigure {
+  margin: 0;
+  text-align: center;
+}
+
+.photoStrip {
+  display: block;
+  width: min(400px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.photoCaption {
+  margin: 0.45rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: left;
+}

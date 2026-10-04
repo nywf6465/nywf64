@@ -6,8 +6,8 @@
 |------|--------|---------|-------|
 | `public/images/people-of-the-fair-links.jpg` | User-provided People links art (exact) | User | `/people` link grid |
 | `public/images/people-hover/*.jpg` | Derived from People links art — burgundy↔navy on text/arrows only; portraits unchanged | User derivative | Hover state for people hotspots |
-| `public/images/hubs-hover/*.jpg` | Derived from user hubs body art — navy↔burgundy swap only (light-blue ovals unchanged) | User derivative | Hover state for hub hotspots |
-| `public/images/homepage-hubs-body.jpg` | User-provided hubs body art (exact) | User | Homepage body; hotspots only |
+| `public/images/hubs-hover/*.jpg` | Hover crops from hubs body; Attractions chrome reused for other labels (burgundy text/stars) | User derivative | Hover state for hub hotspots |
+| `public/images/homepage-hubs-body.jpg` | User hubs art; non-Attractions ovals rebuilt from Attractions chrome (oval+stars) with new labels only | User derivative | Homepage body; hotspots only |
 | `public/images/hero-user-provided-sharpened.jpg` | User-provided hero (sharpened; photo+copy+CTA baked in) | User | Homepage hero (exact) |
 | `public/images/unisphere-night-fair.jpg` | Same mockup crop (cache-bust filename used by Hero) | User mockup artwork | Hero |
 | `public/images/unisphere-night.jpg` | Cropped from user ChatGPT mockup (`homepage-chatgpt-mockup.jpg`) — night Unisphere + fountains | User mockup artwork | Hero (restored to match mockup) |
