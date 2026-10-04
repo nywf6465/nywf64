@@ -10506,11 +10506,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/panamgoverview",
     nextHref: "/panama01",
   },
-  "panamg03": {
-    slug: "panamg03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Avis Pan American Highway Rides — nywf64.com",
-    metaDescription: "Photograph Album — Avis Pan American Highway Rides at the 1964/1965 New York World’s Fair on nywf64.com.",
+  "panamg02": {
+    slug: "panamg02",
+    title: "World",
+    metaTitle: "World",
+    metaDescription: "World",
     nav: "PanamgNavChrome",
     overviewHref: "/panamgoverview",
     overviewLabel: "Pan American Highway Gardens overview",

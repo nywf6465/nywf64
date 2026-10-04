@@ -20,6 +20,6 @@ export const PANAMG_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "Photograph Album",
-    href: "/panama03",
+    href: "/panamg03",
   },
 ];
