@@ -738,11 +738,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/astfountoverview",
     nextHref: "/astfount01",
   },
-  "astfount03": {
-    slug: "astfount03",
-    title: "Postcards",
-    metaTitle: "Postcards — Astral Fountain — nywf64.com",
-    metaDescription: "Postcards at the Astral Fountain — 1964/1965 New York World",
+  "astfount02": {
+    slug: "astfount02",
+    title: "World",
+    metaTitle: "World",
+    metaDescription: "World",
     nav: "AstfountNavChrome",
     overviewHref: "/astfountoverview",
     overviewLabel: "Astral Fountain overview",
