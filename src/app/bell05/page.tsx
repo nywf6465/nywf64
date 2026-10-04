@@ -45,7 +45,7 @@ export default function Bell05Page() {
       nav={<BellNavChrome />}
       previousHref="/bell04"
       overviewHref="/belloverview"
-      nextHref="/bell06"
+      nextHref="/bellphotographalbumii"
       sections={[
         {
           heading: "Commercial Photographs",
