@@ -1,0 +1,38 @@
+/* Brass Rail Information Manual location tables (legacy brarai02.html). */
+
+.areaBlock {
+  margin: 0 0 1.15rem;
+  width: 100%;
+}
+
+.areaTitle {
+  margin: 0 0 0.35rem;
+  text-align: center;
+  text-decoration: underline;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.35;
+}
+
+.table th,
+.table td {
+  padding: 0.05rem 0.4rem 0.05rem 0;
+  vertical-align: top;
+  text-align: left;
+  font-weight: 400;
+}
+
+.sqft {
+  text-align: right;
+  white-space: nowrap;
+  width: 5.5rem;
+}
+
+.noteRow td {
+  padding-top: 0.35rem;
+}

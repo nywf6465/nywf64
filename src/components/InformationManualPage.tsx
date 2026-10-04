@@ -68,6 +68,11 @@ export type InformationManualPageProps = {
    * Optional bordered note after FEATURES (e.g. webmaster’s note on /amind02).
    */
   note?: ReactNode;
+  /**
+   * Optional body after FEATURES (e.g. Brass Rail location tables).
+   * Rendered before the secondary figure rule.
+   */
+  afterFeatures?: ReactNode;
   previousHref: string;
   nextHref: string;
   overviewHref?: string;
@@ -148,6 +153,7 @@ export function InformationManualPage({
   features,
   secondaryFigure,
   note,
+  afterFeatures,
   previousHref,
   nextHref,
   overviewHref,
@@ -210,6 +216,10 @@ export function InformationManualPage({
           {featuresSource ? (
             <p className={styles.featuresSource}>{featuresSource}</p>
           ) : null}
+
+          {note ? <div className={styles.note}>{note}</div> : null}
+
+          {afterFeatures}
 
           {secondaryFigure ? (
             <>
