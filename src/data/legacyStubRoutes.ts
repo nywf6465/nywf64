@@ -1386,18 +1386,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/belviloverview",
     nextHref: "/belvil01",
   },
-  "belvil05": {
-    slug: "belvil05",
-    title: "Pamphlet: Groundbreaking",
-    metaTitle: "Pamphlet: Groundbreaking — Belgian Village — nywf64.com",
-    metaDescription: "Pamphlet: Groundbreaking — Belgian Village at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "BelvilNavChrome",
-    overviewHref: "/belviloverview",
-    overviewLabel: "Belgian Village overview",
-    placeholder: "Belgian Village content",
-    previousHref: "/belviloverview",
-    nextHref: "/belvil01",
-  },
   "belvil06": {
     slug: "belvil06",
     title: "Brochure: Sales Brochure",
