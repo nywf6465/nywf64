@@ -59,6 +59,6 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "Article: A Colossal Floating Wing",
-    href: "/bellfloatingwing",
+    href: "/bell13",
   },
 ];
