@@ -1362,11 +1362,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/belviloverview",
     nextHref: "/belvil01",
   },
-  "belvil04": {
-    slug: "belvil04",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Belgian Village — nywf64.com",
-    metaDescription: "Photograph Album — Belgian Village at the 1964/1965 New York World’s Fair on nywf64.com.",
+  "belvil03": {
+    slug: "belvil03",
+    title: "Postcards",
+    metaTitle: "Postcards — Belgian Village — nywf64.com",
+    metaDescription: "Postcards — Belgian Village at the 1964/1965 New York World’s Fair on nywf64.com.",
     nav: "BelvilNavChrome",
     overviewHref: "/belviloverview",
     overviewLabel: "Belgian Village overview",
