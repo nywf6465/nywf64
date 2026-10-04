@@ -28,6 +28,7 @@ function BrandMark() {
  * Unisphere — Essay: I Think we have a Light Out!
  * Body from legacy unisph13.html. Bottom nywf64.com logo omitted.
  * Stack: hero → UnisphNavChrome → navy title → article → Nav2Bar.
+ * HARD RULE — dusk photo figure is photo → caption → SOURCE (see AGENTS.md).
  */
 export default function Unisph13Page() {
   return (

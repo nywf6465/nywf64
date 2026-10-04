@@ -11,8 +11,8 @@
  *
  * Body: named sections (e.g. Commercial Photographs, Fairgoer Photographs).
  * Each section heading sits above a light-grey (#ccc) tray that holds the
- * bordered photograph cards. Captions (bold title + Arial Narrow SOURCE) sit
- * under each photo.
+ * bordered photograph cards. Under each photo: caption (bold title), then
+ * Arial Narrow SOURCE — never SOURCE above the caption.
  *
  * Alignment: on desktop, photograph cards are centered in the tray. On mobile
  * (max-width 720px), cards stay left-aligned in a single column.

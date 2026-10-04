@@ -18,6 +18,22 @@ Required stack for legacy attraction / essay / map / manual / postcards / photog
 
 `SiteHeader` → hero → attraction nav → **navy title banner** → body → `Nav2Bar`
 
+## HARD RULE: photo → caption → SOURCE
+
+When recreating any legacy image that has **both** a descriptive caption and a `SOURCE:` line, always render this vertical order:
+
+**photo → caption → SOURCE**
+
+Canonical example: `/unisph13` dusk Unisphere figure (`figcaption` then `SOURCE:` under the bordered photo).
+
+- **Photo** first (bordered when the legacy page shows a border)
+- **Caption** next (descriptive text for the image — not essay body type)
+- **SOURCE** last (Arial Narrow / credit line, typically starting with `SOURCE:`)
+
+Never put `SOURCE:` above the caption. Never leave the caption styled as body copy so it reads as a separate essay paragraph.
+
+This applies to custom essay/article figures **and** shared layouts (e.g. Photograph Album cards: photo → title/caption → SOURCE). If the legacy page has only a SOURCE line and no separate caption, photo → SOURCE is fine.
+
 ## Postcards standard
 
 Canonical instance: **`/bell03`** via `PostcardPage` + `postcardPage.module.css`.  
@@ -82,7 +98,7 @@ Legacy pages often show a wide **Photograph Scrap Book** banner image under the 
 
 1. **Sections** — keep legacy section labels exactly (e.g. `Commercial Photographs`, `Fairgoer Photographs`)  
 2. **Section tray** — light grey background `#cccccc` behind the photos in that section  
-3. **Photo cards** — 2px black border around each image; bold Arial title under the photo; Arial Narrow `SOURCE:` / copyright line under the title  
+3. **Photo cards** — 2px black border around each image; then **photo → caption → SOURCE**: bold Arial title/caption under the photo, then Arial Narrow `SOURCE:` / copyright line under the caption (see HARD RULE above)  
 4. **Alignment** — on **desktop**, center photograph cards in the tray (`justify-content: center`). On **mobile** (max-width 720px), keep cards **left-aligned** in a single column.
 
 ### Type
