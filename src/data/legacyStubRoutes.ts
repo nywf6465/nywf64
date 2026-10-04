@@ -1134,18 +1134,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/avisoverview",
     nextHref: "/avis01",
   },
-  "avis03": {
-    slug: "avis03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Avis Antique Car Ride — nywf64.com",
-    metaDescription: "Photograph Album — Avis Antique Car Ride at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AvisNavChrome",
-    overviewHref: "/avisoverview",
-    overviewLabel: "Avis Antique Car Ride overview",
-    placeholder: "Avis Antique Car Ride content",
-    previousHref: "/avisoverview",
-    nextHref: "/avis01",
-  },
   "avis04": {
     slug: "avis04",
     title: "Pamphlet: Dedication Day",
