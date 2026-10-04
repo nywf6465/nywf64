@@ -113,27 +113,25 @@ export default function Unisph13Page() {
           </div>
 
           <figure className={styles.photoBlock}>
-            <div className={styles.photoMedia}>
-              <span className={styles.photoFrame}>
-                <Image
-                  src="/images/unisph13/unisph241.jpg"
-                  alt="Unisphere at dusk with capital lights"
-                  width={431}
-                  height={270}
-                  className={styles.photoImg}
-                  unoptimized
-                />
-              </span>
-              <p className={styles.photoSource}>
-                SOURCE: Commercial Transparency by Photo Lab, Inc. Washington,
-                D.C.
-              </p>
-            </div>
+            <span className={styles.photoFrame}>
+              <Image
+                src="/images/unisph13/unisph241.jpg"
+                alt="Unisphere at dusk with capital lights"
+                width={431}
+                height={270}
+                className={styles.photoImg}
+                unoptimized
+              />
+            </span>
             <figcaption className={styles.photoCaption}>
               Lights representing the capitals of the countries of the world
               appear as pinpoints of light on the surface of Unisphere in this
               photo of the armillary sphere at dusk.
             </figcaption>
+            <p className={styles.photoSource}>
+              SOURCE: Commercial Transparency by Photo Lab, Inc. Washington,
+              D.C.
+            </p>
           </figure>
 
           <div className={styles.bodyCopy}>
