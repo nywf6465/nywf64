@@ -35,7 +35,7 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "Pamphlet: Groundbreaking",
-    href: "/bellgroundbreaking",
+    href: "/bell07",
   },
   {
     label: "The Ride of Communications",

@@ -1254,18 +1254,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/belloverview",
     nextHref: "/bell01",
   },
-  "bellgroundbreaking": {
-    slug: "bellgroundbreaking",
-    title: "bellgroundbreaking",
-    metaTitle: "bellgroundbreaking — Bell System Pavilion — nywf64.com",
-    metaDescription: "bellgroundbreaking at the 1964/1965 New York World",
-    nav: "BellNavChrome",
-    overviewHref: "/belloverview",
-    overviewLabel: "Bell System overview",
-    placeholder: "Bell System Pavilion content",
-    previousHref: "/belloverview",
-    nextHref: "/bell01",
-  },
   "bellguidebook": {
     slug: "bellguidebook",
     title: "bellguidebook",
