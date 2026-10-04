@@ -798,18 +798,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/argentoverview",
     nextHref: "/argent01",
   },
-  "arlhat01": {
-    slug: "arlhat01",
-    title: "1964 & 1965 Official Guidebook & Souvenir Map",
-    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Arlington Hat — nywf64.com",
-    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map — Arlington Hat at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "ArlhatNavChrome",
-    overviewHref: "/arlhatoverview",
-    overviewLabel: "Arlington Hat overview",
-    placeholder: "Arlington Hat content",
-    previousHref: "/arlhatoverview",
-    nextHref: "/arlhat01",
-  },
   "arlhat02": {
     slug: "arlhat02",
     title: "World",
