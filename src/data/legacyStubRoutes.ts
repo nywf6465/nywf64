@@ -10626,18 +10626,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/panamgoverview",
     nextHref: "/panama01",
   },
-  "panamg01": {
-    slug: "panamg01",
-    title: "1964 & 1965 Official Guidebook & Souvenir Map",
-    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Avis Pan American Highway Rides — nywf64.com",
-    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map — Avis Pan American Highway Rides at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "PanamgNavChrome",
-    overviewHref: "/panamgoverview",
-    overviewLabel: "Pan American Highway Gardens overview",
-    placeholder: "Pan American Highway Gardens content",
-    previousHref: "/panamgoverview",
-    nextHref: "/panama01",
-  },
   "panamg02": {
     slug: "panamg02",
     title: "World",
