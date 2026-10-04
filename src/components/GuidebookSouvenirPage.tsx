@@ -7,10 +7,14 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 /**
- * Official Guidebook & Souvenir Map page.
+ * Official Guidebook & Souvenir Map page (“guidebook” standard).
  * Canonical instance: /bell01. Legacy attraction `*01` pages use this layout.
  *
- * Stack: hero → attraction nav → title bar → three columns → nav2.
+ * HARD RULE — navy title banner: keep the full-width navy (`#26346e`) title bar
+ * immediately beneath the attraction nav. Default text is “1964 & 1965 Official
+ * Guidebook & Souvenir Map” (override with `title` when legacy appends “Entries”).
+ *
+ * Stack: hero → attraction nav → navy title bar → three columns → Nav2Bar.
  * Columns: 1964 Official Guide Book, 1965 Official Guide Book,
  * 1964 Official Souvenir Map.
  *
@@ -27,6 +31,9 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * 1964 pavilion names and highlight labels default to Times. 1965 pavilion
  * names and highlight labels default to Arial. The 1964 admission mark is a
  * larger roman asterisk; the 1965 mark is an italic pilcrow.
+ *
+ * For new guidebooks, copy src/app/bell01/page.tsx and fill props from the
+ * legacy *01.html — see AGENTS.md “Guidebook standard”.
  */
 
 export type GuidebookFace = "times" | "arial";
