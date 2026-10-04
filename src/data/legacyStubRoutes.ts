@@ -1122,18 +1122,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/avisoverview",
     nextHref: "/avis01",
   },
-  "avis02": {
-    slug: "avis02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "AvisNavChrome",
-    overviewHref: "/avisoverview",
-    overviewLabel: "Avis Antique Car Ride overview",
-    placeholder: "Avis Antique Car Ride content",
-    previousHref: "/avisoverview",
-    nextHref: "/avis01",
-  },
   "avis03": {
     slug: "avis03",
     title: "Photograph Album",
