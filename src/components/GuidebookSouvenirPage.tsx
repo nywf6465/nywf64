@@ -107,6 +107,11 @@ export type GuidebookMapContent = {
    */
   subjectNoun?: string;
   /**
+   * Determiner before `subjectNoun` in the map caption (“this”, “these”, …).
+   * Defaults to “this”. Used for plural captions (e.g. Brass Rail “these features”).
+   */
+  subjectDeterminer?: string;
+  /**
    * Optional pavilion block below the map header when guide years omit
    * an entry (legacy layout used by /amind01).
    */
@@ -156,10 +161,16 @@ function Caption1965() {
   );
 }
 
-function CaptionMap({ subjectNoun = "exhibit" }: { subjectNoun?: string }) {
+function CaptionMap({
+  subjectNoun = "exhibit",
+  subjectDeterminer = "this",
+}: {
+  subjectNoun?: string;
+  subjectDeterminer?: string;
+}) {
   return (
     <p className={styles.intro}>
-      The location of this
+      The location of {subjectDeterminer}
       <br />
       {subjectNoun} on the 1964
       <br />
@@ -394,7 +405,10 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
               </div>
             ))}
           </div>
-          <CaptionMap subjectNoun={map.subjectNoun} />
+          <CaptionMap
+            subjectNoun={map.subjectNoun}
+            subjectDeterminer={map.subjectDeterminer}
+          />
         </div>
       </div>
       {entry ? (
