@@ -1,0 +1,248 @@
+/*
+ * Advertising pages (“advertising” standard).
+ * Canonical instance: /amex04. Legacy attraction advertising galleries use this layout.
+ *
+ * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav.
+ *
+ * Stack: hero → attraction nav → navy title bar → centered ad collage(es) → Nav2Bar.
+ * Title bar text: “Advertising”.
+ *
+ * Body (from legacy amex04.html / unisph04.html / bell04.html): bordered collage
+ * of ad tiles in a fixed column grid, with Arial Narrow source line(s) under the
+ * collage. Optional featured advertisement image and body copy (unisph04). Optional
+ * reconstructed typeset advertisement (`content`, /bell04).
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.blocks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.collageWrap {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.collage {
+  display: grid;
+  width: min(600px, 100%);
+  border: 1px solid #000;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.tile {
+  display: block;
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.source {
+  width: min(600px, 100%);
+  margin: 0.45rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+  color: #000;
+}
+
+.divider {
+  width: min(600px, 100%);
+  margin: 0.25rem 0 0;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.feature {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.featureArt {
+  display: block;
+  width: auto;
+  max-width: min(470px, 100%);
+  height: auto;
+}
+
+.featureBody {
+  width: min(600px, 100%);
+  margin: 0.85rem 0 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: clamp(1.05rem, 2.2vw, 1.35rem);
+  line-height: 1.45;
+  text-align: center;
+  color: #696969;
+}
+
+.featureBody p {
+  margin: 0 0 1em;
+}
+
+.featureBody p:last-child {
+  margin-bottom: 0;
+}
+
+.recreation {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: min(600px, 100%);
+}
+
+.lead,
+.logo,
+.side {
+  display: block;
+  height: auto;
+}
+
+.lead {
+  width: auto;
+  max-width: min(460px, 100%);
+}
+
+.headline {
+  width: 100%;
+  margin: 0.65rem 0 0;
+  padding: 0 8px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-weight: 700;
+  color: #000;
+  text-align: left;
+  line-height: 1.25;
+}
+
+.headlineLead {
+  font-size: 24px;
+}
+
+.headlineRest {
+  font-size: 18px;
+}
+
+.split {
+  display: grid;
+  grid-template-columns: 55% 45%;
+  gap: 8px 12px;
+  align-items: start;
+  width: 100%;
+  margin-top: 0.5rem;
+  padding: 0 8px;
+  box-sizing: border-box;
+}
+
+.copy {
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 1.4;
+  color: #000;
+}
+
+.copy p {
+  margin: 0 0 0.85em;
+}
+
+.copy p:last-child {
+  margin-bottom: 0;
+}
+
+.side {
+  justify-self: center;
+  width: auto;
+  max-width: 100%;
+}
+
+.caption {
+  width: 75%;
+  margin: 0.45rem 0 0.85rem auto;
+  padding: 0 8px;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 11px;
+  font-style: italic;
+  line-height: 1.35;
+  color: #000;
+}
+
+.logo {
+  width: auto;
+  max-width: min(460px, 100%);
+  align-self: flex-start;
+  margin-left: 8px;
+}
+
+@media (max-width: 640px) {
+  .collage {
+    width: 100%;
+  }
+
+  .split {
+    grid-template-columns: 1fr;
+  }
+
+  .caption {
+    width: 100%;
+  }
+}
