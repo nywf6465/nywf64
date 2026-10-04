@@ -31,7 +31,7 @@ export default function Bell11Page() {
       nav={<BellNavChrome />}
       previousHref="/bell10"
       overviewHref="/belloverview"
-      nextHref="/bellfunatthefair1965"
+      nextHref="/bell12"
       cover={{
         src: "/images/bell11/fun-at-the-fair-1964-cover.jpg",
         width: 96,
