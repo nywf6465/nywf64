@@ -22,11 +22,11 @@ export const VATICAN_MENU_TOPICS: AttractionTopic[] = [
     href: "/vaticanpostcards",
   },
   {
-    label: "Photograph Album I",
+    label: "Photograph Album",
     href: "/vaticanphotographalbumi",
   },
   {
-    label: "Photograph Album II",
+    label: "Photograph Album",
     href: "/vaticanphotographalbumii",
   },
   {
