@@ -18,7 +18,7 @@ export default function Unisph05Page() {
     <PhotographsPage
       heroLabel="Unisphere"
       titleId="unisph05-title"
-      title="Photograph Album I"
+      title="Photograph Album"
       hero={{
         src: "/images/unisphoverview/hero-banner.jpg",
         alt: "Unisphere at the 1964/1965 New York World’s Fair",
