@@ -8,7 +8,7 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title:
-    "The Story of the Better Living Center — Better Living Center — nywf64.com",
+    "Essay: The Story of the Better Living Center — Better Living Center — nywf64.com",
   description:
     "Eric Paddon’s essay on the Better Living Center at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
@@ -46,9 +46,9 @@ export default function Betliv08Page() {
       <article className={styles.article} aria-labelledby="betliv08-title">
         <header className={styles.titleBar}>
           <h1 id="betliv08-title" className={styles.titleBarMain}>
-            <em>The Story of the Better Living Center</em>
+            Essay: <em>The Story of the Better Living Center</em>
           </h1>
-          <p className={styles.titleBarByline}>... an essay by Eric Paddon</p>
+          <p className={styles.titleBarByline}>... by Eric Paddon</p>
         </header>
 
         <div className={styles.articleInner}>
