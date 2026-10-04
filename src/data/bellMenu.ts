@@ -47,7 +47,7 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "The Exhibit Hall",
-    href: "/bellexhibithall",
+    href: "/bell10",
   },
   {
     label: "Brochure: Fun at the Fair (1964 Edition)",
