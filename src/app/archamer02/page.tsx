@@ -73,7 +73,7 @@ export default function Archamer02Page() {
               formal invitations to countries and foreign organizations to
               participated in the World&apos;s Fair. By May 8th, 1961 the
               Organization of American States had accepted the invitation.
-              Established in 1948, the Organization of American States (Oasis an
+              Established in 1948, the Organization of American States (OAS is an
               international organization that brings together the independent
               countries of the Americas to promote cooperation, democracy, human
               rights, security and development. Its current membership includes
