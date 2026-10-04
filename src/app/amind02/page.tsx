@@ -27,7 +27,7 @@ export default function Amind02Page() {
       nav={<AmindNavChrome />}
       previousHref="/amind01"
       overviewHref="/amindoverview"
-      nextHref="/amind02"
+      nextHref="/amindoverview"
       factsLeft={[
         {
           label: "EXHIBIT SPONSOR",
