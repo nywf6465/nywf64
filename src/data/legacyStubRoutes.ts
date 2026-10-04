@@ -774,18 +774,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/belloverview",
     nextHref: "/bell01",
   },
-  "bellridescripts": {
-    slug: "bellridescripts",
-    title: "bellridescripts",
-    metaTitle: "bellridescripts — Bell System Pavilion — nywf64.com",
-    metaDescription: "bellridescripts at the 1964/1965 New York World",
-    nav: "BellNavChrome",
-    overviewHref: "/belloverview",
-    overviewLabel: "Bell System overview",
-    placeholder: "Bell System Pavilion content",
-    previousHref: "/belloverview",
-    nextHref: "/bell01",
-  },
   "belvil01": {
     slug: "belvil01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",

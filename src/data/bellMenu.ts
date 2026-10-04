@@ -43,7 +43,7 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "The Ride of Communications 1964 & 1965 Scripts",
-    href: "/bellridescripts",
+    href: "/bell09",
   },
   {
     label: "The Exhibit Hall",
