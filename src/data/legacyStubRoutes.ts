@@ -66,18 +66,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/africaoverview",
     nextHref: "/africa01",
   },
-  "amex02": {
-    slug: "amex02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "AmexNavChrome",
-    overviewHref: "/amexoverview",
-    overviewLabel: "American Express overview",
-    placeholder: "American Express content",
-    previousHref: "/amexoverview",
-    nextHref: "/amex01",
-  },
   "amf01": {
     slug: "amf01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
