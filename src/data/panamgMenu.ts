@@ -12,14 +12,14 @@ export const PANAMG_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
-    href: "/panama01",
+    href: "/panamg01",
   },
   {
     label: "World's Fair Information Manual",
-    href: "/panama02",
+    href: "/panamg02",
   },
   {
     label: "Photograph Album",
-    href: "/panama03",
+    href: "/panamg03",
   },
 ];
