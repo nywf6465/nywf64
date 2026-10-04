@@ -79,6 +79,19 @@
   margin: 0 0 1.1rem;
 }
 
+/* Stack cover with multiple Locate It thumbnails from the top. */
+.entryHeadMultiLocate {
+  align-items: flex-start;
+}
+
+.locates {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+  flex: 0 0 auto;
+}
+
 .intro {
   margin: 0;
   color: #990000;
@@ -89,6 +102,30 @@
   line-height: 1.15;
   text-align: left;
   white-space: nowrap;
+}
+
+/* Longer status lines (not-included / never-built) — same type, may wrap. */
+.omittedNote,
+.statusNote {
+  margin: 0 0 0.7rem;
+  color: #990000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.omittedNote a,
+.statusNote a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.mapEntry {
+  margin-top: 0.85rem;
 }
 
 .cover {
