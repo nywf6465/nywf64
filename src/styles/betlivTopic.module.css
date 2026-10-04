@@ -129,6 +129,18 @@
   height: auto;
 }
 
+.adFigure {
+  margin: 0 auto 0.35rem;
+  max-width: min(37.5rem, 100%);
+}
+
+.adImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
 .rule {
   border: 0;
   border-top: 1px solid #000;

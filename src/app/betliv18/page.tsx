@@ -13,15 +13,6 @@ export const metadata: Metadata = {
     "Norelco, The General locomotive, Children's World, and Dorothy Draper's Dream Home at the Better Living Center — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-const NORELCO = [
-  { src: "/images/betliv18/norelco-1.jpg", w: 300, h: 331, alt: "Norelco advertisement 1" },
-  { src: "/images/betliv18/norelco-2.jpg", w: 300, h: 331, alt: "Norelco advertisement 2" },
-  { src: "/images/betliv18/norelco-3.jpg", w: 300, h: 330, alt: "Norelco advertisement 3" },
-  { src: "/images/betliv18/norelco-4.jpg", w: 300, h: 330, alt: "Norelco advertisement 4" },
-  { src: "/images/betliv18/norelco-5.jpg", w: 300, h: 330, alt: "Norelco advertisement 5" },
-  { src: "/images/betliv18/norelco-6.jpg", w: 300, h: 330, alt: "Norelco advertisement 6" },
-];
-
 function BillCotterSource() {
   return (
     <p className={styles.source}>
@@ -80,18 +71,17 @@ export default function Betliv18Page() {
         </header>
 
         <div className={styles.articleInner}>
-          <div className={styles.adGrid}>
-            {NORELCO.map((ad) => (
-              <Image
-                key={ad.src}
-                src={ad.src}
-                alt={ad.alt}
-                width={ad.w}
-                height={ad.h}
-                unoptimized
-              />
-            ))}
-          </div>
+          <figure className={styles.adFigure}>
+            <Image
+              src="/images/betliv18/norelco-ad.jpg"
+              alt="Norelco Speedshaver advertisement"
+              width={600}
+              height={991}
+              className={styles.adImg}
+              priority
+              unoptimized
+            />
+          </figure>
           <p className={styles.source}>
             SOURCE: Advertisement{" "}
             <em>1964 Official Guide, 1964-1965 New York World&apos;s Fair</em>
