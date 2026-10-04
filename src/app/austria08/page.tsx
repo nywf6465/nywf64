@@ -259,7 +259,7 @@ export default function Austria08Page() {
         previousHref="/austria07"
         explicitPrevious
         overviewHref="/austriaoverview"
-        nextHref="/austria01"
+        nextHref="/austriaoverview"
       />
     </>
   );
