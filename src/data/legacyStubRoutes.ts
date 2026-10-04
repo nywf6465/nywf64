@@ -894,18 +894,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/astfountoverview",
     nextHref: "/astfount01",
   },
-  "atomhos01": {
-    slug: "atomhos01",
-    title: "1964 & 1965 Official Guidebook & Souvenir Map",
-    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Atomedic Hospital — nywf64.com",
-    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map — Atomedic Hospital at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AtomhosNavChrome",
-    overviewHref: "/atomhosoverview",
-    overviewLabel: "Atomedic Hospital overview",
-    placeholder: "Atomedic Hospital content",
-    previousHref: "/atomhosoverview",
-    nextHref: "/atomhos01",
-  },
   "atomhos02": {
     slug: "atomhos02",
     title: "World",
