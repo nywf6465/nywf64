@@ -473,7 +473,7 @@ export default function Bell08Page() {
       <Nav2Bar
         previousHref="/bell07"
         overviewHref="/belloverview"
-        nextHref="/bell09"
+        nextHref="/bellridescripts"
       />
     </>
   );
