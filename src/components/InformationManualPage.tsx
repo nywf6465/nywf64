@@ -9,7 +9,20 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * World's Fair Information Manual page (“manual” standard).
  * Canonical instance: /bell02. Legacy attraction `*02` pages use this layout.
  *
- * Stack: hero → attraction nav → navy title bar → centered body → Nav2Bar.
+ * HARD RULE — navy title banner: keep the full-width navy (`#26346e`) title bar
+ * immediately beneath the attraction nav. This layout renders
+ * “World's Fair Information Manual”; do not omit it on custom ports.
+ *
+ * Stack: hero → attraction nav → navy title bar → centered ~600px body → Nav2Bar.
+ *
+ * Body recipe (from legacy bell02.html / /bell02):
+ * 1) Two-column fact sheet (underlined labels + line items)
+ * 2) Primary figure + Arial Narrow source
+ * 3) FEATURES heading + labeled sections (use styles.u for underlined names)
+ * 4) Optional rule + secondary figure (bordered when legacy border="1")
+ *
+ * For new manuals, copy src/app/bell02/page.tsx and fill props from the legacy
+ * *02.html — see AGENTS.md “Manual standard”.
  */
 
 export type ManualImage = {

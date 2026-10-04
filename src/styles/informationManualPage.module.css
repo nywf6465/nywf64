@@ -1,6 +1,9 @@
 /*
  * World's Fair Information Manual pages (“manual” standard).
  * Canonical instance: /bell02. Legacy attraction `*02` pages use this layout.
+ * See AGENTS.md “Manual standard” and InformationManualPage.tsx.
+ *
+ * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav.
  *
  * Stack: hero → attraction nav → navy title bar → centered body → Nav2Bar.
  * Title bar text: “World's Fair Information Manual”.

@@ -14,49 +14,45 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 
 Every legacy content page has a blue (navy `#26346e`) title banner at the top of the article. When creating or converting pages from legacy HTML, **always** include this banner **immediately beneath the attraction nav bar** (after `*NavChrome` / `AttractionNavChrome`). Never ship a legacy conversion that jumps from nav straight into body copy.
 
-Required stack for legacy attraction / essay / map / manual / postcards pages:
+Required stack:
 
 `SiteHeader` → hero → attraction nav → **navy title banner** → body → `Nav2Bar`
 
-## Postcards standard
+## Manual standard (World's Fair Information Manual)
 
-Canonical instance: **`/bell03`** via `PostcardPage` + `postcardPage.module.css`.  
-Legacy attraction postcard pages (often `*03.html`, menu label “Postcards”) use this layout.
+Canonical instance: **`/bell02`** via `InformationManualPage` + `informationManualPage.module.css`.  
+Legacy attraction `*02.html` Information Manual pages use this layout.
 
 ### When to use it
 
-Use the **postcards** standard when the legacy page is a postcard gallery: navy bar titled “Postcards”, stacked front/reverse card pairs with catalog meta and publisher source lines.
+Use the **manual** standard when the legacy page is a World's Fair Information Manual entry: navy bar titled “World's Fair Information Manual”, two-column fact sheet, pavilion drawing, FEATURES copy, optional second photo.
 
 ### Required stack
 
-hero (attraction overview banner) → `*NavChrome` → navy title bar **Postcards** → centered postcard entries → `Nav2Bar` (`explicitPrevious`)
+hero (attraction overview banner) → `*NavChrome` → navy title bar **World's Fair Information Manual** → centered ~600px body → `Nav2Bar` (`explicitPrevious`)
 
-### Body recipe (match `/bell03` / legacy `bell03.html`)
+### Body recipe (match `/bell02` / legacy `bell02.html`)
 
-Each entry, top to bottom:
-
-1. **Row** — front image (left, ~450px, `border="1"`) + reverse column (right, ~300px)  
-2. **Reverse column** — reverse image (`border="1"`), then meta lines under it (pavilion / area name, Official or Unauthorized Postcard, catalog numbers such as Dexter / Manhattan)  
-3. **Sources** — Arial Narrow line(s) under the whole pair (`Source: Postcard Published by …`)
-
-“Unauthorized Postcard” is **red** (`#f00`), matching legacy `color="red"`.
-
-Desktop keeps front + reverse side by side (content max-width ~760px so 450+300 fits). Under ~720px, stack front above reverse.
+1. **Facts** — two columns of underlined labels (`EXHIBIT`, `AUTHORIZED REPRESENTATIVE`, `LOCATION`, `AREA`, …) with line items under each label  
+2. **Primary figure** — usually the line drawing; Arial Narrow `SOURCE:` / credit under it (no border unless legacy used one)  
+3. **FEATURES** heading — then labeled sections (`Exterior`, `Interior`, …). Underlined inline names in feature copy use `informationManualPage.module.css` `.u`  
+4. **Optional secondary figure** — horizontal rule, then bordered photo when legacy `border="1"`, optional centered title (Arial when legacy `face="Arial"`), Arial Narrow source (italicize publication titles when legacy did)
 
 ### Type
 
-- Title bar: Arial bold white on navy `#26346e`  
-- Meta lines: Arial  
-- Source lines: Arial Narrow (~13px)
+- Body / features: Times New Roman when legacy set no face  
+- Source / credit lines: Arial Narrow  
+- Secondary figure title: Arial when legacy `face="Arial"`  
+- Title bar: Arial bold white on navy `#26346e`
 
-### Build checklist for a new postcards page (e.g. `/ford03`)
+### Build checklist for a new manual page (e.g. `/ford02`)
 
-1. Fetch legacy postcard HTML and `Image/pcards/…` (or equivalent) into `public/images/<slug>03/`  
-2. Add `src/app/<slug>03/page.tsx` that renders `<PostcardPage …>` (copy `/bell03` as the template)  
+1. Fetch legacy `*02.html` and its `Image/…` assets into `public/images/<slug>02/`  
+2. Add `src/app/<slug>02/page.tsx` that renders `<InformationManualPage …>` (copy `/bell02` as the template)  
 3. Reuse the attraction overview `hero-banner.jpg` for the hero  
-4. Pass `nav={<SlugNavChrome />}`, wire `previousHref` / `nextHref` to menu neighbors  
-5. Map each legacy table to an `entries[]` item: `front`, `reverse`, `meta`, `sources`  
-6. Point stub routes such as `/<slug>postcards` at `/<slug>03` with `redirect()`  
-7. Update the attraction menu “Postcards” topic to `/<slug>03`
+4. Pass `nav={<SlugNavChrome />}`, wire `previousHref` / `nextHref` to the menu neighbors  
+5. Map left/right fact columns, figures, and features from the legacy tables — preserve wording, underlines, and `<br>` paragraph breaks  
+6. Point any old stub route (e.g. `/bellmanual`) at `/<slug>02` with `redirect()`  
+7. Update the attraction menu topic that said “World's Fair Information Manual” to `/<slug>02`
 
-Do **not** rebuild this layout from scratch — extend `PostcardPage` if a later gallery needs a shared option.
+Do **not** rebuild this layout from scratch on each page — extend `InformationManualPage` if a later manual needs a shared option.
