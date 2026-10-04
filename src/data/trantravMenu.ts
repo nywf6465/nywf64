@@ -23,11 +23,11 @@ export const TRANTRAV_MENU_TOPICS: AttractionTopic[] = [
     href: "/trantrav03",
   },
   {
-    label: "Photograph Album I",
+    label: "Photograph Album",
     href: "/trantrav04",
   },
   {
-    label: "Photograph Album II",
+    label: "Photograph Album",
     href: "/trantrav05",
   },
   {

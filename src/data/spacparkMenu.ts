@@ -24,11 +24,11 @@ export const SPACPARK_MENU_TOPICS: AttractionTopic[] = [
     href: "/spacpark03",
   },
   {
-    label: "Photograph Album I",
+    label: "Photograph Album",
     href: "/spacpark04",
   },
   {
-    label: "Photograph Album II",
+    label: "Photograph Album",
     href: "/spacpark05",
   },
   {
