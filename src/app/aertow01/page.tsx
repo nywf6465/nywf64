@@ -12,6 +12,7 @@ export const metadata: Metadata = {
 /**
  * Aerial Tower Ride guidebook page — Official Guidebook & Souvenir Map.
  * Body from legacy aertow01.html. Layout: GuidebookSouvenirPage (/bell01 standard).
+ * Fonts follow legacy face tags: Times where unset, Arial where face="Arial".
  */
 export default function Aertow01Page() {
   const name1964 = (
