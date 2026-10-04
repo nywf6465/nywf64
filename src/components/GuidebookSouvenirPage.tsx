@@ -357,7 +357,7 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           unoptimized
         />
         <div className={styles.mapSide}>
-          <div className={multiLocate ? styles.locates : undefined}>
+          <div className={styles.locates}>
             {locates.map((item, index) => (
               <div
                 key={item.locateHref || `locate-${index}`}
