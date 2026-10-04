@@ -1,0 +1,135 @@
+/*
+ * Tetley Good Taste Fashion Show program layout (legacy two-column pamphlet).
+ * Page chrome, captions, and SOURCE use betlivTopic.module.css.
+ */
+
+.program {
+  margin: 1.15rem 0;
+}
+
+.bannerRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 0.75rem;
+  align-items: center;
+  margin: 0 0 0.85rem;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.programSplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1rem;
+  align-items: start;
+}
+
+.programLeft {
+  text-align: center;
+}
+
+.programCover {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0 auto 0.85rem;
+}
+
+.collections {
+  margin: 0.75rem 0 1rem;
+}
+
+.collections p {
+  margin: 0.2rem 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+  line-height: 1.35;
+}
+
+.collections em {
+  font-size: 0.8rem;
+}
+
+.crystal {
+  display: block;
+  width: 100%;
+  max-width: 225px;
+  height: auto;
+  margin: 0.5rem auto 0;
+}
+
+.fairLabel {
+  margin: 0.35rem 0 0;
+  font-weight: 700;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.green {
+  color: #336600;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.green p {
+  margin: 0 0 0.65rem;
+}
+
+.andOthers {
+  margin: 0.35rem 0 0.75rem;
+  color: #336600;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.fallBanner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0.5rem auto 0.85rem;
+}
+
+.scenes {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1.15rem;
+  align-items: start;
+}
+
+.scene {
+  margin: 0 0 1rem;
+  color: #336600;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.scene p {
+  margin: 0 0 0.55rem;
+}
+
+.accessories {
+  margin: 1.15rem 0 0;
+  color: #336600;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.accessories p {
+  margin: 0 0 0.2rem;
+}
+
+@media (max-width: 720px) {
+  .bannerRow,
+  .programSplit,
+  .scenes {
+    grid-template-columns: 1fr;
+  }
+}
