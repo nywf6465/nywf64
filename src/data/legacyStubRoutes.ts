@@ -1038,18 +1038,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/autthroverview",
     nextHref: "/autthr01",
   },
-  "autthr02": {
-    slug: "autthr02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "AutthrNavChrome",
-    overviewHref: "/autthroverview",
-    overviewLabel: "Auto Thrill Show overview",
-    placeholder: "Auto Thrill Show content",
-    previousHref: "/autthroverview",
-    nextHref: "/autthr01",
-  },
   "autthr03": {
     slug: "autthr03",
     title: "Postcards",
