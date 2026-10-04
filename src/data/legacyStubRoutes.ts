@@ -750,18 +750,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/archameroverview",
     nextHref: "/archamer01",
   },
-  "argent01": {
-    slug: "argent01",
-    title: "1964 & 1965 Official Guidebook & Souvenir Map",
-    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Argentina — nywf64.com",
-    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map — Argentina at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "ArgentNavChrome",
-    overviewHref: "/argentoverview",
-    overviewLabel: "Argentina overview",
-    placeholder: "Argentina content",
-    previousHref: "/argentoverview",
-    nextHref: "/argent01",
-  },
   "argent02": {
     slug: "argent02",
     title: "World",
