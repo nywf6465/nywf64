@@ -30,8 +30,8 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
     href: "/bell05",
   },
   {
-    label: "Photograph Album",
-    href: "/bellphotographalbumii",
+    label: "Photograph Album II",
+    href: "/bell06",
   },
   {
     label: "Pamphlet: Groundbreaking",
