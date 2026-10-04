@@ -59,7 +59,11 @@ export default function Aertow02Page() {
       factsRight={[
         {
           label: "LOCATION",
-          lines: ["Block 57; Lot 7", "Meadow Lake Promenade", "Lake Area"],
+          lines: [
+            "Block 57; Lot 7",
+            "Meadow Lake Promenade",
+            "Lake Area",
+          ],
         },
         {
           label: "AREA",
