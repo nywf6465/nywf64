@@ -15,8 +15,9 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * 1964 Official Souvenir Map.
  *
  * Each caption is three lines, left aligned at the lower right of its cover.
- * Locate It sits at the upper right of the map cover. Covers keep a 1px frame
- * and have no rule beneath them. The legacy "Revised" line is not shown.
+ * Locate It sits at the upper right of the map cover. When `map.locateHref`
+ * is omitted, Locate It stays visible but is not a link. Covers keep a 1px
+ * frame and have no rule beneath them. The legacy "Revised" line is not shown.
  *
  * When a year sets `omittedFromGuide`, the column shows only the not-included
  * note and cover. Optional `map.entry` places a pavilion block under the map
@@ -81,7 +82,11 @@ export type GuidebookMapEntry = {
 export type GuidebookMapContent = {
   cover: GuidebookImage;
   areaMap: GuidebookImage;
-  locateHref: string;
+  /**
+   * Locate It destination. When omitted, the area-map thumbnail and
+   * “Locate It” label remain visible but are not links (e.g. /archamer01).
+   */
+  locateHref?: string;
   /**
    * Optional pavilion block below the map header when guide years omit
    * an entry (legacy layout used by /amind01).
@@ -322,19 +327,35 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
         />
         <div className={styles.mapSide}>
           <div className={styles.locate}>
-            <Link href={map.locateHref}>
-              <Image
-                src={map.areaMap.src}
-                alt={map.areaMap.alt ?? "Industrial area map"}
-                width={map.areaMap.width}
-                height={map.areaMap.height}
-                className={styles.areaMap}
-                unoptimized
-              />
-            </Link>
-            <Link href={map.locateHref} className={styles.locateLink}>
-              Locate It
-            </Link>
+            {map.locateHref ? (
+              <>
+                <Link href={map.locateHref}>
+                  <Image
+                    src={map.areaMap.src}
+                    alt={map.areaMap.alt ?? "Industrial area map"}
+                    width={map.areaMap.width}
+                    height={map.areaMap.height}
+                    className={styles.areaMap}
+                    unoptimized
+                  />
+                </Link>
+                <Link href={map.locateHref} className={styles.locateLink}>
+                  Locate It
+                </Link>
+              </>
+            ) : (
+              <>
+                <Image
+                  src={map.areaMap.src}
+                  alt={map.areaMap.alt ?? "Industrial area map"}
+                  width={map.areaMap.width}
+                  height={map.areaMap.height}
+                  className={styles.areaMap}
+                  unoptimized
+                />
+                <span className={styles.locateLink}>Locate It</span>
+              </>
+            )}
           </div>
           <CaptionMap />
         </div>

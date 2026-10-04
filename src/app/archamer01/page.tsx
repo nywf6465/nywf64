@@ -59,7 +59,6 @@ export default function Archamer01Page() {
           height: 54,
           alt: "International area map",
         },
-        locateHref: "/archamermap",
         entry: {
           logo: {
             src: "/images/archamer01/line-drawing-miniature.jpg",
