@@ -666,11 +666,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/argentoverview",
     nextHref: "/argent01",
   },
-  "argent03": {
-    slug: "argent03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Argentina — nywf64.com",
-    metaDescription: "Photograph Album — Argentina at the 1964/1965 New York World’s Fair on nywf64.com.",
+  "argent02": {
+    slug: "argent02",
+    title: "World",
+    metaTitle: "World",
+    metaDescription: "World",
     nav: "ArgentNavChrome",
     overviewHref: "/argentoverview",
     overviewLabel: "Argentina overview",

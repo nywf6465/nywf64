@@ -20,8 +20,11 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * Body recipe (from legacy aertow03.html / /aertow03):
  * 1) Named sections (Commercial Photographs, Fairgoer Photographs, …)
  * 2) Each section: heading, then light-grey (#ccc) tray of photo cards
- * 3) Each card: 2px bordered photo, bold title + Arial Narrow SOURCE under it
+ * 3) Each card: 2px bordered photo, then photo → caption → SOURCE
+ *    (bold title/caption, then Arial Narrow SOURCE under it)
  * 4) Desktop: photograph cards are centered in the tray; mobile: left-aligned
+ *
+ * HARD RULE — photo → caption → SOURCE on every card (see AGENTS.md).
  *
  * For new albums, copy src/app/aertow03/page.tsx and fill `sections` from the
  * legacy HTML — see AGENTS.md “Photographs standard”.
