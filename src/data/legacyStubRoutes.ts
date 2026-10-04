@@ -1014,18 +1014,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/austriaoverview",
     nextHref: "/austria01",
   },
-  "austria08": {
-    slug: "austria08",
-    title: "A World",
-    metaTitle: "A World",
-    metaDescription: "A World",
-    nav: "AustriaNavChrome",
-    overviewHref: "/austriaoverview",
-    overviewLabel: "Austria overview",
-    placeholder: "Austria content",
-    previousHref: "/austriaoverview",
-    nextHref: "/austria01",
-  },
   "autthr01": {
     slug: "autthr01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
