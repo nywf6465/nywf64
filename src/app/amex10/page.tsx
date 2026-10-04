@@ -56,7 +56,7 @@ export default function Amex10Page() {
             <div className={styles.clippingPhotos}>
               <Image
                 src="/images/amex10/amex02.jpg"
-                alt="14-year-old Rob Bianco"
+                alt="Rob Bianco at the New York World’s Fair"
                 width={150}
                 height={197}
                 className={styles.portrait}
