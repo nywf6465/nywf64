@@ -3,9 +3,9 @@ import { BellNavChrome } from "@/components/BellNavChrome";
 import { PhotographsPage } from "@/components/PhotographsPage";
 
 export const metadata: Metadata = {
-  title: "Photograph Album II — Bell System — nywf64.com",
+  title: "Photograph Album — Bell System — nywf64.com",
   description:
-    "Bell System Pavilion photograph album II — fairgoer and publication photographs from the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Bell System Pavilion photograph album — fairgoer and publication photographs from the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 const auction = "SOURCE: Online auction";
@@ -22,7 +22,7 @@ export default function Bell06Page() {
     <PhotographsPage
       heroLabel="Bell System Pavilion"
       titleId="bell06-title"
-      title="Photograph Album II"
+      title="Photograph Album"
       hero={{
         src: "/images/belloverview/hero-banner.jpg",
         alt: "Bell System Pavilion at the 1964/1965 New York World’s Fair",
