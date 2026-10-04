@@ -3,9 +3,9 @@ import { BellNavChrome } from "@/components/BellNavChrome";
 import { PhotographsPage } from "@/components/PhotographsPage";
 
 export const metadata: Metadata = {
-  title: "Photograph Album I — Bell System — nywf64.com",
+  title: "Photograph Album — Bell System — nywf64.com",
   description:
-    "Bell System Pavilion photograph album I — commercial photographs from the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Bell System Pavilion photograph album — commercial photographs from the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 const photoLab =
@@ -35,7 +35,7 @@ export default function Bell05Page() {
     <PhotographsPage
       heroLabel="Bell System Pavilion"
       titleId="bell05-title"
-      title="Photograph Album I"
+      title="Photograph Album"
       hero={{
         src: "/images/belloverview/hero-banner.jpg",
         alt: "Bell System Pavilion at the 1964/1965 New York World’s Fair",

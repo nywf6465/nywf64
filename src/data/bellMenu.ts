@@ -26,7 +26,7 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
     href: "/belladvertising",
   },
   {
-    label: "Photograph Album I",
+    label: "Photograph Album",
     href: "/bell05",
   },
   {
