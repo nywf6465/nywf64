@@ -27,6 +27,10 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * note and cover. Optional `map.entry` places a pavilion block under the map
  * column (legacy amind01 layout).
  *
+ * When a year sets `omittedFromGuide`, the column shows only the not-included
+ * note and cover. Optional `map.entry` places a pavilion block under the map
+ * column (legacy amind01 layout).
+ *
  * Type follows the legacy font tags: Times New Roman where no face is set,
  * Arial where face="Arial" is set, at the original HTML size steps.
  * 1964 pavilion names and highlight labels default to Times. 1965 pavilion
@@ -86,30 +90,20 @@ export type GuidebookMapEntry = {
   note?: ReactNode;
 };
 
-export type GuidebookLocateLink = {
+export type GuidebookMapContent = {
+  cover: GuidebookImage;
   areaMap: GuidebookImage;
+  locateHref: string;
   /**
-   * Locate It destination. When omitted, the area-map thumbnail and
-   * “Locate It” label remain visible but are not links (e.g. /archamer01).
+   * Noun in the map-column caption (“exhibit”, “fountain”, …).
+   * Defaults to “exhibit”.
    */
-  locateHref?: string;
+  subjectNoun?: string;
   /**
    * Optional pavilion block below the map header when guide years omit
    * an entry (legacy layout used by /amind01).
    */
   entry?: GuidebookMapEntry;
-};
-
-export type GuidebookMapContent = {
-  cover: GuidebookImage;
-  /**
-   * Single Locate It thumbnail (default). Prefer `locates` when the exhibit
-   * appears in more than one Fair area (e.g. Arlington Hat).
-   */
-  areaMap?: GuidebookImage;
-  locateHref?: string;
-  /** Multiple Locate It thumbnails stacked in the map column. */
-  locates?: GuidebookLocateLink[];
 };
 
 export type GuidebookSouvenirPageProps = {
@@ -155,12 +149,12 @@ function Caption1965() {
   );
 }
 
-function CaptionMap() {
+function CaptionMap({ subjectNoun = "exhibit" }: { subjectNoun?: string }) {
   return (
     <p className={styles.intro}>
       The location of this
       <br />
-      exhibit on the 1964
+      {subjectNoun} on the 1964
       <br />
       Official Souvenir Map
     </p>
@@ -329,12 +323,8 @@ function GuideColumn({
 }
 
 function MapColumn({ map }: { map: GuidebookMapContent }) {
-  const locates: GuidebookLocateLink[] =
-    map.locates ??
-    (map.areaMap && map.locateHref
-      ? [{ areaMap: map.areaMap, locateHref: map.locateHref }]
-      : []);
-  const multiLocate = locates.length > 1;
+  const entry = map.entry;
+  const nameFace = entry?.nameFace ?? "times";
 
   return (
     <section className={styles.col} aria-label="1964 Official Souvenir Map">
@@ -380,7 +370,7 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
               </div>
             ))}
           </div>
-          <CaptionMap />
+          <CaptionMap subjectNoun={map.subjectNoun} />
         </div>
       </div>
       {entry ? (
