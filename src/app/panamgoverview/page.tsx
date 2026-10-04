@@ -66,7 +66,7 @@ export default function PanamgOverviewPage() {
       <Nav2Bar
         previousHref="/panamgoverview"
         overviewHref="/panamgoverview"
-        nextHref="/panama01"
+        nextHref="/panamg01"
       />
     </>
   );
