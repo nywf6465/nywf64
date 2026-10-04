@@ -101,13 +101,3 @@
   font-weight: 400;
   line-height: 1.35;
 }
-
-.logoWrap {
-  margin-top: 1.5rem;
-}
-
-.logo {
-  display: block;
-  width: min(7.5rem, 40%);
-  height: auto;
-}

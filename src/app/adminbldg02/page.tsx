@@ -146,17 +146,6 @@ export default function Adminbldg02Page() {
               <span className={styles.capSource}>SOURCE: Internet</span>
             </figcaption>
           </figure>
-
-          <div className={styles.logoWrap}>
-            <Image
-              src="/images/about/nywf64-logo.gif"
-              alt="nywf64.com"
-              width={300}
-              height={100}
-              className={styles.logo}
-              unoptimized
-            />
-          </div>
         </div>
       </article>
 
