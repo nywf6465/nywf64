@@ -966,11 +966,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/autthroverview",
     nextHref: "/autthr01",
   },
-  "autthr06": {
-    slug: "autthr06",
-    title: "1965 Official Souvenir Program",
-    metaTitle: "1965 Official Souvenir Program — Auto Thrill Show — nywf64.com",
-    metaDescription: "1965 Official Souvenir Program — Auto Thrill Show at the 1964/1965 New York World’s Fair on nywf64.com.",
+  "autthr05": {
+    slug: "autthr05",
+    title: "Pamphlet: Preview",
+    metaTitle: "Pamphlet: Preview — Auto Thrill Show — nywf64.com",
+    metaDescription: "Pamphlet: Preview — Auto Thrill Show at the 1964/1965 New York World’s Fair on nywf64.com.",
     nav: "AutthrNavChrome",
     overviewHref: "/autthroverview",
     overviewLabel: "Auto Thrill Show overview",
