@@ -1230,18 +1230,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/belloverview",
     nextHref: "/bell01",
   },
-  "bellfunatthefair1964": {
-    slug: "bellfunatthefair1964",
-    title: "bellfunatthefair1964",
-    metaTitle: "bellfunatthefair1964 — Bell System Pavilion — nywf64.com",
-    metaDescription: "bellfunatthefair1964 at the 1964/1965 New York World",
-    nav: "BellNavChrome",
-    overviewHref: "/belloverview",
-    overviewLabel: "Bell System overview",
-    placeholder: "Bell System Pavilion content",
-    previousHref: "/belloverview",
-    nextHref: "/bell01",
-  },
   "bellfunatthefair1965": {
     slug: "bellfunatthefair1965",
     title: "bellfunatthefair1965",
