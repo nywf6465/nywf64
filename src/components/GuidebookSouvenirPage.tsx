@@ -125,18 +125,24 @@ export type GuidebookSouvenirPageProps = {
   nav: ReactNode;
   guide1964: GuidebookYearContent;
   guide1965: GuidebookYearContent;
-  map: GuidebookMapContent;
+  /**
+   * 1964 Official Souvenir Map column. Omit to show only the two
+   * guidebook columns (e.g. /bounty01 — no souvenir-map section).
+   */
+  map?: GuidebookMapContent;
   previousHref: string;
   nextHref: string;
   titleId?: string;
   /**
    * Navy title-bar text. Defaults to the standard guidebook heading.
    * Some legacy pages append “Entries” (e.g. Port Authority).
+   * Pages without a map column typically use “1964 & 1965 Official Guidebook”.
    */
   title?: string;
 };
 
 const DEFAULT_TITLE = "1964 & 1965 Official Guidebook & Souvenir Map";
+const GUIDEBOOK_ONLY_TITLE = "1964 & 1965 Official Guidebook";
 
 function Caption1964() {
   return (
@@ -455,8 +461,11 @@ export function GuidebookSouvenirPage({
   previousHref,
   nextHref,
   titleId = "guidebook-souvenir-title",
-  title = DEFAULT_TITLE,
+  title,
 }: GuidebookSouvenirPageProps) {
+  const resolvedTitle =
+    title ?? (map ? DEFAULT_TITLE : GUIDEBOOK_ONLY_TITLE);
+
   return (
     <>
       <section className={styles.hero} aria-label={heroLabel}>
@@ -479,11 +488,15 @@ export function GuidebookSouvenirPage({
       <article className={styles.article} aria-labelledby={titleId}>
         <header className={styles.titleBar}>
           <h1 id={titleId} className={styles.titleBarMain}>
-            {title}
+            {resolvedTitle}
           </h1>
         </header>
 
-        <div className={styles.columns}>
+        <div
+          className={
+            map ? styles.columns : `${styles.columns} ${styles.columnsTwo}`
+          }
+        >
           <GuideColumn
             year={1964}
             guide={guide1964}
@@ -494,7 +507,7 @@ export function GuidebookSouvenirPage({
             guide={guide1965}
             label="1965 Official Guide Book"
           />
-          <MapColumn map={map} />
+          {map ? <MapColumn map={map} /> : null}
         </div>
       </article>
 

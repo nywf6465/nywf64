@@ -848,9 +848,9 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
   },
   "bounty01": {
     slug: "bounty01",
-    title: "1964 & 1965 Official Guidebook & Souvenir Map",
-    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Bounty — nywf64.com",
-    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map — Bounty at the 1964/1965 New York World’s Fair on nywf64.com.",
+    title: "1964 & 1965 Official Guidebook",
+    metaTitle: "1964 & 1965 Official Guidebook — Bounty — nywf64.com",
+    metaDescription: "1964 & 1965 Official Guidebook — Bounty at the 1964/1965 New York World’s Fair on nywf64.com.",
     nav: "BountyNavChrome",
     overviewHref: "/bountyoverview",
     overviewLabel: "Bounty overview",
