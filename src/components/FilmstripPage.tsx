@@ -12,8 +12,8 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  *
  * HARD RULE — navy title banner immediately beneath the attraction nav.
  *
- * Stack: hero → attraction nav → navy title → optional intro/thanks → frames →
- * film continue/back → Nav2Bar (topic neighbors, not film parts).
+ * Stack: hero → attraction nav → navy title → optional intro → frames →
+ * optional thanks → film continue/back → Nav2Bar (topic neighbors, not film parts).
  */
 
 export type FilmstripImage = {
@@ -101,8 +101,6 @@ export function FilmstripPage({
         </header>
 
         <div className={styles.articleInner}>
-          {thanks ? <p className={styles.thanks}>{thanks}</p> : null}
-
           {filmBackHref ? (
             <div className={styles.filmNavTop}>
               <Link href={filmBackHref} className={styles.filmNavLink}>
@@ -149,6 +147,8 @@ export function FilmstripPage({
               </div>
             ))}
           </div>
+
+          {thanks ? <p className={styles.thanks}>{thanks}</p> : null}
 
           {filmContinueHref ? (
             <div className={styles.filmNavBottom}>
