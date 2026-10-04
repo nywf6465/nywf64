@@ -60,13 +60,8 @@ export type InformationManualPageProps = {
   nav: ReactNode;
   factsLeft: ManualFactField[];
   factsRight: ManualFactField[];
-  /** Line drawing / primary figure. Omit when the legacy manual has no figure. */
+  /** Primary photo between facts and FEATURES. Omit when legacy has none. */
   primaryFigure?: ManualImage;
-  /**
-   * Arial Narrow source line shown when there is no primary figure
-   * (e.g. legacy amprid02 caption under the features block).
-   */
-  source?: ReactNode;
   features: ManualFeature[];
   secondaryFigure?: ManualImage;
   /**
@@ -82,6 +77,11 @@ export type InformationManualPageProps = {
    */
   title?: string;
   featuresHeading?: string;
+  /**
+   * Arial Narrow SOURCE line under FEATURES when the legacy page credits the
+   * manual entry without a photo (e.g. avis02).
+   */
+  featuresSource?: ReactNode;
 };
 
 const DEFAULT_TITLE = "World's Fair Information Manual";
@@ -155,6 +155,7 @@ export function InformationManualPage({
   titleId = "information-manual-title",
   title = DEFAULT_TITLE,
   featuresHeading = "FEATURES",
+  featuresSource,
 }: InformationManualPageProps) {
   return (
     <>
@@ -207,6 +208,9 @@ export function InformationManualPage({
               <span className={styles.featureBody}>{feature.body}</span>
             </p>
           ))}
+          {featuresSource ? (
+            <p className={styles.featuresSource}>{featuresSource}</p>
+          ) : null}
 
           {!primaryFigure && source ? (
             <p className={styles.figureSource}>{source}</p>

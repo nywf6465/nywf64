@@ -1002,11 +1002,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/autthroverview",
     nextHref: "/autthr01",
   },
-  "avis02": {
-    slug: "avis02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
+  "avis01": {
+    slug: "avis01",
+    title: "1964 & 1965 Official Guidebook & Souvenir Map",
+    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Avis Antique Car Ride — nywf64.com",
+    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map — Avis Antique Car Ride at the 1964/1965 New York World’s Fair on nywf64.com.",
     nav: "AvisNavChrome",
     overviewHref: "/avisoverview",
     overviewLabel: "Avis Antique Car Ride overview",
