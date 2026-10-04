@@ -12,6 +12,8 @@ export const metadata: Metadata = {
 /**
  * Bell System postcards page — canonical “postcards” standard instance.
  * Body from legacy bell03.html. Layout: PostcardPage (/bell03).
+ * Future attraction postcard galleries should copy this page and fill
+ * `entries` from their legacy HTML (see AGENTS.md “Postcards standard”).
  */
 export default function Bell03Page() {
   return (
