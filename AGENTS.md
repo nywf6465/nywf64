@@ -18,6 +18,22 @@ Required stack for legacy attraction / essay / map / manual / postcards pages:
 
 `SiteHeader` → hero → attraction nav → **navy title banner** → body → `Nav2Bar`
 
+## HARD RULE: photo → caption → SOURCE
+
+When recreating any legacy image that has **both** a descriptive caption and a `SOURCE:` line, always render this vertical order:
+
+**photo → caption → SOURCE**
+
+Canonical example: `/unisph13` dusk Unisphere figure (`figcaption` then `SOURCE:` under the bordered photo).
+
+- **Photo** first (bordered when the legacy page shows a border)
+- **Caption** next (descriptive text for the image — not essay body type)
+- **SOURCE** last (Arial Narrow / credit line, typically starting with `SOURCE:`)
+
+Never put `SOURCE:` above the caption. Never leave the caption styled as body copy so it reads as a separate essay paragraph.
+
+This applies to custom essay/article figures **and** shared layouts (e.g. Photograph Album cards: photo → title/caption → SOURCE). If the legacy page has only a SOURCE line and no separate caption, photo → SOURCE is fine.
+
 ## Postcards standard
 
 Canonical instance: **`/bell03`** via `PostcardPage` + `postcardPage.module.css`.  
