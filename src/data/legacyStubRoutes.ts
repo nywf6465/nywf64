@@ -1002,18 +1002,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/austriaoverview",
     nextHref: "/austria01",
   },
-  "austria07": {
-    slug: "austria07",
-    title: "Brochure: Austrian Information",
-    metaTitle: "Brochure: Austrian Information — Austria — nywf64.com",
-    metaDescription: "Brochure: Austrian Information — Austria at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AustriaNavChrome",
-    overviewHref: "/austriaoverview",
-    overviewLabel: "Austria overview",
-    placeholder: "Austria content",
-    previousHref: "/austriaoverview",
-    nextHref: "/austria01",
-  },
   "austria08": {
     slug: "austria08",
     title: "A World",
