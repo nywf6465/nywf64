@@ -17,7 +17,7 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * Body recipe (from legacy amex04.html / unisph04.html):
  * 1) One or more bordered collages of advertisement tiles in a column grid
  * 2) Arial Narrow source line(s) under each collage as needed
- * 3) Optional featured advertisement image, source, and body copy
+ * 3) Optional featured advertisement image, body copy, then source
  *
  * For new advertising pages, copy src/app/amex04/page.tsx or src/app/unisph04/page.tsx
  * and fill collage tiles from the legacy HTML.
@@ -40,9 +40,10 @@ export type AdvertisingCollage = {
 
 export type AdvertisingFeature = {
   image: AdvertisingImage;
-  source?: ReactNode;
-  /** Gray Arial body paragraphs under the featured ad. */
+  /** Gray Arial body paragraphs under the featured ad image. */
   body?: ReactNode;
+  /** Arial Narrow source line under the featured ad body copy. */
+  source?: ReactNode;
 };
 
 export type AdvertisingPageProps = {
@@ -193,11 +194,11 @@ export function AdvertisingPage({
                     className={styles.featureArt}
                     unoptimized
                   />
-                  {feature.source ? (
-                    <p className={styles.source}>{feature.source}</p>
-                  ) : null}
                   {feature.body ? (
                     <div className={styles.featureBody}>{feature.body}</div>
+                  ) : null}
+                  {feature.source ? (
+                    <p className={styles.source}>{feature.source}</p>
                   ) : null}
                 </div>
               </>
