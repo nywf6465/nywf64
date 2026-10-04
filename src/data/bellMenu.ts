@@ -55,7 +55,7 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "Brochure: Fun at the Fair (1965 Edition)",
-    href: "/bellfunatthefair1965",
+    href: "/bell12",
   },
   {
     label: "Article: A Colossal Floating Wing",
