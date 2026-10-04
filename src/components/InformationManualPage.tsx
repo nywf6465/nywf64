@@ -212,12 +212,6 @@ export function InformationManualPage({
             <p className={styles.featuresSource}>{featuresSource}</p>
           ) : null}
 
-          {!primaryFigure && source ? (
-            <p className={styles.figureSource}>{source}</p>
-          ) : null}
-
-          {note ? <aside className={styles.note}>{note}</aside> : null}
-
           {secondaryFigure ? (
             <>
               <hr className={styles.rule} />

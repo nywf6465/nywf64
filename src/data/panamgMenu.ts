@@ -16,7 +16,7 @@ export const PANAMG_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "World's Fair Information Manual",
-    href: "/panama02",
+    href: "/panamg02",
   },
   {
     label: "Photograph Album",
