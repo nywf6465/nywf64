@@ -5,7 +5,7 @@ import styles from "./FountainsLinks.module.css";
 
 /**
  * U-letter links section — same fountains link-card model as prior letter pages.
- * U-specific rows live in `uCards.ts` (empty until cards arrive).
+ * U-specific rows live in `uCards.ts`.
  */
 
 function LinkIndicator() {

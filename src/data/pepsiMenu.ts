@@ -26,11 +26,11 @@ export const PEPSI_MENU_TOPICS: AttractionTopic[] = [
     href: "/pepsiadvertising",
   },
   {
-    label: "Photograph Album I",
+    label: "Photograph Album",
     href: "/pepsiphotographalbumi",
   },
   {
-    label: "Photograph Album II",
+    label: "Photograph Album",
     href: "/pepsiphotographalbumii",
   },
   {

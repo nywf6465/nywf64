@@ -18,4 +18,8 @@
   margin: 0.35rem 0 0;
   font-size: 0.6rem;
   font-weight: 400;
+  max-width: 22rem;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1.35;
 }

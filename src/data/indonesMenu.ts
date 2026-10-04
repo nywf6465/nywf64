@@ -31,11 +31,11 @@ export const INDONES_MENU_TOPICS: AttractionTopic[] = [
     href: "/indones05",
   },
   {
-    label: "Photograph Album I",
+    label: "Photograph Album",
     href: "/indones06",
   },
   {
-    label: "Photograph Album II",
+    label: "Photograph Album",
     href: "/indones07",
   },
   {

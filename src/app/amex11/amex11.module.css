@@ -1,0 +1,228 @@
+/*
+ * American Express — A Tribute to Rob Bianco feature page.
+ * Stack: overview hero → AmexNavChrome → navy title bar → article → Nav2Bar.
+ * Body from legacy amex11.html.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(56rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Times, "Times New Roman", serif;
+  color: #000;
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.ledePortrait {
+  float: left;
+  width: min(299px, 42%);
+  margin: 0 1.25rem 0.75rem 0;
+}
+
+.ledePortrait img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.openQuestion {
+  margin: 0 0 0.85rem;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.body p {
+  margin: 0 0 0.95rem;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.body p:last-child {
+  margin-bottom: 0;
+}
+
+.brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: 0.95em;
+}
+
+.brandNywf {
+  color: #00008b;
+}
+
+.brandSixtyFour {
+  color: #dc143c;
+}
+
+.brandDotCom {
+  color: #00008b;
+}
+
+.photoRow {
+  clear: both;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.65rem 0.85rem;
+  margin: 1.25rem 0 0.35rem;
+}
+
+.photoRow img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+  border: 1px solid #000;
+}
+
+.photoRowBorderless img {
+  border: 0;
+}
+
+.caption {
+  clear: both;
+  margin: 0 0 1.25rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.singleFigure {
+  clear: both;
+  margin: 1.25rem 0 0.35rem;
+  text-align: center;
+}
+
+.singleFigure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.signoff {
+  clear: both;
+  margin: 1.5rem 0 1.75rem;
+  font-size: 1.15rem;
+  line-height: 1.55;
+}
+
+.signoff p {
+  margin: 0 0 0.35rem;
+}
+
+.storyLink {
+  clear: both;
+  margin: 0 0 1.5rem;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.storyLink a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.storyLink a:hover {
+  color: #ff0000;
+}
+
+.galleryHeading {
+  clear: both;
+  margin: 1.75rem 0 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.youtubeNote {
+  clear: both;
+  margin: 1.5rem 0 1rem;
+  font-size: 1.15rem;
+  line-height: 1.45;
+}
+
+.youtubeNote a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.youtubeNote a:hover {
+  color: #ff0000;
+}
+
+.wideFigure {
+  clear: both;
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.wideFigure img {
+  display: block;
+  width: min(100%, 902px);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+@media (max-width: 720px) {
+  .ledePortrait {
+    float: none;
+    width: min(299px, 100%);
+    margin: 0 auto 1rem;
+  }
+
+  .photoRow {
+    flex-direction: column;
+    align-items: center;
+  }
+}

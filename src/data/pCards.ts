@@ -141,6 +141,17 @@ const PORT_AUTHORITY_HELIPORT: PCard = {
   pavilionAlt: "Port Authority Heliport",
 };
 
+const PRESS_BUILDING: PCard = {
+  id: "press-building",
+  href: "/prebuioverview",
+  title: "Press Building & Public Relations",
+  body: "The purpose of the Press Building is to provide a convenient, comfortable and functional center for the working press and for Public Relations and Publicity.",
+  pavilionSrc: "/images/prebui/prebui-icon.png",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Press Building & Public Relations",
+};
+
 /** Identical to the Protestant & Orthodox Center row on the Religions links page. */
 const PROTESTANT_AND_ORTHODOX_CENTER: PCard = {
   id: "protestant-and-orthodox-center",
@@ -166,6 +177,7 @@ export const P_CARDS: PCard[] = [
   POOL_OF_INDUSTRY,
   POOL_OF_REFLECTIONS,
   PORT_AUTHORITY_HELIPORT,
+  PRESS_BUILDING,
   PROTESTANT_AND_ORTHODOX_CENTER,
 ];
 
