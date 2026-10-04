@@ -12,30 +12,6 @@ export const metadata: Metadata = {
     "Why Unisphere? — concept history, Robert Moses comments, and the Galaxon proposal — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-const CONCEPT_TILES = [
-  { src: "unisph02.01.jpg", width: 300, height: 178 },
-  { src: "unisph02.02.jpg", width: 301, height: 178 },
-  { src: "unisph02.03.jpg", width: 300, height: 178 },
-  { src: "unisph02.04.jpg", width: 300, height: 178 },
-  { src: "unisph02.05.jpg", width: 301, height: 178 },
-  { src: "unisph02.06.jpg", width: 300, height: 178 },
-  { src: "unisph02.07.jpg", width: 300, height: 178 },
-  { src: "unisph02.08.jpg", width: 301, height: 178 },
-  { src: "unisph02.09.jpg", width: 300, height: 178 },
-] as const;
-
-const FINAL_TILES = [
-  { src: "unisph03.01.jpg", width: 301, height: 238 },
-  { src: "unisph03.02.jpg", width: 301, height: 238 },
-  { src: "unisph03.03.jpg", width: 300, height: 238 },
-  { src: "unisph03.04.jpg", width: 301, height: 238 },
-  { src: "unisph03.05.jpg", width: 301, height: 238 },
-  { src: "unisph03.06.jpg", width: 300, height: 238 },
-  { src: "unisph03.07.jpg", width: 301, height: 238 },
-  { src: "unisph03.08.jpg", width: 301, height: 238 },
-  { src: "unisph03.09.jpg", width: 300, height: 238 },
-] as const;
-
 const MOSES_ALTERNATIVES = [
   ["A.", "Pure abstraction. Absolutely nothing doing. Toss it out."],
   [
@@ -88,19 +64,18 @@ export default function Unisph12Page() {
 
         <div className={styles.articleInner}>
           <section className={styles.section} aria-label="Original concept">
-            <div className={styles.collage}>
-              {CONCEPT_TILES.map((tile) => (
+            <figure className={styles.largePhoto}>
+              <span className={styles.figureBordered}>
                 <Image
-                  key={tile.src}
-                  src={`/images/unisph12/${tile.src}`}
-                  alt=""
-                  width={tile.width}
-                  height={tile.height}
-                  className={styles.collageTile}
+                  src="/images/unisph12/unisph02-concept.jpg"
+                  alt="Artist’s rendering of the original concept for Unisphere"
+                  width={901}
+                  height={534}
+                  className={styles.largePhotoImg}
                   unoptimized
                 />
-              ))}
-            </div>
+              </span>
+            </figure>
             <p className={styles.caption}>
               An artist&apos;s rendering of the original concept for Unisphere.
               According to the February 15, 1961 edition of the{" "}
@@ -356,19 +331,18 @@ export default function Unisph12Page() {
           <hr className={styles.rule} />
 
           <section className={styles.section} aria-label="Final design">
-            <div className={styles.collage}>
-              {FINAL_TILES.map((tile) => (
+            <figure className={styles.largePhoto}>
+              <span className={styles.figureBordered}>
                 <Image
-                  key={tile.src}
-                  src={`/images/unisph12/${tile.src}`}
-                  alt=""
-                  width={tile.width}
-                  height={tile.height}
-                  className={styles.collageTile}
+                  src="/images/unisph12/unisph03-final.jpg"
+                  alt="Artist John C. Wenrich rendering of the final design for Unisphere"
+                  width={902}
+                  height={714}
+                  className={styles.largePhotoImg}
                   unoptimized
                 />
-              ))}
-            </div>
+              </span>
+            </figure>
             <p className={styles.caption}>
               Artist John C. Wenrich rendering of the final design for Unisphere
             </p>
