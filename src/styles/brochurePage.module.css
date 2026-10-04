@@ -62,10 +62,16 @@
   margin: 0 0 1.35rem;
 }
 
+.coverFigure {
+  margin: 0;
+  max-width: 100%;
+}
+
 .coverLink {
   display: inline-block;
   line-height: 0;
   border: 1px solid #000;
+  max-width: 100%;
 }
 
 .coverLink:focus-visible {
@@ -75,8 +81,19 @@
 
 .cover {
   display: block;
+  width: 100%;
   max-width: 100%;
   height: auto;
+}
+
+.source {
+  margin: 0.55rem 0 0;
+  max-width: 100%;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.875rem;
+  line-height: 1.45;
+  text-align: left;
 }
 
 .body > p {

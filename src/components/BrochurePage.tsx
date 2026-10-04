@@ -49,9 +49,11 @@ export type BrochurePageProps = {
   pdfAriaLabel: string;
   /**
    * Noun used in the instructional paragraph (“brochure”, “pamphlet”,
-   * “presentation”). Defaults to “brochure”.
+   * “presentation”, “article”). Defaults to “brochure”.
    */
   documentNoun?: string;
+  /** Optional SOURCE / credit line under the cover (from legacy caption). */
+  source?: ReactNode;
   previousHref: string;
   nextHref: string;
   overviewHref?: string;
@@ -67,6 +69,7 @@ export function BrochurePage({
   pdfHref,
   pdfAriaLabel,
   documentNoun = "brochure",
+  source,
   previousHref,
   nextHref,
   overviewHref,
@@ -101,23 +104,30 @@ export function BrochurePage({
 
         <div className={styles.articleInner}>
           <div className={styles.coverWrap}>
-            <a
-              className={styles.coverLink}
-              href={pdfHref}
-              target="_blank"
-              rel="noreferrer"
-              aria-label={pdfAriaLabel}
+            <figure
+              className={styles.coverFigure}
+              style={{ width: cover.width }}
             >
-              <Image
-                src={cover.src}
-                alt={cover.alt ?? ""}
-                width={cover.width}
-                height={cover.height}
-                className={styles.cover}
-                style={{ width: cover.width }}
-                unoptimized
-              />
-            </a>
+              <a
+                className={styles.coverLink}
+                href={pdfHref}
+                target="_blank"
+                rel="noreferrer"
+                aria-label={pdfAriaLabel}
+              >
+                <Image
+                  src={cover.src}
+                  alt={cover.alt ?? ""}
+                  width={cover.width}
+                  height={cover.height}
+                  className={styles.cover}
+                  unoptimized
+                />
+              </a>
+              {source ? (
+                <figcaption className={styles.source}>{source}</figcaption>
+              ) : null}
+            </figure>
           </div>
 
           <div className={styles.body}>
