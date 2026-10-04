@@ -10638,18 +10638,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/panamgoverview",
     nextHref: "/panama01",
   },
-  "panamg02": {
-    slug: "panamg02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "PanamgNavChrome",
-    overviewHref: "/panamgoverview",
-    overviewLabel: "Pan American Highway Gardens overview",
-    placeholder: "Pan American Highway Gardens content",
-    previousHref: "/panamgoverview",
-    nextHref: "/panama01",
-  },
   "panamg03": {
     slug: "panamg03",
     title: "Photograph Album",
