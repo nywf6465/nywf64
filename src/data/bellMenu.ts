@@ -39,7 +39,7 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "The Ride of Communications",
-    href: "/bellride",
+    href: "/bell08",
   },
   {
     label: "The Ride of Communications 1964 & 1965 Scripts",
