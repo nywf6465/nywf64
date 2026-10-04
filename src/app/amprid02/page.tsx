@@ -71,7 +71,7 @@ export default function Amprid02Page() {
           ],
         },
       ]}
-      source="SOURCE: 1965 World's Fair Information Manual"
+      featuresSource="SOURCE: 1965 World's Fair Information Manual"
       features={[
         {
           body: (

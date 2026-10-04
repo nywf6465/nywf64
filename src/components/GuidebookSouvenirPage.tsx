@@ -7,14 +7,10 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 /**
- * Official Guidebook & Souvenir Map page (“guidebook” standard).
+ * Official Guidebook & Souvenir Map page.
  * Canonical instance: /bell01. Legacy attraction `*01` pages use this layout.
  *
- * HARD RULE — navy title banner: keep the full-width navy (`#26346e`) title bar
- * immediately beneath the attraction nav. Default text is “1964 & 1965 Official
- * Guidebook & Souvenir Map” (override with `title` when legacy appends “Entries”).
- *
- * Stack: hero → attraction nav → navy title bar → three columns → Nav2Bar.
+ * Stack: hero → attraction nav → title bar → three columns → nav2.
  * Columns: 1964 Official Guide Book, 1965 Official Guide Book,
  * 1964 Official Souvenir Map.
  *
@@ -27,22 +23,11 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * note and cover. Optional `map.entry` places a pavilion block under the map
  * column (legacy amind01 layout).
  *
- * When a year sets `omittedFromGuide`, the column shows only the not-included
- * note and cover. Optional `map.entry` places a pavilion block under the map
- * column (legacy amind01 layout).
- *
- * When a year sets `omittedFromGuide`, the column shows only the not-included
- * note and cover. Optional `map.entry` places a pavilion block under the map
- * column (legacy amind01 layout).
- *
  * Type follows the legacy font tags: Times New Roman where no face is set,
  * Arial where face="Arial" is set, at the original HTML size steps.
  * 1964 pavilion names and highlight labels default to Times. 1965 pavilion
  * names and highlight labels default to Arial. The 1964 admission mark is a
  * larger roman asterisk; the 1965 mark is an italic pilcrow.
- *
- * For new guidebooks, copy src/app/bell01/page.tsx and fill props from the
- * legacy *01.html — see AGENTS.md “Guidebook standard”.
  */
 
 export type GuidebookFace = "times" | "arial";
@@ -94,10 +79,28 @@ export type GuidebookMapEntry = {
   note?: ReactNode;
 };
 
-export type GuidebookMapContent = {
-  cover: GuidebookImage;
+export type GuidebookLocateLink = {
   areaMap: GuidebookImage;
   locateHref: string;
+};
+
+export type GuidebookMapContent = {
+  cover: GuidebookImage;
+  /**
+   * Single Locate It thumbnail (default). Prefer `locates` when the exhibit
+   * has more than one area pin.
+   */
+  areaMap?: GuidebookImage;
+  /**
+   * When omitted, Locate It remains visible but is not linked (e.g. never-built
+   * exhibits with no locate-it map page).
+   */
+  locateHref?: string;
+  /**
+   * Multiple Locate It thumbnails (e.g. Arlington Hat industrial/international/
+   * state/transport pins). When set, overrides `areaMap` + `locateHref`.
+   */
+  locates?: GuidebookLocateLink[];
   /**
    * Noun in the map-column caption (“exhibit”, “fountain”, …).
    * Defaults to “exhibit”.
@@ -329,6 +332,12 @@ function GuideColumn({
 function MapColumn({ map }: { map: GuidebookMapContent }) {
   const entry = map.entry;
   const nameFace = entry?.nameFace ?? "times";
+  const locates: GuidebookLocateLink[] =
+    map.locates ??
+    (map.areaMap
+      ? [{ areaMap: map.areaMap, locateHref: map.locateHref ?? "" }]
+      : []);
+  const multiLocate = locates.length > 1;
 
   return (
     <section className={styles.col} aria-label="1964 Official Souvenir Map">
@@ -348,17 +357,24 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           unoptimized
         />
         <div className={styles.mapSide}>
-          <div
-            className={
-              multiLocate ? styles.locates : undefined
-            }
-          >
-            {locates.map((item) => (
+          <div className={multiLocate ? styles.locates : undefined}>
+            {locates.map((item, index) => (
               <div
-                key={item.locateHref}
+                key={item.locateHref || `locate-${index}`}
                 className={styles.locate}
               >
-                <Link href={item.locateHref}>
+                {item.locateHref ? (
+                  <Link href={item.locateHref}>
+                    <Image
+                      src={item.areaMap.src}
+                      alt={item.areaMap.alt ?? "Area map"}
+                      width={item.areaMap.width}
+                      height={item.areaMap.height}
+                      className={styles.areaMap}
+                      unoptimized
+                    />
+                  </Link>
+                ) : (
                   <Image
                     src={item.areaMap.src}
                     alt={item.areaMap.alt ?? "Area map"}
@@ -367,10 +383,14 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
                     className={styles.areaMap}
                     unoptimized
                   />
-                </Link>
-                <Link href={item.locateHref} className={styles.locateLink}>
-                  Locate It
-                </Link>
+                )}
+                {item.locateHref ? (
+                  <Link href={item.locateHref} className={styles.locateLink}>
+                    Locate It
+                  </Link>
+                ) : (
+                  <span className={styles.locateLink}>Locate It</span>
+                )}
               </div>
             ))}
           </div>

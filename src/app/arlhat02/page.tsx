@@ -53,7 +53,7 @@ export default function Arlhat02Page() {
         },
       ]}
       factsRight={[]}
-      source="SOURCE: 1964 World's Fair Information Manual"
+      featuresSource="SOURCE: 1964 World's Fair Information Manual"
       features={[
         {
           body: (

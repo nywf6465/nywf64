@@ -145,7 +145,6 @@ export function InformationManualPage({
   factsLeft,
   factsRight,
   primaryFigure,
-  source,
   features,
   secondaryFigure,
   note,

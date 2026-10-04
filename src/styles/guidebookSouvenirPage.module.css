@@ -1,11 +1,7 @@
 /*
- * Official Guidebook & Souvenir Map pages (“guidebook” standard).
+ * Official Guidebook & Souvenir Map pages.
  * Canonical instance: /bell01. Legacy *01.html pages share this layout.
- * See AGENTS.md “Guidebook standard” and GuidebookSouvenirPage.tsx.
  *
- * HARD RULE — `.titleBar` is the navy banner beneath the attraction nav.
- *
- * Stack: hero → attraction nav → navy title bar → three columns → Nav2Bar.
  * Three columns, silver dividers, stacking under 720px.
  * Captions are three lines at the lower right of each cover.
  * Locate It sits at the upper right of the map cover.
@@ -83,17 +79,16 @@
   margin: 0 0 1.1rem;
 }
 
-/* Stack cover with multiple Locate It thumbnails from the top. */
-.entryHeadMultiLocate {
-  align-items: flex-start;
-}
-
 .locates {
   display: flex;
   flex-direction: column;
   align-items: center;
   gap: 0.55rem;
   flex: 0 0 auto;
+}
+
+.entryHeadMultiLocate {
+  align-items: flex-start;
 }
 
 .intro {
