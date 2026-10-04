@@ -389,7 +389,7 @@ export default function Bell10Page() {
       <Nav2Bar
         previousHref="/bell09"
         overviewHref="/belloverview"
-        nextHref="/bellfunatthefair1964"
+        nextHref="/bell11"
       />
     </>
   );
