@@ -19,7 +19,7 @@ export const BERLIN_MENU_TOPICS: AttractionTopic[] = [
     href: "/berlin02",
   },
   {
-    label: "Photograph Gallery",
+    label: "Photograph Album",
     href: "/berlin03",
   },
   {
