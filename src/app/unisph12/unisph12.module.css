@@ -63,20 +63,18 @@
   margin: 0 0 1.25rem;
 }
 
-.collage {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
-  width: 100%;
-  max-width: 56.25rem;
+/* Stitched legacy 3×3 tile composites — keep as one image so they never
+   reflow into a broken vertical stack on narrow viewports. */
+.largePhoto {
   margin: 0 auto;
-  border: 1px solid #000;
-  box-sizing: border-box;
+  max-width: min(56.25rem, 100%);
+  text-align: center;
 }
 
-.collageTile {
+.largePhotoImg {
   display: block;
   width: 100%;
+  max-width: 100%;
   height: auto;
 }
 
@@ -243,10 +241,6 @@
 }
 
 @media (max-width: 720px) {
-  .collage {
-    grid-template-columns: 1fr;
-  }
-
   .galaxonLayout {
     grid-template-columns: 1fr;
   }
