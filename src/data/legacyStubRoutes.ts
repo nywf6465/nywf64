@@ -260,9 +260,9 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
   },
   "archamer01": {
     slug: "archamer01",
-    title: "1964 & 1965 Official Guidebook & Souvenir Map",
-    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Arch of the Americas — nywf64.com",
-    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map — Arch of the Americas at the 1964/1965 New York World’s Fair on nywf64.com.",
+    title: "1964 & 1965 Official Guidebook",
+    metaTitle: "1964 & 1965 Official Guidebook — Arch of the Americas — nywf64.com",
+    metaDescription: "1964 & 1965 Official Guidebook — Arch of the Americas at the 1964/1965 New York World’s Fair on nywf64.com.",
     nav: "ArchamerNavChrome",
     overviewHref: "/archameroverview",
     overviewLabel: "Arch of the Americas overview",
