@@ -47,9 +47,19 @@ export type InformationManualPageProps = {
   nav: ReactNode;
   factsLeft: ManualFactField[];
   factsRight: ManualFactField[];
-  primaryFigure: ManualImage;
+  /** Line drawing / primary figure. Omit when the legacy manual has no figure. */
+  primaryFigure?: ManualImage;
+  /**
+   * Arial Narrow source line shown when there is no primary figure
+   * (e.g. legacy amprid02 caption under the features block).
+   */
+  source?: ReactNode;
   features: ManualFeature[];
   secondaryFigure?: ManualImage;
+  /**
+   * Optional bordered note after FEATURES (e.g. webmaster’s note on /amind02).
+   */
+  note?: ReactNode;
   previousHref: string;
   nextHref: string;
   overviewHref?: string;
@@ -122,8 +132,10 @@ export function InformationManualPage({
   factsLeft,
   factsRight,
   primaryFigure,
+  source,
   features,
   secondaryFigure,
+  note,
   previousHref,
   nextHref,
   overviewHref,
@@ -165,7 +177,7 @@ export function InformationManualPage({
             <FactColumn fields={factsRight} label="Site and construction facts" />
           </div>
 
-          <ManualFigure figure={primaryFigure} />
+          {primaryFigure ? <ManualFigure figure={primaryFigure} /> : null}
 
           <p className={styles.featuresHeading}>{featuresHeading}</p>
           {features.map((feature, index) => (
@@ -182,6 +194,12 @@ export function InformationManualPage({
               <span className={styles.featureBody}>{feature.body}</span>
             </p>
           ))}
+
+          {!primaryFigure && source ? (
+            <p className={styles.figureSource}>{source}</p>
+          ) : null}
+
+          {note ? <aside className={styles.note}>{note}</aside> : null}
 
           {secondaryFigure ? (
             <>

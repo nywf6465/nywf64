@@ -810,18 +810,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/arlhatoverview",
     nextHref: "/arlhat01",
   },
-  "arlhat02": {
-    slug: "arlhat02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "ArlhatNavChrome",
-    overviewHref: "/arlhatoverview",
-    overviewLabel: "Arlington Hat overview",
-    placeholder: "Arlington Hat content",
-    previousHref: "/arlhatoverview",
-    nextHref: "/arlhat01",
-  },
   "arlhat03": {
     slug: "arlhat03",
     title: "Photograph Album",
