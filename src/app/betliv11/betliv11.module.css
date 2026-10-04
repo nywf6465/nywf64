@@ -1,0 +1,222 @@
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.towerSplit {
+  display: grid;
+  grid-template-columns: minmax(0, 250px) minmax(0, 1fr);
+  gap: 0.85rem 1rem;
+  align-items: start;
+}
+
+.lede p {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.caption {
+  margin: 0.35rem 0 0;
+  color: #0099cc;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.source {
+  margin: 0.2rem 0 0.85rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.source a {
+  color: #0066cc;
+}
+
+.figure {
+  margin: 1rem auto;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.photoPlain {
+  border: 0;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1.25rem 0;
+}
+
+.viewHeading {
+  margin: 0 0 0.75rem;
+  color: #0099cc;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.panorama {
+  padding: 0.65rem;
+  background: #0099cc;
+}
+
+.panoramaInner {
+  background: #fff;
+  padding: 0.65rem;
+}
+
+.news {
+  margin: 1.15rem 0;
+  border: 1px solid #000;
+  background: #ffffcc;
+  padding: 0.85rem 1rem;
+}
+
+.news h2 {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1rem;
+}
+
+.news p {
+  margin: 0 0 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  align-items: start;
+}
+
+.chefNote {
+  margin: 0.35rem 0 1rem;
+  font-size: 0.7rem;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.kitchenRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  margin: 0 0 0.65rem;
+  align-items: stretch;
+}
+
+.menuCard {
+  padding: 0.65rem 0.5rem;
+  text-align: center;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.menuCard h3 {
+  margin: 0 0 0.45rem;
+  font-size: 0.85rem;
+}
+
+.menuCard p {
+  margin: 0 0 0.25rem;
+}
+
+.south {
+  background: #ffcc00;
+}
+
+.europe {
+  background: #00cc33;
+}
+
+.north {
+  background: #99ccff;
+}
+
+.med {
+  background: #ff99cc;
+}
+
+.orient {
+  background: #ff9933;
+}
+
+.logo {
+  display: block;
+  width: 60px;
+  height: auto;
+  margin: 0.25rem auto;
+}
+
+@media (max-width: 640px) {
+  .towerSplit,
+  .newsGrid,
+  .pair,
+  .kitchenRow {
+    grid-template-columns: 1fr;
+  }
+}

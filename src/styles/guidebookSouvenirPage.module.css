@@ -4,7 +4,8 @@
  *
  * Three columns, silver dividers, stacking under 720px.
  * Captions are three lines at the lower right of each cover.
- * Locate It sits at the upper right of the map cover.
+ * Locate It sits at the upper right of the map cover. Multiple Locate It
+ * links (e.g. Arlington Hat) sit in two equal columns next to the map.
  * Covers keep a 1px frame and have no rule under them.
  * The legacy "Revised" line is not part of this layout.
  *
@@ -79,6 +80,37 @@
   margin: 0 0 1.1rem;
 }
 
+.locates {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.55rem;
+  flex: 0 0 auto;
+  align-self: flex-start;
+  width: max-content;
+  max-width: 100%;
+}
+
+.locatesTwoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  justify-items: center;
+  align-items: start;
+  align-self: stretch;
+  width: 100%;
+  max-width: 100%;
+}
+
+.locatesTwoCol .locate {
+  width: 100%;
+  max-width: 100%;
+  align-self: stretch;
+}
+
+.entryHeadMultiLocate {
+  align-items: flex-start;
+}
+
 .intro {
   margin: 0;
   color: #990000;
@@ -89,6 +121,30 @@
   line-height: 1.15;
   text-align: left;
   white-space: nowrap;
+}
+
+/* Longer status lines (not-included / never-built) — same type, may wrap. */
+.omittedNote,
+.statusNote {
+  margin: 0 0 0.7rem;
+  color: #990000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.omittedNote a,
+.statusNote a {
+  color: inherit;
+  text-decoration: underline;
+  text-underline-offset: 0.12em;
+}
+
+.mapEntry {
+  margin-top: 0.85rem;
 }
 
 .cover {
@@ -104,7 +160,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: stretch;
+  /* Keep Locate It + caption flush to the map cover (upper/lower right),
+     not centered in the leftover column width. */
+  align-items: flex-start;
   align-self: stretch;
   flex: 1 1 auto;
   min-width: 0;
@@ -125,6 +183,8 @@
   align-self: flex-start;
   gap: 0.35rem;
   flex: 0 0 auto;
+  width: max-content;
+  max-width: 100%;
   padding-top: 0;
 }
 

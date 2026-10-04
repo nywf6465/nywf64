@@ -9,7 +9,20 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * World's Fair Information Manual page (“manual” standard).
  * Canonical instance: /bell02. Legacy attraction `*02` pages use this layout.
  *
- * Stack: hero → attraction nav → navy title bar → centered body → Nav2Bar.
+ * HARD RULE — navy title banner: keep the full-width navy (`#26346e`) title bar
+ * immediately beneath the attraction nav. This layout renders
+ * “World's Fair Information Manual”; do not omit it on custom ports.
+ *
+ * Stack: hero → attraction nav → navy title bar → centered ~600px body → Nav2Bar.
+ *
+ * Body recipe (from legacy bell02.html / /bell02):
+ * 1) Two-column fact sheet (underlined labels + line items)
+ * 2) Primary figure + Arial Narrow source
+ * 3) FEATURES heading + labeled sections (use styles.u for underlined names)
+ * 4) Optional rule + secondary figure (bordered when legacy border="1")
+ *
+ * For new manuals, copy src/app/bell02/page.tsx and fill props from the legacy
+ * *02.html — see AGENTS.md “Manual standard”.
  */
 
 export type ManualImage = {
@@ -47,9 +60,19 @@ export type InformationManualPageProps = {
   nav: ReactNode;
   factsLeft: ManualFactField[];
   factsRight: ManualFactField[];
-  primaryFigure: ManualImage;
+  /** Primary photo between facts and FEATURES. Omit when legacy has none. */
+  primaryFigure?: ManualImage;
   features: ManualFeature[];
   secondaryFigure?: ManualImage;
+  /**
+   * Optional bordered note after FEATURES (e.g. webmaster’s note on /amind02).
+   */
+  note?: ReactNode;
+  /**
+   * Optional body after FEATURES (e.g. Brass Rail location tables).
+   * Rendered before the secondary figure rule.
+   */
+  afterFeatures?: ReactNode;
   previousHref: string;
   nextHref: string;
   overviewHref?: string;
@@ -59,6 +82,11 @@ export type InformationManualPageProps = {
    */
   title?: string;
   featuresHeading?: string;
+  /**
+   * Arial Narrow SOURCE line under FEATURES when the legacy page credits the
+   * manual entry without a photo (e.g. avis02).
+   */
+  featuresSource?: ReactNode;
 };
 
 const DEFAULT_TITLE = "World's Fair Information Manual";
@@ -124,12 +152,15 @@ export function InformationManualPage({
   primaryFigure,
   features,
   secondaryFigure,
+  note,
+  afterFeatures,
   previousHref,
   nextHref,
   overviewHref,
   titleId = "information-manual-title",
   title = DEFAULT_TITLE,
   featuresHeading = "FEATURES",
+  featuresSource,
 }: InformationManualPageProps) {
   return (
     <>
@@ -165,7 +196,7 @@ export function InformationManualPage({
             <FactColumn fields={factsRight} label="Site and construction facts" />
           </div>
 
-          <ManualFigure figure={primaryFigure} />
+          {primaryFigure ? <ManualFigure figure={primaryFigure} /> : null}
 
           <p className={styles.featuresHeading}>{featuresHeading}</p>
           {features.map((feature, index) => (
@@ -182,6 +213,13 @@ export function InformationManualPage({
               <span className={styles.featureBody}>{feature.body}</span>
             </p>
           ))}
+          {featuresSource ? (
+            <p className={styles.featuresSource}>{featuresSource}</p>
+          ) : null}
+
+          {note ? <div className={styles.note}>{note}</div> : null}
+
+          {afterFeatures}
 
           {secondaryFigure ? (
             <>

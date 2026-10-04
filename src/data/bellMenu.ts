@@ -19,46 +19,46 @@ export const BELL_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "Postcards",
-    href: "/bellpostcards",
+    href: "/bell03",
   },
   {
     label: "Advertising",
-    href: "/belladvertising",
+    href: "/bell04",
   },
   {
-    label: "Photograph Album I",
-    href: "/bellphotographalbumi",
+    label: "Photograph Album",
+    href: "/bell05",
   },
   {
-    label: "Photograph Album II",
-    href: "/bellphotographalbumii",
+    label: "Photograph Album",
+    href: "/bell06",
   },
   {
     label: "Pamphlet: Groundbreaking",
-    href: "/bellgroundbreaking",
+    href: "/bell07",
   },
   {
     label: "The Ride of Communications",
-    href: "/bellride",
+    href: "/bell08",
   },
   {
     label: "The Ride of Communications 1964 & 1965 Scripts",
-    href: "/bellridescripts",
+    href: "/bell09",
   },
   {
     label: "The Exhibit Hall",
-    href: "/bellexhibithall",
+    href: "/bell10",
   },
   {
     label: "Brochure: Fun at the Fair (1964 Edition)",
-    href: "/bellfunatthefair1964",
+    href: "/bell11",
   },
   {
     label: "Brochure: Fun at the Fair (1965 Edition)",
-    href: "/bellfunatthefair1965",
+    href: "/bell12",
   },
   {
     label: "Article: A Colossal Floating Wing",
-    href: "/bellfloatingwing",
+    href: "/bell13",
   },
 ];

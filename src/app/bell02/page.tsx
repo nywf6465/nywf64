@@ -10,8 +10,10 @@ export const metadata: Metadata = {
 };
 
 /**
- * Bell System Information Manual page — “manual” standard.
+ * Bell System Information Manual page — canonical “manual” standard instance.
  * Body from legacy bell02.html. Layout: InformationManualPage (/bell02).
+ * Future attraction `*02` manuals should copy this page and fill props from
+ * their legacy HTML (see AGENTS.md “Manual standard”).
  */
 export default function Bell02Page() {
   return (
@@ -27,7 +29,7 @@ export default function Bell02Page() {
       nav={<BellNavChrome />}
       previousHref="/bell01"
       overviewHref="/belloverview"
-      nextHref="/bellpostcards"
+      nextHref="/bell03"
       factsLeft={[
         {
           label: "EXHIBIT",
