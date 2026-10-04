@@ -82,10 +82,6 @@ export default function Amex08Page() {
 
           <hr className={styles.rule} />
 
-          <p className={styles.jacketSource}>
-            SOURCE: Record Jacket: <em>Meet Me Under The Money Tree</em>
-          </p>
-
           <figure className={styles.jacketFigure}>
             <Image
               src="/images/amex08/record-jacket.jpg"
@@ -140,6 +136,10 @@ export default function Amex08Page() {
               (right)
             </figcaption>
           </figure>
+
+          <p className={styles.jacketSource}>
+            SOURCE: Record Jacket: <em>Meet Me Under The Money Tree</em>
+          </p>
         </div>
       </article>
 
