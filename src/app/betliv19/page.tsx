@@ -79,7 +79,7 @@ export default function Betliv19Page() {
                   alt="Humane Society of the United States logo"
                   width={50}
                   height={56}
-                  className={`${styles.photoImg} ${styles.hsusLogo}`}
+                  className={styles.hsusLogo}
                   unoptimized
                 />
                 <h2>

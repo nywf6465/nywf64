@@ -12,7 +12,7 @@ export type ScriptPhoto = {
 };
 
 const KELLBERG_SOURCE =
-  /SOURCE:\s*Photos?\s*presented courtesy Chris Kellberg collection © 2010 Chris Kellberg, All Rights Reserved\.?/gi;
+  /SOURCE:\s*Photos?\s+presented\s+courtesy\s+Chris\s+Kellberg\s+collection\s+©\s+2010\s+Chris\s+Kellberg,\s+All\s+Rights\s+Reserved\.?/gi;
 
 function KellbergSource() {
   return (

@@ -319,7 +319,7 @@ export default function Betliv18Page() {
                   alt="Little Girl"
                   width={130}
                   height={172}
-                  className={`${styles.photoImg} ${styles.littleGirl}`}
+                  className={styles.littleGirl}
                   unoptimized
                 />
               </div>
