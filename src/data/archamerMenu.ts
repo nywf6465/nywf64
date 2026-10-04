@@ -15,7 +15,7 @@ export const ARCHAMER_MENU_TOPICS: AttractionTopic[] = [
     href: "/archamer01",
   },
   {
-    label: "About the Arch",
+    label: "The Story of the Arch",
     href: "/archamer02",
   },
 ];

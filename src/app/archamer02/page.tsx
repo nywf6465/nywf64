@@ -14,7 +14,7 @@ export const metadata: Metadata = {
 
 /**
  * Arch of the Americas — The Story of the Arch.
- * Body from legacy archamer02.html (menu label: About the Arch).
+ * Body from legacy archamer02.html (menu label: The Story of the Arch).
  * Stack: hero → ArchamerNavChrome → navy title → article → Nav2Bar.
  * HARD RULE — figures with sources are photo → caption → SOURCE.
  */
