@@ -1350,18 +1350,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/belviloverview",
     nextHref: "/belvil01",
   },
-  "belvil02": {
-    slug: "belvil02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
-    nav: "BelvilNavChrome",
-    overviewHref: "/belviloverview",
-    overviewLabel: "Belgian Village overview",
-    placeholder: "Belgian Village content",
-    previousHref: "/belviloverview",
-    nextHref: "/belvil01",
-  },
   "belvil03": {
     slug: "belvil03",
     title: "Postcards",

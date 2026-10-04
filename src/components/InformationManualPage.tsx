@@ -47,7 +47,8 @@ export type InformationManualPageProps = {
   nav: ReactNode;
   factsLeft: ManualFactField[];
   factsRight: ManualFactField[];
-  primaryFigure: ManualImage;
+  /** Primary photo between facts and FEATURES. Omit when legacy has none. */
+  primaryFigure?: ManualImage;
   features: ManualFeature[];
   secondaryFigure?: ManualImage;
   previousHref: string;
@@ -59,6 +60,11 @@ export type InformationManualPageProps = {
    */
   title?: string;
   featuresHeading?: string;
+  /**
+   * Arial Narrow SOURCE line under FEATURES when the legacy page credits the
+   * manual entry without a photo (e.g. avis02).
+   */
+  featuresSource?: ReactNode;
 };
 
 const DEFAULT_TITLE = "World's Fair Information Manual";
@@ -130,6 +136,7 @@ export function InformationManualPage({
   titleId = "information-manual-title",
   title = DEFAULT_TITLE,
   featuresHeading = "FEATURES",
+  featuresSource,
 }: InformationManualPageProps) {
   return (
     <>
@@ -165,7 +172,7 @@ export function InformationManualPage({
             <FactColumn fields={factsRight} label="Site and construction facts" />
           </div>
 
-          <ManualFigure figure={primaryFigure} />
+          {primaryFigure ? <ManualFigure figure={primaryFigure} /> : null}
 
           <p className={styles.featuresHeading}>{featuresHeading}</p>
           {features.map((feature, index) => (
@@ -182,6 +189,9 @@ export function InformationManualPage({
               <span className={styles.featureBody}>{feature.body}</span>
             </p>
           ))}
+          {featuresSource ? (
+            <p className={styles.featuresSource}>{featuresSource}</p>
+          ) : null}
 
           {secondaryFigure ? (
             <>
