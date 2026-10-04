@@ -726,11 +726,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/arlhatoverview",
     nextHref: "/arlhat01",
   },
-  "astfount02": {
-    slug: "astfount02",
-    title: "World",
-    metaTitle: "World",
-    metaDescription: "World",
+  "astfount01": {
+    slug: "astfount01",
+    title: "1964 & 1965 Official Guidebook & Souvenir Map",
+    metaTitle: "1964 & 1965 Official Guidebook & Souvenir Map — Astral Fountain — nywf64.com",
+    metaDescription: "1964 & 1965 Official Guidebook & Souvenir Map at the Astral Fountain — 1964/1965 New York World",
     nav: "AstfountNavChrome",
     overviewHref: "/astfountoverview",
     overviewLabel: "Astral Fountain overview",
