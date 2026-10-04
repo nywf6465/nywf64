@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   title:
     "1964 & 1965 Official Guidebook & Souvenir Map — Africa — nywf64.com",
   description:
-    "Africa Pavilion entries from the 1964 and 1965 Official Guide Books and the 1964 Official Souvenir Map — 1964/1965 New York World’s Fair on nywf64.com.",
+    "Africa pavilion entries from the 1964 and 1965 Official Guide Books and the 1964 Official Souvenir Map — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
@@ -43,19 +43,19 @@ export default function Africa01Page() {
         name: "AFRICAN PAVILION",
         copy: (
           <>
-            A village of round huts representing 24 nations of sub-Saharan
-            Africa stands on a broad platform erected on stilts above water. A
-            giant model of a banyan tree towers above the platform. Built into
-            the branches of the tree are small huts that make up the
-            pavilion&apos;s restaurant. Within the privately sponsored village
-            are caged wild animals, an entertainment area where tribal groups
-            demonstrate their skills and - a less primitive touch - a movie
-            theater. The huts, ancient in design but fashioned of plastics and
-            wood to suggest Africa&apos;s modern outlook, display museum
-            collections of folk art and offer for sale African products that
-            range from five-cent postcards to $500 diamonds. In the restaurant,
-            amid weapons, masks and caged birds, waiters in tribal attire serve
-            African dishes modified for the American palate.
+            A village of round huts representing 24 nations of sub-Saharan Africa
+            stands on a broad platform erected on stilts above water. A giant
+            model of a banyan tree towers above the platform. Built into the
+            branches of the tree are small huts that make up the pavilion&apos;s
+            restaurant. Within the privately sponsored village are caged wild
+            animals, an entertainment area where tribal groups demonstrate their
+            skills and - a less primitive touch - a movie theater. The huts,
+            ancient in design but fashioned of plastics and wood to suggest
+            Africa&apos;s modern outlook, display museum collections of folk art
+            and offer for sale African products that range from five-cent
+            postcards to $500 diamonds. In the restaurant, amid weapons, masks
+            and caged birds, waiters in tribal attire serve African dishes
+            modified for the American palate.
           </>
         ),
         admission: "Admission: adults, $1.00; children, 50 cents.",
@@ -87,13 +87,13 @@ export default function Africa01Page() {
             body: (
               <>
                 Huts sheltering antelopes, monkeys, zebras, giraffes and exotic
-                birds are interspersed among exhibit and sales huts which
-                display works of art in gold, silver and ivory from each of the
+                birds are interspersed among exhibit and sales huts which display
+                works of art in gold, silver and ivory from each of the
                 participating nations: Burundi, Cameroun, Central African
                 Republic, Chad, Republic of Congo, Congo, Ivory Coast, Dahomey,
                 Ethiopia, Gabon, Ghana, Kenya, Liberia, Mauritania, Niger,
-                Nigeria, Uganda, Upper Volta, Malagasy Republic, Somalia,
-                Rwanda, Senegal, Tanganyika, Togo.
+                Nigeria, Uganda, Upper Volta, Malagasy Republic, Somalia, Rwanda,
+                Senegal, Tanganyika, Togo.
               </>
             ),
           },
@@ -101,10 +101,10 @@ export default function Africa01Page() {
             label: "DANCERS AND DRUMMERS.",
             body: (
               <>
-                In the pavilion&apos;s open-air entertainment area, tall,
-                graceful Watusi men from Rwanda perform spirited dances and
-                demonstrate their prowess at high-jumping. Burundi drummers and
-                West African dancers also perform.
+                In the pavilion&apos;s open-air entertainment area, tall, graceful
+                Watusi men from Rwanda perform spirited dances and demonstrate
+                their prowess at high-jumping. Burundi drummers and West African
+                dancers also perform.
               </>
             ),
           },
@@ -137,27 +137,28 @@ export default function Africa01Page() {
         name: "AFRICAN PAVILION",
         summary: (
           <>
-            A hut-village on stilts, representing 26 African nations, offers
-            wild animals, tribal dancers and a tree-house restaurant.
+            A hut-village on stilts, representing 26 African nations, offers wild
+            animals, tribal dancers and a tree-house restaurant.
           </>
         ),
         copy: (
           <>
             Above a platform supporting the village rises a giant banyan tree,
-            whose branches hold the small huts of the pavilion&apos;s
-            restaurant. Below are a movie theater, collections of folk art, and
-            shops selling various African products.
+            whose branches hold the small huts of the pavilion&apos;s restaurant.
+            Below are a movie theater, collections of folk art, and shops selling
+            various African products.
           </>
         ),
+        admission: "Admission: adults, $1.50; children, 50 cents.",
         highlights: [
           {
             label: "THE ANIMAL KINGDOM.",
             body: (
               <>
-                Near the main gate are cages of African animals: gorillas,
-                lions, leopards, giraffes, monkeys, baby elephants. In addition,
-                huts sheltering exotic birds are interspersed among exhibit and
-                sales areas.
+                Near the main gate are cages of African animals: gorillas, lions,
+                leopards, giraffes, monkeys, baby elephants. In addition, huts
+                sheltering exotic birds are interspersed among exhibit and sales
+                areas.
               </>
             ),
           },
@@ -165,8 +166,8 @@ export default function Africa01Page() {
             label: "A CONTINENT ON FILM.",
             body: (
               <>
-                In the theater a 12-minute film surveys Africa&apos;s many
-                scenic wonders and its recent industrial progress.
+                In the theater a 12-minute film surveys Africa&apos;s many scenic
+                wonders and its recent industrial progress.
               </>
             ),
           },
@@ -177,9 +178,9 @@ export default function Africa01Page() {
                 Shops sell arts and crafts of each of the participating nations:
                 Burundi, Cameroun, Central African Republic, Chad, Republic of
                 Congo, Congo, Ivory Coast, Dahomey, Ethiopia, Gabon, Ghana,
-                Kenya, Liberia, Malawi, Mauritania, Niger, Nigeria, Uganda,
-                Upper Volta, Malagasy Republic, Somalia, Rwanda, Senegal,
-                Zambia, Tanzania, Togo.
+                Kenya, Liberia, Malawi, Mauritania, Niger, Nigeria, Uganda, Upper
+                Volta, Malagasy Republic, Somalia, Rwanda, Senegal, Zambia,
+                Tanzania, Togo.
               </>
             ),
           },
@@ -197,13 +198,12 @@ export default function Africa01Page() {
             body: (
               <>
                 Delicacies include chicken garnished with peanut sauce, beef
-                curry, lobster and <em>couscous</em>. The bar features an exotic
+                curry, lobster and couscous. The bar features an exotic
                 &quot;African Punch.&quot;
               </>
             ),
           },
         ],
-        admission: "Admission: adults, $1.50; children, 50 cents..",
       }}
       map={{
         cover: {
@@ -215,6 +215,7 @@ export default function Africa01Page() {
           src: "/images/africa01/international-map.gif",
           width: 60,
           height: 54,
+          alt: "International area map",
         },
         locateHref: "/africamap",
       }}
