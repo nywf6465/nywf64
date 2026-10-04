@@ -918,18 +918,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/atomhosoverview",
     nextHref: "/atomhos01",
   },
-  "atomhos03": {
-    slug: "atomhos03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Atomedic Hospital — nywf64.com",
-    metaDescription: "Photograph Album — Atomedic Hospital at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AtomhosNavChrome",
-    overviewHref: "/atomhosoverview",
-    overviewLabel: "Atomedic Hospital overview",
-    placeholder: "Atomedic Hospital content",
-    previousHref: "/atomhosoverview",
-    nextHref: "/atomhos01",
-  },
   "austria01": {
     slug: "austria01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
