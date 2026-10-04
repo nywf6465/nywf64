@@ -39,9 +39,9 @@ export type PhotographImage = {
 
 export type PhotographCard = {
   image: PhotographImage;
-  /** Bold Arial title under the photo. */
-  title: ReactNode;
-  /** Arial Narrow SOURCE / credit line under the title. */
+  /** Bold Arial title under the photo. Omit when legacy has SOURCE only. */
+  title?: ReactNode;
+  /** Arial Narrow SOURCE / credit line under the title (or photo). */
   source: ReactNode;
 };
 
@@ -137,7 +137,9 @@ export function PhotographsPage({
                           />
                         </div>
                         <figcaption className={styles.caption}>
-                          <p className={styles.captionTitle}>{photo.title}</p>
+                          {photo.title ? (
+                            <p className={styles.captionTitle}>{photo.title}</p>
+                          ) : null}
                           <p className={styles.captionSource}>{photo.source}</p>
                         </figcaption>
                       </figure>

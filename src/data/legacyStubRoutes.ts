@@ -942,11 +942,11 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/autthroverview",
     nextHref: "/autthr01",
   },
-  "autthr04": {
-    slug: "autthr04",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Auto Thrill Show — nywf64.com",
-    metaDescription: "Photograph Album — Auto Thrill Show at the 1964/1965 New York World’s Fair on nywf64.com.",
+  "autthr03": {
+    slug: "autthr03",
+    title: "Postcards",
+    metaTitle: "Postcards — Auto Thrill Show — nywf64.com",
+    metaDescription: "Postcards — Auto Thrill Show at the 1964/1965 New York World’s Fair on nywf64.com.",
     nav: "AutthrNavChrome",
     overviewHref: "/autthroverview",
     overviewLabel: "Auto Thrill Show overview",
