@@ -31,7 +31,7 @@ export default function Bell07Page() {
       nav={<BellNavChrome />}
       previousHref="/bell06"
       overviewHref="/belloverview"
-      nextHref="/bellride"
+      nextHref="/bell08"
       cover={{
         src: "/images/bell07/groundbreaking-cover.jpg",
         width: 195,
