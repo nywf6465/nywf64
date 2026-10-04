@@ -822,18 +822,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/arlhatoverview",
     nextHref: "/arlhat01",
   },
-  "arlhat03": {
-    slug: "arlhat03",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — Arlington Hat — nywf64.com",
-    metaDescription: "Photograph Album — Arlington Hat at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "ArlhatNavChrome",
-    overviewHref: "/arlhatoverview",
-    overviewLabel: "Arlington Hat overview",
-    placeholder: "Arlington Hat content",
-    previousHref: "/arlhatoverview",
-    nextHref: "/arlhat01",
-  },
   "astfount01": {
     slug: "astfount01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
