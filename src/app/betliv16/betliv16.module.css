@@ -6,7 +6,7 @@
 .photoStack {
   display: flex;
   flex-direction: column;
-  gap: 0.85rem;
+  gap: 1.25rem;
 }
 
 .program {
