@@ -100,6 +100,40 @@ export default function Bell09Page() {
         </header>
 
         <div className={styles.articleInner}>
+          <div className={styles.showBanner}>
+            <p className={styles.showTitle}>
+              THE <em>&quot;RIDE OF COMMUNICATIONS&quot;</em>
+            </p>
+            <p className={styles.showYear}>Transcript of the 1964 Show</p>
+          </div>
+
+          <div className={styles.photoRow}>
+            <span className={styles.photoFrame}>
+              <Image
+                src="/images/bell09/bell18.jpg"
+                alt="Boarding the Ride"
+                width={240}
+                height={347}
+                className={styles.photoImg}
+                unoptimized
+              />
+            </span>
+            <div>
+              <p className={styles.caption}>
+                Boarding <em>The Ride of Communications</em>
+                <br />
+                <span className={styles.captionNote}>
+                  (Courtesy of Bradd Schiffman)
+                </span>
+              </p>
+              <p className={styles.source}>SOURCE: A.T.& T. Photo Archives</p>
+            </div>
+          </div>
+
+          <ScriptBlocks blocks={SCRIPT_1964} />
+
+          <hr className={styles.sectionRule} />
+
           <p className={styles.dashner}>
             <span className={styles.dashnerName}>Ray Dashner</span>, tape
             recorder in hand, preserved the soundtracks of many of the New York
@@ -145,42 +179,6 @@ export default function Bell09Page() {
           >
             Your browser does not support the audio element.
           </audio>
-
-          <hr className={styles.sectionRule} />
-
-          <div className={styles.showBanner}>
-            <p className={styles.showTitle}>
-              THE <em>&quot;RIDE OF COMMUNICATIONS&quot;</em>
-            </p>
-            <p className={styles.showYear}>Transcript of the 1964 Show</p>
-          </div>
-
-          <div className={styles.photoRow}>
-            <span className={styles.photoFrame}>
-              <Image
-                src="/images/bell09/bell18.jpg"
-                alt="Boarding the Ride"
-                width={240}
-                height={347}
-                className={styles.photoImg}
-                unoptimized
-              />
-            </span>
-            <div>
-              <p className={styles.caption}>
-                Boarding <em>The Ride of Communications</em>
-                <br />
-                <span className={styles.captionNote}>
-                  (Courtesy of Bradd Schiffman)
-                </span>
-              </p>
-              <p className={styles.source}>SOURCE: A.T.& T. Photo Archives</p>
-            </div>
-          </div>
-
-          <ScriptBlocks blocks={SCRIPT_1964} />
-
-          <hr className={styles.sectionRule} />
 
           <div className={styles.showBanner}>
             <p className={styles.showTitle}>
