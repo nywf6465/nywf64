@@ -1,0 +1,205 @@
+/*
+ * SPECTRACKULAR newspaper extras (legacy betliv17.html).
+ * Shared navy title / figure chrome lives in betlivTopic.module.css.
+ */
+
+.inner {
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.headline {
+  margin: 0 0 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.45rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.banner {
+  display: block;
+  width: min(600px, 100%);
+  height: auto;
+  margin: 0 auto 0.35rem;
+}
+
+.bannerRule {
+  width: min(600px, 100%);
+  margin: 0 auto 1rem;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.spread {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1.25rem;
+  align-items: start;
+  margin: 0 0 1.15rem;
+}
+
+.col {
+  min-width: 0;
+}
+
+.promoFigure {
+  margin: 0 auto 1rem;
+  max-width: 350px;
+}
+
+.promoCaption {
+  margin: 0.4rem 0 0;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.box {
+  width: min(300px, 100%);
+  margin: 0 auto 1.15rem;
+  padding: 0.65rem 0.85rem 0.75rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.box h2 {
+  margin: 0 0 0.55rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.25;
+}
+
+.box p {
+  margin: 0 0 0.65rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.box p:last-child {
+  margin-bottom: 0;
+}
+
+.sectionHead {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.sectionHeadSm {
+  margin: 0 0 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.3;
+}
+
+.body p {
+  margin: 0 0 0.7rem;
+}
+
+.subhead {
+  margin: 0.85rem 0 0.45rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.citySplit {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.65rem 0.85rem;
+  align-items: start;
+}
+
+.logoWrap {
+  margin: 1rem auto;
+  text-align: center;
+}
+
+.logo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.nypl {
+  margin: 1.25rem auto 1.35rem;
+  max-width: 500px;
+}
+
+.nyplSourceHead {
+  margin: 0.25rem 0 0.45rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.nyplStack {
+  margin: 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.reprint {
+  width: min(600px, 100%);
+  margin: 1.15rem auto 0;
+  padding: 0.75rem 0.85rem 0.95rem;
+  background: #ffffcc;
+  box-sizing: border-box;
+}
+
+.reprintTitle {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.55rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.reprintGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.65rem 0.85rem;
+  align-items: start;
+}
+
+.reprint p {
+  margin: 0 0 0.7rem;
+  font-size: 0.75rem;
+  line-height: 1.4;
+}
+
+.kicker {
+  font-weight: 700;
+}
+
+.stars {
+  margin: 0.75rem 0;
+  text-align: center;
+}
+
+.reprintSource {
+  width: min(600px, 100%);
+  margin: 0.35rem auto 0;
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .spread,
+  .citySplit,
+  .reprintGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,441 @@
+/*
+ * Shared navy-title article chrome for Better Living Center topic pages.
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.wideInner {
+  width: min(56.25rem, 100%);
+}
+
+.body p,
+.lede p {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.figure {
+  margin: 1.15rem auto;
+  max-width: 100%;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.photoPlain {
+  border: 0;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  color: #0099cc;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.captionNote {
+  margin: 0.25rem 0 0;
+  color: #0099cc;
+  font-size: 0.75rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.source {
+  margin: 0.25rem 0 0.85rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.source a {
+  color: #0066cc;
+}
+
+.adGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.adGrid img,
+.adGrid :global(img) {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 1.25rem 0;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1.15rem;
+  align-items: start;
+}
+
+.news {
+  margin: 1.15rem 0;
+  border: 1px solid #000;
+  background: #ffffcc;
+  padding: 0.85rem 1rem;
+}
+
+.news h2,
+.newsHeadline {
+  margin: 0 0 0.75rem;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.news h3,
+.news h4 {
+  margin: 0 0 0.65rem;
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.news p {
+  margin: 0 0 0.7rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.newsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1rem;
+}
+
+.newsGrid3 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0.65rem 0.85rem;
+}
+
+.scriptHead {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem 1rem;
+  align-items: center;
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.scriptTitle {
+  margin: 0;
+  color: #ff0000;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.scriptSub {
+  margin: 0.15rem 0 0;
+  color: #ff9850;
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.scriptFair {
+  margin: 0.35rem 0 0;
+  color: #ff9850;
+  font-size: 0.95rem;
+}
+
+.scriptBadge {
+  display: inline-block;
+  margin-top: 0.65rem;
+  padding: 0.35rem 0.85rem;
+  background: #ff0000;
+  color: #fff;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  border: 1px solid #000;
+}
+
+.script {
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.1rem;
+  border: 1px solid #000;
+  white-space: pre-wrap;
+  font-family: Times, "Times New Roman", serif;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.hsusSplit {
+  display: grid;
+  grid-template-columns: 1.08fr 0.92fr;
+  gap: 0.85rem 1.15rem;
+  align-items: start;
+}
+
+.hsusCard {
+  background: #003399;
+  color: #fff;
+  padding: 0.75rem;
+  text-align: left;
+}
+
+.hsusCard h2 {
+  margin: 0.35rem 0 0;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.hsusLogo {
+  float: left;
+  margin: 0 0.55rem 0.35rem 0;
+}
+
+.hsusCaption {
+  margin: 0.45rem 0 0;
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
+.groundFloor {
+  margin: 0.85rem 0 0;
+  font-size: 1.05rem;
+  line-height: 1.35;
+  clear: both;
+}
+
+.essay p {
+  margin: 0 0 0.85rem;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.signoff {
+  margin: 0;
+  font-size: 0.8rem;
+  text-align: right;
+}
+
+.poemBox {
+  margin: 1rem 0 0;
+  padding: 1rem 1.1rem;
+  background: #003399;
+  color: #fff;
+  border: 1px solid #000;
+}
+
+.poemBox p {
+  margin: 0 0 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.poemDrop {
+  font-size: 2.15rem;
+  line-height: 1;
+}
+
+.childrenIntro,
+.dreamIntro,
+.dreamBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1.15rem;
+  align-items: center;
+  margin: 0 0 1rem;
+}
+
+.childrenTitle,
+.dreamTitle {
+  margin: 0;
+  color: #0099cc;
+  font-size: 1.45rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.dreamCopy {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.littleGirl {
+  display: block;
+  margin: 0.75rem auto 0;
+  width: 130px;
+  height: auto;
+}
+
+.sectionHeading {
+  margin: 0 0 0.75rem;
+  color: #0066cc;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.exhibitTitle {
+  margin: 0.85rem 0 0.25rem;
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.mortonHeadline {
+  margin: 0 0 0.65rem;
+  font-size: 1.65rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.mortonLede {
+  margin: 0 auto 0.85rem;
+  max-width: 31.25rem;
+  font-style: italic;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.designerName {
+  margin: 0.15rem 0 0;
+  color: #336600;
+  font-size: 0.85rem;
+}
+
+.designerTheme {
+  margin: 0 0 0.55rem;
+  color: #336600;
+  font-size: 0.75rem;
+  font-style: italic;
+}
+
+.programBlock {
+  margin: 0.65rem 0;
+}
+
+.programBlock h3 {
+  margin: 0 0 0.35rem;
+  font-size: 0.95rem;
+}
+
+.newspaperHead {
+  margin: 0 0 0.85rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.subhead {
+  margin: 0.85rem 0 0.45rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.poem {
+  margin: 1rem 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  font-style: italic;
+}
+
+.logo {
+  display: block;
+  height: auto;
+}
+
+.scriptPhotos {
+  margin: 0 0 1.25rem;
+}
+
+.scriptPhotoRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+}
+
+.scriptPhotoRow .figure {
+  margin: 0;
+  flex: 1 1 8.5rem;
+}
+
+@media (max-width: 720px) {
+  .adGrid,
+  .twoCol,
+  .newsGrid,
+  .newsGrid3,
+  .scriptHead,
+  .hsusSplit,
+  .childrenIntro,
+  .dreamIntro,
+  .dreamBody {
+    grid-template-columns: 1fr;
+  }
+}
