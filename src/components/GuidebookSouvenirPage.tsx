@@ -27,10 +27,6 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * note and cover. Optional `map.entry` places a pavilion block under the map
  * column (legacy amind01 layout).
  *
- * When a year sets `omittedFromGuide`, the column shows only the not-included
- * note and cover. Optional `map.entry` places a pavilion block under the map
- * column (legacy amind01 layout).
- *
  * Type follows the legacy font tags: Times New Roman where no face is set,
  * Arial where face="Arial" is set, at the original HTML size steps.
  * 1964 pavilion names and highlight labels default to Times. 1965 pavilion
