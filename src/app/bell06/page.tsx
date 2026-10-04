@@ -32,7 +32,7 @@ export default function Bell06Page() {
       nav={<BellNavChrome />}
       previousHref="/bell05"
       overviewHref="/belloverview"
-      nextHref="/bellgroundbreaking"
+      nextHref="/bell07"
       sections={[
         {
           heading: "Fairgoer Photographs",
