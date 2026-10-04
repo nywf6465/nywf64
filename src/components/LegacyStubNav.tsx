@@ -47,6 +47,7 @@ import { ConcirNavChrome } from "@/components/ConcirNavChrome";
 import { ConinsNavChrome } from "@/components/ConinsNavChrome";
 import { ConparNavChrome } from "@/components/ConparNavChrome";
 import { DanwatNavChrome } from "@/components/DanwatNavChrome";
+import { DawsonNavChrome } from "@/components/DawsonNavChrome";
 import { DemocrNavChrome } from "@/components/DemocrNavChrome";
 import { DenmarkNavChrome } from "@/components/DenmarkNavChrome";
 import { DupontNavChrome } from "@/components/DupontNavChrome";
@@ -59,6 +60,7 @@ import { FesgasNavChrome } from "@/components/FesgasNavChrome";
 import { FiestaNavChrome } from "@/components/FiestaNavChrome";
 import { FinartNavChrome } from "@/components/FinartNavChrome";
 import { FirnatNavChrome } from "@/components/FirnatNavChrome";
+import { FisherNavChrome } from "@/components/FisherNavChrome";
 import { FloridaNavChrome } from "@/components/FloridaNavChrome";
 import { FlowatskiNavChrome } from "@/components/FlowatskiNavChrome";
 import { FordNavChrome } from "@/components/FordNavChrome";
@@ -142,18 +144,58 @@ import { PolyneNavChrome } from "@/components/PolyneNavChrome";
 import { PoolinNavChrome } from "@/components/PoolinNavChrome";
 import { PoorefNavChrome } from "@/components/PoorefNavChrome";
 import { PorautNavChrome } from "@/components/PorautNavChrome";
+import { PrebuiNavChrome } from "@/components/PrebuiNavChrome";
 import { ProortNavChrome } from "@/components/ProortNavChrome";
 import { RcaNavChrome } from "@/components/RcaNavChrome";
+import { RheingNavChrome } from "@/components/RheingNavChrome";
+import { RmNavChrome } from "@/components/RmNavChrome";
+import { RocthrNavChrome } from "@/components/RocthrNavChrome";
 import { RusortNavChrome } from "@/components/RusortNavChrome";
+import { SanmarNavChrome } from "@/components/SanmarNavChrome";
+import { SchcenNavChrome } from "@/components/SchcenNavChrome";
+import { ScopapNavChrome } from "@/components/ScopapNavChrome";
 import { SersciNavChrome } from "@/components/SersciNavChrome";
+import { SevupNavChrome } from "@/components/SevupNavChrome";
+import { SheastaNavChrome } from "@/components/SheastaNavChrome";
+import { SierraNavChrome } from "@/components/SierraNavChrome";
+import { SimmonNavChrome } from "@/components/SimmonNavChrome";
+import { SinclairNavChrome } from "@/components/SinclairNavChrome";
+import { SingerNavChrome } from "@/components/SingerNavChrome";
+import { SkfNavChrome } from "@/components/SkfNavChrome";
+import { SocmobilNavChrome } from "@/components/SocmobilNavChrome";
 import { SolfountNavChrome } from "@/components/SolfountNavChrome";
+import { SpacparkNavChrome } from "@/components/SpacparkNavChrome";
 import { SpainNavChrome } from "@/components/SpainNavChrome";
 import { SprogfountNavChrome } from "@/components/SprogfountNavChrome";
+import { SudanNavChrome } from "@/components/SudanNavChrome";
+import { SwedenNavChrome } from "@/components/SwedenNavChrome";
+import { SwiskyNavChrome } from "@/components/SwiskyNavChrome";
+import { SwitzNavChrome } from "@/components/SwitzNavChrome";
+import { TexasNavChrome } from "@/components/TexasNavChrome";
+import { ThaiNavChrome } from "@/components/ThaiNavChrome";
+import { ThrridNavChrome } from "@/components/ThrridNavChrome";
+import { TipbandNavChrome } from "@/components/TipbandNavChrome";
 import { TowersNavChrome } from "@/components/TowersNavChrome";
+import { TrantravNavChrome } from "@/components/TrantravNavChrome";
+import { TravelersNavChrome } from "@/components/TravelersNavChrome";
 import { TwothoNavChrome } from "@/components/TwothoNavChrome";
+import { TwrlitNavChrome } from "@/components/TwrlitNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
 import { UnistaNavChrome } from "@/components/UnistaNavChrome";
+import { UspoNavChrome } from "@/components/UspoNavChrome";
+import { UsrubNavChrome } from "@/components/UsrubNavChrome";
+import { UndrghomeNavChrome } from "@/components/UndrghomeNavChrome";
+import { UarNavChrome } from "@/components/UarNavChrome";
+import { UnNavChrome } from "@/components/UnNavChrome";
+import { WalwaxNavChrome } from "@/components/WalwaxNavChrome";
+import { WeshouNavChrome } from "@/components/WeshouNavChrome";
+import { WesvirNavChrome } from "@/components/WesvirNavChrome";
+import { WisconsinNavChrome } from "@/components/WisconsinNavChrome";
+import { WorfooNavChrome } from "@/components/WorfooNavChrome";
+import { WfmarNavChrome } from "@/components/WfmarNavChrome";
+import { WfpavNavChrome } from "@/components/WfpavNavChrome";
 import { VaticanNavChrome } from "@/components/VaticanNavChrome";
+import { VenezeNavChrome } from "@/components/VenezeNavChrome";
 
 const STUB_NAV: Record<string, ComponentType> = {
   AdminbldgNavChrome,
@@ -204,6 +246,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   ConinsNavChrome,
   ConparNavChrome,
   DanwatNavChrome,
+  DawsonNavChrome,
   DemocrNavChrome,
   DenmarkNavChrome,
   DupontNavChrome,
@@ -216,6 +259,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   FiestaNavChrome,
   FinartNavChrome,
   FirnatNavChrome,
+  FisherNavChrome,
   FloridaNavChrome,
   FlowatskiNavChrome,
   FordNavChrome,
@@ -299,18 +343,59 @@ const STUB_NAV: Record<string, ComponentType> = {
   PoolinNavChrome,
   PoorefNavChrome,
   PorautNavChrome,
+  PrebuiNavChrome,
   ProortNavChrome,
   RcaNavChrome,
+  RheingNavChrome,
+  RmNavChrome,
+  RocthrNavChrome,
   RusortNavChrome,
+  SanmarNavChrome,
+  SchcenNavChrome,
+  ScopapNavChrome,
   SersciNavChrome,
+  SevupNavChrome,
+  SheastaNavChrome,
+  SierraNavChrome,
+  SimmonNavChrome,
+  SinclairNavChrome,
+  SingerNavChrome,
+  SkfNavChrome,
+  SocmobilNavChrome,
   SolfountNavChrome,
+  SpacparkNavChrome,
   SpainNavChrome,
   SprogfountNavChrome,
+  SudanNavChrome,
+  SwedenNavChrome,
+  SwiskyNavChrome,
+  SwitzNavChrome,
+  TexasNavChrome,
+  ThaiNavChrome,
+  ThrridNavChrome,
+  TipbandNavChrome,
   TowersNavChrome,
+  TrantravNavChrome,
+  TravelersNavChrome,
   TwothoNavChrome,
+  TwrlitNavChrome,
+  UarNavChrome,
+  UndrghomeNavChrome,
   UnisphNavChrome,
   UnistaNavChrome,
+  UnNavChrome,
+  UspoNavChrome,
+  UsrubNavChrome,
   VaticanNavChrome,
+  VenezeNavChrome,
+  WalwaxNavChrome,
+  WeshouNavChrome,
+  WesvirNavChrome,
+  WfmarNavChrome,
+  WfpavNavChrome,
+  WisconsinNavChrome,
+  WorfooNavChrome,
+
 };
 
 export function LegacyStubNav({ name }: { name: string }) {

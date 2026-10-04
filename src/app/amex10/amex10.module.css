@@ -1,0 +1,285 @@
+/*
+ * American Express — Rob Bianco's Model feature page.
+ * Stack: overview hero → AmexNavChrome → navy title bar → article → Nav2Bar.
+ * Body from legacy amex10.html.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.storyTitle {
+  margin: 0 0 0.35rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  color: #191970;
+}
+
+.byline {
+  margin: 0 0 1.25rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.35;
+  color: #191970;
+}
+
+.clipping {
+  margin: 0 0 1.5rem;
+  border: 1px solid #000;
+  background: #fff;
+  padding: 0.75rem;
+  box-sizing: border-box;
+}
+
+.clippingHeading {
+  margin: 0 0 0.75rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.clippingPhotos {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  margin: 0 0 0.75rem;
+}
+
+.clippingPhotos img {
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+
+.portrait {
+  width: min(150px, 40%);
+}
+
+.modelPhoto {
+  width: min(300px, 100%);
+}
+
+.clippingRule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 0 0 0.75rem;
+}
+
+.clipping p {
+  margin: 0 0 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.clipping p:last-child {
+  margin-bottom: 0;
+}
+
+.source {
+  margin: 0.65rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.narrative {
+  margin: 0 0 1.25rem;
+}
+
+.narrative p {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.55;
+  color: #8080c0;
+}
+
+.narrative p:last-child {
+  margin-bottom: 0;
+}
+
+.narrative a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.narrative a:hover {
+  color: #ff0000;
+}
+
+.narrative em {
+  font-style: italic;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.brandNywf {
+  color: #6699cc;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+}
+
+.brandDotCom {
+  color: #6699cc;
+  font-size: 0.85em;
+}
+
+.figure {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.figureWide img {
+  width: min(481px, 100%);
+}
+
+.figureMedium img {
+  width: min(300px, 100%);
+}
+
+.figureLetter img {
+  width: min(342px, 100%);
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #8080c0;
+  text-align: left;
+}
+
+.captionOnQuote {
+  color: #fff;
+  text-align: right;
+}
+
+.quoteBlock {
+  margin: 0 0 1.25rem;
+  padding: 1rem 1.15rem 1.15rem;
+  background: #8080c0;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.quoteBlock p {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+  color: #fff;
+}
+
+.quoteBlock p:last-child {
+  margin-bottom: 0;
+}
+
+.quoteBlock em {
+  font-style: italic;
+}
+
+.quoteFigure {
+  margin: 0.85rem 0;
+  text-align: center;
+}
+
+.quoteFigure img {
+  display: block;
+  width: min(300px, 100%);
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+  background: #fff;
+}
+
+.quoteFigureLetter img {
+  width: min(342px, 100%);
+}
+
+@media (max-width: 720px) {
+  .clippingPhotos {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .portrait,
+  .modelPhoto {
+    width: min(300px, 100%);
+  }
+}
