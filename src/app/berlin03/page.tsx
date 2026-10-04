@@ -3,9 +3,9 @@ import { BerlinNavChrome } from "@/components/BerlinNavChrome";
 import { PhotographsPage } from "@/components/PhotographsPage";
 
 export const metadata: Metadata = {
-  title: "Photograph Gallery — Berlin — nywf64.com",
+  title: "Photograph Album — Berlin — nywf64.com",
   description:
-    "Berlin pavilion photograph gallery — commercial photographs from the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Berlin pavilion photograph album — commercial photographs from the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 const photoLab =
@@ -16,14 +16,14 @@ const blackhawk =
 /**
  * Berlin photograph gallery — “photographs” standard.
  * Body from legacy berlin03.html (Photograph Scrap Book banner omitted).
- * Layout: PhotographsPage. Navy title matches the Berlin menu: Photograph Gallery.
+ * Layout: PhotographsPage. Navy title matches the Berlin menu: Photograph Album.
  */
 export default function Berlin03Page() {
   return (
     <PhotographsPage
       heroLabel="Berlin"
       titleId="berlin03-title"
-      title="Photograph Gallery"
+      title="Photograph Album"
       hero={{
         src: "/images/berlinoverview/hero-banner.jpg",
         alt: "Berlin at the 1964/1965 New York World’s Fair",
