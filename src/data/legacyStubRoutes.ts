@@ -1098,18 +1098,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/autthroverview",
     nextHref: "/autthr01",
   },
-  "autthr07": {
-    slug: "autthr07",
-    title: "Article: Dodge Stars at New York Fair",
-    metaTitle: "Article: Dodge Stars at New York Fair — Auto Thrill Show — nywf64.com",
-    metaDescription: "Article: Dodge Stars at New York Fair — Auto Thrill Show at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "AutthrNavChrome",
-    overviewHref: "/autthroverview",
-    overviewLabel: "Auto Thrill Show overview",
-    placeholder: "Auto Thrill Show content",
-    previousHref: "/autthroverview",
-    nextHref: "/autthr01",
-  },
   "avis01": {
     slug: "avis01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map",
