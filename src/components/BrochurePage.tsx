@@ -40,7 +40,7 @@ export type BrochurePageProps = {
   };
   nav: ReactNode;
   /** Navy title-bar text (e.g. “Brochure: Building a Unisphere”). */
-  title: string;
+  title: ReactNode;
   titleId?: string;
   cover: BrochureCover;
   /** Public path to the PDF (e.g. `/pdf/unisph/how-to-make-a-unisphere.pdf`). */
