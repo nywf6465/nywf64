@@ -175,10 +175,9 @@ export default function Citserv06Page() {
       </article>
 
       <Nav2Bar
-        previousHref="/fisher02"
-        explicitPrevious
-        nextHref="/citserv06"
-        hideOverview
+        previousHref="/citserv05"
+        overviewHref="/citservoverview"
+        nextHref="/citservoverview"
       />
     </>
   );
