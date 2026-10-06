@@ -89,7 +89,7 @@ export default function Foucon03Page() {
           reverse: {
             src: "/images/foucon03/92320-Breverse.jpg",
             width: 300,
-            height: 88,
+            height: 92,
             alt: "Reverse — Night Unisphere from N.Y.S. Towers",
           },
           meta: [
