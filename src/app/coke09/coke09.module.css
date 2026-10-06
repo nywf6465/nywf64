@@ -1,0 +1,290 @@
+/*
+ * Coca-Cola — Did you Know? (/coke09).
+ * Body from legacy coke09.html.
+ * Stack: hero → CokeNavChrome → navy title → article → Nav2Bar.
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(40rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.sectionTitle {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  color: #e8000d;
+}
+
+.subhead {
+  margin: 1.1rem 0 0.65rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.displayHead {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.displayHeadCenter {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.displayHeadStack {
+  margin: 0 0 0.85rem;
+  font-size: clamp(1.25rem, 3vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.displayHeadStack span {
+  display: block;
+}
+
+.musicalRefreshment {
+  margin: 1.25rem 0 0.85rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.lead {
+  font-size: 1.15rem;
+}
+
+.bullets {
+  margin: 0 0 1rem;
+  padding: 0 0 0 1.25rem;
+  list-style: disc;
+}
+
+.bullets li {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.bulletLead {
+  color: #e8000d;
+}
+
+.body p {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.rule {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+.figure {
+  margin: 1rem 0 1.25rem;
+  text-align: center;
+}
+
+.figureNarrow {
+  margin: 1rem auto 1.25rem;
+  width: fit-content;
+  max-width: 100%;
+  text-align: center;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.photoNoBorder {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+}
+
+.caption {
+  margin: 0.45rem 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.captionPlain {
+  margin: 0.45rem 0 0;
+  font-size: 0.85rem;
+  font-style: normal;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.source {
+  margin: 0.35rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem 1.25rem;
+  margin: 0 0 0.85rem;
+  text-align: left;
+}
+
+.twoCol p {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.twoCol p:last-child {
+  margin-bottom: 0;
+}
+
+.storyLink {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 1rem 1.25rem;
+  align-items: start;
+  margin: 1.25rem 0 0;
+  text-align: left;
+}
+
+.storyThumb {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  text-decoration: none;
+  color: #0066cc;
+}
+
+.storyThumb:hover {
+  text-decoration: underline;
+}
+
+.storyThumbImg {
+  display: block;
+  width: 100px;
+  height: auto;
+}
+
+.storyThumbLabel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  text-decoration: underline;
+}
+
+.storyCopy {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.5;
+  color: #0066cc;
+}
+
+.usoSide {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+
+.usoSide .figure {
+  margin: 0;
+  width: 100%;
+}
+
+@media (max-width: 640px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+
+  .storyLink {
+    grid-template-columns: 1fr;
+    justify-items: center;
+    text-align: center;
+  }
+
+  .storyCopy {
+    text-align: left;
+  }
+}
