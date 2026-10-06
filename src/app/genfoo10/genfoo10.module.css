@@ -1,0 +1,122 @@
+/* General Foods Arches — Epilogue (/genfoo10).
+ * Body from legacy genfoo10.html.
+ * Stack: hero → GenfooNavChrome → navy title → article → Nav2Bar.
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(30.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.source {
+  margin: 0.5rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+
+.photoRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 0 0 0.75rem;
+}
+
+.photoSingle {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1rem;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  max-width: 200px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.body p {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.brandNywf {
+  color: #0066cc;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+  font-weight: 700;
+  font-size: 1.15rem;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-size: 0.8rem;
+}
+
+@media (max-width: 520px) {
+  .photoRow {
+    grid-template-columns: 1fr;
+  }
+}
+
