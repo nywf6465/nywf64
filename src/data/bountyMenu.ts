@@ -3,6 +3,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 /**
  * Bounty menu — nav-menu topics for all routes beginning with `bounty`.
  * Labels match the bounty-menu-topics mockup; Overview at top.
+ * Guidebook label is Official Guidebook only (no Souvenir Map).
  * Non-Overview routes: `bounty01`…`bounty04`.
  */
 export const BOUNTY_MENU_TOPICS: AttractionTopic[] = [
@@ -11,7 +12,7 @@ export const BOUNTY_MENU_TOPICS: AttractionTopic[] = [
     href: "/bountyoverview",
   },
   {
-    label: "1964 & 1965 Official Guidebook & Souvenir Map",
+    label: "1964 & 1965 Official Guidebook",
     href: "/bounty01",
   },
   {
