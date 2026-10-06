@@ -73,11 +73,13 @@ export type GuidebookYearContent = {
 
 export type GuidebookMapEntry = {
   logo: GuidebookImage;
-  name: ReactNode;
+  name?: ReactNode;
   nameFace?: GuidebookFace;
-  copy: ReactNode;
+  copy?: ReactNode;
   /** Burgundy italic note under the entry (e.g. “never built”). */
   note?: ReactNode;
+  /** Optional block after the entry note (e.g. companion feature). */
+  after?: ReactNode;
 };
 
 export type GuidebookLocateLink = {
@@ -428,17 +430,20 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
             className={styles.logo}
             unoptimized
           />
-          <p
-            className={
-              nameFace === "arial"
-                ? `${styles.pavilionName} ${styles.pavilionNameSans}`
-                : styles.pavilionName
-            }
-          >
-            {entry.name}
-          </p>
-          <p className={styles.copy}>{entry.copy}</p>
+          {entry.name ? (
+            <p
+              className={
+                nameFace === "arial"
+                  ? `${styles.pavilionName} ${styles.pavilionNameSans}`
+                  : styles.pavilionName
+              }
+            >
+              {entry.name}
+            </p>
+          ) : null}
+          {entry.copy ? <p className={styles.copy}>{entry.copy}</p> : null}
           {entry.note ? <p className={styles.statusNote}>{entry.note}</p> : null}
+          {entry.after}
         </div>
       ) : null}
     </section>

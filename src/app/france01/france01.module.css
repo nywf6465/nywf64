@@ -1,0 +1,58 @@
+/* Companion Pavilon of Paris block under france01 map entry */
+
+.companion {
+  margin: 0.5rem 0 0;
+  text-align: center;
+}
+
+.rule {
+  border: none;
+  border-top: 1px solid #999;
+  margin: 0.5rem 0 0.75rem;
+}
+
+.companionInner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+  max-width: 226px;
+  margin: 0 auto;
+}
+
+.companionPhoto {
+  display: block;
+  border: 1px solid #000;
+}
+
+.clickHere {
+  margin: 0.25rem 0 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 22px;
+  line-height: 1.2;
+}
+
+.clickHere a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.clickHere a:hover {
+  text-decoration: underline;
+}
+
+.companionCopy {
+  margin: 0.25rem 0 0;
+  text-align: left;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 14px;
+  color: #191970;
+  line-height: 1.35;
+}
+
+.dateStamp {
+  align-self: flex-end;
+  margin: 0.15rem 0 0 !important;
+  color: #26346e !important;
+  font-size: 11px !important;
+}
