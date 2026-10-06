@@ -1,0 +1,32 @@
+/* Garden of Meditation manual — plaque inscription block */
+
+.plaque {
+  margin: 0.75rem 0 0;
+}
+
+.plaqueTitle {
+  margin: 0 0 0.75rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.plaqueBody {
+  margin: 0 0 1rem;
+  padding-left: 1.5rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.plaqueBody p {
+  margin: 0 0 0.75rem;
+}
+
+.closing {
+  margin: 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: normal;
+}
