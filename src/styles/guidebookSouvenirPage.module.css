@@ -152,6 +152,11 @@
   margin-top: 0.85rem;
 }
 
+/* Pavilion entry alone in the third column (no Souvenir Map header). */
+.mapEntrySolo {
+  margin-top: 0;
+}
+
 .cover {
   display: block;
   width: 136px;

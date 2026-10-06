@@ -3,17 +3,17 @@ import { ArchamerNavChrome } from "@/components/ArchamerNavChrome";
 import { GuidebookSouvenirPage } from "@/components/GuidebookSouvenirPage";
 
 export const metadata: Metadata = {
-  title:
-    "1964 & 1965 Official Guidebook & Souvenir Map — Arch of the Americas — nywf64.com",
+  title: "1964 & 1965 Official Guidebook — Arch of the Americas — nywf64.com",
   description:
-    "Arch of the Americas entries from the 1964 and 1965 Official Guide Books and the 1964 Official Souvenir Map — 1964/1965 New York World’s Fair on nywf64.com.",
+    "Arch of the Americas entries from the 1964 and 1965 Official Guide Books — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * Arch of the Americas guidebook page — Official Guidebook & Souvenir Map.
- * Body from legacy archamer01.html. Layout: GuidebookSouvenirPage (/bell01 standard).
+ * Arch of the Americas guidebook page — Official Guidebook only (no Souvenir
+ * Map header). Body from legacy archamer01.html.
+ * Layout: GuidebookSouvenirPage (/bell01 standard).
  * 1964 & 1965 columns: not listed in the Official Guide Books; pavilion entry
- * sits under the Souvenir Map column (never constructed).
+ * (line drawing + copy) remains in the third column.
  */
 export default function Archamer01Page() {
   return (
@@ -48,17 +48,6 @@ export default function Archamer01Page() {
         statusNote: "In 1965 this building was not listed in the Guidebook",
       }}
       map={{
-        cover: {
-          src: "/images/archamer01/souvenir-map.jpg",
-          width: 110,
-          height: 216,
-        },
-        areaMap: {
-          src: "/images/archamer01/international-map.gif",
-          width: 60,
-          height: 54,
-          alt: "International area map",
-        },
         entry: {
           logo: {
             src: "/images/archamer01/line-drawing-miniature.jpg",
