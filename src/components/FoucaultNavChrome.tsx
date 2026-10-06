@@ -5,7 +5,7 @@ import { FOUCAULT_MENU_TOPICS } from "@/data/foucaultMenu";
 
 /**
  * Foucault menu chrome — nav bar (FOUNTAINS OF THE FAIRS) + shared
- * **Foucault menu**. Use on `/Foucault`, `/foufaioverview`, and `Foucault01`…`04`.
+ * **Foucault menu**. Use on `/Foucault`, `/foufaioverview`, and `foufai01`…`04`.
  */
 export function FoucaultNavChrome() {
   return (
