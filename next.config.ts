@@ -83,6 +83,122 @@ const nextConfig: NextConfig = {
         destination: "/lunfountoverview",
         permanent: true,
       },
+      // General Motors — friendly slugs → numbered routes
+      {
+        source: "/gmguidebook",
+        destination: "/gm01",
+        permanent: true,
+      },
+      {
+        source: "/gmmanual",
+        destination: "/gm02",
+        permanent: true,
+      },
+      {
+        source: "/gmpostcards",
+        destination: "/gm03",
+        permanent: true,
+      },
+      {
+        source: "/gmadvertising",
+        destination: "/gm04",
+        permanent: true,
+      },
+      {
+        source: "/gmphotographalbumi",
+        destination: "/gm05",
+        permanent: true,
+      },
+      {
+        source: "/gmphotographalbumii",
+        destination: "/gm06",
+        permanent: true,
+      },
+      {
+        source: "/gmphotographalbumiii",
+        destination: "/gm07",
+        permanent: true,
+      },
+      {
+        source: "/gmpressreleases",
+        destination: "/gm08",
+        permanent: true,
+      },
+      {
+        source: "/gminvitationpreview",
+        destination: "/gm09",
+        permanent: true,
+      },
+      {
+        source: "/gmsouvenirbook",
+        destination: "/gm10",
+        permanent: true,
+      },
+      {
+        source: "/gmtranscriptfuturama",
+        destination: "/gm11",
+        permanent: true,
+      },
+      {
+        source: "/gmletsgotothefair",
+        destination: "/gm12",
+        permanent: true,
+      },
+      {
+        source: "/gmyourguide",
+        destination: "/gm13",
+        permanent: true,
+      },
+      {
+        source: "/gmseethefuturefirst",
+        destination: "/gm14",
+        permanent: true,
+      },
+      {
+        source: "/gmmaileronce",
+        destination: "/gm15",
+        permanent: true,
+      },
+      {
+        source: "/gmfrigidaire",
+        destination: "/gm16",
+        permanent: true,
+      },
+      {
+        source: "/gmno1show",
+        destination: "/gm17",
+        permanent: true,
+      },
+      {
+        source: "/gmoldsmarch1964",
+        destination: "/gm18",
+        permanent: true,
+      },
+      {
+        source: "/gmoldsmay1964",
+        destination: "/gm19",
+        permanent: true,
+      },
+      {
+        source: "/gmpontiacjan1964",
+        destination: "/gm20",
+        permanent: true,
+      },
+      {
+        source: "/gmpontiacmarch1964",
+        destination: "/gm21",
+        permanent: true,
+      },
+      {
+        source: "/gmlighting",
+        destination: "/gm22",
+        permanent: true,
+      },
+      {
+        source: "/gmdesignsummary",
+        destination: "/gm23",
+        permanent: true,
+      },
     ];
   },
 };

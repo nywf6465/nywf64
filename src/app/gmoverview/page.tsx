@@ -63,7 +63,8 @@ export default function GmOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/gmoverview"
+        previousHref="/gm23"
+        explicitPrevious
         overviewHref="/gmoverview"
         nextHref="/gm01"
       />
