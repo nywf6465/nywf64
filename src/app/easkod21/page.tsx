@@ -157,16 +157,6 @@ export default function Easkod21Page() {
           <p className={styles.source}>
             Source: Press Release, J. Walter Thompason Company, October 15, 1965
           </p>
-          <p className={styles.caption}>
-            (above)
-            <em>
-              {" "}
-              The Kodak Pavilion, abandoned and debris strewn, waiting for the
-              wreckers. A Fairground street in front of the Kodak Pavilion
-              devoid of Fairgoers shortly after the close of the Fair in 1965
-            </em>{" "}
-            (below)
-          </p>
           <figure className={styles.figure}>
             <Image
               src="/images/easkod21/building225.jpg"
@@ -176,6 +166,16 @@ export default function Easkod21Page() {
               className={styles.figureImg}
               unoptimized
             />
+            <p className={styles.caption}>
+              (above)
+              <em>
+                {" "}
+                The Kodak Pavilion, abandoned and debris strewn, waiting for the
+                wreckers. A Fairground street in front of the Kodak Pavilion
+                devoid of Fairgoers shortly after the close of the Fair in 1965
+              </em>{" "}
+              (below)
+            </p>
           </figure>
           <p className={styles.source}>SOURCE: Photographs by Max Mordecai</p>
           <figure className={styles.figure}>
