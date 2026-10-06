@@ -11,6 +11,7 @@ export const metadata: Metadata = {
 /**
  * Continental Insurance photograph album — “photographs” standard.
  * Body from legacy conins05.html (Photograph Scrap Book banner omitted).
+ * Bottom publication photo: stitched cons43.01–04 into cons43.jpg (unisph12 pattern).
  * Layout: PhotographsPage (/aertow03 standard).
  */
 export default function Conins05Page() {
@@ -121,9 +122,9 @@ export default function Conins05Page() {
             },
             {
               image: {
-                src: "/images/conins/cons43.01.jpg",
-                width: 300,
-                height: 250,
+                src: "/images/conins/cons43.jpg",
+                width: 600,
+                height: 500,
                 alt: "A NAVAL BATTLE — Bonhomme Richard vs Serapis diorama",
               },
               title: (
@@ -135,48 +136,6 @@ export default function Conins05Page() {
                   such distant places as Israel and Malaysia.
                 </>
               ),
-              source: (
-                <>
-                  SOURCE:{" "}
-                  <em>Official Guide Book, New York World&apos;s Fair 1964</em>
-                </>
-              ),
-            },
-            {
-              image: {
-                src: "/images/conins/cons43.02.jpg",
-                width: 300,
-                height: 250,
-                alt: "Continental Insurance diorama detail",
-              },
-              source: (
-                <>
-                  SOURCE:{" "}
-                  <em>Official Guide Book, New York World&apos;s Fair 1964</em>
-                </>
-              ),
-            },
-            {
-              image: {
-                src: "/images/conins/cons43.03.jpg",
-                width: 300,
-                height: 250,
-                alt: "Continental Insurance diorama detail",
-              },
-              source: (
-                <>
-                  SOURCE:{" "}
-                  <em>Official Guide Book, New York World&apos;s Fair 1964</em>
-                </>
-              ),
-            },
-            {
-              image: {
-                src: "/images/conins/cons43.04.jpg",
-                width: 300,
-                height: 250,
-                alt: "Continental Insurance diorama detail",
-              },
               source: (
                 <>
                   SOURCE:{" "}
