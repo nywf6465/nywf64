@@ -83,6 +83,72 @@ const nextConfig: NextConfig = {
         destination: "/lunfountoverview",
         permanent: true,
       },
+      // Illinois — friendly slugs → numbered routes
+      {
+        source: "/illinoisguidebook",
+        destination: "/illinois01",
+        permanent: true,
+      },
+      {
+        source: "/illinoismanual",
+        destination: "/illinois02",
+        permanent: true,
+      },
+      {
+        source: "/illinoispostcards",
+        destination: "/illinois03",
+        permanent: true,
+      },
+      {
+        source: "/illinoisphotographalbum",
+        destination: "/illinois04",
+        permanent: true,
+      },
+      {
+        source: "/illinoislandoflincoln",
+        destination: "/illinois05",
+        permanent: true,
+      },
+      {
+        source: "/illinoislincolnphotoexhibit",
+        destination: "/illinois06",
+        permanent: true,
+      },
+      {
+        source: "/illinoisgettysburg",
+        destination: "/illinois07",
+        permanent: true,
+      },
+      {
+        source: "/illinoislincolnreturns",
+        destination: "/illinois08",
+        permanent: true,
+      },
+      {
+        source: "/illinoisgreatmoments",
+        destination: "/illinois09",
+        permanent: true,
+      },
+      {
+        source: "/illinoisbuildinglincoln",
+        destination: "/illinois10",
+        permanent: true,
+      },
+      {
+        source: "/illinoisdisneypreview",
+        destination: "/illinois11",
+        permanent: true,
+      },
+      {
+        source: "/illinoisvocaltalent",
+        destination: "/illinois12",
+        permanent: true,
+      },
+      {
+        source: "/illinoisdisneyland",
+        destination: "/illinois13",
+        permanent: true,
+      },
     ];
   },
 };

@@ -11,48 +11,48 @@ export const ILLINOIS_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
-    href: "/illinoisguidebook",
+    href: "/illinois01",
   },
   {
     label: "World's Fair Information Manual",
-    href: "/illinoismanual",
+    href: "/illinois02",
   },
   {
     label: "Postcards",
-    href: "/illinoispostcards",
+    href: "/illinois03",
   },
   {
     label: "Photograph Album",
-    href: "/illinoisphotographalbum",
+    href: "/illinois04",
   },
   {
     label: 'Illinois "Land of Lincoln"',
-    href: "/illinoislandoflincoln",
+    href: "/illinois05",
   },
   {
     label: "The Lincoln Photo Exhibit",
-    href: "/illinoislincolnphotoexhibit",
+    href: "/illinois06",
   },
   {
     label: "Gettysburg Address Manuscript",
-    href: "/illinoisgettysburg",
+    href: "/illinois07",
   },
   {
     label: "Lincoln Returns to Illinois",
-    href: "/illinoislincolnreturns",
+    href: "/illinois08",
   },
   {
     label: "Great Moments with Mr. Lincoln",
-    href: "/illinoisgreatmoments",
+    href: "/illinois09",
     parts: [{ text: "Great Moments with Mr. Lincoln", italic: true }],
   },
   {
     label: "Building Mr. Lincoln",
-    href: "/illinoisbuildinglincoln",
+    href: "/illinois10",
   },
   {
     label: "Article: Preview of Disney's World's Fair Shows",
-    href: "/illinoisdisneypreview",
+    href: "/illinois11",
     parts: [
       { text: "Article: " },
       { text: "Preview of Disney's World's Fair Shows", italic: true },
@@ -60,11 +60,11 @@ export const ILLINOIS_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "Vocal Talent",
-    href: "/illinoisvocaltalent",
+    href: "/illinois12",
   },
   {
     label: "Mr. Lincoln Goes to Disneyland",
-    href: "/illinoisdisneyland",
+    href: "/illinois13",
     parts: [{ text: "Mr. Lincoln Goes to Disneyland", italic: true }],
   },
 ];

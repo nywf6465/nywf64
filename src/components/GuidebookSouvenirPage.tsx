@@ -117,6 +117,8 @@ export type GuidebookMapContent = {
    * an entry (legacy layout used by /amind01).
    */
   entry?: GuidebookMapEntry;
+  /** Optional footnote below the map column (e.g. Illinois Disney disclaimer). */
+  footnote?: ReactNode;
 };
 
 export type GuidebookSouvenirPageProps = {
@@ -418,6 +420,9 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           />
         </div>
       </div>
+      {map.footnote ? (
+        <div className={styles.mapFootnote}>{map.footnote}</div>
+      ) : null}
       {entry ? (
         <div className={styles.mapEntry}>
           <Image
