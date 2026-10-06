@@ -50,7 +50,7 @@ export default function Gencig01Page() {
             the air every 20 seconds.
           </>
         ),
-        admission: "* Admission: free.",
+        admission: "Admission: free.",
         highlights: [
           {
             label: "MAGIC SHOW.",
@@ -103,7 +103,7 @@ export default function Gencig01Page() {
             pavilion, a machine blows giant smoke rings into the air.
           </>
         ),
-        admission: "¶ Admission: free.",
+        admission: "Admission: free.",
         highlights: [
           {
             label: "MOVIE IN THE ROUND.",
