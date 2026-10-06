@@ -80,7 +80,10 @@ export default function Betliv16Page() {
             </p>
           </div>
 
-          <figure className={styles.figure} style={{ maxWidth: 500 }}>
+          <figure
+            className={`${styles.figure} ${local.photoStack}`}
+            style={{ maxWidth: 500 }}
+          >
             <Image
               src="/images/betliv16/fashion-show.jpg"
               alt="Tetley Good Taste of Fashion Show"
