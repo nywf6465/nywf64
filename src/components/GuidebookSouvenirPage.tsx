@@ -87,8 +87,8 @@ export type GuidebookLocateLink = {
 
 export type GuidebookMapContent = {
   /**
-   * Souvenir Map cover + Locate It header. Omit to hide that header while
-   * still showing `entry` in the third column (e.g. /archamer01).
+   * Souvenir Map cover. Omit when the legacy page has no map column header
+   * (e.g. /citserv01 — pavilion entry only under the third column).
    */
   cover?: GuidebookImage;
   /**
@@ -364,13 +364,11 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
         : []))
     : [];
   const multiLocate = locates.length > 1;
+  const cover = map.cover;
 
   return (
-    <section
-      className={styles.col}
-      aria-label={showMapHeader ? "1964 Official Souvenir Map" : undefined}
-    >
-      {showMapHeader && map.cover ? (
+    <section className={styles.col} aria-label="1964 Official Souvenir Map">
+      {cover ? (
         <div
           className={
             multiLocate
@@ -379,10 +377,10 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           }
         >
           <Image
-            src={map.cover.src}
-            alt={map.cover.alt ?? "Cover — 1964 Official Souvenir Map"}
-            width={map.cover.width}
-            height={map.cover.height}
+            src={cover.src}
+            alt={cover.alt ?? "Cover — 1964 Official Souvenir Map"}
+            width={cover.width}
+            height={cover.height}
             className={styles.mapCover}
             unoptimized
           />
