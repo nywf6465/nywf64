@@ -15,6 +15,7 @@ export const metadata: Metadata = {
 /**
  * Chunky Candy — The Sculpture Continuum.
  * Body from legacy chucan05.html (custom candy-box / playground feature page).
+ * Legacy 3×3 candy-box tiles are stitched into a single composite (unisph12 pattern).
  * Legacy wording (“itself must be part”) preserved.
  *
  * Stack: hero → ChucanNavChrome → navy title → article → Nav2Bar.
@@ -50,22 +51,16 @@ export default function Chucan05Page() {
         </header>
 
         <div className={styles.articleInner}>
-          <div className={styles.boxGrid} role="group" aria-label="Chunky Candy Box">
-            {[1, 2, 3, 4, 5, 6, 7, 8, 9].map((n) => {
-              const pad = n < 10 ? `0${n}` : `${n}`;
-              return (
-                <Image
-                  key={n}
-                  src={`/images/chucan05/chucan05.${pad}.jpg`}
-                  alt=""
-                  width={200}
-                  height={118}
-                  className={styles.boxTile}
-                  unoptimized
-                />
-              );
-            })}
-          </div>
+          <figure className={styles.boxFigure}>
+            <Image
+              src="/images/chucan05/chucan05.jpg"
+              alt="Chunky Candy box showing the Sculpture Continuum playground"
+              width={600}
+              height={354}
+              className={styles.boxImg}
+              unoptimized
+            />
+          </figure>
           <p className={styles.boxSource}>SOURCE: Chunky Candy Box</p>
 
           <h2 className={styles.storyTitle}>THE SCULPTURE CONTINUUM</h2>

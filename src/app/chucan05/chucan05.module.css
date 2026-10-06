@@ -56,19 +56,18 @@
   color: #000;
 }
 
-.boxGrid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.35rem;
-  width: min(38.25rem, 100%);
+/* Stitched legacy 3×3 candy-box tiles — keep as one image so they never
+   reflow into a broken grid on narrow viewports. */
+.boxFigure {
   margin: 0 auto 0.65rem;
+  width: min(37.5rem, 100%);
+  text-align: center;
 }
 
-.boxTile {
+.boxImg {
   display: block;
   width: 100%;
   height: auto;
-  border: 1px solid #000;
 }
 
 .boxSource {
@@ -122,10 +121,4 @@
   height: auto;
   margin: 0 auto;
   border: 1px solid #000;
-}
-
-@media (max-width: 720px) {
-  .boxGrid {
-    gap: 0.25rem;
-  }
 }
