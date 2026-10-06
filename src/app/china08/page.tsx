@@ -12,21 +12,26 @@ export const metadata: Metadata = {
     "1965 Welcome to the China Pavilion brochure pages — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-const set34 = [
-  ["china34.01", "china34.02", "china34.03"],
-  ["china34.04", "china34.05", "china34.06"],
-  ["china34.07", "china34.08", "china34.09"],
-] as const;
-
-const set35 = [
-  ["china35.01", "china35.02", "china35.03"],
-  ["china35.04", "china35.05", "china35.06"],
-  ["china35.07", "china35.08", "china35.09"],
+const spreads = [
+  {
+    src: "/images/china08/china34.jpg",
+    alt: "Welcome to the China Pavilion 1965 brochure cover",
+    width: 900,
+    height: 1200,
+  },
+  {
+    src: "/images/china08/china35.jpg",
+    alt: "Welcome to the China Pavilion 1965 brochure interior pages on exhibits and services",
+    width: 900,
+    height: 1221,
+  },
 ] as const;
 
 /**
  * China brochure gallery — Welcome to the China Pavilion (1965).
  * Body from legacy china08.html (page scans, not a PDF BrochurePage).
+ * Legacy 3×3 sliced tiles are stitched into single composites (unisph12 pattern)
+ * so the brochure never reflows into a broken stack.
  * Stack: hero → ChinaNavChrome → navy title → image gallery → Nav2Bar.
  */
 export default function China08Page() {
@@ -59,42 +64,21 @@ export default function China08Page() {
         </header>
 
         <div className={styles.articleInner}>
-          <div className={styles.panel}>
-            {set34.map((row) => (
-              <div key={row[0]} className={styles.row}>
-                {row.map((name) => (
-                  <Image
-                    key={name}
-                    src={`/images/china08/${name}.jpg`}
-                    alt=""
-                    width={300}
-                    height={400}
-                    className={styles.pageImg}
-                    unoptimized
-                  />
-                ))}
-              </div>
-            ))}
-          </div>
-
-          <div className={styles.panel}>
-            {set35.map((row) => (
-              <div key={row[0]} className={styles.row}>
-                {row.map((name) => (
-                  <Image
-                    key={name}
-                    src={`/images/china08/${name}.jpg`}
-                    alt=""
-                    width={300}
-                    height={408}
-                    className={styles.pageImg}
-                    unoptimized
-                  />
-                ))}
-              </div>
-            ))}
-            <p className={styles.source}>SOURCE: 1965 Pavilion Guide</p>
-          </div>
+          {spreads.map((spread, index) => (
+            <div key={spread.src} className={styles.panel}>
+              <Image
+                src={spread.src}
+                alt={spread.alt}
+                width={spread.width}
+                height={spread.height}
+                className={styles.pageImg}
+                unoptimized
+              />
+              {index === spreads.length - 1 ? (
+                <p className={styles.source}>SOURCE: 1965 Pavilion Guide</p>
+              ) : null}
+            </div>
+          ))}
         </div>
       </article>
 

@@ -1,6 +1,6 @@
 /*
  * China — Brochure: Welcome to the China Pavilion (1964).
- * Body from legacy china07.html (image gallery, not PDF BrochurePage).
+ * Body from legacy china07.html (stitched image gallery, not PDF BrochurePage).
  * Stack: hero → ChinaNavChrome → navy title → gallery → Nav2Bar.
  */
 
@@ -63,25 +63,6 @@
   padding: 0.5rem;
 }
 
-.row {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0.35rem;
-  align-items: end;
-  margin: 0 0 0.35rem;
-}
-
-.row:last-child {
-  margin-bottom: 0;
-}
-
-.wideRow {
-  display: flex;
-  flex-direction: column;
-  gap: 0.35rem;
-  margin: 0 0 0.35rem;
-}
-
 .pageImg {
   display: block;
   width: 100%;
@@ -94,10 +75,4 @@
   font-size: 0.85rem;
   line-height: 1.35;
   text-align: left;
-}
-
-@media (max-width: 720px) {
-  .row {
-    grid-template-columns: 1fr;
-  }
 }

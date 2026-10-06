@@ -12,14 +12,32 @@ export const metadata: Metadata = {
     "1964 Welcome to the China Pavilion brochure pages — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-const trioA = ["china31.01", "china31.02", "china31.03"] as const;
-const trioB = ["china32.01", "china32.02", "china32.03"] as const;
-const wide = ["china30.01", "china30.02", "china30.03"] as const;
-const trioC = ["china33.01", "china33.02", "china33.03"] as const;
+const spreads = [
+  {
+    src: "/images/china07/china31-32.jpg",
+    alt: "Welcome to the China Pavilion 1964 brochure cover and introduction",
+    width: 900,
+    height: 866,
+  },
+  {
+    src: "/images/china07/china30.jpg",
+    alt: "Welcome to the China Pavilion 1964 brochure interior pages on Chinese culture and exhibits",
+    width: 900,
+    height: 1214,
+  },
+  {
+    src: "/images/china07/china33.jpg",
+    alt: "Welcome to the China Pavilion 1964 brochure phoenix screen",
+    width: 900,
+    height: 431,
+  },
+] as const;
 
 /**
  * China brochure gallery — Welcome to the China Pavilion (1964).
  * Body from legacy china07.html (page scans, not a PDF BrochurePage).
+ * Legacy sliced tiles are stitched into single composites (unisph12 pattern)
+ * so the brochure never reflows into a broken stack.
  * Stack: hero → ChinaNavChrome → navy title → image gallery → Nav2Bar.
  */
 export default function China07Page() {
@@ -52,67 +70,21 @@ export default function China07Page() {
         </header>
 
         <div className={styles.articleInner}>
-          <div className={styles.panel}>
-            <div className={styles.row}>
-              {trioA.map((name) => (
-                <Image
-                  key={name}
-                  src={`/images/china07/${name}.jpg`}
-                  alt=""
-                  width={300}
-                  height={433}
-                  className={styles.pageImg}
-                  unoptimized
-                />
-              ))}
+          {spreads.map((spread, index) => (
+            <div key={spread.src} className={styles.panel}>
+              <Image
+                src={spread.src}
+                alt={spread.alt}
+                width={spread.width}
+                height={spread.height}
+                className={styles.pageImg}
+                unoptimized
+              />
+              {index === spreads.length - 1 ? (
+                <p className={styles.source}>SOURCE: 1964 Pavilion Guide</p>
+              ) : null}
             </div>
-            <div className={styles.row}>
-              {trioB.map((name) => (
-                <Image
-                  key={name}
-                  src={`/images/china07/${name}.jpg`}
-                  alt=""
-                  width={300}
-                  height={433}
-                  className={styles.pageImg}
-                  unoptimized
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className={styles.panel}>
-            <div className={styles.wideRow}>
-              {wide.map((name) => (
-                <Image
-                  key={name}
-                  src={`/images/china07/${name}.jpg`}
-                  alt=""
-                  width={900}
-                  height={406}
-                  className={styles.pageImg}
-                  unoptimized
-                />
-              ))}
-            </div>
-          </div>
-
-          <div className={styles.panel}>
-            <div className={styles.row}>
-              {trioC.map((name) => (
-                <Image
-                  key={name}
-                  src={`/images/china07/${name}.jpg`}
-                  alt=""
-                  width={300}
-                  height={431}
-                  className={styles.pageImg}
-                  unoptimized
-                />
-              ))}
-            </div>
-            <p className={styles.source}>SOURCE: 1964 Pavilion Guide</p>
-          </div>
+          ))}
         </div>
       </article>
 
