@@ -69,6 +69,22 @@
   color: #000;
 }
 
+.intro {
+  width: min(600px, 100%);
+  margin: 0 auto 1.25rem;
+  padding: 0.65rem 0.85rem;
+  box-sizing: border-box;
+  border: 1px solid #4682b4;
+  font-family: Arial, Helvetica, Geneva, Swiss, Sans-Serif, sans-serif;
+  font-size: 15px;
+  line-height: 1.45;
+  color: #000;
+}
+
+.intro a {
+  color: #4682b4;
+}
+
 .sections {
   display: flex;
   flex-direction: column;
