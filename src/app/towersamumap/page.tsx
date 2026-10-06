@@ -5,7 +5,7 @@ import { LocateMapFullSizeLink } from "@/components/LocateMapFullSizeLink";
 import { LocateMapIntroLead } from "@/components/LocateMapIntroLead";
 import { LocateMapTitleBar } from "@/components/LocateMapTitleBar";
 import { Nav2Bar } from "@/components/Nav2Bar";
-import styles from "./towersamupage.module.css";
+import styles from "./towersamumap.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
@@ -16,10 +16,10 @@ export const metadata: Metadata = {
 };
 
 /**
- * Entrance Towers locate-it map page (`/towersamupage`).
+ * Entrance Towers locate-it map page (`/towersamumap`).
  * Stack: hero → TowersNavChrome → navy title bar → left-justified body → Nav2Bar.
  * Title bar (“1964 Official Souvenir Map”) is the map-page standard.
- * Body from legacy towersamumap.shtml (Amusement Area cream map + towersamumap.gif arrow); route /towersamupage.
+ * Body from legacy towersamumap.shtml (Amusement Area cream map + towersamumap.gif arrow); route /towersamumap.
  */
 export default function TowersMapPage() {
   return (
@@ -43,8 +43,8 @@ export default function TowersMapPage() {
 
       <TowersNavChrome />
 
-      <article className={styles.article} aria-labelledby="towersamupage-title">
-        <LocateMapTitleBar titleId="towersamupage-title" />
+      <article className={styles.article} aria-labelledby="towersamumap-title">
+        <LocateMapTitleBar titleId="towersamumap-title" />
         <div className={styles.articleInner}>
           <div className={styles.intro}>
             <LocateMapIntroLead />
@@ -53,7 +53,7 @@ export default function TowersMapPage() {
 
           <div className={styles.mapWrap}>
             <Image
-              src="/images/towersamupage/locate-map.jpg"
+              src="/images/towersamumap/locate-map.jpg"
               alt="Entrance Towers location on the Amusement Area of the 1964 Official Souvenir Map, with a red arrow pointing to an Entrance Tower"
               width={930}
               height={655}

@@ -14,7 +14,7 @@ export const metadata: Metadata = {
  * Body from legacy towers01.html. Layout: GuidebookSouvenirPage (/bell01).
  * 1964 & 1965 omitted from Official Guide Books; ENTRANCE TOWERS entry under
  * the map column. Four Locate It links (Industrial, Federal/State,
- * Transportation, Amusement) arranged like /arlhat01.
+ * Transportation, Amusement) arranged like /brarai01 (`map.locates`).
  */
 export default function Towers01Page() {
   return (
@@ -93,7 +93,7 @@ export default function Towers01Page() {
               height: 54,
               alt: "Amusement area map",
             },
-            locateHref: "/towersamupage",
+            locateHref: "/towersamumap",
           },
         ],
         entry: {
