@@ -69,6 +69,23 @@
   color: #000;
 }
 
+.intro {
+  margin: 0 0 1.25rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.intro p {
+  margin: 0 0 0.75rem;
+}
+
+.intro a {
+  color: #4682b4;
+  text-decoration: underline;
+}
+
 .sections {
   display: flex;
   flex-direction: column;
