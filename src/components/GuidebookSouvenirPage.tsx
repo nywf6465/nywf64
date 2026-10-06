@@ -479,7 +479,7 @@ export function GuidebookSouvenirPage({
   title,
 }: GuidebookSouvenirPageProps) {
   const resolvedTitle =
-    title ?? (map.cover ? DEFAULT_TITLE : GUIDEBOOK_ONLY_TITLE);
+    title ?? (map?.cover ? DEFAULT_TITLE : GUIDEBOOK_ONLY_TITLE);
 
   return (
     <>
