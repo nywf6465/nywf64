@@ -30,8 +30,8 @@ export default function Avis05Page() {
       }}
       nav={<AvisNavChrome />}
       previousHref="/avis04"
-      overviewHref="/avisoverview"
-      nextHref="/avisoverview"
+      overviewHref="/avis01"
+      nextHref="/avis01"
       cover={{
         src: "/images/avis05/map-and-guide-cover.jpg",
         width: 128,

@@ -29,7 +29,7 @@ export default function Berlin02Page() {
       }}
       nav={<BerlinNavChrome />}
       previousHref="/berlin01"
-      overviewHref="/berlinoverview"
+      overviewHref="/berlin01"
       nextHref="/berlin03"
       entries={[
         {

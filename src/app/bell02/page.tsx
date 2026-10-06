@@ -28,7 +28,7 @@ export default function Bell02Page() {
       }}
       nav={<BellNavChrome />}
       previousHref="/bell01"
-      overviewHref="/belloverview"
+      overviewHref="/bell01"
       nextHref="/bell03"
       factsLeft={[
         {

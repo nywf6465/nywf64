@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Schaefer Center menu — nav-menu topics for all routes beginning with `schcen`.
- * Labels match the schcen-menu-topics mockup; Overview at top.
+ * Labels match the schcen-menu-topics mockup.
  * Non-Overview routes: `schcen01`…`schcen09`.
  */
 export const SCHCEN_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/schcenoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/schcen01",

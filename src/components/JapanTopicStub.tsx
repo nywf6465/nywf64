@@ -16,8 +16,8 @@ export function JapanTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/japanoverview" style={{ color: "#990000" }}>
-            ← Japan overview
+          <Link href="/japan01" style={{ color: "#990000" }}>
+            ← Japan
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function JapanTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/japanoverview"
-        overviewHref="/japanoverview"
+        overviewHref="/japan01"
         nextHref="/japan01"
       />
     </>

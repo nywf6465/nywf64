@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Formica menu — nav-menu topics for all routes beginning with `formica`.
- * Labels match `media/formica-menu-topics-source.jpg` (+ Overview at top).
+ * Labels match `media/formica-menu-topics-source.jpg`.
  * Non-Overview routes: `formica01`…`formica19`.
  */
 export const FORMICA_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/formicaoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/formica01",

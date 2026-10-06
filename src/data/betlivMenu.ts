@@ -2,15 +2,11 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Betliv menu — nav-menu topics for all routes beginning with `betliv`.
- * Labels match the betliv-menu-topics mockup; Overview at top.
+ * Labels match the betliv-menu-topics mockup.
  * Non-Overview routes: `betliv01`…`betliv21`.
  * Spellings are exact (Cafe', Dorthy, SPECTRACKULAR).
  */
 export const BETLIV_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/betlivoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/betliv01",

@@ -16,8 +16,8 @@ export function AmexTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/amexoverview" style={{ color: "#990000" }}>
-            ← American Express overview
+          <Link href="/amex01" style={{ color: "#990000" }}>
+            ← American Express
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function AmexTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/amexoverview"
-        overviewHref="/amexoverview"
+        overviewHref="/amex01"
         nextHref="/amex01"
       />
     </>

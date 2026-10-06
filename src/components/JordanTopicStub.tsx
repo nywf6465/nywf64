@@ -16,8 +16,8 @@ export function JordanTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/jordanoverview" style={{ color: "#990000" }}>
-            ← Jordan overview
+          <Link href="/jordan01" style={{ color: "#990000" }}>
+            ← Jordan
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function JordanTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/jordanoverview"
-        overviewHref="/jordanoverview"
+        overviewHref="/jordan01"
         nextHref="/jordan01"
       />
     </>

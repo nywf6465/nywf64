@@ -30,7 +30,7 @@ export default function Avis04Page() {
       }}
       nav={<AvisNavChrome />}
       previousHref="/avis03"
-      overviewHref="/avisoverview"
+      overviewHref="/avis01"
       nextHref="/avis05"
       cover={{
         src: "/images/avis04/dedication-day-cover.jpg",

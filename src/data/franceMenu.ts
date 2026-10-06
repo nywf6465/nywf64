@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * France menu — nav-menu topics for all routes beginning with `france`.
- * Labels match `media/france-menu-topics-source.jpg` (+ Overview at top).
+ * Labels match `media/france-menu-topics-source.jpg`.
  * Non-Overview routes: `france01`…`france05`.
  */
 export const FRANCE_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/franceoverview",
-  },
   {
     label: "1964 & 1965 Official Guide Book & Souvenir Map",
     href: "/france01",

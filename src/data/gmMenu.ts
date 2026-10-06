@@ -7,10 +7,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const GM_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/gmoverview",
-  },
-  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/gmguidebook",
   },

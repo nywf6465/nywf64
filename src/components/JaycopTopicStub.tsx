@@ -16,8 +16,8 @@ export function JaycopTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/jaycopoverview" style={{ color: "#990000" }}>
-            ← Jaycopter Ride overview
+          <Link href="/jaycop01" style={{ color: "#990000" }}>
+            ← Jaycopter Ride
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function JaycopTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/jaycopoverview"
-        overviewHref="/jaycopoverview"
+        overviewHref="/jaycop01"
         nextHref="/jaycop01"
       />
     </>

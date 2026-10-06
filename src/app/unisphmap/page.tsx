@@ -68,7 +68,7 @@ export default function UnisphMapPage() {
       <Nav2Bar
         previousHref="/unisph01"
         explicitPrevious
-        overviewHref="/unisphoverview"
+        overviewHref="/unisph01"
         nextHref="/unisph02"
       />
     </>

@@ -8,7 +8,7 @@ export type JCard = FountainsCard;
 
 const JAPAN: JCard = {
   id: "japan",
-  href: "/japanoverview",
+  href: "/japan01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Japan",
   // TEXT (to the right of ICON) — exact from japan-card-text-source.jpg
@@ -22,7 +22,7 @@ const JAPAN: JCard = {
 
 const JAYCOP: JCard = {
   id: "jaycop",
-  href: "/jaycopoverview",
+  href: "/jaycop01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Jaycopter Ride",
   // TEXT (to the right of ICON) — exact from jaycop-card-text-source.jpg
@@ -36,7 +36,7 @@ const JAYCOP: JCard = {
 
 const JOHWAX: JCard = {
   id: "johwax",
-  href: "/johwaxoverview",
+  href: "/johwax01",
   // DESCRIPTION (italic under ICON) — exact registered icon name
   title: "Johnson Wax",
   // TEXT (to the right of ICON) — exact from johnsonwax-card-text-source.jpg
@@ -50,7 +50,7 @@ const JOHWAX: JCard = {
 
 const JORDAN: JCard = {
   id: "jordan",
-  href: "/jordanoverview",
+  href: "/jordan01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Jordan",
   // TEXT (to the right of ICON) — exact from jordan-card-text-source.jpg
@@ -64,7 +64,7 @@ const JORDAN: JCard = {
 
 const JULFAR: JCard = {
   id: "julfar",
-  href: "/julfaroverview",
+  href: "/julfar01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Julimar Farm",
   // TEXT (to the right of ICON) — exact from julfar-card-text-source.jpg

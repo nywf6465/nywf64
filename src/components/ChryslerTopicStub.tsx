@@ -19,8 +19,8 @@ export function ChryslerTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/chrysleroverview" style={{ color: "#990000" }}>
-            ← Chrysler overview
+          <Link href="/chryslerguidebook" style={{ color: "#990000" }}>
+            ← Chrysler
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -31,8 +31,7 @@ export function ChryslerTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/chrysleroverview"
-        overviewHref="/chrysleroverview"
+        overviewHref="/chryslerguidebook"
         nextHref="/chrysler01"
       />
     </>

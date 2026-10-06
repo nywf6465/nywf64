@@ -16,8 +16,8 @@ export function BerlinTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/berlinoverview" style={{ color: "#990000" }}>
-            ← Berlin overview
+          <Link href="/berlin01" style={{ color: "#990000" }}>
+            ← Berlin
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function BerlinTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/berlinoverview"
-        overviewHref="/berlinoverview"
+        overviewHref="/berlin01"
         nextHref="/berlin01"
       />
     </>

@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * U.S. Rubber menu — nav-menu topics for all routes beginning with `usrub`.
- * Labels match the usrub-menu-topics mockup; Overview at top.
+ * Labels match the usrub-menu-topics mockup.
  * Non-Overview routes: `usrub01`…`usrub09`.
  */
 export const USRUB_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/usruboverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/usrub01",

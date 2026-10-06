@@ -16,8 +16,8 @@ export function MedphoTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/medphooverview" style={{ color: "#990000" }}>
-            ← Medo Photo Supply overview
+          <Link href="/medpho01" style={{ color: "#990000" }}>
+            ← Medo Photo Supply
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function MedphoTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/medphooverview"
-        overviewHref="/medphooverview"
+        overviewHref="/medpho01"
         nextHref="/medpho01"
       />
     </>

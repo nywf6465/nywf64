@@ -16,8 +16,8 @@ export function BountyTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/bountyoverview" style={{ color: "#990000" }}>
-            ← Bounty overview
+          <Link href="/bounty01" style={{ color: "#990000" }}>
+            ← Bounty
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function BountyTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/bountyoverview"
-        overviewHref="/bountyoverview"
+        overviewHref="/bounty01"
         nextHref="/bounty01"
       />
     </>

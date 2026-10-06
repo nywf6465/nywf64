@@ -27,7 +27,6 @@ export default function Barbuf01Page() {
         height: 824,
       }}
       nav={<BarbufNavChrome />}
-      previousHref="/barbufoverview"
       nextHref="/barbuf02"
       guide1964={{
         cover: {

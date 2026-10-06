@@ -25,7 +25,7 @@ export default function Amex02Page() {
       }}
       nav={<AmexNavChrome />}
       previousHref="/amex01"
-      overviewHref="/amexoverview"
+      overviewHref="/amex01"
       nextHref="/amex03"
       factsLeft={[
         {

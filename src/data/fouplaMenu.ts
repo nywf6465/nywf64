@@ -7,10 +7,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const FOUPLA_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/fouplaoverview",
-  },
-  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/foupla01",
   },

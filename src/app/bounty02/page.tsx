@@ -25,7 +25,7 @@ export default function Bounty02Page() {
       }}
       nav={<BountyNavChrome />}
       previousHref="/bounty01"
-      overviewHref="/bountyoverview"
+      overviewHref="/bounty01"
       nextHref="/bounty03"
       factsLeft={[
         {

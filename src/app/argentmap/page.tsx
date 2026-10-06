@@ -68,7 +68,7 @@ export default function ArgentMapPage() {
       <Nav2Bar
         previousHref="/argent01"
         explicitPrevious
-        overviewHref="/argentoverview"
+        overviewHref="/argent01"
         nextHref="/argent02"
       />
     </>

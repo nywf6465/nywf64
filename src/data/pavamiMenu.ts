@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Pavilion of American Interiors menu — topics for routes beginning with `pavami`.
- * Labels match the pavami menu-topics mockup; Overview at top.
+ * Labels match the pavami menu-topics mockup.
  * Non-Overview routes: `pavami01`…`pavami14`.
  */
 export const PAVAMI_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/pavamioverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/pavami01",

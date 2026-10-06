@@ -25,7 +25,7 @@ export default function Africa02Page() {
       }}
       nav={<AfricaNavChrome />}
       previousHref="/africa01"
-      overviewHref="/africaoverview"
+      overviewHref="/africa01"
       nextHref="/africa03"
       factsLeft={[
         {

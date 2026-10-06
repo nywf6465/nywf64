@@ -16,8 +16,8 @@ export function AutthrTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/autthroverview" style={{ color: "#990000" }}>
-            ← Auto Thrill Show overview
+          <Link href="/autthr01" style={{ color: "#990000" }}>
+            ← Auto Thrill Show
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function AutthrTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/autthroverview"
-        overviewHref="/autthroverview"
+        overviewHref="/autthr01"
         nextHref="/autthr01"
       />
     </>

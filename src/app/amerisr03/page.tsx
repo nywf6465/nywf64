@@ -69,7 +69,7 @@ export default function Amerisr03Page() {
       }}
       nav={<AmerisrNavChrome />}
       previousHref="/amerisr02"
-      overviewHref="/amerisroverview"
+      overviewHref="/amerisr01"
       nextHref="/amerisr04"
       entries={[
         entry("88292", 1, 12, "Rendering of Pavilion", 450, 282, 122),

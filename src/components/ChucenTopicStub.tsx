@@ -16,8 +16,8 @@ export function ChucenTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/chucenoverview" style={{ color: "#990000" }}>
-            ← Churchill Center overview
+          <Link href="/chucen01" style={{ color: "#990000" }}>
+            ← Churchill Center
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function ChucenTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/chucenoverview"
-        overviewHref="/chucenoverview"
+        overviewHref="/chucen01"
         nextHref="/chucen01"
       />
     </>

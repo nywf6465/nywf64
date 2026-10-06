@@ -19,8 +19,8 @@ export function BellTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/belloverview" style={{ color: "#990000" }}>
-            ← Bell System overview
+          <Link href="/bell01" style={{ color: "#990000" }}>
+            ← Bell System
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -32,8 +32,7 @@ export function BellTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/belloverview"
-        overviewHref="/belloverview"
+        overviewHref="/bell01"
         nextHref="/bell01"
       />
     </>

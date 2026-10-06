@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Seven-Up menu — nav-menu topics for all routes beginning with `sevup`.
- * Labels match the sevup-menu-topics mockup; Overview at top.
+ * Labels match the sevup-menu-topics mockup.
  * Non-Overview routes: `sevup01`…`sevup10`.
  */
 export const SEVUP_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/sevupoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/sevup01",

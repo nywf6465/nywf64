@@ -28,7 +28,7 @@ export default function Bell04Page() {
       }}
       nav={<BellNavChrome />}
       previousHref="/bell03"
-      overviewHref="/belloverview"
+      overviewHref="/bell01"
       nextHref="/bellphotographalbumi"
       sources={[
         "Source: Advertisement, Official Guide - New York World's Fair, 1964 Edition, Time-Life Books, publisher",

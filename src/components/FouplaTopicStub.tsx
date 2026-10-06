@@ -16,8 +16,8 @@ export function FouplaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/fouplaoverview" style={{ color: "#990000" }}>
-            ← Fountain of the Planets overview
+          <Link href="/foupla01" style={{ color: "#990000" }}>
+            ← Fountain of the Planets
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function FouplaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/fouplaoverview"
-        overviewHref="/fouplaoverview"
+        overviewHref="/foupla01"
         nextHref="/foupla01"
       />
     </>

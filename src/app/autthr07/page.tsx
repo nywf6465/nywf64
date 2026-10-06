@@ -30,8 +30,8 @@ export default function Autthr07Page() {
       }}
       nav={<AutthrNavChrome />}
       previousHref="/autthr06"
-      overviewHref="/autthroverview"
-      nextHref="/autthroverview"
+      overviewHref="/autthr01"
+      nextHref="/autthr01"
       cover={{
         src: "/images/autthr07/dodge-stars-cover.jpg",
         width: 153,

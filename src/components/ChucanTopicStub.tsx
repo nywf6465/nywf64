@@ -16,8 +16,8 @@ export function ChucanTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/chucanoverview" style={{ color: "#990000" }}>
-            ← Chunky Candy overview
+          <Link href="/chucan01" style={{ color: "#990000" }}>
+            ← Chunky Candy
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function ChucanTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/chucanoverview"
-        overviewHref="/chucanoverview"
+        overviewHref="/chucan01"
         nextHref="/chucan01"
       />
     </>

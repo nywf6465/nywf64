@@ -19,8 +19,8 @@ export function SprogfountTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/sprogfountoverview" style={{ color: "#990000" }}>
-            ← Fountain of Progress South overview
+          <Link href="/sprogfount01" style={{ color: "#990000" }}>
+            ← Fountain of Progress South
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -32,8 +32,7 @@ export function SprogfountTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/sprogfountoverview"
-        overviewHref="/sprogfountoverview"
+        overviewHref="/sprogfount01"
         nextHref="/sprogfount01"
       />
     </>

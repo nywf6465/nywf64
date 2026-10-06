@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Sierra Leone menu — nav-menu topics for all routes beginning with `sierra`.
- * Labels match the sierra-menu-topics mockup; Overview at top.
+ * Labels match the sierra-menu-topics mockup.
  * Non-Overview routes: `sierra01`…`sierra06`.
  */
 export const SIERRA_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/sierraoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/sierra01",

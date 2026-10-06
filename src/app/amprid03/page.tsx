@@ -27,8 +27,8 @@ export default function Amprid03Page() {
       }}
       nav={<AmpridNavChrome />}
       previousHref="/amprid02"
-      overviewHref="/ampridoverview"
-      nextHref="/ampridoverview"
+      overviewHref="/amprid01"
+      nextHref="/amprid01"
       sections={[
         {
           heading: "Publication Photographs",

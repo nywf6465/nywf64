@@ -7,7 +7,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  * Italic *to be alive!* via `parts`.
  */
 export const JOHWAX_MENU_TOPICS: AttractionTopic[] = [
-  { label: "Overview", href: "/johwaxoverview" },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/johwax01",

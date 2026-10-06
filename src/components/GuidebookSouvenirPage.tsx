@@ -126,7 +126,7 @@ export type GuidebookSouvenirPageProps = {
   guide1964: GuidebookYearContent;
   guide1965: GuidebookYearContent;
   map: GuidebookMapContent;
-  previousHref: string;
+  previousHref?: string;
   nextHref: string;
   titleId?: string;
   /**
@@ -500,7 +500,7 @@ export function GuidebookSouvenirPage({
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious
+        explicitPrevious={Boolean(previousHref)}
         nextHref={nextHref}
       />
     </>

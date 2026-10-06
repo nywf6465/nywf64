@@ -16,8 +16,8 @@ export function FesgasTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/fesgasoverview" style={{ color: "#990000" }}>
-            ← Festival of Gas overview
+          <Link href="/fesgas01" style={{ color: "#990000" }}>
+            ← Festival of Gas
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function FesgasTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/fesgasoverview"
-        overviewHref="/fesgasoverview"
+        overviewHref="/fesgas01"
         nextHref="/fesgas01"
       />
     </>

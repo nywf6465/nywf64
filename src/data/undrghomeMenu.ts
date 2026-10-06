@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Underground World Home menu — nav-menu topics for all routes beginning with `undrghome`.
- * Labels match uploaded menu topics (+ Overview at top).
+ * Labels match uploaded menu topics.
  * Non-Overview routes: `undrghome01`…`undrghome09`.
  */
 export const UNDRGHOME_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/undrghomeoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/undrghome01",

@@ -25,7 +25,7 @@ export default function Argent02Page() {
       }}
       nav={<ArgentNavChrome />}
       previousHref="/argent01"
-      overviewHref="/argentoverview"
+      overviewHref="/argent01"
       nextHref="/argent03"
       factsLeft={[
         {

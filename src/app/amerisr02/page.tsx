@@ -26,7 +26,7 @@ export default function Amerisr02Page() {
       }}
       nav={<AmerisrNavChrome />}
       previousHref="/amerisr01"
-      overviewHref="/amerisroverview"
+      overviewHref="/amerisr01"
       nextHref="/amerisr03"
       factsLeft={[
         {

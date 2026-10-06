@@ -16,8 +16,8 @@ export function AvisTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/avisoverview" style={{ color: "#990000" }}>
-            ← Avis Antique Car Ride overview
+          <Link href="/avis01" style={{ color: "#990000" }}>
+            ← Avis Antique Car Ride
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function AvisTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/avisoverview"
-        overviewHref="/avisoverview"
+        overviewHref="/avis01"
         nextHref="/avis01"
       />
     </>

@@ -16,8 +16,8 @@ export function KidlanTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/kidlanoverview" style={{ color: "#990000" }}>
-            ← Kiddyland overview
+          <Link href="/kidlan01" style={{ color: "#990000" }}>
+            ← Kiddyland
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function KidlanTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/kidlanoverview"
-        overviewHref="/kidlanoverview"
+        overviewHref="/kidlan01"
         nextHref="/kidlan01"
       />
     </>
