@@ -140,9 +140,11 @@ export default function Garmed02Page() {
             The Garden of Meditation will remain as a permanent part of Flushing
             Meadow Park at the end of the Fair.
           </p>
+          <p className={styles.source}>
+            SOURCE: 1964 World&apos;s Fair Information Manual
+          </p>
         </div>
       }
-      featuresSource="SOURCE: 1964 World's Fair Information Manual"
     />
   );
 }

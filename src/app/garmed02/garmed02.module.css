@@ -25,8 +25,16 @@
 }
 
 .closing {
+  margin: 0 0 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: normal;
+}
+
+.source {
   margin: 0;
   font-family: "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: normal;
+  text-transform: uppercase;
 }
