@@ -117,6 +117,11 @@ export type GuidebookMapContent = {
    * an entry (legacy layout used by /amind01).
    */
   entry?: GuidebookMapEntry;
+  /**
+   * Multiple pavilion blocks under the map column (e.g. /heartland01
+   * Heartland States + Midwestern States). When set, overrides `entry`.
+   */
+  entries?: GuidebookMapEntry[];
 };
 
 export type GuidebookSouvenirPageProps = {
@@ -341,9 +346,36 @@ function GuideColumn({
   );
 }
 
+function MapEntryBlock({ entry }: { entry: GuidebookMapEntry }) {
+  const nameFace = entry.nameFace ?? "times";
+  return (
+    <div className={styles.mapEntry}>
+      <Image
+        src={entry.logo.src}
+        alt={entry.logo.alt ?? ""}
+        width={entry.logo.width}
+        height={entry.logo.height}
+        className={styles.logo}
+        unoptimized
+      />
+      <p
+        className={
+          nameFace === "arial"
+            ? `${styles.pavilionName} ${styles.pavilionNameSans}`
+            : styles.pavilionName
+        }
+      >
+        {entry.name}
+      </p>
+      <p className={styles.copy}>{entry.copy}</p>
+      {entry.note ? <p className={styles.statusNote}>{entry.note}</p> : null}
+    </div>
+  );
+}
+
 function MapColumn({ map }: { map: GuidebookMapContent }) {
-  const entry = map.entry;
-  const nameFace = entry?.nameFace ?? "times";
+  const entries: GuidebookMapEntry[] =
+    map.entries ?? (map.entry ? [map.entry] : []);
   const locates: GuidebookLocateLink[] =
     map.locates ??
     (map.areaMap
@@ -418,29 +450,12 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           />
         </div>
       </div>
-      {entry ? (
-        <div className={styles.mapEntry}>
-          <Image
-            src={entry.logo.src}
-            alt={entry.logo.alt ?? ""}
-            width={entry.logo.width}
-            height={entry.logo.height}
-            className={styles.logo}
-            unoptimized
-          />
-          <p
-            className={
-              nameFace === "arial"
-                ? `${styles.pavilionName} ${styles.pavilionNameSans}`
-                : styles.pavilionName
-            }
-          >
-            {entry.name}
-          </p>
-          <p className={styles.copy}>{entry.copy}</p>
-          {entry.note ? <p className={styles.statusNote}>{entry.note}</p> : null}
-        </div>
-      ) : null}
+      {entries.map((item, index) => (
+        <MapEntryBlock
+          key={`${item.logo.src}-${index}`}
+          entry={item}
+        />
+      ))}
     </section>
   );
 }
