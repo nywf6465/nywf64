@@ -9,60 +9,70 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 export const metadata: Metadata = {
   title: "Mural of a Refugee — Jordan — nywf64.com",
   description:
-    "Mural of a Refugee — Jordan Pavilion — 1964/1965 New York World’s Fair on nywf64.com.",
+    "Brochure: Mural of a Refugee — Pavilion of Jordan at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-const poemLeft = [
-  "Before you go,",
-  "Have you a minute to spare,",
-  "To hear a word on Palestine",
-  "And perhaps to help us right a wrong?",
-  "Ever since the birth of Christ",
-  "And later with the coming of Mohammed,",
-  "Christians, Jews and Moslems, believers",
-  ".....in one God,",
-  "Lived there in peaceful harmony.",
-  "For centuries it was so,",
-  "Until strangers from abroad,",
-  "Professing one thing, but underneath,",
-  ".....another,",
-  "Began buying up land and stirring up the",
-  ".....people.",
-  "Neighbors became enemies",
-  "And fought against each other,",
-  "The strangers, once thought terror's victims,",
-  "Became terror's fierce practioners.",
-  "Seeking peace at all costs, including the",
-  ".....cost of justice,",
-  "The blinded world, in solemn council, split",
-  ".....the land in two,",
-] as const;
+type PoemLine = { text: string; gap?: boolean };
 
-const poemRight = [
-  "Tossing to one side",
-  "The right of self-determination.",
-  "What followed then perhaps you know.",
-  "Seeking to redress the wrong, our nearby",
-  ".....neighbors",
-  "Tried to help us in our cause,",
-  "And for reasons, not in their control, did not",
-  ".....succeed.",
-  "Today, there are a million of us,",
-  "Some like us, but many like my mother,",
-  "Wasting their lives in exiled misery",
-  "Waiting to go home.",
-  "But even now, to protect their gains ill-got,",
-  "As if the land was theirs and had the right,",
-  "They're threatening to disturb the Jordan's",
-  ".....course",
-  "And make the desert bloom with warriors.",
-  "And who's to stop them?",
-  "The world seems not to care, or is blinded",
-  ".....still.",
-  "That's why I'm glad you stopped",
-  "And heard the story.",
-] as const;
+/** Poem lines from legacy jordan09.html; preserve typos (practioners) and ..... wraps. */
+const poemLeft: PoemLine[] = [
+  { text: "Before you go," },
+  { text: "Have you a minute to spare," },
+  { text: "To hear a word on Palestine" },
+  { text: "And perhaps to help us right a wrong?" },
+  { text: "Ever since the birth of Christ", gap: true },
+  { text: "And later with the coming of Mohammed," },
+  { text: "Christians, Jews and Moslems, believers" },
+  { text: ".....in one God," },
+  { text: "Lived there in peaceful harmony." },
+  { text: "For centuries it was so,", gap: true },
+  { text: "Until strangers from abroad," },
+  { text: "Professing one thing, but underneath," },
+  { text: ".....another," },
+  { text: "Began buying up land and stirring up the" },
+  { text: ".....people." },
+  { text: "Neighbors became enemies", gap: true },
+  { text: "And fought against each other," },
+  { text: "The strangers, once thought terror's victims," },
+  { text: "Became terror's fierce practioners." },
+  { text: "Seeking peace at all costs, including the", gap: true },
+  { text: ".....cost of justice," },
+  { text: "The blinded world, in solemn council, split" },
+  { text: ".....the land in two," },
+];
 
+const poemRight: PoemLine[] = [
+  { text: "Tossing to one side" },
+  { text: "The right of self-determination." },
+  { text: "What followed then perhaps you know.", gap: true },
+  { text: "Seeking to redress the wrong, our nearby" },
+  { text: ".....neighbors" },
+  { text: "Tried to help us in our cause," },
+  { text: "And for reasons, not in their control, did not" },
+  { text: ".....succeed." },
+  { text: "Today, there are a million of us,", gap: true },
+  { text: "Some like us, but many like my mother," },
+  { text: "Wasting their lives in exiled misery" },
+  { text: "Waiting to go home." },
+  { text: "But even now, to protect their gains ill-got,", gap: true },
+  { text: "As if the land was theirs and had the right," },
+  { text: "They're threatening to disturb the Jordan's" },
+  { text: ".....course" },
+  { text: "And make the desert bloom with warriors." },
+  { text: "And who's to stop them?", gap: true },
+  { text: "The world seems not to care, or is blinded" },
+  { text: ".....still." },
+  { text: "That's why I'm glad you stopped" },
+  { text: "And heard the story." },
+];
+
+/**
+ * Jordan — Mural of a Refugee (italic title).
+ * Body from legacy jordan09.html (brochure reprint in two bordered panels).
+ *
+ * Stack: hero → JordanNavChrome → navy title → body → Nav2Bar.
+ * HARD RULE — navy title banner beneath the nav.
+ */
 export default function Jordan09Page() {
   return (
     <>
@@ -88,77 +98,95 @@ export default function Jordan09Page() {
       <article className={styles.article} aria-labelledby="jordan09-title">
         <header className={styles.titleBar}>
           <h1 id="jordan09-title" className={styles.titleBarMain}>
-            <em>Mural of a Refugee</em>
+            Mural of a Refugee
           </h1>
         </header>
 
         <div className={styles.articleInner}>
-          <div className={styles.topGrid}>
-            <Image
-              src="/images/jordan09/jordan14.jpg"
-              alt="Artist's Rendering - Jordan Pavilion"
-              width={300}
-              height={238}
-              unoptimized
-            />
-            <div className={styles.exhibitList}>
+          <div className={`${styles.panel} ${styles.topPanel}`}>
+            <div className={styles.leftCol}>
+              <p className={styles.muralTitle}>Mural</p>
+              <p className={styles.muralTitle}>Of A</p>
+              <p className={styles.muralTitle}>Refugee</p>
+              <p className={styles.pavilionOf}>Pavilion of</p>
+              <p className={styles.jordanSpaced}>Jordan</p>
+              <p className={styles.holyLand}>The Holy Land</p>
+              <Image
+                src="/images/jordan09/jordan14.jpg"
+                alt="Artist's Rendering - Jordan Pavilion"
+                width={300}
+                height={238}
+                className={styles.panelPhoto}
+                unoptimized
+              />
+            </div>
+
+            <div className={styles.rightCol}>
               <Image
                 src="/images/jordan09/jordan15.jpg"
                 alt="Jordanian Clothing Display"
                 width={300}
                 height={230}
+                className={styles.panelPhoto}
                 unoptimized
               />
-              <p>
-                <strong>AT THE</strong>
-              </p>
-              <h2>JORDAN PAVILION</h2>
-              <p>
-                <strong>YOU CAN VISIT:</strong>
-              </p>
-              <h3>THE HOLY LAND EXHIBIT</h3>
-              <p>
-                A photographic survey of the Holy Places in Jordan.
-              </p>
-              <h3>CRADLE OF CIVILIZATION EXHIBIT</h3>
-              <p>
-                An exhibit of the archaeological findings in Jordan. Of interest
-                are the finds illustrating the evolution of lamps in history.
-              </p>
-              <h3>MODERN JORDAN</h3>
-              <p>Educational, Industrial and Economic Progress.</p>
-              <h3>THE DEAD SEA SCROLLS EXHIBIT</h3>
-              <p>
-                The Dead Sea Scrolls which were uncovered as a result of the most
-                sensational discovery of the century are at the Jordan Pavilion in
-                New York.
-              </p>
-              <h3>THEATER</h3>
-              <p>
-                Films about different aspects of the country will be shown.
-              </p>
+              <div className={styles.exhibitIntro}>
+                <p>At the</p>
+                <h2>Jordan Pavilion</h2>
+                <p>You can visit:</p>
+              </div>
+              <div className={styles.exhibitList}>
+                <h3>The Holy Land Exhibit</h3>
+                <p>A photographic survey of the Holy Places in Jordan.</p>
+                <h3>Cradle of Civilization Exhibit</h3>
+                <p>
+                  An exhibit of the archaeological findings in Jordan. Of interest
+                  are the finds illustrating the evolution of lamps in history.
+                </p>
+                <h3>Modern Jordan</h3>
+                <p>Educational, Industrial and Economic Progress.</p>
+                <h3>The Dead Sea Scrolls Exhibit</h3>
+                <p>
+                  The Dead Sea Scrolls which were uncovered as a result of the
+                  most sensational discovery of the century are at the Jordan
+                  Pavilion in New York.
+                </p>
+                <h3>Theater</h3>
+                <p>Films about different aspects of the country will be shown.</p>
+              </div>
             </div>
           </div>
 
-          <Image
-            src="/images/jordan09/jordan16.jpg"
-            alt="Mural of a Refugee"
-            width={600}
-            height={386}
-            className={styles.muralScan}
-            unoptimized
-          />
-
-          <div className={styles.poemGrid}>
-            <div>
-              {poemLeft.map((line) => (
-                <p key={line}>{line}</p>
-              ))}
-            </div>
-            <div>
-              {poemRight.map((line) => (
-                <p key={line}>{line}</p>
-              ))}
+          <div className={`${styles.panel} ${styles.muralPanel}`}>
+            <Image
+              src="/images/jordan09/jordan16.jpg"
+              alt="Mural of a Refugee"
+              width={600}
+              height={386}
+              className={styles.muralScan}
+              unoptimized
+            />
+            <div className={styles.poemGrid}>
+              <div className={styles.poemCol}>
+                {poemLeft.map((line) => (
+                  <p
+                    key={`${line.text}-${line.gap ? "g" : "n"}`}
+                    className={line.gap ? styles.stanzaGap : undefined}
+                  >
+                    {line.text}
+                  </p>
+                ))}
+              </div>
+              <div className={styles.poemCol}>
+                {poemRight.map((line) => (
+                  <p
+                    key={`${line.text}-${line.gap ? "g" : "n"}`}
+                    className={line.gap ? styles.stanzaGap : undefined}
+                  >
+                    {line.text}
+                  </p>
+                ))}
+              </div>
             </div>
           </div>
 
