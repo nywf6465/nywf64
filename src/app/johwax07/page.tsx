@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: "Pamphlet: Groundbreaking — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+/** Pamphlet page scans stitched from legacy 3×3 tiles into single composites. */
 export default function Johwax07Page() {
   return (
     <JohwaxSequencePage
@@ -20,7 +21,7 @@ export default function Johwax07Page() {
       previousHref="/johwax06"
       overviewHref="/johwaxoverview"
       nextHref="/johwax08"
-      columns={3}
+      columns={1}
       scans={[...JOHWAX_07_SCANS]}
     />
   );
