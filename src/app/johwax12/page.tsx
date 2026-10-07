@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: "Johnson Magazine — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+/** Magazine pages stitched from legacy 3×4 tiles into single composites. */
 export default function Johwax12Page() {
   return (
     <JohwaxSequencePage
@@ -20,7 +21,7 @@ export default function Johwax12Page() {
       previousHref="/johwax11"
       overviewHref="/johwaxoverview"
       nextHref="/johwax13"
-      columns={3}
+      columns={1}
       scans={[...JOHWAX_12_SCANS]}
     />
   );
