@@ -49,7 +49,11 @@ function ScanGrid({
   return (
     <>
       {rows.map((row, ri) => (
-        <div key={ri} className={styles.row}>
+        <div
+          key={ri}
+          className={styles.row}
+          style={{ gridTemplateColumns: `repeat(${columns}, minmax(0, 1fr))` }}
+        >
           {row.map((scan) => (
             <figure key={scan.src} className={styles.figure}>
               <Image
