@@ -73,13 +73,11 @@ export type GuidebookYearContent = {
 
 export type GuidebookMapEntry = {
   logo: GuidebookImage;
-  name?: ReactNode;
+  name: ReactNode;
   nameFace?: GuidebookFace;
-  copy?: ReactNode;
+  copy: ReactNode;
   /** Burgundy italic note under the entry (e.g. “never built”). */
   note?: ReactNode;
-  /** Optional block after the entry note (e.g. companion feature). */
-  after?: ReactNode;
 };
 
 export type GuidebookLocateLink = {
@@ -88,25 +86,20 @@ export type GuidebookLocateLink = {
 };
 
 export type GuidebookMapContent = {
-  /**
-   * Souvenir Map cover. Omit when the legacy page has no map column header
-   * (e.g. /citserv01 — pavilion entry only under the third column).
-   */
-  cover?: GuidebookImage;
+  cover: GuidebookImage;
   /**
    * Single Locate It thumbnail (default). Prefer `locates` when the exhibit
-   * has more than one area pin. Ignored when `cover` is omitted.
+   * has more than one area pin.
    */
   areaMap?: GuidebookImage;
   /**
    * When omitted, Locate It remains visible but is not linked (e.g. never-built
-   * exhibits with no locate-it map page). Ignored when `cover` is omitted.
+   * exhibits with no locate-it map page).
    */
   locateHref?: string;
   /**
    * Multiple Locate It thumbnails (e.g. Arlington Hat industrial/international/
    * state/transport pins). When set, overrides `areaMap` + `locateHref`.
-   * Ignored when `cover` is omitted.
    */
   locates?: GuidebookLocateLink[];
   /**
@@ -121,10 +114,14 @@ export type GuidebookMapContent = {
   subjectDeterminer?: string;
   /**
    * Optional pavilion block below the map header when guide years omit
-   * an entry (legacy layout used by /amind01). May stand alone when `cover`
-   * is omitted.
+   * an entry (legacy layout used by /amind01).
    */
   entry?: GuidebookMapEntry;
+  /**
+   * Multiple pavilion blocks under the map column (e.g. /heartland01
+   * Heartland States + Midwestern States). When set, overrides `entry`.
+   */
+  entries?: GuidebookMapEntry[];
 };
 
 export type GuidebookSouvenirPageProps = {
@@ -133,24 +130,18 @@ export type GuidebookSouvenirPageProps = {
   nav: ReactNode;
   guide1964: GuidebookYearContent;
   guide1965: GuidebookYearContent;
-  /**
-   * 1964 Official Souvenir Map column. Omit to show only the two
-   * guidebook columns (e.g. /bounty01 — no souvenir-map section).
-   */
-  map?: GuidebookMapContent;
+  map: GuidebookMapContent;
   previousHref: string;
   nextHref: string;
   titleId?: string;
   /**
    * Navy title-bar text. Defaults to the standard guidebook heading.
    * Some legacy pages append “Entries” (e.g. Port Authority).
-   * Pages without a map column typically use “1964 & 1965 Official Guidebook”.
    */
   title?: string;
 };
 
 const DEFAULT_TITLE = "1964 & 1965 Official Guidebook & Souvenir Map";
-const GUIDEBOOK_ONLY_TITLE = "1964 & 1965 Official Guidebook";
 
 function Caption1964() {
   return (
@@ -355,62 +346,75 @@ function GuideColumn({
   );
 }
 
+function MapEntryBlock({ entry }: { entry: GuidebookMapEntry }) {
+  const nameFace = entry.nameFace ?? "times";
+  return (
+    <div className={styles.mapEntry}>
+      <Image
+        src={entry.logo.src}
+        alt={entry.logo.alt ?? ""}
+        width={entry.logo.width}
+        height={entry.logo.height}
+        className={styles.logo}
+        unoptimized
+      />
+      <p
+        className={
+          nameFace === "arial"
+            ? `${styles.pavilionName} ${styles.pavilionNameSans}`
+            : styles.pavilionName
+        }
+      >
+        {entry.name}
+      </p>
+      <p className={styles.copy}>{entry.copy}</p>
+      {entry.note ? <p className={styles.statusNote}>{entry.note}</p> : null}
+    </div>
+  );
+}
+
 function MapColumn({ map }: { map: GuidebookMapContent }) {
-  const entry = map.entry;
-  const nameFace = entry?.nameFace ?? "times";
-  const showMapHeader = Boolean(map.cover);
-  const locates: GuidebookLocateLink[] = showMapHeader
-    ? (map.locates ??
-      (map.areaMap
-        ? [{ areaMap: map.areaMap, locateHref: map.locateHref ?? "" }]
-        : []))
-    : [];
+  const entries: GuidebookMapEntry[] =
+    map.entries ?? (map.entry ? [map.entry] : []);
+  const locates: GuidebookLocateLink[] =
+    map.locates ??
+    (map.areaMap
+      ? [{ areaMap: map.areaMap, locateHref: map.locateHref ?? "" }]
+      : []);
   const multiLocate = locates.length > 1;
-  const cover = map.cover;
 
   return (
     <section className={styles.col} aria-label="1964 Official Souvenir Map">
-      {cover ? (
-        <div
-          className={
-            multiLocate
-              ? `${styles.entryHead} ${styles.entryHeadMultiLocate}`
-              : styles.entryHead
-          }
-        >
-          <Image
-            src={cover.src}
-            alt={cover.alt ?? "Cover — 1964 Official Souvenir Map"}
-            width={cover.width}
-            height={cover.height}
-            className={styles.mapCover}
-            unoptimized
-          />
-          <div className={styles.mapSide}>
-            <div
-              className={
-                multiLocate
-                  ? `${styles.locates} ${styles.locatesTwoCol}`
-                  : styles.locates
-              }
-            >
-              {locates.map((item, index) => (
-                <div
-                  key={item.locateHref || `locate-${index}`}
-                  className={styles.locate}
-                >
-                  {item.locateHref ? (
-                    <Link href={item.locateHref}>
-                      <Image
-                        src={item.areaMap.src}
-                        alt={item.areaMap.alt ?? "Area map"}
-                        width={item.areaMap.width}
-                        height={item.areaMap.height}
-                        className={styles.areaMap}
-                        unoptimized
-                      />
-                    </Link>
-                  ) : (
+      <div
+        className={
+          multiLocate
+            ? `${styles.entryHead} ${styles.entryHeadMultiLocate}`
+            : styles.entryHead
+        }
+      >
+        <Image
+          src={map.cover.src}
+          alt={map.cover.alt ?? "Cover — 1964 Official Souvenir Map"}
+          width={map.cover.width}
+          height={map.cover.height}
+          className={styles.mapCover}
+          unoptimized
+        />
+        <div className={styles.mapSide}>
+          <div
+            className={
+              multiLocate
+                ? `${styles.locates} ${styles.locatesTwoCol}`
+                : styles.locates
+            }
+          >
+            {locates.map((item, index) => (
+              <div
+                key={item.locateHref || `locate-${index}`}
+                className={styles.locate}
+              >
+                {item.locateHref ? (
+                  <Link href={item.locateHref}>
                     <Image
                       src={item.areaMap.src}
                       alt={item.areaMap.alt ?? "Area map"}
@@ -419,54 +423,39 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
                       className={styles.areaMap}
                       unoptimized
                     />
-                  )}
-                  {item.locateHref ? (
-                    <Link href={item.locateHref} className={styles.locateLink}>
-                      Locate It
-                    </Link>
-                  ) : (
-                    <span className={styles.locateLink}>Locate It</span>
-                  )}
-                </div>
-              ))}
-            </div>
-            <CaptionMap
-              subjectNoun={map.subjectNoun}
-              subjectDeterminer={map.subjectDeterminer}
-            />
+                  </Link>
+                ) : (
+                  <Image
+                    src={item.areaMap.src}
+                    alt={item.areaMap.alt ?? "Area map"}
+                    width={item.areaMap.width}
+                    height={item.areaMap.height}
+                    className={styles.areaMap}
+                    unoptimized
+                  />
+                )}
+                {item.locateHref ? (
+                  <Link href={item.locateHref} className={styles.locateLink}>
+                    Locate It
+                  </Link>
+                ) : (
+                  <span className={styles.locateLink}>Locate It</span>
+                )}
+              </div>
+            ))}
           </div>
-        </div>
-      ) : null}
-      {entry ? (
-        <div
-          className={
-            showMapHeader ? styles.mapEntry : styles.mapEntrySolo
-          }
-        >
-          <Image
-            src={entry.logo.src}
-            alt={entry.logo.alt ?? ""}
-            width={entry.logo.width}
-            height={entry.logo.height}
-            className={styles.logo}
-            unoptimized
+          <CaptionMap
+            subjectNoun={map.subjectNoun}
+            subjectDeterminer={map.subjectDeterminer}
           />
-          {entry.name ? (
-            <p
-              className={
-                nameFace === "arial"
-                  ? `${styles.pavilionName} ${styles.pavilionNameSans}`
-                  : styles.pavilionName
-              }
-            >
-              {entry.name}
-            </p>
-          ) : null}
-          {entry.copy ? <p className={styles.copy}>{entry.copy}</p> : null}
-          {entry.note ? <p className={styles.statusNote}>{entry.note}</p> : null}
-          {entry.after}
         </div>
-      ) : null}
+      </div>
+      {entries.map((item, index) => (
+        <MapEntryBlock
+          key={`${item.logo.src}-${index}`}
+          entry={item}
+        />
+      ))}
     </section>
   );
 }
@@ -481,11 +470,8 @@ export function GuidebookSouvenirPage({
   previousHref,
   nextHref,
   titleId = "guidebook-souvenir-title",
-  title,
+  title = DEFAULT_TITLE,
 }: GuidebookSouvenirPageProps) {
-  const resolvedTitle =
-    title ?? (map?.cover ? DEFAULT_TITLE : GUIDEBOOK_ONLY_TITLE);
-
   return (
     <>
       <section className={styles.hero} aria-label={heroLabel}>
@@ -508,15 +494,11 @@ export function GuidebookSouvenirPage({
       <article className={styles.article} aria-labelledby={titleId}>
         <header className={styles.titleBar}>
           <h1 id={titleId} className={styles.titleBarMain}>
-            {resolvedTitle}
+            {title}
           </h1>
         </header>
 
-        <div
-          className={
-            map ? styles.columns : `${styles.columns} ${styles.columnsTwo}`
-          }
-        >
+        <div className={styles.columns}>
           <GuideColumn
             year={1964}
             guide={guide1964}
@@ -527,7 +509,7 @@ export function GuidebookSouvenirPage({
             guide={guide1965}
             label="1965 Official Guide Book"
           />
-          {map ? <MapColumn map={map} /> : null}
+          <MapColumn map={map} />
         </div>
       </article>
 
