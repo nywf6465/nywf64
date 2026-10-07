@@ -5,7 +5,7 @@ import { JOHWAX_HERO } from "@/data/johwaxHero";
 
 export const metadata: Metadata = {
   title:
-    "1964 & 1965 Official Guidebook & Souvenir Map — Johnson Wax — nywf64.com",
+    "1964 & 1965 Official Guidebook & Souvenir Map Entries — Johnson Wax — nywf64.com",
   description:
     "Johnson Wax Pavilion entries from the 1964 and 1965 Official Guide Books and the 1964 Official Souvenir Map — 1964/1965 New York World’s Fair on nywf64.com.",
 };
@@ -15,6 +15,7 @@ export default function Johwax01Page() {
     <GuidebookSouvenirPage
       heroLabel="Johnson Wax Pavilion"
       titleId="johwax01-title"
+      title="1964 & 1965 Official Guidebook & Souvenir Map Entries"
       hero={JOHWAX_HERO}
       nav={<JohwaxNavChrome />}
       previousHref="/johwaxoverview"
