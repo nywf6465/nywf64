@@ -481,7 +481,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "20,120,100,110,120,70,100,15,25,0,0,0,0,110",
-      "href": "/adminbldg01",
+      "href": "/adminbldgoverview",
       "title": "Administration Building"
     },
     {
@@ -651,7 +651,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "240,50,280,100,299,110,299,0,235,0",
-      "href": "/adminbldg01",
+      "href": "/adminbldgoverview",
       "title": "Administration Building"
     },
     {
