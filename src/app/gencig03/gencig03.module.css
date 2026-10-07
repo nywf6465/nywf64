@@ -1,0 +1,29 @@
+/* General Cigar postcards — Hall of Magic five-fold folder panels */
+
+.folderNote {
+  margin: 0.35rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.folder {
+  margin: 1.5rem 0 0;
+  text-align: center;
+}
+
+.folderGrid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
+  margin: 0 0 0.65rem;
+}
+
+.folderPanel {
+  display: block;
+  width: min(100%, 450px);
+  height: auto;
+  border: 1px solid #000;
+}
