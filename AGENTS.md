@@ -18,6 +18,18 @@ Required stack for legacy attraction / essay / map / manual / postcards / photog
 
 `SiteHeader` → hero → attraction nav → **navy title banner** → body → `Nav2Bar`
 
+## HARD RULE: Interactive Fair maps keep native size on mobile
+
+Interactive Fair maps (legacy image maps with clickable/tappable hotspots — e.g. `/maps01` and similar area maps) **must keep their native pixel size on mobile**. Do **not** shrink-to-fit the map to the viewport width.
+
+Visitors scroll and pan (including horizontal overflow) so hotspots remain large enough to tap. When the map scrolls left/right, the **page header and footer stay stationary**; only the map viewport pans.
+
+Canonical instance: **`/maps01`** (1964 Official Souvenir Map). Link cards that open it:
+- Interactive Maps hub card → `/maps01` (`MapsLinks`)
+- Locate-it “See a *full-size* version…” note → `/maps01` (`LocateMapFullSizeLink`)
+
+Apply this whenever building or converting interactive Fair maps from legacy. Attraction “Locate It” maps (`*map` with a single pointed location) are a different pattern — follow the locate-map standard for those.
+
 ## Guidebook standard (Official Guidebook & Souvenir Map)
 
 Canonical instance: **`/bell01`** via `GuidebookSouvenirPage` + `guidebookSouvenirPage.module.css`.  

@@ -7,7 +7,7 @@ const TOPICS = [
   {
     id: "1964-official-souvenir-map",
     title: "1964 Official Souvenir Map of the Fair",
-    href: "/maps/1964-official-souvenir-map",
+    href: "/maps01",
     hoverSrc: "/images/maps-hover/1964-official-souvenir-map.jpg",
     left: "2.669%",
     top: "1.393%",
