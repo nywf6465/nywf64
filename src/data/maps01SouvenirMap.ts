@@ -1,5 +1,5 @@
 /** Auto-generated from legacy maps01.html — Official Souvenir Map tiles + hotspots. */
-/** Hotspot hrefs prefer live /slug01, else attraction overview when *01 is not shipped yet. */
+/** Hotspot hrefs always target attraction overview pages (not *01 guidebook pages). */
 
 export type MapArea = {
   shape: string;
@@ -429,7 +429,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "285,7,282,60,292,74,291,6",
-      "href": "/poraut01",
+      "href": "/porautoverview",
       "title": "Port Authority Heliport"
     }
   ],
@@ -437,13 +437,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "203,247,244,218,260,232,260,267,220,288",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "159,6,154,15,160,46,173,66,192,77,225,78,238,69,258,50,261,32,260,13,257,6",
-      "href": "/unisph01",
+      "href": "/unisphoverview",
       "title": "Unisphere"
     },
     {
@@ -481,13 +481,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "292,130,210,185,208,229,198,255,196,273,202,292,292,291",
-      "href": "/unista01",
+      "href": "/unistaoverview",
       "title": "United States"
     },
     {
       "shape": "polygon",
       "coords": "37,236,48,271,49,292,7,292,7,238,20,231",
-      "href": "/presbldg01",
+      "href": "/prebuioverview",
       "title": "Press Building"
     },
     {
@@ -653,7 +653,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "108,221,122,203,160,221,146,240",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -709,7 +709,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "60,227,73,208,103,232,91,249",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -733,7 +733,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "228,38,173,70,171,95,151,116,172,166,193,177,201,184,198,215,245,289,292,291,293,118",
-      "href": "/ford01",
+      "href": "/fordoverview",
       "title": "Ford"
     },
     {
@@ -753,7 +753,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "17,166,7,175,6,150",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -801,13 +801,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "141,37,189,63,176,118,117,92",
-      "href": "/boysco01",
+      "href": "/boyscooverview",
       "title": "Boy Scouts of America"
     },
     {
       "shape": "polygon",
       "coords": "10,190,49,286,104,288,143,213,127,183,101,143,57,146,48,117,47,156",
-      "href": "/betliv01",
+      "href": "/betlivoverview",
       "title": "Better Living Center"
     }
   ],
@@ -869,7 +869,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "291,49,278,117,292,128",
-      "href": "/bell01",
+      "href": "/belloverview",
       "title": "Bell System"
     }
   ],
@@ -895,7 +895,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "6,40,30,21,77,53,98,75,117,127,124,149,115,174,123,199,111,204,41,208,30,180,21,157,7,140",
-      "href": "/bell01",
+      "href": "/belloverview",
       "title": "Bell System"
     }
   ],
@@ -903,7 +903,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "236,283,229,292,248,293",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -933,7 +933,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "8,6,49,7,77,7,98,30,104,52,6,187",
-      "href": "/belvil01",
+      "href": "/belviloverview",
       "title": "Belgian Village"
     }
   ],
@@ -941,7 +941,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "276,142,290,128,293,179",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -953,13 +953,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "162,257,181,291,147,293,139,269",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "10,175,36,148,59,188,23,205",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -1043,7 +1043,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "60,290,127,270,136,293",
-      "href": "/panamg01",
+      "href": "/panamgoverview",
       "title": "Avis Pan-American Gardens/Highway Ride"
     }
   ],
@@ -1051,7 +1051,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "6,241,8,291,62,293,50,260,25,227",
-      "href": "/poraut01",
+      "href": "/porautoverview",
       "title": "Port Authority Heliport"
     },
     {
@@ -1093,7 +1093,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "93,6,6,55,9,6",
-      "href": "/ford01",
+      "href": "/fordoverview",
       "title": "Ford"
     },
     {
@@ -1105,7 +1105,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "114,43,153,62,178,87,93,140,57,119,55,100,69,75",
-      "href": "/avis01",
+      "href": "/avisoverview",
       "title": "Avis Antique Car Ride"
     }
   ],
@@ -1113,7 +1113,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "33,98,6,64,7,96,15,108",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -1137,7 +1137,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "6,123,9,226,46,238,59,206",
-      "href": "/autthr01",
+      "href": "/autthroverview",
       "title": "Auto Thrill Show"
     }
   ],
@@ -1163,7 +1163,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "110,101,144,79,196,96,245,83,261,80,280,86,293,107,290,222,201,201,162,180",
-      "href": "/autthr01",
+      "href": "/autthroverview",
       "title": "Auto Thrill Show"
     }
   ],
@@ -1279,7 +1279,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "236,173,250,200,293,178,281,133,261,121,252,156",
-      "href": "/austria01",
+      "href": "/austriaoverview",
       "title": "Austria"
     }
   ],
@@ -1329,13 +1329,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "293,8,292,200,247,236,221,199,259,152,283,113,278,67,267,25,274,6",
-      "href": "/belvil01",
+      "href": "/belviloverview",
       "title": "Belgian Village"
     },
     {
       "shape": "polygon",
       "coords": "147,126,123,117,118,96,128,80,134,59,143,51,154,56,155,76,169,87,168,110",
-      "href": "/astfount01",
+      "href": "/astfountoverview",
       "title": "Astral Fountain"
     }
   ],
@@ -1343,13 +1343,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "270,238,290,222,280,203,259,210",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "293,249,291,290,275,256",
-      "href": "/poraut01",
+      "href": "/porautoverview",
       "title": "Port Authority Heliport"
     },
     {
@@ -1379,7 +1379,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "254,6,278,47,293,56,292,7",
-      "href": "/ford01",
+      "href": "/fordoverview",
       "title": "Ford"
     },
     {
@@ -1397,7 +1397,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "269,186,291,171,292,201,280,198",
-      "href": "/arlhat01",
+      "href": "/arlhatoverview",
       "title": "Arlington Hat"
     }
   ],
@@ -1405,13 +1405,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "126,183,160,160,138,130,97,143",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "65,7,7,6,6,88,12,100,69,65,52,51,44,46,43,28",
-      "href": "/poraut01",
+      "href": "/porautoverview",
       "title": "Port Authority Heliport"
     },
     {
@@ -1459,13 +1459,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "121,115,135,126,114,133",
-      "href": "/arlhat01",
+      "href": "/arlhatoverview",
       "title": "Arlington Hat"
     },
     {
       "shape": "polygon",
       "coords": "272,283,284,274,290,286,280,293",
-      "href": "/arlhat01",
+      "href": "/arlhatoverview",
       "title": "Arlington Hat"
     }
   ],
@@ -1473,25 +1473,25 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "136,56,105,53,106,26,136,30",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "226,262,246,238,270,271,243,287",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "204,6,215,21,227,34,237,42,251,51,271,56,289,60,290,8",
-      "href": "/unista01",
+      "href": "/unistaoverview",
       "title": "United States"
     },
     {
       "shape": "polygon",
       "coords": "47,7,52,60,28,66,11,7",
-      "href": "/presbldg01",
+      "href": "/prebuioverview",
       "title": "Press Building"
     },
     {
@@ -1515,13 +1515,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "7,132,52,188,133,282,112,292,8,290",
-      "href": "/ford01",
+      "href": "/fordoverview",
       "title": "Ford"
     },
     {
       "shape": "polygon",
       "coords": "255,240,260,255,278,240,272,228",
-      "href": "/arlhat01",
+      "href": "/arlhatoverview",
       "title": "Arlington Hat"
     }
   ],
@@ -1535,13 +1535,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "67,7,62,18,50,31,39,43,19,53,7,56,8,8",
-      "href": "/unista01",
+      "href": "/unistaoverview",
       "title": "United States"
     },
     {
       "shape": "polygon",
       "coords": "161,293,170,282,177,261,196,250,213,250,233,254,239,268,245,279,256,293",
-      "href": "/unisph01",
+      "href": "/unisphoverview",
       "title": "Unisphere"
     },
     {
@@ -1613,7 +1613,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "199,77,218,67,230,70,236,83,228,139,217,137,214,130,204,130",
-      "href": "/argent01",
+      "href": "/argentoverview",
       "title": "Argentina/Fine Arts/Bargreen Buffet"
     }
   ],
@@ -1621,7 +1621,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "66,212,42,207,55,171,75,172",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -1675,31 +1675,31 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "7,276,7,293,27,292",
-      "href": "/belvil01",
+      "href": "/belviloverview",
       "title": "Belgian Village"
     },
     {
       "shape": "polygon",
       "coords": "52,9,158,10,162,35,187,33,198,59,173,55,154,68,154,81,44,108",
-      "href": "/panamg01",
+      "href": "/panamgoverview",
       "title": "Avis Pan-American Gardens/Highway Ride"
     },
     {
       "shape": "polygon",
       "coords": "31,194,40,165,51,169,42,197",
-      "href": "/arlhat01",
+      "href": "/arlhatoverview",
       "title": "Arlington Hat"
     },
     {
       "shape": "polygon",
       "coords": "172,31,188,28,185,7,167,7",
-      "href": "/arlhat01",
+      "href": "/arlhatoverview",
       "title": "Arlington Hat"
     },
     {
       "shape": "polygon",
       "coords": "6,149,20,154,6,187",
-      "href": "/amerisr01",
+      "href": "/amerisroverview",
       "title": "American-Israel Pavilion"
     }
   ],
@@ -1707,13 +1707,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "192,230,212,230,209,266,188,268",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "circle",
       "coords": "145,14,20",
-      "href": "/atomhos01",
+      "href": "/atomhosoverview",
       "title": ""
     },
     {
@@ -1775,7 +1775,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "137,130,152,98,186,154,181,188",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -1787,7 +1787,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "8,127,64,215,71,254,72,268,70,283,68,291,10,291",
-      "href": "/unista01",
+      "href": "/unistaoverview",
       "title": "United States"
     },
     {
@@ -1853,31 +1853,31 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "146,156,131,164,135,171,144,200,171,199",
-      "href": "/brilion01",
+      "href": "/brilionoverview",
       "title": "British Lion Pub"
     },
     {
       "shape": "polygon",
       "coords": "165,102,197,155,246,131,227,79,219,20,208,77,189,78",
-      "href": "/bilgra01",
+      "href": "/bilgraoverview",
       "title": "Billy Graham"
     },
     {
       "shape": "polygon",
       "coords": "110,155,130,169,135,199,104,209,93,200,99,173",
-      "href": "/berlin01",
+      "href": "/berlinoverview",
       "title": "Berlin"
     },
     {
       "shape": "polygon",
       "coords": "114,149,132,131,140,152,126,158",
-      "href": "/arlhat01",
+      "href": "/arlhatoverview",
       "title": "Arlington Hat"
     },
     {
       "shape": "polygon",
       "coords": "229,72,287,33,281,97,242,93",
-      "href": "/amex01",
+      "href": "/amexoverview",
       "title": "American Express"
     }
   ],
@@ -1885,19 +1885,19 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "35,229,57,237,46,270,28,266",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "9,106,22,116,42,112,35,133,9,118",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "93,107,71,95,91,50,104,62",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -2023,13 +2023,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "12,90,32,96,24,110,7,105",
-      "href": "/arlhat01",
+      "href": "/arlhatoverview",
       "title": "Arlington Hat"
     },
     {
       "shape": "polygon",
       "coords": "189,214,225,242,209,251,180,229",
-      "href": "/allsta01",
+      "href": "/allstaoverview",
       "title": "All State Properties and Macys"
     }
   ],
@@ -2079,7 +2079,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "189,143,207,126,263,98,279,126,257,150,221,173",
-      "href": "/alaska01",
+      "href": "/alaskaoverview",
       "title": "Alaska"
     }
   ],
@@ -2087,19 +2087,19 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "75,145,89,138,113,171,100,179",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "274,209,294,249,254,249",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "222,31,261,29,262,51,220,56",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -2219,19 +2219,19 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "291,269,276,293,293,292",
-      "href": "/belvil01",
+      "href": "/belviloverview",
       "title": "Belgian Village"
     },
     {
       "shape": "polygon",
       "coords": "291,147,266,139,245,181,259,193,276,177,289,189,293,192",
-      "href": "/amerisr01",
+      "href": "/amerisroverview",
       "title": "American-Israel Pavilion"
     },
     {
       "shape": "polygon",
       "coords": "10,99,25,65,122,100,110,122,70,135,45,153",
-      "href": "/africa01",
+      "href": "/africaoverview",
       "title": "African Pavilion"
     }
   ],
@@ -2239,13 +2239,13 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "232,6,266,6,255,22",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
       "shape": "polygon",
       "coords": "26,56,48,41,58,86,31,88",
-      "href": "/brarai01",
+      "href": "/braraioverview",
       "title": ""
     },
     {
@@ -2329,19 +2329,19 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     {
       "shape": "polygon",
       "coords": "173,250,189,208,205,212,188,246",
-      "href": "/amprid01",
+      "href": "/ampridoverview",
       "title": "Amphicar Ride"
     },
     {
       "shape": "polygon",
       "coords": "61,57,49,17,68,8,95,8,107,30",
-      "href": "/amind01",
+      "href": "/amindoverview",
       "title": "American Indian Exposition"
     },
     {
       "shape": "polygon",
       "coords": "200,98,218,105,253,45,228,29,220,6,212,22,209,45",
-      "href": "/aertow01",
+      "href": "/aertowoverview",
       "title": "Aerial Tower Ride & Waffle Restaurant"
     }
   ],

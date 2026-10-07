@@ -25,7 +25,7 @@ export const metadata: Metadata = {
  * (no shrink-to-fit). Visitors scroll/pan to tap hotspots. Horizontal
  * pan stays inside `.mapScroller` so header/footer remain stationary.
  *
- * Stack: maps hero → navy title → instruction → native-size map scroller.
+ * Stack: souvenir-map hero → navy title → instruction → native-size map scroller.
  */
 export default function Maps01Page() {
   const mapNames = Array.from(
