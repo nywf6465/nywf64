@@ -1,0 +1,267 @@
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.35rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  color: #000;
+  text-align: left;
+}
+
+.banner {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  margin: 0 0 0.75rem;
+}
+
+.bannerLeft {
+  justify-content: flex-start;
+}
+
+.bannerArt {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.fullBleed {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  margin: 0 0 0.75rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.splitRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem 1rem;
+  align-items: flex-start;
+  width: 100%;
+  margin: 0 0 0.75rem;
+}
+
+.sceneMain {
+  flex: 1 1 420px;
+  min-width: 0;
+}
+
+.sceneMainArt {
+  display: block;
+  width: 100%;
+  max-width: 675px;
+  height: auto;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.sidebar {
+  flex: 0 1 245px;
+  min-width: 200px;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.sidebar p {
+  margin: 0 0 0.85em;
+}
+
+.sidebarCenter {
+  text-align: center;
+}
+
+.sidebarLogo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 0.65rem;
+}
+
+.threeCol {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 0.65rem 1rem;
+  width: 100%;
+  margin: 0 0 0.75rem;
+  align-items: start;
+}
+
+.threeColWide {
+  grid-column: 1 / -1;
+}
+
+.threeColCenter {
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+.welcomeLead {
+  display: grid;
+  grid-template-columns: 150px 1fr;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1rem;
+  align-items: start;
+}
+
+.welcomePortrait {
+  display: block;
+  width: 150px;
+  height: auto;
+  border: 4px solid #000;
+  box-sizing: border-box;
+}
+
+.welcomeCopy {
+  font-family: "Times New Roman", Georgia, Times, serif;
+  font-size: clamp(1rem, 2.2vw, 1.25rem);
+  line-height: 1.45;
+}
+
+.welcomeCopy p {
+  margin: 0 0 0.85em;
+}
+
+.signatureBlock {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 1rem;
+  align-items: end;
+  margin: 1rem 0;
+}
+
+.signatureArt {
+  display: block;
+  width: 198px;
+  height: auto;
+}
+
+.signatureMeta {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 15px;
+  line-height: 1.35;
+}
+
+.legendRow {
+  display: grid;
+  grid-template-columns: 1fr 300px;
+  gap: 1rem;
+  margin: 1rem 0 0;
+  align-items: start;
+}
+
+.legendList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.legendItem {
+  display: grid;
+  grid-template-columns: 36px 1fr;
+  gap: 0.5rem;
+  align-items: center;
+  margin: 0 0 0.35rem;
+}
+
+.legendBadge {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 24px;
+  margin-left: auto;
+  border: 1px solid #000;
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.storeFrame {
+  width: min(604px, 100%);
+  margin: 0 auto;
+}
+
+.storeBar {
+  height: 10px;
+  background: #000;
+}
+
+.storeInner {
+  padding: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.source {
+  margin: 1rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .threeCol {
+    grid-template-columns: 1fr;
+  }
+
+  .legendRow {
+    grid-template-columns: 1fr;
+  }
+
+  .welcomeLead {
+    grid-template-columns: 1fr;
+  }
+}
