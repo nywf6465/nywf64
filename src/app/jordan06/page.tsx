@@ -100,16 +100,16 @@ export default function Jordan06Page() {
             unoptimized
           />
 
-          <p className={styles.source}>
-            SOURCE: Groundbreaking Brochure, The Pavilion of The Hashemite
-            Kingdom of Jordan
-          </p>
-
           {JORDAN06_TRANSCRIPTION.map((paragraph) => (
             <p key={paragraph.slice(0, 48)} className={styles.transcript}>
               {paragraph}
             </p>
           ))}
+
+          <p className={styles.source}>
+            SOURCE: Groundbreaking Brochure, The Pavilion of The Hashemite
+            Kingdom of Jordan
+          </p>
         </div>
       </article>
 
