@@ -63,7 +63,8 @@ export default function KidlanOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/kidlanoverview"
+        previousHref="/kidlan01"
+        explicitPrevious
         overviewHref="/kidlanoverview"
         nextHref="/kidlan01"
       />

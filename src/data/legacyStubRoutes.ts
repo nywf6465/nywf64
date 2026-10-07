@@ -7494,18 +7494,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/julfaroverview",
     nextHref: "/julfar01",
   },
-  "kidlan01": {
-    slug: "kidlan01",
-    title: "1964 & 1965 Official Guidebook & Souvenir",
-    metaTitle: "kidlan 1964 & 1965 Official Guidebook & Souvenir — nywf64.com",
-    metaDescription: "kidlan 1964 & 1965 Official Guidebook & Souvenir — Kiddyland at the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "KidlanNavChrome",
-    overviewHref: "/kidlanoverview",
-    overviewLabel: "Kiddyland overview",
-    placeholder: "Kiddyland content",
-    previousHref: "/kidlanoverview",
-    nextHref: "/kidlan01",
-  },
   "kidlan02": {
     slug: "kidlan02",
     title: "Map Entries",
