@@ -83,6 +83,12 @@ const nextConfig: NextConfig = {
         destination: "/lunfountoverview",
         permanent: true,
       },
+      // Entrance Towers — amusement locate map renamed to legacy slug
+      {
+        source: "/towersamupage",
+        destination: "/towersamumap",
+        permanent: true,
+      },
     ];
   },
 };
