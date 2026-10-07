@@ -37,7 +37,7 @@ const TOPICS = [
   {
     id: "federal-and-state-area-map",
     title: "Federal & State Area Map",
-    href: "/maps/federal-and-state-area-map",
+    href: "/maps04",
     hoverSrc: "/images/maps-hover/federal-and-state-area-map.jpg",
     left: "50.652%",
     top: "27.760%",
