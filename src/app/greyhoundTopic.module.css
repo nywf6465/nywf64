@@ -1,0 +1,541 @@
+/*
+ * Greyhound custom topic pages (/greyhound06–/greyhound14).
+ * Stack: hero → GreyhoundNavChrome → navy title → article → Nav2Bar.
+ * HARD RULE — navy title banner (#26346e) beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ * Red / pink pamphlet colors are original folder chrome, not nav chrome.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner,
+.articleInnerWide {
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+}
+
+.articleInnerWide {
+  width: min(56.875rem, 100%);
+}
+
+.articleInner p,
+.articleInnerWide p {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.sectionTitle {
+  margin: 1.25rem 0 0.85rem;
+  color: #000;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.sectionTitleLarge {
+  margin: 1.5rem 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.sectionSub {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.areaTitle {
+  color: #000;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.dropCap {
+  float: left;
+  margin: 0 0.08em 0 0;
+  font-size: 2.1rem;
+  font-weight: 700;
+  line-height: 0.85;
+}
+
+.figure {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto 1.25rem;
+}
+
+.photoFrame,
+.photoFramePlain {
+  display: inline-block;
+  line-height: 0;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+.photoFrame {
+  border: 1px solid #000;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #000;
+}
+
+.captionEm {
+  font-style: italic;
+}
+
+.source,
+.sourceBook {
+  margin: 0.25rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: #000;
+}
+
+.articleInner .source,
+.articleInnerWide .source,
+.articleInner .sourceBook,
+.articleInnerWide .sourceBook {
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  margin: 0.25rem 0 1rem;
+}
+
+.source a {
+  color: #0066cc;
+}
+
+.legend {
+  margin: 0.4rem 0 0;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+  width: 100%;
+}
+
+.legendItem {
+  display: block;
+}
+
+.sectionRule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1.25rem 0;
+}
+
+.quoteBox {
+  margin: 0 0 1.25rem;
+  border: 1px solid #000;
+  padding: 0.85rem 1rem;
+  box-sizing: border-box;
+}
+
+.quoteBox p {
+  margin: 0 0 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.quoteBox p:last-child {
+  margin-bottom: 0;
+}
+
+.quoteCite {
+  margin: 0.85rem 0 0 1.5rem;
+}
+
+.webmasterBox {
+  margin: 1.5rem 0 0.75rem;
+  border: 1px solid #000;
+  padding: 0.85rem 1rem;
+  box-sizing: border-box;
+}
+
+.webmasterBox p {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.webmasterBox p:last-child {
+  margin-bottom: 0;
+}
+
+.signoff {
+  margin: 0.85rem 0 0;
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.noteBox {
+  margin: 1.25rem 0;
+  padding: 0.65rem 0.75rem;
+}
+
+.noteBox p {
+  margin: 0;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.twoCol {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem 1.25rem;
+  margin: 0 0 1.25rem;
+}
+
+.twoColCopy {
+  flex: 1 1 16rem;
+  min-width: min(16rem, 100%);
+}
+
+.photoPair {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1.25rem;
+}
+
+.coversRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 1rem 1.5rem;
+  margin: 0 0 1.75rem;
+}
+
+.pamphletTitle {
+  margin: 0 0 0.35rem;
+  color: #ff0000;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.15;
+  text-align: center;
+}
+
+.pamphletSubtitle {
+  margin: 0 0 1rem;
+  color: #000;
+  font-size: clamp(1rem, 2.4vw, 1.35rem);
+  font-style: italic;
+  font-weight: 400;
+  text-align: center;
+}
+
+.pamphletLead {
+  color: #ff0000;
+}
+
+.bigFairRow {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1.5rem;
+}
+
+@media (min-width: 700px) {
+  .bigFairRow {
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+  }
+}
+
+.pamphletBanner {
+  margin: 0 0 1.5rem;
+  padding: 0.75rem 0.85rem 0.65rem;
+  background: #ff0000;
+  color: #fff;
+  box-sizing: border-box;
+}
+
+.pamphletBannerHead {
+  margin: 0 0 0.75rem;
+  color: #fff;
+  font-size: 1.15rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.bannerGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem 0.85rem;
+  align-items: start;
+}
+
+@media (min-width: 800px) {
+  .bannerGrid {
+    grid-template-columns: auto 1fr 1fr auto;
+  }
+}
+
+.bannerCopy {
+  margin: 0;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+  background: #fff;
+  padding: 0.45rem 0.5rem;
+}
+
+.bannerCopy p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.fountainBlock {
+  background: #fff;
+  padding: 0.25rem;
+  text-align: left;
+}
+
+.fountainLabel {
+  margin: 0.25rem 0 0;
+  color: #000;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.bannerTurn {
+  margin: 0.75rem 0 0;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vehicleGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.65rem;
+  margin: 0 0 0.75rem;
+}
+
+@media (min-width: 700px) {
+  .vehicleGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.vehicleCard {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid #ff0000;
+  background: #fff;
+  padding: 0.45rem;
+  box-sizing: border-box;
+}
+
+.vehicleHead {
+  margin: 0 0 0.5rem;
+  color: #ff0000;
+  font-size: 1rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.vehicleBody {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.4rem 0.55rem;
+  align-items: end;
+}
+
+.vehicleBody p,
+.vehicleFull p {
+  margin: 0;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.vehicleFull {
+  margin-top: 0.35rem;
+}
+
+.vehiclePhoto {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.vehicleLabel {
+  margin: 0.45rem 0 0;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.smallTo {
+  font-size: 0.7em;
+  font-weight: 700;
+}
+
+.ladyHead {
+  margin: 0;
+  font-size: clamp(1.6rem, 4vw, 2.4rem);
+  font-weight: 700;
+  line-height: 1.05;
+  text-align: right;
+}
+
+.ladyPink {
+  color: #ff80ff;
+  font-size: clamp(2rem, 5vw, 3rem);
+}
+
+.ladyIntro {
+  margin: 0.35rem 0;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.storyGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1rem;
+}
+
+@media (min-width: 700px) {
+  .storyGrid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+.honorsGrid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 1rem 1.25rem;
+  margin: 0.75rem 0 1rem;
+}
+
+@media (min-width: 700px) {
+  .honorsGrid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.honorsCol {
+  text-align: center;
+}
+
+.honorsCol p {
+  margin: 0 0 0.45rem;
+}
+
+.happierTitle {
+  margin: 1.5rem 0 1rem;
+  color: #999;
+  font-size: clamp(1.4rem, 3vw, 2rem);
+  font-weight: 700;
+  text-align: center;
+}
+
+.articleInner p.italicBlock {
+  font-style: italic;
+}
+
+.collectibleHead {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.brandNywf {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+  font-weight: 700;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-size: 0.7em;
+  font-weight: 700;
+}
