@@ -1,0 +1,29 @@
+/*
+ * Johnson Wax advertising — second (national) ad frame.
+ * Legacy johwax04.html: TABLE BORDER="1" WIDTH="550"; SOURCE is caption below.
+ */
+
+.adFrame {
+  width: min(550px, 100%);
+  margin: 0;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  background: #fff;
+  overflow: hidden;
+}
+
+.adFrame :global(.lead) {
+  width: 100%;
+  max-width: none;
+  height: auto;
+}
+
+.adSource {
+  width: min(550px, 100%);
+  margin: 0.45rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+  color: #000;
+}

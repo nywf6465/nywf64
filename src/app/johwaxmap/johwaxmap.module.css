@@ -1,0 +1,42 @@
+.hero {
+  width: 100%;
+  background: #fff;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(56rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.intro {
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.mapWrap {
+  width: 100%;
+  max-width: 930px;
+  margin: 0;
+  line-height: 0;
+  text-align: left;
+  border: 1px solid #000;
+  background: #fff;
+  overflow: auto;
+}
+
+.mapArt {
+  display: block;
+  width: 100%;
+  max-width: 930px;
+  height: auto;
+  margin: 0;
+}

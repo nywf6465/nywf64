@@ -63,7 +63,8 @@ export default function JohwaxOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/johwaxoverview"
+        previousHref="/johwax17"
+        explicitPrevious
         overviewHref="/johwaxoverview"
         nextHref="/johwax01"
       />
