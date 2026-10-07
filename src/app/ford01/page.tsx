@@ -27,7 +27,7 @@ export default function Ford01Page() {
       }}
       nav={<FordNavChrome />}
       previousHref="/fordoverview"
-      nextHref="/fordmanual"
+      nextHref="/ford02"
       guide1964={{
         cover: {
           src: "/images/ford01/guide1964.jpg",

@@ -18,7 +18,9 @@ export const metadata: Metadata = {
 /**
  * Ford locate-it map page (`/fordmap`).
  * Stack: hero → FordNavChrome → navy title bar → left-justified body → Nav2Bar.
- * Title bar (“1964 Official Souvenir Map”) is the map-page standard.
+ * Body from legacy fordmap.shtml (Transportation Area cream map + fordmap.gif).
+ * Yellowing removed: clean cream base + GIF arrow.
+ * Adobe Reader chrome omitted.
  */
 export default function FordMapPage() {
   return (
@@ -66,8 +68,9 @@ export default function FordMapPage() {
 
       <Nav2Bar
         previousHref="/ford01"
+        explicitPrevious
         overviewHref="/fordoverview"
-        nextHref="/ford01"
+        nextHref="/ford02"
       />
     </>
   );
