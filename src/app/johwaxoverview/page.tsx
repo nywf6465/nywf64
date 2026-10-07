@@ -52,8 +52,8 @@ export default function JohwaxOverviewPage() {
             <Image
               src="/images/johwaxoverview/photo.jpg"
               alt="Johnson Wax Pavilion — To Be Alive"
-              width={958}
-              height={706}
+              width={1271}
+              height={1238}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
