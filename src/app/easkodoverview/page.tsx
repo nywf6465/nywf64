@@ -51,8 +51,8 @@ export default function EaskodOverviewPage() {
             <Image
               src="/images/easkodoverview/photo.jpg"
               alt="Eastman Kodak Pavilion — Picture Tower and moondeck"
-              width={958}
-              height={706}
+              width={1527}
+              height={1030}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
