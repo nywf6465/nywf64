@@ -38,13 +38,13 @@ export default function Maps01Page() {
 
   return (
     <main>
-      <section className={styles.hero} aria-label="Interactive Maps">
+      <section className={styles.hero} aria-label="1964 Official Souvenir Map">
         <div className={`${styles.frame} ${heroBottomBar.photoFrame}`}>
           <Image
-            src="/images/maps-hero.jpg"
-            alt="Interactive Maps & Photos — maps and photographs of the Fair"
-            width={1910}
-            height={823}
+            src="/images/maps01/hero-banner.jpg"
+            alt="1964 Official Souvenir Map"
+            width={1903}
+            height={826}
             priority
             sizes="100vw"
             className={styles.art}
