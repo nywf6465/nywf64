@@ -67,7 +67,7 @@ const TOPICS = [
   {
     id: "the-big-picture",
     title: "The BIG Picture",
-    href: "/maps/the-big-picture",
+    href: "/big_picture01",
     hoverSrc: "/images/maps-hover/the-big-picture.jpg",
     left: "2.669%",
     top: "78.457%",

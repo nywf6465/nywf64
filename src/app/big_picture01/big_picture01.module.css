@@ -1,0 +1,137 @@
+/*
+ * Interactive Fair aerial photograph — The BIG Picture (/big_picture01).
+ *
+ * HARD RULE: Interactive Fair maps/photos must keep native size on mobile
+ * (no shrink-to-fit). Visitors scroll/pan to tap hotspots.
+ * Pan (horizontal and vertical) is confined to `.mapScroller` so
+ * SiteHeader / SiteFooter stay stationary while the map moves.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+/* Hero frame/art: use overviewPageHero.module.css (--letter-hero-height). */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.backLink {
+  margin: 0 0 0.75rem;
+  padding: 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.backLink a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.backLink a:hover,
+.backLink a:focus-visible {
+  text-decoration: underline;
+}
+
+.instruction {
+  margin: 0 0 0.35rem;
+  padding: 0 0.85rem;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+}
+
+
+/*
+ * Scroll/pan viewport — native map size inside; page chrome outside.
+ * Do not use width:100% / max-width on the map surface or tiles.
+ * Desktop: drag-to-pan (InteractiveMapScroller). Touch: native overflow pan.
+ */
+.mapScroller {
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  border: 1px solid #000;
+  background: #fff;
+  /* Touch: allow two-axis pan without fighting body scroll awkwardly */
+  /* Cap height so tall maps pan vertically inside the scroller */
+  max-height: calc(100dvh - 12rem);
+  touch-action: pan-x pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.mapScrollerDragging {
+  cursor: grabbing;
+}
+
+.mapSurface {
+  display: grid;
+  grid-template-columns: 300px 300px 300px 300px 300px 300px 300px 300px 300px 300px 315px;
+  width: 3315px;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 0;
+  background: #fff;
+}
+
+.tile {
+  display: block;
+  width: var(--tile-w);
+  height: var(--tile-h);
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+.tileImg {
+  display: block;
+  width: var(--tile-w);
+  height: var(--tile-h);
+  max-width: none !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
