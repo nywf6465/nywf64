@@ -4,6 +4,7 @@ import { AdvertisingPage } from "@/components/AdvertisingPage";
 import { JohwaxNavChrome } from "@/components/JohwaxNavChrome";
 import { JOHWAX_HERO } from "@/data/johwaxHero";
 import styles from "@/styles/advertisingPage.module.css";
+import local from "./johwax04.module.css";
 
 export const metadata: Metadata = {
   title: "Advertising — Johnson Wax — nywf64.com",
@@ -37,62 +38,66 @@ export default function Johwax04Page() {
       ]}
       content={
         <>
-          <Image
-            src="/images/johwax04/johwax49.jpg"
-            alt="National advertisement (top)"
-            width={550}
-            height={216}
-            className={styles.lead}
-            unoptimized
-          />
-          <p className={styles.headline}>
-            <span className={styles.headlineLead}>Entertainment for Everyone!</span>
-          </p>
-          <div className={styles.split}>
-            <div className={styles.copy}>
-              <p>
-                <strong>Movie fans</strong> can sit in a Theater-in-the-Air! See
-                Johnson&apos;s great color movie that dramatizes the universal joy
-                of living! Shown on the Tri-Screen System that puts you in the
-                picture!
-              </p>
-              <p>
-                <strong>Linguists</strong> can talk to multi-lingual guides from
-                nations served by Johnson Wax in every part of the world.
-              </p>
-              <p>
-                <strong>Homemakers</strong> will be fascinated by Johnson&apos;s real
-                Electronic Brain. Ask it your home-care questions. See it flash
-                back the answers instantly.
-              </p>
-              <p>
-                <strong>Children</strong> will love the surprise-filled Fun Machine
-                with all kinds of gimmicks and gadgets to intrigue and delight all
-                ages.
-              </p>
-              <p>
-                <strong>Everybody who wears shoes</strong> can get a free
-                shoe-shine in Johnson&apos;s Automated Shoe Shine Parlor.
-              </p>
+          <div className={local.adFrame}>
+            <Image
+              src="/images/johwax04/johwax49.jpg"
+              alt="National advertisement (top)"
+              width={550}
+              height={216}
+              className={local.adArt}
+              unoptimized
+            />
+            <p className={styles.headline}>
+              <span className={styles.headlineLead}>
+                Entertainment for Everyone!
+              </span>
+            </p>
+            <div className={styles.split}>
+              <div className={styles.copy}>
+                <p>
+                  <strong>Movie fans</strong> can sit in a Theater-in-the-Air! See
+                  Johnson&apos;s great color movie that dramatizes the universal joy
+                  of living! Shown on the Tri-Screen System that puts you in the
+                  picture!
+                </p>
+                <p>
+                  <strong>Linguists</strong> can talk to multi-lingual guides from
+                  nations served by Johnson Wax in every part of the world.
+                </p>
+                <p>
+                  <strong>Homemakers</strong> will be fascinated by Johnson&apos;s
+                  real Electronic Brain. Ask it your home-care questions. See it
+                  flash back the answers instantly.
+                </p>
+                <p>
+                  <strong>Children</strong> will love the surprise-filled Fun
+                  Machine with all kinds of gimmicks and gadgets to intrigue and
+                  delight all ages.
+                </p>
+                <p>
+                  <strong>Everybody who wears shoes</strong> can get a free
+                  shoe-shine in Johnson&apos;s Automated Shoe Shine Parlor.
+                </p>
+              </div>
             </div>
+            <p className={styles.headline}>
+              <span className={styles.headlineRest}>
+                at the Johnson Wax Golden Rondelle
+              </span>
+            </p>
+            <p className={styles.copy} style={{ textAlign: "center" }}>
+              Eisenhower Boulevard and the Avenue of Europe
+            </p>
+            <Image
+              src="/images/johwax04/johwax48.jpg"
+              alt="National advertisement (bottom)"
+              width={550}
+              height={370}
+              className={styles.lead}
+              unoptimized
+            />
           </div>
-          <p className={styles.headline}>
-            <span className={styles.headlineRest}>
-              at the Johnson Wax Golden Rondelle
-            </span>
-          </p>
-          <p className={styles.copy} style={{ textAlign: "center" }}>
-            Eisenhower Boulevard and the Avenue of Europe
-          </p>
-          <Image
-            src="/images/johwax04/johwax48.jpg"
-            alt="National advertisement (bottom)"
-            width={550}
-            height={370}
-            className={styles.lead}
-            unoptimized
-          />
-          <p className={styles.source}>SOURCE: National Advertisement</p>
+          <p className={local.adSource}>SOURCE: National Advertisement</p>
         </>
       }
     />
