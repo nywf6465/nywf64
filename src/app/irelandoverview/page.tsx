@@ -63,7 +63,7 @@ export default function IrelandOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/irelandoverview"
+        previousHref="/ireland04"
         overviewHref="/irelandoverview"
         nextHref="/ireland01"
       />
