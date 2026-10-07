@@ -50,8 +50,8 @@ export default function ChrsciOverviewPage() {
             <Image
               src="/images/chrscioverview/photo.jpg"
               alt="Christian Science pavilion"
-              width={958}
-              height={776}
+              width={1581}
+              height={995}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
