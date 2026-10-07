@@ -63,7 +63,8 @@ export default function JapanOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/japanoverview"
+        previousHref="/japan14"
+        explicitPrevious
         overviewHref="/japanoverview"
         nextHref="/japan01"
       />
