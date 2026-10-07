@@ -12,6 +12,7 @@ export const metadata: Metadata = {
     "Film stills from Johnson Wax’s “to be alive!” — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+/** Film stills stitched from legacy tile strips into single composites. */
 export default function Johwax15Page() {
   return (
     <JohwaxSequencePage
@@ -23,7 +24,7 @@ export default function Johwax15Page() {
       previousHref="/johwax14"
       overviewHref="/johwaxoverview"
       nextHref="/johwax16"
-      columns={3}
+      columns={1}
       scans={[...JOHWAX_15_SCANS]}
       intro={
         <div className={seqStyles.introRow}>
