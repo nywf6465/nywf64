@@ -30,6 +30,7 @@ Canonical instances:
 - **`/maps03`** — International Area Map (`MapsLinks` hub card)
 - **`/maps04`** — Federal & State Area Map (`MapsLinks` hub card)
 - **`/maps05`** — Transportation Area Map (`MapsLinks` hub card)
+- **`/maps06`** — Amusement Area Map (`MapsLinks` hub card)
 
 Apply this whenever building or converting interactive Fair maps from legacy. Attraction “Locate It” maps (`*map` with a single pointed location) are a different pattern — follow the locate-map standard for those.
 

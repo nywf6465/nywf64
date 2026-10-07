@@ -57,7 +57,7 @@ const TOPICS = [
   {
     id: "amusement-area-map",
     title: "Amusement Area Map",
-    href: "/maps/amusement-area-map",
+    href: "/maps06",
     hoverSrc: "/images/maps-hover/amusement-area-map.jpg",
     left: "50.652%",
     top: "53.162%",
