@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { InteractiveMapScroller } from "@/components/InteractiveMapScroller";
 import {
   MAPS01_INSTRUCTION,
   MAPS01_MAPS,
@@ -22,8 +23,9 @@ export const metadata: Metadata = {
  * Body from legacy maps01.html (tiled OfficialR*C* image map).
  *
  * HARD RULE — Interactive Fair maps must keep native size on mobile
- * (no shrink-to-fit). Visitors scroll/pan to tap hotspots. Horizontal
- * pan stays inside `.mapScroller` so header/footer remain stationary.
+ * (no shrink-to-fit). Visitors scroll/pan to tap hotspots. Desktop
+ * drag-to-pan is enabled; horizontal pan stays inside `.mapScroller`
+ * so header/footer remain stationary.
  *
  * Stack: souvenir-map hero → navy title → instruction → native-size map scroller.
  */
@@ -65,10 +67,13 @@ export default function Maps01Page() {
         </p>
 
         <p className={styles.instruction}>{MAPS01_INSTRUCTION}</p>
+        <p className={styles.panHint}>
+          Drag the map to pan. Click or tap a pavilion to open it.
+        </p>
 
-        <div
+        <InteractiveMapScroller
           className={styles.mapScroller}
-          role="region"
+          draggingClassName={styles.mapScrollerDragging}
           aria-label="1964 Official Souvenir Map — scroll or pan to explore"
         >
           <div
@@ -118,7 +123,7 @@ export default function Maps01Page() {
               ))}
             </map>
           ))}
-        </div>
+        </InteractiveMapScroller>
       </article>
     </main>
   );

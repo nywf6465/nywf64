@@ -78,7 +78,7 @@
 }
 
 .instruction {
-  margin: 0 0 0.85rem;
+  margin: 0 0 0.35rem;
   padding: 0 0.85rem;
   color: #000;
   font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
@@ -88,9 +88,21 @@
   text-align: left;
 }
 
+.panHint {
+  margin: 0 0 0.85rem;
+  padding: 0 0.85rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+}
+
 /*
  * Scroll/pan viewport — native map size inside; page chrome outside.
  * Do not use width:100% / max-width on the map surface or tiles.
+ * Desktop: drag-to-pan (InteractiveMapScroller). Touch: native overflow pan.
  */
 .mapScroller {
   width: 100%;
@@ -103,6 +115,12 @@
   background: #fff;
   /* Touch: allow two-axis pan without fighting body scroll awkwardly */
   touch-action: pan-x pan-y;
+  cursor: grab;
+  user-select: none;
+}
+
+.mapScrollerDragging {
+  cursor: grabbing;
 }
 
 .mapSurface {
