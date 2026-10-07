@@ -52,8 +52,8 @@ export default function GeneleOverviewPage() {
             <Image
               src="/images/geneleoverview/photo.jpg"
               alt="Life-sized animated figures in the General Electric Pavilion show created by Walt Disney"
-              width={958}
-              height={706}
+              width={1526}
+              height={1030}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
