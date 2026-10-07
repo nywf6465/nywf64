@@ -52,8 +52,8 @@ export default function ChryslerOverviewPage() {
             <Image
               src="/images/chrysleroverview/photo.jpg"
               alt="Chrysler Pavilion — Autofare Islands exhibits"
-              width={958}
-              height={706}
+              width={1684}
+              height={934}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
