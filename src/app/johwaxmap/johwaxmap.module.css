@@ -24,10 +24,19 @@
 
 .mapWrap {
   width: 100%;
+  max-width: 930px;
+  margin: 0;
+  line-height: 0;
+  text-align: left;
+  border: 1px solid #000;
+  background: #fff;
+  overflow: auto;
 }
 
 .mapArt {
   display: block;
   width: 100%;
+  max-width: 930px;
   height: auto;
+  margin: 0;
 }
