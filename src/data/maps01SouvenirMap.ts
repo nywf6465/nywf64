@@ -480,6 +480,12 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
   "OfficialR3C234446bc1": [
     {
       "shape": "polygon",
+      "coords": "20,120,100,110,120,70,100,15,25,0,0,0,0,110",
+      "href": "/adminbldg01",
+      "title": "Administration Building"
+    },
+    {
+      "shape": "polygon",
       "coords": "292,130,210,185,208,229,198,255,196,273,202,292,292,291",
       "href": "/unistaoverview",
       "title": "United States"
@@ -642,6 +648,12 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     }
   ],
   "OfficialR3C134121af5": [
+    {
+      "shape": "polygon",
+      "coords": "240,50,280,100,299,110,299,0,235,0",
+      "href": "/adminbldg01",
+      "title": "Administration Building"
+    },
     {
       "shape": "polygon",
       "coords": "236,173,255,128,281,151,282,180,267,186,245,185",
