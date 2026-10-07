@@ -27,7 +27,7 @@ const TOPICS = [
   {
     id: "international-area-map",
     title: "International Area Map",
-    href: "/maps/international-area-map",
+    href: "/maps03",
     hoverSrc: "/images/maps-hover/international-area-map.jpg",
     left: "2.669%",
     top: "27.760%",

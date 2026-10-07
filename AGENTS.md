@@ -27,6 +27,7 @@ Visitors scroll and pan (including horizontal overflow) so hotspots remain large
 Canonical instances:
 - **`/maps01`** — 1964 Official Souvenir Map (`MapsLinks` hub card + locate-it full-size note)
 - **`/maps02`** — Industrial Area Map (`MapsLinks` hub card)
+- **`/maps03`** — International Area Map (`MapsLinks` hub card)
 - **`/maps04`** — Federal & State Area Map (`MapsLinks` hub card)
 
 Apply this whenever building or converting interactive Fair maps from legacy. Attraction “Locate It” maps (`*map` with a single pointed location) are a different pattern — follow the locate-map standard for those.
