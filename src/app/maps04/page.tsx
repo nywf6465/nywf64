@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { InteractiveMapScroller } from "@/components/InteractiveMapScroller";
 import {
   MAPS04_HEIGHT,
   MAPS04_INSTRUCTION,
@@ -11,6 +12,7 @@ import {
 } from "@/data/maps04FederalStateMap";
 import styles from "./maps04.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
+import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title: "Federal & State Area Map — nywf64.com",
@@ -23,8 +25,9 @@ export const metadata: Metadata = {
  * Body from legacy maps04.html (tiled StateFederalR*C* image map).
  *
  * HARD RULE — Interactive Fair maps must keep native size on mobile
- * (no shrink-to-fit). Visitors scroll/pan to tap hotspots. Horizontal
- * pan stays inside `.mapScroller` so header/footer remain stationary.
+ * (no shrink-to-fit). Visitors scroll/pan to tap hotspots. Desktop
+ * drag-to-pan is enabled; pan stays inside `.mapScroller`
+ * so header/footer remain stationary.
  *
  * Stack: federal-state hero → navy title → instruction → native-size map scroller.
  */
@@ -40,7 +43,7 @@ export default function Maps04Page() {
   return (
     <main>
       <section className={styles.hero} aria-label="Federal & State Area Map">
-        <div className={`${styles.frame} ${heroBottomBar.photoFrame}`}>
+        <div className={`${overviewHeroStyles.frame} ${heroBottomBar.photoFrame}`}>
           <Image
             src="/images/maps04/hero-banner.jpg"
             alt="Federal & State Area Map"
@@ -48,7 +51,7 @@ export default function Maps04Page() {
             height={826}
             priority
             sizes="100vw"
-            className={styles.art}
+            className={overviewHeroStyles.art}
             unoptimized
           />
         </div>
@@ -67,9 +70,9 @@ export default function Maps04Page() {
 
         <p className={styles.instruction}>{MAPS04_INSTRUCTION}</p>
 
-        <div
+        <InteractiveMapScroller
           className={styles.mapScroller}
-          role="region"
+          draggingClassName={styles.mapScrollerDragging}
           aria-label="Federal & State Area Map — scroll or pan to explore"
         >
           <div
@@ -121,7 +124,7 @@ export default function Maps04Page() {
               ))}
             </map>
           ))}
-        </div>
+        </InteractiveMapScroller>
       </article>
     </main>
   );

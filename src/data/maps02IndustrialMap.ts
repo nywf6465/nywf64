@@ -22,7 +22,7 @@ export type MapTile = {
 export const MAPS02_WIDTH = 1359;
 export const MAPS02_HEIGHT = 1213;
 
-export const MAPS02_INSTRUCTION = "Click on or tap any of the pavilions on the map to see what's inside.";
+export const MAPS02_INSTRUCTION = "Click and drag to move around the map, then click or tap any pavilion to see what’s inside.";
 
 export const MAPS02_TILES: MapTile[] = [
   {

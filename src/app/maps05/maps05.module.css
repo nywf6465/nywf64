@@ -3,8 +3,8 @@
  *
  * HARD RULE: Interactive Fair maps must keep native size on mobile
  * (no shrink-to-fit). Visitors scroll/pan to tap hotspots.
- * Horizontal pan is confined to `.mapScroller` so SiteHeader / SiteFooter
- * stay stationary while the map moves left/right.
+ * Pan (horizontal and vertical) is confined to `.mapScroller` so
+ * SiteHeader / SiteFooter stay stationary while the map moves.
  */
 
 .hero {
@@ -14,17 +14,7 @@
   margin-top: 0;
 }
 
-.frame {
-  position: relative;
-  width: 100%;
-  line-height: 0;
-}
-
-.art {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+/* Hero frame/art: use overviewPageHero.module.css (--letter-hero-height). */
 
 .article {
   width: 100%;
@@ -97,7 +87,15 @@
   border-top: 1px solid #000;
   border-bottom: 1px solid #000;
   background: #fff;
+  /* Cap height so tall maps pan vertically inside the scroller */
+  max-height: calc(100dvh - 12rem);
+  cursor: grab;
+  user-select: none;
   touch-action: pan-x pan-y;
+}
+
+.mapScrollerDragging {
+  cursor: grabbing;
 }
 
 /* Irregular legacy Transportation tile layout — absolute positions, native size. */

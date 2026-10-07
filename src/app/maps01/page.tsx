@@ -11,6 +11,7 @@ import {
 } from "@/data/maps01SouvenirMap";
 import styles from "./maps01.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
+import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title: "1964 Official Souvenir Map of the Fair — nywf64.com",
@@ -41,7 +42,7 @@ export default function Maps01Page() {
   return (
     <main>
       <section className={styles.hero} aria-label="1964 Official Souvenir Map">
-        <div className={`${styles.frame} ${heroBottomBar.photoFrame}`}>
+        <div className={`${overviewHeroStyles.frame} ${heroBottomBar.photoFrame}`}>
           <Image
             src="/images/maps01/hero-banner.jpg"
             alt="1964 Official Souvenir Map"
@@ -49,7 +50,7 @@ export default function Maps01Page() {
             height={826}
             priority
             sizes="100vw"
-            className={styles.art}
+            className={overviewHeroStyles.art}
             unoptimized
           />
         </div>
@@ -67,9 +68,6 @@ export default function Maps01Page() {
         </p>
 
         <p className={styles.instruction}>{MAPS01_INSTRUCTION}</p>
-        <p className={styles.panHint}>
-          Drag the map to pan. Click or tap a pavilion to open it.
-        </p>
 
         <InteractiveMapScroller
           className={styles.mapScroller}

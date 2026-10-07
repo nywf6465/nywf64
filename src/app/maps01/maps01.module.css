@@ -3,8 +3,8 @@
  *
  * HARD RULE: Interactive Fair maps must keep native size on mobile
  * (no shrink-to-fit). Visitors scroll/pan to tap hotspots.
- * Horizontal pan is confined to `.mapScroller` so SiteHeader / SiteFooter
- * stay stationary while the map moves left/right.
+ * Pan (horizontal and vertical) is confined to `.mapScroller` so
+ * SiteHeader / SiteFooter stay stationary while the map moves.
  */
 
 .hero {
@@ -14,17 +14,7 @@
   margin-top: 0;
 }
 
-.frame {
-  position: relative;
-  width: 100%;
-  line-height: 0;
-}
-
-.art {
-  display: block;
-  width: 100%;
-  height: auto;
-}
+/* Hero frame/art: use overviewPageHero.module.css (--letter-hero-height). */
 
 .article {
   width: 100%;
@@ -88,16 +78,6 @@
   text-align: left;
 }
 
-.panHint {
-  margin: 0 0 0.85rem;
-  padding: 0 0.85rem;
-  color: #26346e;
-  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  line-height: 1.4;
-  text-align: left;
-}
 
 /*
  * Scroll/pan viewport — native map size inside; page chrome outside.
@@ -114,6 +94,8 @@
   border-bottom: 1px solid #000;
   background: #fff;
   /* Touch: allow two-axis pan without fighting body scroll awkwardly */
+  /* Cap height so tall maps pan vertically inside the scroller */
+  max-height: calc(100dvh - 12rem);
   touch-action: pan-x pan-y;
   cursor: grab;
   user-select: none;

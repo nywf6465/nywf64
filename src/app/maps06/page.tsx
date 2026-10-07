@@ -2,6 +2,7 @@ import type { CSSProperties } from "react";
 import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
+import { InteractiveMapScroller } from "@/components/InteractiveMapScroller";
 import {
   MAPS06_HEIGHT,
   MAPS06_INSTRUCTION,
@@ -11,6 +12,7 @@ import {
 } from "@/data/maps06AmusementMap";
 import styles from "./maps06.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
+import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title: "Amusement Area Map — nywf64.com",
@@ -23,8 +25,9 @@ export const metadata: Metadata = {
  * Body from legacy maps06.html (tiled AmusementR*C* image map).
  *
  * HARD RULE — Interactive Fair maps must keep native size on mobile
- * (no shrink-to-fit). Visitors scroll/pan to tap hotspots. Horizontal
- * pan stays inside `.mapScroller` so header/footer remain stationary.
+ * (no shrink-to-fit). Visitors scroll/pan to tap hotspots. Desktop
+ * drag-to-pan is enabled; pan stays inside `.mapScroller`
+ * so header/footer remain stationary.
  *
  * Stack: amusement-map hero → navy title → instruction → native-size map scroller.
  */
@@ -40,7 +43,7 @@ export default function Maps06Page() {
   return (
     <main>
       <section className={styles.hero} aria-label="Amusement Area Map">
-        <div className={`${styles.frame} ${heroBottomBar.photoFrame}`}>
+        <div className={`${overviewHeroStyles.frame} ${heroBottomBar.photoFrame}`}>
           <Image
             src="/images/maps06/hero-banner.jpg"
             alt="Amusement Area Map"
@@ -48,7 +51,7 @@ export default function Maps06Page() {
             height={826}
             priority
             sizes="100vw"
-            className={styles.art}
+            className={overviewHeroStyles.art}
             unoptimized
           />
         </div>
@@ -67,9 +70,9 @@ export default function Maps06Page() {
 
         <p className={styles.instruction}>{MAPS06_INSTRUCTION}</p>
 
-        <div
+        <InteractiveMapScroller
           className={styles.mapScroller}
-          role="region"
+          draggingClassName={styles.mapScrollerDragging}
           aria-label="Amusement Area Map — scroll or pan to explore"
         >
           <div
@@ -121,7 +124,7 @@ export default function Maps06Page() {
               ))}
             </map>
           ))}
-        </div>
+        </InteractiveMapScroller>
       </article>
     </main>
   );
