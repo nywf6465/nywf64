@@ -341,6 +341,12 @@ export const MAPS02_MAPS: Record<string, MapArea[]> = {
   "IndustrialR3C415938f": [
     {
       "shape": "polygon",
+      "coords": "0,140,8,145,16,153,21,163,23,174,21,185,16,195,13,199,0,199",
+      "href": "/dupontoverview",
+      "title": "Du Pont"
+    },
+    {
+      "shape": "polygon",
       "coords": "9,11,43,8,65,45,44,40,7,79",
       "href": "/fiestaoverview",
       "title": "Fiesta"
@@ -425,6 +431,12 @@ export const MAPS02_MAPS: Record<string, MapArea[]> = {
   "IndustrialR4C324cc1a": [
     {
       "shape": "polygon",
+      "coords": "199,0,199,8,198,8,187,10,176,8,166,3,162,0",
+      "href": "/dupontoverview",
+      "title": "Du Pont"
+    },
+    {
+      "shape": "polygon",
       "coords": "75,170,134,130,153,155,93,189",
       "href": "/foufaioverview",
       "title": ""
@@ -449,12 +461,6 @@ export const MAPS02_MAPS: Record<string, MapArea[]> = {
     },
     {
       "shape": "polygon",
-      "coords": "192,35,174,41,145,8,192,7",
-      "href": "/dupontoverview",
-      "title": "Du Pont"
-    },
-    {
-      "shape": "polygon",
       "coords": "120,80,80,38,111,7,130,8,149,19,168,48",
       "href": "/sevupoverview",
       "title": "Seven Up"
@@ -473,6 +479,12 @@ export const MAPS02_MAPS: Record<string, MapArea[]> = {
     }
   ],
   "IndustrialR4C4292dde": [
+    {
+      "shape": "polygon",
+      "coords": "12,0,8,3,0,0,0,8",
+      "href": "/dupontoverview",
+      "title": "Du Pont"
+    },
     {
       "shape": "polygon",
       "coords": "8,116,21,114,33,119,46,135,51,162,55,184,30,191,7,193",
@@ -737,6 +749,12 @@ export const MAPS02_MAPS: Record<string, MapArea[]> = {
   "IndustrialR3C3c7ebb": [
     {
       "shape": "polygon",
+      "coords": "153,163,158,153,166,145,176,140,187,138,198,140,199,140,199,199,161,199,158,195,153,185,151,174",
+      "href": "/dupontoverview",
+      "title": "Du Pont"
+    },
+    {
+      "shape": "polygon",
       "coords": "193,13,145,55,189,99",
       "href": "/fiestaoverview",
       "title": "Fiesta"
@@ -752,12 +770,6 @@ export const MAPS02_MAPS: Record<string, MapArea[]> = {
       "coords": "141,46,128,46,138,14",
       "href": "/genfoooverview",
       "title": "General Foods Archway No. 3"
-    },
-    {
-      "shape": "polygon",
-      "coords": "191,137,172,136,157,146,150,161,143,177,149,193,193,193",
-      "href": "/dupontoverview",
-      "title": "Du Pont"
     },
     {
       "shape": "polygon",
