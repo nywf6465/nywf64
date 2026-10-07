@@ -24,9 +24,9 @@ Interactive Fair maps (legacy image maps with clickable/tappable hotspots — e.
 
 Visitors scroll and pan (including horizontal overflow) so hotspots remain large enough to tap. When the map scrolls left/right, the **page header and footer stay stationary**; only the map viewport pans.
 
-Canonical instance: **`/maps01`** (1964 Official Souvenir Map). Link cards that open it:
-- Interactive Maps hub card → `/maps01` (`MapsLinks`)
-- Locate-it “See a *full-size* version…” note → `/maps01` (`LocateMapFullSizeLink`)
+Canonical instances:
+- **`/maps01`** — 1964 Official Souvenir Map (`MapsLinks` hub card + locate-it full-size note)
+- **`/maps02`** — Industrial Area Map (`MapsLinks` hub card)
 
 Apply this whenever building or converting interactive Fair maps from legacy. Attraction “Locate It” maps (`*map` with a single pointed location) are a different pattern — follow the locate-map standard for those.
 

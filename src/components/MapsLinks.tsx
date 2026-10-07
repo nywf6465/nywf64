@@ -17,7 +17,7 @@ const TOPICS = [
   {
     id: "industrial-area-map",
     title: "Industrial Area Map",
-    href: "/maps/industrial-area-map",
+    href: "/maps02",
     hoverSrc: "/images/maps-hover/industrial-area-map.jpg",
     left: "50.652%",
     top: "1.393%",
