@@ -54,20 +54,20 @@ export default function Japan10Page() {
             </dl>
             <dl className={styles.entry}>
               <dt>SANYO ELECTRIC CO., LTD.</dt>
-              <dt>\"Micropack 35\" magazine-loaded - pocket-size Tape Recorder, All-transistor Tape Recorder, 4-tube De Luxe Tape Recorder, All-transistor Stereo, \"Cadnica\" rechargeable 8-transistor MW/SW portable radio, 9\" transistor TV, 12\" transistor TV, 16\" TV, 16\" Color TV, 19\" wide-square TV, Thermoelectric Refrigerator, Thermoelectric Pillow, Thermoelectric Developing Vat, \"SANYO\" Thermoelectric Sign Board.</dt>
+              <dt>"Micropack 35" magazine-loaded - pocket-size Tape Recorder, All-transistor Tape Recorder, 4-tube De Luxe Tape Recorder, All-transistor Stereo, "Cadnica" rechargeable 8-transistor MW/SW portable radio, 9" transistor TV, 12" transistor TV, 16" TV, 16" Color TV, 19" wide-square TV, Thermoelectric Refrigerator, Thermoelectric Pillow, Thermoelectric Developing Vat, "SANYO" Thermoelectric Sign Board.</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
               <dt>MATSUSHITA ELECTRIC INDUSTRIAL CO., LTD. Kadoma, Osaka</dt>
-              <dt>Tradename: PANASONIC, Exhibits in Matsushita Booth: Portable &amp; Table Radios (Transistor &amp; Tube), 9\" Transistor Portable TV, 16\" Color TV, Tape Recorders, Stereo. Feature Matsushita Exhibit: NATIONAL PANASONIC Combination \"Heian\" (Stereo, TV, FM/AM Radio, Stereo Tape Recorder), Public Matsushita Exhibit in JAPAN PAVILION: \"PHOLSICON\" Solid-State EL-PC Image Converter.</dt>
+              <dt>Tradename: PANASONIC, Exhibits in Matsushita Booth: Portable &amp; Table Radios (Transistor &amp; Tube), 9" Transistor Portable TV, 16" Color TV, Tape Recorders, Stereo. Feature Matsushita Exhibit: NATIONAL PANASONIC Combination "Heian" (Stereo, TV, FM/AM Radio, Stereo Tape Recorder), Public Matsushita Exhibit in JAPAN PAVILION: "PHOLSICON" Solid-State EL-PC Image Converter.</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
-              <dt>VICTOR COMPANY OF JAPAN, LTD. was established in 1927 under the motto \"Contribution to Culture and Service to Society with the World Famous Mark.\" Products are Record, Radio, TV, Tape Recorder, Stereo, Video Tape Recorder, Color Eidophor and other electrical-electronic equipments. Its Famous dog and horn mark symbolizes the advanced quality in Japan and JVC-NIVICO mark (export brand name) holds the same prestige and honour in overseas market.</dt>
+              <dt>VICTOR COMPANY OF JAPAN, LTD. was established in 1927 under the motto "Contribution to Culture and Service to Society with the World Famous Mark." Products are Record, Radio, TV, Tape Recorder, Stereo, Video Tape Recorder, Color Eidophor and other electrical-electronic equipments. Its Famous dog and horn mark symbolizes the advanced quality in Japan and JVC-NIVICO mark (export brand name) holds the same prestige and honour in overseas market.</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
-              <dt>DATSUN SPL-310: Sports Car Graphic Magazine says in a recent test-\"Detail work throughout the entire car is simple but neat. Fit and finish are above average. In total, the DATSUN SPL-310 is well-made and should prove reliable and rugged in service. Most impressive, it is a car without any basic mistakes to hamper its value or potential. We feel the DATSUN SPL-310 at its present rate of development, is destined to carve an impressive slice of the sports car market.</dt>
+              <dt>DATSUN SPL-310: Sports Car Graphic Magazine says in a recent test-"Detail work throughout the entire car is simple but neat. Fit and finish are above average. In total, the DATSUN SPL-310 is well-made and should prove reliable and rugged in service. Most impressive, it is a car without any basic mistakes to hamper its value or potential. We feel the DATSUN SPL-310 at its present rate of development, is destined to carve an impressive slice of the sports car market.</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
@@ -76,11 +76,11 @@ export default function Japan10Page() {
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
-              <dt>HONDA MOTOR COMPANY LIT., world's largest manufacturer of motorcycles, produces over 1,000,000 units yearly.  Honda has revolutionized the two-wheel vehicle industry by offering a superior product at a reasonable price- the small \"Honda 50\" is an especially popular machine.  Honda has three factories, and research and development facilities in Japan producing cars, trucks, and farm machinery in addition to motorcycles.</dt>
+              <dt>HONDA MOTOR COMPANY LIT., world's largest manufacturer of motorcycles, produces over 1,000,000 units yearly.  Honda has revolutionized the two-wheel vehicle industry by offering a superior product at a reasonable price- the small "Honda 50" is an especially popular machine.  Honda has three factories, and research and development facilities in Japan producing cars, trucks, and farm machinery in addition to motorcycles.</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
-              <dt>SEIKO WATCH EXHIBIT-BY K. HATTORI &amp; CO., LTD. Display of quality wristwatches and sports timing devices for the Tokyo Olympic Games made by one of the world's largest jeweled-lever watch manufacturers. Features for visitors include timing of filmed speed events with Seiko stop watches and \"fishing\" for waterproof watches with magnets in the Fountain of Time. Tik-tok, the Seiko robot, 5'8\"tall, moves around the Fair grounds to direct you to the exhibit.</dt>
+              <dt>SEIKO WATCH EXHIBIT-BY K. HATTORI &amp; CO., LTD. Display of quality wristwatches and sports timing devices for the Tokyo Olympic Games made by one of the world's largest jeweled-lever watch manufacturers. Features for visitors include timing of filmed speed events with Seiko stop watches and "fishing" for waterproof watches with magnets in the Fountain of Time. Tik-tok, the Seiko robot, 5'8"tall, moves around the Fair grounds to direct you to the exhibit.</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
@@ -99,7 +99,7 @@ export default function Japan10Page() {
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
-              <dt>TOYO RAYON CO., LTD. (\"Toray\" for short) Established in: January 1926.  Capital:  $83 million.  Net Sales:  $360 million (1962).  Main products:  nylon (Amilan), polyester fiber (Toray TETORON), polypropylene fiber (Toray PYLEN), acrylic fiber (TORAYLON), rayon staple, nylon resin, polyester film, polypropylene film, New York Office:  Room No. 903, 385 5th Avenue, New York 16, N.Y. U.S.A.</dt>
+              <dt>TOYO RAYON CO., LTD. ("Toray" for short) Established in: January 1926.  Capital:  $83 million.  Net Sales:  $360 million (1962).  Main products:  nylon (Amilan), polyester fiber (Toray TETORON), polypropylene fiber (Toray PYLEN), acrylic fiber (TORAYLON), rayon staple, nylon resin, polyester film, polypropylene film, New York Office:  Room No. 903, 385 5th Avenue, New York 16, N.Y. U.S.A.</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
@@ -109,15 +109,15 @@ export default function Japan10Page() {
             </dl>
             <dl className={styles.entry}>
               <dt>NOZAKI ASSOCIATES, INC., 4 Albany Street, New York 6, N.Y.</dt>
-              <dt>\"Geisha\" Brand Canned Goods-Crabmeat, Tuna, Shrimps, Salmon, Oysters, Clams, Sardines, Sauries, Mandarin Oranges, White Peaches, Pineapples, Mushrooms; and Frozen Foods-Oysters, Swordfish Steaks, Rainbow Trout, Halibut Steaks, Crabmeat, Cooked &amp; Peeled Shrimp, Froglegs.</dt>
-              <dt>\"Geisha\" Brand is world famous nearly 3/4 of a century.</dt>
+              <dt>"Geisha" Brand Canned Goods-Crabmeat, Tuna, Shrimps, Salmon, Oysters, Clams, Sardines, Sauries, Mandarin Oranges, White Peaches, Pineapples, Mushrooms; and Frozen Foods-Oysters, Swordfish Steaks, Rainbow Trout, Halibut Steaks, Crabmeat, Cooked &amp; Peeled Shrimp, Froglegs.</dt>
+              <dt>"Geisha" Brand is world famous nearly 3/4 of a century.</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
               <dt>NIPPON IRYO CO., LTD.  (Former Name:  Chubu Iryo Co., Ltd.)</dt>
               <dt>Manufacturer and Exporter of Textile Piece Goods &amp; Made Up Goods</dt>
               <dt>Item:  Suits, Dress, Over Coat, Dress Shirt, Sport Shirt, Rain Coat, Ski Pants, Stretchable Slacks, Blouse and all kind of Piece Goods.</dt>
-              <dt>Address:  CPO Box 129, Nagoya, Japan  Cable Address \"IRYONIPPON\"</dt>
+              <dt>Address:  CPO Box 129, Nagoya, Japan  Cable Address "IRYONIPPON"</dt>
               <hr className={styles.rule} />
             </dl>
             <dl className={styles.entry}>
