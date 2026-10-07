@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import { AttractionNavChrome } from "@/components/AttractionNavChrome";
+import { IntplaNavChrome } from "@/components/IntplaNavChrome";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./intplaoverview.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
@@ -14,8 +14,7 @@ export const metadata: Metadata = {
 
 /**
  * International Plaza overview — follows the **overview** prototype
- * (same stack as /indiaoverview / /indonesoverview).
- * Full AttractionTopicsMenu deferred (Overview-only chrome for now).
+ * (same stack as /africaoverview / /indiaoverview).
  * Route slug: `/intplaoverview`.
  */
 export default function IntplaOverviewPage() {
@@ -36,10 +35,7 @@ export default function IntplaOverviewPage() {
         </div>
       </section>
 
-      <AttractionNavChrome
-        topics={[{ label: "Overview", href: "/intplaoverview" }]}
-        navLabel="International Plaza"
-      />
+      <IntplaNavChrome />
 
       <section
         className={styles.overview}
@@ -69,9 +65,9 @@ export default function IntplaOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/intplaoverview"
+        previousHref="/intpla04"
         overviewHref="/intplaoverview"
-        nextHref="/intplaoverview"
+        nextHref="/intpla01"
       />
     </>
   );
