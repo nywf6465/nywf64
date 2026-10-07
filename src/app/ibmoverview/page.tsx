@@ -51,8 +51,8 @@ export default function IbmOverviewPage() {
             <Image
               src="/images/ibmoverview/photo.jpg"
               alt="IBM Pavilion — People Wall and egg-shaped theater"
-              width={958}
-              height={706}
+              width={1477}
+              height={1065}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
