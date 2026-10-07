@@ -10,6 +10,7 @@ export const metadata: Metadata = {
     'Article: It\'s Great "To Be Alive!" — 1964/1965 New York World’s Fair on nywf64.com.',
 };
 
+/** Article page stitched from legacy 3×4 tiles into a single composite. */
 export default function Johwax14Page() {
   return (
     <JohwaxSequencePage
@@ -21,7 +22,7 @@ export default function Johwax14Page() {
       previousHref="/johwax13"
       overviewHref="/johwaxoverview"
       nextHref="/johwax15"
-      columns={3}
+      columns={1}
       scans={[...JOHWAX_14_SCANS]}
       source={
         <>
