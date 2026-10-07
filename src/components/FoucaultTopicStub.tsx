@@ -31,7 +31,7 @@ export function FoucaultTopicStub({ title }: { title: string }) {
       <Nav2Bar
         previousHref="/foufaioverview"
         overviewHref="/foufaioverview"
-        nextHref="/Foucault01"
+        nextHref="/foufai01"
       />
     </>
   );
