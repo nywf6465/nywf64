@@ -62,7 +62,7 @@ export default function JulfarOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/julfaroverview"
+        previousHref="/julfar04"
         overviewHref="/julfaroverview"
         nextHref="/julfar01"
       />
