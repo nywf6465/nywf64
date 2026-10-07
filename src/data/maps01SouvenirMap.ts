@@ -868,7 +868,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     },
     {
       "shape": "polygon",
-      "coords": "6,200,17,219,20,242,37,266,8,291",
+      "coords": "16,292,31,281,42,266,46,248,42,229,31,214,16,203,0,200,0,296",
       "href": "/dupontoverview",
       "title": "Du Pont"
     },
@@ -2010,7 +2010,7 @@ export const MAPS01_MAPS: Record<string, MapArea[]> = {
     },
     {
       "shape": "polygon",
-      "coords": "244,241,262,267,270,288,292,291,291,196,279,197,256,206",
+      "coords": "298,200,279,203,264,214,253,229,250,248,253,266,264,281,279,292,298,296,299,296,299,200",
       "href": "/dupontoverview",
       "title": "Du Pont"
     },
