@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: "Souvenir Question & Answer Card — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+/** Q&A card pages stitched from legacy tile strips into single composites. */
 export default function Johwax11Page() {
   return (
     <JohwaxSequencePage
@@ -20,7 +21,7 @@ export default function Johwax11Page() {
       previousHref="/johwax10"
       overviewHref="/johwaxoverview"
       nextHref="/johwax12"
-      columns={3}
+      columns={1}
       scans={[...JOHWAX_11_SCANS]}
     />
   );
