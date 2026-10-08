@@ -125,7 +125,11 @@ export type GuidebookSouvenirPageProps = {
   nav: ReactNode;
   guide1964: GuidebookYearContent;
   guide1965: GuidebookYearContent;
-  map: GuidebookMapContent;
+  /**
+   * Souvenir Map column. Omit when the legacy page has only the two Official
+   * Guide Book columns (e.g. World's Fair Marina /wfmar01).
+   */
+  map?: GuidebookMapContent;
   previousHref: string;
   nextHref: string;
   titleId?: string;
@@ -134,28 +138,33 @@ export type GuidebookSouvenirPageProps = {
    * Some legacy pages append “Entries” (e.g. Port Authority).
    */
   title?: string;
+  /**
+   * Noun in the 1964/1965 cover captions (“exhibit”, “facility”, …).
+   * Defaults to “exhibit”.
+   */
+  subjectNoun?: string;
 };
 
 const DEFAULT_TITLE = "1964 & 1965 Official Guidebook & Souvenir Map";
 
-function Caption1964() {
+function Caption1964({ subjectNoun = "exhibit" }: { subjectNoun?: string }) {
   return (
     <p className={styles.intro}>
       The description of this
       <br />
-      exhibit from the 1964
+      {subjectNoun} from the 1964
       <br />
       Official Guide Book
     </p>
   );
 }
 
-function Caption1965() {
+function Caption1965({ subjectNoun = "exhibit" }: { subjectNoun?: string }) {
   return (
     <p className={styles.intro}>
       The description of this
       <br />
-      exhibit from the 1965
+      {subjectNoun} from the 1965
       <br />
       Official Guide Book
     </p>
@@ -237,10 +246,12 @@ function GuideColumn({
   year,
   guide,
   label,
+  subjectNoun = "exhibit",
 }: {
   year: 1964 | 1965;
   guide: GuidebookYearContent;
   label: string;
+  subjectNoun?: string;
 }) {
   const nameFace = guide.nameFace ?? (year === 1965 ? "arial" : "times");
   const defaultLabelFace: GuidebookFace = year === 1965 ? "arial" : "times";
@@ -280,7 +291,11 @@ function GuideColumn({
           className={styles.cover}
           unoptimized
         />
-        {year === 1964 ? <Caption1964 /> : <Caption1965 />}
+        {year === 1964 ? (
+          <Caption1964 subjectNoun={subjectNoun} />
+        ) : (
+          <Caption1965 subjectNoun={subjectNoun} />
+        )}
       </div>
       {guide.statusNote ? (
         <p className={styles.omittedNote}>{guide.statusNote}</p>
@@ -456,6 +471,7 @@ export function GuidebookSouvenirPage({
   nextHref,
   titleId = "guidebook-souvenir-title",
   title = DEFAULT_TITLE,
+  subjectNoun = "exhibit",
 }: GuidebookSouvenirPageProps) {
   return (
     <>
@@ -483,18 +499,22 @@ export function GuidebookSouvenirPage({
           </h1>
         </header>
 
-        <div className={styles.columns}>
+        <div
+          className={map ? styles.columns : `${styles.columns} ${styles.columnsTwo}`}
+        >
           <GuideColumn
             year={1964}
             guide={guide1964}
             label="1964 Official Guide Book"
+            subjectNoun={subjectNoun}
           />
           <GuideColumn
             year={1965}
             guide={guide1965}
             label="1965 Official Guide Book"
+            subjectNoun={subjectNoun}
           />
-          <MapColumn map={map} />
+          {map ? <MapColumn map={map} /> : null}
         </div>
       </article>
 
