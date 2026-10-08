@@ -23,7 +23,7 @@ export const SUDAN_MENU_TOPICS: AttractionTopic[] = [
     href: "/sudan03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/sudan04",
   },
 ];

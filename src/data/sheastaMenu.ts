@@ -23,7 +23,7 @@ export const SHEASTA_MENU_TOPICS: AttractionTopic[] = [
     href: "/sheasta03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/sheasta04",
   },
   {

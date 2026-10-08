@@ -19,7 +19,7 @@ export const VENEZE_MENU_TOPICS: AttractionTopic[] = [
     href: "/veneze02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/veneze03",
   },
   {

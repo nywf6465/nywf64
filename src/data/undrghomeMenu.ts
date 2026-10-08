@@ -23,7 +23,7 @@ export const UNDRGHOME_MENU_TOPICS: AttractionTopic[] = [
     href: "/undrghome03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/undrghome04",
   },
   {

@@ -20,7 +20,7 @@ export const MARYLAND_MENU_TOPICS: AttractionTopic[] = [
     href: "/maryland02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/maryland03",
   },
   {

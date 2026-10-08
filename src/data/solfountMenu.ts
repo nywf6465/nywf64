@@ -23,7 +23,7 @@ export const SOLFOUNT_MENU_TOPICS: AttractionTopic[] = [
     href: "/solfount03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/solfount04",
   },
 ];

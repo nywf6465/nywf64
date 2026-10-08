@@ -19,7 +19,7 @@ export const PAKIST_MENU_TOPICS: AttractionTopic[] = [
     href: "/pakist02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/pakist03",
   },
   {

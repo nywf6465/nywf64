@@ -20,7 +20,7 @@ export const NEWENG_MENU_TOPICS: AttractionTopic[] = [
     href: "/neweng02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/neweng03",
   },
   {

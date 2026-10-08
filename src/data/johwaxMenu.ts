@@ -16,7 +16,7 @@ export const JOHWAX_MENU_TOPICS: AttractionTopic[] = [
   { label: "Postcards", href: "/johwax03" },
   { label: "Advertising", href: "/johwax04" },
   { label: "Photograph Album", href: "/johwax05" },
-  { label: "Johnson Wax Gallery of Photographs", href: "/johwax06" },
+  { label: "Johnson Wax Photograph Album", href: "/johwax06" },
   { label: "Pamphlet: Groundbreaking", href: "/johwax07" },
   { label: "Brochure: Golden Rondelle", href: "/johwax08" },
   { label: "Brochure: Golden Rondelle", href: "/johwax09" },

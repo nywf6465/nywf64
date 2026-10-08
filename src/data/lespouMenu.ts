@@ -16,7 +16,7 @@ export const LESPOU_MENU_TOPICS: AttractionTopic[] = [
     href: "/lespou01",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/lespou02",
   },
 ];

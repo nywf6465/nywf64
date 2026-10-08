@@ -23,7 +23,7 @@ export const WFMAR_MENU_TOPICS: AttractionTopic[] = [
     href: "/wfmar03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/wfmar04",
   },
 ];

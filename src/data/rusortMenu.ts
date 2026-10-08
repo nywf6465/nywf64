@@ -23,7 +23,7 @@ export const RUSORT_MENU_TOPICS: AttractionTopic[] = [
     href: "/rusort03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/rusort04",
   },
 ];

@@ -24,7 +24,7 @@ export const MONTANA_MENU_TOPICS: AttractionTopic[] = [
     href: "/montana03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/montana04",
   },
 ];

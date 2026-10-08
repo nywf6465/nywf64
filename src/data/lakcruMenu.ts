@@ -19,7 +19,7 @@ export const LAKCRU_MENU_TOPICS: AttractionTopic[] = [
     href: "/lakcru02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/lakcru03",
   },
 ];
