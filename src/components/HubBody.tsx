@@ -5,8 +5,9 @@ import styles from "./HubBody.module.css";
 /**
  * Homepage category hubs — vertical stack of hub icons (762×330, I-page card
  * size) with the links symbol to the right of each row.
- * Icons sit in a hero-wide light-blue band, left-justified, with burgundy
- * bars above and below the main body icons (not the links symbols).
+ * Icons sit in a hero-wide light-blue band (color from the links-symbol
+ * example), left-justified, with burgundy bars above and below the main body
+ * icons only (not the links symbols).
  */
 const HUBS = [
   {
@@ -66,37 +67,46 @@ export function HubBody() {
       className={styles.section}
       aria-label="Explore Fair categories"
     >
-      <div className={styles.bar} aria-hidden="true" />
-      <ul className={styles.list}>
+      <div className={styles.stack}>
+        {/* Burgundy bar — main body icons column only */}
+        <div className={`${styles.bar} ${styles.barStart}`} aria-hidden="true" />
+        <div className={styles.barSpacer} aria-hidden="true" />
+
         {HUBS.map((hub) => (
-          <li key={hub.id} className={styles.item}>
-            <Link href={hub.href} className={styles.row} aria-label={hub.title}>
-              <span className={styles.icon}>
-                <Image
-                  src={hub.iconSrc}
-                  alt=""
-                  width={762}
-                  height={330}
-                  className={styles.iconArt}
-                  unoptimized
-                />
-              </span>
-              <span className={styles.linksSymbol} aria-hidden="true">
-                {/* eslint-disable-next-line @next/next/no-img-element */}
-                <img
-                  src="/images/links-symbol.png"
-                  alt=""
-                  width={177}
-                  height={178}
-                  className={styles.linksSymbolArt}
-                  draggable={false}
-                />
-              </span>
-            </Link>
-          </li>
+          <Link
+            key={hub.id}
+            href={hub.href}
+            className={styles.row}
+            aria-label={hub.title}
+          >
+            <span className={styles.icon}>
+              <Image
+                src={hub.iconSrc}
+                alt=""
+                width={762}
+                height={330}
+                className={styles.iconArt}
+                unoptimized
+              />
+            </span>
+            <span className={styles.linksSymbol} aria-hidden="true">
+              {/* eslint-disable-next-line @next/next/no-img-element */}
+              <img
+                src="/images/links-symbol.png"
+                alt=""
+                width={177}
+                height={178}
+                className={styles.linksSymbolArt}
+                draggable={false}
+              />
+            </span>
+          </Link>
         ))}
-      </ul>
-      <div className={styles.bar} aria-hidden="true" />
+
+        {/* Burgundy bar — main body icons column only */}
+        <div className={`${styles.bar} ${styles.barEnd}`} aria-hidden="true" />
+        <div className={styles.barSpacer} aria-hidden="true" />
+      </div>
     </section>
   );
 }
