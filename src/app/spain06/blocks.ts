@@ -1,0 +1,42 @@
+import type { SpainEssayBlock } from "@/components/SpainEssayPage";
+
+export const SPAIN06_BLOCKS: SpainEssayBlock[] = [
+  { type: "p", text: "In a massive mural by Vaquero Turcious, a sailor on the Pinta gestures toward the new world he has just sighted. The mural keynotes the pavilion theme: Spain's role in the discovery and colonization of America." },
+  { type: "img", src: "spain118.jpg", width: 450, height: 181, alt: "Turcious Mural" },
+  { type: "p", text: "Spain sent uniformed members of the Guardia Civil to keep watch over Goya's scandal-provoking pair of paintings, the Clothed Maja and Naked Maja, reputed portraits of the Duchess of Alba." },
+  { type: "img", src: "spain119.jpg", width: 600, height: 470, alt: "Guardia Civil watch over Goya Painting" },
+  { type: "img", src: "spain121.jpg", width: 290, height: 208, alt: "Exterior of Pavilion" },
+  { type: "caption", text: "The simplicity of Javier Carvajal's architecture is punctuated by a sculptured iron grille near the entrance." },
+  {
+    type: "display",
+    lines: [
+      "LIFE visits the Spanish Pavilion",
+      "THE",
+      "JEWEL",
+      "OF THE",
+      "FAIR",
+    ],
+  },
+  { type: "img", src: "spain122.jpg", width: 300, height: 531, alt: "Goya's Naked Maja" },
+  { type: "caption", text: "[Goya's Naked Maja]" },
+  { type: "p", text: "For its exhibit at the New York World's Fair, Spain gambled $7 million on being itself -- and won. Its pavilion lives up to everyone's most romantic notion of Spain. It has the stark look and feel of hot sun and cool shadows. Massive stairways lead past white stucco walls, through geranium crowded courtyards to exhibition rooms where, in pools of darkness, brilliant lights pick out Spain's art treasures -- the paintings of Goya, Velasquez, El Greco, Miro. There are three recent Picassos, bought for the pavilion along with murals and sculptures by some of Spain's top young artists and a gallery with contemporary paintings. (The first hanging was quickly bought out and replacements hardly have time to cool on the wall before being sold.)" },
+  { type: "p", text: "Outside the almost religious hush in the museum alcoves, the pavilion comes noisily alive with flamenco wails, hand-clapping, throbbing guitars and the sibilant undercurrent of Spanish accents. In the midst of all this are three restaurants which have run off with all the Fair's blue ribbons. The Toldeo has an elegant haute cuisine, the more casual Granada has a spicy Spanish menu, and the open air Taberna Marisqueria is relaxed and redolent of sherry and olive oil." },
+  { type: "p", text: "Photographed for LIFE by MARK KAUFFMAN" },
+  { type: "img", src: "spain123.jpg", width: 600, height: 349, alt: "Coros y Danzas Troupe" },
+  { type: "img", src: "spain124.jpg", width: 150, height: 195, alt: "Feast in Toledo Restaurant" },
+  { type: "caption", text: "At the Toledo restaurant -- where the lines are long, the tariff stiff and the food Lucullan -- partridges and several varieties of fish are flown in daily from Spain." },
+  { type: "p", text: "Members of the Coros y Danzas troupe perform in the main patio 14 times a day. The rugged statue in the foreground is of Junipero Serra, the Franciscan friar whose string of missions established Spain's claim to California. Along the rear wall stretches a 50-foot long stoneware relief, Homage to Gaudi, a tribute to the turn-of-the-century architect." },
+  { type: "p", text: "Spanish snacks, seafood and pitchers of Sangria (red wine, soda, lemon and orange slices) are specialties of the Taberna Marisqueria, a bustling patio cafe. Dancers relax here between stints. The venenciador ladles sherry from a cask and then spills it into your glass in a spectacular three-foot-long arc." },
+  { type: "img", src: "spain125.jpg", width: 500, height: 320, alt: "Taberna Marisqueria" },
+  { type: "source", text: "Source: Life Magazine, Vol. 57 No. 6, August 7, 1964 © 1964 Time-Life Corporation" },
+  { type: "img", src: "spain127.jpg", width: 123, height: 700, alt: "Sword of El Cid" },
+  { type: "p", text: "La Tizona, purported to be the battle sword carried by the medieval Spanish warrior El Cid in his forays against the Moors, is displayed in a special niche." },
+  {
+    type: "display",
+    lines: ["Pheasants, flamenco", "and sword of El Cid"],
+  },
+  { type: "img", src: "spain120.jpg", width: 300, height: 220, alt: "Queen Isabella Statue" },
+  { type: "p", text: "Bronze 8-foot 10-inch sculpture of Queen Isabella, patroness of the pavilion, stands in a patio with the illuminated Fountains of the Fairs sparkling behind her." },
+  { type: "p", text: "Two Madonnas -- a copy in silver and wood of the famous black-faced Virgin of Monserrat (left) and another in terra cotta -- are bathed by glow of stained-glass wall." },
+  { type: "img", src: "spain126.jpg", width: 300, height: 410, alt: "Stained-glass Wall and Artifacts" },
+];
