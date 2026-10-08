@@ -1,0 +1,166 @@
+/* COSI Columbus Museum diorama album — legacy travelers07.html */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.bodyInner {
+  max-width: 910px;
+  margin: 0 auto;
+  padding: 0 clamp(0.75rem, 2vw, 1.25rem);
+  box-sizing: border-box;
+}
+
+.sourceLine {
+  margin: 0 0 0.65rem;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+}
+
+.tray {
+  background: #cccccc;
+  padding: 0.65rem;
+  box-sizing: border-box;
+}
+
+.introBand {
+  background: #8b0000;
+  padding: 1rem 0.5rem;
+  margin-bottom: 0.65rem;
+}
+
+.introPanel {
+  max-width: 500px;
+  margin: 0 auto;
+  border: 2px solid #000;
+  background: #fff;
+  padding: 0.75rem 1rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.introPanel p {
+  margin: 0.35rem 0;
+  font-size: 18px;
+}
+
+.introRedWord {
+  display: block;
+  color: #ff0000;
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 1.2;
+}
+
+.introCirca {
+  color: #dc143c;
+  font-size: 18px;
+}
+
+.sceneRow {
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+  border: 5px solid #000;
+  margin-bottom: 0.65rem;
+  box-sizing: border-box;
+}
+
+.scenePhotos {
+  flex: 1 1 55%;
+  min-width: 200px;
+  background: #000;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.75rem 0.5rem;
+  box-sizing: border-box;
+}
+
+.sceneLabel {
+  flex: 0 0 30%;
+  min-width: 140px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  font-size: 16px;
+  color: #ff0000;
+}
+
+.sceneRowLabelFirst .sceneLabel {
+  order: -1;
+}
+
+.photoFrame {
+  border: 5px solid #fff;
+  line-height: 0;
+  background: #000;
+}
+
+.photoArt {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 720px) {
+  .sceneRow {
+    flex-direction: column;
+  }
+
+  .sceneRowLabelFirst .sceneLabel {
+    order: 0;
+  }
+
+  .sceneLabel {
+    flex: 1 1 auto;
+    width: 100%;
+  }
+}
