@@ -63,7 +63,7 @@ export default function SimmonOverviewPage() {
       <Nav2Bar
         previousHref="/simmonoverview"
         overviewHref="/simmonoverview"
-        nextHref="/summon01"
+        nextHref="/simmon01"
       />
     </>
   );
