@@ -1,0 +1,320 @@
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.articleInner {
+  width: min(31.25rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.showHeader {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.showTitle {
+  margin: 0 0 0.35rem;
+  color: #f00;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.showSubtitle {
+  margin: 0 0 0.15rem;
+  color: #000099;
+  font-size: 1.2rem;
+}
+
+.showYear {
+  margin: 0 0 0.75rem;
+  color: #000099;
+  font-size: 1rem;
+}
+
+.scriptBanner {
+  display: inline-block;
+  margin: 0 auto 1rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid #000;
+  background: #f00;
+  color: #fff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+}
+
+.sourceNote {
+  margin: 0 0 0.75rem;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 0.85rem;
+  text-align: left;
+}
+
+.jacketFigure {
+  margin: 0 auto 1rem;
+  max-width: 26.125rem;
+  padding: 5px;
+  border: 5px solid #ccc;
+  background: #ccc;
+  box-sizing: border-box;
+}
+
+.jacketImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.leadGray {
+  margin: 0 0 0.75rem;
+  color: #999;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.leadGray em {
+  color: #f00;
+  font-style: italic;
+  font-weight: 700;
+}
+
+.credits {
+  margin: 0 0 1.25rem;
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8rem;
+  color: #999;
+}
+
+.credits caption {
+  caption-side: top;
+  padding: 0 0 0.35rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.credits td {
+  padding: 0.15rem 0.35rem;
+  vertical-align: top;
+}
+
+.credits td:last-child {
+  text-align: right;
+}
+
+.castRow {
+  display: grid;
+  grid-template-columns: 75px 1fr 75px;
+  align-items: end;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.castIcon {
+  display: block;
+  width: 75px;
+  height: auto;
+  margin: 0 auto;
+}
+
+.castHeading {
+  margin: 0;
+  color: #f00;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.castList {
+  margin: 0 0 1.5rem;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+  font-size: 0.8rem;
+}
+
+.castList li {
+  margin: 0.15rem 0;
+}
+
+.castReddy {
+  color: #f00;
+}
+
+.castBen {
+  color: #00f;
+}
+
+.castBirds {
+  color: #090;
+}
+
+.castRadio {
+  color: #900;
+}
+
+.castCow {
+  color: #f0f;
+}
+
+.scene {
+  margin: 0 0 1.75rem;
+}
+
+.sceneHeader {
+  display: grid;
+  grid-template-columns: 30% 1fr;
+  gap: 0;
+  margin: 0 0 0.5rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.sceneNum {
+  padding: 0.25rem 0.35rem;
+  background: #f00;
+  color: #fff;
+}
+
+.sceneTitle {
+  padding: 0.25rem 0.35rem;
+  background: #00f;
+  color: #fff;
+}
+
+.sceneTable {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sceneRow td {
+  padding: 0.35rem 0.25rem;
+  vertical-align: top;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+.speakerCol {
+  width: 30%;
+  font-weight: 400;
+}
+
+.dialogueCol {
+  width: 70%;
+}
+
+.listenRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 0.35rem 0.5rem;
+  margin: 0.25rem 0 0.5rem;
+}
+
+.listenLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: #000;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 0.85rem;
+  text-decoration: none;
+}
+
+.soundIcon {
+  display: block;
+  width: 20px;
+  height: auto;
+}
+
+.player {
+  display: block;
+  width: 100%;
+  max-width: 20rem;
+  margin: 0 0 0.75rem;
+}
+
+.voiceReddy {
+  color: #f00;
+}
+
+.voiceBen {
+  color: #00f;
+}
+
+.voiceBirds {
+  color: #090;
+}
+
+.voiceRadio {
+  color: #900;
+}
+
+.voiceCow {
+  color: #f0f;
+}
+
+.voiceStage {
+  color: #000;
+}
+
+.stageLine {
+  margin: 0.35rem 0;
+  color: #000;
+  font-style: normal;
+}
+
+.songLines {
+  margin: 0;
+  padding-left: 1.1rem;
+  list-style: none;
+}
+
+.songLines li {
+  margin: 0.1rem 0;
+}
