@@ -1,0 +1,25 @@
+import type { SpainEssayBlock } from "@/components/SpainEssayPage";
+
+export const SPAIN11_BLOCKS: SpainEssayBlock[] = [
+  { type: "img", src: "spain114.jpg", width: 600, height: 421, alt: "Dancers & Unisphere" },
+  { type: "p", text: "Spain presents four kinds of shows in the pavilion: folk-dancing, music, flamenco dancing and films about everyday life. The great richness of Spanish folk-songs and dances are revealed by the three programs of the Groups of Coros y Danzas (Songs and Dances) with their amazing variety. Flamenco is genuinely represented by the Manuela Vargas group which had such a triumphant welcome in the first part of the Fair. Spanish music comes to life in the guitar notes of Diaz Cano or in the strings and many throats of the student choirs. The showing of documentary films such as Espana insolita (Unusual Spain) and slides about the Spanish land and people complete the shows on the program." },
+  { type: "h2", text: "COROS Y DANZAS OF SPAIN" },
+  { type: "p", text: "The groups that form this wonderful undertaking called Coros y Danzas of Spain (Songs and Dances of Spain), have carried out of recent years one of the most beautiful tasks that can be done: find, discover, interpret and reveal to all, that immense Spanish treasure of folk songs and dances, and take them to every corner of the Motherland as well as carrying them abroad for the joy and admiration of all the countries of the world." },
+  { type: "p", text: "Wherever we go, dancing is an art; in Spain it is a demonstration of life. Here dancing has kept its primitive spontaneity; it is not the mechanical repetition of steps invented by any teacher but the gay overflowing of an untamable vitality. On the Spanish Coros y Danzas there have been many opinions: Theirs is a primitive art, with all its original sweeping beauty and starting point for all lovely things... In all my long life dedication to these things, I can assure that there has never been anything so successful as the Coros y Danzas of Spain. Coronel W. de Basil, Creator of the Montecarlo Ballets." },
+  { type: "caption", text: "The Coros y Danzas in the theatre of the Pavilion." },
+  { type: "img", src: "spain115.jpg", width: 250, height: 145, alt: "Coros y Danzas" },
+  { type: "h2", text: "FLAMENCO by MANUELA VARGAS from Sevilla" },
+  { type: "img", src: "spain116.jpg", width: 250, height: 524, alt: "Manuela Vargas Flemenco" },
+  { type: "p", text: "Manuela Vargas is a bronze beauty, all music, agility and rhythm. She possess that mysterious, indefinable quality known in Spanish as garbo; the most agile and elegant occupant of space. She does not dance alone: There are hundreds of Manuela Vargas dancing -branches, shadows and repetitions of herself- together with her companions the air and the light... All the angels and spirits of Andalusia accompany that bronzed angel, spirit of grace, called Manuela Vargas." },
+  { type: "h2", text: "MANUEL DIAZ CANO Guitarist" },
+  { type: "p", text: "Manuel Diaz Cano is a really representative concert guitarist of Spain. Diaz Cano toured all through South America giving concerts and went also around Middle East, Italy, Switzerland, Portugal, Spain and Morocco, where he settled." },
+  { type: "p", text: "He made records with Durium in Milan, with Decca in London. His original works are published by the Union Musical in Madrid. In the numerous concerts Diaz Cano gives in the Spanish Pavilion, he will include classical works but he will especially play Spanish music. Manuel Diaz Cano is worthy of great respect; apart from being an expert in technique, master of all the secrets of his instrument, he is a profound interpreter, of the classic works as Spanish folklore. He won a resounding success during his concert at the Conservatoire." },
+  { type: "img", src: "spain117.jpg", width: 250, height: 342, alt: "Manuel Diaz Cano Line Drawing" },
+  { type: "source", text: "Source: Teatro Espanol Program" },
+  { type: "img", src: "spain112.jpg", width: 450, height: 345, alt: "Program Cover" },
+  { type: "p", text: "An entirely new entertainment technique is being used to produce LET'S MEET SPAIN. It is a computer-programed, electronically synchronized, three-screen spectacular conceived by photographer Martin Swithinbank. It is a half-hour showing of 750 color transparencies which appear in simultaneous groups of three. The sound and music were recorded at 30 location is Spain." },
+  { type: "caption", text: "Photographed, directed and produced by Martin Swithinbank." },
+  { type: "p", text: "Audio Engineer: James J. Hurley" },
+  { type: "p", text: "PROGRAM 1. Zapateado introduction 7. The Story of Sherry 2. The Churches and Religion of Spain 8. Fiesta! (a) Semana Santa in Seville (b) Fiesta de San Fermin in Pamplona 3. Agriculture in Spain 4. The People of Spain 9. The Folk Costumes of Spain 5. The Noble Art of Bullfighting 10. Industry in Spain 6. The Castles of Spain 11. The Landscapes and Seascapes of Spain" },
+  { type: "img", src: "spain11.jpg", width: 91, height: 150, alt: "Guide Cover" },
+];
