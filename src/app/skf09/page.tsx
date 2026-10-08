@@ -7,7 +7,7 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "\"Fair\" Architect — SKF — nywf64.com",
+  title: '"Fair" Architect — SKF — nywf64.com',
   description:
     "Fair architect Francis Pisani and the SKF pavilion — 1964/1965 New York World’s Fair on nywf64.com.",
 };
@@ -50,7 +50,7 @@ export default function Skf09Page() {
             <span className={styles.photoFrame}>
               <Image
                 src="/images/skf09/skf28.jpg"
-                alt="\"Fair\" Architect"
+                alt='"Fair" Architect'
                 width={215}
                 height={145}
                 className={styles.photoImg}
