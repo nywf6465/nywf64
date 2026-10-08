@@ -1,0 +1,101 @@
+@import "../../styles/trantravTopic.module.css";
+
+.adBlock {
+  border: 1px solid #000;
+  padding: 0.75rem;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.adLead {
+  font-size: 20px;
+  font-weight: 700;
+  margin: 0.35rem 0;
+}
+
+.you {
+  color: #0f54ae;
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.cineramaRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-size: 13px;
+  margin: 0.5rem 0;
+}
+
+.cineramaLogo {
+  height: auto;
+  max-width: 300px;
+}
+
+.adFine {
+  font-size: 11px;
+  margin: 0.25rem 0;
+}
+
+.adOrder {
+  font-size: 11px;
+  margin-top: 0.5rem;
+}
+
+.newsItem {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.klmRow {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-start;
+  padding: 0 0.5rem;
+}
+
+.magazine {
+  text-align: left;
+}
+
+.magTitle {
+  text-align: center;
+  margin: 0.5rem 0;
+}
+
+.magSub {
+  text-align: center;
+  font-family: "Arial Black", Arial, sans-serif;
+  font-size: 13px;
+}
+
+.threeCol {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  font-size: 16px;
+  line-height: 1.45;
+  margin-top: 1rem;
+}
+
+.threeCol p {
+  margin: 0 0 0.75rem;
+}
+
+.dropCap {
+  font-size: 1.5em;
+  font-weight: 700;
+}
+
+@media (max-width: 720px) {
+  .threeCol {
+    grid-template-columns: 1fr;
+  }
+}
