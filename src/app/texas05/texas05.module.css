@@ -46,6 +46,15 @@
   line-height: 1.35;
 }
 
+.titleBarByline {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+  white-space: nowrap;
+}
+
 .articleIntro {
   width: min(56.25rem, 100%);
   margin: 0 auto clamp(1.25rem, 3vw, 1.75rem);
