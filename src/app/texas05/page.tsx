@@ -9,7 +9,7 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title:
-    "Texan with Big Dreams + Big Apple = Big Trouble — Texas Pavilions — nywf64.com",
+    "Essay: Texan with Big Dreams + Big Apple = Big Trouble — Texas Pavilions — nywf64.com",
   description:
     "Jim Hill essay on Angus G. Wynne Jr., the Texas Pavilions, and To Broadway With Love at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
@@ -44,8 +44,9 @@ export default function Texas05Page() {
       <article className={styles.article} aria-labelledby="texas05-title">
         <header className={styles.titleBar}>
           <h1 id="texas05-title" className={styles.titleBarMain}>
-            Texan with Big Dreams + Big Apple = Big Trouble
+            Essay: Texan with Big Dreams + Big Apple = Big Trouble
           </h1>
+          <p className={styles.titleBarByline}>... by Jim Hill</p>
         </header>
 
         <div className={styles.articleIntro}>
