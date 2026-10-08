@@ -1,0 +1,202 @@
+/*
+ * Vatican — Groundbreaking & Construction (/vatican06).
+ * Stack: hero → VaticanNavChrome → navy title → article → Nav2Bar.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.small {
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.small p {
+  margin: 0 0 0.75rem;
+}
+
+.body p {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.figure {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.photo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.captionBlock {
+  margin: 0.35rem 0 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.captionLabel {
+  font-weight: 700;
+}
+
+.captionItalic {
+  font-style: italic;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 0.85rem 0;
+}
+
+.blockquote {
+  margin: 0 0 0.75rem 1.25rem;
+  font-size: 0.85rem;
+}
+
+.photoLeft {
+  float: left;
+  margin: 0 0.75rem 0.5rem 0;
+}
+
+.photoLeft img {
+  display: block;
+  border: 1px solid #000;
+}
+
+.steelRow {
+  display: grid;
+  grid-template-columns: minmax(0, 312px) minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1.25rem;
+}
+
+.steelRow p {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.45;
+}
+
+.dropCap {
+  float: left;
+  font-size: 1.35rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 0.85;
+  padding: 0.08rem 0.18rem 0 0;
+}
+
+.modelGrid {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.modelPair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.modelPair img,
+.modelWide img {
+  border: 1px solid #000;
+}
+
+.modelCaption {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.source {
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.postcardBlock {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+.postcardBlock p {
+  margin: 0 0 0.5rem;
+}
+
+@media (max-width: 640px) {
+  .steelRow {
+    grid-template-columns: 1fr;
+  }
+
+  .photoLeft {
+    float: none;
+    margin: 0 auto 0.75rem;
+    text-align: center;
+  }
+}
