@@ -66,6 +66,8 @@ export type PhotographsPageProps = {
   titleId?: string;
   /** Navy title-bar text. Defaults to “Photograph Album”. */
   title?: string;
+  /** Optional lead copy above photograph sections (e.g. Bill Cotter intro). */
+  intro?: ReactNode;
 };
 
 const DEFAULT_TITLE = "Photograph Album";
@@ -80,6 +82,7 @@ export function PhotographsPage({
   overviewHref,
   titleId = "photograph-album-title",
   title = DEFAULT_TITLE,
+  intro,
 }: PhotographsPageProps) {
   return (
     <>
@@ -110,6 +113,7 @@ export function PhotographsPage({
         </header>
 
         <div className={styles.articleInner}>
+          {intro ? <div className={styles.intro}>{intro}</div> : null}
           <div className={styles.sections}>
             {sections.map((section) => (
               <section
