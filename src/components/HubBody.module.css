@@ -1,6 +1,7 @@
 /* Homepage hubs — 2×4 grid of light-blue rounded cards on white.
    White gutters around every card (matches attached spacing example).
-   Burgundy bars frame the grid. */
+   Burgundy bars frame the grid.
+   Link indicator overlays the lower-right corner of each hub image. */
 
 .section {
   width: 100%;
@@ -38,14 +39,12 @@
 }
 
 .card {
-  display: flex;
-  align-items: center;
-  gap: 0.65rem;
+  display: block;
   min-width: 0;
   height: 100%;
   box-sizing: border-box;
   /* Light-blue card chrome with white space around it via grid gaps */
-  padding: 0.7rem 0.75rem 0.7rem 0.7rem;
+  padding: 0.7rem;
   background: #f2f5fa;
   border-radius: 0.85rem;
   box-shadow: 0 1px 2px rgb(38 52 110 / 6%);
@@ -59,9 +58,9 @@
 }
 
 .icon {
+  position: relative;
   display: block;
-  flex: 1 1 auto;
-  min-width: 0;
+  width: 100%;
   line-height: 0;
   border-radius: 0.35rem;
   overflow: hidden;
@@ -75,12 +74,16 @@
 }
 
 .linksSymbol {
-  flex: 0 0 auto;
+  position: absolute;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  z-index: 1;
   display: inline-flex;
   align-items: center;
   justify-content: center;
   width: clamp(1.15rem, 3.2vw, 1.65rem);
   height: clamp(1.15rem, 3.2vw, 1.65rem);
+  pointer-events: none;
 }
 
 .linksSymbolArt {
@@ -98,12 +101,13 @@
   }
 
   .card {
-    gap: 0.55rem;
-    padding: 0.65rem 0.7rem;
+    padding: 0.65rem;
     border-radius: 0.75rem;
   }
 
   .linksSymbol {
+    right: 0.4rem;
+    bottom: 0.4rem;
     width: clamp(1.25rem, 5vw, 1.75rem);
     height: clamp(1.25rem, 5vw, 1.75rem);
   }
