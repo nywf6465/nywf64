@@ -3,8 +3,9 @@ import Link from "next/link";
 import styles from "./HubBody.module.css";
 
 /**
- * Homepage category hubs — vertical stack of hub icons (762×330, I-page card
- * size) with the links symbol to the right of each row.
+ * Homepage category hubs — eight hub icons in a 2×4 grid of light-blue
+ * rounded cards on white (white space around each card), with burgundy bars
+ * above and below the grid.
  */
 const HUBS = [
   {
@@ -64,10 +65,11 @@ export function HubBody() {
       className={styles.section}
       aria-label="Explore Fair categories"
     >
-      <ul className={styles.list}>
+      <div className={styles.bar} aria-hidden="true" />
+      <ul className={styles.grid}>
         {HUBS.map((hub) => (
           <li key={hub.id} className={styles.item}>
-            <Link href={hub.href} className={styles.row} aria-label={hub.title}>
+            <Link href={hub.href} className={styles.card} aria-label={hub.title}>
               <span className={styles.icon}>
                 <Image
                   src={hub.iconSrc}
@@ -93,6 +95,7 @@ export function HubBody() {
           </li>
         ))}
       </ul>
+      <div className={styles.bar} aria-hidden="true" />
     </section>
   );
 }
