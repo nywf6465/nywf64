@@ -1,0 +1,117 @@
+/*
+ * Seven-Up — 1964 Menu (/sevup07).
+ * Body from legacy sevup07.html.
+ * Stack: hero → SevupNavChrome → navy title → article → Nav2Bar.
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: #000;
+}
+
+.stack {
+  width: min(600px, 100%);
+  margin: 0 auto;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  line-height: 0;
+}
+
+.stackImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.source {
+  width: min(600px, 100%);
+  margin: 0.45rem auto 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.rule {
+  width: min(600px, 100%);
+  margin: 1.35rem auto 1.15rem;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.napkin {
+  width: min(600px, 100%);
+  margin: 0 auto;
+}
+
+.napkinFrame {
+  display: block;
+  padding: 1.5rem;
+  background: #000;
+  line-height: 0;
+  box-sizing: border-box;
+}
+
+.napkinImg {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.napkinCaption {
+  margin: 0.55rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-style: italic;
+  line-height: 1.35;
+  color: #009999;
+  text-align: center;
+}
