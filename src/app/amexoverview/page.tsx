@@ -54,8 +54,8 @@ export default function AmexOverviewPage() {
             <Image
               src="/images/amexoverview/photo.jpg"
               alt="American Express pavilion"
-              width={958}
-              height={776}
+              width={1530}
+              height={1028}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
