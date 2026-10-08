@@ -12,21 +12,11 @@ export const metadata: Metadata = {
     "Thailand Travel Talk brochure scans from the Thailand pavilion — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-const PAGES = [
-  { src: "05.01.jpg", width: 301, height: 390 },
-  { src: "05.02.jpg", width: 301, height: 390 },
-  { src: "05.03.jpg", width: 300, height: 390 },
-  { src: "05.04.jpg", width: 301, height: 389 },
-  { src: "05.05.jpg", width: 301, height: 389 },
-  { src: "05.06.jpg", width: 300, height: 389 },
-  { src: "05.07.jpg", width: 301, height: 389 },
-  { src: "05.08.jpg", width: 301, height: 389 },
-  { src: "05.09.jpg", width: 300, height: 389 },
-] as const;
-
 /**
- * Thailand Travel Talk — custom 3×3 brochure scan grid from legacy thai05.html.
- * Stack: hero → ThaiNavChrome → navy title bar → grid → Nav2Bar.
+ * Thailand Travel Talk — stitched brochure scan from legacy thai05.html.
+ * Legacy 3×3 tiles are composed into one image (china07 / unisph12 pattern)
+ * so no grid seam lines run through the scan.
+ * Stack: hero → ThaiNavChrome → navy title bar → brochure → Nav2Bar.
  */
 export default function Thai05Page() {
   return (
@@ -55,20 +45,16 @@ export default function Thai05Page() {
           Thailand Travel Talk
         </div>
         <div className={styles.body}>
-          <div className={styles.grid} role="list">
-            {PAGES.map((page, index) => (
-              <div key={page.src} className={styles.cell} role="listitem">
-                <Image
-                  src={`/images/thai05/${page.src}`}
-                  alt={`Thailand Travel Talk page ${index + 1}`}
-                  width={page.width}
-                  height={page.height}
-                  className={styles.cellImg}
-                  sizes="(max-width: 720px) 100vw, 300px"
-                  unoptimized
-                />
-              </div>
-            ))}
+          <div className={styles.frame}>
+            <Image
+              src="/images/thai05/thailand-travel-talk.jpg"
+              alt="Thailand Travel Talk brochure — Tourist Organization of Thailand special number for the New York World’s Fair"
+              width={902}
+              height={1168}
+              className={styles.brochure}
+              sizes="(max-width: 910px) 100vw, 900px"
+              unoptimized
+            />
           </div>
         </div>
       </article>

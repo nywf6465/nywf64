@@ -1,4 +1,4 @@
-/* Thailand Travel Talk — 3×3 bordered scan grid from legacy thai05.html */
+/* Thailand Travel Talk — stitched brochure scan from legacy thai05.html */
 
 .hero {
   position: relative;
@@ -34,48 +34,17 @@
   box-sizing: border-box;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 0;
+.frame {
   border: 1px solid #000;
   width: 100%;
   max-width: 900px;
   margin: 0 auto;
   background: #fff;
-}
-
-.cell {
   line-height: 0;
-  border-right: 1px solid #000;
-  border-bottom: 1px solid #000;
 }
 
-.cell:nth-child(3n) {
-  border-right: none;
-}
-
-.cell:nth-last-child(-n + 3) {
-  border-bottom: none;
-}
-
-.cellImg {
+.brochure {
   display: block;
   width: 100%;
   height: auto;
-}
-
-@media (max-width: 720px) {
-  .grid {
-    grid-template-columns: 1fr;
-  }
-
-  .cell {
-    border-right: none;
-    border-bottom: 1px solid #000;
-  }
-
-  .cell:last-child {
-    border-bottom: none;
-  }
 }
