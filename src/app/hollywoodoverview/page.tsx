@@ -50,8 +50,8 @@ export default function HollywoodOverviewPage() {
             <Image
               src="/images/hollywoodoverview/photo.jpg"
               alt="Hollywood — Grauman's Chinese Theater facsimile, movie sets, props, and costumes"
-              width={1584}
-              height={2246}
+              width={1254}
+              height={1254}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
