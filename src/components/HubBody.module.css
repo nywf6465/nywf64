@@ -1,29 +1,16 @@
-/* Homepage hub icons — light-blue full-bleed band (hero-wide), left-justified
-   stack. Burgundy rules frame the main body icon column only (not links symbols).
-   Band color sampled from the links-symbol example image (#f2f5fa). */
+/* Homepage hub icons — 2×4 grid of link cards (pavilion-card arrangement),
+   hero-wide light-blue band (#f2f5fa), burgundy bars above/below body icons. */
 
 .section {
   width: 100%;
   background: #f2f5fa;
-  padding: 1.15rem 0 1.35rem;
-  box-sizing: border-box;
-}
-
-.stack {
-  /* Left-justified 2-col grid: main body icons | links symbols */
-  display: grid;
-  grid-template-columns: minmax(0, min(22.5rem, calc(100% - 3rem))) auto;
-  column-gap: 0.85rem;
-  row-gap: 0.85rem;
-  justify-content: start;
-  align-items: center;
-  width: 100%;
-  max-width: 100%;
-  padding: 0 1.25rem;
+  padding: 0;
   box-sizing: border-box;
 }
 
 .bar {
+  display: block;
+  width: 100%;
   height: 4px;
   margin: 0;
   padding: 0;
@@ -31,30 +18,40 @@
   border: 0;
 }
 
-.barStart {
-  grid-column: 1;
-  grid-row: 1;
+.grid {
+  list-style: none;
+  margin: 0;
+  padding: 1rem 1.15rem 1.15rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: 0.85rem;
+  row-gap: 0.85rem;
+  box-sizing: border-box;
 }
 
-.barEnd {
-  grid-column: 1;
+.item {
+  margin: 0;
+  min-width: 0;
 }
 
-.barSpacer {
-  /* Keeps links-symbol column aligned; no bar under/over symbols */
-  grid-column: 2;
-  height: 4px;
-}
-
-.row {
-  display: contents;
+.card {
+  display: flex;
+  align-items: center;
+  gap: 0.55rem;
   text-decoration: none;
   color: inherit;
+  min-width: 0;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--burgundy, #990000);
+  outline-offset: 3px;
+  border-radius: 2px;
 }
 
 .icon {
   display: block;
-  grid-column: 1;
+  flex: 1 1 auto;
   min-width: 0;
   line-height: 0;
 }
@@ -67,12 +64,12 @@
 }
 
 .linksSymbol {
-  grid-column: 2;
+  flex: 0 0 auto;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  width: clamp(1.35rem, 4vw, 1.85rem);
-  height: clamp(1.35rem, 4vw, 1.85rem);
+  width: clamp(1.15rem, 3.2vw, 1.65rem);
+  height: clamp(1.15rem, 3.2vw, 1.65rem);
 }
 
 .linksSymbolArt {
@@ -82,17 +79,19 @@
   object-fit: contain;
 }
 
-.row:focus-visible .icon {
-  outline: 2px solid var(--burgundy, #990000);
-  outline-offset: 4px;
-  border-radius: 2px;
-}
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 0.85rem 0.85rem 1rem;
+    row-gap: 1rem;
+  }
 
-@media (max-width: 560px) {
-  .stack {
-    padding: 0 0.85rem;
-    column-gap: 0.55rem;
-    row-gap: 1.15rem;
-    grid-template-columns: minmax(0, 1fr) auto;
+  .card {
+    gap: 0.5rem;
+  }
+
+  .linksSymbol {
+    width: clamp(1.25rem, 5vw, 1.75rem);
+    height: clamp(1.25rem, 5vw, 1.75rem);
   }
 }
