@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 
 /**
  * West Virginia brochure — Come to the Fair (legacy wesvir06.html image strips).
+ * Layout matches legacy tables: stacked 400px panels, then 3-column 900px grids.
  * Layout: AdvertisingPage with custom title.
  */
 export default function Wesvir06Page() {
@@ -30,7 +31,7 @@ export default function Wesvir06Page() {
       nextHref="/wesvir07"
       collages={[
         {
-          columns: 4,
+          columns: 1,
           tiles: [1, 2, 3, 4].map((n) => ({
             src: `/images/wesvir06/wesvir39.${n}.jpg`,
             width: 400,
@@ -48,35 +49,31 @@ export default function Wesvir06Page() {
           })),
         },
         {
-          columns: 6,
-          tiles: [1, 2, 3, 4, 5, 6].map((n) => ({
-            src: `/images/wesvir06/wesvir41.${n}.jpg`,
-            width: 300,
-            height: 240,
-            alt: `Come to the Fair brochure panel 41.${n}`,
-          })),
-        },
-        {
           columns: 3,
-          tiles: [1, 2, 3].map((n) => ({
-            src: `/images/wesvir06/wesvir42.${n}.jpg`,
-            width: 300,
-            height: 373,
-            alt: `Come to the Fair brochure panel 42.${n}`,
-          })),
-        },
-        {
-          columns: 3,
-          tiles: [1, 2, 3].map((n) => ({
-            src: `/images/wesvir06/wesvir43.${n}.jpg`,
-            width: 300,
-            height: 412,
-            alt: `Come to the Fair brochure panel 43.${n}`,
-          })),
+          tiles: [
+            ...[1, 2, 3, 4, 5, 6].map((n) => ({
+              src: `/images/wesvir06/wesvir41.${n}.jpg`,
+              width: 300,
+              height: 240,
+              alt: `Come to the Fair brochure panel 41.${n}`,
+            })),
+            ...[1, 2, 3].map((n) => ({
+              src: `/images/wesvir06/wesvir42.${n}.jpg`,
+              width: 300,
+              height: 373,
+              alt: `Come to the Fair brochure panel 42.${n}`,
+            })),
+            ...[1, 2, 3].map((n) => ({
+              src: `/images/wesvir06/wesvir43.${n}.jpg`,
+              width: 300,
+              height: 412,
+              alt: `Come to the Fair brochure panel 43.${n}`,
+            })),
+          ],
           sources: [<>SOURCE: Brochure Come to the Fair</>],
         },
         {
-          columns: 4,
+          columns: 1,
           tiles: [1, 2, 3, 4].map((n) => ({
             src: `/images/wesvir06/wesvir40.${n}.jpg`,
             width: 400,

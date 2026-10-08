@@ -22,6 +22,7 @@ function pamphletTiles(prefix: number) {
 
 /**
  * West Virginia groundbreaking pamphlet — image collages from legacy wesvir04.html.
+ * Each bordered spread is a 3×2 tile grid (900px legacy tables).
  * Layout: AdvertisingPage with custom title (no PDF on legacy).
  */
 export default function Wesvir04Page() {
@@ -40,16 +41,16 @@ export default function Wesvir04Page() {
       previousHref="/wesvir03"
       overviewHref="/wesviroverview"
       nextHref="/wesvir05"
-      columns={6}
+      columns={3}
       collages={[
-        { columns: 6, tiles: pamphletTiles(31) },
-        { columns: 6, tiles: pamphletTiles(32) },
-        { columns: 6, tiles: pamphletTiles(33) },
-        { columns: 6, tiles: pamphletTiles(34) },
-        { columns: 6, tiles: pamphletTiles(35) },
-        { columns: 6, tiles: pamphletTiles(36) },
-        { columns: 6, tiles: pamphletTiles(37) },
-        { columns: 6, tiles: pamphletTiles(38) },
+        { columns: 3, tiles: pamphletTiles(31) },
+        { columns: 3, tiles: pamphletTiles(32) },
+        { columns: 3, tiles: pamphletTiles(33) },
+        { columns: 3, tiles: pamphletTiles(34) },
+        { columns: 3, tiles: pamphletTiles(35) },
+        { columns: 3, tiles: pamphletTiles(36) },
+        { columns: 3, tiles: pamphletTiles(37) },
+        { columns: 3, tiles: pamphletTiles(38) },
       ]}
     />
   );
