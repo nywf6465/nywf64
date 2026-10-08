@@ -50,8 +50,8 @@ export default function ChinaOverviewPage() {
             <Image
               src="/images/chinaoverview/photo.jpg"
               alt="China — emperor's palace replica with art objects"
-              width={958}
-              height={612}
+              width={1531}
+              height={1027}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
