@@ -1,0 +1,229 @@
+/*
+ * American Express — essay feature page (amex12).
+ * Body from legacy amex12.html.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(56rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.body p,
+.sectionHeading + p {
+  margin: 0 0 0.95rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: #8080c0;
+}
+
+.sectionHeading {
+  margin: 1.35rem 0 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.35;
+  color: #8080c0;
+}
+
+.source {
+  margin: 0.85rem 0 1rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #8080c0;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.figure {
+  margin: 0.85rem 0 0.35rem;
+  text-align: center;
+}
+
+.figure img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.figureWide img {
+  width: min(595px, 100%);
+}
+
+.caption {
+  margin: 0 0 1.15rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #8080c0;
+  text-align: center;
+}
+
+.features {
+  margin: 1rem 0 1.25rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #999;
+  background: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #000;
+  white-space: pre-wrap;
+}
+
+.webmaster {
+  margin: 1.5rem 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: #8080c0;
+}
+
+.webmasterLinks {
+  margin: 0 0 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: #8080c0;
+}
+
+.webmasterLinks a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.webmasterLinks a:hover {
+  color: #ff0000;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.brandNywf {
+  color: #00008b;
+}
+
+.brandSixtyFour {
+  color: #dc143c;
+}
+
+.brandDotCom {
+  color: #00008b;
+}
+
+.date {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  line-height: 1.45;
+  color: #8080c0;
+}
+
+.pullQuote {
+  margin: 1rem 0 1.25rem;
+  padding: 0 0.5rem;
+}
+
+.pullQuote p {
+  margin: 0 0 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.45;
+  color: #000;
+}
+
+.attribution {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.attribution a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.webmasterNote {
+  margin: 1.25rem 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid #999;
+  background: #fff;
+}
+
+.webmasterLead {
+  margin: 0 0 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  color: #000;
+}
+
+.webmasterNote .body p {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #000;
+}
