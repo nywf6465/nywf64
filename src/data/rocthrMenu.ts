@@ -23,7 +23,7 @@ export const ROCTHR_MENU_TOPICS: AttractionTopic[] = [
     href: "/rocthr03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/rocthr04",
   },
 ];

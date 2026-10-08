@@ -23,7 +23,7 @@ export const THAI_MENU_TOPICS: AttractionTopic[] = [
     href: "/thai03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/thai04",
   },
   {

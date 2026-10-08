@@ -23,7 +23,7 @@ export const WFPAV_MENU_TOPICS: AttractionTopic[] = [
     href: "/wfpav03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/wfpav04",
   },
 ];

@@ -20,7 +20,7 @@ export const NEWYORCIT_MENU_TOPICS: AttractionTopic[] = [
     href: "/newyorcit02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/newyorcit03",
   },
 ];

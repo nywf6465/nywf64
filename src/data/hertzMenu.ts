@@ -15,7 +15,7 @@ export const HERTZ_MENU_TOPICS: AttractionTopic[] = [
     href: "/hertz01",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/hertz02",
   },
 ];

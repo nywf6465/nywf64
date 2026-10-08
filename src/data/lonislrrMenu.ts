@@ -20,7 +20,7 @@ export const LONISLRR_MENU_TOPICS: AttractionTopic[] = [
     href: "/lonislrr02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/lonislrr03",
   },
   {

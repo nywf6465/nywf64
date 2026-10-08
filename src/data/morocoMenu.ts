@@ -25,7 +25,7 @@ export const MOROCO_MENU_TOPICS: AttractionTopic[] = [
     href: "/moroco03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/moroco04",
   },
   {

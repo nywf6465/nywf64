@@ -23,7 +23,7 @@ export const WISCONSIN_MENU_TOPICS: AttractionTopic[] = [
     href: "/wisconsin03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/wisconsin04",
   },
   {

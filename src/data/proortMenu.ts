@@ -23,7 +23,7 @@ export const PROORT_MENU_TOPICS: AttractionTopic[] = [
     href: "/proort03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/proort04",
   },
 ];

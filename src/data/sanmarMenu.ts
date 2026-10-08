@@ -19,7 +19,7 @@ export const SANMAR_MENU_TOPICS: AttractionTopic[] = [
     href: "/sanmar02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/sanmar03",
   },
 ];
