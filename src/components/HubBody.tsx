@@ -3,9 +3,9 @@ import Link from "next/link";
 import styles from "./HubBody.module.css";
 
 /**
- * Homepage category hubs — eight hub icons in a 2×4 grid (matching the
- * pavilion-style link-card arrangement), inside a hero-wide light-blue band
- * with burgundy bars above and below the main body icons.
+ * Homepage category hubs — eight hub icons in a 2×4 grid of light-blue
+ * rounded cards on white (white space around each card), with burgundy bars
+ * above and below the grid.
  */
 const HUBS = [
   {
