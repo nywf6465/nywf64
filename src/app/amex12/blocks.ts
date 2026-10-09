@@ -2,7 +2,7 @@ export type Amex12Block =
   | { type: "h3"; text: string }
   | { type: "p"; text: string }
   | { type: "source"; text: string; muted?: boolean }
-  | { type: "caption"; text: string; small?: boolean }
+  | { type: "caption"; text: string; small?: boolean; matchImage?: boolean }
   | { type: "features"; text: string }
   | { type: "webmaster"; text: string }
   | { type: "webmasterLinks"; text: string }
@@ -50,7 +50,11 @@ export const AMEX12_BLOCKS: Amex12Block[] = [
     height: 924,
     alt: "Proposed pavilion designed by Edward Durell Stone",
   },
-  { type: "caption", text: "Proposed pavilion designed by Edward Durell Stone that would display the model of the Fair. No sponsor was found and the structure was never built." },
+  {
+    type: "caption",
+    text: "Proposed pavilion designed by Edward Durell Stone that would display the model of the Fair. No sponsor was found and the structure was never built.",
+    matchImage: true,
+  },
   {
     type: "source",
     text: "SOURCE: unknown, contribuion of Gary Holmes",
