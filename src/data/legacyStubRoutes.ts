@@ -14876,18 +14876,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
-  "info_booth12": {
-    slug: "info_booth12",
-    title: "Brochure: What Every Family Should Know About the World's Fair",
-    metaTitle: "Brochure: What Every Family Should Know About the World's Fair — Fair Facts & Figures — nywf64.com",
-    metaDescription: "Brochure: What Every Family Should Know About the World's Fair — Fair Facts & Figures from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "InfoBoothNavChrome",
-    overviewHref: "/information",
-    overviewLabel: "The Information Booth",
-    placeholder: "Fair Facts & Figures content",
-    previousHref: "/info_booth11",
-    nextHref: "/info_booth13",
-  },
   "info_booth13": {
     slug: "info_booth13",
     title: "Brochure: Family Fun at the Fair",
