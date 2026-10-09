@@ -1,0 +1,123 @@
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  width: 100%;
+  background: #26346e;
+  color: #fff;
+  text-align: center;
+  padding: 0.55rem 0.75rem;
+  box-sizing: border-box;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  font-size: clamp(0.95rem, 2.2vw, 1.15rem);
+  line-height: 1.3;
+}
+
+.articleInner {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.release {
+  border: 1px solid #000;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  margin: 0 0 1rem;
+}
+
+.letterhead {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0.75rem;
+}
+
+.releaseHead {
+  text-align: center;
+  font-weight: 700;
+  margin: 0 0 0.75rem;
+}
+
+.release p {
+  margin: 0 0 0.75rem;
+  text-align: left;
+}
+
+.source {
+  margin: 0.5rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  text-align: left;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1rem 0 1.25rem;
+}
+
+.figure {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.photo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.photoNoBorder {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.captionBold {
+  margin: 0.5rem 0 0;
+  text-align: left;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.captionBoldSmall {
+  margin: 0.45rem 0 0;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  font-weight: 700;
+}
+
+.newsBody {
+  margin: 0 0 1rem;
+  text-align: left;
+}
+
+.newsBody p {
+  margin: 0 0 0.75rem;
+}
