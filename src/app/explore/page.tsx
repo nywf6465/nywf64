@@ -16,7 +16,7 @@ const HOTSPOTS = [
   {
     id: "unisphere",
     label: "THE UNISPHERE",
-    href: "/unisph01",
+    href: "/unisphoverview",
     left: "1.367%",
     top: "39.062%",
     width: "11.475%",
@@ -25,7 +25,7 @@ const HOTSPOTS = [
   {
     id: "gms-futurama",
     label: "GM'S FUTURAMA",
-    href: "/gmguidebook",
+    href: "/gmoverview",
     left: "13.623%",
     top: "39.062%",
     width: "11.475%",
@@ -34,7 +34,7 @@ const HOTSPOTS = [
   {
     id: "the-pieta",
     label: "THE PIETÀ",
-    href: "/vaticanguidebook",
+    href: "/vaticanoverview",
     left: "25.879%",
     top: "39.062%",
     width: "11.475%",
@@ -43,7 +43,7 @@ const HOTSPOTS = [
   {
     id: "ny-state-pavilion",
     label: "NY STATE PAVILION",
-    href: "/newyorguidebook",
+    href: "/newyoroverview",
     left: "38.135%",
     top: "39.062%",
     width: "11.475%",
@@ -52,7 +52,7 @@ const HOTSPOTS = [
   {
     id: "carousel-of-progress",
     label: "THE CAROUSEL OF PROGRESS",
-    href: "/geneleguidebook",
+    href: "/geneleoverview",
     left: "50.391%",
     top: "39.062%",
     width: "11.475%",
@@ -61,7 +61,7 @@ const HOTSPOTS = [
   {
     id: "bell-system-pavilion",
     label: "THE BELL SYSTEM PAVILION",
-    href: "/bell01",
+    href: "/belloverview",
     left: "62.646%",
     top: "39.062%",
     width: "11.475%",
@@ -70,7 +70,7 @@ const HOTSPOTS = [
   {
     id: "florida-live-porpoise-show",
     label: "THE FLORIDA LIVE PORPOISE SHOW",
-    href: "/floridaguidebook",
+    href: "/floridaoverview",
     left: "74.902%",
     top: "39.062%",
     width: "11.475%",
@@ -79,7 +79,7 @@ const HOTSPOTS = [
   {
     id: "ibm-people-wall",
     label: "THE IBM PEOPLE WALL",
-    href: "/ibm01",
+    href: "/ibmoverview",
     left: "87.158%",
     top: "39.062%",
     width: "11.475%",

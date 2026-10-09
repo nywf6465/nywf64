@@ -68,7 +68,7 @@ export default function BrilionmapPage() {
       <Nav2Bar
         previousHref="/brilion01"
         explicitPrevious
-        overviewHref="/brilion01"
+        overviewHref="/brilionoverview"
         nextHref="/brilion02"
       />
     </>

@@ -19,8 +19,8 @@ export function FordTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/ford01" style={{ color: "#990000" }}>
-            ← Ford
+          <Link href="/fordoverview" style={{ color: "#990000" }}>
+            ← Ford overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -31,7 +31,8 @@ export function FordTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/ford01"
+        previousHref="/fordoverview"
+        overviewHref="/fordoverview"
         nextHref="#"
       />
     </>

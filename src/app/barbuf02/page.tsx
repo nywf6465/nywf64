@@ -26,8 +26,8 @@ export default function Barbuf02Page() {
       }}
       nav={<BarbufNavChrome />}
       previousHref="/barbuf01"
-      overviewHref="/barbuf01"
-      nextHref="/barbuf01"
+      overviewHref="/barbufoverview"
+      nextHref="/barbufoverview"
       sections={[
         {
           heading: "Commercial Photographs",

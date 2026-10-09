@@ -28,7 +28,7 @@ export default function Betliv06Page() {
       }}
       nav={<BetlivNavChrome />}
       previousHref="/betliv05"
-      overviewHref="/betliv01"
+      overviewHref="/betlivoverview"
       nextHref="/betliv07"
       cover={{
         src: "/images/betliv06/sales-brochure-cover.jpg",

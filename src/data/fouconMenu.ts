@@ -7,6 +7,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const FOUCON_MENU_TOPICS: AttractionTopic[] = [
   {
+    label: "Overview",
+    href: "/fouconoverview",
+  },
+  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/foucon01",
   },

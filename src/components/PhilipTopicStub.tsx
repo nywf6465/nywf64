@@ -16,8 +16,8 @@ export function PhilipTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/philip01" style={{ color: "#990000" }}>
-            ← Philippines
+          <Link href="/philipoverview" style={{ color: "#990000" }}>
+            ← Philippines overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function PhilipTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/philip01"
+        previousHref="/philipoverview"
+        overviewHref="/philipoverview"
         nextHref="/philip01"
       />
     </>

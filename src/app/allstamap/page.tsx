@@ -68,7 +68,7 @@ export default function AllstaMapPage() {
       <Nav2Bar
         previousHref="/allsta01"
         explicitPrevious
-        overviewHref="/allsta01"
+        overviewHref="/allstaoverview"
         nextHref="/allsta02"
       />
     </>

@@ -68,7 +68,7 @@ export default function AstfountMapPage() {
       <Nav2Bar
         previousHref="/astfount01"
         explicitPrevious
-        overviewHref="/astfount01"
+        overviewHref="/astfountoverview"
         nextHref="/astfount02"
       />
     </>

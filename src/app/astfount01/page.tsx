@@ -27,6 +27,7 @@ export default function Astfount01Page() {
         height: 825,
       }}
       nav={<AstfountNavChrome />}
+      previousHref="/astfountoverview"
       nextHref="/astfount02"
       guide1964={{
         cover: {

@@ -16,8 +16,8 @@ export function DemocrTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/democr01" style={{ color: "#990000" }}>
-            ← Demonstration Center
+          <Link href="/democroverview" style={{ color: "#990000" }}>
+            ← Demonstration Center overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function DemocrTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/democr01"
+        previousHref="/democroverview"
+        overviewHref="/democroverview"
         nextHref="/democr01"
       />
     </>

@@ -16,8 +16,8 @@ export function HertzTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/hertz01" style={{ color: "#990000" }}>
-            ← Hertz Travel Center
+          <Link href="/hertzoverview" style={{ color: "#990000" }}>
+            ← Hertz Travel Center overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function HertzTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/hertz01"
+        previousHref="/hertzoverview"
+        overviewHref="/hertzoverview"
         nextHref="/hertz01"
       />
     </>

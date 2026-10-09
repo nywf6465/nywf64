@@ -26,8 +26,8 @@ export default function Arlhat03Page() {
       }}
       nav={<ArlhatNavChrome />}
       previousHref="/arlhat02"
-      overviewHref="/arlhat01"
-      nextHref="/arlhat01"
+      overviewHref="/arlhatoverview"
+      nextHref="/arlhatoverview"
       sections={[
         {
           heading: "Fairgoer Photographs",

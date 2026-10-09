@@ -2,11 +2,15 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * maspiz menu — nav-menu topics for all routes beginning with `maspiz`.
- * Labels match `media/maspiz-menu-topics-source.jpg`.
+ * Labels match `media/maspiz-menu-topics-source.jpg` (+ Overview at top).
  * Guidebook & Souvenir Map Entries is one topic (wrapped in source).
  * Non-Overview routes: `maspiz01`…`maspiz02`.
  */
 export const MASPIZ_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/maspizoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/maspiz01",

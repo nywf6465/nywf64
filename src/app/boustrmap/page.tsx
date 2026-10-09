@@ -68,7 +68,7 @@ export default function BoustrmapPage() {
       <Nav2Bar
         previousHref="/boustr01"
         explicitPrevious
-        overviewHref="/boustr01"
+        overviewHref="/boustroverview"
         nextHref="/boustr02"
       />
     </>

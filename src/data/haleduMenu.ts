@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Hall of Education menu — nav-menu topics for all routes beginning with `haledu`.
- * Labels match `media/haledu-menu-topics-source.jpg`.
+ * Labels match `media/haledu-menu-topics-source.jpg` (+ Overview at top).
  * Non-Overview routes: `haledu01`…`haledu07`.
  */
 export const HALEDU_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/haleduoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/haledu01",

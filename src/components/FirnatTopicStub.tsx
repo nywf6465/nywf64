@@ -16,8 +16,8 @@ export function FirnatTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/firnat01" style={{ color: "#990000" }}>
-            ← First National City Bank
+          <Link href="/firnatoverview" style={{ color: "#990000" }}>
+            ← First National City Bank overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function FirnatTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/firnat01"
+        previousHref="/firnatoverview"
+        overviewHref="/firnatoverview"
         nextHref="/firnat01"
       />
     </>

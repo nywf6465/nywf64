@@ -16,8 +16,8 @@ export function PavamiTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/pavami01" style={{ color: "#990000" }}>
-            ← Pavilion of American Interiors
+          <Link href="/pavamioverview" style={{ color: "#990000" }}>
+            ← Pavilion of American Interiors overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function PavamiTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/pavami01"
+        previousHref="/pavamioverview"
+        overviewHref="/pavamioverview"
         nextHref="/pavami01"
       />
     </>

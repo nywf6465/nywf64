@@ -26,7 +26,7 @@ export default function Boustr02Page() {
       }}
       nav={<BoustrNavChrome />}
       previousHref="/boustr01"
-      overviewHref="/boustr01"
+      overviewHref="/boustroverview"
       nextHref="/boustr03"
       factsLeft={[
         {

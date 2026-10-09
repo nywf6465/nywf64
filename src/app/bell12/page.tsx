@@ -30,7 +30,7 @@ export default function Bell12Page() {
       }}
       nav={<BellNavChrome />}
       previousHref="/bell11"
-      overviewHref="/bell01"
+      overviewHref="/belloverview"
       nextHref="/bellfloatingwing"
       cover={{
         src: "/images/bell12/fun-at-the-fair-1965-cover.jpg",

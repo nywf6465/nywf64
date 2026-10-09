@@ -9,7 +9,7 @@ export type DCard = FountainsCard;
 
 const DANCING_WATERS: DCard = {
   id: "dancing-waters",
-  href: "/danwat01",
+  href: "/danwatoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Dancing Waters",
   // TEXT (to the right of ICON) — exact from danwatoverview/06-d-card-text.jpg
@@ -22,7 +22,7 @@ const DANCING_WATERS: DCard = {
 
 const DEMONSTRATION_CENTER: DCard = {
   id: "demonstration-center",
-  href: "/democr01",
+  href: "/democroverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Demonstration Center",
   // TEXT (to the right of ICON) — exact from democroverview/06-d-card-text.jpg
@@ -35,7 +35,7 @@ const DEMONSTRATION_CENTER: DCard = {
 
 const DENMARK: DCard = {
   id: "denmark",
-  href: "/denmark01",
+  href: "/denmarkoverview",
   // DESCRIPTION (italic under ICON) — exact icon name (trimmed trailing space)
   title: "Denmark",
   // TEXT (to the right of ICON) — exact from denmarkoverview/01-text.jpg
@@ -48,7 +48,7 @@ const DENMARK: DCard = {
 
 const DUPONT: DCard = {
   id: "dupont",
-  href: "/dupont01",
+  href: "/dupontoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "DuPont",
   // TEXT (to the right of ICON) — exact from dupontoverview/06-d-card-text.jpg
@@ -61,7 +61,7 @@ const DUPONT: DCard = {
 
 const DYNAMIC_MATURITY: DCard = {
   id: "dynamic-maturity",
-  href: "/dynmat01",
+  href: "/dynmatoverview",
   // DESCRIPTION (italic under ICON) — exact icon name (trimmed trailing space)
   title: "Dynamic Maturity",
   // TEXT (to the right of ICON) — exact from dynmatoverview/06-d-card-text.jpg

@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * General Cigar menu — nav-menu topics for all routes beginning with `gencig`.
- * Labels match `media/gencig-menu-topics-source.jpg`.
+ * Labels match `media/gencig-menu-topics-source.jpg` (+ Overview at top).
  * Non-Overview routes: `gencig01`…`gencig09`.
  */
 export const GENCIG_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/gencigoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/gencig01",

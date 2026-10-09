@@ -27,6 +27,7 @@ export default function Avis01Page() {
         height: 826,
       }}
       nav={<AvisNavChrome />}
+      previousHref="/avisoverview"
       nextHref="/avis02"
       guide1964={{
         cover: {

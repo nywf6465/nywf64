@@ -8,7 +8,7 @@ export type HCard = FountainsCard;
 
 const HALL_OF_EDUCATION: HCard = {
   id: "haledu",
-  href: "/haledu01",
+  href: "/haleduoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Hall of Education",
   // TEXT (to the right of ICON) — exact from haledu-h-card-text-source.jpg
@@ -21,7 +21,7 @@ const HALL_OF_EDUCATION: HCard = {
 
 const HALL_OF_FREE_ENTERPRISE: HCard = {
   id: "halfre",
-  href: "/halfre01",
+  href: "/halfreoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Hall of Free Enterprise",
   // TEXT (to the right of ICON) — exact from halfre-h-card-text-source.jpg
@@ -34,7 +34,7 @@ const HALL_OF_FREE_ENTERPRISE: HCard = {
 
 const HALL_OF_SCIENCE: HCard = {
   id: "halsci",
-  href: "/halsci01",
+  href: "/halscioverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Hall of Science",
   // TEXT (to the right of ICON) — exact from halsci-h-card-text-source.jpg
@@ -47,7 +47,7 @@ const HALL_OF_SCIENCE: HCard = {
 
 const HAWAII: HCard = {
   id: "hawaii",
-  href: "/hawaii01",
+  href: "/hawaiioverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Hawaii",
   // TEXT (to the right of ICON) — exact from hawaii-h-card-text-source.jpg
@@ -60,7 +60,7 @@ const HAWAII: HCard = {
 
 const HEARTLAND: HCard = {
   id: "heartland",
-  href: "/heartland01",
+  href: "/heartlandoverview",
   // DESCRIPTION (italic under ICON) — exact card description (not icon name alone)
   title: "Heartland States U.S.A. / Midwestern States",
   // TEXT (to the right of ICON) — exact from heartland-h-card-text-source.jpg
@@ -73,7 +73,7 @@ const HEARTLAND: HCard = {
 
 const HERTZ: HCard = {
   id: "hertz",
-  href: "/hertz01",
+  href: "/hertzoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Hertz Travel Center",
   // TEXT (to the right of ICON) — exact from hertz-h-card-text-source.jpg
@@ -86,7 +86,7 @@ const HERTZ: HCard = {
 
 const HOLLYWOOD: HCard = {
   id: "hollywood",
-  href: "/hollywood01",
+  href: "/hollywoodoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Hollywood",
   // TEXT (to the right of ICON) — exact from hollywood-h-card-text-source.jpg
@@ -100,7 +100,7 @@ const HOLLYWOOD: HCard = {
 
 const HONKON: HCard = {
   id: "honkon",
-  href: "/honkon01",
+  href: "/honkonoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Hong Kong",
   // TEXT (to the right of ICON) — exact from honkon-h-card-text-source.jpg
@@ -114,7 +114,7 @@ const HONKON: HCard = {
 
 const HOUGT: HCard = {
   id: "hougt",
-  href: "/hougt01",
+  href: "/hougtoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "House of Good Taste",
   // TEXT (to the right of ICON) — exact from hougt-card-text-source.jpg

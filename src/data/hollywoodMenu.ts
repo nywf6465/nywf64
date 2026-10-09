@@ -2,11 +2,15 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Hollywood menu — nav-menu topics for all routes beginning with `hollywood`.
- * Labels match `media/hollywood-menu-topics-source.jpg`.
+ * Labels match `media/hollywood-menu-topics-source.jpg` (+ Overview at top).
  * Non-Overview routes: `hollywood01`…`hollywood15`.
  * Overview path is `/hollywoodoverview`.
  */
 export const HOLLYWOOD_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/hollywoodoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/hollywood01",

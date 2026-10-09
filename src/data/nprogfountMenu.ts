@@ -7,6 +7,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const NPROGFOUNT_MENU_TOPICS: AttractionTopic[] = [
   {
+    label: "Overview",
+    href: "/nprogfountoverview",
+  },
+  {
     label: "1964 & 1965 Official Guide Book & Souvenir Map",
     href: "/nprogfount01",
   },

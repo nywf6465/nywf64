@@ -27,6 +27,7 @@ export default function Autthr01Page() {
         height: 826,
       }}
       nav={<AutthrNavChrome />}
+      previousHref="/autthroverview"
       nextHref="/autthr02"
       guide1964={{
         cover: {

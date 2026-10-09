@@ -6,6 +6,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const VATICAN_MENU_TOPICS: AttractionTopic[] = [
   {
+    label: "Overview",
+    href: "/vaticanoverview",
+  },
+  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/vatican01",
   },

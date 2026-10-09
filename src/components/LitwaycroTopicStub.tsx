@@ -16,8 +16,8 @@ export function LitwaycroTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/litwaycro01" style={{ color: "#990000" }}>
-            ← Lithuanian Wayside Cross
+          <Link href="/litwaycrooverview" style={{ color: "#990000" }}>
+            ← Lithuanian Wayside Cross overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function LitwaycroTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/litwaycro01"
+        previousHref="/litwaycrooverview"
+        overviewHref="/litwaycrooverview"
         nextHref="/litwaycro01"
       />
     </>

@@ -16,8 +16,8 @@ export function HalsciTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/halsci01" style={{ color: "#990000" }}>
-            ← Hall of Science
+          <Link href="/halscioverview" style={{ color: "#990000" }}>
+            ← Hall of Science overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function HalsciTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/halsci01"
+        previousHref="/halscioverview"
+        overviewHref="/halscioverview"
         nextHref="/halsci01"
       />
     </>

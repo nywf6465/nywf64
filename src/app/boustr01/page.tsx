@@ -27,6 +27,7 @@ export default function Boustr01Page() {
         height: 824,
       }}
       nav={<BoustrNavChrome />}
+      previousHref="/boustroverview"
       nextHref="/boustr02"
       guide1964={{
         cover: {

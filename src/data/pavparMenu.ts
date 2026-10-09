@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Pavilion of Paris menu — topics for routes beginning with `pavpar`.
- * Labels match the pavpar menu-topics mockup.
+ * Labels match the pavpar menu-topics mockup; Overview at top.
  * Non-Overview routes: `pavpar01`…`pavpar06`.
  */
 export const PAVPAR_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/pavparoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/pavpar01",

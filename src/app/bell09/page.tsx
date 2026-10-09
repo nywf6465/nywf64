@@ -214,7 +214,7 @@ export default function Bell09Page() {
 
       <Nav2Bar
         previousHref="/bell08"
-        overviewHref="/bell01"
+        overviewHref="/belloverview"
         nextHref="/bellexhibithall"
       />
     </>

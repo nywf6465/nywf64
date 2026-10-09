@@ -2,11 +2,15 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Heartland States U.S.A. menu — nav-menu topics for all routes beginning with `heartland`.
- * Labels match `media/heartland-menu-topics-source.jpg`.
+ * Labels match `media/heartland-menu-topics-source.jpg` (+ Overview at top).
  * Spelling preserved from source (e.g. "Guide Book" as two words).
  * Non-Overview routes: `heartland01`…`heartland17`.
  */
 export const HEARTLAND_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/heartlandoverview",
+  },
   {
     label: "1964 & 1965 Official Guide Book & Souvenir Map Entries",
     href: "/heartland01",

@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Transportation & Travel menu — nav-menu topics for all routes beginning with `trantrav`.
- * Labels match uploaded menu topics.
+ * Labels match uploaded menu topics (+ Overview at top).
  * Non-Overview routes: `trantrav01`…`trantrav14`.
  */
 export const TRANTRAV_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/trantravoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/trantrav01",

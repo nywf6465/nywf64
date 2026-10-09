@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Berlin menu — nav-menu topics for all routes beginning with `berlin`.
- * Labels match the berlin-menu-topics mockup.
+ * Labels match the berlin-menu-topics mockup; Overview at top.
  * Non-Overview routes: `berlin01`…`berlin06`.
  */
 export const BERLIN_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/berlinoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/berlin01",

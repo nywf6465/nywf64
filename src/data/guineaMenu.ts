@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Guinea menu — nav-menu topics for all routes beginning with `guinea`.
- * Labels match `media/guinea-menu-topics-source.jpg`.
+ * Labels match `media/guinea-menu-topics-source.jpg` (+ Overview at top).
  * Non-Overview routes: `guinea01`…`guinea03`.
  */
 export const GUINEA_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/guineaoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/guinea01",

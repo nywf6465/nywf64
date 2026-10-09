@@ -25,7 +25,7 @@ export default function Brilion02Page() {
       }}
       nav={<BrilionNavChrome />}
       previousHref="/brilion01"
-      overviewHref="/brilion01"
+      overviewHref="/brilionoverview"
       nextHref="/brilion03"
       factsLeft={[
         {

@@ -67,7 +67,7 @@ export default function BellMapPage() {
       <Nav2Bar
         previousHref="/bell01"
         explicitPrevious
-        overviewHref="/bell01"
+        overviewHref="/belloverview"
         nextHref="/bell02"
       />
     </>

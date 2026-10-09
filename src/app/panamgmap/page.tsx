@@ -68,7 +68,7 @@ export default function PanamgMapPage() {
       <Nav2Bar
         previousHref="/panamg01"
         explicitPrevious
-        overviewHref="/panamg01"
+        overviewHref="/panamgoverview"
         nextHref="/panamg02"
       />
     </>

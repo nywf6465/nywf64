@@ -66,7 +66,7 @@ export default function FordMapPage() {
 
       <Nav2Bar
         previousHref="/ford01"
-        overviewHref="/ford01"
+        overviewHref="/fordoverview"
         nextHref="/ford01"
       />
     </>

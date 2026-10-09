@@ -31,8 +31,8 @@ export default function Belvil08Page() {
       }}
       nav={<BelvilNavChrome />}
       previousHref="/belvil07"
-      overviewHref="/belvil01"
-      nextHref="/belvil01"
+      overviewHref="/belviloverview"
+      nextHref="/belviloverview"
       cover={{
         src: "/images/belvil08/inventions-exhibit-cover.jpg",
         width: 89,

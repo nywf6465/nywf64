@@ -30,8 +30,8 @@ export default function Argent04Page() {
       }}
       nav={<ArgentNavChrome />}
       previousHref="/argent03"
-      overviewHref="/argent01"
-      nextHref="/argent01"
+      overviewHref="/argentoverview"
+      nextHref="/argentoverview"
       cover={{
         src: "/images/argent04/cornerstone-cover.jpg",
         width: 190,

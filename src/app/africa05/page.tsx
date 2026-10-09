@@ -88,8 +88,8 @@ export default function Africa05Page() {
       <Nav2Bar
         previousHref="/africa04"
         explicitPrevious
-        overviewHref="/africa01"
-        nextHref="/africa01"
+        overviewHref="/africaoverview"
+        nextHref="/africaoverview"
       />
     </>
   );

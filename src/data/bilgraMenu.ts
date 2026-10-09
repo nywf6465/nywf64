@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Bilgra menu — nav-menu topics for all routes beginning with `bilgra`.
- * Labels match the bilgra-menu-topics mockup.
+ * Labels match the bilgra-menu-topics mockup; Overview at top.
  * Non-Overview routes: `bilgra01`…`bilgra11`.
  */
 export const BILGRA_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/bilgraoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/bilgra01",

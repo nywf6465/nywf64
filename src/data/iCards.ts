@@ -8,7 +8,7 @@ export type ICard = FountainsCard;
 
 const ILLINOIS: ICard = {
   id: "illinois",
-  href: "/illinoisguidebook",
+  href: "/illinoisoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Illinois",
   // TEXT (to the right of ICON) — exact from illinois-card-text-source.jpg
@@ -22,7 +22,7 @@ const ILLINOIS: ICard = {
 
 const INDIA: ICard = {
   id: "india",
-  href: "/india01",
+  href: "/indiaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "India",
   // TEXT (to the right of ICON) — exact from india-card-text-source.jpg
@@ -36,7 +36,7 @@ const INDIA: ICard = {
 
 const INDONESIA: ICard = {
   id: "indones",
-  href: "/indones01",
+  href: "/indonesoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Indonesia",
   // TEXT (to the right of ICON) — exact from indonesia-card-text-source.jpg
@@ -50,7 +50,7 @@ const INDONESIA: ICard = {
 
 const IBM: ICard = {
   id: "ibm",
-  href: "/ibm01",
+  href: "/ibmoverview",
   // DESCRIPTION (italic under ICON) — exact registered icon name
   title: "International Business Machines",
   // TEXT (to the right of ICON) — exact from ibm-card-text-source.jpg
@@ -64,7 +64,7 @@ const IBM: ICard = {
 
 const INTPLA: ICard = {
   id: "intpla",
-  href: "/atoz",
+  href: "/intplaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "International Plaza",
   // TEXT (to the right of ICON) — exact from intpla-card-text-source.jpg
@@ -78,7 +78,7 @@ const INTPLA: ICard = {
 
 const IRELAND: ICard = {
   id: "ireland",
-  href: "/ireland01",
+  href: "/irelandoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Ireland",
   // TEXT (to the right of ICON) — exact from ireland-card-text-source.jpg

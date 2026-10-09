@@ -16,8 +16,8 @@ export function HaleduTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/haledu01" style={{ color: "#990000" }}>
-            ← Hall of Education
+          <Link href="/haleduoverview" style={{ color: "#990000" }}>
+            ← Hall of Education overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function HaleduTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/haledu01"
+        previousHref="/haleduoverview"
+        overviewHref="/haleduoverview"
         nextHref="/haledu01"
       />
     </>
