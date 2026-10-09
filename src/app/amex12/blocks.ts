@@ -80,8 +80,12 @@ export const AMEX12_BLOCKS: Amex12Block[] = [
     text: "SOURCE: World's Fair Progress Report #9, September 26, 1963",
     muted: true,
   },
-  { type: "source", text: "SOURCE: Bradd Schiffman Collection" },
   { type: "img", src: "amex28.jpg", width: 400, height: 271, alt: "Transportation area of Model" },
+  {
+    type: "source",
+    text: "SOURCE: Bradd Schiffman Collection",
+    muted: true,
+  },
   { type: "p", text: "This series of photos give a good overview of the scope of the model and show how the model probably looked in late 1962. This photo is of the Transportation Area with a nice close-up of the Heliport model. Rectangular pavilion at center right with spikes sticking up on the roof is the original design for the Transportation & Travel Pavilion. Note the placard for the Marine Center at the left (and behind it in the distance a placard for the Pennsylvania pavilion? Both exhibits were never constructed." },
   { type: "img", src: "amex29.jpg", width: 400, height: 274, alt: "World" },
   { type: "caption", text: "The model not only included the main Fairgrounds but also all of the arterial highway approaches to the Fair, Shea Stadium and the World's Fair Marina" },
