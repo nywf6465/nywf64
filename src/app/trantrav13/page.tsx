@@ -26,24 +26,29 @@ export default function Trantrav13Page() {
           <h1 id="trantrav13-title" className={styles.titleBarMain}>TWA</h1>
         </header>
         <div className={styles.articleInner}>
-          <div className={styles.collage}>
-              <Image src="/images/trantrav13/tratra94.1.jpg" alt="" width={300} height={331} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra94.2.jpg" alt="" width={300} height={331} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra94.3.jpg" alt="" width={300} height={330} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra94.4.jpg" alt="" width={300} height={330} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra94.5.jpg" alt="" width={300} height={330} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra94.6.jpg" alt="" width={300} height={330} className={styles.tile} unoptimized />
-          </div>
-          <p className={styles.source}>Source: Advertisement <em>1964 Official Guide, 1964-1965 New York World&apos;s Fair</em></p>
-          <div className={styles.collage}>
-              <Image src="/images/trantrav13/tratra95.1.jpg" alt="" width={300} height={331} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra95.2.jpg" alt="" width={300} height={331} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra95.3.jpg" alt="" width={300} height={330} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra95.4.jpg" alt="" width={300} height={330} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra95.5.jpg" alt="" width={300} height={330} className={styles.tile} unoptimized />
-              <Image src="/images/trantrav13/tratra95.6.jpg" alt="" width={300} height={330} className={styles.tile} unoptimized />
-          </div>
-          <p className={styles.source}>Source: Advertisement 1965<em> Official Guide, 1964-1965 New York World&apos;s Fair</em></p>
+          {/* Legacy sliced 2×3 tiles (tratra94.1–6 / tratra95.1–6) stitched into single ads */}
+          <Image
+            src="/images/trantrav13/tratra94.jpg"
+            alt="TWA advertisement — See the World’s Fair, then see the world, on TWA (1964 Official Guide)"
+            width={600}
+            height={991}
+            className={styles.framedImg}
+            unoptimized
+          />
+          <p className={styles.source}>
+            Source: Advertisement <em>1964 Official Guide, 1964-1965 New York World&apos;s Fair</em>
+          </p>
+          <Image
+            src="/images/trantrav13/tratra95.jpg"
+            alt="TWA advertisement — See the World’s Fair, then see the world, on TWA (1965 Official Guide)"
+            width={600}
+            height={991}
+            className={styles.framedImg}
+            unoptimized
+          />
+          <p className={styles.source}>
+            Source: Advertisement 1965<em> Official Guide, 1964-1965 New York World&apos;s Fair</em>
+          </p>
           <hr className={styles.hr} />
           <div className={styles.twaBooklet}>
             <div className={styles.twaBookletRow}>

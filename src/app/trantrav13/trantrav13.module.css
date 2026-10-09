@@ -4,4 +4,3 @@
 .twaBookletRow { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: flex-start; justify-content: center; }
 .bookletHeading { text-align: center; font-family: Arial, sans-serif; font-size: 13px; }
 .aircraftStack { background: #fdab7b; padding: 0.75rem; margin-top: 1rem; }
-.tile { display: block; width: 100%; height: auto; }
