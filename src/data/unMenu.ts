@@ -15,7 +15,7 @@ export const UN_MENU_TOPICS: AttractionTopic[] = [
     href: "/un02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/un03",
   },
 ];

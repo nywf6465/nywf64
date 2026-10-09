@@ -20,9 +20,10 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
  * is omitted, Locate It stays visible but is not a link. Covers keep a 1px
  * frame and have no rule beneath them. The legacy "Revised" line is not shown.
  *
- * When a year sets `omittedFromGuide`, the column shows only the not-included
- * note and cover. Optional `map.entry` places a pavilion block under the map
- * column (legacy amind01 layout).
+ * When a year sets `omittedFromGuide`, the column shows the not-included
+ * note and cover. Optional `copy` still renders under the cover (e.g. /un01
+ * Sierra Leone note). Optional `map.entry` places a pavilion block under the
+ * map column (legacy amind01 layout).
  *
  * Type follows the legacy font tags: Times New Roman where no face is set,
  * Arial where face="Arial" is set, at the original HTML size steps.
@@ -262,6 +263,9 @@ function GuideColumn({
           className={styles.cover}
           unoptimized
         />
+        {guide.copy ? (
+          <p className={styles.omittedNote}>{guide.copy}</p>
+        ) : null}
       </section>
     );
   }
