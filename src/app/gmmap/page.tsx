@@ -17,8 +17,11 @@ export const metadata: Metadata = {
 
 /**
  * General Motors locate-it map page (`/gmmap`).
+ * From legacy gmmap.shtml (mapslocateit05 Transportation tiles + Image/gm/gmmap.gif).
+ *
  * Stack: hero → GmNavChrome → navy title bar → left-justified body → Nav2Bar.
- * Body: Transportation Area cream map (807×1165) + gmmap.gif at offset 0,0.
+ * Title bar (“1964 Official Souvenir Map”) is the map-page standard.
+ * locate-map.jpg: neutral cream Transportation Area (807×1165) + gmmap.gif arrow.
  */
 export default function GmMapPage() {
   return (
