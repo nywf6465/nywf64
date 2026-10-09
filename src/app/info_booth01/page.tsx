@@ -8,8 +8,7 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title:
-    "Facts, Figures & World's Fair Promotional Brochures — nywf64.com",
+  title: "Facts & Figures — nywf64.com",
   description:
     "Fair facts and figures — schedule, site, theme, attendance, and World's Fair promotional brochures from the 1964/1965 New York World’s Fair on nywf64.com.",
 };
@@ -49,7 +48,7 @@ export default function InfoBooth01Page() {
       >
         <header className={styles.titleBar}>
           <h1 id="info-booth01-title" className={styles.titleBarMain}>
-            Facts, Figures &amp; World&apos;s Fair Promotional Brochures
+            Facts &amp; Figures
           </h1>
         </header>
 
