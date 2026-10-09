@@ -70,18 +70,37 @@
 }
 
 .intro {
-  width: min(600px, 100%);
-  margin: 0 auto 1.25rem;
-  padding: 0.65rem 0.85rem;
-  box-sizing: border-box;
-  border: 1px solid #4682b4;
-  font-family: Arial, Helvetica, Geneva, Swiss, Sans-Serif, sans-serif;
-  font-size: 15px;
+  margin: 0 0 1rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
   line-height: 1.45;
-  color: #000;
 }
 
-.intro a {
+.introBox {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.introBox p {
+  margin: 0;
+}
+
+.introAccent {
+  color: #4682b4;
+  font-weight: 700;
+}
+
+.introAccentItalic {
+  color: #4682b4;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.introLink {
   color: #4682b4;
 }
 

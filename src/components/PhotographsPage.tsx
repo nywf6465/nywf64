@@ -69,7 +69,7 @@ export type PhotographsPageProps = {
   titleId?: string;
   /** Navy title-bar text. Defaults to “Photograph Album”. */
   title?: string;
-  /** Optional lead copy above photograph sections (legacy album intros). */
+  /** Optional lead copy above photograph sections (e.g. Bill Cotter intro). */
   intro?: ReactNode;
 };
 

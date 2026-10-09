@@ -23,11 +23,11 @@ export const USRUB_MENU_TOPICS: AttractionTopic[] = [
     href: "/usrub04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/usrub05",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/usrub06",
   },
   {
