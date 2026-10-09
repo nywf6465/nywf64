@@ -101,4 +101,16 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionHeight: 331,
     pavilionAlt: "Rheingold",
   },
+  {
+    id: "schaefer",
+    href: "/schcenoverview",
+    // DESCRIPTION (italic under ICON) — exact from S page
+    title: "Schaefer",
+    // TEXT (to the right of ICON) — exact from S page
+    body: "A restaurant, bar and beer garden offer food and drink in a sporting atmosphere; a model of an old brewery is on view.",
+    pavilionSrc: "/images/schcen/schaefer-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Schaefer",
+  },
 ];
