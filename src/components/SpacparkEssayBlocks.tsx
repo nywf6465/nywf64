@@ -7,14 +7,7 @@ export type SpacparkEssayBlock =
   | { type: "caption"; text: string }
   | { type: "img"; src: string; width: number; height: number; alt: string };
 
-type EssayStyles = {
-  sectionHeading: string;
-  body: string;
-  source: string;
-  caption: string;
-  figure: string;
-  figureWide: string;
-};
+type EssayStyles = { readonly [key: string]: string | undefined };
 
 export function SpacparkEssayBlocks({
   blocks,
