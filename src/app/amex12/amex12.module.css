@@ -89,12 +89,13 @@
   color: #8080c0;
 }
 
-/* Beat .body p (lavender 1.15rem) for the photo SOURCE line. */
+/* Beat .body p (lavender 1.15rem) for under-photo SOURCE lines. */
 .body p.sourceMuted {
   margin-top: 0.35rem;
   font-size: 0.7rem;
   line-height: 1.35;
   color: #bbb;
+  text-align: center;
 }
 
 .source em {
