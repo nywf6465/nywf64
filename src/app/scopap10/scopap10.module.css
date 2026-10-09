@@ -1,0 +1,135 @@
+/*
+ * Scott Paper — A Brief History (/scopap10).
+ * Body from legacy scopap10.html.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.body p {
+  margin: 0 0 0.85rem;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1.5rem 0;
+}
+
+.figure {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.figure img {
+  display: block;
+  width: min(487px, 100%);
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.photoCaption {
+  margin: 0.5rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.photoCaption em {
+  font-style: italic;
+}
+
+.source {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.webmasterNote {
+  margin: 1.5rem 0 0;
+  padding: 0.65rem 0.75rem;
+  border: 1px solid #000;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.webmasterNote p {
+  margin: 0 0 0.5rem;
+  font-size: inherit;
+}
+
+.webmasterNote dl {
+  margin: 0.5rem 0 0;
+}
+
+.webmasterNote dt {
+  margin: 0;
+  font-size: inherit;
+}
+
+.nywf64 {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.nywf64Red {
+  color: #ff3300;
+  font-weight: 700;
+}
+
+.nywf64Com {
+  color: #0066cc;
+  font-size: 0.7em;
+}
