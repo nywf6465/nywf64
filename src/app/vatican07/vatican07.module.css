@@ -1,0 +1,177 @@
+/*
+ * Vatican — Pavilion Guide (/vatican07).
+ * Stack: hero → VaticanNavChrome → navy title → article → Nav2Bar.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.floorPlan {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.floorPlan img {
+  display: block;
+  width: 100%;
+  max-width: 580px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.guideSection {
+  margin: 0 0 1.15rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.35rem;
+  font-family: "Bookman Old Style", "Times New Roman", Times, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  color: #996633;
+  text-align: left;
+}
+
+.guideList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.guideList li {
+  display: flex;
+  gap: 0.35rem;
+  margin: 0 0 0.2rem;
+  align-items: flex-start;
+}
+
+.guideNum {
+  flex: 0 0 1.5rem;
+  white-space: nowrap;
+}
+
+.guideText {
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.guideText em {
+  font-style: italic;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1.25rem 0;
+}
+
+.basReliefTray {
+  margin: 0 0 1.25rem;
+  padding: 0.65rem;
+  background: #cc9966;
+  text-align: center;
+}
+
+.basReliefCaption {
+  margin: 0 0 0.5rem;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.basReliefCaption subNote {
+  font-size: 0.75rem;
+}
+
+.basReliefTray img {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto 0.5rem;
+  border: 0;
+}
+
+.crossFigure {
+  margin: 0 0 1.25rem;
+  text-align: center;
+}
+
+.crossFigure img {
+  display: block;
+  width: auto;
+  max-width: 191px;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.crossCaption {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.source {
+  margin: 1rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.source em {
+  font-style: italic;
+}

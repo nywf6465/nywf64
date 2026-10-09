@@ -2,47 +2,47 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Vatican menu — nav-menu topic list for all routes beginning with `vatican`.
- * Labels match the vatican-menu-topics mockup.
+ * Non-Overview routes: `vatican01`…`vatican10`.
  */
 export const VATICAN_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
-    href: "/vaticanguidebook",
+    href: "/vatican01",
   },
   {
     label: "World's Fair Information Manual",
-    href: "/vaticanmanual",
+    href: "/vatican02",
   },
   {
     label: "Postcards",
-    href: "/vaticanpostcards",
+    href: "/vatican03",
   },
   {
-    label: "Photograph Album",
-    href: "/vaticanphotographalbumi",
+    label: "Photograph Album I",
+    href: "/vatican04",
   },
   {
-    label: "Photograph Album",
-    href: "/vaticanphotographalbumii",
+    label: "Photograph Album II",
+    href: "/vatican05",
   },
   {
     label: "Groundbreaking & Construction",
-    href: "/vaticangroundbreaking",
+    href: "/vatican06",
   },
   {
     label: "Pavilion Guide",
-    href: "/vaticanpavilionguide",
+    href: "/vatican07",
   },
   {
     label: "The Pieta",
-    href: "/vaticanpieta",
+    href: "/vatican08",
   },
   {
     label: "Epilogue",
-    href: "/vaticanepilogue",
+    href: "/vatican09",
   },
   {
     label: "The Irony",
-    href: "/vaticanirony",
+    href: "/vatican10",
   },
 ];
