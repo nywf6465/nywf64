@@ -89,4 +89,16 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Mastro Pizza",
   },
+  {
+    id: "rheingold",
+    href: "/rheingoverview",
+    // DESCRIPTION (italic under ICON) — exact from R page
+    title: "Rheingold",
+    // TEXT (to the right of ICON) — exact from R page
+    body: "Gas lamps cast a glow on a cobblestone street where a tavern, a restaurant and an outdoor cafe' recreate the New York of 1904.",
+    pavilionSrc: "/images/rheing/rheing-icon.png",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "Rheingold",
+  },
 ];
