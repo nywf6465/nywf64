@@ -6,7 +6,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const INFO_BOOTH_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Facts, Figures & World's Fair Promotional Brochures",
+    label: "Facts & Figures",
     href: "/info_booth01",
   },
   {
