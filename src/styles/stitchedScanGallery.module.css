@@ -1,5 +1,5 @@
 /*
- * Stitched scan galleries (legacy sliced pamphlet/ad/brochure pages).
+ * Stitched scan galleries (legacy sliced pamphlet/booklet pages).
  * Stack: hero → attraction nav → navy title bar → bordered composites → Nav2Bar.
  */
 
@@ -46,7 +46,7 @@
 }
 
 .articleInner {
-  width: min(56.5rem, 100%);
+  width: min(56.375rem, 100%);
   margin: 0 auto;
   padding: 0 1rem;
   box-sizing: border-box;
