@@ -150,8 +150,8 @@ export default function Amex10Page() {
             <Image
               src="/images/amex10/amex05.jpg"
               alt="Illuminated Model"
-              width={481}
-              height={236}
+              width={1782}
+              height={883}
               unoptimized
             />
             <figcaption className={styles.caption}>
