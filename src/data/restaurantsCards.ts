@@ -53,4 +53,16 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Century Grill",
   },
+  {
+    id: "chun-king-inn",
+    href: "/chukininnoverview",
+    // DESCRIPTION (italic under ICON) — exact from C page
+    title: "Chun King Inn",
+    // TEXT (to the right of ICON) — exact from C page
+    body: "A pagoda-style restaurant with a lake-dotted garden offers comfortable, inexpensive dining.",
+    pavilionSrc: "/images/chukininn/chun-king-inn-icon.png",
+    pavilionWidth: 762,
+    pavilionHeight: 330,
+    pavilionAlt: "Chun King Inn",
+  },
 ];
