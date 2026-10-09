@@ -1,0 +1,214 @@
+/* Swiss Sky Ride brochure reprint (/swisky05) — legacy multi-panel layout */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.spread {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  margin: 0 0 1.25rem;
+  border: 1px solid #000;
+}
+
+.spreadCol {
+  padding: 0.5rem;
+  box-sizing: border-box;
+  text-align: center;
+  border-right: 1px solid #000;
+}
+
+.spreadCol:last-child {
+  border-right: 0;
+}
+
+.headline {
+  margin: 0 0 0.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 400;
+  line-height: 1.2;
+  color: #000;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+  margin: 0.35rem auto;
+}
+
+.photoWide {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.fairLine {
+  margin: 0.5rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  color: #000;
+}
+
+.fairBlue {
+  color: #037be4;
+}
+
+.whereBox {
+  margin: 0 0 0.5rem;
+  padding: 0.65rem 0.75rem;
+  background: #000;
+  color: #fff;
+  text-align: left;
+}
+
+.whereHeading {
+  margin: 0 0 0.45rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  color: #fff;
+}
+
+.whereCopy {
+  margin: 0 0 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.panel {
+  margin: 0 0 1.25rem;
+  border: 1px solid #000;
+  overflow: hidden;
+}
+
+.panelCopy {
+  padding: 0.75rem 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  line-height: 1.4;
+}
+
+.panelCopy p {
+  margin: 0 0 0.65rem;
+}
+
+.blue {
+  color: #037be4;
+}
+
+.muted {
+  color: #999;
+}
+
+.owner {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  line-height: 1.35;
+  color: #000;
+  text-align: right;
+}
+
+.sideCards {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  max-width: 19rem;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.sideCard {
+  padding: 0.55rem 0.65rem 0.75rem;
+  border-bottom: 1px solid #000;
+  text-align: left;
+}
+
+.sideCard:last-child {
+  border-bottom: 0;
+}
+
+.sideCard p {
+  margin: 0.35rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+.small {
+  font-size: 0.85rem;
+  color: #000;
+}
+
+@media (max-width: 720px) {
+  .spread {
+    grid-template-columns: 1fr;
+  }
+
+  .spreadCol {
+    border-right: 0;
+    border-bottom: 1px solid #000;
+  }
+
+  .spreadCol:last-child {
+    border-bottom: 0;
+  }
+
+  .sideCards {
+    max-width: 100%;
+  }
+}
