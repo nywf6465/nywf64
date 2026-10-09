@@ -25,3 +25,4 @@
 Prefer dump masters from `Image/photolab|arch|wolfe|mainliner` for production heroes.
 
 | `public/images/site-header-banner-before-spacing.jpg` | Pre-spacing-edit backup of header banner | User | Restore reference |
+| `public/images/big_picture01/*` | Legacy nywf64.com `Image/big_picture/` tiles + banner | Legacy site assets | `/big_picture01` interactive aerial photo |
