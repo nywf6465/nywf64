@@ -55,8 +55,8 @@ export default function Betliv11Page() {
               <Image
                 src="/images/betliv11/tower-elevator.jpg"
                 alt="Lifesavers Glass Tower Elevator"
-                width={250}
-                height={680}
+                width={846}
+                height={1859}
                 className={styles.photoImg}
                 unoptimized
               />
