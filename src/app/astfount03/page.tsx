@@ -25,7 +25,7 @@ export default function Astfount03Page() {
       }}
       nav={<AstfountNavChrome />}
       previousHref="/astfount02"
-      overviewHref="/astfountoverview"
+      overviewHref="/astfount01"
       nextHref="/astfount04"
       entries={[
         {

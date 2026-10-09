@@ -52,8 +52,8 @@ export default function GmOverviewPage() {
             <Image
               src="/images/gmoverview/photo.jpg"
               alt="The Futurama at the General Motors Pavilion — city of tomorrow"
-              width={958}
-              height={706}
+              width={1811}
+              height={868}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
@@ -63,7 +63,8 @@ export default function GmOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/gmoverview"
+        previousHref="/gm23"
+        explicitPrevious
         overviewHref="/gmoverview"
         nextHref="/gm01"
       />

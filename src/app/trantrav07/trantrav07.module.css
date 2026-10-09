@@ -1,0 +1,15 @@
+@import "../../styles/trantravTopic.module.css";
+
+.bluePanel { border: 1px solid #000; background: #258bc6; color: #fff; padding: 0.75rem; text-align: left; margin-bottom: 1rem; }
+.blueRow { display: flex; flex-wrap: wrap; gap: 0.75rem; align-items: flex-start; }
+.blueStack, .moonStack { font-family: Arial, sans-serif; font-size: 20px; font-weight: 700; line-height: 1.2; flex: 0 0 120px; }
+.moonStack { font-size: 24px; }
+.blueStack span { display: block; }
+.blueCopy { flex: 1 1 280px; font-size: 13px; }
+.blueCopy p { margin: 0 0 0.65rem; }
+.grayPanel { border: 1px solid #000; background: #b3b5a8; padding: 0.75rem; text-align: left; }
+.featureRow { display: flex; flex-wrap: wrap; gap: 0.75rem; margin: 0.75rem 0; }
+.featureLabel { margin: 0; color: #258bc6; font-family: Arial, sans-serif; font-size: 18px; flex: 0 0 140px; }
+.featureCopy { flex: 1 1 280px; font-size: 13px; }
+.payList { list-style: none; padding: 0; margin: 0.5rem 0 0; }
+.rule { border: 0; border-top: 2px solid #000; margin: 0.75rem 0; }

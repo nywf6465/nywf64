@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Amerisr menu — nav-menu topics for all routes beginning with `amerisr`.
- * Labels match the amerisr-menu-topics mockup; Overview at top.
+ * Labels match the amerisr-menu-topics mockup.
  * Non-Overview routes: `amerisr01`…`amerisr05`.
  */
 export const AMERISR_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/amerisroverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/amerisr01",

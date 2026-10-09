@@ -63,7 +63,8 @@ export default function JordanOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/jordanoverview"
+        previousHref="/jordan10"
+        explicitPrevious
         overviewHref="/jordanoverview"
         nextHref="/jordan01"
       />

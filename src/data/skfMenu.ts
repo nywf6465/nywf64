@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * SKF menu — nav-menu topics for all routes beginning with `skf`.
- * Labels match the skf-menu-topics mockup; Overview at top.
+ * Labels match the skf-menu-topics mockup.
  * Non-Overview routes: `skf01`…`skf10`.
  */
 export const SKF_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/skfoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/skf01",

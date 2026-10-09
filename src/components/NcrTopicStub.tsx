@@ -16,8 +16,8 @@ export function NcrTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/ncroverview" style={{ color: "#990000" }}>
-            ← NCR overview
+          <Link href="/ncr01" style={{ color: "#990000" }}>
+            ← NCR
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function NcrTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/ncroverview"
-        overviewHref="/ncroverview"
+        overviewHref="/ncr01"
         nextHref="/ncr01"
       />
     </>

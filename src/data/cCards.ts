@@ -8,7 +8,7 @@ export type CCard = FountainsCard;
 
 const CARIBBEAN: CCard = {
   id: "caribbean",
-  href: "/caribboverview",
+  href: "/caribb01",
   // DESCRIPTION (italic under ICON) — exact
   title: "Caribbean",
   // TEXT (to the right of ICON) — exact from caribb-c-card-text-user-exact.jpg
@@ -21,7 +21,7 @@ const CARIBBEAN: CCard = {
 
 const CARNIVAL: CCard = {
   id: "carnival",
-  href: "/carnivoverview",
+  href: "/carniv01",
   // DESCRIPTION (italic under ICON) — exact
   title: "Carnival",
   // TEXT (to the right of ICON) — exact from carniv-c-card-text-user-exact.jpg
@@ -34,7 +34,7 @@ const CARNIVAL: CCard = {
 
 const CAROUSEL_PARK: CCard = {
   id: "carousel-park",
-  href: "/carparoverview",
+  href: "/carpar01",
   // DESCRIPTION (italic under ICON) — exact
   title: "Carousel Park",
   // TEXT (to the right of ICON) — exact from carpar-c-card-text-user-exact.jpg
@@ -47,7 +47,7 @@ const CAROUSEL_PARK: CCard = {
 
 const CENTRAL_AMERICA: CCard = {
   id: "central-america",
-  href: "/cenameriverview",
+  href: "/cenamer01",
   // DESCRIPTION (italic under ICON) — exact
   title: "Central America",
   // TEXT (to the right of ICON) — exact from cenamer-c-card-text-user-exact.jpg
@@ -60,7 +60,7 @@ const CENTRAL_AMERICA: CCard = {
 
 const CENTURY_GRILL: CCard = {
   id: "century-grill",
-  href: "/cengrioverview",
+  href: "/cengri01",
   // DESCRIPTION (italic under ICON) — exact
   title: "Century Grill",
   // TEXT (to the right of ICON) — exact from cengri-c-card-text-user-exact.jpg
@@ -73,7 +73,7 @@ const CENTURY_GRILL: CCard = {
 
 const REPUBLIC_OF_CHINA: CCard = {
   id: "republic-of-china",
-  href: "/chinaoverview",
+  href: "/china01",
   // DESCRIPTION (italic under ICON) — exact
   title: "Republic of China",
   // TEXT (to the right of ICON) — exact from china-c-card-text-user-exact.jpg
@@ -87,7 +87,7 @@ const REPUBLIC_OF_CHINA: CCard = {
 /** Same fields as Religions page Christian Science row (`ReligionsLinks.tsx`). */
 const CHRISTIAN_SCIENCE: CCard = {
   id: "christian-science",
-  href: "/chrscioverview",
+  href: "/chrsci01",
   // DESCRIPTION (italic under ICON) — exact from Religions
   title: "Christian Science",
   // TEXT (to the right of ICON) — exact from Religions
@@ -101,7 +101,7 @@ const CHRISTIAN_SCIENCE: CCard = {
 /** Same ICON/TEXT/href as Top Ten Chrysler row; DESCRIPTION shortened to “Chrysler”. */
 const CHRYSLER: CCard = {
   id: "chrysler",
-  href: "/chrysleroverview",
+  href: "/chryslerguidebook",
   // DESCRIPTION (italic under ICON)
   title: "Chrysler",
   // TEXT (to the right of ICON) — exact from Top Ten
@@ -114,7 +114,7 @@ const CHRYSLER: CCard = {
 
 const CHUN_KING_INN: CCard = {
   id: "chun-king-inn",
-  href: "/chukininnoverview",
+  href: "/chukininn01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Chun King Inn",
   // TEXT (to the right of ICON) — exact from chukininn-c-card-text-user-exact.jpg
@@ -127,7 +127,7 @@ const CHUN_KING_INN: CCard = {
 
 const CHUNKY_CANDY: CCard = {
   id: "chunky-candy",
-  href: "/chucanoverview",
+  href: "/chucan01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Chunky Candy",
   // TEXT (to the right of ICON) — exact from chucanoverview/06-c-card-text.jpg
@@ -140,7 +140,7 @@ const CHUNKY_CANDY: CCard = {
 
 const CHURCHILL_CENTER: CCard = {
   id: "churchill-center",
-  href: "/chucenoverview",
+  href: "/chucen01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Churchill Center",
   // TEXT (to the right of ICON) — exact from chucenoverview/06-c-card-text.jpg
@@ -153,7 +153,7 @@ const CHURCHILL_CENTER: CCard = {
 
 const CITIES_SERVICE_BAND: CCard = {
   id: "cities-service-worlds-fair-band-of-america",
-  href: "/citservoverview",
+  href: "/citserv01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Cities Service World's Fair Band of America",
   // TEXT (to the right of ICON) — exact from citservoverview/06-c-card-text.jpg
@@ -167,7 +167,7 @@ const CITIES_SERVICE_BAND: CCard = {
 
 const CLAIROL: CCard = {
   id: "clairol",
-  href: "/clairoverview",
+  href: "/clair01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Clairol",
   // TEXT (to the right of ICON) — exact from clairoverview/06-c-card-text.jpg
@@ -180,7 +180,7 @@ const CLAIROL: CCard = {
 
 const COCA_COLA: CCard = {
   id: "coca-cola",
-  href: "/cokeoverview",
+  href: "/coke01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Coca-Cola",
   // TEXT (to the right of ICON) — exact from cokeoverview/06-c-card-text.jpg
@@ -193,7 +193,7 @@ const COCA_COLA: CCard = {
 
 const CONTINENTAL_CIRCUS: CCard = {
   id: "continental-circus",
-  href: "/conciroverview",
+  href: "/concir01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Continental Circus",
   // TEXT (to the right of ICON) — exact from conciroverview/06-c-card-text.jpg
@@ -206,7 +206,7 @@ const CONTINENTAL_CIRCUS: CCard = {
 
 const CONTINENTAL_INSURANCE: CCard = {
   id: "continental-insurance",
-  href: "/coninsoverview",
+  href: "/conins01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Continental Insurance",
   // TEXT (to the right of ICON) — exact from coninsoverview/06-c-card-text.jpg
@@ -219,7 +219,7 @@ const CONTINENTAL_INSURANCE: CCard = {
 
 const CONTINENTAL_PARK: CCard = {
   id: "continental-park",
-  href: "/conparoverview",
+  href: "/conpar01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Continental Park",
   // TEXT (to the right of ICON) — exact from conparoverview/06-c-card-text.jpg

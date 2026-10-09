@@ -8,7 +8,7 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title:
-    "The Story of the Billy Graham Pavilion — Billy Graham — nywf64.com",
+    "Essay: The Story of the Billy Graham Pavilion — Billy Graham — nywf64.com",
   description:
     "Eric Paddon’s essay on the Billy Graham Pavilion at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
@@ -47,9 +47,9 @@ export default function Bilgra07Page() {
       <article className={styles.article} aria-labelledby="bilgra07-title">
         <header className={styles.titleBar}>
           <h1 id="bilgra07-title" className={styles.titleBarMain}>
-            <em>The Story of the Billy Graham Pavilion</em>
+            Essay: <em>The Story of the Billy Graham Pavilion</em>
           </h1>
-          <p className={styles.titleBarByline}>... an essay by Eric Paddon</p>
+          <p className={styles.titleBarByline}>... by Eric Paddon</p>
         </header>
 
         <div className={styles.articleInner}>
@@ -251,7 +251,7 @@ export default function Bilgra07Page() {
       <Nav2Bar
         previousHref="/bilgra06"
         explicitPrevious
-        overviewHref="/bilgraoverview"
+        overviewHref="/bilgra01"
         nextHref="/bilgra08"
       />
     </>

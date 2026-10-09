@@ -1,0 +1,109 @@
+/* Fountain Show Music — Pool of Industry (legacy poolin06) */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 1.35;
+}
+
+.section {
+  margin: 0 0 1.5rem;
+}
+
+.sectionHeading {
+  margin: 0 0 0.65rem;
+  text-align: right;
+  font-size: 14px;
+  font-weight: 700;
+  text-decoration: underline;
+  color: #191970;
+}
+
+.composerList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.composerList li {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 1.25rem;
+  margin: 0 0 0.35rem;
+}
+
+.songTitle {
+  padding-left: 5%;
+}
+
+.composer {
+  color: #000;
+}
+
+.songGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.35rem 1.25rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.songGrid li {
+  padding-left: 5%;
+}
+
+@media (max-width: 520px) {
+  .composerList li,
+  .songGrid {
+    grid-template-columns: 1fr;
+  }
+}

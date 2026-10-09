@@ -16,8 +16,8 @@ export function CitservTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/citservoverview" style={{ color: "#990000" }}>
-            ← Cities Service Band overview
+          <Link href="/citserv01" style={{ color: "#990000" }}>
+            ← Cities Service Band
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function CitservTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/citservoverview"
-        overviewHref="/citservoverview"
+        overviewHref="/citserv01"
         nextHref="/citserv01"
       />
     </>

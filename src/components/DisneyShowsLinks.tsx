@@ -10,7 +10,7 @@ import styles from "./DisneyShowsLinks.module.css";
 const ROWS = [
   {
     id: "ford01",
-    href: "/fordoverview",
+    href: "/ford01",
     title: 'Ford — "The Magic Skyway"',
     body: "Animated displays and scale models depict man's progress from prehistoric times to the Space Age. Viewers ride past some of the exhibits in new Ford cars.",
     pavilionSrc: "/images/disney-shows/ford01-pavilion.png",
@@ -20,7 +20,7 @@ const ROWS = [
   },
   {
     id: "illinois01",
-    href: "/illinoisoverview",
+    href: "/illinoisguidebook",
     title: 'Illinois — "Great Moments with Mr. Lincoln"',
     body: "The highlight of a collection of Lincolniana and state lore is Walt Disney's moving, talking figure of Abe Lincoln himself.",
     pavilionSrc: "/images/disney-shows/illinois01-pavilion.png",
@@ -30,7 +30,7 @@ const ROWS = [
   },
   {
     id: "genele01",
-    href: "/geneleoverview",
+    href: "/geneleguidebook",
     title: 'General Electric — "Carousel of Progress"',
     body: "In a one-hour show, the changes electricity has brought in American living are dramatized by life-sized animated figures created by Walt Disney.",
     pavilionSrc: "/images/disney-shows/genele01-pavilion.png",
@@ -40,7 +40,7 @@ const ROWS = [
   },
   {
     id: "pepsi01",
-    href: "/pepsioverview",
+    href: "/pepsiguidebook",
     title: 'Pepsi-Cola — "It\'s a Small World"',
     body: "A salute to the children of the world, designed by Walt Disney, presents animated figures frolicking in miniature settings of many lands.",
     pavilionSrc: "/images/disney-shows/pepsi01-pavilion.png",

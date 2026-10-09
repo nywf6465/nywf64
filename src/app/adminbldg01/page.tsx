@@ -264,8 +264,7 @@ export default function Adminbldg01Page() {
       </article>
 
       <Nav2Bar
-        previousHref="/adminbldgoverview"
-        overviewHref="/adminbldgoverview"
+        overviewHref="/adminbldg01"
         nextHref="/adminbldg02"
       />
     </>

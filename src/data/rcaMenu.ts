@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * RCA menu — topics for routes beginning with `rca`.
- * Labels match the rca menu-topics mockup; Overview at top.
+ * Labels match the rca menu-topics mockup.
  * Non-Overview routes: `rca01`…`rca09`.
  */
 export const RCA_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/rcaoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/rca01",
@@ -27,7 +23,7 @@ export const RCA_MENU_TOPICS: AttractionTopic[] = [
     href: "/rca04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/rca05",
   },
   {

@@ -9,7 +9,7 @@ export type SCard = FountainsCard;
 export const S_CARDS: SCard[] = [
   {
     id: "santa-maria",
-    href: "/sanmaroverview",
+    href: "/sanmar01",
     title: "Santa Maria",
     body: "A full-sized replica of Columbus' flagship is moored at the end of a 15th Century Spanish wharf.",
     pavilionSrc: "/images/sanmar/santa-maria-icon.jpg",
@@ -19,7 +19,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "schaefer",
-    href: "/schcenoverview",
+    href: "/schcen01",
     title: "Schaefer",
     body: "A restaurant, bar and beer garden offer food and drink in a sporting atmosphere; a model of an old brewery is on view.",
     pavilionSrc: "/images/schcen/schaefer-icon.jpg",
@@ -29,7 +29,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "scott-paper",
-    href: "/scopapoverview",
+    href: "/scopap01",
     title: "Scott Paper",
     body: 'A tour through an "Enchanted Forest" tells the story of paper from woodland to home.',
     pavilionSrc: "/images/scopap/scott-paper-icon.jpg",
@@ -39,7 +39,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "sermons-from-science",
-    href: "/serscioverview",
+    href: "/sersci01",
     title: "Sermons from Science",
     body: "Demonstrations of scientific marvels and color films on nature illustrate the compatibility of faith with modern-day science.",
     pavilionSrc: "/images/sersci/sermons-from-science-icon.jpg",
@@ -49,7 +49,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "seven-up",
-    href: "/sevupoverview",
+    href: "/sevup01",
     title: "Seven-Up",
     body: "This open-air cafe offers musical entertainment and an international sandwich buffet.",
     pavilionSrc: "/images/sevup/seven-up-icon.jpg",
@@ -59,7 +59,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "shea-stadium",
-    href: "/sheastaoverview",
+    href: "/sheasta01",
     title: "Shea Stadium",
     body: "This home of two teams — the New York Mets (baseball) and Jets (football) — is one of the most modern stadiums in the world.",
     pavilionSrc: "/images/sheasta/shea-stadium-icon.jpg",
@@ -69,7 +69,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "sierra-leone",
-    href: "/sierraoverview",
+    href: "/sierra01",
     title: "Sierra Leone",
     body: "Two troupes perform intricate dances, and acrobats entertain with feats of skill and precision.",
     pavilionSrc: "/images/sierra/sierra-leone-icon.jpg",
@@ -79,7 +79,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "simmons",
-    href: "/simmonoverview",
+    href: "/summon01",
     title: "Simmons",
     body: "Visitors can take half-hour naps in rest alcoves or view model rooms cleverly designed to provide extra sleeping space.",
     pavilionSrc: "/images/simmon/simmons-icon.jpg",
@@ -89,7 +89,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "sinclair",
-    href: "/sinclairoverview",
+    href: "/sinclair01",
     title: "Sinclair",
     body: "Life as it existed 165 million years ago is re-created in a display of life-sized dinosaurs.",
     pavilionSrc: "/images/sinclair/sinclair-icon.jpg",
@@ -99,7 +99,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "singer-bowl",
-    href: "/singeroverview",
+    href: "/singer01",
     title: "Singer Bowl",
     body: "Music festivals, sports events and variety shows are held in this open-air stadium seating 15,000.",
     pavilionSrc: "/images/singer/singer-bowl-icon.jpg",
@@ -109,7 +109,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "skf",
-    href: "/skfoverview",
+    href: "/skf01",
     title: "SKF",
     body: "A mechanical man introduces a film showing man's progress in locomotion; a wide range of equipment using ball and roller bearings is displayed.",
     pavilionSrc: "/images/skf/skf-icon.jpg",
@@ -119,7 +119,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "socony-mobil",
-    href: "/socmobiloverview",
+    href: "/socmobil01",
     title: "Socony Mobil",
     body: "Visitors take part in a simulated cross-country driving game that tests their skills at the wheel.",
     pavilionSrc: "/images/socmobil/socony-mobil-icon.jpg",
@@ -129,7 +129,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "solar-fountain",
-    href: "/solfountoverview",
+    href: "/solfount01",
     title: "Solar Fountain",
     body: "A central dome supports a 30-foot high column of water while a starburst circles around the dome. Wobbling jets of water surrounding the dome simulate the sun's gases.",
     pavilionSrc: "/images/fountains/solar-fountain-icon.png",
@@ -139,7 +139,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "space-park",
-    href: "/spacparkoverview",
+    href: "/spacpark01",
     title: "Space Park",
     body: "The dramatic vehicles that are carrying the United States into the Space Age are on display.",
     pavilionSrc: "/images/spacpark/space-park-icon.jpg",
@@ -149,7 +149,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "spain",
-    href: "/spainoverview",
+    href: "/spain01",
     title: "Spain & The Fair's Most Beautiful Pavilion",
     body: "In a striking modern pavilion, the atmosphere of old Spain forms a setting for great art, fine dining and entertainment.",
     pavilionSrc: "/images/top-ten/spain-pavilion.png",
@@ -159,7 +159,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "sudan",
-    href: "/sudanoverview",
+    href: "/sudan01",
     title: "Sudan",
     body: "Displays include 4,000-year-old relics of Nubian civilization and a newly discovered fresco of the Madonna.",
     pavilionSrc: "/images/sudan/sudan-icon.jpg",
@@ -169,7 +169,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "sweden",
-    href: "/swedenoverview",
+    href: "/sweden01",
     title: "Sweden",
     body: "In unusual exhibits, a creative country displays its many skills in technology, design and cuisine.",
     pavilionSrc: "/images/sweden/sweden-icon.jpg",
@@ -179,7 +179,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "swiss-sky-ride",
-    href: "/swiskyoverview",
+    href: "/swisky01",
     title: "Swiss Sky Ride",
     body: "Passengers ride high across the Fairgrounds in cable cars for a spectacular view of the Fair.",
     pavilionSrc: "/images/swisky/swiss-sky-ride-icon.jpg",
@@ -189,7 +189,7 @@ export const S_CARDS: SCard[] = [
   },
   {
     id: "switzerland",
-    href: "/switzoverview",
+    href: "/switz01",
     title: "Switzerland",
     body: "In a cluster of Alpine chalets, Swiss industries display tourist attractions, watches, chocolates and cheese.",
     pavilionSrc: "/images/switz/switzerland-icon.jpg",

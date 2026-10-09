@@ -16,8 +16,8 @@ export function BraraiTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/braraioverview" style={{ color: "#990000" }}>
-            ← Brass Rail overview
+          <Link href="/brarai01" style={{ color: "#990000" }}>
+            ← Brass Rail
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function BraraiTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/braraioverview"
-        overviewHref="/braraioverview"
+        overviewHref="/brarai01"
         nextHref="/brarai01"
       />
     </>

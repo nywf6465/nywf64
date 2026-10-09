@@ -26,7 +26,6 @@ export default function Berlin01Page() {
         height: 826,
       }}
       nav={<BerlinNavChrome />}
-      previousHref="/berlinoverview"
       nextHref="/berlin02"
       guide1964={{
         cover: {

@@ -3,14 +3,13 @@ import { BountyNavChrome } from "@/components/BountyNavChrome";
 import { GuidebookSouvenirPage } from "@/components/GuidebookSouvenirPage";
 
 export const metadata: Metadata = {
-  title:
-    "1964 & 1965 Official Guidebook & Souvenir Map — Bounty — nywf64.com",
+  title: "1964 & 1965 Official Guidebook — Bounty — nywf64.com",
   description:
     "Bounty entries from the 1964 Official Guide Book — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * Bounty guidebook page — Official Guidebook & Souvenir Map.
+ * Bounty guidebook page — Official Guidebook only (no Souvenir Map section).
  * Body from legacy bounty01.html. Layout: GuidebookSouvenirPage (/bell01 standard).
  * 1965: attraction did not reopen. No legacy locate-it map page (bountymap 404).
  */
@@ -26,7 +25,6 @@ export default function Bounty01Page() {
         height: 826,
       }}
       nav={<BountyNavChrome />}
-      previousHref="/bountyoverview"
       nextHref="/bounty02"
       guide1964={{
         cover: {
@@ -110,13 +108,6 @@ export default function Bounty01Page() {
         statusNote: (
           <>The &quot;Bounty&quot; attraction did not reopen in 1965.</>
         ),
-      }}
-      map={{
-        cover: {
-          src: "/images/bounty01/souvenir-map.jpg",
-          width: 110,
-          height: 216,
-        },
       }}
     />
   );

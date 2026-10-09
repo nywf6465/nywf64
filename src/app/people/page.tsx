@@ -19,8 +19,8 @@ export default function PeopleOfTheFairPage() {
           <Image
             src="/images/people-of-the-fair-hero.jpg"
             alt="People of the Fair — those who Created the Fair, those who Preserve the Fair"
-            width={1600}
-            height={983}
+            width={1938}
+            height={811}
             priority
             sizes="100vw"
             className={styles.art}

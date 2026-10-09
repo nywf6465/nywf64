@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Continental Insurance menu — nav-menu topics for all routes beginning with `conins`.
- * Labels match the conins menu-topics mockup; Overview at top.
+ * Labels match the conins menu-topics mockup.
  * Non-Overview routes: `conins01`…`conins11`.
  */
 export const CONINS_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/coninsoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/conins01",

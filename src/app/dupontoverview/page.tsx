@@ -51,8 +51,8 @@ export default function DupontOverviewPage() {
             <Image
               src="/images/dupontoverview/photo.jpg"
               alt="DuPont Pavilion — Wonderful World of Chemistry"
-              width={958}
-              height={525}
+              width={1542}
+              height={1020}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

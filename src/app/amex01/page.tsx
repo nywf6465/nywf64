@@ -25,7 +25,6 @@ export default function Amex01Page() {
         height: 824,
       }}
       nav={<AmexNavChrome />}
-      previousHref="/amexoverview"
       nextHref="/amex02"
       guide1964={{
         cover: {

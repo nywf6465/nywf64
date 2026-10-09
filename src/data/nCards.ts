@@ -8,7 +8,7 @@ export type NCard = FountainsCard;
 
 const NCR: NCard = {
   id: "ncr",
-  href: "/ncroverview",
+  href: "/ncr01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "NCR",
   // TEXT (to the right of ICON) — exact from ncr-n-card-text-source.jpg
@@ -21,7 +21,7 @@ const NCR: NCard = {
 
 const NATMARPAR: NCard = {
   id: "natmarpar",
-  href: "/natmarparoverview",
+  href: "/natmarpar01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "National Maritime Union Park",
   // TEXT (to the right of ICON) — exact from natmarpar-n-card-text-source.jpg
@@ -35,7 +35,7 @@ const NATMARPAR: NCard = {
 
 const NEWENG: NCard = {
   id: "neweng",
-  href: "/newengoverview",
+  href: "/neweng01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "New England",
   // TEXT (to the right of ICON) — exact from neweng-n-card-text-source.jpg
@@ -49,7 +49,7 @@ const NEWENG: NCard = {
 
 const NEWJER: NCard = {
   id: "newjer",
-  href: "/newjeroverview",
+  href: "/newjer01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "New Jersey",
   // TEXT (to the right of ICON) — exact from newjer-n-card-text-source.jpg
@@ -62,7 +62,7 @@ const NEWJER: NCard = {
 
 const NEWMEX: NCard = {
   id: "newmex",
-  href: "/newmexoverview",
+  href: "/newmex01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "New Mexico",
   // TEXT (to the right of ICON) — exact from newmex-n-card-text-source.jpg
@@ -75,7 +75,7 @@ const NEWMEX: NCard = {
 
 const NEWYORCIT: NCard = {
   id: "newyorcit",
-  href: "/newyorcitoverview",
+  href: "/newyorcit01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "New York City",
   // TEXT (to the right of ICON) — exact from newyorcit-n-card-text-source.jpg
@@ -88,7 +88,7 @@ const NEWYORCIT: NCard = {
 
 const NEWYOR: NCard = {
   id: "newyor",
-  href: "/newyoroverview",
+  href: "/newyorguidebook",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "New York State",
   // TEXT (to the right of ICON) — exact from newyorsta-n-card-text-source.jpg

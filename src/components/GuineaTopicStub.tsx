@@ -16,8 +16,8 @@ export function GuineaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/guineaoverview" style={{ color: "#990000" }}>
-            ← Guinea overview
+          <Link href="/guinea01" style={{ color: "#990000" }}>
+            ← Guinea
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function GuineaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/guineaoverview"
-        overviewHref="/guineaoverview"
+        overviewHref="/guinea01"
         nextHref="/guinea01"
       />
     </>

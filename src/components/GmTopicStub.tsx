@@ -19,8 +19,8 @@ export function GmTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/gmoverview" style={{ color: "#990000" }}>
-            ← General Motors overview
+          <Link href="/gmguidebook" style={{ color: "#990000" }}>
+            ← General Motors
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -32,8 +32,7 @@ export function GmTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/gmoverview"
-        overviewHref="/gmoverview"
+        overviewHref="/gmguidebook"
         nextHref="/gm01"
       />
     </>

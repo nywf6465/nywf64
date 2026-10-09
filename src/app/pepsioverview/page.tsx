@@ -52,8 +52,8 @@ export default function PepsiOverviewPage() {
             <Image
               src="/images/pepsioverview/photo.jpg"
               alt="Animated figures in miniature settings at the Pepsi-Cola Pavilion It's a Small World"
-              width={958}
-              height={706}
+              width={1615}
+              height={974}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

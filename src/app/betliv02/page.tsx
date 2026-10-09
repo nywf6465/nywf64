@@ -27,7 +27,7 @@ export default function Betliv02Page() {
       }}
       nav={<BetlivNavChrome />}
       previousHref="/betliv01"
-      overviewHref="/betlivoverview"
+      overviewHref="/betliv01"
       nextHref="/betliv03"
       factsLeft={[
         {

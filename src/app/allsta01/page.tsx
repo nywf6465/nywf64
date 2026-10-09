@@ -26,7 +26,6 @@ export default function Allsta01Page() {
         height: 823,
       }}
       nav={<AllstaNavChrome />}
-      previousHref="/allstaoverview"
       nextHref="/allsta02"
       guide1964={{
         cover: {

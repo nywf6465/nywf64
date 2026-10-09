@@ -73,11 +73,13 @@ export type GuidebookYearContent = {
 
 export type GuidebookMapEntry = {
   logo: GuidebookImage;
-  name: ReactNode;
+  name?: ReactNode;
   nameFace?: GuidebookFace;
-  copy: ReactNode;
+  copy?: ReactNode;
   /** Burgundy italic note under the entry (e.g. “never built”). */
   note?: ReactNode;
+  /** Optional block after the entry note (e.g. companion feature). */
+  after?: ReactNode;
 };
 
 export type GuidebookLocateLink = {
@@ -86,7 +88,8 @@ export type GuidebookLocateLink = {
 };
 
 export type GuidebookMapContent = {
-  cover: GuidebookImage;
+  /** Souvenir map cover; omit when the map column is entry-only (e.g. archamer01). */
+  cover?: GuidebookImage;
   /**
    * Single Locate It thumbnail (default). Prefer `locates` when the exhibit
    * has more than one area pin.
@@ -117,6 +120,13 @@ export type GuidebookMapContent = {
    * an entry (legacy layout used by /amind01).
    */
   entry?: GuidebookMapEntry;
+  /**
+   * Multiple pavilion blocks under the map column (e.g. /heartland01
+   * Heartland States + Midwestern States). When set, overrides `entry`.
+   */
+  entries?: GuidebookMapEntry[];
+  /** Optional footnote below the map column (e.g. Illinois Disney disclaimer). */
+  footnote?: ReactNode;
 };
 
 export type GuidebookSouvenirPageProps = {
@@ -125,8 +135,9 @@ export type GuidebookSouvenirPageProps = {
   nav: ReactNode;
   guide1964: GuidebookYearContent;
   guide1965: GuidebookYearContent;
-  map: GuidebookMapContent;
-  previousHref: string;
+  /** Omit for guidebook-only pages with no souvenir map column (e.g. bounty01). */
+  map?: GuidebookMapContent;
+  previousHref?: string;
   nextHref: string;
   titleId?: string;
   /**
@@ -134,28 +145,30 @@ export type GuidebookSouvenirPageProps = {
    * Some legacy pages append “Entries” (e.g. Port Authority).
    */
   title?: string;
+  /** Noun used in “this {noun} from the 1964/1965 Official Guide Book” captions. */
+  subjectNoun?: string;
 };
 
 const DEFAULT_TITLE = "1964 & 1965 Official Guidebook & Souvenir Map";
 
-function Caption1964() {
+function Caption1964({ subjectNoun = "exhibit" }: { subjectNoun?: string }) {
   return (
     <p className={styles.intro}>
       The description of this
       <br />
-      exhibit from the 1964
+      {subjectNoun} from the 1964
       <br />
       Official Guide Book
     </p>
   );
 }
 
-function Caption1965() {
+function Caption1965({ subjectNoun = "exhibit" }: { subjectNoun?: string }) {
   return (
     <p className={styles.intro}>
       The description of this
       <br />
-      exhibit from the 1965
+      {subjectNoun} from the 1965
       <br />
       Official Guide Book
     </p>
@@ -237,10 +250,12 @@ function GuideColumn({
   year,
   guide,
   label,
+  subjectNoun = "exhibit",
 }: {
   year: 1964 | 1965;
   guide: GuidebookYearContent;
   label: string;
+  subjectNoun?: string;
 }) {
   const nameFace = guide.nameFace ?? (year === 1965 ? "arial" : "times");
   const defaultLabelFace: GuidebookFace = year === 1965 ? "arial" : "times";
@@ -280,7 +295,11 @@ function GuideColumn({
           className={styles.cover}
           unoptimized
         />
-        {year === 1964 ? <Caption1964 /> : <Caption1965 />}
+        {year === 1964 ? (
+          <Caption1964 subjectNoun={subjectNoun} />
+        ) : (
+          <Caption1965 subjectNoun={subjectNoun} />
+        )}
       </div>
       {guide.statusNote ? (
         <p className={styles.omittedNote}>{guide.statusNote}</p>
@@ -341,9 +360,39 @@ function GuideColumn({
   );
 }
 
+function MapEntryBlock({ entry }: { entry: GuidebookMapEntry }) {
+  const nameFace = entry.nameFace ?? "times";
+  return (
+    <div className={styles.mapEntry}>
+      <Image
+        src={entry.logo.src}
+        alt={entry.logo.alt ?? ""}
+        width={entry.logo.width}
+        height={entry.logo.height}
+        className={styles.logo}
+        unoptimized
+      />
+      {entry.name ? (
+        <p
+          className={
+            nameFace === "arial"
+              ? `${styles.pavilionName} ${styles.pavilionNameSans}`
+              : styles.pavilionName
+          }
+        >
+          {entry.name}
+        </p>
+      ) : null}
+      {entry.copy ? <p className={styles.copy}>{entry.copy}</p> : null}
+      {entry.note ? <p className={styles.statusNote}>{entry.note}</p> : null}
+      {entry.after}
+    </div>
+  );
+}
+
 function MapColumn({ map }: { map: GuidebookMapContent }) {
-  const entry = map.entry;
-  const nameFace = entry?.nameFace ?? "times";
+  const entries: GuidebookMapEntry[] =
+    map.entries ?? (map.entry ? [map.entry] : []);
   const locates: GuidebookLocateLink[] =
     map.locates ??
     (map.areaMap
@@ -353,6 +402,7 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
 
   return (
     <section className={styles.col} aria-label="1964 Official Souvenir Map">
+      {map.cover ? (
       <div
         className={
           multiLocate
@@ -418,29 +468,16 @@ function MapColumn({ map }: { map: GuidebookMapContent }) {
           />
         </div>
       </div>
-      {entry ? (
-        <div className={styles.mapEntry}>
-          <Image
-            src={entry.logo.src}
-            alt={entry.logo.alt ?? ""}
-            width={entry.logo.width}
-            height={entry.logo.height}
-            className={styles.logo}
-            unoptimized
-          />
-          <p
-            className={
-              nameFace === "arial"
-                ? `${styles.pavilionName} ${styles.pavilionNameSans}`
-                : styles.pavilionName
-            }
-          >
-            {entry.name}
-          </p>
-          <p className={styles.copy}>{entry.copy}</p>
-          {entry.note ? <p className={styles.statusNote}>{entry.note}</p> : null}
-        </div>
       ) : null}
+      {map.footnote ? (
+        <div className={styles.mapFootnote}>{map.footnote}</div>
+      ) : null}
+      {entries.map((item, index) => (
+        <MapEntryBlock
+          key={`${item.logo.src}-${index}`}
+          entry={item}
+        />
+      ))}
     </section>
   );
 }
@@ -456,6 +493,7 @@ export function GuidebookSouvenirPage({
   nextHref,
   titleId = "guidebook-souvenir-title",
   title = DEFAULT_TITLE,
+  subjectNoun = "exhibit",
 }: GuidebookSouvenirPageProps) {
   return (
     <>
@@ -488,19 +526,21 @@ export function GuidebookSouvenirPage({
             year={1964}
             guide={guide1964}
             label="1964 Official Guide Book"
+            subjectNoun={subjectNoun}
           />
           <GuideColumn
             year={1965}
             guide={guide1965}
             label="1965 Official Guide Book"
+            subjectNoun={subjectNoun}
           />
-          <MapColumn map={map} />
+          {map ? <MapColumn map={map} /> : null}
         </div>
       </article>
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious
+        explicitPrevious={Boolean(previousHref)}
         nextHref={nextHref}
       />
     </>

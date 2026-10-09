@@ -16,8 +16,8 @@ export function GarmedTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/garmedoverview" style={{ color: "#990000" }}>
-            ← Garden of Meditation overview
+          <Link href="/garmed01" style={{ color: "#990000" }}>
+            ← Garden of Meditation
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function GarmedTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/garmedoverview"
-        overviewHref="/garmedoverview"
+        overviewHref="/garmed01"
         nextHref="/garmed01"
       />
     </>

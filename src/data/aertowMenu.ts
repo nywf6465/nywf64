@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Aertow menu — nav-menu topics for all routes beginning with `aertow`.
- * Labels match the aertow-menu-topics mockup; Overview at top.
+ * Labels match the aertow-menu-topics mockup.
  * Non-Overview routes: `aertow01`…`aertow03`.
  */
 export const AERTOW_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/aertowoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/aertow01",

@@ -40,7 +40,7 @@ export type BrochurePageProps = {
   };
   nav: ReactNode;
   /** Navy title-bar text (e.g. “Brochure: Building a Unisphere”). */
-  title: string;
+  title: ReactNode;
   titleId?: string;
   cover: BrochureCover;
   /** Public path to the PDF (e.g. `/pdf/unisph/how-to-make-a-unisphere.pdf`). */
@@ -54,7 +54,7 @@ export type BrochurePageProps = {
   documentNoun?: string;
   /** Optional SOURCE / credit line under the cover (from legacy caption). */
   source?: ReactNode;
-  previousHref: string;
+  previousHref?: string;
   nextHref: string;
   overviewHref?: string;
 };
@@ -146,7 +146,7 @@ export function BrochurePage({
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious
+        explicitPrevious={Boolean(previousHref)}
         overviewHref={overviewHref}
         nextHref={nextHref}
       />

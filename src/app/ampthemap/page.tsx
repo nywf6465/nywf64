@@ -69,7 +69,7 @@ export default function AmptheMapPage() {
       <Nav2Bar
         previousHref="/ampthe01"
         explicitPrevious
-        overviewHref="/amptheoverview"
+        overviewHref="/ampthe01"
         nextHref="/ampthe02"
       />
     </>

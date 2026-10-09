@@ -44,7 +44,7 @@ export default function Bell05Page() {
       }}
       nav={<BellNavChrome />}
       previousHref="/bell04"
-      overviewHref="/belloverview"
+      overviewHref="/bell01"
       nextHref="/bellphotographalbumii"
       sections={[
         {

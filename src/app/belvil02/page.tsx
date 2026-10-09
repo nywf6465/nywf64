@@ -26,7 +26,7 @@ export default function Belvil02Page() {
       }}
       nav={<BelvilNavChrome />}
       previousHref="/belvil01"
-      overviewHref="/belviloverview"
+      overviewHref="/belvil01"
       nextHref="/belvil03"
       factsLeft={[
         {

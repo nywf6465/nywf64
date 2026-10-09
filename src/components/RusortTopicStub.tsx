@@ -16,8 +16,8 @@ export function RusortTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/rusortoverview" style={{ color: "#990000" }}>
-            ← Russian Orthodox Greek-Catholic Church of America overview
+          <Link href="/rusort01" style={{ color: "#990000" }}>
+            ← Russian Orthodox Greek-Catholic Church of America
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function RusortTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/rusortoverview"
-        overviewHref="/rusortoverview"
+        overviewHref="/rusort01"
         nextHref="/rusort01"
       />
     </>

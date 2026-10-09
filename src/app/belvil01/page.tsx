@@ -26,7 +26,6 @@ export default function Belvil01Page() {
         height: 824,
       }}
       nav={<BelvilNavChrome />}
-      previousHref="/belviloverview"
       nextHref="/belvil02"
       guide1964={{
         cover: {

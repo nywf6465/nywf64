@@ -2,15 +2,11 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * missouri menu — nav-menu topics for all routes beginning with `missouri`.
- * Labels match `media/missouri-menu-topics-source.jpg` (+ Overview at top).
+ * Labels match `media/missouri-menu-topics-source.jpg`.
  * Guidebook & Souvenir Map Entries is one topic (wrapped in source).
  * Non-Overview routes: `missouri01`…`missouri05`.
  */
 export const MISSOURI_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/missourioverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/missouri01",
@@ -20,7 +16,7 @@ export const MISSOURI_MENU_TOPICS: AttractionTopic[] = [
     href: "/missouri02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/missouri03",
   },
   {

@@ -51,8 +51,8 @@ export default function SpainOverviewPage() {
             <Image
               src="/images/spainoverview/photo.jpg"
               alt="Spain Pavilion — art, dining and entertainment"
-              width={958}
-              height={706}
+              width={1524}
+              height={1032}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

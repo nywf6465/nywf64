@@ -1,0 +1,61 @@
+/* General Foods Arches locate-it map (International Area) — left-justified */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+  text-align: left;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 910px;
+  margin: 0;
+  padding: 0.75rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  text-align: left;
+}
+
+.intro {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 0.85rem;
+  text-align: left;
+}
+
+.mapWrap {
+  width: 100%;
+  max-width: 910px;
+  margin: 0;
+  line-height: 0;
+  text-align: left;
+  border: 1px solid #000;
+  background: #fff;
+  overflow: auto;
+}
+
+.mapArt {
+  display: block;
+  width: 100%;
+  max-width: 910px;
+  height: auto;
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .intro {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

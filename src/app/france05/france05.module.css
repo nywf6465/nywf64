@@ -1,0 +1,237 @@
+/*
+ * France — A World's Fair Phantom (/france05).
+ * Body from legacy france05.html (custom essay).
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.body p {
+  margin: 0 0 0.95rem;
+  color: #000;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.body a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.body a:hover {
+  color: #ff0000;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.brandNywf {
+  color: #0066cc;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-size: 0.8em;
+  font-weight: 400;
+}
+
+.figure {
+  margin: 1rem auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.photoFrame {
+  display: block;
+  line-height: 0;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.photoImgPlain {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 0;
+}
+
+.photoImgThick {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 6px solid #000;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  color: #000;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.source {
+  margin: 0.25rem 0 0;
+  color: #000;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1.25rem auto;
+  width: 100%;
+}
+
+.souvenirNote {
+  margin: 0.65rem 0 0.85rem;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.souvenirBody {
+  margin: 0 0 0.85rem;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.brochureBlock {
+  margin: 0 0 0.85rem;
+  overflow: hidden;
+}
+
+.brochureCover {
+  float: left;
+  margin: 0 0.85rem 0.5rem 0;
+  max-width: 120px;
+}
+
+.brochureHeading {
+  margin: 0 0 0.65rem;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.flintstones {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1rem 1.5rem;
+  margin: 0.85rem 0 0;
+}
+
+.flintstonesHeading {
+  margin: 0 0 0.35rem;
+  color: #000;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.flintstonesSub {
+  margin: 0 0 0.85rem;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.webmasterNote {
+  margin: 1.25rem auto 0;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.webmasterNote p {
+  margin: 0 0 0.75rem;
+}
+
+.webmasterNote p:last-of-type {
+  margin-bottom: 0;
+}
+
+.webmasterSign {
+  margin: 0.85rem 0 0;
+}
+
+.webmasterSign p {
+  margin: 0;
+}

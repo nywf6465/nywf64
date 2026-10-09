@@ -1,0 +1,133 @@
+/* Jordan — War Through Misunderstanding essay */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+  font-weight: 700;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.aboutBox {
+  margin: 0 0 1.25rem;
+  padding: 0.75rem;
+  border: 2px solid #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.aboutBox p {
+  margin: 0 0 0.65rem;
+}
+
+.aboutHeading {
+  font-weight: 700;
+  margin: 0 0 0.35rem;
+}
+
+.essayLead {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  color: #0066cc;
+}
+
+.essayLeadMain {
+  margin: 0 0 0.35rem;
+  font-size: 1.35rem;
+  font-weight: 700;
+}
+
+.essayLeadSub {
+  margin: 0 0 0.35rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.byline {
+  margin: 0.5rem 0 0;
+  font-size: 0.85rem;
+}
+
+.bylineName {
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+}
+
+.mosesQuote {
+  margin: 0 0 1.25rem;
+  padding: 0 0 0 1rem;
+  border-left: 3px solid #ccc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.body p {
+  margin: 0 0 0.85rem;
+}
+
+.figure {
+  margin: 0 auto 1rem;
+  max-width: min(30rem, 100%);
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #999;
+}

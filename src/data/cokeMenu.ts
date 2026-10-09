@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Coca-Cola menu — nav-menu topics for all routes beginning with `coke`.
- * Labels match the coke menu-topics mockup; Overview at top.
+ * Labels match the coke menu-topics mockup.
  * Non-Overview routes: `coke01`…`coke13` (two distinct Photograph Album stubs).
  */
 export const COKE_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/cokeoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/coke01",

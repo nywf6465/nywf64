@@ -7,10 +7,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const LUNFOUNT_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/lunfountoverview",
-  },
-  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/lunfount01",
   },
@@ -23,7 +19,7 @@ export const LUNFOUNT_MENU_TOPICS: AttractionTopic[] = [
     href: "/lunfount03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/lunfount04",
   },
 ];

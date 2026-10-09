@@ -1,0 +1,189 @@
+/*
+ * United States Pavilion — Library USA (/unista13).
+ * Body from legacy unista13.html (custom folio).
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+}
+
+.folioTop {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 4px minmax(0, 1.1fr);
+  gap: 0.75rem 0.65rem;
+  align-items: start;
+  margin: 0 0 1.25rem;
+}
+
+.challengeLines {
+  margin: 0;
+  text-align: right;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: clamp(1.75rem, 5vw, 2.25rem);
+  font-weight: 700;
+  line-height: 1.05;
+  color: #ff8000;
+}
+
+.orangeRule {
+  width: 4px;
+  min-height: 100%;
+  background: #ff8000;
+}
+
+.sealCol {
+  min-width: 0;
+}
+
+.sealFigure {
+  margin: 0 0 0.65rem;
+  text-align: center;
+}
+
+.sealImg {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.folioOrange {
+  margin: 0 0 0.65rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  color: #ff8000;
+}
+
+.fairLine {
+  margin: 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #804000;
+}
+
+.sectionRule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1.25rem 0;
+}
+
+.logoFigure {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.logoImg {
+  display: block;
+  width: min(450px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.computerNote {
+  margin: 0 auto 1rem;
+  max-width: 28rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #804000;
+}
+
+.creditsFigure {
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.creditsImg {
+  display: block;
+  width: min(400px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.descSectionTitle {
+  margin: 1rem 0 0.75rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.descBody {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.descList {
+  margin: 0 0 0.85rem;
+  padding-left: 1.5rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.descList li {
+  margin: 0 0 0.65rem;
+}
+
+@media (max-width: 640px) {
+  .folioTop {
+    grid-template-columns: 1fr;
+  }
+
+  .orangeRule {
+    display: none;
+  }
+
+  .challengeLines {
+    text-align: center;
+  }
+}

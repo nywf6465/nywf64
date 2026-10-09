@@ -26,7 +26,7 @@ export default function Boysco02Page() {
       }}
       nav={<BoyscoNavChrome />}
       previousHref="/boysco01"
-      overviewHref="/boyscooverview"
+      overviewHref="/boysco01"
       nextHref="/boysco03"
       factsLeft={[
         {

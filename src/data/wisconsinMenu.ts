@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Wisconsin menu — nav-menu topics for all routes beginning with `wisconsin`.
- * Labels match uploaded menu topics (+ Overview at top).
+ * Labels match uploaded menu topics.
  * Non-Overview routes: `wisconsin01`…`wisconsin08`.
  */
 export const WISCONSIN_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/wisconsinoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/wisconsin01",
@@ -23,7 +19,7 @@ export const WISCONSIN_MENU_TOPICS: AttractionTopic[] = [
     href: "/wisconsin03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/wisconsin04",
   },
   {

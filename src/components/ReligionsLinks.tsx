@@ -11,7 +11,7 @@ import styles from "./ReligionsLinks.module.css";
 const ROWS = [
   {
     id: "american-israel",
-    href: "/amerisroverview",
+    href: "/amerisr01",
     title: "American-Israel",
     body: "In this spiral-shaped building, the visitor walks through the sights and sounds of 4,000 years of Jewish history.",
     pavilionSrc: "/images/religions/american-israel-icon.png",
@@ -21,7 +21,7 @@ const ROWS = [
   },
   {
     id: "billy-graham",
-    href: "/bilgraoverview",
+    href: "/bilgra01",
     title: "Billy Graham",
     body: "The famed evangelist's message is presented in a color film, and personal counseling is offered.",
     pavilionSrc: "/images/religions/billy-graham-icon.png",
@@ -31,7 +31,7 @@ const ROWS = [
   },
   {
     id: "christian-science",
-    href: "/chrscioverview",
+    href: "/chrsci01",
     title: "Christian Science",
     body: "Graphic exhibits explain the religion's teachings; there is also a reading room and park.",
     pavilionSrc: "/images/religions/christian-science-icon.png",
@@ -41,7 +41,7 @@ const ROWS = [
   },
   {
     id: "lithuanian-wayside-cross",
-    href: "/litwaycrooverview",
+    href: "/litwaycro01",
     title: "Lithuanian Wayside Cross",
     body: "A carved wooden cross memorializes those who have given their lives in defense of Lithuanian freedom.",
     pavilionSrc: "/images/religions/lithuanian-wayside-cross-icon.png",
@@ -51,7 +51,7 @@ const ROWS = [
   },
   {
     id: "mormon-church",
-    href: "/morchuoverview",
+    href: "/morchu01",
     title: "Mormon Church",
     body: "A film, dioramas and art works depict the Church's efforts to help man achieve happiness through harmony with God's law.",
     pavilionSrc: "/images/religions/mormon-church-icon.png",
@@ -61,7 +61,7 @@ const ROWS = [
   },
   {
     id: "protestant-and-orthodox-center",
-    href: "/proortoverview",
+    href: "/proort01",
     title: "Protestant & Orthodox Center",
     body: "An allegorical film and religious exhibits and art works illustrate the theme 'Jesus Christ, the Light of the World.'",
     pavilionSrc: "/images/religions/protestant-and-orthodox-center-icon.png",
@@ -71,7 +71,7 @@ const ROWS = [
   },
   {
     id: "russian-orthodox",
-    href: "/rusortoverview",
+    href: "/rusort01",
     title: "Russian Orthodox Greek-Catholic Church of America",
     body: "A valuable jeweled icon is shown in a replica of a Russian chapel built in California in 1823.",
     pavilionSrc: "/images/religions/russian-orthodox-icon.png",
@@ -81,7 +81,7 @@ const ROWS = [
   },
   {
     id: "sermons-from-science",
-    href: "/serscioverview",
+    href: "/sersci01",
     title: "Sermons from Science",
     body: "Demonstrations of scientific marvels and color films on nature illustrate the compatibility of faith with modern-day science.",
     pavilionSrc: "/images/religions/sermons-from-science-icon.png",
@@ -91,7 +91,7 @@ const ROWS = [
   },
   {
     id: "two-thousand-tribes",
-    href: "/twothooverview",
+    href: "/twotho01",
     title: "Two Thousand Tribes",
     body: "The ancient artifacts and modern progress of tribal groups around the world are shown in a large stylized aboriginal hut.",
     pavilionSrc: "/images/religions/two-thousand-tribes-icon.png",
@@ -101,7 +101,7 @@ const ROWS = [
   },
   {
     id: "the-vatican",
-    href: "/vaticanoverview",
+    href: "/vaticanguidebook",
     title: "Vatican",
     body: "The main exhibit is the Fair's most important work of art: the 'Pieta,' Michelangelo's 466-year-old masterpiece in Carrara marble.",
     pavilionSrc: "/images/vatican/vatican-icon.png",

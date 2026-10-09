@@ -68,7 +68,7 @@ export default function BerlinMapPage() {
       <Nav2Bar
         previousHref="/berlin01"
         explicitPrevious
-        overviewHref="/berlinoverview"
+        overviewHref="/berlin01"
         nextHref="/berlin02"
       />
     </>

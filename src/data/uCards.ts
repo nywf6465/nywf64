@@ -9,7 +9,7 @@ export type UCard = FountainsCard;
 export const U_CARDS: UCard[] = [
   {
     id: "underground-world-home",
-    href: "/undrghomeoverview",
+    href: "/undrghome01",
     title: "Underground World Home",
     body: "The advantages of underground living are realistically displayed in an ultramodern 10-room house built below the earth's surface.",
     pavilionSrc: "/images/undrghome/underground-world-home-icon.jpg",
@@ -19,7 +19,7 @@ export const U_CARDS: UCard[] = [
   },
   {
     id: "united-arab-republic",
-    href: "/uaroverview",
+    href: "/uar01",
     title: "United Arab Republic",
     body: "Models of the Aswan Dam and the Suez Canal are among many displays that emphasize progress in this ancient land.",
     pavilionSrc: "/images/uar/united-arab-republic-icon.jpg",
@@ -29,7 +29,7 @@ export const U_CARDS: UCard[] = [
   },
   {
     id: "united-nations",
-    href: "/unoverview",
+    href: "/un01",
     title: "United Nations",
     body: "The United Nations exhibit features materials from the UN Secretariat and a display of stamps from the UN Postal Administration is shown.",
     pavilionSrc: "/images/un/united-nations-icon.jpg",
@@ -39,7 +39,7 @@ export const U_CARDS: UCard[] = [
   },
   {
     id: "united-states",
-    href: "/unistaoverview",
+    href: "/unista01",
     title: "United States",
     body: 'The nation\'s past and its progress toward President Johnson\'s "Great Society" are outlined in many dramatic exhibits and a spectacular 15-minute film-ride.',
     pavilionSrc: "/images/top-ten/united-states-pavilion.png",
@@ -49,7 +49,7 @@ export const U_CARDS: UCard[] = [
   },
   {
     id: "us-post-office",
-    href: "/uspooverview",
+    href: "/uspo01",
     title: "U.S. Post Office",
     body: "Visitors climb a ramp to see one of America's most mechanized Post Offices in full operation.",
     pavilionSrc: "/images/uspo/us-post-office-icon.jpg",
@@ -59,7 +59,7 @@ export const U_CARDS: UCard[] = [
   },
   {
     id: "us-rubber",
-    href: "/usruboverview",
+    href: "/usrub01",
     title: "U.S. Rubber",
     body: "Visitors soar 80 feet in the air around a giant auto tire for a spectacular view of the Fair.",
     pavilionSrc: "/images/usrub/us-rubber-icon.jpg",
@@ -69,7 +69,7 @@ export const U_CARDS: UCard[] = [
   },
   {
     id: "unisphere",
-    href: "/unisphoverview",
+    href: "/unisph01",
     title: "Unisphere",
     body: "Symbol of the Fair, this 12-story high stainless-steel model of the earth was built and presented by United States Steel.",
     pavilionSrc: "/images/unisphere/unisphere-icon.jpg",

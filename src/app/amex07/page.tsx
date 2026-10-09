@@ -88,7 +88,7 @@ export default function Amex07Page() {
       <Nav2Bar
         previousHref="/amex06"
         explicitPrevious
-        overviewHref="/amexoverview"
+        overviewHref="/amex01"
         nextHref="/amex08"
       />
     </>

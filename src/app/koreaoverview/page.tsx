@@ -66,7 +66,8 @@ export default function KoreaOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/koreaoverview"
+        previousHref="/korea04"
+        explicitPrevious
         overviewHref="/koreaoverview"
         nextHref="/korea01"
       />

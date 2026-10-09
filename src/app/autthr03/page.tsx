@@ -25,7 +25,7 @@ export default function Autthr03Page() {
       }}
       nav={<AutthrNavChrome />}
       previousHref="/autthr02"
-      overviewHref="/autthroverview"
+      overviewHref="/autthr01"
       nextHref="/autthr04"
       entries={[
         {

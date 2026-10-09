@@ -50,8 +50,8 @@ export default function MorchuOverviewPage() {
             <Image
               src="/images/morchuoverview/photo.jpg"
               alt="Mormon Church pavilion"
-              width={958}
-              height={776}
+              width={1277}
+              height={1232}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

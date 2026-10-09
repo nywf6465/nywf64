@@ -16,8 +16,8 @@ export function ChrsciTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/chrscioverview" style={{ color: "#990000" }}>
-            ← Christian Science overview
+          <Link href="/chrsci01" style={{ color: "#990000" }}>
+            ← Christian Science
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function ChrsciTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/chrscioverview"
-        overviewHref="/chrscioverview"
+        overviewHref="/chrsci01"
         nextHref="/chrsci01"
       />
     </>

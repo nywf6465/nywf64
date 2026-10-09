@@ -16,8 +16,8 @@ export function FlowatskiTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/flowatskioverview" style={{ color: "#990000" }}>
-            ← Florida Citrus Water Ski Show overview
+          <Link href="/flowatski01" style={{ color: "#990000" }}>
+            ← Florida Citrus Water Ski Show
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function FlowatskiTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/flowatskioverview"
-        overviewHref="/flowatskioverview"
+        overviewHref="/flowatski01"
         nextHref="/flowatski01"
       />
     </>

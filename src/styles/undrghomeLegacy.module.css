@@ -1,0 +1,302 @@
+/*
+ * Underground World Home — custom legacy pages (essay, brochure, booklet, epilogue).
+ * HARD RULE — navy title banner beneath UndrghomeNavChrome.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.articleInnerWide {
+  width: min(29rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.bodyArial p {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.bodyBooklet p {
+  margin: 0 0 0.85rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.bodyBooklet p strong {
+  font-weight: 700;
+}
+
+.bookletSectionTitle {
+  margin: 0 0 0.65rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.bookletHr {
+  width: min(37.5rem, 100%);
+  margin: 1rem auto 1.25rem;
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+.figureCenter {
+  margin: 1rem auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.figureLeft {
+  margin: 1rem 0;
+  max-width: 15.625rem;
+}
+
+.figureRight {
+  margin: 1rem 0 1rem auto;
+  max-width: 15.625rem;
+}
+
+.photoBorder {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.photoPlain {
+  display: block;
+  width: 100%;
+  max-width: 29rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.captionItalic {
+  margin: 0.35rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.captionItalicLeft {
+  text-align: left;
+}
+
+.sourceNarrow {
+  margin: 0.35rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.sourceNarrowLeft {
+  text-align: left;
+}
+
+.sourceNarrow em {
+  font-style: italic;
+}
+
+.essayDivider {
+  margin: 1.5rem 0;
+  border: 0;
+  border-top: 1px solid #ccc;
+}
+
+.essayClosingCaption {
+  margin: 0.35rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.essayClosingCaption strong {
+  font-weight: 700;
+}
+
+.brochureLeadGreen {
+  margin: 0 0 0.85rem;
+  color: #339966;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.brochureSubLead {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.45;
+}
+
+.brochureBody p {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.sponsorTable {
+  width: 100%;
+  margin: 1.25rem 0;
+  border-collapse: separate;
+  border-spacing: 0 10px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.4;
+}
+
+.sponsorHead {
+  padding: 0.5rem 0.65rem;
+  background: #339966;
+  color: #fff;
+  font-weight: 700;
+  vertical-align: bottom;
+}
+
+.sponsorHeadLabel {
+  margin: 0;
+  font-size: 0.8125rem;
+  font-weight: 400;
+}
+
+.sponsorDivider td {
+  height: 2px;
+  padding: 0;
+  background: #339966;
+}
+
+.sponsorTable td {
+  padding: 0 0.35rem;
+  vertical-align: bottom;
+}
+
+.sponsorMaterial {
+  font-style: italic;
+}
+
+.captionNumber {
+  margin: 0.35rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  text-align: center;
+}
+
+.continuedNext {
+  margin: 0.35rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  font-style: italic;
+  text-align: right;
+}
+
+.bodyBooklet a {
+  color: #0066cc;
+}
+
+.webmasterBox {
+  width: min(33.75rem, 100%);
+  margin: 1.5rem auto 0;
+  padding: 0.65rem 0.85rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.webmasterBox p {
+  margin: 0 0 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.webmasterBox p:last-child {
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.brandNywf {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+  font-weight: 700;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-size: 0.85em;
+}

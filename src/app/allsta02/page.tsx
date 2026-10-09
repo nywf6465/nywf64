@@ -26,7 +26,7 @@ export default function Allsta02Page() {
       }}
       nav={<AllstaNavChrome />}
       previousHref="/allsta01"
-      overviewHref="/allstaoverview"
+      overviewHref="/allsta01"
       nextHref="/allsta03"
       factsLeft={[
         {

@@ -16,8 +16,8 @@ export function LebanoTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/lebanooverview" style={{ color: "#990000" }}>
-            ← Lebanon overview
+          <Link href="/lebano01" style={{ color: "#990000" }}>
+            ← Lebanon
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function LebanoTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/lebanooverview"
-        overviewHref="/lebanooverview"
+        overviewHref="/lebano01"
         nextHref="/lebano01"
       />
     </>

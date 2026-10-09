@@ -3,42 +3,39 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 /**
  * Florida menu — nav-menu topic list for all routes beginning with `florida`.
  * Labels match the florida-menu-topics mockup.
+ * Non-Overview routes: `florida01`…`florida08`.
  */
 export const FLORIDA_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/floridaoverview",
-  },
-  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
-    href: "/floridaguidebook",
+    href: "/florida01",
   },
   {
     label: "World's Fair Information Manual",
-    href: "/floridamanual",
+    href: "/florida02",
   },
   {
     label: "Postcards",
-    href: "/floridapostcards",
+    href: "/florida03",
   },
   {
     label: "Advertising",
-    href: "/floridaadvertising",
+    href: "/florida04",
   },
   {
     label: "Photograph Album",
-    href: "/floridaphotographalbum",
+    href: "/florida05",
   },
   {
     label: "List of Sub-Exhibitors",
-    href: "/floridasubexhibitors",
+    href: "/florida06",
   },
   {
     label: "Article: Visualizing the Good Life",
-    href: "/floridavisualizing",
+    href: "/florida07",
   },
   {
     label: "After the Fair",
-    href: "/floridaafterthefair",
+    href: "/florida08",
   },
 ];

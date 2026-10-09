@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./PavilionsLinks.module.css";
 
-/** Exact user artwork — base unchanged. Hover crops swap burgundy↔navy on text/arrows only; thumbnails untouched. */
+/** Exact user artwork — base unchanged. Hover crops swap navy↔burgundy on the link-symbol circle only; text colors stay put; thumbnails untouched. */
 const TOPICS = [
   {
     id: "attractions-from-a-to-z",
@@ -57,7 +57,7 @@ const TOPICS = [
   {
     id: "restaurants-bars-and-eateries",
     title: "Restaurants, Bars & Eateries",
-    href: "/pavilions/restaurants-bars-and-eateries",
+    href: "/pavilions/restaurants",
     hoverSrc: "/images/pavilions-hover/restaurants-bars-and-eateries.jpg",
     left: "51.367%",
     top: "16.667%",
@@ -67,7 +67,7 @@ const TOPICS = [
   {
     id: "quiet-spaces-and-rest-areas",
     title: "Quiet Spaces and Rest Areas",
-    href: "/pavilions/quiet-spaces-and-rest-areas",
+    href: "/pavilions/quietareas",
     hoverSrc: "/images/pavilions-hover/quiet-spaces-and-rest-areas.jpg",
     left: "2.148%",
     top: "24.751%",

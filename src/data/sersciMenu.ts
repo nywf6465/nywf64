@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Sersci menu — nav-menu topics for all routes beginning with `sersci`.
- * Labels match the sersci-menu-topics mockup; Overview at top.
+ * Labels match the sersci-menu-topics mockup.
  * Non-Overview routes: `sersci01`…`sersci08`.
  */
 export const SERSCI_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/serscioverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/sersci01",
@@ -23,7 +19,7 @@ export const SERSCI_MENU_TOPICS: AttractionTopic[] = [
     href: "/sersci03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/sersci04",
   },
   {

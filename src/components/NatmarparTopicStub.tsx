@@ -16,8 +16,8 @@ export function NatmarparTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/natmarparoverview" style={{ color: "#990000" }}>
-            ← National Maritime Union Park overview
+          <Link href="/natmarpar01" style={{ color: "#990000" }}>
+            ← National Maritime Union Park
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function NatmarparTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/natmarparoverview"
-        overviewHref="/natmarparoverview"
+        overviewHref="/natmarpar01"
         nextHref="/natmarpar01"
       />
     </>

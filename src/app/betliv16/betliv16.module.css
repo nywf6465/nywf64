@@ -3,6 +3,12 @@
  * Page chrome, captions, and SOURCE use betlivTopic.module.css.
  */
 
+.photoStack {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
 .program {
   margin: 1.15rem 0;
 }

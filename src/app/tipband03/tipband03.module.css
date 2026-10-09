@@ -1,0 +1,172 @@
+/* Tiparillo Band Pavilion brochure — two-panel promotional spread from legacy tipband03.html */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  width: 100%;
+  box-sizing: border-box;
+  background: #26346e;
+  color: #fff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+  padding: 0.55rem 0.75rem;
+  font-size: clamp(0.95rem, 1.6vw, 1.15rem);
+}
+
+.body {
+  width: 100%;
+  max-width: 910px;
+  margin: 0 auto;
+  padding: 1.25rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.brochure {
+  display: inline-block;
+  width: 100%;
+  max-width: 600px;
+  text-align: left;
+  margin: 0 auto;
+}
+
+.headerRow {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+}
+
+.headerLeft {
+  width: 400px;
+  max-width: 66.666%;
+  flex: 2 1 0;
+  box-sizing: border-box;
+  background-image: url("/images/tipband03/gencigbackground2.jpg");
+  background-repeat: repeat;
+  background-size: auto;
+  text-align: center;
+  padding: 0.75rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.15rem;
+}
+
+.headerLeftLine {
+  margin: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: clamp(1.35rem, 3.2vw, 2rem);
+  font-family: Times New Roman, Times, serif;
+  line-height: 1.15;
+}
+
+.headerRight {
+  width: 200px;
+  max-width: 33.333%;
+  flex: 1 1 0;
+  box-sizing: border-box;
+  text-align: center;
+  padding: 0.5rem 0.35rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.2rem;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.atFair {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #000;
+}
+
+.generalCigar {
+  margin: 0;
+  color: #804000;
+  font-weight: 700;
+  font-size: 1.35rem;
+  line-height: 1.1;
+}
+
+.presents {
+  margin: 0;
+  font-size: 0.7rem;
+  color: #000;
+}
+
+.rule {
+  border: none;
+  border-top: 1px solid #000;
+  margin: 0.2rem auto;
+  width: 85%;
+}
+
+.extravaganzaWord {
+  margin: 0;
+  color: #804000;
+  font-weight: 700;
+  font-size: 1.05rem;
+  line-height: 1.1;
+}
+
+.panels {
+  display: flex;
+  width: 100%;
+  max-width: 600px;
+  line-height: 0;
+}
+
+.panelWide {
+  flex: 2 1 0;
+  width: 400px;
+  max-width: 66.666%;
+}
+
+.panelNarrow {
+  flex: 1 1 0;
+  width: 200px;
+  max-width: 33.333%;
+}
+
+.panelImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.source {
+  margin: 0.55rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #000;
+  text-align: left;
+}
+
+@media (max-width: 720px) {
+  .headerRow,
+  .panels {
+    flex-direction: column;
+  }
+
+  .headerLeft,
+  .headerRight,
+  .panelWide,
+  .panelNarrow {
+    width: 100%;
+    max-width: 100%;
+  }
+}

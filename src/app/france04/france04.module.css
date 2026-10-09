@@ -1,0 +1,299 @@
+/*
+ * France — Press Releases (/france04).
+ * Body from legacy france04.html (custom press kit + Herald Tribune).
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.figure {
+  margin: 0 auto 1.25rem;
+  max-width: 600px;
+}
+
+.photoFrame {
+  display: block;
+  line-height: 0;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.release {
+  margin: 0 auto 1.25rem;
+  padding: 1.15rem 1.25rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  color: #000;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.releaseGray {
+  background: #cccccc;
+}
+
+.releaseGreen {
+  background: #99ffcc;
+}
+
+.releaseBlue {
+  background: #99ccff;
+}
+
+.releaseYellow {
+  background: #ffff99;
+}
+
+.fromRow {
+  display: flex;
+  gap: 0.65rem 0.85rem;
+  margin: 0 0 0.85rem;
+  align-items: flex-start;
+}
+
+.fromLabel {
+  flex: 0 0 auto;
+  font-weight: 400;
+  text-align: right;
+  min-width: 3.5rem;
+}
+
+.fromAddress {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.fromAddress li {
+  margin: 0;
+}
+
+.releaseTitle {
+  margin: 0 0 0.15rem;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.35;
+}
+
+.releaseTitleUnderline {
+  text-decoration: underline;
+}
+
+.pageNum {
+  margin: 0 0 0.65rem;
+  text-align: right;
+}
+
+.release p {
+  margin: 0 0 0.85rem;
+}
+
+.release p:last-child {
+  margin-bottom: 0;
+}
+
+.stars {
+  margin: 0.85rem 0 0;
+  text-align: center;
+}
+
+.quoteBox {
+  margin: 0 auto 1.5rem;
+  max-width: 31.25rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #000;
+  background: #ffcc33;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.quoteBox p {
+  margin: 0 0 0.85rem;
+}
+
+.quoteAttr {
+  margin: 0;
+  padding-left: 2rem;
+  text-align: left;
+}
+
+.source {
+  margin: 0.35rem 0 1.25rem;
+  color: #000;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 1.25rem auto;
+  width: 100%;
+}
+
+.heraldTitle {
+  margin: 0 0 1rem;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.heraldLayout {
+  display: grid;
+  grid-template-columns: minmax(0, 0.9fr) minmax(0, 1.7fr);
+  gap: 0.75rem 0.85rem;
+  margin: 0 0 0.65rem;
+  padding: 0.65rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+  align-items: start;
+}
+
+.heraldLeft p,
+.heraldCol p {
+  margin: 0 0 0.75rem;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.heraldLeft p:last-child,
+.heraldCol p:last-child {
+  margin-bottom: 0;
+}
+
+.heraldFrom {
+  margin: 0 0 0.35rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.heraldByline {
+  margin: 0 0 0.15rem;
+  font-size: 0.85rem;
+  text-align: center;
+}
+
+.heraldStaff {
+  margin: 0 0 0.85rem;
+  font-size: 0.75rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.heraldRight {
+  min-width: 0;
+}
+
+.heraldFigure {
+  margin: 0 auto 0.85rem;
+  max-width: 380px;
+}
+
+.heraldFigure .caption {
+  text-align: left;
+  font-weight: 700;
+}
+
+.heraldBottom {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.75rem 0.85rem;
+}
+
+.heraldStars {
+  margin: 0.85rem 0 0;
+  text-align: center;
+  font-size: 0.85rem;
+}
+
+@media (max-width: 720px) {
+  .heraldLayout,
+  .heraldBottom {
+    grid-template-columns: 1fr;
+  }
+
+  .heraldFigure {
+    max-width: 380px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}

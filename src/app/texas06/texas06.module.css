@@ -1,0 +1,129 @@
+/*
+ * Texas Pavilions — promotional folder (legacy texas06).
+ * Stack: hero → TexasNavChrome → navy title → folder art → Nav2Bar.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(56.25rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #000;
+}
+
+.sectionRule {
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 1.75rem auto;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.wideImg {
+  display: block;
+  width: min(900px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.legend {
+  margin: 2rem auto 0;
+  max-width: 900px;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.55;
+  text-align: left;
+}
+
+.legendNum {
+  font-weight: 700;
+}
+
+.legendLabel {
+  color: #00008b;
+}
+
+.stack {
+  margin: 2.5rem auto 0;
+  max-width: 280px;
+}
+
+.stackImg {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.star {
+  display: block;
+  width: 33px;
+  height: 28px;
+  margin: 0.35rem auto;
+}
+
+.contact {
+  margin: 1.5rem auto 0;
+  max-width: 900px;
+  text-align: left;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.82rem;
+  line-height: 1.5;
+}
+
+.contact p {
+  margin: 0 0 0.65rem;
+}
+
+.source {
+  margin: 1.25rem auto 0;
+  max-width: 900px;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+}

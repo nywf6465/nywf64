@@ -23,7 +23,7 @@ function LinkIndicator() {
 }
 
 export function LocateMapFullSizeLink({
-  href = "/maps/1964-official-souvenir-map",
+  href = "/maps01",
 }: {
   href?: string;
 }) {

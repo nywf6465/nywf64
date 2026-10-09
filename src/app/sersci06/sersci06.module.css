@@ -1,0 +1,213 @@
+/*
+ * Sermons from Science — The World's Fair History of Sermons from Science
+ * (/sersci06). Body from legacy sersci06.html (Eric Paddon essay).
+ * Stack: hero → SersciNavChrome → navy title → article → Nav2Bar.
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.pamphletSpread {
+  display: grid;
+  grid-template-columns: minmax(0, 290px) minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1.5rem;
+}
+
+.pamphletFigure {
+  margin: 0;
+  max-width: 290px;
+}
+
+.photoFrame {
+  display: block;
+  line-height: 0;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.source {
+  margin: 0.35rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.pamphletCopy {
+  min-width: 0;
+  color: #996633;
+  font-size: 0.8rem;
+  font-style: italic;
+  line-height: 1.4;
+}
+
+.pamphletCopy p {
+  margin: 0 0 0.85rem;
+}
+
+.requestForm {
+  margin: 1rem 0 0;
+  padding: 0.5rem 0.6rem;
+  border: 1px solid #996633;
+  box-sizing: border-box;
+  font-style: normal;
+  font-size: 0.72rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.requestForm p {
+  margin: 0 0 0.35rem;
+}
+
+.requestForm .requestNote {
+  margin: 0 0 0.5rem;
+  font-size: 0.68rem;
+  color: #996633;
+}
+
+.requestList {
+  margin: 0.35rem 0 0.65rem;
+  padding: 0;
+  list-style: none;
+  text-align: left;
+}
+
+.requestList li {
+  margin: 0 0 0.2rem;
+}
+
+.requestFields {
+  margin: 0.5rem 0 0;
+  text-align: left;
+}
+
+.requestFields p {
+  margin: 0 0 0.15rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.02em;
+}
+
+.body p {
+  margin: 0 0 0.85rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.rendering {
+  margin: 1.5rem 0 0;
+}
+
+.rendering .photoImg {
+  margin-bottom: 0;
+}
+
+.architectBox {
+  margin: 0;
+  padding: 0.75rem 0.85rem;
+  background: #666;
+  color: #fff;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.architectBox h2 {
+  margin: 0 0 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.architectBox p {
+  margin: 0 0 0.65rem;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.4;
+}
+
+.architectCredit {
+  margin: 0.5rem 0 0;
+}
+
+.architectCredit p {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+@media (max-width: 640px) {
+  .pamphletSpread {
+    grid-template-columns: 1fr;
+  }
+
+  .pamphletFigure {
+    margin: 0 auto;
+  }
+}

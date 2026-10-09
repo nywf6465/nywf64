@@ -1,0 +1,234 @@
+/*
+ * Jordan — Jordan News and Views (/jordan08).
+ * Body from legacy jordan08.html (custom newsletter reprint).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+}
+
+.masthead {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto 1rem;
+  border: 1px solid #000;
+}
+
+.fullBleed {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  margin: 0 auto 1rem;
+  border: 1px solid #000;
+}
+
+.fullBleedPlain {
+  border: 0;
+}
+
+.sectionHeading {
+  margin: 0 0 0.85rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.sectionHeadingLg {
+  margin: 0 0 0.85rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  margin: 0 0 1.35rem;
+  align-items: start;
+}
+
+.col p {
+  margin: 0 0 0.75rem;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.col p:last-child {
+  margin-bottom: 0;
+}
+
+.colHeading {
+  margin: 0 0 0.65rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.figure {
+  margin: 0 0 0.75rem;
+  max-width: 100%;
+}
+
+.photoFrame {
+  display: block;
+  line-height: 0;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.photoImgPlain {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 0;
+}
+
+.caption {
+  margin: 0.35rem 0 0;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.singleCol {
+  margin: 0 0 1.25rem;
+}
+
+.singleCol p {
+  margin: 0 0 0.75rem;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.briefs {
+  margin: 0 0 1.35rem;
+}
+
+.briefsList {
+  margin: 0;
+  padding: 0 0 0 1.1rem;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.briefsList li {
+  margin: 0 0 0.55rem;
+}
+
+.briefsList li:last-child {
+  margin-bottom: 0;
+}
+
+.wideFigure {
+  margin: 0 0 0.85rem;
+  max-width: 450px;
+}
+
+.shield {
+  display: block;
+  width: 100px;
+  height: auto;
+  margin: 0.75rem auto 0;
+}
+
+.sectionRule {
+  display: block;
+  width: 100%;
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 0.25rem 0 1.25rem;
+}
+
+.source {
+  margin: 1rem 0 1.25rem;
+  color: #000;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.source em {
+  font-style: italic;
+}
+
+@media (max-width: 640px) {
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+
+  .wideFigure {
+    max-width: 100%;
+  }
+}

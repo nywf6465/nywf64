@@ -50,8 +50,8 @@ export default function PolyneOverviewPage() {
             <Image
               src="/images/polyneoverview/photo.jpg"
               alt="Polynesia pavilion at the 1964/1965 New York World’s Fair"
-              width={1537}
-              height={1023}
+              width={1505}
+              height={1045}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

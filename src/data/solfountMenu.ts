@@ -7,10 +7,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const SOLFOUNT_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/solfountoverview",
-  },
-  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/solfount01",
   },
@@ -23,7 +19,7 @@ export const SOLFOUNT_MENU_TOPICS: AttractionTopic[] = [
     href: "/solfount03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/solfount04",
   },
 ];

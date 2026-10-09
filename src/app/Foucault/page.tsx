@@ -1,5 +1,9 @@
+import { redirect } from "next/navigation";
+
 /**
- * Foucault menu hub — same overview content as `/foufaioverview`.
+ * Foucault menu hub — overview removed; land on first topic page.
  * Path segment is exactly `/Foucault` (capital F) per site naming.
  */
-export { default, metadata } from "../foufaioverview/page";
+export default function FoucaultPage() {
+  redirect("/Foucault01");
+}

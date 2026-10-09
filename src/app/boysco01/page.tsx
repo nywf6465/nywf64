@@ -26,7 +26,6 @@ export default function Boysco01Page() {
         height: 826,
       }}
       nav={<BoyscoNavChrome />}
-      previousHref="/boyscooverview"
       nextHref="/boysco02"
       guide1964={{
         cover: {

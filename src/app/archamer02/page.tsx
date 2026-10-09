@@ -142,8 +142,8 @@ export default function Archamer02Page() {
 
       <Nav2Bar
         previousHref="/archamer01"
-        overviewHref="/archameroverview"
-        nextHref="/archameroverview"
+        overviewHref="/archamer01"
+        nextHref="/archamer01"
         explicitPrevious
       />
     </>

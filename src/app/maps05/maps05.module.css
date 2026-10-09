@@ -1,0 +1,134 @@
+/*
+ * Interactive Fair map — Transportation Area Map (/maps05).
+ *
+ * HARD RULE: Interactive Fair maps must keep native size on mobile
+ * (no shrink-to-fit). Visitors scroll/pan to tap hotspots.
+ * Pan (horizontal and vertical) is confined to `.mapScroller` so
+ * SiteHeader / SiteFooter stay stationary while the map moves.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+/* Hero frame/art: use overviewPageHero.module.css (--letter-hero-height). */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.backLink {
+  margin: 0 0 0.75rem;
+  padding: 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+}
+
+.backLink a {
+  color: #0066cc;
+  text-decoration: none;
+}
+
+.backLink a:hover,
+.backLink a:focus-visible {
+  text-decoration: underline;
+}
+
+.instruction {
+  margin: 0 0 0.85rem;
+  padding: 0 0.85rem;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.mapScroller {
+  width: 100%;
+  max-width: 100%;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  overscroll-behavior: contain;
+  border: 1px solid #000;
+  background: #fff;
+  /* Cap height so tall maps pan vertically inside the scroller */
+  max-height: calc(100dvh - 12rem);
+  cursor: grab;
+  user-select: none;
+  touch-action: pan-x pan-y;
+}
+
+.mapScrollerDragging {
+  cursor: grabbing;
+}
+
+/* Irregular legacy Transportation tile layout — absolute positions, native size. */
+.mapSurface {
+  position: relative;
+  width: 987px;
+  height: 1165px;
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  line-height: 0;
+  background: #fff;
+}
+
+.tile {
+  position: absolute;
+  display: block;
+  width: var(--tile-w);
+  height: var(--tile-h);
+  max-width: none;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  left: var(--tile-x);
+  top: var(--tile-y);
+}
+
+.tileImg {
+  display: block;
+  width: var(--tile-w);
+  height: var(--tile-h);
+  max-width: none !important;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}

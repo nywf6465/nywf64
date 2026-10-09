@@ -16,8 +16,8 @@ export function AmerisrTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/amerisroverview" style={{ color: "#990000" }}>
-            ← American-Israel Pavilion overview
+          <Link href="/amerisr01" style={{ color: "#990000" }}>
+            ← American-Israel Pavilion
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function AmerisrTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/amerisroverview"
-        overviewHref="/amerisroverview"
+        overviewHref="/amerisr01"
         nextHref="/amerisr01"
       />
     </>

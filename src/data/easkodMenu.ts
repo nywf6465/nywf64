@@ -6,7 +6,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  * `easkod01`…`easkod21`. Italic script title via `parts`.
  */
 export const EASKOD_MENU_TOPICS: AttractionTopic[] = [
-  { label: "Overview", href: "/easkodoverview" },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/easkod01",

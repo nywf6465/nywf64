@@ -10,7 +10,7 @@ export type LCard = FountainsCard;
 
 const LAKCRU: LCard = {
   id: "lakcru",
-  href: "/lakcruoverview",
+  href: "/lakcru01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Lake Cruise",
   // TEXT (to the right of ICON) — exact from lakcru-card-text-source.jpg
@@ -23,7 +23,7 @@ const LAKCRU: LCard = {
 
 const LEBANO: LCard = {
   id: "lebano",
-  href: "/lebanooverview",
+  href: "/lebano01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Lebanon",
   // TEXT (to the right of ICON) — exact from lebano-card-text-source.jpg
@@ -36,7 +36,7 @@ const LEBANO: LCard = {
 
 const LESPOU: LCard = {
   id: "lespou",
-  href: "/lespouoverview",
+  href: "/lespou01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Les Poupees de Paris",
   // TEXT (to the right of ICON) — exact from lespou-card-text-source.jpg
@@ -49,7 +49,7 @@ const LESPOU: LCard = {
 
 const LIGHTING: LCard = {
   id: "lighting-and-effects",
-  href: "/lightingoverview",
+  href: "/lighting01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Lighting & Effects",
   // TEXT (to the right of ICON) — exact from liteff-card-text-source.jpg
@@ -64,7 +64,7 @@ const LIGHTING: LCard = {
 
 const LITWAYCRO: LCard = {
   id: "litwaycro",
-  href: "/litwaycrooverview",
+  href: "/litwaycro01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Lithuanian Wayside Cross",
   // TEXT (to the right of ICON) — exact from litway-card-text-source.jpg
@@ -77,7 +77,7 @@ const LITWAYCRO: LCard = {
 
 const LOUISIA: LCard = {
   id: "louisia",
-  href: "/louisiaoverview",
+  href: "/louisia01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Louisiana",
   // TEXT (to the right of ICON) — exact from louisia-card-text-source.jpg
@@ -90,7 +90,7 @@ const LOUISIA: LCard = {
 
 const LONISLRR: LCard = {
   id: "lonislrr",
-  href: "/lonislrroverview",
+  href: "/lonislrr01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Long Island Rail Road",
   // TEXT (to the right of ICON) — exact from lonislrr-card-text-source.jpg
@@ -103,7 +103,7 @@ const LONISLRR: LCard = {
 
 const LOWENGAR: LCard = {
   id: "lowengar",
-  href: "/lowengaroverview",
+  href: "/lowengar01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Lowenbrau Gardens",
   // TEXT (to the right of ICON) — exact from lowengar-card-text-source.jpg
@@ -116,7 +116,7 @@ const LOWENGAR: LCard = {
 
 const LUNFOUNT: LCard = {
   id: "lunfount",
-  href: "/lunfountoverview",
+  href: "/lunfount01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Lunar Fountain",
   // TEXT (to the right of ICON) — exact from lunfount-card-text-source.jpg

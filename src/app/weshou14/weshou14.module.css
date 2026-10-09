@@ -1,0 +1,37 @@
+.brand {
+  font-weight: 700;
+}
+
+.brandNywf {
+  color: #0066cc;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-size: 0.85em;
+}
+
+.centerLink {
+  text-align: center;
+}
+
+.centerLink a {
+  color: #0066cc;
+}
+
+.webmasterNote {
+  margin: 1.25rem 0 0;
+  padding: 0.85rem 1rem;
+  border: 1px solid #000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.webmasterNote p {
+  margin: 0 0 0.5rem;
+}

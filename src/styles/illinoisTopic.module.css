@@ -1,0 +1,238 @@
+/*
+ * Illinois Pavilion custom topic pages (essay / script / article scans).
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarSub {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto 2rem;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.wideInner {
+  width: min(56.25rem, 100%);
+}
+
+.maroon,
+.maroon p,
+.bodyMaroon p {
+  color: #990000;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.bodyMaroon p {
+  margin: 0 0 0.85rem;
+}
+
+.maroon em,
+.bodyMaroon em {
+  font-style: italic;
+}
+
+.sectionHead {
+  margin: 1rem 0 0.65rem;
+  color: #990000;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.sectionHeadLeft {
+  margin: 1rem 0 0.65rem;
+  color: #990000;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: underline;
+}
+
+.stage {
+  margin: 0 0 0.45rem;
+  color: #990000;
+  font-size: 0.8rem;
+  line-height: 1.45;
+}
+
+.figure {
+  margin: 1.15rem auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.photoPlain {
+  border: 0;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  color: #000;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.source {
+  margin: 0.25rem 0 0.85rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.sourceCenter {
+  text-align: center;
+}
+
+.scanGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+  width: min(43.75rem, 100%);
+  margin: 0 auto 1rem;
+  border: 1px solid #000;
+}
+
+.scanGrid img,
+.scanGrid :global(img) {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.photoRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 0.85rem 0;
+}
+
+.photoRow .figure {
+  margin: 0;
+  flex: 0 1 auto;
+}
+
+.twoCol {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.85rem 1.15rem;
+  align-items: start;
+}
+
+.floatPortrait {
+  float: left;
+  width: 130px;
+  height: auto;
+  margin: 0 0.65rem 0.35rem 0;
+  border: 0;
+}
+
+.scriptBlock {
+  margin: 0 0 0.85rem;
+  color: #990000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.scriptBlock em {
+  font-style: italic;
+}
+
+.song {
+  margin: 0 0 0.85rem 1.1rem;
+  padding: 0;
+  color: #990000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  font-style: italic;
+  list-style: none;
+}
+
+.song li {
+  margin: 0 0 0.15rem;
+}
+
+.hr {
+  border: 0;
+  border-top: 1px solid #990000;
+  margin: 1rem 0;
+}
+
+@media (max-width: 720px) {
+  .scanGrid,
+  .twoCol {
+    grid-template-columns: 1fr;
+  }
+
+  .floatPortrait {
+    float: none;
+    display: block;
+    margin: 0 auto 0.65rem;
+  }
+}

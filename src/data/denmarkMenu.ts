@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Denmark menu — nav-menu topics for all routes beginning with `denmark`.
- * Labels match the denmarkoverview menu-topics mockup; Overview at top.
+ * Labels match the denmarkoverview menu-topics mockup.
  * Non-Overview routes: `denmark01`…`denmark05`.
  */
 export const DENMARK_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/denmarkoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/denmark01",

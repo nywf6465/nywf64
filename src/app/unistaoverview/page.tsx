@@ -52,8 +52,8 @@ export default function UnistaOverviewPage() {
             <Image
               src="/images/unistaoverview/photo.jpg"
               alt="United States Pavilion — Challenge to Greatness"
-              width={958}
-              height={706}
+              width={932}
+              height={625}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

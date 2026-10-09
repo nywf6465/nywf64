@@ -1,0 +1,41 @@
+.rates {
+  margin: 1rem 0 0;
+  text-align: left;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 15px;
+  color: #000;
+}
+
+.rateNote {
+  margin: 0.35rem 0 0.75rem;
+  line-height: 1.35;
+}
+
+.rateGrid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.25rem;
+}
+
+.rateGrid section p {
+  margin: 0.15rem 0;
+}
+
+.rateHead {
+  margin: 0 0 0.25rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.rateEffective {
+  margin: 0.85rem 0 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 12px;
+}
+
+@media (max-width: 720px) {
+  .rateGrid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -26,7 +26,7 @@ export default function Avis02Page() {
       }}
       nav={<AvisNavChrome />}
       previousHref="/avis01"
-      overviewHref="/avisoverview"
+      overviewHref="/avis01"
       nextHref="/avis03"
       factsLeft={[
         {

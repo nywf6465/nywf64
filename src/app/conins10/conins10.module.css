@@ -1,0 +1,247 @@
+/* Cinema '76 Illustrated Transcript with Audio — Continental Insurance */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  width: 100%;
+  box-sizing: border-box;
+  background: #26346e;
+  color: #fff;
+  text-align: center;
+  padding: 0.55rem clamp(0.75rem, 2vw, 1.25rem);
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.05rem, 2.4vw, 1.45rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 910px;
+  margin: 0 auto;
+  padding: 1rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+}
+
+.songNav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 0.5rem 1rem;
+  margin: 0 0 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+}
+
+.songNavLink {
+  color: #6699cc;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.songNavLink:hover {
+  text-decoration: underline;
+}
+
+.handIcon {
+  display: inline-block;
+  width: 33px;
+  height: 14px;
+}
+
+.introGrid {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+  gap: 1rem 1.5rem;
+  align-items: start;
+  margin: 0 0 1.25rem;
+}
+
+@media (max-width: 720px) {
+  .introGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.logoWrap {
+  text-align: center;
+}
+
+.logo {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.songHead {
+  text-align: center;
+}
+
+.songTitle {
+  margin: 0 0 0.75rem;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: clamp(1.15rem, 2.5vw, 1.5rem);
+  font-style: italic;
+  color: #003399;
+}
+
+.listenRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+  margin: 0 0 0.5rem;
+}
+
+.soundIcon {
+  display: inline-block;
+  width: 20px;
+  height: 23px;
+}
+
+.audio {
+  width: min(100%, 320px);
+  max-width: 100%;
+}
+
+.listenLabel {
+  margin: 0;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  color: #6699cc;
+  font-size: 1rem;
+}
+
+.source {
+  margin: 0.35rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  color: #333;
+}
+
+.lyrics {
+  margin: 0 0 1.25rem;
+  padding: 0.85rem 1rem;
+  background: #ffff99;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.lyrics p {
+  margin: 0 0 0.15rem;
+}
+
+.lyrics p:last-child {
+  margin-bottom: 0;
+}
+
+.frames {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.35rem;
+  margin: 0 0 1rem;
+}
+
+.frame {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #ccc;
+}
+
+/* Intro page */
+.castBlock {
+  margin: 0 0 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  line-height: 1.45;
+}
+
+.castBlock p {
+  margin: 0 0 0.65rem;
+}
+
+.castTitle {
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: clamp(1.1rem, 2.4vw, 1.4rem);
+  text-align: center;
+  color: #003399;
+  margin: 0 0 0.75rem;
+}
+
+.castList {
+  margin: 0.5rem 0 1rem;
+  padding-left: 1.25rem;
+}
+
+.castList li {
+  margin: 0.2rem 0;
+}
+
+.ctaRow {
+  text-align: center;
+  margin: 1rem 0 1.25rem;
+}
+
+.ctaLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  color: #6699cc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.ctaLink:hover {
+  text-decoration: underline;
+}
+
+.credits {
+  margin: 1.25rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  color: #333;
+  line-height: 1.45;
+}
+
+.credits p {
+  margin: 0 0 0.4rem;
+}
+
+.photoRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin: 1rem 0;
+}
+
+.photo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}

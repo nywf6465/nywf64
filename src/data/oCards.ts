@@ -8,7 +8,7 @@ export type OCard = FountainsCard;
 
 const OKLAHOMA: OCard = {
   id: "oklahoma",
-  href: "/oklahomaoverview",
+  href: "/oklahoma01",
   title: "Oklahoma",
   body: 'This "pavilion" is actually a park with winding pathways arranged around a lake and a large outdoor map of the state.',
   pavilionSrc: "/images/oklahoma/oklahoma-icon.png",
@@ -19,7 +19,7 @@ const OKLAHOMA: OCard = {
 
 const OREGON: OCard = {
   id: "oregon",
-  href: "/oregonoverview",
+  href: "/oregon01",
   title: "Oregon",
   body: "A continuous carnival of the Northwest includes log-rolling, canoe tilting and a wrestling match between a man and a bear.",
   pavilionSrc: "/images/oregon/oregon-icon.png",

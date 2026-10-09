@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Sudan menu — nav-menu topics for all routes beginning with `sudan`.
- * Labels match the sudan-menu-topics mockup; Overview at top.
+ * Labels match the sudan-menu-topics mockup.
  * Non-Overview routes: `sudan01`…`sudan04`.
  */
 export const SUDAN_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/sudanoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook Entries",
     href: "/sudan01",
@@ -23,7 +19,7 @@ export const SUDAN_MENU_TOPICS: AttractionTopic[] = [
     href: "/sudan03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/sudan04",
   },
 ];

@@ -52,8 +52,8 @@ export default function VaticanOverviewPage() {
             <Image
               src="/images/vaticanoverview/photo.jpg"
               alt="Michelangelo’s Pietà at the Vatican Pavilion"
-              width={623}
-              height={706}
+              width={1505}
+              height={1045}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

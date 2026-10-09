@@ -16,8 +16,8 @@ export function FinartTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/finartoverview" style={{ color: "#990000" }}>
-            ← Fine Arts Pavilion overview
+          <Link href="/finart01" style={{ color: "#990000" }}>
+            ← Fine Arts Pavilion
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function FinartTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/finartoverview"
-        overviewHref="/finartoverview"
+        overviewHref="/finart01"
         nextHref="/finart01"
       />
     </>

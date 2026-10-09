@@ -316,8 +316,8 @@ export default function Bilgra11Page() {
       <Nav2Bar
         previousHref="/bilgra10"
         explicitPrevious
-        overviewHref="/bilgraoverview"
-        nextHref="/bilgraoverview"
+        overviewHref="/bilgra01"
+        nextHref="/bilgra01"
       />
     </>
   );

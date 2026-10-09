@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * House of Good Taste (hougt) menu — nav-menu topics for all routes beginning with `hougt`.
- * Labels match `media/hougt-menu-topics-source.jpg` (+ Overview at top).
+ * Labels match `media/hougt-menu-topics-source.jpg`.
  * Non-Overview routes: `hougt01`…`hougt11`.
  */
 export const HOUGT_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/hougtoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/hougt01",
@@ -27,7 +23,7 @@ export const HOUGT_MENU_TOPICS: AttractionTopic[] = [
     href: "/hougt04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/hougt05",
   },
   {

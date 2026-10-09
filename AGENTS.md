@@ -18,6 +18,22 @@ Required stack for legacy attraction / essay / map / manual / postcards / photog
 
 `SiteHeader` → hero → attraction nav → **navy title banner** → body → `Nav2Bar`
 
+## HARD RULE: Interactive Fair maps keep native size on mobile
+
+Interactive Fair maps (legacy image maps with clickable/tappable hotspots — e.g. `/maps01` and similar area maps) **must keep their native pixel size on mobile**. Do **not** shrink-to-fit the map to the viewport width.
+
+Visitors scroll and pan (horizontal and vertical overflow) so hotspots remain large enough to tap. When the map pans, the **page header and footer stay stationary**; only the map viewport moves (desktop drag-to-pan via `InteractiveMapScroller`).
+
+Canonical instances:
+- **`/maps01`** — 1964 Official Souvenir Map (`MapsLinks` hub card + locate-it full-size note)
+- **`/maps02`** — Industrial Area Map (`MapsLinks` hub card)
+- **`/maps03`** — International Area Map (`MapsLinks` hub card)
+- **`/maps04`** — Federal & State Area Map (`MapsLinks` hub card)
+- **`/maps05`** — Transportation Area Map (`MapsLinks` hub card)
+- **`/maps06`** — Amusement Area Map (`MapsLinks` hub card)
+
+Apply this whenever building or converting interactive Fair maps from legacy. Attraction “Locate It” maps (`*map` with a single pointed location) are a different pattern — follow the locate-map standard for those.
+
 ## Guidebook standard (Official Guidebook & Souvenir Map)
 
 Canonical instance: **`/bell01`** via `GuidebookSouvenirPage` + `guidebookSouvenirPage.module.css`.  
@@ -107,3 +123,59 @@ Legacy pages often show a wide **Photograph Scrap Book** banner image under the 
 6. Point menu “Photograph Album” (or stub routes) to `/<slug>03`
 
 Do **not** rebuild this layout from scratch — extend `PhotographsPage` if a later album needs a shared option.
+
+## HARD RULE: no yellowing on locate-it maps
+
+When creating or updating a **Locate it!** map page (`*map` routes, `locate-map.jpg`), **always remove the aged cream/yellow paper cast** from the legacy scan before shipping. Do not paste the yellowed legacy composite as-is.
+
+Legacy Official Souvenir Map scans often look like yellowed paper. Recreated maps must show **neutral / white cream paper**. Red locate arrows stay exact — never neutralize or recolor arrow pixels.
+
+### Preferred methods (in order)
+
+1. **Clean cream base + GIF arrow** — When a clean (non-yellowed) area-map base already exists in the repo, composite the legacy `*map.gif` arrow onto it at the legacy pixel offset. Prefer this for new maps.
+2. **In-place neutralize** — If compositing would risk shifting the red arrow (mismatched crop, offset, or GIF vs JPEG alignment), neutralize yellowness on the existing `locate-map.jpg` in place and **preserve red-arrow pixels exactly** (verify arrow pixel counts before/after). Do not ship a recomposite that moves the arrow.
+
+Never leave paper yellowness visibly yellow (target near-zero yellowness on cream pixels; red arrows unchanged).
+
+## Locate-it map standard (1964 Official Souvenir Map)
+
+Canonical instance: **`/allstamap`** via `LocateMapTitleBar` + `LocateMapIntroLead` + `LocateMapFullSizeLink` + `locateMapPage.module.css` / page module.  
+Legacy attraction `*map.shtml` / `*map.html` Locate it! pages use this layout.
+
+### When to use it
+
+Use the **locate-it map** standard when the legacy page is the area map with a red arrow marking the pavilion (menu “Locate it!” / Official Souvenir Map locator).
+
+### Required stack
+
+hero (attraction overview banner) → `*NavChrome` → navy title bar **1964 Official Souvenir Map** (`LocateMapTitleBar`) → intro lead + full-size map link → bordered `locate-map.jpg` → `Nav2Bar`
+
+### Body recipe (match `/allstamap`)
+
+1. **Intro** — `LocateMapIntroLead` (“Locate it!” in navy `#26346e`) plus `LocateMapFullSizeLink`  
+2. **Map** — single composite `public/images/<slug>map/locate-map.jpg` in a 1px black frame, left-justified; natural area dimensions (do not stretch)  
+3. **No yellowing** — apply the HARD RULE above before commit
+
+### Typical area-map pixel sizes
+
+| Area | Typical `locate-map.jpg` size |
+|------|-------------------------------|
+| Industrial | 1359×1213 |
+| Amusement | 930×655 |
+| International | 910×1158 |
+| Federal & States | 1076×1233 |
+| Transportation | 807×1165 |
+
+Match the legacy page’s area and GIF placement; Industrial GIF overlays are often at `(0, 0)` — confirm per attraction.
+
+### Build checklist for a new locate-it map page (e.g. `/denmarkmap`)
+
+1. Fetch legacy `*map.shtml` / `*map.html` and assets (`*map.gif`, area base if needed) into `public/images/<slug>map/`  
+2. Build `locate-map.jpg` with **neutral cream paper** (clean base + GIF, or in-place neutralize) — **never ship yellowed legacy paper**  
+3. Verify red-arrow pixels are intact (counts unchanged if neutralizing)  
+4. Add `src/app/<slug>map/page.tsx` modeled on `/allstamap` (shared LocateMap* components + page CSS)  
+5. Reuse the attraction overview `hero-banner.jpg` for the hero  
+6. Pass `nav={<SlugNavChrome />}`, wire `previousHref` / `nextHref` (often guidebook → map → manual)  
+7. Point guidebook `map.locateHref` and menu “Locate it!” to `/<slug>map`
+
+Do **not** rebuild this layout from scratch — reuse `LocateMapTitleBar`, `LocateMapIntroLead`, and `LocateMapFullSizeLink`.

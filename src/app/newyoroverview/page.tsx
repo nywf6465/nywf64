@@ -53,8 +53,8 @@ export default function NewYorkStateOverviewPage() {
             <Image
               src="/images/newyoroverview/photo.jpg"
               alt="New York State Pavilion — Tent of Tomorrow and observation towers"
-              width={958}
-              height={706}
+              width={1529}
+              height={1029}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

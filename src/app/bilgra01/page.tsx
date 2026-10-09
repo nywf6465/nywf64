@@ -26,7 +26,6 @@ export default function Bilgra01Page() {
         height: 826,
       }}
       nav={<BilgraNavChrome />}
-      previousHref="/bilgraoverview"
       nextHref="/bilgra02"
       guide1964={{
         cover: {

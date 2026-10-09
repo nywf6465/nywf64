@@ -16,8 +16,8 @@ export function PolyneTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/polyneoverview" style={{ color: "#990000" }}>
-            ← Polynesia overview
+          <Link href="/polynesia01" style={{ color: "#990000" }}>
+            ← Polynesia
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function PolyneTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/polyneoverview"
-        overviewHref="/polyneoverview"
+        overviewHref="/polynesia01"
         nextHref="/polynesia01"
       />
     </>

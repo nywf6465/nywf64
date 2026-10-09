@@ -16,8 +16,8 @@ export function ArgentTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/argentoverview" style={{ color: "#990000" }}>
-            ← Argentina overview
+          <Link href="/argent01" style={{ color: "#990000" }}>
+            ← Argentina
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function ArgentTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/argentoverview"
-        overviewHref="/argentoverview"
+        overviewHref="/argent01"
         nextHref="/argent01"
       />
     </>

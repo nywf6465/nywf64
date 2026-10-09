@@ -1,0 +1,40 @@
+.hero { position: relative; width: 100%; background: #fff; margin-top: 0; }
+.article { width: 100%; box-sizing: border-box; background: #fff; padding: 0 0 clamp(2rem, 4vw, 3rem); }
+.titleBar {
+  display: flex; flex-wrap: wrap; align-items: baseline; justify-content: center;
+  gap: 0.35rem 0.5rem; width: 100%; box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem); padding: 0.55rem 0.85rem;
+  background: linear-gradient(180deg, color-mix(in srgb, #26346e 92%, #000) 0%, #26346e 100%);
+  color: #fff; text-align: center;
+}
+.titleBarMain {
+  margin: 0; font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px; font-weight: 700; line-height: 1.35;
+}
+.articleInner {
+  width: min(40rem, 100%); margin: 0 auto; padding: 0 1rem; box-sizing: border-box;
+  color: #000; font-family: "Times New Roman", Times, serif; font-size: 16px; line-height: 1.45;
+}
+.sectionHead { margin: 1.25rem 0 0.5rem; font-size: 1.35rem; font-weight: 700; text-align: center; }
+.subHead { margin: 0.75rem 0 0.5rem; font-size: 1.1rem; font-weight: 700; }
+.mysteryHead { margin: 0.35rem 0 1rem; font-size: 1.05rem; font-weight: 700; text-align: center; letter-spacing: 0.02em; }
+.source {
+  margin: 1rem 0 0.65rem; font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem; line-height: 1.35;
+}
+.figure { margin: 0 0 1rem; line-height: 0; }
+.figureNarrow { max-width: 300px; }
+.figureArt { display: block; width: 100%; height: auto; }
+.caption {
+  margin: 0.4rem 0 0; font-family: Arial, Helvetica, sans-serif; font-size: 0.85rem;
+  line-height: 1.4;
+}
+.timelineRow { margin: 0 0 0.85rem; }
+.year { margin: 0 0 0.2rem; font-weight: 700; font-family: Arial, Helvetica, sans-serif; }
+.body { margin: 0 0 0.75rem; }
+.wikiPanel {
+  margin: 0 0 1.25rem; padding: 0.75rem 0.85rem; border: 1px solid #c0c0c0;
+  background: #f3f3f3;
+}
+.wikiBody { margin: 0; font-size: 0.95rem; }
+.signoff { margin: 1.25rem 0 0; font-weight: 700; text-align: center; }

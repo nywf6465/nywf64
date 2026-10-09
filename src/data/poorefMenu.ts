@@ -7,10 +7,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const POOREF_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/poorefoverview",
-  },
-  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/pooref01",
   },
@@ -23,7 +19,7 @@ export const POOREF_MENU_TOPICS: AttractionTopic[] = [
     href: "/pooref03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/pooref04",
   },
 ];

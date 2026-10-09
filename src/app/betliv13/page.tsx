@@ -14,15 +14,6 @@ export const metadata: Metadata = {
     'Borden\'s "All About Elsie" musical revue at the Better Living Center — 1964/1965 New York World’s Fair on nywf64.com.',
 };
 
-const ADS = [
-  { src: "/images/betliv13/ad-1.jpg", w: 300, h: 334 },
-  { src: "/images/betliv13/ad-2.jpg", w: 300, h: 334 },
-  { src: "/images/betliv13/ad-3.jpg", w: 300, h: 333 },
-  { src: "/images/betliv13/ad-4.jpg", w: 300, h: 333 },
-  { src: "/images/betliv13/ad-5.jpg", w: 300, h: 333 },
-  { src: "/images/betliv13/ad-6.jpg", w: 300, h: 333 },
-];
-
 const SCRIPT_PHOTOS: Record<string, ScriptPhoto> = {
   "Image/betliv/betliv58.jpg": {
     src: "/images/betliv13/borden-logo.jpg",
@@ -118,18 +109,17 @@ export default function Betliv13Page() {
         </header>
 
         <div className={styles.articleInner}>
-          <div className={styles.adGrid}>
-            {ADS.map((ad, index) => (
-              <Image
-                key={ad.src}
-                src={ad.src}
-                alt={`Borden's All About Elsie advertisement ${index + 1}`}
-                width={ad.w}
-                height={ad.h}
-                unoptimized
-              />
-            ))}
-          </div>
+          <figure className={styles.adFigure}>
+            <Image
+              src="/images/betliv13/all-about-elsie-ad.jpg"
+              alt="Borden's All About Elsie advertisement"
+              width={600}
+              height={1000}
+              className={styles.adImg}
+              priority
+              unoptimized
+            />
+          </figure>
           <p className={styles.source}>
             SOURCE: Advertisement{" "}
             <em>
@@ -293,7 +283,7 @@ export default function Betliv13Page() {
       <Nav2Bar
         previousHref="/betliv12"
         explicitPrevious
-        overviewHref="/betlivoverview"
+        overviewHref="/betliv01"
         nextHref="/betliv14"
       />
     </>

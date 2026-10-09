@@ -63,7 +63,7 @@ export default function JaycopOverviewPage() {
       </section>
 
       <Nav2Bar
-        previousHref="/jaycopoverview"
+        previousHref="/jaycop04"
         overviewHref="/jaycopoverview"
         nextHref="/jaycop01"
       />

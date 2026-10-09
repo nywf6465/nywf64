@@ -1,5 +1,6 @@
 /**
- * Pavilion overview heroes only (`/*overview` routes).
+ * Shared letter-height heroes: pavilion overview (`/*overview`) and
+ * Interactive Fair map pages (`/maps01`–`/maps06`).
  * Image height matches SiteHeader banner via `--letter-hero-height`.
  * Height is on the img (not the frame) so `heroBottomBar.photoFrame::after`
  * (4px burgundy) is not clipped by overflow.

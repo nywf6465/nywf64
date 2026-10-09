@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * China menu — nav-menu topics for all routes beginning with `china`.
- * Labels match the china-menu-topics mockup; Overview at top.
+ * Labels match the china-menu-topics mockup.
  * Non-Overview routes: `china01`…`china09`.
  */
 export const CHINA_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/chinaoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/china01",

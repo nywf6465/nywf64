@@ -29,8 +29,8 @@ export default function Alaska04Page() {
       }}
       nav={<AlaskaNavChrome />}
       previousHref="/alaska03"
-      overviewHref="/alaskaoverview"
-      nextHref="/alaskaoverview"
+      overviewHref="/alaska01"
+      nextHref="/alaska01"
       sections={[
         {
           heading: "Commercial Photographs",

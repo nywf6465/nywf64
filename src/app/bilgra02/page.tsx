@@ -25,7 +25,7 @@ export default function Bilgra02Page() {
       }}
       nav={<BilgraNavChrome />}
       previousHref="/bilgra01"
-      overviewHref="/bilgraoverview"
+      overviewHref="/bilgra01"
       nextHref="/bilgra03"
       factsLeft={[
         {

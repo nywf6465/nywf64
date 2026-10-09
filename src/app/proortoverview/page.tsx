@@ -57,8 +57,8 @@ export default function ProortOverviewPage() {
             <Image
               src="/images/proortoverview/photo.jpg"
               alt="Protestant & Orthodox Center pavilion"
-              width={958}
-              height={776}
+              width={1567}
+              height={1004}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

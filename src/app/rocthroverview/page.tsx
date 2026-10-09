@@ -56,8 +56,8 @@ export default function RocthrOverviewPage() {
             <Image
               src="/images/rocthroverview/photo.jpg"
               alt="The Rocket Thrower sculpture at the 1964/1965 New York World’s Fair"
-              width={655}
-              height={1007}
+              width={1553}
+              height={1013}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

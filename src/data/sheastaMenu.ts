@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Shea Stadium menu — nav-menu topics for all routes beginning with `sheasta`.
- * Labels match the sheasta-menu-topics mockup; Overview at top.
+ * Labels match the sheasta-menu-topics mockup.
  * Non-Overview routes: `sheasta01`…`sheasta07`.
  */
 export const SHEASTA_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/sheastaoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/sheasta01",
@@ -23,7 +19,7 @@ export const SHEASTA_MENU_TOPICS: AttractionTopic[] = [
     href: "/sheasta03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/sheasta04",
   },
   {

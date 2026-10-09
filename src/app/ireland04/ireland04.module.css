@@ -1,0 +1,142 @@
+/* Ireland — Brochure: Concrete at the Fair (custom excerpt page) */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.panel {
+  border: 1px solid #000;
+  padding: 0.85rem 0.85rem 1.25rem;
+  box-sizing: border-box;
+  background: #fff;
+}
+
+.source {
+  margin: 0 0 0.85rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  color: #000;
+  text-align: left;
+}
+
+.renderWrap {
+  margin: 0;
+  line-height: 0;
+}
+
+.render {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.rule {
+  display: block;
+  width: 100%;
+  height: 15px;
+  margin: 0 0 1.25rem;
+  background: #000;
+}
+
+.copyBlock {
+  width: min(18.75rem, 100%);
+  margin: 0;
+}
+
+.accent {
+  display: block;
+  width: 100%;
+  height: 25px;
+  margin: 0 0 0.35rem;
+  background: #857725;
+}
+
+.heading {
+  margin: 0 0 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.25;
+  color: #000;
+}
+
+.creditRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 2fr);
+  gap: 0.35rem 0.5rem;
+  margin: 0 0 0.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: #000;
+}
+
+.creditLabel {
+  margin: 0;
+  text-align: right;
+}
+
+.creditValue {
+  margin: 0;
+  text-align: left;
+}
+
+.body {
+  margin: 0.85rem 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.45;
+  color: #000;
+}
+
+.footerMark {
+  display: block;
+  width: min(18.75rem, 100%);
+  height: auto;
+  margin: 0.75rem 0 0;
+}

@@ -33,7 +33,6 @@ export default function Amerisr01Page() {
         height: 824,
       }}
       nav={<AmerisrNavChrome />}
-      previousHref="/amerisroverview"
       nextHref="/amerisr02"
       guide1964={{
         cover: {

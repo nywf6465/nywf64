@@ -8,7 +8,7 @@ export type RCard = FountainsCard;
 
 const RCA: RCard = {
   id: "rca",
-  href: "/rcaoverview",
+  href: "/rca01",
   title: "RCA",
   body: "Fairgoers may see themselves on color television and watch a working TV station broadcasting programs to the Fair.",
   pavilionSrc: "/images/rca/rca-icon.png",
@@ -19,7 +19,7 @@ const RCA: RCard = {
 
 const RHEINGOLD: RCard = {
   id: "rheingold",
-  href: "/rheingoverview",
+  href: "/rheing01",
   title: "Rheingold",
   body: "Gas lamps cast a glow on a cobblestone street where a tavern, a restaurant and an outdoor cafe' recreate the New York of 1904.",
   pavilionSrc: "/images/rheing/rheing-icon.png",
@@ -30,7 +30,7 @@ const RHEINGOLD: RCard = {
 
 const ROCKET_THROWER: RCard = {
   id: "rocket-thrower",
-  href: "/rocthroverview",
+  href: "/rocthr01",
   title: "The Rocket Thrower",
   body: "Second only to Unisphere in prominence and importance, The Rocket Thrower is a bronze sculpture of a stylized figure balanced on an ascending curve reaching toward a constellation of stars.",
   pavilionSrc: "/images/rocthr/rocthr-icon.png",
@@ -42,7 +42,7 @@ const ROCKET_THROWER: RCard = {
 /** Identical to the Russian Orthodox row on the Religions links page. */
 const RUSSIAN_ORTHODOX: RCard = {
   id: "russian-orthodox",
-  href: "/rusortoverview",
+  href: "/rusort01",
   title: "Russian Orthodox Greek-Catholic Church of America",
   body: "A valuable jeweled icon is shown in a replica of a Russian chapel built in California in 1823.",
   pavilionSrc: "/images/religions/russian-orthodox-icon.png",

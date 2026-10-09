@@ -27,7 +27,6 @@ export default function Bell01Page() {
         height: 826,
       }}
       nav={<BellNavChrome />}
-      previousHref="/belloverview"
       nextHref="/bell02"
       guide1964={{
         cover: {

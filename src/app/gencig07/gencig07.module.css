@@ -1,0 +1,114 @@
+/*
+ * General Cigar — Brochure: The Hall of Magic (/gencig07).
+ * Body from legacy gencig07.html (custom reconstructed brochure panels).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  color: #000;
+  text-align: center;
+}
+
+.panel {
+  display: block;
+  width: min(100%, 600px);
+  height: auto;
+  margin: 0 auto 0.85rem;
+  border: 1px solid #000;
+}
+
+.panelNarrow {
+  display: block;
+  width: min(100%, 318px);
+  height: auto;
+  margin: 0 auto 0.85rem;
+  border: 1px solid #000;
+}
+
+.copy {
+  margin: 0 0 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.copy p {
+  margin: 0 0 0.75rem;
+}
+
+.lead {
+  margin: 0 0 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.source {
+  margin: 0.35rem 0 1rem;
+  color: #000;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.pair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.65rem;
+  margin: 0 0 0.85rem;
+}
+
+.pair img {
+  display: block;
+  height: auto;
+  border: 1px solid #000;
+}

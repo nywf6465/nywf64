@@ -46,7 +46,10 @@ export type PhotographCard = {
 };
 
 export type PhotographSection = {
-  heading: string;
+  /** Omit when legacy album has no section label (e.g. trantrav05). */
+  heading?: string;
+  /** Optional note inside the grey tray before photos (e.g. Bill Cotter intro). */
+  intro?: ReactNode;
   photos: PhotographCard[];
 };
 
@@ -60,12 +63,14 @@ export type PhotographsPageProps = {
   };
   nav: ReactNode;
   sections: PhotographSection[];
-  previousHref: string;
+  previousHref?: string;
   nextHref: string;
   overviewHref?: string;
   titleId?: string;
   /** Navy title-bar text. Defaults to “Photograph Album”. */
   title?: string;
+  /** Optional lead copy above photograph sections (e.g. Bill Cotter intro). */
+  intro?: ReactNode;
 };
 
 const DEFAULT_TITLE = "Photograph Album";
@@ -80,6 +85,7 @@ export function PhotographsPage({
   overviewHref,
   titleId = "photograph-album-title",
   title = DEFAULT_TITLE,
+  intro,
 }: PhotographsPageProps) {
   return (
     <>
@@ -110,19 +116,25 @@ export function PhotographsPage({
         </header>
 
         <div className={styles.articleInner}>
+          {intro ? <div className={styles.intro}>{intro}</div> : null}
           <div className={styles.sections}>
-            {sections.map((section) => (
+            {sections.map((section, sectionIndex) => (
               <section
-                key={section.heading}
+                key={section.heading ?? `section-${sectionIndex}`}
                 className={styles.section}
-                aria-label={section.heading}
+                aria-label={section.heading ?? undefined}
               >
-                <h2 className={styles.sectionHeading}>{section.heading}</h2>
+                {section.heading ? (
+                  <h2 className={styles.sectionHeading}>{section.heading}</h2>
+                ) : null}
                 <div className={styles.tray}>
+                  {section.intro ? (
+                    <div className={styles.trayIntro}>{section.intro}</div>
+                  ) : null}
                   <div className={styles.photos}>
                     {section.photos.map((photo, index) => (
                       <figure
-                        key={`${section.heading}-${photo.image.src}-${index}`}
+                        key={`${section.heading ?? sectionIndex}-${photo.image.src}-${index}`}
                         className={styles.card}
                         style={{ width: photo.image.width }}
                       >
@@ -154,7 +166,7 @@ export function PhotographsPage({
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious
+        explicitPrevious={Boolean(previousHref)}
         overviewHref={overviewHref}
         nextHref={nextHref}
       />

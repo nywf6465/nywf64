@@ -16,8 +16,8 @@ export function HollywoodTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/hollywoodoverview" style={{ color: "#990000" }}>
-            ← Hollywood overview
+          <Link href="/hollywood01" style={{ color: "#990000" }}>
+            ← Hollywood
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function HollywoodTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/hollywoodoverview"
-        overviewHref="/hollywoodoverview"
+        overviewHref="/hollywood01"
         nextHref="/hollywood01"
       />
     </>

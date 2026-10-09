@@ -51,8 +51,8 @@ export default function BellOverviewPage() {
             <Image
               src="/images/belloverview/photo.jpg"
               alt="Bell System Pavilion — Ride of Communications"
-              width={958}
-              height={706}
+              width={1540}
+              height={1021}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized

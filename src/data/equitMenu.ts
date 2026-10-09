@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Equitable Life menu — nav-menu topics for all routes beginning with `equit`.
- * Labels match `media/equitoverview/04-menu-topics.jpg` (+ Overview at top).
+ * Labels match `media/equitoverview/04-menu-topics.jpg`.
  * OCR spelling preserved (incl. “Slections”). Non-Overview: `equit01`…`equit09`.
  */
 export const EQUIT_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/equitoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/equit01",

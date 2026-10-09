@@ -26,7 +26,7 @@ export default function Ampthe03Page() {
       }}
       nav={<AmptheNavChrome />}
       previousHref="/ampthe02"
-      overviewHref="/amptheoverview"
+      overviewHref="/ampthe01"
       nextHref="/ampthe04"
       sections={[
         {

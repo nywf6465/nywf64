@@ -26,7 +26,6 @@ export default function Unista01Page() {
         height: 826,
       }}
       nav={<UnistaNavChrome />}
-      previousHref="/unistaoverview"
       nextHref="/unista02"
       guide1964={{
         cover: {

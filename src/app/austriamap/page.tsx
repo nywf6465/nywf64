@@ -68,7 +68,7 @@ export default function AustriaMapPage() {
       <Nav2Bar
         previousHref="/austria01"
         explicitPrevious
-        overviewHref="/austriaoverview"
+        overviewHref="/austria01"
         nextHref="/austria02"
       />
     </>

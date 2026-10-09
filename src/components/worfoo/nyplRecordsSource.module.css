@@ -1,0 +1,11 @@
+.block {
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.line {
+  margin: 0 0 0.15rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}

@@ -69,6 +69,41 @@
   color: #000;
 }
 
+.intro {
+  margin: 0 0 1rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.introBox {
+  box-sizing: border-box;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 1.25rem 1.5rem;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.introBox p {
+  margin: 0;
+}
+
+.introAccent {
+  color: #4682b4;
+  font-weight: 700;
+}
+
+.introAccentItalic {
+  color: #4682b4;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.introLink {
+  color: #4682b4;
+}
+
 .sections {
   display: flex;
   flex-direction: column;
@@ -95,6 +130,35 @@
   box-sizing: border-box;
   padding: 0.65rem;
   background: #ccc;
+}
+
+.trayIntro {
+  max-width: 600px;
+  margin: 0 auto 0.75rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #000;
+  background: #fff;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.trayIntro a {
+  color: #4682b4;
+}
+
+.trayIntroEm {
+  font-weight: 700;
+  font-style: italic;
+  color: #4682b4;
+}
+
+.trayIntroName {
+  font-weight: 700;
+  color: #4682b4;
 }
 
 .photos {

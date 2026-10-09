@@ -1,0 +1,151 @@
+/* The Parker Pen Brochure — Pool of Industry (legacy poolin07) */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.intro {
+  margin: 0 0 1rem;
+}
+
+.source {
+  margin: 0.35rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 12px;
+  text-align: left;
+}
+
+.coverFigure {
+  margin: 0 0 1rem;
+}
+
+.coverRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  padding: 0.65rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.coverPhoto {
+  display: block;
+  border: 1px solid #000;
+  max-width: 100%;
+  height: auto;
+}
+
+.coverLogo {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.banner {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 18px;
+  letter-spacing: 0.02em;
+}
+
+.bannerLead {
+  font-size: 1.35em;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 1rem;
+  font-size: 13px;
+}
+
+.columns p {
+  margin: 0 0 0.75rem;
+}
+
+.subhead {
+  margin: 0.85rem 0 0.35rem !important;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 13px;
+}
+
+.pavilionLogo {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0 0 1.25rem;
+}
+
+.note {
+  margin: 0;
+  padding: 0.75rem 0.85rem;
+  border: 1px solid #000;
+  font-size: 13px;
+}
+
+.note p {
+  margin: 0 0 0.75rem;
+}
+
+.noteSign {
+  margin: 0 !important;
+}
+
+@media (max-width: 620px) {
+  .columns {
+    grid-template-columns: 1fr;
+  }
+}

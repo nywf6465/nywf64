@@ -6,10 +6,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const BELL_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/belloverview",
-  },
-  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/bell01",
   },

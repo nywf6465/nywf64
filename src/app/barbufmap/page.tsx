@@ -68,7 +68,7 @@ export default function BarbufMapPage() {
       <Nav2Bar
         previousHref="/barbuf01"
         explicitPrevious
-        overviewHref="/barbufoverview"
+        overviewHref="/barbuf01"
         nextHref="/barbuf02"
       />
     </>

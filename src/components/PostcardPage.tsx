@@ -35,6 +35,10 @@ export type PostcardImage = {
 export type PostcardEntry = {
   front: PostcardImage;
   reverse: PostcardImage;
+  /**
+   * Optional second image stacked under the front (e.g. /citserv02 reverse B).
+   */
+  belowFront?: PostcardImage;
   /** Lines under the reverse (pavilion, Official/Unauthorized, numbers). */
   meta: ReactNode[];
   /** Arial Narrow source line(s) under the front + reverse pair. */
@@ -51,7 +55,7 @@ export type PostcardPageProps = {
   };
   nav: ReactNode;
   entries: PostcardEntry[];
-  previousHref: string;
+  previousHref?: string;
   nextHref: string;
   overviewHref?: string;
   titleId?: string;
@@ -118,6 +122,16 @@ export function PostcardPage({
                       className={styles.frontImg}
                       unoptimized
                     />
+                    {entry.belowFront ? (
+                      <Image
+                        src={entry.belowFront.src}
+                        alt={entry.belowFront.alt ?? ""}
+                        width={entry.belowFront.width}
+                        height={entry.belowFront.height}
+                        className={styles.frontImg}
+                        unoptimized
+                      />
+                    ) : null}
                   </div>
                   <div className={styles.side}>
                     <Image
@@ -148,7 +162,7 @@ export function PostcardPage({
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious
+        explicitPrevious={Boolean(previousHref)}
         overviewHref={overviewHref}
         nextHref={nextHref}
       />

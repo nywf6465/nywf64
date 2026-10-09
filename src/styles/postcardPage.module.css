@@ -89,13 +89,17 @@
 }
 
 .front {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.65rem;
   flex: 0 1 auto;
   max-width: 100%;
 }
 
 .frontImg {
   display: block;
-  width: min(450px, 100%);
+  width: min(700px, 100%);
   height: auto;
   border: 1px solid #000;
   background: #fff;

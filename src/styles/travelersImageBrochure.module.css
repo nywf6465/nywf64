@@ -1,0 +1,77 @@
+/* Shared image-panel brochure body (Travelers 09–12, 17). */
+
+.stack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.panel {
+  border: 1px solid #000;
+  box-sizing: border-box;
+  line-height: 0;
+}
+
+.panelCaption {
+  margin: 0.35rem 0 0;
+  padding: 0;
+  text-align: left;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  color: #000;
+}
+
+.panelCaption em {
+  font-style: italic;
+}
+
+.colStack {
+  display: flex;
+  flex-direction: column;
+}
+
+.row2 {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.row3 {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.dualRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem 2rem;
+  width: 100%;
+  max-width: 59rem;
+}
+
+.dualCol {
+  flex: 0 1 auto;
+}
+
+.panelImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.divider {
+  display: block;
+  width: 100%;
+  max-width: 46.875rem;
+  height: auto;
+}
+
+@media (max-width: 720px) {
+  .row2,
+  .row3 {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,131 @@
+/*
+ * Vatican — The Pieta (/vatican08).
+ * Stack: hero → VaticanNavChrome → navy title → article → Nav2Bar.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #000;
+}
+
+.figure {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.photo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.sectionHeading {
+  margin: 0 0 0.75rem;
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0000ff;
+  text-align: left;
+}
+
+.section p {
+  margin: 0 0 0.85rem;
+}
+
+.caption {
+  margin: 0.35rem 0 0;
+  font-size: 0.85rem;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.imgLeft {
+  float: left;
+  width: min(198px, 42%);
+  margin: 0.15rem 0.75rem 0.5rem 0;
+}
+
+.imgRight {
+  float: right;
+  width: min(197px, 42%);
+  margin: 0.15rem 0 0.5rem 0.75rem;
+}
+
+.imgLeft img,
+.imgRight img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.flow {
+  overflow: hidden;
+}
+
+.source {
+  clear: both;
+  margin: 1rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 640px) {
+  .imgLeft,
+  .imgRight {
+    float: none;
+    width: min(220px, 100%);
+    margin: 0 auto 0.75rem;
+  }
+}

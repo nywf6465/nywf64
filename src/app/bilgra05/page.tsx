@@ -31,7 +31,7 @@ export default function Bilgra05Page() {
       }}
       nav={<BilgraNavChrome />}
       previousHref="/bilgra04"
-      overviewHref="/bilgraoverview"
+      overviewHref="/bilgra01"
       nextHref="/bilgra06"
       sections={[
         {

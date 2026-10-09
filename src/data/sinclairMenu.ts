@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Sinclair menu — nav-menu topics for all routes beginning with `sinclair`.
- * Labels match the sinclair-menu-topics mockup; Overview at top.
+ * Labels match the sinclair-menu-topics mockup.
  * Non-Overview routes: `sinclair01`…`sinclair14`.
  */
 export const SINCLAIR_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/sinclairoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/sinclair01",
@@ -27,7 +23,7 @@ export const SINCLAIR_MENU_TOPICS: AttractionTopic[] = [
     href: "/sinclair04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/sinclair05",
   },
   {
