@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: "Brochure: Golden Rondelle — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+/** Brochure pages stitched from legacy tile strips into single composites. */
 export default function Johwax09Page() {
   return (
     <JohwaxSequencePage
@@ -20,7 +21,7 @@ export default function Johwax09Page() {
       previousHref="/johwax08"
       overviewHref="/johwaxoverview"
       nextHref="/johwax10"
-      columns={3}
+      columns={1}
       scans={[...JOHWAX_09_SCANS]}
     />
   );
