@@ -14888,18 +14888,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/info_booth01",
     nextHref: "/info_booth03",
   },
-  "info_booth03": {
-    slug: "info_booth03",
-    title: "Brochure: 1961 Promotion",
-    metaTitle: "Brochure: 1961 Promotion — Fair Facts & Figures — nywf64.com",
-    metaDescription: "Brochure: 1961 Promotion — Fair Facts & Figures from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "InfoBoothNavChrome",
-    overviewHref: "/information",
-    overviewLabel: "The Information Booth",
-    placeholder: "Fair Facts & Figures content",
-    previousHref: "/info_booth02",
-    nextHref: "/info_booth04",
-  },
   "info_booth04": {
     slug: "info_booth04",
     title: "Brochure: The Economic Benefits of the New York World's Fair 1964-1965",
