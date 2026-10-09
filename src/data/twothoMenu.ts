@@ -19,7 +19,7 @@ export const TWOTHO_MENU_TOPICS: AttractionTopic[] = [
     href: "/twotho03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/twotho04",
   },
 ];
