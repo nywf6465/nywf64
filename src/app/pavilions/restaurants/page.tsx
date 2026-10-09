@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Fountains pattern).
- * First card: Aerial Tower Ride & Waffle Restaurant (same card as `/A`).
+ * Cards match letter-page attractions (e.g. Aerial Tower on `/A`, Brass Rail on `/B`).
  */
 export default function RestaurantsPage() {
   return (

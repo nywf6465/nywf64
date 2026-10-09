@@ -2,7 +2,7 @@ import { type FountainsCard } from "@/data/fountainsCards";
 
 /**
  * Restaurants, Bars & Eateries link cards — fountains-model layout.
- * Card content matches the Aerial Tower Ride card on `/A`.
+ * Cards match the same attractions on the letter pages (`/A`, `/B`, …).
  */
 export const RESTAURANTS_CARDS: FountainsCard[] = [
   {
@@ -16,5 +16,17 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionWidth: 764,
     pavilionHeight: 329,
     pavilionAlt: "Aerial Tower…",
+  },
+  {
+    id: "brass-rail-food-services",
+    href: "/braraioverview",
+    // DESCRIPTION (italic under ICON) — exact from B page
+    title: "Brass Rail Food Services",
+    // TEXT (to the right of ICON) — exact from B page
+    body: "Twenty-five refreshment and souvenir stands operated by the Brass Rail Food Services organization are located throughout the Fairgrounds.",
+    pavilionSrc: "/images/brarai/brass-rail-food-services-icon.png",
+    pavilionWidth: 762,
+    pavilionHeight: 330,
+    pavilionAlt: "Brass Rail Food Services",
   },
 ];
