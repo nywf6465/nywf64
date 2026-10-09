@@ -449,80 +449,10 @@ export default function Chrysler05Page() {
 
             {
               image: {
-                src: "/images/chrysler05/chry13.01.jpg",
-                width: 233,
-                height: 262,
-                alt: "chry13.01.jpg",
-              },
-              source: (
-                <>
-                  SOURCE: Magazine <em>Electrical Construction and Maintenance</em>,
-                  July 1964 - presented courtesy Wayne Bretl Collection
-                </>
-              ),
-            },
-            {
-              image: {
-                src: "/images/chrysler05/chry13.02.jpg",
-                width: 233,
-                height: 262,
-                alt: "chry13.02.jpg",
-              },
-              source: (
-                <>
-                  SOURCE: Magazine <em>Electrical Construction and Maintenance</em>,
-                  July 1964 - presented courtesy Wayne Bretl Collection
-                </>
-              ),
-            },
-            {
-              image: {
-                src: "/images/chrysler05/chry13.03.jpg",
-                width: 233,
-                height: 262,
-                alt: "chry13.03.jpg",
-              },
-              source: (
-                <>
-                  SOURCE: Magazine <em>Electrical Construction and Maintenance</em>,
-                  July 1964 - presented courtesy Wayne Bretl Collection
-                </>
-              ),
-            },
-            {
-              image: {
-                src: "/images/chrysler05/chry13.04.jpg",
-                width: 233,
-                height: 262,
-                alt: "chry13.04.jpg",
-              },
-              source: (
-                <>
-                  SOURCE: Magazine <em>Electrical Construction and Maintenance</em>,
-                  July 1964 - presented courtesy Wayne Bretl Collection
-                </>
-              ),
-            },
-            {
-              image: {
-                src: "/images/chrysler05/chry13.05.jpg",
-                width: 233,
-                height: 262,
-                alt: "chry13.05.jpg",
-              },
-              source: (
-                <>
-                  SOURCE: Magazine <em>Electrical Construction and Maintenance</em>,
-                  July 1964 - presented courtesy Wayne Bretl Collection
-                </>
-              ),
-            },
-            {
-              image: {
-                src: "/images/chrysler05/chry13.06.jpg",
-                width: 233,
-                height: 262,
-                alt: "chry13.06.jpg",
+                src: "/images/chrysler05/chry13.jpg",
+                width: 699,
+                height: 524,
+                alt: "Chrysler pavilion from Electrical Construction and Maintenance, July 1964",
               },
               source: (
                 <>
