@@ -1,17 +1,18 @@
 /* Nav bar — white strip; full width like site header.
  * Hamburger + EXPLORE text sit flush with the burgundy hero bar
- * (same left edge) and tight under it. */
+ * (same left edge). Vertical margin clears space above and below the bar. */
 
 .bar {
   width: 100%;
   background: #ffffff;
   color: #26346e;
   font-family: Arial, Helvetica, sans-serif;
-  /* Compact strip — keep control close under the 4px burgundy hero bar */
   min-height: 0;
   display: flex;
   align-items: center;
   box-sizing: border-box;
+  /* Space above (under hero burgundy) and below (before title / body) */
+  margin: 0.55rem 0;
   padding: 0.12rem 0 0.18rem;
 }
 
@@ -25,6 +26,21 @@
   /* Flush with the full-bleed burgundy hero bar (pageShell edge) */
   padding: 0;
   box-sizing: border-box;
+}
+
+/* Numbered attraction routes: “Page N” right-aligned on the nav bar */
+.pageLabel {
+  margin-left: auto;
+  flex-shrink: 0;
+  padding: 0.1rem 0.5rem 0.1rem 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(0.8rem, 2vw, 1.05rem);
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.2;
+  color: #26346e;
+  white-space: nowrap;
+  text-align: right;
 }
 
 .explore {
@@ -92,6 +108,7 @@
   }
 
   .bar {
+    margin: 0.45rem 0;
     padding: 0.1rem 0 0.14rem;
   }
 
