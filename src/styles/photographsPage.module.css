@@ -113,6 +113,35 @@
   background: #ccc;
 }
 
+.trayIntro {
+  max-width: 600px;
+  margin: 0 auto 0.75rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #000;
+  background: #fff;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.trayIntro a {
+  color: #4682b4;
+}
+
+.trayIntroEm {
+  font-weight: 700;
+  font-style: italic;
+  color: #4682b4;
+}
+
+.trayIntroName {
+  font-weight: 700;
+  color: #4682b4;
+}
+
 .photos {
   display: flex;
   flex-wrap: wrap;

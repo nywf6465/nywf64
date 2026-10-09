@@ -1,0 +1,195 @@
+/*
+ * Shared chrome for Transportation & Travel custom topic pages (trantrav06–14).
+ * HARD RULE — navy title banner beneath the nav (#26346e).
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 640px;
+  margin: 0 auto;
+  padding: 0 clamp(0.75rem, 2vw, 1.25rem);
+  box-sizing: border-box;
+  color: #000;
+  text-align: center;
+}
+
+.articleInnerWide {
+  max-width: 680px;
+}
+
+.source {
+  margin: 0.5rem 0 1.25rem;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 13px;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.sourceCenter {
+  text-align: center;
+}
+
+.hr {
+  width: 100%;
+  max-width: 600px;
+  margin: 1.25rem auto;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+.framedImg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.borderlessImg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.sectionHeading {
+  margin: 1.5rem 0 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 24px;
+  font-weight: 700;
+  color: #258bc6;
+  text-align: center;
+}
+
+.bodyTimes {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.bodyTimes p {
+  margin: 0 0 0.85rem;
+}
+
+.bodyArial {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.bodyArial p {
+  margin: 0 0 0.75rem;
+}
+
+.captionItalic {
+  margin: 0.35rem 0 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 13px;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.collage {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.collage img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.newsletterBlock {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto 1.25rem;
+  border: 1px solid #000;
+  text-align: left;
+}
+
+.newsletterInner {
+  padding: 0;
+}
+
+.newsletterMeta {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.75rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+}
+
+.newsletterItem {
+  margin: 0;
+  padding: 0.75rem 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.newsletterItem u {
+  text-decoration: underline;
+}
+
+.newsletterHr {
+  width: 50%;
+  margin: 0.75rem auto;
+  border: 0;
+  border-top: 1px solid #000;
+}
+
+@media (max-width: 720px) {
+  .collage {
+    grid-template-columns: 1fr;
+  }
+}
