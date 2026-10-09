@@ -3,94 +3,58 @@ import Link from "next/link";
 import styles from "./HubBody.module.css";
 
 /**
- * Homepage category hubs — all eight ovals share one size (278×142 on the
- * 1206×522 plate ≈ 23.051% × 27.203%), matching Attractions as the reference.
- * Each oval ring is scaled to the same outer dimensions before layout.
- * Hover crops swap navy↔burgundy (red stars + light-blue ring preserved).
+ * Homepage category hubs — eight hub icons in a 2×4 grid of light-blue
+ * rounded cards on white (white space around each card). Link indicator sits
+ * at the lower-right of each hub image.
  */
-const HUB_W = "23.051%";
-const HUB_H = "27.203%";
-
 const HUBS = [
   {
-    id: "attractions",
+    id: "pavilions",
     title: "Pavilions, Attractions & Exhibits",
     href: "/pavilions",
-    hoverSrc: "/images/hubs-hover/attractions.jpg",
-    left: "7.214%",
-    top: "3.831%",
-    width: HUB_W,
-    height: HUB_H,
+    iconSrc: "/images/pavilions/pavilions-icon.png",
   },
   {
     id: "maps",
     title: "Interactive Maps & Photos",
     href: "/maps",
-    hoverSrc: "/images/hubs-hover/maps.jpg",
-    left: "38.474%",
-    top: "3.831%",
-    width: HUB_W,
-    height: HUB_H,
+    iconSrc: "/images/maps/maps-icon.png",
   },
   {
     id: "information",
     title: "The Information Booth",
     href: "/information",
-    hoverSrc: "/images/hubs-hover/information.jpg",
-    left: "69.735%",
-    top: "3.831%",
-    width: HUB_W,
-    height: HUB_H,
+    iconSrc: "/images/information/information-icon.png",
   },
   {
     id: "people",
     title: "People of the Fair",
     href: "/people",
-    hoverSrc: "/images/hubs-hover/people.jpg",
-    left: "7.214%",
-    top: "36.398%",
-    width: HUB_W,
-    height: HUB_H,
+    iconSrc: "/images/people/people-icon.png",
   },
   {
     id: "stories",
     title: "Stories and Essays",
     href: "/stories",
-    hoverSrc: "/images/hubs-hover/stories.jpg",
-    left: "38.474%",
-    top: "36.398%",
-    width: HUB_W,
-    height: HUB_H,
+    iconSrc: "/images/stories/stories-icon.png",
   },
   {
     id: "artifacts",
     title: "Artifacts & Legacies",
     href: "/artifacts",
-    hoverSrc: "/images/hubs-hover/artifacts.jpg",
-    left: "69.735%",
-    top: "36.398%",
-    width: HUB_W,
-    height: HUB_H,
+    iconSrc: "/images/artifacts/artifacts-icon.png",
   },
   {
-    id: "park",
+    id: "flushing-meadows",
     title: "Flushing Meadows Park",
     href: "/flushing-meadows",
-    hoverSrc: "/images/hubs-hover/park.jpg",
-    left: "22.803%",
-    top: "68.966%",
-    width: HUB_W,
-    height: HUB_H,
+    iconSrc: "/images/flushing-meadows/flushing-icon.png",
   },
   {
-    id: "other-fairs",
+    id: "expos",
     title: "Other Fairs & Expos",
     href: "/expos",
-    hoverSrc: "/images/hubs-hover/other-fairs.jpg",
-    left: "54.063%",
-    top: "68.966%",
-    width: HUB_W,
-    height: HUB_H,
+    iconSrc: "/images/expos/expos-icon.png",
   },
 ] as const;
 
@@ -101,40 +65,35 @@ export function HubBody() {
       className={styles.section}
       aria-label="Explore Fair categories"
     >
-      <div className={styles.frame}>
-        <Image
-          src="/images/homepage-hubs-body.jpg"
-          alt="Fair section links: Pavilions, Attractions & Exhibits; Interactive Maps & Photos; The Information Booth; People of the Fair; Stories and Essays; Artifacts & Legacies; Flushing Meadows Park; Other Fairs & Expos."
-          width={1206}
-          height={522}
-          sizes="100vw"
-          className={styles.art}
-          unoptimized
-          priority={false}
-        />
+      <ul className={styles.grid}>
         {HUBS.map((hub) => (
-          <Link
-            key={hub.id}
-            href={hub.href}
-            className={styles.hotspot}
-            style={{
-              left: hub.left,
-              top: hub.top,
-              width: hub.width,
-              height: hub.height,
-            }}
-            aria-label={hub.title}
-          >
-            {/* eslint-disable-next-line @next/next/no-img-element */}
-            <img
-              src={hub.hoverSrc}
-              alt=""
-              className={styles.hoverArt}
-              draggable={false}
-            />
-          </Link>
+          <li key={hub.id} className={styles.item}>
+            <Link href={hub.href} className={styles.card} aria-label={hub.title}>
+              <span className={styles.icon}>
+                <Image
+                  src={hub.iconSrc}
+                  alt=""
+                  width={762}
+                  height={330}
+                  className={styles.iconArt}
+                  unoptimized
+                />
+                <span className={styles.linksSymbol} aria-hidden="true">
+                  {/* eslint-disable-next-line @next/next/no-img-element */}
+                  <img
+                    src="/images/links-symbol.png"
+                    alt=""
+                    width={177}
+                    height={178}
+                    className={styles.linksSymbolArt}
+                    draggable={false}
+                  />
+                </span>
+              </span>
+            </Link>
+          </li>
         ))}
-      </div>
+      </ul>
     </section>
   );
 }
