@@ -19,7 +19,7 @@ export const PARPEN_MENU_TOPICS: AttractionTopic[] = [
     href: "/parpen03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/parpen04",
   },
   {

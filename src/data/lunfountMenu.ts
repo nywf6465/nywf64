@@ -19,7 +19,7 @@ export const LUNFOUNT_MENU_TOPICS: AttractionTopic[] = [
     href: "/lunfount03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/lunfount04",
   },
 ];

@@ -16,7 +16,7 @@ export const MALAYSIA_MENU_TOPICS: AttractionTopic[] = [
     href: "/malaysia02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/malaysia03",
   },
 ];

@@ -19,7 +19,7 @@ export const SWISKY_MENU_TOPICS: AttractionTopic[] = [
     href: "/swisky03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/swisky04",
   },
   {

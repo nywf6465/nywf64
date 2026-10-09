@@ -15,7 +15,7 @@ export const OKLAHOMA_MENU_TOPICS: AttractionTopic[] = [
     href: "/oklahoma02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/oklahoma03",
   },
   {

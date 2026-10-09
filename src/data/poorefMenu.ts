@@ -19,7 +19,7 @@ export const POOREF_MENU_TOPICS: AttractionTopic[] = [
     href: "/pooref03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/pooref04",
   },
 ];

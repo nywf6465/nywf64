@@ -23,7 +23,7 @@ export const PORAUT_MENU_TOPICS: AttractionTopic[] = [
     href: "/poraut04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/poraut05",
   },
   {

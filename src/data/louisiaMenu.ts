@@ -16,7 +16,7 @@ export const LOUISIA_MENU_TOPICS: AttractionTopic[] = [
     href: "/louisia02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/louisia03",
   },
 ];

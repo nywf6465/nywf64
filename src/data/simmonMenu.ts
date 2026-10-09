@@ -23,8 +23,8 @@ export const SIMMON_MENU_TOPICS: AttractionTopic[] = [
     href: "/simmon03",
   },
   {
-    label: "Gallery of Photographs",
-    href: "/simmon04",
+    label: "Photograph Album",
+    href: "/summon04",
   },
   {
     label: "Invitation to Visit",

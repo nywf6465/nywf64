@@ -19,15 +19,15 @@ export const PHILIP_MENU_TOPICS: AttractionTopic[] = [
     href: "/philip03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/philip04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/philip05",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/philip06",
   },
   {

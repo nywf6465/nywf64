@@ -20,11 +20,11 @@ export const HOLLYWOOD_MENU_TOPICS: AttractionTopic[] = [
     href: "/hollywood03",
   },
   {
-    label: "Gallery of Photographs I",
+    label: "Photograph Album I",
     href: "/hollywood04",
   },
   {
-    label: "Gallery of Photographs II",
+    label: "Photograph Album II",
     href: "/hollywood05",
   },
   {

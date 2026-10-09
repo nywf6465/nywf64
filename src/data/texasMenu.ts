@@ -20,7 +20,7 @@ export const TEXAS_MENU_TOPICS: AttractionTopic[] = [
     href: "/texas03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/texas04",
   },
   {

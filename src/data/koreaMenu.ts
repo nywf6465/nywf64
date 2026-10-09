@@ -19,7 +19,7 @@ export const KOREA_MENU_TOPICS: AttractionTopic[] = [
     href: "/korea03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/korea04",
   },
 ];

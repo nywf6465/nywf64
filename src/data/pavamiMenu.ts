@@ -19,7 +19,7 @@ export const PAVAMI_MENU_TOPICS: AttractionTopic[] = [
     href: "/pavami03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/pavami04",
   },
   {

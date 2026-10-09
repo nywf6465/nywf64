@@ -16,7 +16,7 @@ export const LEBANO_MENU_TOPICS: AttractionTopic[] = [
     href: "/lebano02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/lebano03",
   },
   {

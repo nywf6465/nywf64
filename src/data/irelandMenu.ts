@@ -15,7 +15,7 @@ export const IRELAND_MENU_TOPICS: AttractionTopic[] = [
     href: "/ireland02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/ireland03",
   },
   {

@@ -15,7 +15,7 @@ export const JULFAR_MENU_TOPICS: AttractionTopic[] = [
     href: "/julfar02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/julfar03",
   },
   {

@@ -19,7 +19,7 @@ export const SCOPAP_MENU_TOPICS: AttractionTopic[] = [
     href: "/scopap03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/scopap04",
   },
   {

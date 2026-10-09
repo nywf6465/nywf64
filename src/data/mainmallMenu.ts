@@ -12,7 +12,7 @@ export const MAINMALL_MENU_TOPICS: AttractionTopic[] = [
     href: "/mainmall01",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/mainmall02",
   },
 ];

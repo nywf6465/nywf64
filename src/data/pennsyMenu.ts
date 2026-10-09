@@ -15,7 +15,7 @@ export const PENNSY_MENU_TOPICS: AttractionTopic[] = [
     href: "/pennsylvania02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/pennsylvania03",
   },
   {

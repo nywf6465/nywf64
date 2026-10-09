@@ -23,7 +23,7 @@ export const RCA_MENU_TOPICS: AttractionTopic[] = [
     href: "/rca04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/rca05",
   },
   {

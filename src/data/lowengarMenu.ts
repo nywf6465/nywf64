@@ -16,7 +16,7 @@ export const LOWENGAR_MENU_TOPICS: AttractionTopic[] = [
     href: "/lowengar02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/lowengar03",
   },
 ];

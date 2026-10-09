@@ -19,7 +19,7 @@ export const PAVPAR_MENU_TOPICS: AttractionTopic[] = [
     href: "/pavpar03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/pavpar04",
   },
   {

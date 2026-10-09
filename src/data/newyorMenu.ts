@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Newyor menu — nav-menu topic list for all routes beginning with `newyor`.
- * Labels match the newyor-menu-topics mockup (both Gallery of Photographs rows kept).
+ * Labels match the newyor-menu-topics mockup (both Photograph Album rows kept).
  */
 export const NEWYOR_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -18,11 +18,11 @@ export const NEWYOR_MENU_TOPICS: AttractionTopic[] = [
     href: "/newyorpostcards",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/newyorgalleryofi",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/newyorgalleryofii",
   },
   {

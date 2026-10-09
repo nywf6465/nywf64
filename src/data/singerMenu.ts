@@ -19,7 +19,7 @@ export const SINGER_MENU_TOPICS: AttractionTopic[] = [
     href: "/singer03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/singer04",
   },
   {

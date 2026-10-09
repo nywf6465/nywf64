@@ -2,8 +2,8 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Jordan menu — nav-menu topics for all routes beginning with `jordan`.
- * Labels match `media/jordan-menu-topics-source.jpg`.
- * Three “Gallery of Photographs” rows kept on distinct routes
+ * Labels match `media/jordan-menu-topics-source.jpg` (+ Overview at top).
+ * Three “Photograph Album” rows kept on distinct routes
  * (`jordan03` / `jordan04` / `jordan05`).
  * Non-Overview routes: `jordan01`…`jordan10`.
  */
@@ -17,15 +17,15 @@ export const JORDAN_MENU_TOPICS: AttractionTopic[] = [
     href: "/jordan02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/jordan03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/jordan04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/jordan05",
   },
   {

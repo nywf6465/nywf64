@@ -15,7 +15,7 @@ export const SWITZ_MENU_TOPICS: AttractionTopic[] = [
     href: "/switz02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/switz03",
   },
   {

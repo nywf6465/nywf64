@@ -15,7 +15,7 @@ export const JAYCOP_MENU_TOPICS: AttractionTopic[] = [
     href: "/jaycop02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/jaycop03",
   },
   {

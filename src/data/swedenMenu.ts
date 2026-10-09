@@ -15,7 +15,7 @@ export const SWEDEN_MENU_TOPICS: AttractionTopic[] = [
     href: "/sweden02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/sweden03",
   },
 ];

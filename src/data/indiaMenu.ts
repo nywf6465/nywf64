@@ -23,7 +23,7 @@ export const INDIA_MENU_TOPICS: AttractionTopic[] = [
     href: "/india04",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/india05",
   },
 ];

@@ -19,7 +19,7 @@ export const MORCHU_MENU_TOPICS: AttractionTopic[] = [
     href: "/morchu03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/morchu04",
   },
   {
