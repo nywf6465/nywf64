@@ -57,7 +57,7 @@ const TOPICS = [
   {
     id: "restaurants-bars-and-eateries",
     title: "Restaurants, Bars & Eateries",
-    href: "/pavilions/restaurants-bars-and-eateries",
+    href: "/pavilions/restaurants",
     hoverSrc: "/images/pavilions-hover/restaurants-bars-and-eateries.jpg",
     left: "51.367%",
     top: "16.667%",
