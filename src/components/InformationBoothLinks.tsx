@@ -7,7 +7,7 @@ const TOPICS = [
   {
     id: "facts",
     title: "Fair Facts & Figures",
-    href: "/information/facts",
+    href: "/info_booth01",
     hoverSrc: "/images/information-hover/facts.jpg",
     left: "3.400%",
     top: "1.949%",

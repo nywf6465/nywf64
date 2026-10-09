@@ -91,6 +91,7 @@ import { IbmNavChrome } from "@/components/IbmNavChrome";
 import { IllinoisNavChrome } from "@/components/IllinoisNavChrome";
 import { IndiaNavChrome } from "@/components/IndiaNavChrome";
 import { IndonesNavChrome } from "@/components/IndonesNavChrome";
+import { InfoBoothNavChrome } from "@/components/InfoBoothNavChrome";
 import { IrelandNavChrome } from "@/components/IrelandNavChrome";
 import { JapanNavChrome } from "@/components/JapanNavChrome";
 import { JaycopNavChrome } from "@/components/JaycopNavChrome";
@@ -290,6 +291,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   IllinoisNavChrome,
   IndiaNavChrome,
   IndonesNavChrome,
+  InfoBoothNavChrome,
   IrelandNavChrome,
   JapanNavChrome,
   JaycopNavChrome,

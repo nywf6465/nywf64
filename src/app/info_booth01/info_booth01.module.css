@@ -1,0 +1,204 @@
+/* Fair Facts & Figures — info_booth01 (legacy info_booth01.html) */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+/* Hero frame/art: use overviewPageHero.module.css (--letter-hero-height). */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.body {
+  width: min(56.875rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+}
+
+.tickets {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-end;
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 2rem;
+}
+
+.ticket {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+.section {
+  margin: 0 0 2.25rem;
+}
+
+.sectionTitle {
+  margin: 0 0 0.35rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ff3300;
+  line-height: 1.2;
+}
+
+.sectionRule {
+  height: 2px;
+  margin: 0 0 1rem;
+  background: #0066cc;
+  border: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(8rem, 30%) minmax(0, 70%);
+  gap: 0.5rem 1rem;
+  margin: 0 0 1rem;
+  align-items: start;
+}
+
+.label {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #0066cc;
+  line-height: 1.3;
+}
+
+.value {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.45;
+}
+
+.valueList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.valueList li {
+  margin: 0 0 0.2rem;
+}
+
+.figure {
+  margin: 0.75rem 0 0;
+  text-align: center;
+}
+
+.figure img,
+.inlineImg {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.framed {
+  border: 1px solid #000;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  color: #333;
+  line-height: 1.35;
+}
+
+.colorOrange {
+  color: #ff6600;
+}
+
+.colorPink {
+  color: #ff80c0;
+}
+
+.colorYellow {
+  color: #ffcc00;
+}
+
+.colorRed {
+  color: #ff3300;
+}
+
+.colorBlue {
+  color: #9999ff;
+}
+
+.logoRow {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: flex-start;
+  gap: 1rem 1.5rem;
+  margin: 0.25rem 0 0;
+}
+
+.link {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.link:hover,
+.link:focus-visible {
+  color: #990000;
+}
+
+@media (max-width: 640px) {
+  .row {
+    grid-template-columns: 1fr;
+    gap: 0.2rem;
+  }
+
+  .sectionTitle {
+    font-size: 1.45rem;
+  }
+
+  .label {
+    font-size: 1.05rem;
+  }
+}
