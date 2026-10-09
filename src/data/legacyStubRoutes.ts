@@ -14876,19 +14876,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
-  "info_booth15": {
-    slug: "info_booth15",
-    title: "Brochure: Lake Amusement Area",
-    metaTitle: "Brochure: Lake Amusement Area — Fair Facts & Figures — nywf64.com",
-    metaDescription: "Brochure: Lake Amusement Area — Fair Facts & Figures from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "InfoBoothNavChrome",
-    overviewHref: "/information",
-    overviewLabel: "The Information Booth",
-    placeholder: "Fair Facts & Figures content",
-    previousHref: "/info_booth14",
-    nextHref: "/info_booth15",
-  },
-
 };
 
 export function getLegacyStub(slug: string): LegacyStubRoute | undefined {
