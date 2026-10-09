@@ -1,0 +1,232 @@
+/*
+ * To Broadway with Love — Original Cast Album (legacy texas10).
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(56.25rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  color: #000;
+}
+
+.photoFrame {
+  display: inline-block;
+  border: 1px solid #000;
+  line-height: 0;
+  max-width: 100%;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-width: 100%;
+}
+
+.source {
+  margin: 0.35rem 0 1.25rem;
+  font-family: "Arial Narrow", Arial, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: left;
+  max-width: 31.25rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.albumPanel {
+  max-width: 56.25rem;
+  margin: 0 auto 1.5rem;
+  padding: 1rem 1.25rem 1.5rem;
+  border: 1px solid #000;
+  background: #000;
+  box-sizing: border-box;
+  text-align: center;
+  color: #87cefa;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.albumPanel p {
+  margin: 0 0 0.75rem;
+}
+
+.trackList {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-align: center;
+}
+
+.trackList li {
+  margin: 0 0 0.35rem;
+}
+
+.trackList em {
+  font-style: italic;
+}
+
+.trackGap {
+  height: 1rem;
+}
+
+.notesPanel {
+  max-width: 56.25rem;
+  margin: 0 auto 1.5rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #000;
+  background: #000;
+  box-sizing: border-box;
+  text-align: left;
+  color: #87cefa;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.notesPanel p {
+  margin: 0 0 0.85rem;
+}
+
+.inlinePhoto {
+  margin: 1rem auto;
+  max-width: 41.125rem;
+  background: #87cefa;
+  padding: 2px;
+  box-sizing: border-box;
+}
+
+.inlinePhotoCaption {
+  margin: 0.35rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.inlinePhotoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.twoUp {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+  margin: 1rem 0;
+  max-width: 41.125rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media (max-width: 720px) {
+  .twoUp {
+    grid-template-columns: 1fr;
+  }
+}
+
+.twoUpItem {
+  background: #87cefa;
+  padding: 2px;
+  text-align: left;
+}
+
+.cdBanner {
+  max-width: 37.5rem;
+  margin: 2rem auto 0;
+}
+
+.cdTitle {
+  margin: 0;
+  padding: 0.5rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background: #fff;
+  color: #000;
+}
+
+.cdHeading {
+  margin: 0;
+  padding: 0.5rem;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+  background: #87cefa;
+  color: #fff;
+}
+
+.cdNotes {
+  max-width: 56.25rem;
+  margin: 0 auto 1.5rem;
+  padding: 1.5rem 1.75rem;
+  border: 1px solid #000;
+  background: #000;
+  box-sizing: border-box;
+  text-align: left;
+  color: #87cefa;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.cdNotes p {
+  margin: 0 0 0.85rem;
+}
+
+.byline {
+  margin-top: 1.5rem;
+  text-align: right;
+}
+
+.sectionRule {
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 1.75rem auto;
+  border: 0;
+  border-top: 1px solid #999;
+}

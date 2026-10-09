@@ -1,0 +1,137 @@
+/*
+ * To Broadway with Love — press releases (legacy texas08).
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.release {
+  margin: 0 0 1.25rem;
+  padding: 0.65rem 0.75rem 0.85rem;
+  border: 1px solid #000;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.releaseHeader {
+  margin-bottom: 0.75rem;
+}
+
+.letterhead {
+  display: block;
+  width: min(590px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.contact {
+  margin: 0.5rem 0 0;
+  padding-left: 10%;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.contactName {
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-weight: 400;
+}
+
+.releaseBody {
+  max-width: 30.625rem;
+  margin: 0 auto;
+}
+
+.releaseHeadline {
+  margin: 0 0 0.35rem;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.releaseText {
+  margin-top: 0.75rem;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 1.125rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.releaseText p {
+  margin: 0 0 0.65rem;
+}
+
+.pageNum {
+  margin: 0.5rem 0 0.75rem;
+  font-family: Times, "Times New Roman", Georgia, serif;
+  font-size: 1.125rem;
+  text-align: center;
+}
+
+.endMark {
+  margin: 1.25rem 0 0;
+  text-align: center;
+}
+
+.releaseSource {
+  margin: 0.75rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.releaseRule {
+  width: 100%;
+  margin: 1.25rem 0;
+  border: 0;
+  border-top: 1px solid #000;
+}
