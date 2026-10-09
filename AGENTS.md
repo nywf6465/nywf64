@@ -22,7 +22,15 @@ Required stack for legacy attraction / essay / map / manual / postcards / photog
 
 Interactive Fair maps (legacy image maps with clickable/tappable hotspots — e.g. `/maps01` and similar area maps) **must keep their native pixel size on mobile**. Do **not** shrink-to-fit the map to the viewport width.
 
-Visitors scroll and pan (including horizontal overflow) so hotspots remain large enough to tap. When the map scrolls left/right, the **page header and footer stay stationary**; only the map viewport pans.
+Visitors scroll and pan (horizontal and vertical overflow) so hotspots remain large enough to tap. When the map pans, the **page header and footer stay stationary**; only the map viewport moves (desktop drag-to-pan via `InteractiveMapScroller`).
+
+Canonical instances:
+- **`/maps01`** — 1964 Official Souvenir Map (`MapsLinks` hub card + locate-it full-size note)
+- **`/maps02`** — Industrial Area Map (`MapsLinks` hub card)
+- **`/maps03`** — International Area Map (`MapsLinks` hub card)
+- **`/maps04`** — Federal & State Area Map (`MapsLinks` hub card)
+- **`/maps05`** — Transportation Area Map (`MapsLinks` hub card)
+- **`/maps06`** — Amusement Area Map (`MapsLinks` hub card)
 
 Apply this whenever building or converting interactive Fair maps from legacy. Attraction “Locate It” maps (`*map` with a single pointed location) are a different pattern — follow the locate-map standard for those.
 

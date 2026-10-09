@@ -7,7 +7,7 @@ const TOPICS = [
   {
     id: "1964-official-souvenir-map",
     title: "1964 Official Souvenir Map of the Fair",
-    href: "/maps/1964-official-souvenir-map",
+    href: "/maps01",
     hoverSrc: "/images/maps-hover/1964-official-souvenir-map.jpg",
     left: "2.669%",
     top: "1.393%",
@@ -17,7 +17,7 @@ const TOPICS = [
   {
     id: "industrial-area-map",
     title: "Industrial Area Map",
-    href: "/maps/industrial-area-map",
+    href: "/maps02",
     hoverSrc: "/images/maps-hover/industrial-area-map.jpg",
     left: "50.652%",
     top: "1.393%",
@@ -27,7 +27,7 @@ const TOPICS = [
   {
     id: "international-area-map",
     title: "International Area Map",
-    href: "/maps/international-area-map",
+    href: "/maps03",
     hoverSrc: "/images/maps-hover/international-area-map.jpg",
     left: "2.669%",
     top: "27.760%",
@@ -37,7 +37,7 @@ const TOPICS = [
   {
     id: "federal-and-state-area-map",
     title: "Federal & State Area Map",
-    href: "/maps/federal-and-state-area-map",
+    href: "/maps04",
     hoverSrc: "/images/maps-hover/federal-and-state-area-map.jpg",
     left: "50.652%",
     top: "27.760%",
@@ -47,7 +47,7 @@ const TOPICS = [
   {
     id: "transportation-area-map",
     title: "Transportation Area Map",
-    href: "/maps/transportation-area-map",
+    href: "/maps05",
     hoverSrc: "/images/maps-hover/transportation-area-map.jpg",
     left: "2.669%",
     top: "53.162%",
@@ -57,7 +57,7 @@ const TOPICS = [
   {
     id: "amusement-area-map",
     title: "Amusement Area Map",
-    href: "/maps/amusement-area-map",
+    href: "/maps06",
     hoverSrc: "/images/maps-hover/amusement-area-map.jpg",
     left: "50.652%",
     top: "53.162%",
