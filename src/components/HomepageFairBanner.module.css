@@ -1,0 +1,22 @@
+/* Homepage Fair banner — sits above the hub link cards */
+
+.section {
+  width: 100%;
+  background: #fff;
+  box-sizing: border-box;
+  padding: 1.25rem clamp(1rem, 3vw, 1.75rem) 1.35rem;
+}
+
+.frame {
+  position: relative;
+  width: 100%;
+  max-width: 56rem;
+  margin: 0 auto;
+  line-height: 0;
+}
+
+.art {
+  display: block;
+  width: 100%;
+  height: auto;
+}
