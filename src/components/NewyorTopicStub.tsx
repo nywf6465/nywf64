@@ -19,8 +19,8 @@ export function NewyorTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/newyoroverview" style={{ color: "#990000" }}>
-            ← New York State overview
+          <Link href="/newyorguidebook" style={{ color: "#990000" }}>
+            ← New York State
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -32,8 +32,7 @@ export function NewyorTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/newyoroverview"
-        overviewHref="/newyoroverview"
+        overviewHref="/newyorguidebook"
         nextHref="/newyor01"
       />
     </>

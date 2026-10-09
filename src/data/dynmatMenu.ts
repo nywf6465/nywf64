@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Dynamic Maturity menu — nav-menu topics for all routes beginning with `dynmat`.
- * Labels match the dynmatoverview menu-topics mockup; Overview at top.
+ * Labels match the dynmatoverview menu-topics mockup.
  * Non-Overview routes: `dynmat01`…`dynmat06`.
  */
 export const DYNMAT_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/dynmatoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/dynmat01",

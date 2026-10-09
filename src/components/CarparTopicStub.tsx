@@ -16,8 +16,8 @@ export function CarparTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/carparoverview" style={{ color: "#990000" }}>
-            ← Carousel Park overview
+          <Link href="/carpar01" style={{ color: "#990000" }}>
+            ← Carousel Park
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function CarparTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/carparoverview"
-        overviewHref="/carparoverview"
+        overviewHref="/carpar01"
         nextHref="/carpar01"
       />
     </>

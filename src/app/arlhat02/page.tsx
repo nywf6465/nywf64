@@ -26,7 +26,7 @@ export default function Arlhat02Page() {
       }}
       nav={<ArlhatNavChrome />}
       previousHref="/arlhat01"
-      overviewHref="/arlhatoverview"
+      overviewHref="/arlhat01"
       nextHref="/arlhat03"
       factsLeft={[
         {

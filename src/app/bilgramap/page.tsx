@@ -68,7 +68,7 @@ export default function BilgramapPage() {
       <Nav2Bar
         previousHref="/bilgra01"
         explicitPrevious
-        overviewHref="/bilgraoverview"
+        overviewHref="/bilgra01"
         nextHref="/bilgra02"
       />
     </>

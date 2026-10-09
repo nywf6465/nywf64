@@ -2,15 +2,11 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Japan menu — nav-menu topics for all routes beginning with `japan`.
- * Labels match `media/japan-menu-topics-source.jpg` (+ Overview at top).
+ * Labels match `media/japan-menu-topics-source.jpg`.
  * Both “Gallery of Photographs” rows kept on distinct routes (`japan04` / `japan05`).
  * Non-Overview routes: `japan01`…`japan14`.
  */
 export const JAPAN_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/japanoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/japan01",

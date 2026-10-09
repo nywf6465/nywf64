@@ -16,8 +16,8 @@ export function NewmexTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/newmexoverview" style={{ color: "#990000" }}>
-            ← New Mexico overview
+          <Link href="/newmex01" style={{ color: "#990000" }}>
+            ← New Mexico
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function NewmexTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/newmexoverview"
-        overviewHref="/newmexoverview"
+        overviewHref="/newmex01"
         nextHref="/newmex01"
       />
     </>

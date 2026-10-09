@@ -73,7 +73,7 @@ export type InformationManualPageProps = {
    * Rendered before the secondary figure rule.
    */
   afterFeatures?: ReactNode;
-  previousHref: string;
+  previousHref?: string;
   nextHref: string;
   overviewHref?: string;
   titleId?: string;
@@ -232,7 +232,7 @@ export function InformationManualPage({
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious
+        explicitPrevious={Boolean(previousHref)}
         overviewHref={overviewHref}
         nextHref={nextHref}
       />

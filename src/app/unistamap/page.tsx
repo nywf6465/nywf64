@@ -67,7 +67,7 @@ export default function UnistaMapPage() {
       <Nav2Bar
         previousHref="/unista01"
         explicitPrevious
-        overviewHref="/unistaoverview"
+        overviewHref="/unista01"
         nextHref="/unista02"
       />
     </>

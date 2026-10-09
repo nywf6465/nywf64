@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Clairol menu — nav-menu topics for all routes beginning with `clair`.
- * Labels match the clair menu-topics mockup; Overview at top.
+ * Labels match the clair menu-topics mockup.
  * Non-Overview routes: `clair01`…`clair09`.
  */
 export const CLAIR_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/clairoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/clair01",

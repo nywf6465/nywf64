@@ -8,10 +8,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const ADMINBLDG_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/adminbldgoverview",
-  },
-  {
     label: "At the Fair",
     href: "/adminbldg01",
   },

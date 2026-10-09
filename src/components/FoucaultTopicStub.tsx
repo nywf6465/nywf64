@@ -16,8 +16,8 @@ export function FoucaultTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/foufaioverview" style={{ color: "#990000" }}>
-            ← Fountains of the Fairs overview
+          <Link href="/Foucault01" style={{ color: "#990000" }}>
+            ← Fountains of the Fairs
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,9 +29,8 @@ export function FoucaultTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/foufaioverview"
-        overviewHref="/foufaioverview"
-        nextHref="/foufai01"
+        overviewHref="/Foucault01"
+        nextHref="/Foucault01"
       />
     </>
   );

@@ -27,7 +27,6 @@ export default function Atomhos01Page() {
         height: 826,
       }}
       nav={<AtomhosNavChrome />}
-      previousHref="/atomhosoverview"
       nextHref="/atomhos02"
       guide1964={{
         cover: {

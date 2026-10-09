@@ -16,8 +16,8 @@ export function AmfTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/amfoverview" style={{ color: "#990000" }}>
-            ← Monorail (AMF) overview
+          <Link href="/amf01" style={{ color: "#990000" }}>
+            ← Monorail (AMF)
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function AmfTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/amfoverview"
-        overviewHref="/amfoverview"
+        overviewHref="/amf01"
         nextHref="/amf01"
       />
     </>

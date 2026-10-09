@@ -27,7 +27,6 @@ export default function Archamer01Page() {
         height: 823,
       }}
       nav={<ArchamerNavChrome />}
-      previousHref="/archameroverview"
       nextHref="/archamer02"
       guide1964={{
         cover: {

@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Press Building & Public Relations menu — topics for `prebui*` / `prebuilt*` routes.
- * Labels match the prebui menu-topics mockup; Overview at top.
+ * Labels match the prebui menu-topics mockup.
  * Non-Overview routes: `prebuilt01`…`prebuilt08`.
  */
 export const PREBUI_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/prebuioverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/prebuilt01",

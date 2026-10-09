@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Africa menu — nav-menu topics for all routes beginning with `africa`.
- * Labels match the africa-menu-topics mockup; Overview at top.
+ * Labels match the africa-menu-topics mockup.
  * Non-Overview routes: `africa01`…`africa05`.
  */
 export const AFRICA_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/africaoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/africa01",

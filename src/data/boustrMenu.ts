@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Boustr menu — nav-menu topics for all routes beginning with `boustr`.
- * Labels match the boustr-menu-topics mockup; Overview at top.
+ * Labels match the boustr-menu-topics mockup.
  * Non-Overview routes: `boustr01`…`boustr03`.
  */
 export const BOUSTR_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/boustroverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/boustr01",

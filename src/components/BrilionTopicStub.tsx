@@ -16,8 +16,8 @@ export function BrilionTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/brilionoverview" style={{ color: "#990000" }}>
-            ← British Lion Pub overview
+          <Link href="/brilion01" style={{ color: "#990000" }}>
+            ← British Lion Pub
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function BrilionTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/brilionoverview"
-        overviewHref="/brilionoverview"
+        overviewHref="/brilion01"
         nextHref="/brilion01"
       />
     </>

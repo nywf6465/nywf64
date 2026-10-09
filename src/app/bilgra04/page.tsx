@@ -25,7 +25,7 @@ export default function Bilgra04Page() {
       }}
       nav={<BilgraNavChrome />}
       previousHref="/bilgra03"
-      overviewHref="/bilgraoverview"
+      overviewHref="/bilgra01"
       nextHref="/bilgra05"
       columns={2}
       tiles={[

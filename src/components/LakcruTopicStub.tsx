@@ -16,8 +16,8 @@ export function LakcruTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/lakcruoverview" style={{ color: "#990000" }}>
-            ← Lake Cruise overview
+          <Link href="/lakcru01" style={{ color: "#990000" }}>
+            ← Lake Cruise
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function LakcruTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/lakcruoverview"
-        overviewHref="/lakcruoverview"
+        overviewHref="/lakcru01"
         nextHref="/lakcru01"
       />
     </>

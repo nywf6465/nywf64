@@ -3,50 +3,90 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 /**
  * Ford menu — nav-menu topic list for all routes beginning with `ford`.
  * Labels match the ford-menu-topics mockup (Overview first).
- * Non-Overview routes: `ford01`…`ford21`.
  */
 export const FORD_MENU_TOPICS: AttractionTopic[] = [
-  { label: "Overview", href: "/fordoverview" },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/ford01",
   },
-  { label: "World's Fair Information Manual", href: "/ford02" },
-  { label: "Postcards", href: "/ford03" },
-  { label: "Advertising", href: "/ford04" },
-  { label: "Photograph Album", href: "/ford05" },
-  { label: "Pavilion Plans Announced", href: "/ford06" },
-  { label: "The Souvenir Booklet", href: "/ford07" },
+  {
+    label: "World's Fair Information Manual",
+    href: "/fordmanual",
+  },
+  {
+    label: "Postcards",
+    href: "/fordpostcards",
+  },
+  {
+    label: "Advertising",
+    href: "/fordadvertising",
+  },
+  {
+    label: "Photograph Album",
+    href: "/fordphotographalbum",
+  },
+  {
+    label: "Pavilion Plans Announced",
+    href: "/fordpavilionplans",
+  },
+  {
+    label: "The Souvenir Booklet",
+    href: "/fordsouvenirbooklet",
+  },
   {
     label: "Brochure: Ride Walt Disney's Magic Skyway",
-    href: "/ford08",
+    href: "/fordridewalt",
   },
-  { label: "Brochure: Aurora", href: "/ford09" },
+  {
+    label: "Brochure: Aurora",
+    href: "/fordaurora",
+  },
   {
     label: "The Magic Skyway - Transcript of the 1964 Show",
-    href: "/ford10",
+    href: "/fordtranscript1964",
   },
   {
     label: "The Magic Skyway - Transcript of the 1965 Show",
-    href: "/ford11",
+    href: "/fordtranscript1965",
   },
-  { label: "Article: A Fair for the World", href: "/ford12" },
+  {
+    label: "Article: A Fair for the World",
+    href: "/fordfairfortheworld",
+  },
   {
     label: "Article: Preview of Walt Disney's World's Fair Shows",
-    href: "/ford13",
+    href: "/forddisneypreview",
   },
   {
     label: "Article: Preview of Ford's Pavilion at the New York World's Fair",
-    href: "/ford14",
+    href: "/fordpreviewpavilion",
   },
-  { label: "Article: Up and Running", href: "/ford15" },
-  { label: "Article: Ford Wonder Rotunda", href: "/ford16" },
-  { label: "Article: The Show's the Thing", href: "/ford17" },
-  { label: "Article: Hit Show for '65", href: "/ford18" },
+  {
+    label: "Article: Up and Running",
+    href: "/fordupandrunning",
+  },
+  {
+    label: "Article: Ford Wonder Rotunda",
+    href: "/fordwonderrotunda",
+  },
+  {
+    label: "Article: The Show's the Thing",
+    href: "/fordshowsthething",
+  },
+  {
+    label: "Article: Hit Show for '65",
+    href: "/fordhitshow65",
+  },
   {
     label: "Article: Lighting at the Fair - Ford Pavilion",
-    href: "/ford19",
+    href: "/fordlighting",
   },
-  { label: "A Favorite Souvenir", href: "/ford20" },
-  { label: "Remembering the Magic Skyway", href: "/ford21" },
+  {
+    label: "A Favorite Souvenir",
+    href: "/fordfavoritesouvenir",
+  },
+  {
+    label: "Remembering the Magic Skyway",
+    href: "/fordremembering",
+  },
 ];

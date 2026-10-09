@@ -30,7 +30,7 @@ export default function Autthr05Page() {
       }}
       nav={<AutthrNavChrome />}
       previousHref="/autthr04"
-      overviewHref="/autthroverview"
+      overviewHref="/autthr01"
       nextHref="/autthr06"
       cover={{
         src: "/images/autthr05/preview-cover.jpg",

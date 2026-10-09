@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Amex menu — nav-menu topics for all routes beginning with `amex`.
- * Labels match the amex-menu-topics mockup; Overview at top.
+ * Labels match the amex-menu-topics mockup.
  * Non-Overview routes: `amex01`…`amex12`.
  */
 export const AMEX_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/amexoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/amex01",

@@ -16,8 +16,8 @@ export function AdminbldgTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/adminbldgoverview" style={{ color: "#990000" }}>
-            ← Administration Building overview
+          <Link href="/adminbldg01" style={{ color: "#990000" }}>
+            ← Administration Building
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function AdminbldgTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/adminbldgoverview"
-        overviewHref="/adminbldgoverview"
+        overviewHref="/adminbldg01"
         nextHref="/adminbldg01"
       />
     </>

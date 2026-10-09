@@ -68,7 +68,7 @@ export default function AutthrMapPage() {
       <Nav2Bar
         previousHref="/autthr01"
         explicitPrevious
-        overviewHref="/autthroverview"
+        overviewHref="/autthr01"
         nextHref="/autthr02"
       />
     </>

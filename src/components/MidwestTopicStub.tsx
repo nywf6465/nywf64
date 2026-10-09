@@ -16,8 +16,8 @@ export function MidwestTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/midwestoverview" style={{ color: "#990000" }}>
-            ← Midwestern States overview
+          <Link href="/midwest01" style={{ color: "#990000" }}>
+            ← Midwestern States
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function MidwestTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/midwestoverview"
-        overviewHref="/midwestoverview"
+        overviewHref="/midwest01"
         nextHref="/midwest01"
       />
     </>

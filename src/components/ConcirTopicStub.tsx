@@ -16,8 +16,8 @@ export function ConcirTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/conciroverview" style={{ color: "#990000" }}>
-            ← Continental Circus overview
+          <Link href="/concir01" style={{ color: "#990000" }}>
+            ← Continental Circus
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function ConcirTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/conciroverview"
-        overviewHref="/conciroverview"
+        overviewHref="/concir01"
         nextHref="/concir01"
       />
     </>

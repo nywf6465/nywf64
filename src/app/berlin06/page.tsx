@@ -124,8 +124,8 @@ export default function Berlin06Page() {
       <Nav2Bar
         previousHref="/berlin05"
         explicitPrevious
-        overviewHref="/berlinoverview"
-        nextHref="/berlinoverview"
+        overviewHref="/berlin01"
+        nextHref="/berlin01"
       />
     </>
   );

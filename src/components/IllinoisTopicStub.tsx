@@ -23,8 +23,8 @@ export function IllinoisTopicStub({
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/illinoisoverview" style={{ color: "#990000" }}>
-            ← Illinois overview
+          <Link href="/illinoisguidebook" style={{ color: "#990000" }}>
+            ← Illinois
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -35,8 +35,7 @@ export function IllinoisTopicStub({
         </p>
       </main>
       <Nav2Bar
-        previousHref="/illinoisoverview"
-        overviewHref="/illinoisoverview"
+        overviewHref="/illinoisguidebook"
         nextHref="#"
       />
     </>

@@ -68,7 +68,7 @@ export default function BraraiintmapPage() {
       <Nav2Bar
         previousHref="/brarai01"
         explicitPrevious
-        overviewHref="/braraioverview"
+        overviewHref="/brarai01"
         nextHref="/brarai02"
       />
     </>

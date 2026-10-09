@@ -2,15 +2,11 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * newyorcit menu — nav-menu topics for all routes beginning with `newyorcit`.
- * Labels match `media/newyorcit-menu-topics-source.jpg` (+ Overview at top).
+ * Labels match `media/newyorcit-menu-topics-source.jpg`.
  * Guidebook & Souvenir Map Entries is one topic (wrapped in source).
  * Non-Overview routes: `newyorcit01`…`newyorcit03`.
  */
 export const NEWYORCIT_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/newyorcitoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/newyorcit01",

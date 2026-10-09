@@ -26,7 +26,7 @@ export default function Africa04Page() {
       }}
       nav={<AfricaNavChrome />}
       previousHref="/africa03"
-      overviewHref="/africaoverview"
+      overviewHref="/africa01"
       nextHref="/africa05"
       sections={[
         {

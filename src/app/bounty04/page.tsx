@@ -27,8 +27,8 @@ export default function Bounty04Page() {
       }}
       nav={<BountyNavChrome />}
       previousHref="/bounty03"
-      overviewHref="/bountyoverview"
-      nextHref="/bountyoverview"
+      overviewHref="/bounty01"
+      nextHref="/bounty01"
       collages={[
         {
           columns: 2,

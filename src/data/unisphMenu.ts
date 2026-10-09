@@ -8,10 +8,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const UNISPH_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Overview",
-    href: "/unisphoverview",
-  },
-  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/unisph01",
   },

@@ -30,7 +30,7 @@ export default function Bilgra09Page() {
       }}
       nav={<BilgraNavChrome />}
       previousHref="/bilgra08"
-      overviewHref="/bilgraoverview"
+      overviewHref="/bilgra01"
       nextHref="/bilgra10"
       cover={{
         src: "/images/bilgra09/man-in-fifth-dimension-cover.jpg",

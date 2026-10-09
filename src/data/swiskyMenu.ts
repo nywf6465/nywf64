@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Swisky menu — nav-menu topics for all routes beginning with `swisky`.
- * Labels match the swisky-menu-topics mockup; Overview at top.
+ * Labels match the swisky-menu-topics mockup.
  * Non-Overview routes: `swisky01`…`swisky05`.
  */
 export const SWISKY_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/swiskyoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/swisky01",

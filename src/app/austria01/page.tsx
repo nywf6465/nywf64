@@ -26,7 +26,6 @@ export default function Austria01Page() {
         height: 826,
       }}
       nav={<AustriaNavChrome />}
-      previousHref="/austriaoverview"
       nextHref="/austria02"
       guide1964={{
         cover: {

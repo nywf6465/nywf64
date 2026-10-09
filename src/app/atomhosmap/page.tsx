@@ -69,7 +69,7 @@ export default function AtomhosMapPage() {
       <Nav2Bar
         previousHref="/atomhos01"
         explicitPrevious
-        overviewHref="/atomhosoverview"
+        overviewHref="/atomhos01"
         nextHref="/atomhos02"
       />
     </>

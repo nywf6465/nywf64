@@ -26,8 +26,7 @@ export default function Ford01Page() {
         height: 826,
       }}
       nav={<FordNavChrome />}
-      previousHref="/fordoverview"
-      nextHref="/ford02"
+      nextHref="/fordmanual"
       guide1964={{
         cover: {
           src: "/images/ford01/guide1964.jpg",

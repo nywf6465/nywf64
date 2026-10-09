@@ -2,15 +2,11 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * midwest menu — nav-menu topics for all routes beginning with `midwest`.
- * Labels match `media/midwest-menu-topics-source.jpg` (+ Overview at top).
+ * Labels match `media/midwest-menu-topics-source.jpg`.
  * Spelling preserved from source (e.g. "Guide Book" as two words).
  * Non-Overview routes: `midwest01`…`midwest17`.
  */
 export const MIDWEST_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/midwestoverview",
-  },
   {
     label: "1964 & 1965 Official Guide Book & Souvenir Map Entries",
     href: "/midwest01",

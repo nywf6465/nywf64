@@ -26,8 +26,8 @@ export default function Allsta03Page() {
       }}
       nav={<AllstaNavChrome />}
       previousHref="/allsta02"
-      overviewHref="/allstaoverview"
-      nextHref="/allstaoverview"
+      overviewHref="/allsta01"
+      nextHref="/allsta01"
       sections={[
         {
           heading: "Fairgoer Photographs",

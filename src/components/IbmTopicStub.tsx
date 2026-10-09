@@ -19,8 +19,8 @@ export function IbmTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/ibmoverview" style={{ color: "#990000" }}>
-            ← IBM overview
+          <Link href="/ibm01" style={{ color: "#990000" }}>
+            ← IBM
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -31,8 +31,7 @@ export function IbmTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/ibmoverview"
-        overviewHref="/ibmoverview"
+        overviewHref="/ibm01"
         nextHref="/ibm01"
       />
     </>

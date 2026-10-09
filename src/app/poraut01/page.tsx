@@ -36,7 +36,6 @@ export default function Poraut01Page() {
         height: 827,
       }}
       nav={<PorautNavChrome />}
-      previousHref="/porautoverview"
       nextHref="/poraut02"
       guide1964={{
         cover: {

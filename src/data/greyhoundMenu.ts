@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Greyhound menu — nav-menu topics for all routes beginning with `greyhound`.
- * Labels match `media/greyhound-menu-topics-source.jpg` (+ Overview at top).
+ * Labels match `media/greyhound-menu-topics-source.jpg`.
  * Non-Overview routes: `greyhound01`…`greyhound14`.
  */
 export const GREYHOUND_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/greyhoundoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/greyhound01",

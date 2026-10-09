@@ -79,7 +79,7 @@ export default function Brarai02Page() {
       }}
       nav={<BraraiNavChrome />}
       previousHref="/brarai01"
-      overviewHref="/braraioverview"
+      overviewHref="/brarai01"
       nextHref="/brarai03"
       factsLeft={[
         {

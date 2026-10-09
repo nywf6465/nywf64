@@ -16,8 +16,8 @@ export function BilgraTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/bilgraoverview" style={{ color: "#990000" }}>
-            ← Billy Graham overview
+          <Link href="/bilgra01" style={{ color: "#990000" }}>
+            ← Billy Graham
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function BilgraTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/bilgraoverview"
-        overviewHref="/bilgraoverview"
+        overviewHref="/bilgra01"
         nextHref="/bilgra01"
       />
     </>

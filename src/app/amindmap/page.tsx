@@ -68,7 +68,7 @@ export default function AmindMapPage() {
       <Nav2Bar
         previousHref="/amind01"
         explicitPrevious
-        overviewHref="/amindoverview"
+        overviewHref="/amind01"
         nextHref="/amind02"
       />
     </>

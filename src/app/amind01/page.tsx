@@ -27,7 +27,6 @@ export default function Amind01Page() {
         height: 824,
       }}
       nav={<AmindNavChrome />}
-      previousHref="/amindoverview"
       nextHref="/amind02"
       guide1964={{
         cover: {

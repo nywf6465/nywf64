@@ -16,8 +16,8 @@ export function ProortTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/proortoverview" style={{ color: "#990000" }}>
-            ← Protestant & Orthodox Center overview
+          <Link href="/proort01" style={{ color: "#990000" }}>
+            ← Protestant & Orthodox Center
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function ProortTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/proortoverview"
-        overviewHref="/proortoverview"
+        overviewHref="/proort01"
         nextHref="/proort01"
       />
     </>

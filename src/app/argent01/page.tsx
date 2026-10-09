@@ -28,7 +28,6 @@ export default function Argent01Page() {
         height: 825,
       }}
       nav={<ArgentNavChrome />}
-      previousHref="/argentoverview"
       nextHref="/argent02"
       guide1964={{
         cover: {

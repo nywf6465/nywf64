@@ -2,14 +2,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Eastern Air Lines menu — nav-menu topics for all routes beginning with `eastern`.
- * Labels match the eastern menu-topics mockup; Overview at top.
+ * Labels match the eastern menu-topics mockup.
  * Non-Overview routes: `eastern01`…`eastern07`.
  */
 export const EASTERN_MENU_TOPICS: AttractionTopic[] = [
-  {
-    label: "Overview",
-    href: "/easternoverview",
-  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/eastern01",

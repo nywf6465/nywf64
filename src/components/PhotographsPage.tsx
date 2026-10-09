@@ -60,7 +60,7 @@ export type PhotographsPageProps = {
   };
   nav: ReactNode;
   sections: PhotographSection[];
-  previousHref: string;
+  previousHref?: string;
   nextHref: string;
   overviewHref?: string;
   titleId?: string;
@@ -158,7 +158,7 @@ export function PhotographsPage({
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious
+        explicitPrevious={Boolean(previousHref)}
         overviewHref={overviewHref}
         nextHref={nextHref}
       />

@@ -7,7 +7,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  * Italic show title via `parts`.
  */
 export const DUPONT_MENU_TOPICS: AttractionTopic[] = [
-  { label: "Overview", href: "/dupontoverview" },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/dupont01",

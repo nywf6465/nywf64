@@ -19,8 +19,8 @@ export function UnisphTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/unisphoverview" style={{ color: "#990000" }}>
-            ← Unisphere overview
+          <Link href="/unisph01" style={{ color: "#990000" }}>
+            ← Unisphere
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -31,8 +31,7 @@ export function UnisphTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/unisphoverview"
-        overviewHref="/unisphoverview"
+        overviewHref="/unisph01"
         nextHref="/unisph01"
       />
     </>

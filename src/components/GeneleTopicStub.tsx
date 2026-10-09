@@ -19,8 +19,8 @@ export function GeneleTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/geneleoverview" style={{ color: "#990000" }}>
-            ← General Electric overview
+          <Link href="/geneleguidebook" style={{ color: "#990000" }}>
+            ← General Electric
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -32,8 +32,7 @@ export function GeneleTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/geneleoverview"
-        overviewHref="/geneleoverview"
+        overviewHref="/geneleguidebook"
         nextHref="#"
       />
     </>

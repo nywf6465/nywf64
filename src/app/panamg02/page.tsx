@@ -28,7 +28,7 @@ export default function Panamg02Page() {
       }}
       nav={<PanamgNavChrome />}
       previousHref="/panamg01"
-      overviewHref="/panamgoverview"
+      overviewHref="/panamg01"
       nextHref="/panamg03"
       factsLeft={[
         {

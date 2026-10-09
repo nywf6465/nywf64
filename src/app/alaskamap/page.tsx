@@ -68,7 +68,7 @@ export default function AlaskaMapPage() {
       <Nav2Bar
         previousHref="/alaska01"
         explicitPrevious
-        overviewHref="/alaskaoverview"
+        overviewHref="/alaska01"
         nextHref="/alaska02"
       />
     </>

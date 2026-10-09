@@ -68,7 +68,7 @@ export default function BelvilMapPage() {
       <Nav2Bar
         previousHref="/belvil01"
         explicitPrevious
-        overviewHref="/belviloverview"
+        overviewHref="/belvil01"
         nextHref="/belvil02"
       />
     </>

@@ -16,8 +16,8 @@ export function DanwatTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/danwatoverview" style={{ color: "#990000" }}>
-            ← Dancing Waters overview
+          <Link href="/danwat01" style={{ color: "#990000" }}>
+            ← Dancing Waters
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function DanwatTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/danwatoverview"
-        overviewHref="/danwatoverview"
+        overviewHref="/danwat01"
         nextHref="/danwat01"
       />
     </>

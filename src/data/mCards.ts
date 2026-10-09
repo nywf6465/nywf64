@@ -8,7 +8,7 @@ export type MCard = FountainsCard;
 
 const MAINMALL: MCard = {
   id: "mainmall",
-  href: "/mainmalloverview",
+  href: "/mainmall01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Main Mall",
   // TEXT (to the right of ICON) — exact from mainmall-m-card-text-source.jpg
@@ -21,7 +21,7 @@ const MAINMALL: MCard = {
 
 const MALAYSIA: MCard = {
   id: "malaysia",
-  href: "/malaysiaoverview",
+  href: "/malaysia01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Malaysia",
   // TEXT (to the right of ICON) — exact from malaysia-m-card-text-source.jpg
@@ -34,7 +34,7 @@ const MALAYSIA: MCard = {
 
 const MARYLAND: MCard = {
   id: "maryland",
-  href: "/marylandoverview",
+  href: "/maryland01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Maryland",
   // TEXT (to the right of ICON) — exact from maryland-m-card-text-source.jpg
@@ -47,7 +47,7 @@ const MARYLAND: MCard = {
 
 const MASON: MCard = {
   id: "mason",
-  href: "/masonoverview",
+  href: "/mason01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Masonic Center",
   // TEXT (to the right of ICON) — exact from mason-m-card-text-source.jpg
@@ -60,7 +60,7 @@ const MASON: MCard = {
 
 const MASPIZ: MCard = {
   id: "maspiz",
-  href: "/maspizoverview",
+  href: "/maspiz01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Mastro Pizza",
   // TEXT (to the right of ICON) — exact from maspiz-m-card-text-source.jpg
@@ -73,7 +73,7 @@ const MASPIZ: MCard = {
 
 const MEDPHO: MCard = {
   id: "medpho",
-  href: "/medphooverview",
+  href: "/medpho01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Medo Photo Supply",
   // TEXT (to the right of ICON) — exact from medpho-m-card-text-source.jpg
@@ -86,7 +86,7 @@ const MEDPHO: MCard = {
 
 const MEXICO: MCard = {
   id: "mexico",
-  href: "/mexicooverview",
+  href: "/mexico01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Mexico",
   // TEXT (to the right of ICON) — exact from mexico-m-card-text-source.jpg
@@ -99,7 +99,7 @@ const MEXICO: MCard = {
 
 const MIDWEST: MCard = {
   id: "midwest",
-  href: "/midwestoverview",
+  href: "/midwest01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Midwestern States",
   // TEXT (to the right of ICON) — exact from midwest-m-card-text-source.jpg
@@ -113,7 +113,7 @@ const MIDWEST: MCard = {
 
 const MINNESOTA: MCard = {
   id: "minnesota",
-  href: "/minnesotaoverview",
+  href: "/minnesota01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Minnesota",
   // TEXT (to the right of ICON) — exact from minnesota-m-card-text-source.jpg
@@ -126,7 +126,7 @@ const MINNESOTA: MCard = {
 
 const MISSOURI: MCard = {
   id: "missouri",
-  href: "/missourioverview",
+  href: "/missouri01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Missouri",
   // TEXT (to the right of ICON) — exact from missouri-m-card-text-source.jpg
@@ -140,7 +140,7 @@ const MISSOURI: MCard = {
 
 const AMF: MCard = {
   id: "amf",
-  href: "/amfoverview",
+  href: "/amf01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Monorail",
   // TEXT (to the right of ICON) — exact from amf-m-card-text-source.jpg
@@ -153,7 +153,7 @@ const AMF: MCard = {
 
 const MONTANA: MCard = {
   id: "montana",
-  href: "/montanaoverview",
+  href: "/montana01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Montana",
   // TEXT (to the right of ICON) — exact from montana-m-card-text-source.jpg
@@ -166,7 +166,7 @@ const MONTANA: MCard = {
 
 const MORCHU: MCard = {
   id: "morchu",
-  href: "/morchuoverview",
+  href: "/morchu01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Mormon Church",
   // TEXT (to the right of ICON) — exact from mormon-m-card-text-source.jpg
@@ -179,7 +179,7 @@ const MORCHU: MCard = {
 
 const MOROCO: MCard = {
   id: "moroco",
-  href: "/morocooverview",
+  href: "/moroco01",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Morocco",
   // TEXT (to the right of ICON) — exact from moroco-m-card-text-source.jpg

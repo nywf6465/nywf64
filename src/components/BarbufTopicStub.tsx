@@ -16,8 +16,8 @@ export function BarbufTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/barbufoverview" style={{ color: "#990000" }}>
-            ← Bar, Buffet and Cafeteria overview
+          <Link href="/barbuf01" style={{ color: "#990000" }}>
+            ← Bar, Buffet and Cafeteria
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,8 +29,7 @@ export function BarbufTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/barbufoverview"
-        overviewHref="/barbufoverview"
+        overviewHref="/barbuf01"
         nextHref="/barbuf01"
       />
     </>

@@ -16,8 +16,8 @@ export function LouisiaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/louisiaoverview" style={{ color: "#990000" }}>
-            ← Louisiana overview
+          <Link href="/louisia01" style={{ color: "#990000" }}>
+            ← Louisiana
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function LouisiaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/louisiaoverview"
-        overviewHref="/louisiaoverview"
+        overviewHref="/louisia01"
         nextHref="/louisia01"
       />
     </>

@@ -16,8 +16,8 @@ export function LogfluTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/logfluoverview" style={{ color: "#990000" }}>
-            ← Flume Ride overview
+          <Link href="/logflu01" style={{ color: "#990000" }}>
+            ← Flume Ride
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,8 +28,7 @@ export function LogfluTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/logfluoverview"
-        overviewHref="/logfluoverview"
+        overviewHref="/logflu01"
         nextHref="/logflu01"
       />
     </>

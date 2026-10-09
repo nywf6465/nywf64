@@ -26,7 +26,6 @@ export default function Amprid01Page() {
         height: 824,
       }}
       nav={<AmpridNavChrome />}
-      previousHref="/ampridoverview"
       nextHref="/amprid02"
       guide1964={{
         cover: {

@@ -19,8 +19,8 @@ export function AstfountTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/astfountoverview" style={{ color: "#990000" }}>
-            ← Astral Fountain overview
+          <Link href="/astfount01" style={{ color: "#990000" }}>
+            ← Astral Fountain
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -31,8 +31,7 @@ export function AstfountTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        previousHref="/astfountoverview"
-        overviewHref="/astfountoverview"
+        overviewHref="/astfount01"
         nextHref="/astfount01"
       />
     </>
