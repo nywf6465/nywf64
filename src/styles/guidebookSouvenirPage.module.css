@@ -63,7 +63,7 @@
   width: 100%;
 }
 
-/* Two guidebook columns only (no Souvenir Map column). */
+/* Two Official Guide Book columns only (no Souvenir Map), e.g. /wfmar01 */
 .columnsTwo {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
