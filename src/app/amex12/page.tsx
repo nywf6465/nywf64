@@ -121,7 +121,12 @@ export default function Amex12Page() {
                 );
               case "caption":
                 return (
-                  <p key={index} className={styles.caption}>
+                  <p
+                    key={index}
+                    className={`${styles.caption}${
+                      block.small ? ` ${styles.captionSmall}` : ""
+                    }`}
+                  >
                     {block.text}
                   </p>
                 );

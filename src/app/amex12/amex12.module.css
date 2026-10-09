@@ -128,6 +128,13 @@
   text-align: center;
 }
 
+/* Beat .body p (lavender 1.15rem) for the under-photo caption. */
+.body p.captionSmall {
+  margin-top: 0.35rem;
+  font-size: 0.75rem;
+  line-height: 1.35;
+}
+
 .features {
   margin: 1rem 0 1.25rem;
   padding: 0.85rem 1rem;
