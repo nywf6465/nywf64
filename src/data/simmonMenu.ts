@@ -2,48 +2,52 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Simmons menu — topics for `simmon*` / `summon*` routes.
- * Labels match the simmon-menu-topics mockup.
- * Non-Overview routes: `summon01`…`summon10` (per route naming request).
+ * Labels match the simmon-menu-topics mockup; Overview at top.
+ * Non-Overview routes: `simmon01`…`simmon10`.
  */
 export const SIMMON_MENU_TOPICS: AttractionTopic[] = [
   {
+    label: "Overview",
+    href: "/simmonoverview",
+  },
+  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
-    href: "/summon01",
+    href: "/simmon01",
   },
   {
     label: "World's Fair Information Manual",
-    href: "/summon02",
+    href: "/simmon02",
   },
   {
     label: "Postcards",
-    href: "/summon03",
+    href: "/simmon03",
   },
   {
     label: "Gallery of Photographs",
-    href: "/summon04",
+    href: "/simmon04",
   },
   {
     label: "Invitation to Visit",
-    href: "/summon05",
+    href: "/simmon05",
   },
   {
     label: "Press Releases & Press",
-    href: "/summon06",
+    href: "/simmon06",
   },
   {
     label: "Brochure",
-    href: "/summon07",
+    href: "/simmon07",
   },
   {
     label: "Johnny Carson's Review",
-    href: "/summon08",
+    href: "/simmon08",
   },
   {
     label: "The Simmons Company",
-    href: "/summon09",
+    href: "/simmon09",
   },
   {
     label: "Epilogue",
-    href: "/summon10",
+    href: "/simmon10",
   },
 ];
