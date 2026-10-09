@@ -65,4 +65,16 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Chun King Inn",
   },
+  {
+    id: "lowengar",
+    href: "/lowengaroverview",
+    // DESCRIPTION (italic under ICON) — exact from L page
+    title: "Lowenbrau Gardens",
+    // TEXT (to the right of ICON) — exact from L page
+    body: "Bavarian food and beer are served in a replica of an open-air cafe in a village square.",
+    pavilionSrc: "/images/lowengar/lowengar-icon.png",
+    pavilionWidth: 761,
+    pavilionHeight: 330,
+    pavilionAlt: "Lowenbrau Gardens",
+  },
 ];
