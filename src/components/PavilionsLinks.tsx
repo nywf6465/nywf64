@@ -67,7 +67,7 @@ const TOPICS = [
   {
     id: "quiet-spaces-and-rest-areas",
     title: "Quiet Spaces and Rest Areas",
-    href: "/pavilions/quiet-spaces-and-rest-areas",
+    href: "/pavilions/quietareas",
     hoverSrc: "/images/pavilions-hover/quiet-spaces-and-rest-areas.jpg",
     left: "2.148%",
     top: "24.751%",
