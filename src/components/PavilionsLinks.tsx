@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./PavilionsLinks.module.css";
 
-/** Exact user artwork — base unchanged. Hover crops swap burgundy↔navy on text/arrows only; thumbnails untouched. */
+/** Exact user artwork — base unchanged. Hover crops swap navy↔burgundy on the link-symbol circle only; text colors stay put; thumbnails untouched. */
 const TOPICS = [
   {
     id: "attractions-from-a-to-z",
