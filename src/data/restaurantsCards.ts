@@ -41,4 +41,16 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "British Lion Pub",
   },
+  {
+    id: "century-grill",
+    href: "/cengrioverview",
+    // DESCRIPTION (italic under ICON) — exact from C page
+    title: "Century Grill",
+    // TEXT (to the right of ICON) — exact from C page
+    body: "This restaurant serves hamburgers prepared with savory sauces, along with side dishes from every nation represented at the Fair.",
+    pavilionSrc: "/images/cengri/century-grill-icon.png",
+    pavilionWidth: 764,
+    pavilionHeight: 330,
+    pavilionAlt: "Century Grill",
+  },
 ];
