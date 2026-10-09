@@ -1,49 +1,103 @@
-/* User-provided hubs artwork shown exactly — hover crops swap navy↔burgundy only */
+/* Homepage hubs — 2×4 grid of light-blue rounded cards on white.
+   White gutters around every card (matches attached spacing example).
+   Link indicator overlays the lower-right corner of each hub image. */
 
 .section {
   width: 100%;
   background: #fff;
-  /* Breath between hero and hub links */
-  padding-top: 1.35rem;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.frame {
+.grid {
+  list-style: none;
+  margin: 0;
+  /* Outer white padding so cards aren't flush to page edges */
+  padding: 1.75rem 1.5rem 1.9rem;
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  /* White space around each card — matches attached 2×4 example gutters */
+  column-gap: 2.5rem;
+  row-gap: 2.5rem;
+  box-sizing: border-box;
+}
+
+.item {
+  margin: 0;
+  min-width: 0;
+}
+
+.card {
+  display: block;
+  min-width: 0;
+  height: 100%;
+  box-sizing: border-box;
+  /* Light-blue card chrome with white space around it via grid gaps */
+  padding: 0.7rem;
+  background: #f2f5fa;
+  border-radius: 0.85rem;
+  box-shadow: 0 1px 2px rgb(38 52 110 / 6%);
+  text-decoration: none;
+  color: inherit;
+}
+
+.card:focus-visible {
+  outline: 2px solid var(--burgundy, #990000);
+  outline-offset: 3px;
+}
+
+.icon {
   position: relative;
-  width: min(1206px, 100%);
-  margin: 0 auto;
-  line-height: 0;
-}
-
-.art {
   display: block;
   width: 100%;
-  height: auto;
-}
-
-.hotspot {
-  position: absolute;
-  z-index: 1;
-  border-radius: 999px;
+  line-height: 0;
+  border-radius: 0.35rem;
   overflow: hidden;
 }
 
-.hoverArt {
+.iconArt {
+  display: block;
+  width: 100%;
+  height: auto;
+  image-rendering: auto;
+}
+
+.linksSymbol {
   position: absolute;
-  inset: 0;
+  right: 0.45rem;
+  bottom: 0.45rem;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: clamp(1.15rem, 3.2vw, 1.65rem);
+  height: clamp(1.15rem, 3.2vw, 1.65rem);
+  pointer-events: none;
+}
+
+.linksSymbolArt {
+  display: block;
   width: 100%;
   height: 100%;
-  object-fit: fill;
-  opacity: 0;
-  pointer-events: none;
-  transition: opacity 120ms ease;
+  object-fit: contain;
 }
 
-.hotspot:hover .hoverArt,
-.hotspot:focus-visible .hoverArt {
-  opacity: 1;
-}
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+    padding: 1.25rem 1rem 1.5rem;
+    row-gap: 1.75rem;
+  }
 
-.hotspot:focus-visible {
-  outline: 2px solid #990000;
-  outline-offset: 2px;
+  .card {
+    padding: 0.65rem;
+    border-radius: 0.75rem;
+  }
+
+  .linksSymbol {
+    right: 0.4rem;
+    bottom: 0.4rem;
+    width: clamp(1.25rem, 5vw, 1.75rem);
+    height: clamp(1.25rem, 5vw, 1.75rem);
+  }
 }
