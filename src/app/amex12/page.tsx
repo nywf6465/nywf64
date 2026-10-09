@@ -125,7 +125,7 @@ export default function Amex12Page() {
                     key={index}
                     className={`${styles.caption}${
                       block.small ? ` ${styles.captionSmall}` : ""
-                    }`}
+                    }${block.matchImage ? ` ${styles.captionMatchImage}` : ""}`}
                   >
                     {block.text}
                   </p>
