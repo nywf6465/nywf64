@@ -1,6 +1,5 @@
 /* Homepage hubs — 2×4 grid of light-blue rounded cards on white.
-   White gutters around every card (matches attached spacing example).
-   Link indicator overlays the lower-right corner of each hub image. */
+   White gutters around every card (matches attached spacing example). */
 
 .section {
   width: 100%;
@@ -47,7 +46,6 @@
 }
 
 .icon {
-  position: relative;
   display: block;
   width: 100%;
   line-height: 0;
@@ -62,26 +60,6 @@
   image-rendering: auto;
 }
 
-.linksSymbol {
-  position: absolute;
-  right: 0.45rem;
-  bottom: 0.45rem;
-  z-index: 1;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: clamp(1.15rem, 3.2vw, 1.65rem);
-  height: clamp(1.15rem, 3.2vw, 1.65rem);
-  pointer-events: none;
-}
-
-.linksSymbolArt {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: contain;
-}
-
 /* Keep the 2×4 grid on phones — tighter gutters so both columns fit */
 @media (max-width: 640px) {
   .grid {
@@ -94,12 +72,5 @@
   .card {
     padding: 0.4rem;
     border-radius: 0.65rem;
-  }
-
-  .linksSymbol {
-    right: 0.3rem;
-    bottom: 0.3rem;
-    width: clamp(1rem, 4.5vw, 1.35rem);
-    height: clamp(1rem, 4.5vw, 1.35rem);
   }
 }

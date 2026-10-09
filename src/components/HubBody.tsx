@@ -4,8 +4,7 @@ import styles from "./HubBody.module.css";
 
 /**
  * Homepage category hubs — eight hub icons in a 2×4 grid of light-blue
- * rounded cards on white (white space around each card). Link indicator sits
- * at the lower-right of each hub image.
+ * rounded cards on white (white space around each card).
  */
 const HUBS = [
   {
@@ -78,17 +77,6 @@ export function HubBody() {
                   className={styles.iconArt}
                   unoptimized
                 />
-                <span className={styles.linksSymbol} aria-hidden="true">
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src="/images/links-symbol.png"
-                    alt=""
-                    width={177}
-                    height={178}
-                    className={styles.linksSymbolArt}
-                    draggable={false}
-                  />
-                </span>
               </span>
             </Link>
           </li>
