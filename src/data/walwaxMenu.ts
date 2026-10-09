@@ -19,7 +19,7 @@ export const WALWAX_MENU_TOPICS: AttractionTopic[] = [
     href: "/walwax03",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/walwax04",
   },
 ];
