@@ -77,4 +77,16 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Lowenbrau Gardens",
   },
+  {
+    id: "maspiz",
+    href: "/maspizoverview",
+    // DESCRIPTION (italic under ICON) — exact from M page
+    title: "Mastro Pizza",
+    // TEXT (to the right of ICON) — exact from M page
+    body: "At this counter restaurant, pizza, beer and soda are sold.",
+    pavilionSrc: "/images/maspiz/maspiz-icon.png",
+    pavilionWidth: 761,
+    pavilionHeight: 330,
+    pavilionAlt: "Mastro Pizza",
+  },
 ];
