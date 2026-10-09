@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   description: "Article: Three Screens Full of Happiness — 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
+/** Article pages stitched from legacy 3×4 tiles into single composites. */
 export default function Johwax13Page() {
   return (
     <JohwaxSequencePage
@@ -20,7 +21,7 @@ export default function Johwax13Page() {
       previousHref="/johwax12"
       overviewHref="/johwaxoverview"
       nextHref="/johwax14"
-      columns={3}
+      columns={1}
       scans={[...JOHWAX_13_SCANS]}
       source={
         <>
