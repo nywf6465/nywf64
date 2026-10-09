@@ -113,4 +113,16 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Schaefer",
   },
+  {
+    id: "seven-up",
+    href: "/sevupoverview",
+    // DESCRIPTION (italic under ICON) — exact from S page
+    title: "Seven-Up",
+    // TEXT (to the right of ICON) — exact from S page
+    body: "This open-air cafe offers musical entertainment and an international sandwich buffet.",
+    pavilionSrc: "/images/sevup/seven-up-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Seven-Up",
+  },
 ];
