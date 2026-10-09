@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { RestaurantsLinks } from "@/components/RestaurantsLinks";
 import styles from "./restaurants.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
 
@@ -10,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 /**
- * Landing: header → hero → guidebook banner → footer
+ * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Fountains pattern).
- * Restaurant attraction links will connect here as they are built.
+ * Cards match letter-page attractions (e.g. Aerial Tower on `/A`, Brass Rail on `/B`).
  */
 export default function RestaurantsPage() {
   return (
@@ -47,6 +48,7 @@ export default function RestaurantsPage() {
           />
         </div>
       </section>
+      <RestaurantsLinks />
     </main>
   );
 }
