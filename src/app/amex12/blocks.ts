@@ -1,7 +1,7 @@
 export type Amex12Block =
   | { type: "h3"; text: string }
   | { type: "p"; text: string }
-  | { type: "source"; text: string }
+  | { type: "source"; text: string; muted?: boolean }
   | { type: "caption"; text: string }
   | { type: "features"; text: string }
   | { type: "webmaster"; text: string }
@@ -11,7 +11,11 @@ export type Amex12Block =
 
 export const AMEX12_BLOCKS: Amex12Block[] = [
   { type: "img", src: "amex25.jpg", width: 595, height: 528, alt: "" },
-  { type: "source", text: "SOURCE: LIFE Magazine, January 17, 1964" },
+  {
+    type: "source",
+    text: "SOURCE: LIFE Magazine, January 17, 1964",
+    muted: true,
+  },
   { type: "p", text: "One of the things that Robert Moses and his associates had learned early in their careers was that if you wanted to build something really big one important way to garner support for the project, as well as to assist the builders during the planning stages, was to commission a very detailed model. Never was this truer than for the models that they had built to both illustrate and publicize the New York World's Fair of 1964-1965. And according to Moses, the self avowed model man per his own notes in the Fair records, there was no better way to attract exhibitors to the Fair and build excitement with the public than to have a large and dramatic visual representation of what great and exciting things were coming to the Fair." },
   { type: "h3", text: "A Big Model for a Big Fair" },
   { type: "p", text: "The model which ultimately came to be referred to as simply \"the big model\" became the responsibility of Deputy Director of States Exhibits Mike Pender on January 3, 1961 by a memo issued by Robert Moses. But the story of the model began much earlier than that with the original proposal that Lester Associates, Inc. made to the Fair Corporation on August 3, 1960 in which they state that the basic model map (not including any buildings) would cost $40,500 to build. As soon as the Fair took possession of the model, the almost constant updating of it to reflect the changing landscape began immediately. As new exhibitors signed their leases the selected plots were marked on the big map to indicate where they would be located. The map itself was color coded similar to the later official published maps of the grounds to indicate the five different exhibit areas of the Fair along with roads being marked in brown and park areas in green." },
