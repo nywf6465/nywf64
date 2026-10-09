@@ -15,7 +15,7 @@ export const USPO_MENU_TOPICS: AttractionTopic[] = [
     href: "/uspo02",
   },
   {
-    label: "Gallery of Photographs",
+    label: "Photograph Album",
     href: "/uspo03",
   },
   {
