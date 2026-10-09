@@ -29,4 +29,16 @@ export const RESTAURANTS_CARDS: FountainsCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Brass Rail Food Services",
   },
+  {
+    id: "british-lion-pub",
+    href: "/brilionoverview",
+    // DESCRIPTION (italic under ICON) — exact from B page
+    title: "British Lion Pub",
+    // TEXT (to the right of ICON) — exact from B page
+    body: "In a replica of a 17th Century Tudor inn, traditional British food and drink are served.",
+    pavilionSrc: "/images/brilion/british-lion-pub-icon.png",
+    pavilionWidth: 762,
+    pavilionHeight: 330,
+    pavilionAlt: "British Lion Pub",
+  },
 ];
