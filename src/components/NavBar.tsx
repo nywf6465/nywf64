@@ -1,6 +1,8 @@
 "use client";
 
+import { usePathname } from "next/navigation";
 import styles from "./NavBar.module.css";
+import { pageNumberFromPath } from "@/lib/pageNumberFromPath";
 
 export type NavBarProps = {
   /** Opens the nav menu on click/tap (hover does not open). */
@@ -24,8 +26,9 @@ export type NavBarProps = {
  * Nav bar — prototype model for attraction pages.
  * User term: **nav bar**. Full-bleed width matching the site header.
  * White strip with hamburger + EXPLORE THIS ATTRACTION, left-aligned to the
- * burgundy hero bar and tight beneath it. Click/tap opens the nav menu;
- * hover does not.
+ * burgundy hero bar and tight beneath it. On numbered routes, “Page N”
+ * (zero-suppressed) is right-aligned on the same bar. Click/tap opens the
+ * nav menu; hover does not.
  */
 export function NavBar({
   onClickOpen,
@@ -33,6 +36,8 @@ export function NavBar({
   menuOpen = false,
   exploreNoun = "ATTRACTION",
 }: NavBarProps) {
+  const pathname = usePathname() ?? "";
+  const pageNumber = pageNumberFromPath(pathname);
   const exploreText = `EXPLORE THIS ${exploreNoun}`;
   const aria = `Explore this ${exploreNoun.toLowerCase()}`;
 
@@ -59,6 +64,11 @@ export function NavBar({
           </span>
           <span className={styles.exploreText}>{exploreText}</span>
         </button>
+        {pageNumber != null ? (
+          <span className={styles.pageLabel} aria-label={`Page ${pageNumber}`}>
+            Page {pageNumber}
+          </span>
+        ) : null}
       </div>
     </div>
   );
