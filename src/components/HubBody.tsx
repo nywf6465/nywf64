@@ -4,9 +4,8 @@ import styles from "./HubBody.module.css";
 
 /**
  * Homepage category hubs — eight hub icons in a 2×4 grid of light-blue
- * rounded cards on white (white space around each card), with burgundy bars
- * above and below the grid. Link indicator sits at the lower-right of each
- * hub image.
+ * rounded cards on white (white space around each card). Link indicator sits
+ * at the lower-right of each hub image.
  */
 const HUBS = [
   {
@@ -66,7 +65,6 @@ export function HubBody() {
       className={styles.section}
       aria-label="Explore Fair categories"
     >
-      <div className={styles.bar} aria-hidden="true" />
       <ul className={styles.grid}>
         {HUBS.map((hub) => (
           <li key={hub.id} className={styles.item}>
@@ -96,7 +94,6 @@ export function HubBody() {
           </li>
         ))}
       </ul>
-      <div className={styles.bar} aria-hidden="true" />
     </section>
   );
 }
