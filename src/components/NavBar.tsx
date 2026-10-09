@@ -24,8 +24,8 @@ export type NavBarProps = {
  * Nav bar — prototype model for attraction pages.
  * User term: **nav bar**. Full-bleed width matching the site header.
  * White strip with hamburger + EXPLORE THIS ATTRACTION, left-aligned to the
- * burgundy hero bar and tight beneath it. Click/tap opens the nav menu;
- * hover does not.
+ * burgundy hero bar, with clear space above and below the bar. Click/tap
+ * opens the nav menu; hover does not.
  */
 export function NavBar({
   onClickOpen,
