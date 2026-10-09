@@ -90,8 +90,7 @@
   overflow: auto;
   -webkit-overflow-scrolling: touch;
   overscroll-behavior: contain;
-  border-top: 1px solid #000;
-  border-bottom: 1px solid #000;
+  border: 1px solid #000;
   background: #fff;
   /* Touch: allow two-axis pan without fighting body scroll awkwardly */
   /* Cap height so tall maps pan vertically inside the scroller */
