@@ -1,0 +1,26 @@
+.centeredPhoto {
+  margin: 0 auto 1.25rem;
+  text-align: center;
+}
+
+.prefaceWrap {
+  font-family: Times, "Times New Roman", serif;
+}
+
+.dropCap {
+  float: left;
+  font-size: 1.75rem;
+  line-height: 1;
+  padding-right: 0.15rem;
+  font-weight: 700;
+}
+
+.starRule {
+  text-align: center;
+}
+
+.legacyHeading {
+  text-align: center;
+  font-size: 1rem;
+  margin: 1rem 0 0;
+}
