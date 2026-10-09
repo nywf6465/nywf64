@@ -1,0 +1,241 @@
+/*
+ * Seven-Up — Progress Report (/sevup05).
+ * Body from legacy sevup05.html.
+ * Stack: hero → SevupNavChrome → navy title → article → Nav2Bar.
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.masthead {
+  margin: 0 0 0.35rem;
+  font-size: clamp(1.6rem, 4vw, 2rem);
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.mastheadProgress {
+  color: #ff0000;
+}
+
+.mastheadReport {
+  color: #999;
+}
+
+.deck {
+  margin: 0 0 1.1rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.figure {
+  margin: 0 0 1.1rem;
+}
+
+.figureCentered {
+  margin: 0 auto 1.1rem;
+  max-width: 100%;
+}
+
+.photoFrame {
+  display: block;
+  line-height: 0;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.columns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1.1rem;
+}
+
+.columns p {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.columns p:last-child {
+  margin-bottom: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, auto);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1.1rem;
+}
+
+.rowCaption {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.row .figure {
+  margin: 0;
+  max-width: 337px;
+}
+
+.pair {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+  gap: 0.85rem 1rem;
+  align-items: start;
+  margin: 0 0 1.1rem;
+}
+
+.pair .figure {
+  margin: 0;
+}
+
+.shellRow {
+  display: grid;
+  grid-template-columns: minmax(0, auto) minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 0.5rem;
+}
+
+.shellRow .figure {
+  margin: 0;
+  max-width: 320px;
+}
+
+.shellCaption {
+  margin: 0;
+  font-size: 0.8rem;
+  line-height: 1.35;
+}
+
+.source {
+  margin: 0.35rem 0 1.15rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #999;
+  margin: 0 0 1.25rem;
+}
+
+.sectionDeck {
+  margin: 0 0 0.35rem;
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.35;
+}
+
+.sectionHeadline {
+  margin: 0 0 1rem;
+  color: #ff0000;
+  font-size: clamp(1.25rem, 3.2vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.towerStack {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.85rem;
+  margin: 0 0 1.1rem;
+}
+
+.towerStack .figure {
+  margin: 0;
+  max-width: 416px;
+  width: 100%;
+}
+
+.floatBox {
+  margin: 0 auto 1.1rem;
+  max-width: 416px;
+}
+
+@media (max-width: 640px) {
+  .columns,
+  .row,
+  .pair,
+  .shellRow {
+    grid-template-columns: 1fr;
+  }
+
+  .row .figure,
+  .shellRow .figure {
+    max-width: 100%;
+  }
+
+  .deck {
+    text-align: left;
+  }
+}
