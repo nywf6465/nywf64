@@ -16,8 +16,8 @@ export function LonislrrTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/lonislrr01" style={{ color: "#990000" }}>
-            ← Long Island Rail Road
+          <Link href="/lonislrroverview" style={{ color: "#990000" }}>
+            ← Long Island Rail Road overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function LonislrrTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/lonislrr01"
+        previousHref="/lonislrroverview"
+        overviewHref="/lonislrroverview"
         nextHref="/lonislrr01"
       />
     </>

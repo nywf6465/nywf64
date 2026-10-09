@@ -19,8 +19,8 @@ export function VaticanTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/vaticanguidebook" style={{ color: "#990000" }}>
-            ← Vatican
+          <Link href="/vaticanoverview" style={{ color: "#990000" }}>
+            ← Vatican overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -31,7 +31,8 @@ export function VaticanTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/vaticanguidebook"
+        previousHref="/vaticanoverview"
+        overviewHref="/vaticanoverview"
         nextHref="/vatican01"
       />
     </>

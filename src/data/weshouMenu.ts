@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Westinghouse menu — nav-menu topics for all routes beginning with `weshou`.
- * Labels match uploaded menu topics.
+ * Labels match uploaded menu topics (+ Overview at top).
  * Non-Overview routes: `weshou01`…`weshou15`.
  */
 export const WESHOU_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/weshouoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/weshou01",

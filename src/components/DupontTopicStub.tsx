@@ -19,8 +19,8 @@ export function DupontTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/dupont01" style={{ color: "#990000" }}>
-            ← DuPont
+          <Link href="/dupontoverview" style={{ color: "#990000" }}>
+            ← DuPont overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -31,7 +31,8 @@ export function DupontTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/dupont01"
+        previousHref="/dupontoverview"
+        overviewHref="/dupontoverview"
         nextHref="/dupont01"
       />
     </>

@@ -19,8 +19,8 @@ export function NprogfountTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/nprogfount01" style={{ color: "#990000" }}>
-            ← Fountain of Progress North
+          <Link href="/nprogfountoverview" style={{ color: "#990000" }}>
+            ← Fountain of Progress North overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -32,7 +32,8 @@ export function NprogfountTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/nprogfount01"
+        previousHref="/nprogfountoverview"
+        overviewHref="/nprogfountoverview"
         nextHref="/nprogfount01"
       />
     </>

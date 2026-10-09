@@ -7,7 +7,7 @@ import { type FountainsCard } from "@/data/fountainsCards";
  */
 const ADMINISTRATION_BUILDING: FountainsCard = {
   id: "administration-building",
-  href: "/adminbldg01",
+  href: "/adminbldgoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Administration Building",
   // TEXT (to the right of ICON) — exact from a-card-01-administration-building-text-user-exact.jpg
@@ -20,7 +20,7 @@ const ADMINISTRATION_BUILDING: FountainsCard = {
 
 const AERIAL_TOWER_RIDE: FountainsCard = {
   id: "aerial-tower-ride",
-  href: "/aertow01",
+  href: "/aertowoverview",
   // DESCRIPTION (italic under ICON) — exact, keep &
   title: "Aerial Tower Ride & Waffle Restaurant",
   // TEXT (to the right of ICON) — exact from a-page-card1-text-user-exact.jpg
@@ -33,7 +33,7 @@ const AERIAL_TOWER_RIDE: FountainsCard = {
 
 const AFRICA: FountainsCard = {
   id: "africa",
-  href: "/africa01",
+  href: "/africaoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Africa",
   // TEXT (to the right of ICON) — exact from a-page-card2-text-user-exact.jpg
@@ -46,7 +46,7 @@ const AFRICA: FountainsCard = {
 
 const ALASKA: FountainsCard = {
   id: "alaska",
-  href: "/alaska01",
+  href: "/alaskaoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Alaska",
   // TEXT (to the right of ICON) — exact from a-page-card3-text-user-exact.jpg
@@ -59,7 +59,7 @@ const ALASKA: FountainsCard = {
 
 const ALL_STATE: FountainsCard = {
   id: "all-state",
-  href: "/allsta01",
+  href: "/allstaoverview",
   // DESCRIPTION (italic under ICON) — exact; keep hyphen, &, apostrophe
   title: "All-State Properties & Macy's",
   // TEXT (to the right of ICON) — exact from a-page-card4-text-user-exact.jpg
@@ -72,7 +72,7 @@ const ALL_STATE: FountainsCard = {
 
 const AMERICAN_EXPRESS: FountainsCard = {
   id: "american-express",
-  href: "/amex01",
+  href: "/amexoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "American Express",
   // TEXT (to the right of ICON) — exact from a-page-card5-text-user-exact.jpg
@@ -85,7 +85,7 @@ const AMERICAN_EXPRESS: FountainsCard = {
 
 const AMERICAN_INDIAN_EXPOSITION: FountainsCard = {
   id: "american-indian-exposition",
-  href: "/amind01",
+  href: "/amindoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "American Indian Exposition",
   // TEXT (to the right of ICON) — exact from a-page-card6-text-user-exact.jpg
@@ -98,7 +98,7 @@ const AMERICAN_INDIAN_EXPOSITION: FountainsCard = {
 
 const AMERICAN_ISRAEL: FountainsCard = {
   id: "american-israel",
-  href: "/amerisr01",
+  href: "/amerisroverview",
   // DESCRIPTION (italic under ICON) — exact; keep hyphen
   title: "American-Israel",
   // TEXT (to the right of ICON) — exact from a-page-card7-text-user-exact.jpg
@@ -111,7 +111,7 @@ const AMERICAN_ISRAEL: FountainsCard = {
 
 const AMPHICAR_RIDE: FountainsCard = {
   id: "amphicar-ride",
-  href: "/amprid01",
+  href: "/ampridoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Amphicar Ride",
   // TEXT (to the right of ICON) — exact from a-card-08-amphicar-ride-text-user-exact.jpg
@@ -124,7 +124,7 @@ const AMPHICAR_RIDE: FountainsCard = {
 
 const AMPHITHEATER: FountainsCard = {
   id: "amphitheater",
-  href: "/ampthe01",
+  href: "/amptheoverview",
   // DESCRIPTION (italic under ICON) — exact US spelling + trailing space
   title: "Amphitheater ",
   // TEXT (to the right of ICON) — exact from a-card-10-amphitheater-text-user-exact.jpg
@@ -138,7 +138,7 @@ const AMPHITHEATER: FountainsCard = {
 
 const ARCH_OF_THE_AMERICAS: FountainsCard = {
   id: "arch-of-the-americas",
-  href: "/archamer01",
+  href: "/archameroverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Arch of the Americas",
   // TEXT (to the right of ICON) — exact from a-card-11-arch-of-the-americas-text-user-exact.jpg
@@ -151,7 +151,7 @@ const ARCH_OF_THE_AMERICAS: FountainsCard = {
 
 const ARGENTINA: FountainsCard = {
   id: "argentina",
-  href: "/argent01",
+  href: "/argentoverview",
   // DESCRIPTION (italic under ICON) — exact + trailing space
   title: "Argentina ",
   // TEXT (to the right of ICON) — exact from a-card-12-argentina-text-user-exact.jpg
@@ -164,7 +164,7 @@ const ARGENTINA: FountainsCard = {
 
 const ARLINGTON_HAT: FountainsCard = {
   id: "arlington-hat",
-  href: "/arlhat01",
+  href: "/arlhatoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Arlington Hat",
   // TEXT (to the right of ICON) — exact from a-card-13-arlington-hat-text-user-exact.jpg
@@ -178,7 +178,7 @@ const ARLINGTON_HAT: FountainsCard = {
 
 const ASTRAL_FOUNTAIN: FountainsCard = {
   id: "astral-fountain",
-  href: "/astfount01",
+  href: "/astfountoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Astral Fountain",
   // TEXT (to the right of ICON) — exact from a-card-14-astral-fountain-text-user-exact.jpg
@@ -191,7 +191,7 @@ const ASTRAL_FOUNTAIN: FountainsCard = {
 
 const ATOMEDIC_HOSPITAL: FountainsCard = {
   id: "atomedic-hospital",
-  href: "/atomhos01",
+  href: "/atomhosoverview",
   // DESCRIPTION (italic under ICON) — exact + trailing space
   title: "Atomedic Hospital ",
   // TEXT (to the right of ICON) — exact from a-card-15-atomedic-hospital-text-user-exact.jpg
@@ -204,7 +204,7 @@ const ATOMEDIC_HOSPITAL: FountainsCard = {
 
 const AUSTRIA: FountainsCard = {
   id: "austria",
-  href: "/austria01",
+  href: "/austriaoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Austria",
   // TEXT (to the right of ICON) — exact from a-card-16-austria-text-user-exact.jpg
@@ -217,7 +217,7 @@ const AUSTRIA: FountainsCard = {
 
 const AUTO_THRILL_SHOW: FountainsCard = {
   id: "auto-thrill-show",
-  href: "/autthr01",
+  href: "/autthroverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Auto Thrill Show",
   // TEXT (to the right of ICON) — exact from autthr-a-card17-text-user-exact.jpg
@@ -230,7 +230,7 @@ const AUTO_THRILL_SHOW: FountainsCard = {
 
 const AVIS_ANTIQUE_CAR_RIDE: FountainsCard = {
   id: "avis-antique-car-ride",
-  href: "/avis01",
+  href: "/avisoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Avis Antique Car Ride",
   // TEXT (to the right of ICON) — exact from avis-a-card18-text-user-exact.jpg
@@ -243,7 +243,7 @@ const AVIS_ANTIQUE_CAR_RIDE: FountainsCard = {
 
 const AVIS_PAN_AMERICAN_HIGHWAY_RIDES: FountainsCard = {
   id: "avis-pan-american-highway-rides",
-  href: "/panamg01",
+  href: "/panamgoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Avis Pan American Highway Rides",
   // TEXT (to the right of ICON) — exact from panamg-a-card19-text-user-exact.jpg

@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Morchu menu — nav-menu topics for all routes beginning with `morchu`.
- * Labels match the morchu-menu-topics mockup.
+ * Labels match the morchu-menu-topics mockup; Overview at top.
  * Non-Overview routes: `morchu01`…`morchu07`.
  */
 export const MORCHU_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/morchuoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/morchu01",

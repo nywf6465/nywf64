@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Travelers Insurance menu — nav-menu topics for all routes beginning with `travelers`.
- * Labels match uploaded menu topics.
+ * Labels match uploaded menu topics (+ Overview at top).
  * Non-Overview routes: `travelers01`…`travelers18`.
  */
 export const TRAVELERS_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/travelersoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/travelers01",

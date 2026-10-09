@@ -27,6 +27,7 @@ export default function Arlhat01Page() {
         height: 824,
       }}
       nav={<ArlhatNavChrome />}
+      previousHref="/arlhatoverview"
       nextHref="/arlhat02"
       guide1964={{
         cover: {

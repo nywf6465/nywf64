@@ -16,8 +16,8 @@ export function DynmatTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/dynmat01" style={{ color: "#990000" }}>
-            ← Dynamic Maturity
+          <Link href="/dynmatoverview" style={{ color: "#990000" }}>
+            ← Dynamic Maturity overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function DynmatTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/dynmat01"
+        previousHref="/dynmatoverview"
+        overviewHref="/dynmatoverview"
         nextHref="/dynmat01"
       />
     </>

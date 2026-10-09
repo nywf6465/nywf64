@@ -16,8 +16,8 @@ export function BelvilTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/belvil01" style={{ color: "#990000" }}>
-            ← Belgian Village
+          <Link href="/belviloverview" style={{ color: "#990000" }}>
+            ← Belgian Village overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function BelvilTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/belvil01"
+        previousHref="/belviloverview"
+        overviewHref="/belviloverview"
         nextHref="/belvil01"
       />
     </>

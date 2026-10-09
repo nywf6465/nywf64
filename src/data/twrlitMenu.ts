@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Tower of Light menu — nav-menu topics for all routes beginning with `twrlit`.
- * Labels match uploaded menu topics.
+ * Labels match uploaded menu topics (+ Overview at top).
  * Non-Overview routes: `twrlit01`…`twrlit32`.
  */
 export const TWRLIT_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/twrlitoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/twrlit01",

@@ -16,8 +16,8 @@ export function ArlhatTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/arlhat01" style={{ color: "#990000" }}>
-            ← Arlington Hat
+          <Link href="/arlhatoverview" style={{ color: "#990000" }}>
+            ← Arlington Hat overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function ArlhatTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/arlhat01"
+        previousHref="/arlhatoverview"
+        overviewHref="/arlhatoverview"
         nextHref="/arlhat01"
       />
     </>

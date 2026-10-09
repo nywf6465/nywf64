@@ -16,8 +16,8 @@ export function EasternTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/eastern01" style={{ color: "#990000" }}>
-            ← Eastern Air Lines
+          <Link href="/easternoverview" style={{ color: "#990000" }}>
+            ← Eastern Air Lines overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function EasternTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/eastern01"
+        previousHref="/easternoverview"
+        overviewHref="/easternoverview"
         nextHref="/eastern01"
       />
     </>

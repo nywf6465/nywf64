@@ -19,8 +19,8 @@ export function UnistaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/unista01" style={{ color: "#990000" }}>
-            ← United States
+          <Link href="/unistaoverview" style={{ color: "#990000" }}>
+            ← United States overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -32,7 +32,8 @@ export function UnistaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/unista01"
+        previousHref="/unistaoverview"
+        overviewHref="/unistaoverview"
         nextHref="/unista01"
       />
     </>

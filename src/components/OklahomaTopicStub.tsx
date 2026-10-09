@@ -16,8 +16,8 @@ export function OklahomaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/oklahoma01" style={{ color: "#990000" }}>
-            ← Oklahoma
+          <Link href="/oklahomaoverview" style={{ color: "#990000" }}>
+            ← Oklahoma overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function OklahomaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/oklahoma01"
+        previousHref="/oklahomaoverview"
+        overviewHref="/oklahomaoverview"
         nextHref="/oklahoma01"
       />
     </>

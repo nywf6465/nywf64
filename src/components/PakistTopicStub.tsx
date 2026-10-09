@@ -16,8 +16,8 @@ export function PakistTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/pakist01" style={{ color: "#990000" }}>
-            ← Pakistan
+          <Link href="/pakistoverview" style={{ color: "#990000" }}>
+            ← Pakistan overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function PakistTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/pakist01"
+        previousHref="/pakistoverview"
+        overviewHref="/pakistoverview"
         nextHref="/pakist01"
       />
     </>

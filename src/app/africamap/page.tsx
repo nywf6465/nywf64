@@ -68,7 +68,7 @@ export default function AfricaMapPage() {
       <Nav2Bar
         previousHref="/africa01"
         explicitPrevious
-        overviewHref="/africa01"
+        overviewHref="/africaoverview"
         nextHref="/africa02"
       />
     </>

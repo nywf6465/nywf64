@@ -68,7 +68,7 @@ export default function BoyscomapPage() {
       <Nav2Bar
         previousHref="/boysco01"
         explicitPrevious
-        overviewHref="/boysco01"
+        overviewHref="/boyscooverview"
         nextHref="/boysco02"
       />
     </>

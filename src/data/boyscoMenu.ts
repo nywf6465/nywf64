@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Boysco menu — nav-menu topics for all routes beginning with `boysco`.
- * Labels match the boysco-menu-topics mockup.
+ * Labels match the boysco-menu-topics mockup; Overview at top.
  * Non-Overview routes: `boysco01`…`boysco06`.
  */
 export const BOYSCO_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/boyscooverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/boysco01",

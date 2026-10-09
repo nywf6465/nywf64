@@ -8,7 +8,7 @@ export type PCard = FountainsCard;
 
 const PAKISTAN: PCard = {
   id: "pakistan",
-  href: "/pakist01",
+  href: "/pakistoverview",
   title: "Pakistan",
   body: "An ancient land's history and hopes are refelcted in priceless relics and models of modern industrial projects.",
   pavilionSrc: "/images/pakist/pakist-icon.png",
@@ -19,7 +19,7 @@ const PAKISTAN: PCard = {
 
 const PAN_AMERICAN_HIGHWAY_GARDENS: PCard = {
   id: "panamg",
-  href: "/panamg01",
+  href: "/panamgoverview",
   title: "Pan American Highway Gardens",
   body: "Fairgoers stroll past large paintings of scenes along the new Pan American Highway through Latin America.",
   pavilionSrc: "/images/panamg/panamg-icon.png",
@@ -30,7 +30,7 @@ const PAN_AMERICAN_HIGHWAY_GARDENS: PCard = {
 
 const PARKER_PEN: PCard = {
   id: "parpen",
-  href: "/parpen01",
+  href: "/parpenoverview",
   title: "Parker Pen",
   body: "Visitors to the pavilion are put in touch with 'pen friends' of similar age and interests in many parts of the world.",
   pavilionSrc: "/images/parpen/parpen-icon.png",
@@ -41,7 +41,7 @@ const PARKER_PEN: PCard = {
 
 const PAVILION_OF_AMERICAN_INTERIORS: PCard = {
   id: "pavami",
-  href: "/pavami01",
+  href: "/pavamioverview",
   title: "Pavilion of American Interiors",
   body: "More than 120 manufacturers and interior designers display a wide range of house furnishings and fittings.",
   pavilionSrc: "/images/pavami/pavami-icon.png",
@@ -52,7 +52,7 @@ const PAVILION_OF_AMERICAN_INTERIORS: PCard = {
 
 const PAVILION_OF_PARIS: PCard = {
   id: "pavpar",
-  href: "/pavpar01",
+  href: "/pavparoverview",
   title: "Pavilion of Paris",
   body: "A sidewalk cafe, a well-stocked wine cellar and charming shops help recreate the lighthearted atmosphere of Paris.",
   pavilionSrc: "/images/pavpar/pavpar-icon.png",
@@ -63,7 +63,7 @@ const PAVILION_OF_PARIS: PCard = {
 
 const PENNSYLVANIA: PCard = {
   id: "pennsy",
-  href: "/pennsylvania01",
+  href: "/pennsyoverview",
   title: "Pennsylvania",
   body: "The Pennsylvania exhibit features a full-sized replica of the Liberty Bell. The bell can be rung by visitors.",
   pavilionSrc: "/images/pennsy/pennsy-icon.png",
@@ -75,7 +75,7 @@ const PENNSYLVANIA: PCard = {
 /** Identical to the Pepsi-Cola row on The Disney Shows links page. */
 const PEPSI_COLA: PCard = {
   id: "pepsi",
-  href: "/pepsiguidebook",
+  href: "/pepsioverview",
   title: 'Pepsi-Cola — "It\'s a Small World"',
   body: "A salute to the children of the world, designed by Walt Disney, presents animated figures frolicking in miniature settings of many lands.",
   pavilionSrc: "/images/disney-shows/pepsi01-pavilion.png",
@@ -86,7 +86,7 @@ const PEPSI_COLA: PCard = {
 
 const PHILIPPINES: PCard = {
   id: "philip",
-  href: "/philip01",
+  href: "/philipoverview",
   title: "Philippines",
   body: "Folk dance, music and wood carvings illustrate the history and culture of this island republic",
   pavilionSrc: "/images/philip/philip-icon.png",
@@ -97,7 +97,7 @@ const PHILIPPINES: PCard = {
 
 const POLYNESIA: PCard = {
   id: "polyne",
-  href: "/polynesia01",
+  href: "/polyneoverview",
   title: "Polynesia",
   body: "Life in a South Seas village is recreated by fire dancers and pearl divers amid thatch-roofed huts and a palm-shaded lagoon.",
   pavilionSrc: "/images/polyne/polyne-icon.png",
@@ -109,7 +109,7 @@ const POLYNESIA: PCard = {
 /** Identical to the Pool of Industry row on the Fountains links page. */
 const POOL_OF_INDUSTRY: PCard = {
   id: "pool-of-industry",
-  href: "/poolin01",
+  href: "/poolinoverview",
   title: "Pool of Industry ",
   body: "A gigantic symphony of fireworks, water, color and music occurs every evening.",
   pavilionSrc: "/images/fountains/pool-of-industry-icon.png",
@@ -121,7 +121,7 @@ const POOL_OF_INDUSTRY: PCard = {
 /** Identical to the Pool of Reflections row on the Fountains links page. */
 const POOL_OF_REFLECTIONS: PCard = {
   id: "pool-of-reflections",
-  href: "/pooref01",
+  href: "/poorefoverview",
   title: "Pool of Reflections",
   body: "The Pool of Reflections is a series of five water ponds at stepped heights with water flowing from higher to lower levels forming a long cascading type pool.",
   pavilionSrc: "/images/fountains/pool-of-reflections-icon.png",
@@ -132,7 +132,7 @@ const POOL_OF_REFLECTIONS: PCard = {
 
 const PORT_AUTHORITY_HELIPORT: PCard = {
   id: "poraut",
-  href: "/poraut01",
+  href: "/porautoverview",
   title: "Port Authority Heliport",
   body: "Rising 120 feet on four mammoth tapered columns, this structure is the aerial gateway to the Fair.",
   pavilionSrc: "/images/poraut/poraut-icon.png",
@@ -143,7 +143,7 @@ const PORT_AUTHORITY_HELIPORT: PCard = {
 
 const PRESS_BUILDING: PCard = {
   id: "press-building",
-  href: "/prebuilt01",
+  href: "/prebuioverview",
   title: "Press Building & Public Relations",
   body: "The purpose of the Press Building is to provide a convenient, comfortable and functional center for the working press and for Public Relations and Publicity.",
   pavilionSrc: "/images/prebui/prebui-icon.png",
@@ -155,7 +155,7 @@ const PRESS_BUILDING: PCard = {
 /** Identical to the Protestant & Orthodox Center row on the Religions links page. */
 const PROTESTANT_AND_ORTHODOX_CENTER: PCard = {
   id: "protestant-and-orthodox-center",
-  href: "/proort01",
+  href: "/proortoverview",
   title: "Protestant & Orthodox Center",
   body: "An allegorical film and religious exhibits and art works illustrate the theme 'Jesus Christ, the Light of the World.'",
   pavilionSrc: "/images/religions/protestant-and-orthodox-center-icon.png",

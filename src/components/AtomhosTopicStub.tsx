@@ -16,8 +16,8 @@ export function AtomhosTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/atomhos01" style={{ color: "#990000" }}>
-            ← Atomedic Hospital
+          <Link href="/atomhosoverview" style={{ color: "#990000" }}>
+            ← Atomedic Hospital overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function AtomhosTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/atomhos01"
+        previousHref="/atomhosoverview"
+        overviewHref="/atomhosoverview"
         nextHref="/atomhos01"
       />
     </>

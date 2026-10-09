@@ -16,8 +16,8 @@ export function MaspizTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/maspiz01" style={{ color: "#990000" }}>
-            ← Mastro Pizza
+          <Link href="/maspizoverview" style={{ color: "#990000" }}>
+            ← Mastro Pizza overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function MaspizTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/maspiz01"
+        previousHref="/maspizoverview"
+        overviewHref="/maspizoverview"
         nextHref="/maspiz01"
       />
     </>

@@ -26,6 +26,7 @@ export default function Africa01Page() {
         height: 823,
       }}
       nav={<AfricaNavChrome />}
+      previousHref="/africaoverview"
       nextHref="/africa02"
       guide1964={{
         cover: {

@@ -68,7 +68,7 @@ export default function AvisMapPage() {
       <Nav2Bar
         previousHref="/avis01"
         explicitPrevious
-        overviewHref="/avis01"
+        overviewHref="/avisoverview"
         nextHref="/avis02"
       />
     </>

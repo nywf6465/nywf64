@@ -22,7 +22,7 @@ type Row = {
 const TOP_TEN: Row[] = [
   {
     id: "general-motors",
-    href: "/gmguidebook",
+    href: "/gmoverview",
     title: "General Motors & The Futurama",
     body: "In the Futurama, Fairgoers are taken on visits to the moon, to a year-round commercial harbor in the Antarctic, to an underwater resort and to a city of tomorrow.",
     rank: "No. 1 with 29,002,186 in attendance",
@@ -33,7 +33,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "vatican",
-    href: "/vaticanguidebook",
+    href: "/vaticanoverview",
     title: "The Vatican & The Pieta",
     body: 'The main exhibit is the Fair\'s most important work of art: the "Pieta," Michelangelo\'s 466-year-old masterpiece in Carrara marble.',
     rank: "No. 2 with 27,020,857 in attendance",
@@ -44,7 +44,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "new-york-state",
-    href: "/newyorguidebook",
+    href: "/newyoroverview",
     title: "New York State & The Tent of Tomorrow",
     body: 'Above a huge "Tent of Tomorrow," housing state exhibits and shows, rise three towers, one of them an observation tower 226 feet high.',
     rank: "No. 3 with 24,707,204 in attendance",
@@ -55,7 +55,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "chrysler",
-    href: "/chryslerguidebook",
+    href: "/chrysleroverview",
     title: "Chrysler & The Autofare Islands",
     body: "This exhibit was designed especially for children, with a puppet show, a giant car, and other exhibits set on islands in a large man-made lake.",
     rank: "No. 4 with 24,707,204 in attendance",
@@ -66,7 +66,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "general-electric",
-    href: "/geneleguidebook",
+    href: "/geneleoverview",
     title: "General Electric & The Carousel of Progress",
     body: "In a one-hour show, the changes electricity has brought in American living are dramatized by life-sized animated figures created by Walt Disney.",
     rank: "No. 5 with 15,697,408 in attendance",
@@ -77,7 +77,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "ford",
-    href: "/ford01",
+    href: "/fordoverview",
     title: "Ford & The Magic Skyway",
     body: "Animated displays and scale models depict man's progress from prehistoric times to the Space Age. Viewers ride past some of the exhibits in new Ford cars.",
     rank: "No. 6 with 14,908,983 in attendance",
@@ -88,7 +88,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "florida",
-    href: "/floridaguidebook",
+    href: "/floridaoverview",
     title: "Florida & The Porpoise Show",
     body: "A giant orange on a tower tops displays of sunshine living, space tests at Cape Kennedy and a free, live-porpoise show.",
     rank: "No. 7 with 14,484,971 in attendance",
@@ -99,7 +99,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "bell-system",
-    href: "/bell01",
+    href: "/belloverview",
     title: "Bell System & The Ride of Communications",
     body: "The history of communications, from smoke signal to satellites, is shown in a 15-minute ride.",
     rank: "No. 8 with 12,912,037 in attendance",
@@ -110,7 +110,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "united-states",
-    href: "/unista01",
+    href: "/unistaoverview",
     title: "United States & The Challenge to Greatness",
     body: 'The nation\'s past and its progress toward President Johnson\'s "Great Society" are outlined in many dramatic exhibits and a spectacular 15-minute film-ride.',
     rank: "No. 9 with 12,000,000 in attendance",
@@ -121,7 +121,7 @@ const TOP_TEN: Row[] = [
   },
   {
     id: "spain",
-    href: "/spain01",
+    href: "/spainoverview",
     title: "Spain & The Fair's Most Beautiful Pavilion",
     body: "In a striking modern pavilion, the atmosphere of old Spain forms a setting for great art, fine dining and entertainment.",
     rank: "No. 10 with 10,500,000 in attendance",
@@ -135,7 +135,7 @@ const TOP_TEN: Row[] = [
 const FOUR_MORE: Row[] = [
   {
     id: "ibm",
-    href: "/ibm01",
+    href: "/ibmoverview",
     title: "IBM & The People Wall",
     body: 'A moving 500-seat "People Wall" lifts visitors into an egg-shaped theater for a captivating multi-screen show.',
     rank: "No. 11 with 10,000,000 in attendance",
@@ -146,7 +146,7 @@ const FOUR_MORE: Row[] = [
   },
   {
     id: "eastman-kodak",
-    href: "/easkod01",
+    href: "/easkodoverview",
     title: "Eastman Kodak & The Picture Tower",
     body: 'Atop the pavilion are huge colored prints and a "moondeck" for picture-taking; inside are exhibits and an award-winning film.',
     rank: "No. 12 with 7,850,000 in attendance",
@@ -157,7 +157,7 @@ const FOUR_MORE: Row[] = [
   },
   {
     id: "du-pont",
-    href: "/dupont01",
+    href: "/dupontoverview",
     title: "Du Pont & The Wonderful World of Chemistry",
     body: "A lively musical revue, new fashions and some startling demonstrations are devoted to progress in chemistry today.",
     rank: "No. 13 with 5,256,799 in attendance",
@@ -168,7 +168,7 @@ const FOUR_MORE: Row[] = [
   },
   {
     id: "johnsons-wax",
-    href: "/johwax01",
+    href: "/johwaxoverview",
     title: "Johnson Wax & To Be Alive!",
     body: '"To Be Alive," an 18-minute film that has been one of the Fair\'s great hits, depicts the joys of living shared by all people.',
     rank: "No. 14 with 5,050,000 in attendance",

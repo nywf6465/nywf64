@@ -69,7 +69,7 @@ export default function AmpridMapPage() {
       <Nav2Bar
         previousHref="/amprid01"
         explicitPrevious
-        overviewHref="/amprid01"
+        overviewHref="/ampridoverview"
         nextHref="/amprid02"
       />
     </>

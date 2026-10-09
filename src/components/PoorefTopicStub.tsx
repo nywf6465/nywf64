@@ -16,8 +16,8 @@ export function PoorefTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/pooref01" style={{ color: "#990000" }}>
-            ← Pool of Reflections
+          <Link href="/poorefoverview" style={{ color: "#990000" }}>
+            ← Pool of Reflections overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function PoorefTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/pooref01"
+        previousHref="/poorefoverview"
+        overviewHref="/poorefoverview"
         nextHref="/pooref01"
       />
     </>

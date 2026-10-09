@@ -8,7 +8,7 @@ export type GCard = FountainsCard;
 
 const GARDEN_OF_MEDITATION: GCard = {
   id: "garmed",
-  href: "/garmed01",
+  href: "/garmedoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Garden of Meditation",
   // TEXT (to the right of ICON) — exact from garmed-g-card-text-source.jpg
@@ -21,7 +21,7 @@ const GARDEN_OF_MEDITATION: GCard = {
 
 const GENERAL_CIGAR: GCard = {
   id: "gencig",
-  href: "/gencig01",
+  href: "/gencigoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "General Cigar",
   // TEXT (to the right of ICON) — exact from gencig-g-card-text-source.jpg
@@ -34,7 +34,7 @@ const GENERAL_CIGAR: GCard = {
 
 const GENERAL_ELECTRIC: GCard = {
   id: "genele",
-  href: "/geneleguidebook",
+  href: "/geneleoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "General Electric",
   // TEXT (to the right of ICON) — exact from genelec-g-card-text-source.jpg
@@ -47,7 +47,7 @@ const GENERAL_ELECTRIC: GCard = {
 
 const GENERAL_FOODS_ARCHES: GCard = {
   id: "genfoo",
-  href: "/genfoo01",
+  href: "/genfoooverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "General Foods Arches",
   // TEXT (to the right of ICON) — exact from genfoo-g-card-text-source.jpg
@@ -60,7 +60,7 @@ const GENERAL_FOODS_ARCHES: GCard = {
 
 const GENERAL_MOTORS: GCard = {
   id: "gm",
-  href: "/gmguidebook",
+  href: "/gmoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "General Motors",
   // TEXT (to the right of ICON) — exact from genmot-g-card-text-source.jpg
@@ -73,7 +73,7 @@ const GENERAL_MOTORS: GCard = {
 
 const GREECE: GCard = {
   id: "greece",
-  href: "/greece01",
+  href: "/greeceoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Greece",
   // TEXT (to the right of ICON) — exact from greece-g-card-text-source.jpg
@@ -86,7 +86,7 @@ const GREECE: GCard = {
 
 const GREYHOUND: GCard = {
   id: "greyhound",
-  href: "/greyhound01",
+  href: "/greyhoundoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Greyhound",
   // TEXT (to the right of ICON) — exact from greyhound-g-card-text-source.jpg
@@ -99,7 +99,7 @@ const GREYHOUND: GCard = {
 
 const GUINEA: GCard = {
   id: "guinea",
-  href: "/guinea01",
+  href: "/guineaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Guinea",
   // TEXT (to the right of ICON) — exact from guinea-g-card-text-source.jpg

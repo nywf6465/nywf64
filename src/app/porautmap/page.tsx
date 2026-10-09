@@ -67,7 +67,7 @@ export default function PorautMapPage() {
       <Nav2Bar
         previousHref="/poraut01"
         explicitPrevious
-        overviewHref="/poraut01"
+        overviewHref="/porautoverview"
         nextHref="/poraut02"
       />
     </>

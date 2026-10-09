@@ -540,7 +540,7 @@ export function GuidebookSouvenirPage({
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious={Boolean(previousHref)}
+        explicitPrevious
         nextHref={nextHref}
       />
     </>

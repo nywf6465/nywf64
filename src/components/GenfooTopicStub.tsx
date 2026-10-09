@@ -16,8 +16,8 @@ export function GenfooTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/genfoo01" style={{ color: "#990000" }}>
-            ← General Foods Arches
+          <Link href="/genfoooverview" style={{ color: "#990000" }}>
+            ← General Foods Arches overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function GenfooTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/genfoo01"
+        previousHref="/genfoooverview"
+        overviewHref="/genfoooverview"
         nextHref="/genfoo01"
       />
     </>

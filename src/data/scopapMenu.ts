@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Scott Paper menu — nav-menu topics for all routes beginning with `scopap`.
- * Labels match the scopap-menu-topics mockup.
+ * Labels match the scopap-menu-topics mockup; Overview at top.
  * Non-Overview routes: `scopap01`…`scopap10`.
  */
 export const SCOPAP_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/scopapoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/scopap01",

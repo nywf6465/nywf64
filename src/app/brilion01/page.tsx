@@ -27,6 +27,7 @@ export default function Brilion01Page() {
         height: 825,
       }}
       nav={<BrilionNavChrome />}
+      previousHref="/brilionoverview"
       nextHref="/brilion02"
       guide1964={{
         cover: {

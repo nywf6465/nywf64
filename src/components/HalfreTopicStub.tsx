@@ -16,8 +16,8 @@ export function HalfreTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/halfre01" style={{ color: "#990000" }}>
-            ← Hall of Free Enterprise
+          <Link href="/halfreoverview" style={{ color: "#990000" }}>
+            ← Hall of Free Enterprise overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function HalfreTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/halfre01"
+        previousHref="/halfreoverview"
+        overviewHref="/halfreoverview"
         nextHref="/halfre01"
       />
     </>

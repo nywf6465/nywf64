@@ -16,8 +16,8 @@ export function EntbuiTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/entbui01" style={{ color: "#990000" }}>
-            ← Entrance Building
+          <Link href="/entbuioverview" style={{ color: "#990000" }}>
+            ← Entrance Building overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function EntbuiTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/entbui01"
+        previousHref="/entbuioverview"
+        overviewHref="/entbuioverview"
         nextHref="/entbui01"
       />
     </>

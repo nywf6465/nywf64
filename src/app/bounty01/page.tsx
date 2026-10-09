@@ -25,6 +25,7 @@ export default function Bounty01Page() {
         height: 826,
       }}
       nav={<BountyNavChrome />}
+      previousHref="/bountyoverview"
       nextHref="/bounty02"
       guide1964={{
         cover: {

@@ -26,6 +26,7 @@ export default function Panamg01Page() {
         height: 727,
       }}
       nav={<PanamgNavChrome />}
+      previousHref="/panamgoverview"
       nextHref="/panamg02"
       guide1964={{
         cover: {

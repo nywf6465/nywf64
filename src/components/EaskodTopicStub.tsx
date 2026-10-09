@@ -19,8 +19,8 @@ export function EaskodTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/easkod01" style={{ color: "#990000" }}>
-            ← Eastman Kodak
+          <Link href="/easkodoverview" style={{ color: "#990000" }}>
+            ← Eastman Kodak overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -32,7 +32,8 @@ export function EaskodTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/easkod01"
+        previousHref="/easkodoverview"
+        overviewHref="/easkodoverview"
         nextHref="/easkod01"
       />
     </>

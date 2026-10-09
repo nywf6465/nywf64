@@ -2,11 +2,15 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * ncr menu — nav-menu topics for all routes beginning with `ncr`.
- * Labels match `media/ncr-menu-topics-source.jpg`.
+ * Labels match `media/ncr-menu-topics-source.jpg` (+ Overview at top).
  * Guidebook label ends at “Souvenir Map” (no “Entries”).
  * Non-Overview routes: `ncr01`…`ncr06`.
  */
 export const NCR_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/ncroverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/ncr01",

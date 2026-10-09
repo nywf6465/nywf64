@@ -30,7 +30,7 @@ export default function Austria06Page() {
       }}
       nav={<AustriaNavChrome />}
       previousHref="/austria05"
-      overviewHref="/austria01"
+      overviewHref="/austriaoverview"
       nextHref="/austria07"
       cover={{
         src: "/images/austria06/about-austria-cover.jpg",

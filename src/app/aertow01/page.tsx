@@ -34,6 +34,7 @@ export default function Aertow01Page() {
         height: 823,
       }}
       nav={<AertowNavChrome />}
+      previousHref="/aertowoverview"
       nextHref="/aertow02"
       guide1964={{
         cover: {

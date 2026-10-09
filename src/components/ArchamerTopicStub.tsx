@@ -16,8 +16,8 @@ export function ArchamerTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/archamer01" style={{ color: "#990000" }}>
-            ← Arch of the Americas
+          <Link href="/archameroverview" style={{ color: "#990000" }}>
+            ← Arch of the Americas overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function ArchamerTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/archamer01"
+        previousHref="/archameroverview"
+        overviewHref="/archameroverview"
         nextHref="/archamer01"
       />
     </>

@@ -2,12 +2,16 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * moroco menu — nav-menu topics for all routes beginning with `moroco`.
- * Labels match `media/moroco-menu-topics-source.jpg`.
+ * Labels match `media/moroco-menu-topics-source.jpg` (+ Overview at top).
  * Guidebook & Souvenir Map Entries is one topic (wrapped in source).
  * Non-Overview routes: `moroco01`…`moroco06`.
  * Slug spelling is `moroco` (not “morocco”).
  */
 export const MOROCO_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/morocooverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/moroco01",

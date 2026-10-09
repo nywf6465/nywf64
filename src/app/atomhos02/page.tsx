@@ -25,7 +25,7 @@ export default function Atomhos02Page() {
       }}
       nav={<AtomhosNavChrome />}
       previousHref="/atomhos01"
-      overviewHref="/atomhos01"
+      overviewHref="/atomhosoverview"
       nextHref="/atomhos03"
       factsLeft={[
         {

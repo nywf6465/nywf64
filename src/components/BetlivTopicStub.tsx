@@ -16,8 +16,8 @@ export function BetlivTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/betliv01" style={{ color: "#990000" }}>
-            ← Better Living Center
+          <Link href="/betlivoverview" style={{ color: "#990000" }}>
+            ← Better Living Center overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function BetlivTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/betliv01"
+        previousHref="/betlivoverview"
+        overviewHref="/betlivoverview"
         nextHref="/betliv01"
       />
     </>

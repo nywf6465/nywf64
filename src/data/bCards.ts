@@ -8,7 +8,7 @@ export type BCard = FountainsCard;
 
 const BARGREEN_BUFFET: BCard = {
   id: "bargreen-buffet",
-  href: "/barbuf01",
+  href: "/barbufoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Bargreen Buffet",
   // TEXT (to the right of ICON) — exact from barbuf-b-card1-text-user-exact.jpg
@@ -21,7 +21,7 @@ const BARGREEN_BUFFET: BCard = {
 
 const BELGIAN_VILLAGE: BCard = {
   id: "belgian-village",
-  href: "/belvil01",
+  href: "/belviloverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Belgian Village",
   // TEXT (to the right of ICON) — exact from belvil-b-card2-text-user-exact.jpg
@@ -34,7 +34,7 @@ const BELGIAN_VILLAGE: BCard = {
 
 const BELL_SYSTEM: BCard = {
   id: "bell-system",
-  href: "/bell01",
+  href: "/belloverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Bell System",
   // TEXT (to the right of ICON) — exact from bell-b-card3-text-user-exact.jpg
@@ -47,7 +47,7 @@ const BELL_SYSTEM: BCard = {
 
 const BERLIN: BCard = {
   id: "berlin",
-  href: "/berlin01",
+  href: "/berlinoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Berlin",
   // TEXT (to the right of ICON) — exact from berlin-b-card4-text-user-exact.jpg
@@ -60,7 +60,7 @@ const BERLIN: BCard = {
 
 const BETTER_LIVING_CENTER: BCard = {
   id: "better-living-center",
-  href: "/betliv01",
+  href: "/betlivoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Better Living Center",
   // TEXT (to the right of ICON) — exact from betliv-b-card5-text-user-exact.jpg
@@ -73,7 +73,7 @@ const BETTER_LIVING_CENTER: BCard = {
 
 const BILLY_GRAHAM: BCard = {
   id: "billy-graham",
-  href: "/bilgra01",
+  href: "/bilgraoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Billy Graham",
   // TEXT (to the right of ICON) — exact from bilgra-b-card6-text-user-exact.jpg
@@ -86,7 +86,7 @@ const BILLY_GRAHAM: BCard = {
 
 const BOUNTY: BCard = {
   id: "bounty",
-  href: "/bounty01",
+  href: "/bountyoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Bounty",
   // TEXT (to the right of ICON) — exact from bounty-b-card-text-user-exact.jpg
@@ -99,7 +99,7 @@ const BOUNTY: BCard = {
 
 const BOURBON_STREET: BCard = {
   id: "bourbon-street",
-  href: "/boustr01",
+  href: "/boustroverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Bourbon Street",
   // TEXT (to the right of ICON) — exact from boustr-b-card-text-user-exact.jpg
@@ -112,7 +112,7 @@ const BOURBON_STREET: BCard = {
 
 const BOY_SCOUTS_OF_AMERICA: BCard = {
   id: "boy-scouts-of-america",
-  href: "/boysco01",
+  href: "/boyscooverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Boy Scouts of America",
   // TEXT (to the right of ICON) — exact from boysco-b-card-text-user-exact.jpg
@@ -125,7 +125,7 @@ const BOY_SCOUTS_OF_AMERICA: BCard = {
 
 const BRASS_RAIL_FOOD_SERVICES: BCard = {
   id: "brass-rail-food-services",
-  href: "/brarai01",
+  href: "/braraioverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "Brass Rail Food Services",
   // TEXT (to the right of ICON) — exact from brarai-b-card-text-user-exact.jpg
@@ -138,7 +138,7 @@ const BRASS_RAIL_FOOD_SERVICES: BCard = {
 
 const BRITISH_LION_PUB: BCard = {
   id: "british-lion-pub",
-  href: "/brilion01",
+  href: "/brilionoverview",
   // DESCRIPTION (italic under ICON) — exact
   title: "British Lion Pub",
   // TEXT (to the right of ICON) — exact from brilion-b-card-text-user-exact.jpg

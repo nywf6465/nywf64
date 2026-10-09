@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * General Foods Arches menu — nav-menu topics for all routes beginning with `genfoo`.
- * Labels match `media/genfoo-menu-topics-source.jpg`.
+ * Labels match `media/genfoo-menu-topics-source.jpg` (+ Overview at top).
  * Non-Overview routes: `genfoo01`…`genfoo10`.
  */
 export const GENFOO_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/genfoooverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/genfoo01",

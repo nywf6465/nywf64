@@ -16,8 +16,8 @@ export function FiestaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/fiesta01" style={{ color: "#990000" }}>
-            ← Fiesta
+          <Link href="/fiestaoverview" style={{ color: "#990000" }}>
+            ← Fiesta overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function FiestaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/fiesta01"
+        previousHref="/fiestaoverview"
+        overviewHref="/fiestaoverview"
         nextHref="/fiesta01"
       />
     </>

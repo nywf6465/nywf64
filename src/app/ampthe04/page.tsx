@@ -88,8 +88,8 @@ export default function Ampthe04Page() {
       <Nav2Bar
         previousHref="/ampthe03"
         explicitPrevious
-        overviewHref="/ampthe01"
-        nextHref="/ampthe01"
+        overviewHref="/amptheoverview"
+        nextHref="/amptheoverview"
       />
     </>
   );

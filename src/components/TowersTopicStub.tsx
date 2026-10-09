@@ -16,8 +16,8 @@ export function TowersTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/towers01" style={{ color: "#990000" }}>
-            ← Entrance Towers
+          <Link href="/towersoverview" style={{ color: "#990000" }}>
+            ← Entrance Towers overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function TowersTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/towers01"
+        previousHref="/towersoverview"
+        overviewHref="/towersoverview"
         nextHref="/towers01"
       />
     </>

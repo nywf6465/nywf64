@@ -16,8 +16,8 @@ export function HougtTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/hougt01" style={{ color: "#990000" }}>
-            ← House of Good Taste
+          <Link href="/hougtoverview" style={{ color: "#990000" }}>
+            ← House of Good Taste overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function HougtTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/hougt01"
+        previousHref="/hougtoverview"
+        overviewHref="/hougtoverview"
         nextHref="/hougt01"
       />
     </>

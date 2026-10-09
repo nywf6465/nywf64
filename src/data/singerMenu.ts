@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Singer Bowl menu — nav-menu topics for all routes beginning with `singer`.
- * Labels match the singer-menu-topics mockup.
+ * Labels match the singer-menu-topics mockup; Overview at top.
  * Non-Overview routes: `singer01`…`singer10`.
  */
 export const SINGER_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/singeroverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/singer01",

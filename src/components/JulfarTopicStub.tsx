@@ -16,8 +16,8 @@ export function JulfarTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/julfar01" style={{ color: "#990000" }}>
-            ← Julimar Farm
+          <Link href="/julfaroverview" style={{ color: "#990000" }}>
+            ← Julimar Farm overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function JulfarTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/julfar01"
+        previousHref="/julfaroverview"
+        overviewHref="/julfaroverview"
         nextHref="/julfar01"
       />
     </>

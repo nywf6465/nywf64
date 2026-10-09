@@ -8,7 +8,7 @@ export type ECard = FountainsCard;
 
 const EASTERN_AIR_LINES: ECard = {
   id: "eastern-air-lines",
-  href: "/eastern01",
+  href: "/easternoverview",
   // DESCRIPTION (italic under ICON) — exact icon name (trimmed trailing space)
   title: "Eastern Air Lines",
   // TEXT (to the right of ICON) — exact from easternoverview/06-e-card-text.jpg
@@ -21,7 +21,7 @@ const EASTERN_AIR_LINES: ECard = {
 
 const EASTMAN_KODAK: ECard = {
   id: "eastman-kodak",
-  href: "/easkod01",
+  href: "/easkodoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Eastman Kodak",
   // TEXT (to the right of ICON) — exact from kodakoverview/06-e-card-text.jpg
@@ -34,7 +34,7 @@ const EASTMAN_KODAK: ECard = {
 
 const ENTRANCE_BUILDING: ECard = {
   id: "entrance-building",
-  href: "/entbui01",
+  href: "/entbuioverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Entrance Building",
   // TEXT (to the right of ICON) — exact from entbuioverview/06-e-card-text.jpg
@@ -47,7 +47,7 @@ const ENTRANCE_BUILDING: ECard = {
 
 const ENTRANCE_TOWERS: ECard = {
   id: "entrance-towers",
-  href: "/towers01",
+  href: "/towersoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Entrance Towers",
   // TEXT (to the right of ICON) — exact from towersoverview/06-e-card-text.jpg
@@ -60,7 +60,7 @@ const ENTRANCE_TOWERS: ECard = {
 
 const EQUITABLE_LIFE: ECard = {
   id: "equitable-life",
-  href: "/equit01",
+  href: "/equitoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Equitable Life Assurance Society of the United States",
   // TEXT (to the right of ICON) — exact from equitoverview/06-e-card-text.jpg

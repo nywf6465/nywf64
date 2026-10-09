@@ -16,8 +16,8 @@ export function HonkonTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/honkon01" style={{ color: "#990000" }}>
-            ← Hong Kong
+          <Link href="/honkonoverview" style={{ color: "#990000" }}>
+            ← Hong Kong overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function HonkonTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/honkon01"
+        previousHref="/honkonoverview"
+        overviewHref="/honkonoverview"
         nextHref="/honkon01"
       />
     </>

@@ -16,8 +16,8 @@ export function PorautTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/poraut01" style={{ color: "#990000" }}>
-            ← Port Authority Heliport
+          <Link href="/porautoverview" style={{ color: "#990000" }}>
+            ← Port Authority Heliport overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function PorautTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/poraut01"
+        previousHref="/porautoverview"
+        overviewHref="/porautoverview"
         nextHref="/poraut01"
       />
     </>

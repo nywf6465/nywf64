@@ -30,7 +30,7 @@ export default function Belvil06Page() {
       }}
       nav={<BelvilNavChrome />}
       previousHref="/belvil05"
-      overviewHref="/belvil01"
+      overviewHref="/belviloverview"
       nextHref="/belvil07"
       cover={{
         src: "/images/belvil06/sales-brochure-cover.jpg",

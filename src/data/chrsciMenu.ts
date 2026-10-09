@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Chrsci menu — nav-menu topics for all routes beginning with `chrsci`.
- * Labels match the chrsci-menu-topics mockup.
+ * Labels match the chrsci-menu-topics mockup; Overview at top.
  * Non-Overview routes: `chrsci01`…`chrsci13`.
  */
 export const CHRSCI_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/chrscioverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/chrsci01",

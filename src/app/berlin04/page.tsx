@@ -27,7 +27,7 @@ export default function Berlin04Page() {
       }}
       nav={<BerlinNavChrome />}
       previousHref="/berlin03"
-      overviewHref="/berlin01"
+      overviewHref="/berlinoverview"
       nextHref="/berlin05"
       cover={{
         src: "/images/berlin04/pavilion-guide-i-cover.jpg",

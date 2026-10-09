@@ -16,8 +16,8 @@ export function AllstaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/allsta01" style={{ color: "#990000" }}>
-            ← All-State Properties & Macy&apos;s
+          <Link href="/allstaoverview" style={{ color: "#990000" }}>
+            ← All-State Properties & Macy&apos;s overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function AllstaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/allsta01"
+        previousHref="/allstaoverview"
+        overviewHref="/allstaoverview"
         nextHref="/allsta01"
       />
     </>

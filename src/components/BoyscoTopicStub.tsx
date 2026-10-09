@@ -16,8 +16,8 @@ export function BoyscoTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/boysco01" style={{ color: "#990000" }}>
-            ← Boy Scouts of America
+          <Link href="/boyscooverview" style={{ color: "#990000" }}>
+            ← Boy Scouts of America overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function BoyscoTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/boysco01"
+        previousHref="/boyscooverview"
+        overviewHref="/boyscooverview"
         nextHref="/boysco01"
       />
     </>

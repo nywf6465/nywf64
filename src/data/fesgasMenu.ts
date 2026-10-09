@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Festival of Gas menu — nav-menu topics for all routes beginning with `fesgas`.
- * Labels match `media/fesgasoverview/04-menu-topics.jpg`.
+ * Labels match `media/fesgasoverview/04-menu-topics.jpg` (+ Overview at top).
  * Non-Overview routes: `fesgas01`…`fesgas14`.
  */
 export const FESGAS_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/fesgasoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/fesgas01",
