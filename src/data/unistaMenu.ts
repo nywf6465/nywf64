@@ -7,6 +7,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const UNISTA_MENU_TOPICS: AttractionTopic[] = [
   {
+    label: "Overview",
+    href: "/unistaoverview",
+  },
+  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/unista01",
   },

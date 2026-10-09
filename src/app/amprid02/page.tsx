@@ -27,7 +27,7 @@ export default function Amprid02Page() {
       }}
       nav={<AmpridNavChrome />}
       previousHref="/amprid01"
-      overviewHref="/amprid01"
+      overviewHref="/ampridoverview"
       nextHref="/amprid03"
       factsLeft={[
         {

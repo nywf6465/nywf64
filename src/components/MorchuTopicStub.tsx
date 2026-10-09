@@ -16,8 +16,8 @@ export function MorchuTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/morchu01" style={{ color: "#990000" }}>
-            ← Mormon Church
+          <Link href="/morchuoverview" style={{ color: "#990000" }}>
+            ← Mormon Church overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function MorchuTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/morchu01"
+        previousHref="/morchuoverview"
+        overviewHref="/morchuoverview"
         nextHref="/morchu01"
       />
     </>

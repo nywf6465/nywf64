@@ -25,6 +25,7 @@ export default function Alaska01Page() {
         height: 823,
       }}
       nav={<AlaskaNavChrome />}
+      previousHref="/alaskaoverview"
       nextHref="/alaska02"
       guide1964={{
         cover: {

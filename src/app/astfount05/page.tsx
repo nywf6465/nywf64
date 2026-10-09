@@ -31,8 +31,8 @@ export default function Astfount05Page() {
       }}
       nav={<AstfountNavChrome />}
       previousHref="/astfount04"
-      overviewHref="/astfount01"
-      nextHref="/astfount01"
+      overviewHref="/astfountoverview"
+      nextHref="/astfountoverview"
       cover={{
         src: "/images/astfount05/lighting-article-cover.jpg",
         width: 200,

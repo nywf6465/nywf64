@@ -26,8 +26,8 @@ export default function Atomhos03Page() {
       }}
       nav={<AtomhosNavChrome />}
       previousHref="/atomhos02"
-      overviewHref="/atomhos01"
-      nextHref="/atomhos01"
+      overviewHref="/atomhosoverview"
+      nextHref="/atomhosoverview"
       sections={[
         {
           heading: "Fairgoer Photographs",

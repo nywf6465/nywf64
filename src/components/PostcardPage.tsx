@@ -55,7 +55,7 @@ export type PostcardPageProps = {
   };
   nav: ReactNode;
   entries: PostcardEntry[];
-  previousHref?: string;
+  previousHref: string;
   nextHref: string;
   overviewHref?: string;
   titleId?: string;
@@ -162,7 +162,7 @@ export function PostcardPage({
 
       <Nav2Bar
         previousHref={previousHref}
-        explicitPrevious={Boolean(previousHref)}
+        explicitPrevious
         overviewHref={overviewHref}
         nextHref={nextHref}
       />

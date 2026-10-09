@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * West Virginia menu — nav-menu topics for all routes beginning with `wesvir`.
- * Labels match uploaded menu topics.
+ * Labels match uploaded menu topics (+ Overview at top).
  * Non-Overview routes: `wesvir01`…`wesvir08`.
  */
 export const WESVIR_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/wesviroverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/wesvir01",

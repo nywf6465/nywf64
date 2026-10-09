@@ -9,7 +9,7 @@ export type WCard = FountainsCard;
 export const W_CARDS: WCard[] = [
   {
     id: "walters-international-wax-museum",
-    href: "/walwax01",
+    href: "/walwaxoverview",
     title: "Walter's International Wax Museum",
     body: "Figures in this collection of life-sized images range from Lady Godiva to the Beatles.",
     pavilionSrc: "/images/walwax/walters-international-wax-museum-icon.jpg",
@@ -19,7 +19,7 @@ export const W_CARDS: WCard[] = [
     },
   {
     id: "west-virginia",
-    href: "/wesvir01",
+    href: "/wesviroverview",
     title: "West Virginia",
     body: "Highlights include a trip through a coal mine, an exhibition of glassblowing and a chance to win a mountaintop vacation home.",
     pavilionSrc: "/images/wesvir/west-virginia-icon.jpg",
@@ -29,7 +29,7 @@ export const W_CARDS: WCard[] = [
     },
   {
     id: "westinghouse",
-    href: "/weshou01",
+    href: "/weshouoverview",
     title: "Westinghouse",
     body: "The heart of the exhibit is a torpedo-shaped Time Capsule, suspended over a reflecting pool.",
     pavilionSrc: "/images/weshou/westinghouse-icon.jpg",
@@ -39,7 +39,7 @@ export const W_CARDS: WCard[] = [
     },
   {
     id: "wisconsin",
-    href: "/wisconsin01",
+    href: "/wisconsinoverview",
     title: "Wisconsin",
     body: "A big, stylized tepee rises above state exhibits, including the world's largest cheese.",
     pavilionSrc: "/images/wisconsin/wisconsin-icon.jpg",
@@ -49,7 +49,7 @@ export const W_CARDS: WCard[] = [
     },
   {
     id: "world-of-food",
-    href: "/worfoo01",
+    href: "/worfoooverview",
     title: "World of Food",
     body: "The World of Food pavilion was to have housed exhibits relating to nutrition and the food industry. The pavillion was started, steel framework was erected, but was never completed.",
     pavilionSrc: "/images/worfoo/world-of-food-icon.jpg",
@@ -59,7 +59,7 @@ export const W_CARDS: WCard[] = [
     },
   {
     id: "worlds-fair-marina",
-    href: "/wfmar01",
+    href: "/wfmaroverview",
     title: "World's Fair Marina",
     body: "Fairgoers can watch yachtsmen and small-boat buffs at work, and tour a Coast Guard exhibit.",
     pavilionSrc: "/images/wfmar/worlds-fair-marina-icon.jpg",
@@ -69,7 +69,7 @@ export const W_CARDS: WCard[] = [
     },
   {
     id: "worlds-fair-pavilion",
-    href: "/wfpav01",
+    href: "/wfpavoverview",
     title: "World's Fair Pavilion",
     body: "This is the Fair's major indoor assembly hall. The light latticework structure is a geodesic dome composed of 1,250 interconnected pieces of aluminum tubing.",
     pavilionSrc: "/images/wfpav/worlds-fair-pavilion-icon.jpg",

@@ -16,8 +16,8 @@ export function MontanaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/montana01" style={{ color: "#990000" }}>
-            ← Montana
+          <Link href="/montanaoverview" style={{ color: "#990000" }}>
+            ← Montana overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function MontanaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/montana01"
+        previousHref="/montanaoverview"
+        overviewHref="/montanaoverview"
         nextHref="/montana01"
       />
     </>

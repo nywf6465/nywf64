@@ -16,8 +16,8 @@ export function TwothoTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/twotho01" style={{ color: "#990000" }}>
-            ← Two Thousand Tribes
+          <Link href="/twothooverview" style={{ color: "#990000" }}>
+            ← Two Thousand Tribes overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function TwothoTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/twotho01"
+        previousHref="/twothooverview"
+        overviewHref="/twothooverview"
         nextHref="/twotho01"
       />
     </>

@@ -16,8 +16,8 @@ export function HeartlandTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/heartland01" style={{ color: "#990000" }}>
-            ← Heartland States U.S.A.
+          <Link href="/heartlandoverview" style={{ color: "#990000" }}>
+            ← Heartland States U.S.A. overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function HeartlandTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/heartland01"
+        previousHref="/heartlandoverview"
+        overviewHref="/heartlandoverview"
         nextHref="/heartland01"
       />
     </>

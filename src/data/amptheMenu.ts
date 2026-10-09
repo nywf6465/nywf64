@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Ampthe menu — nav-menu topics for all routes beginning with `ampthe`.
- * Labels match the ampthe-menu-topics mockup.
+ * Labels match the ampthe-menu-topics mockup; Overview at top.
  * Non-Overview routes: `ampthe01`…`ampthe04`.
  */
 export const AMPTHE_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/amptheoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/ampthe01",

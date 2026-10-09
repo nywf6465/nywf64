@@ -2,11 +2,15 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Spacpark menu — nav-menu topics for all routes beginning with `spacpark`.
- * Labels match the spacpark-menu-topics mockup.
+ * Labels match the spacpark-menu-topics mockup; Overview at top.
  * Non-Overview routes: `spacpark01`…`spacpark12`.
  * Italic *The Space Age* via `parts` on spacpark06.
  */
 export const SPACPARK_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/spacparkoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/spacpark01",

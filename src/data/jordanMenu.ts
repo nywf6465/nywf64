@@ -9,6 +9,10 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const JORDAN_MENU_TOPICS: AttractionTopic[] = [
   {
+    label: "Overview",
+    href: "/jordanoverview",
+  },
+  {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/jordan01",
   },

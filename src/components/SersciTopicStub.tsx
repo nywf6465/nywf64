@@ -16,8 +16,8 @@ export function SersciTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/sersci01" style={{ color: "#990000" }}>
-            ← Sermons from Science
+          <Link href="/serscioverview" style={{ color: "#990000" }}>
+            ← Sermons from Science overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function SersciTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/sersci01"
+        previousHref="/serscioverview"
+        overviewHref="/serscioverview"
         nextHref="/sersci01"
       />
     </>

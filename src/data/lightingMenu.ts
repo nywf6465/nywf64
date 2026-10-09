@@ -6,6 +6,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  * Non-Overview routes: `lighting01`…`lighting12`.
  */
 export const LIGHTING_MENU_TOPICS: AttractionTopic[] = [
+  { label: "Overview", href: "/lightingoverview" },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/lighting01",

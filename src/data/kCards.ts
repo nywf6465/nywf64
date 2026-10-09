@@ -8,7 +8,7 @@ export type KCard = FountainsCard;
 
 const KIDLAN: KCard = {
   id: "kidlan",
-  href: "/kidlan01",
+  href: "/kidlanoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Kiddyland",
   // TEXT (to the right of ICON) — exact from kidlan-card-text-source.jpg
@@ -22,7 +22,7 @@ const KIDLAN: KCard = {
 
 const KOREA: KCard = {
   id: "korea",
-  href: "/korea01",
+  href: "/koreaoverview",
   // DESCRIPTION (italic under ICON) — exact registered icon name
   title: "Republic of Korea",
   // TEXT (to the right of ICON) — exact from korea-card-text-source.jpg

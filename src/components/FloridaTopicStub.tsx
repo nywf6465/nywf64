@@ -19,8 +19,8 @@ export function FloridaTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/floridaguidebook" style={{ color: "#990000" }}>
-            ← Florida
+          <Link href="/floridaoverview" style={{ color: "#990000" }}>
+            ← Florida overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -31,7 +31,8 @@ export function FloridaTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/floridaguidebook"
+        previousHref="/floridaoverview"
+        overviewHref="/floridaoverview"
         nextHref="/florida01"
       />
     </>

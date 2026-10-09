@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Port Authority Heliport menu — topics for routes beginning with `poraut`.
- * Labels match the poraut menu-topics mockup.
+ * Labels match the poraut menu-topics mockup; Overview at top.
  * Non-Overview routes: `poraut01`…`poraut10`.
  */
 export const PORAUT_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/porautoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/poraut01",

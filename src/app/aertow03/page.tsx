@@ -26,8 +26,8 @@ export default function Aertow03Page() {
       }}
       nav={<AertowNavChrome />}
       previousHref="/aertow02"
-      overviewHref="/aertow01"
-      nextHref="/aertow01"
+      overviewHref="/aertowoverview"
+      nextHref="/aertowoverview"
       sections={[
         {
           heading: "Commercial Photographs",

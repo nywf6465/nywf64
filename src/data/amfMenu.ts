@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * amf menu — nav-menu topics for all routes beginning with `amf`.
- * Labels match `media/amf-menu-topics-source.jpg`.
+ * Labels match `media/amf-menu-topics-source.jpg` (+ Overview at top).
  * Non-Overview routes: `amf01`…`amf11`.
  */
 export const AMF_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/amfoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/amf01",

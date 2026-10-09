@@ -258,8 +258,8 @@ export default function Austria08Page() {
       <Nav2Bar
         previousHref="/austria07"
         explicitPrevious
-        overviewHref="/austria01"
-        nextHref="/austria01"
+        overviewHref="/austriaoverview"
+        nextHref="/austriaoverview"
       />
     </>
   );

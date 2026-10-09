@@ -16,8 +16,8 @@ export function EquitTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/equit01" style={{ color: "#990000" }}>
-            ← Equitable Life
+          <Link href="/equitoverview" style={{ color: "#990000" }}>
+            ← Equitable Life overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function EquitTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/equit01"
+        previousHref="/equitoverview"
+        overviewHref="/equitoverview"
         nextHref="/equit01"
       />
     </>

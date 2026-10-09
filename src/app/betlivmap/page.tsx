@@ -68,7 +68,7 @@ export default function BetlivMapPage() {
       <Nav2Bar
         previousHref="/betliv01"
         explicitPrevious
-        overviewHref="/betliv01"
+        overviewHref="/betlivoverview"
         nextHref="/betliv02"
       />
     </>

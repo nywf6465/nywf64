@@ -16,8 +16,8 @@ export function AmpridTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/amprid01" style={{ color: "#990000" }}>
-            ← Amphicar Ride
+          <Link href="/ampridoverview" style={{ color: "#990000" }}>
+            ← Amphicar Ride overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function AmpridTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/amprid01"
+        previousHref="/ampridoverview"
+        overviewHref="/ampridoverview"
         nextHref="/amprid01"
       />
     </>

@@ -16,8 +16,8 @@ export function PennsyTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/pennsylvania01" style={{ color: "#990000" }}>
-            ← Pennsylvania
+          <Link href="/pennsyoverview" style={{ color: "#990000" }}>
+            ← Pennsylvania overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function PennsyTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/pennsylvania01"
+        previousHref="/pennsyoverview"
+        overviewHref="/pennsyoverview"
         nextHref="/pennsylvania01"
       />
     </>

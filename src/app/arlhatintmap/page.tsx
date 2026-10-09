@@ -68,7 +68,7 @@ export default function ArlhatIntMapPage() {
       <Nav2Bar
         previousHref="/arlhat01"
         explicitPrevious
-        overviewHref="/arlhat01"
+        overviewHref="/arlhatoverview"
         nextHref="/arlhat02"
       />
     </>

@@ -8,7 +8,7 @@ export type FCard = FountainsCard;
 
 const FESTIVAL_OF_GAS: FCard = {
   id: "festival-of-gas",
-  href: "/fesgas01",
+  href: "/fesgasoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Festival of Gas",
   // TEXT (to the right of ICON) — exact from fesgasoverview/06-f-card-text.jpg
@@ -21,7 +21,7 @@ const FESTIVAL_OF_GAS: FCard = {
 
 const FIESTA: FCard = {
   id: "fiesta",
-  href: "/fiesta01",
+  href: "/fiestaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Fiesta",
   // TEXT (to the right of ICON) — exact from fiesta-f-card-text-source.jpg
@@ -34,7 +34,7 @@ const FIESTA: FCard = {
 
 const FINE_ARTS_PAVILION: FCard = {
   id: "fine-arts-pavilion",
-  href: "/finart01",
+  href: "/finartoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Fine Arts Pavilion",
   // TEXT (to the right of ICON) — exact from finart-f-card-text-source.jpg
@@ -47,7 +47,7 @@ const FINE_ARTS_PAVILION: FCard = {
 
 const FIRST_NATIONAL_CITY_BANK: FCard = {
   id: "first-national-city-bank",
-  href: "/firnat01",
+  href: "/firnatoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "First National City Bank",
   // TEXT (to the right of ICON) — exact from firnat-f-card-text-source.jpg
@@ -60,7 +60,7 @@ const FIRST_NATIONAL_CITY_BANK: FCard = {
 
 const FLORIDA: FCard = {
   id: "florida",
-  href: "/floridaguidebook",
+  href: "/floridaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Florida",
   // TEXT (to the right of ICON) — exact from florida-f-card-text-source.jpg
@@ -73,7 +73,7 @@ const FLORIDA: FCard = {
 
 const FLORIDA_CITRUS_WATER_SKI_SHOW: FCard = {
   id: "florida-citrus-water-ski-show",
-  href: "/flowatski01",
+  href: "/flowatskioverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Florida Citrus Water Ski Show",
   // TEXT (to the right of ICON) — exact from flowatski-f-card-text-source.jpg
@@ -86,7 +86,7 @@ const FLORIDA_CITRUS_WATER_SKI_SHOW: FCard = {
 
 const FLUME_RIDE: FCard = {
   id: "flume-ride",
-  href: "/logflu01",
+  href: "/logfluoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Flume Ride",
   // TEXT (to the right of ICON) — exact from logflu-f-card-text-source.jpg
@@ -99,7 +99,7 @@ const FLUME_RIDE: FCard = {
 
 const FORD: FCard = {
   id: "ford",
-  href: "/ford01",
+  href: "/fordoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Ford",
   // TEXT (to the right of ICON) — exact from ford-f-card-text-source.jpg
@@ -112,7 +112,7 @@ const FORD: FCard = {
 
 const FORMICA: FCard = {
   id: "formica",
-  href: "/formica01",
+  href: "/formicaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Formica",
   // TEXT (to the right of ICON) — exact from formica-f-card-text-source.jpg
@@ -125,7 +125,7 @@ const FORMICA: FCard = {
 
 const FOUNTAIN_OF_PROGRESS_NORTH: FCard = {
   id: "nprogfount",
-  href: "/nprogfount01",
+  href: "/nprogfountoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Fountain of Progress North",
   // TEXT (to the right of ICON) — exact from founorn-f-card-text-source.jpg
@@ -138,7 +138,7 @@ const FOUNTAIN_OF_PROGRESS_NORTH: FCard = {
 
 const FOUNTAIN_OF_PROGRESS_SOUTH: FCard = {
   id: "sprogfount",
-  href: "/sprogfount01",
+  href: "/sprogfountoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Fountain of Progress South",
   // TEXT (to the right of ICON) — exact from sprogfount-f-card-text-source.jpg
@@ -151,7 +151,7 @@ const FOUNTAIN_OF_PROGRESS_SOUTH: FCard = {
 
 const FOUNTAIN_OF_THE_CONTINENTS: FCard = {
   id: "foucon",
-  href: "/foucon01",
+  href: "/fouconoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Fountain of the Continents",
   // TEXT (to the right of ICON) — exact from foucon-f-card-text-source.jpg
@@ -164,7 +164,7 @@ const FOUNTAIN_OF_THE_CONTINENTS: FCard = {
 
 const FOUNTAINS_OF_THE_FAIRS: FCard = {
   id: "foufair",
-  href: "/Foucault01",
+  href: "/foufaioverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Fountains of the Fairs",
   // TEXT (to the right of ICON) — revised plural from foufair-f-card-text-source.jpg
@@ -177,7 +177,7 @@ const FOUNTAINS_OF_THE_FAIRS: FCard = {
 
 const FOUNTAIN_OF_THE_PLANETS: FCard = {
   id: "foupla",
-  href: "/foupla01",
+  href: "/fouplaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Fountain of the Planets",
   // TEXT (to the right of ICON) — exact from fouplan-f-card-text-source.jpg
@@ -190,7 +190,7 @@ const FOUNTAIN_OF_THE_PLANETS: FCard = {
 
 const FRANCE: FCard = {
   id: "france",
-  href: "/france01",
+  href: "/franceoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "France",
   // TEXT (to the right of ICON) — exact from france-f-card-text-source.jpg
@@ -203,7 +203,7 @@ const FRANCE: FCard = {
 
 const FUNLAND: FCard = {
   id: "funlan",
-  href: "/funlan01",
+  href: "/funlanoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
   title: "Funland",
   // TEXT (to the right of ICON) — exact from funlan-f-card-text-source.jpg

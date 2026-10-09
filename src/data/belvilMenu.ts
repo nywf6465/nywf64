@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Belvil menu — nav-menu topics for all routes beginning with `belvil`.
- * Labels match the belvil-menu-topics mockup.
+ * Labels match the belvil-menu-topics mockup; Overview at top.
  * Non-Overview routes: `belvil01`…`belvil08`.
  */
 export const BELVIL_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/belviloverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/belvil01",

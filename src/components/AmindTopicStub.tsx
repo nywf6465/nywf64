@@ -16,8 +16,8 @@ export function AmindTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/amind01" style={{ color: "#990000" }}>
-            ← American Indian Exposition
+          <Link href="/amindoverview" style={{ color: "#990000" }}>
+            ← American Indian Exposition overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function AmindTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/amind01"
+        previousHref="/amindoverview"
+        overviewHref="/amindoverview"
         nextHref="/amind01"
       />
     </>

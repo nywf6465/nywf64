@@ -27,6 +27,7 @@ export default function Brarai01Page() {
         height: 825,
       }}
       nav={<BraraiNavChrome />}
+      previousHref="/braraioverview"
       nextHref="/brarai02"
       guide1964={{
         cover: {

@@ -68,7 +68,7 @@ export default function AertowMapPage() {
       <Nav2Bar
         previousHref="/aertow01"
         explicitPrevious
-        overviewHref="/aertow01"
+        overviewHref="/aertowoverview"
         nextHref="/aertow02"
       />
     </>

@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Parker Pen menu — nav-menu topics for all routes beginning with `parpen`.
- * Labels match the parpen menu-topics mockup.
+ * Labels match the parpen menu-topics mockup; Overview at top.
  * Non-Overview routes: `parpen01`…`parpen08`.
  */
 export const PARPEN_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/parpenoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/parpen01",

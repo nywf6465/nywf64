@@ -27,6 +27,7 @@ export default function Ampthe01Page() {
         height: 824,
       }}
       nav={<AmptheNavChrome />}
+      previousHref="/amptheoverview"
       nextHref="/ampthe02"
       guide1964={{
         cover: {

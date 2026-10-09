@@ -16,8 +16,8 @@ export function FouconTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/foucon01" style={{ color: "#990000" }}>
-            ← Fountain of the Continents
+          <Link href="/fouconoverview" style={{ color: "#990000" }}>
+            ← Fountain of the Continents overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function FouconTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/foucon01"
+        previousHref="/fouconoverview"
+        overviewHref="/fouconoverview"
         nextHref="/foucon01"
       />
     </>

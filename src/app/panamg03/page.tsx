@@ -26,8 +26,8 @@ export default function Panamg03Page() {
       }}
       nav={<PanamgNavChrome />}
       previousHref="/panamg02"
-      overviewHref="/panamg01"
-      nextHref="/panamg01"
+      overviewHref="/panamgoverview"
+      nextHref="/panamgoverview"
       sections={[
         {
           heading: "Fairgoer Photographs",

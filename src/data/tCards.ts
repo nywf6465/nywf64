@@ -9,7 +9,7 @@ export type TCard = FountainsCard;
 export const T_CARDS: TCard[] = [
   {
     id: "texas-pavilions",
-    href: "/texas01",
+    href: "/texasoverview",
     title: "Texas Pavilions & Music Hall",
     body: '"Friendship at the Fair" is the theme of an exuberant multiple exhibit which has been produced for the state by Dallas showman Angus G. Wynne Jr., in association with Compass Fair, Inc.',
     pavilionSrc: "/images/texas/texas-pavilions-icon.jpg",
@@ -19,7 +19,7 @@ export const T_CARDS: TCard[] = [
   },
   {
     id: "thailand",
-    href: "/thai01",
+    href: "/thaioverview",
     title: "Thailand",
     body: "Inspired by a Buddhist shrine, this ornate pavilion houses the ancient treasures and modern products of an exotic land.",
     pavilionSrc: "/images/thai/thailand-icon.jpg",
@@ -29,7 +29,7 @@ export const T_CARDS: TCard[] = [
   },
   {
     id: "thrill-rides",
-    href: "/thrrid01",
+    href: "/thrridoverview",
     title: "Thrill Rides",
     body: "Three different rides provide the traditional fun of a fair.",
     pavilionSrc: "/images/thrrid/thrill-rides-icon.jpg",
@@ -39,7 +39,7 @@ export const T_CARDS: TCard[] = [
   },
   {
     id: "tiparillo-band-pavilion",
-    href: "/tipband01",
+    href: "/tipbandoverview",
     title: "Tiparillo Band Pavilion",
     body: "Free concerts and dancing are offered at a bandshell and large outdoor dance floor.",
     pavilionSrc: "/images/tipband/tiparillo-band-pavilion-icon.jpg",
@@ -49,7 +49,7 @@ export const T_CARDS: TCard[] = [
   },
   {
     id: "tower-of-light",
-    href: "/twrlit01",
+    href: "/twrlitoverview",
     title: "Tower of Light",
     body: "A musical show depicts the benefits of electricity. Pointing skyward from the pavilion is the world's most powerful searchlight.",
     pavilionSrc: "/images/twrlit/tower-of-light-icon.jpg",
@@ -59,7 +59,7 @@ export const T_CARDS: TCard[] = [
   },
   {
     id: "transportation-and-travel",
-    href: "/trantrav01",
+    href: "/trantravoverview",
     title: "Transportation & Travel",
     body: "All modes of travel, from underwater to lunar, are explored in exhibits by various industries and agencies.",
     pavilionSrc: "/images/trantrav/transportation-and-travel-icon.jpg",
@@ -69,7 +69,7 @@ export const T_CARDS: TCard[] = [
   },
   {
     id: "travelers-insurance",
-    href: "/travelers01",
+    href: "/travelersoverview",
     title: "Travelers Insurance",
     body: "Visitors walk past dioramas that dramatize the story of life on earth, from the first cell to man's leap into space.",
     pavilionSrc: "/images/travelers/travelers-insurance-icon.jpg",
@@ -79,7 +79,7 @@ export const T_CARDS: TCard[] = [
   },
   {
     id: "two-thousand-tribes",
-    href: "/twotho01",
+    href: "/twothooverview",
     title: "Two Thousand Tribes",
     body: "The ancient artifacts and modern progress of tribal groups around the world are shown in a large stylized aboriginal hut.",
     pavilionSrc: "/images/religions/two-thousand-tribes-icon.png",

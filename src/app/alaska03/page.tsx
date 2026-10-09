@@ -25,7 +25,7 @@ export default function Alaska03Page() {
       }}
       nav={<AlaskaNavChrome />}
       previousHref="/alaska02"
-      overviewHref="/alaska01"
+      overviewHref="/alaskaoverview"
       nextHref="/alaska04"
       entries={[
         {

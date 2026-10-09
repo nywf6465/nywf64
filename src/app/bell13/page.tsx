@@ -31,8 +31,8 @@ export default function Bell13Page() {
       }}
       nav={<BellNavChrome />}
       previousHref="/bell12"
-      overviewHref="/bell01"
-      nextHref="/bell01"
+      overviewHref="/belloverview"
+      nextHref="/belloverview"
       cover={{
         src: "/images/bell13/colossal-floating-wing-cover.jpg",
         width: 157,

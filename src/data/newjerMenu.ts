@@ -2,11 +2,15 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * newjer menu — nav-menu topics for all routes beginning with `newjer`.
- * Labels match `media/newjer-menu-topics-source.jpg`.
+ * Labels match `media/newjer-menu-topics-source.jpg` (+ Overview at top).
  * Guidebook & Souvenir Map Entries is one topic (wrapped in source).
  * Non-Overview routes: `newjer01`…`newjer04`.
  */
 export const NEWJER_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/newjeroverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/newjer01",

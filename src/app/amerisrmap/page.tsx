@@ -69,7 +69,7 @@ export default function AmerisrMapPage() {
       <Nav2Bar
         previousHref="/amerisr01"
         explicitPrevious
-        overviewHref="/amerisr01"
+        overviewHref="/amerisroverview"
         nextHref="/amerisr02"
       />
     </>

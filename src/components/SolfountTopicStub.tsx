@@ -16,8 +16,8 @@ export function SolfountTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/solfount01" style={{ color: "#990000" }}>
-            ← Solar Fountain
+          <Link href="/solfountoverview" style={{ color: "#990000" }}>
+            ← Solar Fountain overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function SolfountTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/solfount01"
+        previousHref="/solfountoverview"
+        overviewHref="/solfountoverview"
         nextHref="/solfount01"
       />
     </>

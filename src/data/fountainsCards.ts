@@ -17,7 +17,7 @@ export type FountainsCard = {
 export const FOUNTAINS_CARDS: FountainsCard[] = [
   {
     id: "astral-fountain",
-    href: "/astfount01",
+    href: "/astfountoverview",
     title: "Astral Fountain",
     body: "The Astral Fountain is a 60-foot in diameter fretwork of stars rotating around a 70-foot high column of water.",
     pavilionSrc: "/images/fountains/astral-fountain-icon.png",
@@ -27,7 +27,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "fountain-of-progress-north",
-    href: "/nprogfount01",
+    href: "/nprogfountoverview",
     title: "Fountain of Progress North",
     body: "The Fountain of Progress North is a pool with a spiral layout of water jets featuring a changing water cycle pattern.",
     pavilionSrc: "/images/fountains/fountain-of-progress-north-icon.png",
@@ -37,7 +37,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "fountain-of-progress-south",
-    href: "/sprogfount01",
+    href: "/sprogfountoverview",
     title: "Fountain of Progress South",
     body: "The Fountain of Progress South displays a five-point star layout of water jets with a sunken basin in the center and a series of water streams in the outer area.",
     pavilionSrc: "/images/fountains/fountain-of-progress-south-icon.png",
@@ -47,7 +47,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "fountain-of-the-continents",
-    href: "/foucon01",
+    href: "/fouconoverview",
     title: "Fountain of the Continents ",
     body: "The Fountain of the Continents rings Unisphere in its reflecting pool. The rising and falling of the water streams are meant to suggest the rotation of the globe.",
     pavilionSrc: "/images/fountains/fountain-of-the-continents-icon.png",
@@ -57,7 +57,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "fountains-of-the-fairs",
-    href: "/Foucault01",
+    href: "/foufaioverview",
     title: "Fountains of the Fairs",
     body: "The Fountains of the Fairs in the East and West Pools are arching jets of water directed inward toward the center of the pools.",
     pavilionSrc: "/images/fountains/fountains-of-the-fairs-icon.png",
@@ -67,7 +67,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "fountain-of-the-planets",
-    href: "/foupla01",
+    href: "/fouplaoverview",
     title: "Fountain of the Planets",
     body: "The Fountain of the Planets, largest in the world, shoots 10,000 tons of water as high as 150 feet into the air in ever-changing patterns.",
     pavilionSrc: "/images/fountains/fountain-of-the-planets-icon.png",
@@ -77,7 +77,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "lunar-fountain",
-    href: "/lunfount01",
+    href: "/lunfountoverview",
     title: "Lunar Fountain",
     body: "Parabolic jet streams of water, reaching heights of 30 feet, radiate from 16 nozzles on the top of an elliptical dome.",
     pavilionSrc: "/images/fountains/lunar-fountain-icon.png",
@@ -87,7 +87,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "solar-fountain",
-    href: "/solfount01",
+    href: "/solfountoverview",
     title: "Solar Fountain",
     body: "A central dome supports a 30-foot high column of water while a starburst circles around the dome. Wobbling jets of water surrounding the dome simulate the sun's gases.",
     pavilionSrc: "/images/fountains/solar-fountain-icon.png",
@@ -97,7 +97,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "pool-of-industry",
-    href: "/poolin01",
+    href: "/poolinoverview",
     title: "Pool of Industry ",
     body: "A gigantic symphony of fireworks, water, color and music occurs every evening.",
     pavilionSrc: "/images/fountains/pool-of-industry-icon.png",
@@ -107,7 +107,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "pool-of-reflections",
-    href: "/pooref01",
+    href: "/poorefoverview",
     title: "Pool of Reflections",
     body: "The Pool of Reflections is a series of five water ponds at stepped heights with water flowing from higher to lower levels forming a long cascading type pool.",
     pavilionSrc: "/images/fountains/pool-of-reflections-icon.png",
@@ -117,7 +117,7 @@ export const FOUNTAINS_CARDS: FountainsCard[] = [
   },
   {
     id: "lighting-and-effects",
-    href: "/lighting01",
+    href: "/lightingoverview",
     title: "Lighting and Effects",
     body: "The Fair's spectacular lighting and effects made the Fair a wonderland of color at night",
     bodyItalic: true,

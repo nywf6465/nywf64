@@ -16,8 +16,8 @@ export function CenamerTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/cenamer01" style={{ color: "#990000" }}>
-            ← Central America
+          <Link href="/cenameriverview" style={{ color: "#990000" }}>
+            ← Central America overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function CenamerTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/cenamer01"
+        previousHref="/cenameriverview"
+        overviewHref="/cenameriverview"
         nextHref="/cenamer01"
       />
     </>

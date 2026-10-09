@@ -16,8 +16,8 @@ export function ClairTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/clair01" style={{ color: "#990000" }}>
-            ← Clairol
+          <Link href="/clairoverview" style={{ color: "#990000" }}>
+            ← Clairol overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function ClairTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/clair01"
+        previousHref="/clairoverview"
+        overviewHref="/clairoverview"
         nextHref="/clair01"
       />
     </>

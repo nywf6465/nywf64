@@ -16,8 +16,8 @@ export function CaribbTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/caribb01" style={{ color: "#990000" }}>
-            ← Caribbean
+          <Link href="/caribboverview" style={{ color: "#990000" }}>
+            ← Caribbean overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function CaribbTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/caribb01"
+        previousHref="/caribboverview"
+        overviewHref="/caribboverview"
         nextHref="/caribb01"
       />
     </>

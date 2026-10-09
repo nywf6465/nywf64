@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Pennsylvania menu — topics for `pennsyoverview` and `pennsylvania*` routes.
- * Labels match the pennsy menu-topics mockup.
+ * Labels match the pennsy menu-topics mockup; Overview at top.
  * Non-Overview routes: `pennsylvania01`…`pennsylvania06`.
  */
 export const PENNSY_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/pennsyoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
     href: "/pennsylvania01",

@@ -2,10 +2,14 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Austria menu — nav-menu topics for all routes beginning with `austria`.
- * Labels match the austria-menu-topics mockup.
+ * Labels match the austria-menu-topics mockup; Overview at top.
  * Non-Overview routes: `austria01`…`austria08`.
  */
 export const AUSTRIA_MENU_TOPICS: AttractionTopic[] = [
+  {
+    label: "Overview",
+    href: "/austriaoverview",
+  },
   {
     label: "1964 & 1965 Official Guidebook & Souvenir Map",
     href: "/austria01",

@@ -16,8 +16,8 @@ export function CokeTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/coke01" style={{ color: "#990000" }}>
-            ← Coca-Cola
+          <Link href="/cokeoverview" style={{ color: "#990000" }}>
+            ← Coca-Cola overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -28,7 +28,8 @@ export function CokeTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/coke01"
+        previousHref="/cokeoverview"
+        overviewHref="/cokeoverview"
         nextHref="/coke01"
       />
     </>

@@ -25,7 +25,7 @@ export default function Austria02Page() {
       }}
       nav={<AustriaNavChrome />}
       previousHref="/austria01"
-      overviewHref="/austria01"
+      overviewHref="/austriaoverview"
       nextHref="/austria03"
       factsLeft={[
         {

@@ -16,8 +16,8 @@ export function ConinsTopicStub({ title }: { title: string }) {
         }}
       >
         <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-          <Link href="/conins01" style={{ color: "#990000" }}>
-            ← Continental Insurance
+          <Link href="/coninsoverview" style={{ color: "#990000" }}>
+            ← Continental Insurance overview
           </Link>
         </p>
         <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>
@@ -29,7 +29,8 @@ export function ConinsTopicStub({ title }: { title: string }) {
         </p>
       </main>
       <Nav2Bar
-        overviewHref="/conins01"
+        previousHref="/coninsoverview"
+        overviewHref="/coninsoverview"
         nextHref="/conins01"
       />
     </>

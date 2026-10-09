@@ -30,7 +30,7 @@ export default function Bilgra06Page() {
       }}
       nav={<BilgraNavChrome />}
       previousHref="/bilgra05"
-      overviewHref="/bilgra01"
+      overviewHref="/bilgraoverview"
       nextHref="/bilgra07"
       cover={{
         src: "/images/bilgra06/groundbreaking-cover.jpg",
