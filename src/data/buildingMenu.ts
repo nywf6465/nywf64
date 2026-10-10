@@ -2,8 +2,8 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Building the Fair / building menu — 23 topic cards.
- * Overview + Pages 1–19 (legacy building02–20) + stubs for following
- * pages (legacy building21–23 labels).
+ * Overview + Pages 1–20 (legacy building02–21) + stubs for following
+ * pages (legacy building22–23 labels).
  */
 export const BUILDING_MENU_TOPICS: AttractionTopic[] = [
   {
