@@ -17,7 +17,7 @@ const TOPICS = [
   {
     id: "story",
     title: "The Story of the Fair",
-    href: "/information/story",
+    href: "/fair_story01",
     hoverSrc: "/images/information-hover/story.jpg",
     left: "50.498%",
     top: "1.949%",
