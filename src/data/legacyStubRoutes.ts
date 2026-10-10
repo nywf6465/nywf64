@@ -14877,19 +14877,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
   },
 
 
-  "building17": {
-    slug: "building17",
-    title: 'Miracle in the Meadow IV',
-    metaTitle: 'Miracle in the Meadow IV — Building the Fair — nywf64.com',
-    metaDescription:
-      'Miracle in the Meadow IV — Building the Fair from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "BuildingNavChrome",
-    overviewHref: "/buildingoverview",
-    overviewLabel: "Building the Fair overview",
-    placeholder: "Building the Fair content",
-    previousHref: "/building16",
-    nextHref: "/building18",
-  },
   "building18": {
     slug: "building18",
     title: 'The Spoilers Lose the Day',
