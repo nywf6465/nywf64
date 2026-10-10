@@ -14876,19 +14876,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
-  "intpar09": {
-    slug: "intpar09",
-    title: 'Illustration Sources',
-    metaTitle: 'Illustration Sources — The Hunt for International Exhibitors — nywf64.com',
-    metaDescription:
-      'Illustration Sources — The Hunt for International Exhibitors from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "IntparNavChrome",
-    overviewHref: "/intpar01",
-    overviewLabel: "The Hunt for International Exhibitors",
-    placeholder: "Hunt for International Exhibitors content",
-    previousHref: "/intpar08",
-    nextHref: "/intpar10",
-  },
   "intpar10": {
     slug: "intpar10",
     title: 'Bibliography',
