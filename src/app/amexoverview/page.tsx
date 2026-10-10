@@ -45,7 +45,7 @@ export default function AmexOverviewPage() {
             <p className={styles.sectionTitle}>OVERVIEW</p>
             <p className={styles.body}>
               Featured are banking and travel services, an international
-              &quot;money tree,&quot; and art exhibit and a huge scale model of
+              &quot;money tree,&quot; an art exhibit and a huge scale model of
               the Fair.
             </p>
           </div>
