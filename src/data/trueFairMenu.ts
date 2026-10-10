@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * An Unofficial World’s Fair / true_fair menu — 3 topic cards.
- * Overview + Page 1 (legacy true_fair02) + stub for the following page.
+ * Overview + Page 1 (legacy true_fair02) + Page 2 (legacy true_fair03).
  */
 export const TRUE_FAIR_MENU_TOPICS: AttractionTopic[] = [
   {

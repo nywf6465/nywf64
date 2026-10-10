@@ -14876,21 +14876,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
-  "true_fair02": {
-    slug: "true_fair02",
-    title: "Moses Speaks Out on the BIE",
-    metaTitle:
-      "Moses Speaks Out on the BIE — An Unofficial World’s Fair — nywf64.com",
-    metaDescription:
-      "Moses Speaks Out on the BIE — An Unofficial World’s Fair from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "TrueFairNavChrome",
-    overviewHref: "/true_fairoverview",
-    overviewLabel: "An Unofficial World’s Fair overview",
-    placeholder: "An Unofficial World’s Fair content",
-    previousHref: "/true_fair01",
-    nextHref: "/true_fair03",
-  },
-
 };
 
 export function getLegacyStub(slug: string): LegacyStubRoute | undefined {
