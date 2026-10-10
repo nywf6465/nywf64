@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 /**
  * See the Fair from the Air overview — follows the **overview** prototype
  * (same stack as /aertowoverview / /fair_eraoverview).
- * Shared erahero is reused on later fair_air pages.
+ * Shared airhero is reused on later fair_air pages.
  */
 export default function FairAirOverviewPage() {
   return (
@@ -28,7 +28,7 @@ export default function FairAirOverviewPage() {
           className={`${overviewHeroStyles.frame} ${heroBottomBar.photoFrame}`}
         >
           <Image
-            src="/images/fair_air/erahero.jpg"
+            src="/images/fair_air/airhero.jpg"
             alt="See the Fair from the Air — 1964/1965 New York World’s Fair"
             width={1910}
             height={823}

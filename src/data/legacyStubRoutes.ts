@@ -3330,19 +3330,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/equitoverview",
     nextHref: "/equit01",
   },
-  "fair_air01": {
-    slug: "fair_air01",
-    title: "Photograph 1",
-    metaTitle: "Photograph 1 — See the Fair from the Air — nywf64.com",
-    metaDescription:
-      "Photograph 1 — See the Fair from the Air from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "FairAirNavChrome",
-    overviewHref: "/fair_airoverview",
-    overviewLabel: "See the Fair from the Air overview",
-    placeholder: "See the Fair from the Air photograph",
-    previousHref: "/fair_airoverview",
-    nextHref: "/fair_air02",
-  },
   "fair_air02": {
     slug: "fair_air02",
     title: "Photograph 2",
