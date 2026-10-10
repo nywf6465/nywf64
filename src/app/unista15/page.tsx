@@ -416,66 +416,6 @@ export default function Unista15Page() {
                 <strong>&quot;A World&apos;s Fair Odyssey and An Afternoon of Delight&quot;</strong>
               </p>
             </div>
-            <div className={styles.ruinsBox}>
-              <p>
-                To view the on-line photos of the vandalized Federal Pavilion at Phillip Buehler&apos;s
-                <strong> &quot;Modern Ruins&quot;</strong> website, simply click the following Links:
-              </p>
-              <ul className={styles.ruinsList}>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/uspavilion.html" target="_blank" rel="noopener noreferrer">
-                    U.S. Pavilion
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/eagle.html" target="_blank" rel="noopener noreferrer">
-                    U.S. Entrance
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/courtyard.html" target="_blank" rel="noopener noreferrer">
-                    U.S. Courtyard
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/stairs.html" target="_blank" rel="noopener noreferrer">
-                    Courtyard Steps
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/escalator.html" target="_blank" rel="noopener noreferrer">
-                    Vandalized Escalator
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/journey.html" target="_blank" rel="noopener noreferrer">
-                    &quot;American Journey&quot; Entrance
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/greatness.html" target="_blank" rel="noopener noreferrer">
-                    &quot;Greatness&quot; Exhibit Hall Entrance
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/pyramids.html" target="_blank" rel="noopener noreferrer">
-                    Exhibit Hall
-                  </a>
-                </li>
-                <li>
-                  <a href="http://www.modern-ruins.com/fair/presidents.html" target="_blank" rel="noopener noreferrer">
-                    &quot;Hall of Presidents&quot;
-                  </a>
-                </li>
-              </ul>
-              <p>
-                Click{" "}
-                <a href="http://modern-ruins.com/fair/" target="_blank" rel="noopener noreferrer">
-                  HERE
-                </a>{" "}
-                to view the <strong><em>entire</em></strong> website.
-              </p>
-            </div>
           </TimelineYear>
 
           <TimelineYear year="1977">
