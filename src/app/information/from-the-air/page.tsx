@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Legacy stub path — See the Fair from the Air lives at `/fair_airoverview`. */
-export default function InformationFromTheAirRedirect() {
+/** Legacy Information Booth stub — canonical page is `/fair_airoverview`. */
+export default function Page() {
   redirect("/fair_airoverview");
 }

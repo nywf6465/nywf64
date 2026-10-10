@@ -27,11 +27,11 @@ export function AttractionNavChrome({
   /** Noun in nav bar “EXPLORE THIS …”, e.g. ATTRACTION or PERSON. */
   exploreNoun?: string;
   /**
-   * Full nav-bar explore title (e.g. “Explore Fair Information”).
+   * Full explore control label (e.g. “EXPLORE THE PHOTOS”).
    * When set, replaces the default “EXPLORE THIS {exploreNoun}” text.
    */
   exploreLabel?: string;
-  /** Optional nav menu header; defaults from exploreLabel or exploreNoun. */
+  /** Optional nav menu header; defaults from exploreNoun / exploreLabel. */
   menuTitle?: string;
 }) {
   const [open, setOpen] = useState(false);
@@ -47,8 +47,11 @@ export function AttractionNavChrome({
 
   const resolvedMenuTitle =
     menuTitle ??
-    exploreLabel ??
-    `Explore This ${exploreNoun.charAt(0)}${exploreNoun.slice(1).toLowerCase()}`;
+    (exploreLabel != null
+      ? exploreLabel
+          .toLowerCase()
+          .replace(/\b\w/g, (ch) => ch.toUpperCase())
+      : `Explore This ${exploreNoun.charAt(0)}${exploreNoun.slice(1).toLowerCase()}`);
 
   return (
     <>

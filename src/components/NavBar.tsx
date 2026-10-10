@@ -17,9 +17,8 @@ export type NavBarProps = {
    */
   exploreNoun?: string;
   /**
-   * Full nav-bar explore title (e.g. “Explore Fair Information”).
+   * Full explore control label (e.g. “EXPLORE THE PHOTOS”).
    * When set, replaces the default “EXPLORE THIS {exploreNoun}” text.
-   * Display is uppercased via CSS.
    */
   exploreLabel?: string;
   /**
@@ -47,7 +46,12 @@ export function NavBar({
   const pathname = usePathname() ?? "";
   const pageNumber = pageNumberFromPath(pathname);
   const exploreText = exploreLabel ?? `EXPLORE THIS ${exploreNoun}`;
-  const aria = exploreLabel ?? `Explore this ${exploreNoun.toLowerCase()}`;
+  const aria =
+    exploreLabel != null
+      ? exploreLabel
+          .toLowerCase()
+          .replace(/\b\w/g, (ch) => ch.toUpperCase())
+      : `Explore this ${exploreNoun.toLowerCase()}`;
 
   return (
     <div

@@ -1,22 +1,10 @@
-/* See the Fair from the Air overview — same layout as overview prototype */
+/* The Fair from the Air overview — same layout as overview prototype */
 
 .hero {
   position: relative;
   width: 100%;
   background: #fff;
   margin-top: 0;
-}
-
-.heroFrame {
-  position: relative;
-  width: 100%;
-  line-height: 0;
-}
-
-.heroArt {
-  display: block;
-  width: 100%;
-  height: auto;
 }
 
 .overview {
@@ -61,6 +49,25 @@
   line-height: 1.45;
 }
 
+.brand {
+  font-weight: 700;
+}
+
+.brandNywf {
+  color: #26346e;
+  font-weight: 700;
+}
+
+.brandSixtyFour {
+  color: #990000;
+  font-weight: 700;
+}
+
+.brandDotCom {
+  color: #26346e;
+  font-weight: 700;
+}
+
 .photoWrap {
   position: relative;
   min-width: 0;
@@ -68,7 +75,6 @@
   line-height: 0;
   border: 1px solid #0a0a0a;
   background: #fff;
-  /* Match overview photo (1536×1024). */
   aspect-ratio: 1536 / 1024;
   overflow: hidden;
 }
@@ -77,9 +83,8 @@
   display: block;
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
   object-position: center center;
-  background: #fff;
 }
 
 @media (max-width: 720px) {

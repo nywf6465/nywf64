@@ -259,7 +259,7 @@ export default function Unisph13Page() {
               - the story of the scale models of the Fair. Craig has also
               contributed some spectacular aerial photographs of the Fair that
               can be viewed at{" "}
-              <Link href="/information/from-the-air">
+              <Link href="/fair_airoverview">
                 <em>The Fair from the Air</em>
               </Link>
               . You can contact Craig via{" "}
