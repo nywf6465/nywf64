@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./InformationBoothLinks.module.css";
 
-/** Exact user artwork — base image unchanged. Hover crops only swap navy↔burgundy. */
+/** Exact user artwork — base image unchanged. Hover crops swap navy↔burgundy on the link-symbol circle only; text colors stay put; thumbnails untouched. */
 const TOPICS = [
   {
     id: "facts",
