@@ -103,6 +103,16 @@ export default function Building05Page() {
               </div>
 
               <div className={styles.col}>
+                <figure className={styles.sourceBanner}>
+                  <Image
+                    src="/images/building05/nyt-source-march-1960.jpg"
+                    alt="SOURCE: The New York Times, March 2, 1960"
+                    width={2172}
+                    height={724}
+                    className={styles.sourceBannerImg}
+                    unoptimized
+                  />
+                </figure>
                 <h2 className={styles.headline}>
                   Forecast 70 Million
                   <br />
@@ -204,9 +214,6 @@ export default function Building05Page() {
               </div>
             </div>
             <div className={`${styles.sourceRow} ${styles.sourceRow2}`}>
-              <p className={styles.source}>
-                SOURCE: <em>The New York Times</em>, March 2, 1960
-              </p>
               <p className={styles.source}>
                 SOURCE: <em>New York Daily News</em>, April 18, 1960
               </p>
