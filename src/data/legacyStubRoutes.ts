@@ -3330,19 +3330,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/equitoverview",
     nextHref: "/equit01",
   },
-  "fair_air02": {
-    slug: "fair_air02",
-    title: "Photograph 2",
-    metaTitle: "Photograph 2 — See the Fair from the Air — nywf64.com",
-    metaDescription:
-      "Photograph 2 — See the Fair from the Air from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "FairAirNavChrome",
-    overviewHref: "/fair_airoverview",
-    overviewLabel: "See the Fair from the Air overview",
-    placeholder: "See the Fair from the Air photograph",
-    previousHref: "/fair_air01",
-    nextHref: "/fair_air03",
-  },
   "fair_air03": {
     slug: "fair_air03",
     title: "Photograph 3",
@@ -3900,6 +3887,19 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     overviewLabel: "See the Fair from the Air overview",
     placeholder: "See the Fair from the Air photograph",
     previousHref: "/fair_air44",
+    nextHref: "/fair_air46",
+  },
+  "fair_air46": {
+    slug: "fair_air46",
+    title: "Amusement Area",
+    metaTitle: "Amusement Area — See the Fair from the Air — nywf64.com",
+    metaDescription:
+      "Amusement Area — See the Fair from the Air from the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "FairAirNavChrome",
+    overviewHref: "/fair_airoverview",
+    overviewLabel: "See the Fair from the Air overview",
+    placeholder: "See the Fair from the Air photograph",
+    previousHref: "/fair_air45",
     nextHref: "/fair_airoverview",
   },
   "fesgas01": {
