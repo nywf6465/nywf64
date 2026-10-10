@@ -14877,19 +14877,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
   },
 
 
-  "building19": {
-    slug: "building19",
-    title: 'Operations',
-    metaTitle: 'Operations — Building the Fair — nywf64.com',
-    metaDescription:
-      'Operations — Building the Fair from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "BuildingNavChrome",
-    overviewHref: "/buildingoverview",
-    overviewLabel: "Building the Fair overview",
-    placeholder: "Building the Fair content",
-    previousHref: "/building18",
-    nextHref: "/building20",
-  },
   "building20": {
     slug: "building20",
     title: 'Interim Period',
