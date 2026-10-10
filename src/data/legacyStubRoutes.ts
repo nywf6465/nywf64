@@ -14876,20 +14876,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
-  "fair_story02": {
-    slug: "fair_story02",
-    title: "Photograph Album",
-    metaTitle: "Photograph Album — The Story of the Fair — nywf64.com",
-    metaDescription:
-      "Photograph Album — The Story of the Fair from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "FairStoryNavChrome",
-    overviewHref: "/information",
-    overviewLabel: "The Information Booth",
-    placeholder: "The Story of the Fair content",
-    previousHref: "/fair_story01",
-    nextHref: "/fair_story02",
-  },
-
 };
 
 export function getLegacyStub(slug: string): LegacyStubRoute | undefined {
