@@ -67,7 +67,8 @@
 }
 
 .mosesBox {
-  width: min(37.5rem, 100%);
+  /* Inset from viewport edges so the 1px border stays visible on mobile */
+  width: min(37.5rem, calc(100% - 2rem));
   margin: 0 auto 1.5rem;
   padding: 1rem 1rem 0.75rem;
   box-sizing: border-box;
@@ -131,45 +132,6 @@
 
 .source em {
   font-style: italic;
-}
-
-.visitorNote {
-  width: min(37.5rem, 100%);
-  margin: 0 auto 1.75rem;
-  padding: 0.75rem 1rem;
-  box-sizing: border-box;
-  border: 1px solid #000;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 0.85rem;
-  line-height: 1.5;
-}
-
-.visitorNote strong {
-  font-size: 1.05rem;
-  font-weight: 700;
-}
-
-.visitorNote em {
-  font-style: italic;
-}
-
-.brand {
-  white-space: nowrap;
-}
-
-.brandNywf {
-  color: #191970;
-  font-weight: 700;
-}
-
-.brandSixtyFour {
-  color: maroon;
-  font-weight: 700;
-}
-
-.brandDotCom {
-  color: #191970;
-  font-size: 0.8em;
 }
 
 .essayTitle {
