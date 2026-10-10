@@ -1,22 +1,25 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import Link from "next/link";
 import { FairAirNavChrome } from "@/components/FairAirNavChrome";
 import { Nav2Bar } from "@/components/Nav2Bar";
+import { FAIR_AIR_GALLERY_ITEMS } from "@/data/fairAirGallery";
 import styles from "./fair_air01.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Transportation Area — See the Fair from the Air — nywf64.com",
+  title:
+    "Vintage Publicity Photos — See the Fair from the Air — nywf64.com",
   description:
-    "Transportation Area aerial photograph — See the Fair from the Air at the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Vintage publicity aerial photographs from the Craig Bavaro Collection — See the Fair from the Air at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * See the Fair from the Air — Transportation Area.
- * Body from legacy fair_air02.html (mapped to /fair_air01 as Page 1 after overview).
+ * See the Fair from the Air — photo index.
+ * Body from legacy fair_air01.html (Page 1; 1:1 with legacy numbering).
  *
- * Stack: airhero → FairAirNavChrome → navy title → aerial photo → Nav2Bar.
+ * Stack: airhero → FairAirNavChrome → navy title → thumbnail index → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function FairAir01Page() {
@@ -47,26 +50,45 @@ export default function FairAir01Page() {
       <article className={styles.article} aria-labelledby="fair-air01-title">
         <header className={styles.titleBar}>
           <h1 id="fair-air01-title" className={styles.titleBarMain}>
-            Transportation Area
+            Vintage Publicity Photos from the{" "}
+            <em>Craig Bavaro Collection</em> Show the Fair from the Air
           </h1>
         </header>
 
         <div className={styles.articleInner}>
-          <Image
-            src="/images/fair_air01/aerial01.jpg"
-            alt="Transportation Area"
-            width={1200}
-            height={955}
-            sizes="(max-width: 1200px) 100vw, 1200px"
-            className={styles.photo}
-            unoptimized
-            priority
-          />
-          <p className={styles.caption}>
-            <span className={styles.captionLead}>Transportation Area</span>
-            Featuring the Pavilions of Chrysler, Transportation &amp; Travel,
-            Ford, SKF, US Rubber, Port Authority, Sinclair and others.
+          <p className={styles.instruction}>
+            Navigate this section simply by selecting the thumbnail image to see
+            a much larger image. These very detailed aerial views are in excess
+            of 300K and will be long loading with slower connections.
           </p>
+
+          <ul className={styles.list}>
+            {FAIR_AIR_GALLERY_ITEMS.map((item) => {
+              const href = `/fair_air${String(item.num).padStart(2, "0")}`;
+              return (
+                <li key={item.num} className={styles.row}>
+                  <Link href={href} className={styles.thumbLink}>
+                    <Image
+                      src={`/images/fair_air01/thumbs/${item.thumb}`}
+                      alt={item.alt}
+                      width={150}
+                      height={119}
+                      className={styles.thumb}
+                      unoptimized
+                    />
+                  </Link>
+                  <div className={styles.copy}>
+                    <p className={styles.title}>
+                      <Link href={href}>{item.title}</Link>
+                    </p>
+                    {item.feat ? (
+                      <p className={styles.feat}>{item.feat}</p>
+                    ) : null}
+                  </div>
+                </li>
+              );
+            })}
+          </ul>
         </div>
       </article>
 

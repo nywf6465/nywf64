@@ -7,14 +7,14 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "International Area — See the Fair from the Air — nywf64.com",
+  title: "Transportation Area — See the Fair from the Air — nywf64.com",
   description:
-    "International Area aerial photograph — See the Fair from the Air at the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Transportation Area aerial photograph — See the Fair from the Air at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * See the Fair from the Air — International Area.
- * Body from legacy fair_air03.html (mapped to /fair_air02 as Page 2 after overview).
+ * See the Fair from the Air — Transportation Area.
+ * Body from legacy fair_air02.html (Page 2; 1:1 with legacy numbering).
  *
  * Stack: airhero → FairAirNavChrome → navy title → aerial photo → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -47,25 +47,25 @@ export default function FairAir02Page() {
       <article className={styles.article} aria-labelledby="fair-air02-title">
         <header className={styles.titleBar}>
           <h1 id="fair-air02-title" className={styles.titleBarMain}>
-            International Area
+            Transportation Area
           </h1>
         </header>
 
         <div className={styles.articleInner}>
           <Image
-            src="/images/fair_air02/aerial02.jpg"
-            alt="International Area"
+            src="/images/fair_air02/aerial01.jpg"
+            alt="Transportation Area"
             width={1200}
-            height={954}
+            height={955}
             sizes="(max-width: 1200px) 100vw, 1200px"
             className={styles.photo}
             unoptimized
             priority
           />
           <p className={styles.caption}>
-            <span className={styles.captionLead}>International Area</span>
-            Featuring the Pavilions of Venezuela, Hong Kong, Indonesia,
-            Polynesia, Mexico, China, Bargreen Buffet and others.
+            <span className={styles.captionLead}>Transportation Area</span>
+            Featuring the Pavilions of Chrysler, Transportation &amp; Travel,
+            Ford, SKF, US Rubber, Port Authority, Sinclair and others.
           </p>
         </div>
       </article>
