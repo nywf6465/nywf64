@@ -2,8 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * 1964/1965 The Era of the Fair / fair_era menu — 3 topic cards.
- * Card 1 is Overview; cards 2–3 are filled when following fair_era pages
- * are created (labels from legacy fair_era02–03 for now).
+ * Overview + Page 1 (legacy fair_era02) + stub for the following page.
  */
 export const FAIR_ERA_MENU_TOPICS: AttractionTopic[] = [
   {
