@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * The Hunt for International Exhibitors — 10 topic cards (legacy intpar01–10).
- * Pages after Introduction are stubs until converted.
+ * Introduction and Prologue are live; later pages are stubs until converted.
  */
 export const INTPAR_MENU_TOPICS: AttractionTopic[] = [
   {
