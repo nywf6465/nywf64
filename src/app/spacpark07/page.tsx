@@ -107,7 +107,7 @@ export default function Spacpark07Page() {
             Company&apos;s <em>Wonder Rotunda</em> can be seen in the upper left
             corner of the photo. For a larger version of this photograph please
             visit the{" "}
-            <Link href="/information/from-the-air">
+            <Link href="/fair_airoverview">
               <em>See the Fair From the Air</em>
             </Link>{" "}
             Feature at nywf64.com.
