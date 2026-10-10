@@ -77,7 +77,7 @@ const TOPICS = [
   {
     id: "era",
     title: "1964/1965 The Era of the Fair",
-    href: "/information/era",
+    href: "/fair_eraoverview",
     hoverSrc: "/images/information-hover/era.jpg",
     left: "50.498%",
     top: "75.262%",

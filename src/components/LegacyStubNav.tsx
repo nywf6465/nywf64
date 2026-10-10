@@ -56,6 +56,7 @@ import { EaskodNavChrome } from "@/components/EaskodNavChrome";
 import { EasternNavChrome } from "@/components/EasternNavChrome";
 import { EntbuiNavChrome } from "@/components/EntbuiNavChrome";
 import { EquitNavChrome } from "@/components/EquitNavChrome";
+import { FairEraNavChrome } from "@/components/FairEraNavChrome";
 import { FesgasNavChrome } from "@/components/FesgasNavChrome";
 import { FiestaNavChrome } from "@/components/FiestaNavChrome";
 import { FinartNavChrome } from "@/components/FinartNavChrome";
@@ -255,6 +256,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   EasternNavChrome,
   EntbuiNavChrome,
   EquitNavChrome,
+  FairEraNavChrome,
   FesgasNavChrome,
   FiestaNavChrome,
   FinartNavChrome,
