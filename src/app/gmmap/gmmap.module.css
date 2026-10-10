@@ -1,4 +1,8 @@
-/* General Motors locate-it map — Transportation Area 807×1165 */
+/*
+ * General Motors locate-it map — Transportation Area 807×1165.
+ * Map art already includes a baked-in black frame; no CSS border on
+ * .mapWrap (avoids a double border).
+ */
 
 .hero {
   position: relative;
@@ -40,7 +44,6 @@
   margin: 0;
   line-height: 0;
   text-align: left;
-  border: 1px solid #000;
   background: #fff;
   overflow: auto;
 }
