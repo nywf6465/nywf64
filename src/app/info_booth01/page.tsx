@@ -192,7 +192,7 @@ export default function InfoBooth01Page() {
             <div className={styles.row}>
               <h3 className={styles.label}>Status</h3>
               <p className={styles.value}>
-                <Link href="/information/unofficial" className={styles.link}>
+                <Link href="/true_fairoverview" className={styles.link}>
                   An &quot;unofficial&quot; World&apos;s Fair
                 </Link>{" "}
                 not sanctioned by the Bureau of International Expositions.
