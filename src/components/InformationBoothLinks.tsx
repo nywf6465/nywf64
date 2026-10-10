@@ -67,7 +67,7 @@ const TOPICS = [
   {
     id: "from-the-air",
     title: "See the Fair from the Air",
-    href: "/information/from-the-air",
+    href: "/fair_airoverview",
     hoverSrc: "/images/information-hover/from-the-air.jpg",
     left: "3.400%",
     top: "75.262%",
