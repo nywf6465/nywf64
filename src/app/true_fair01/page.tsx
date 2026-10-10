@@ -107,7 +107,7 @@ export default function TrueFair01Page() {
               </li>
               <li>
                 A Universal and International Exposition may be held only once
-                within a ten year span.
+                within a ten year span (now five years).
               </li>
             </ul>
             <p>
