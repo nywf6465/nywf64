@@ -29,6 +29,7 @@ import { BoustrNavChrome } from "@/components/BoustrNavChrome";
 import { BoyscoNavChrome } from "@/components/BoyscoNavChrome";
 import { BraraiNavChrome } from "@/components/BraraiNavChrome";
 import { BrilionNavChrome } from "@/components/BrilionNavChrome";
+import { BuildingNavChrome } from "@/components/BuildingNavChrome";
 import { CaribbNavChrome } from "@/components/CaribbNavChrome";
 import { CarnivNavChrome } from "@/components/CarnivNavChrome";
 import { CarparNavChrome } from "@/components/CarparNavChrome";
@@ -56,6 +57,9 @@ import { EaskodNavChrome } from "@/components/EaskodNavChrome";
 import { EasternNavChrome } from "@/components/EasternNavChrome";
 import { EntbuiNavChrome } from "@/components/EntbuiNavChrome";
 import { EquitNavChrome } from "@/components/EquitNavChrome";
+import { FairAirNavChrome } from "@/components/FairAirNavChrome";
+import { FairEraNavChrome } from "@/components/FairEraNavChrome";
+import { FairStoryNavChrome } from "@/components/FairStoryNavChrome";
 import { FesgasNavChrome } from "@/components/FesgasNavChrome";
 import { FiestaNavChrome } from "@/components/FiestaNavChrome";
 import { FinartNavChrome } from "@/components/FinartNavChrome";
@@ -91,6 +95,8 @@ import { IbmNavChrome } from "@/components/IbmNavChrome";
 import { IllinoisNavChrome } from "@/components/IllinoisNavChrome";
 import { IndiaNavChrome } from "@/components/IndiaNavChrome";
 import { IndonesNavChrome } from "@/components/IndonesNavChrome";
+import { InfoBoothNavChrome } from "@/components/InfoBoothNavChrome";
+import { IntparNavChrome } from "@/components/IntparNavChrome";
 import { IrelandNavChrome } from "@/components/IrelandNavChrome";
 import { JapanNavChrome } from "@/components/JapanNavChrome";
 import { JaycopNavChrome } from "@/components/JaycopNavChrome";
@@ -178,6 +184,7 @@ import { TipbandNavChrome } from "@/components/TipbandNavChrome";
 import { TowersNavChrome } from "@/components/TowersNavChrome";
 import { TrantravNavChrome } from "@/components/TrantravNavChrome";
 import { TravelersNavChrome } from "@/components/TravelersNavChrome";
+import { TrueFairNavChrome } from "@/components/TrueFairNavChrome";
 import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { TwrlitNavChrome } from "@/components/TwrlitNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
@@ -228,6 +235,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   BoyscoNavChrome,
   BraraiNavChrome,
   BrilionNavChrome,
+  BuildingNavChrome,
   CaribbNavChrome,
   CarnivNavChrome,
   CarparNavChrome,
@@ -255,6 +263,9 @@ const STUB_NAV: Record<string, ComponentType> = {
   EasternNavChrome,
   EntbuiNavChrome,
   EquitNavChrome,
+  FairAirNavChrome,
+  FairEraNavChrome,
+  FairStoryNavChrome,
   FesgasNavChrome,
   FiestaNavChrome,
   FinartNavChrome,
@@ -290,6 +301,8 @@ const STUB_NAV: Record<string, ComponentType> = {
   IllinoisNavChrome,
   IndiaNavChrome,
   IndonesNavChrome,
+  InfoBoothNavChrome,
+  IntparNavChrome,
   IrelandNavChrome,
   JapanNavChrome,
   JaycopNavChrome,
@@ -377,6 +390,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   TowersNavChrome,
   TrantravNavChrome,
   TravelersNavChrome,
+  TrueFairNavChrome,
   TwothoNavChrome,
   TwrlitNavChrome,
   UarNavChrome,

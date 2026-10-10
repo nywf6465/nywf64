@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./InformationBoothLinks.module.css";
 
-/** Exact user artwork — base image unchanged. Hover crops only swap navy↔burgundy. */
+/** Exact user artwork — base image unchanged. Hover crops swap navy↔burgundy on the link-symbol circle only; text colors stay put; thumbnails untouched. */
 const TOPICS = [
   {
     id: "facts",
     title: "Fair Facts & Figures",
-    href: "/information/facts",
+    href: "/info_booth01",
     hoverSrc: "/images/information-hover/facts.jpg",
     left: "3.400%",
     top: "1.949%",
@@ -17,7 +17,7 @@ const TOPICS = [
   {
     id: "story",
     title: "The Story of the Fair",
-    href: "/information/story",
+    href: "/fair_story01",
     hoverSrc: "/images/information-hover/story.jpg",
     left: "50.498%",
     top: "1.949%",
@@ -27,7 +27,7 @@ const TOPICS = [
   {
     id: "unofficial",
     title: "An Unofficial World’s Fair",
-    href: "/information/unofficial",
+    href: "/true_fairoverview",
     hoverSrc: "/images/information-hover/unofficial.jpg",
     left: "3.400%",
     top: "25.037%",
@@ -37,7 +37,7 @@ const TOPICS = [
   {
     id: "international",
     title: "The Hunt for International Exhibitors",
-    href: "/information/international",
+    href: "/intpar01",
     hoverSrc: "/images/information-hover/international.jpg",
     left: "50.498%",
     top: "25.037%",
@@ -47,7 +47,7 @@ const TOPICS = [
   {
     id: "building",
     title: "Building the Fair",
-    href: "/information/building",
+    href: "/buildingoverview",
     hoverSrc: "/images/information-hover/building.jpg",
     left: "3.400%",
     top: "51.424%",
@@ -67,7 +67,7 @@ const TOPICS = [
   {
     id: "from-the-air",
     title: "See the Fair from the Air",
-    href: "/information/from-the-air",
+    href: "/fair_airoverview",
     hoverSrc: "/images/information-hover/from-the-air.jpg",
     left: "3.400%",
     top: "75.262%",
@@ -77,7 +77,7 @@ const TOPICS = [
   {
     id: "era",
     title: "1964/1965 The Era of the Fair",
-    href: "/information/era",
+    href: "/fair_eraoverview",
     hoverSrc: "/images/information-hover/era.jpg",
     left: "50.498%",
     top: "75.262%",

@@ -149,6 +149,12 @@ const nextConfig: NextConfig = {
         destination: "/illinois13",
         permanent: true,
       },
+      // Information Booth — See the Fair from the Air → fair_airoverview
+      {
+        source: "/information/from-the-air",
+        destination: "/fair_airoverview",
+        permanent: true,
+      },
     ];
   },
 };

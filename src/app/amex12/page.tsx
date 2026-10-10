@@ -48,7 +48,7 @@ function WebmasterLinks() {
       story of the problems with the capital lights on Unisphere. Craig has also
       contributed some spectacular aerial photographs of the Fair that can be
       viewed at{" "}
-      <Link href="/information/from-the-air">The Fair from the Air</Link>. You
+      <Link href="/fair_airoverview">The Fair from the Air</Link>. You
       can contact Craig via{" "}
       <a href="mailto:CBavaro@aol.com?subject=The Fair">email</a>.
     </p>
@@ -103,7 +103,12 @@ export default function Amex12Page() {
                 return <p key={index}>{block.text}</p>;
               case "source":
                 return (
-                  <p key={index} className={styles.source}>
+                  <p
+                    key={index}
+                    className={`${styles.source}${
+                      block.muted ? ` ${styles.sourceMuted}` : ""
+                    }`}
+                  >
                     {block.text.startsWith("SOURCE:") ? (
                       <>
                         SOURCE:{" "}
@@ -116,7 +121,12 @@ export default function Amex12Page() {
                 );
               case "caption":
                 return (
-                  <p key={index} className={styles.caption}>
+                  <p
+                    key={index}
+                    className={`${styles.caption}${
+                      block.small ? ` ${styles.captionSmall}` : ""
+                    }${block.matchImage ? ` ${styles.captionMatchImage}` : ""}`}
+                  >
                     {block.text}
                   </p>
                 );

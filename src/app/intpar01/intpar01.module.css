@@ -1,0 +1,237 @@
+/*
+ * The Hunt for International Exhibitors — Introduction (legacy intpar01).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(40rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.introRow {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 0.85rem 1rem;
+  align-items: center;
+  margin: 0 0 1.35rem;
+}
+
+.introLogo {
+  display: block;
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.introHeading {
+  margin: 0 0 0.65rem;
+  color: #26346e;
+  font-family: "Arial Black", Arial, Helvetica, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 900;
+  line-height: 1.25;
+  text-align: right;
+}
+
+.introCopy {
+  margin: 0 0 0.45rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.introDate {
+  margin: 0;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  text-align: right;
+}
+
+.nywf {
+  color: #191970;
+  font-weight: 700;
+}
+
+.nywf64 {
+  color: maroon;
+  font-weight: 700;
+}
+
+.nywfCom {
+  color: #191970;
+  font-size: 0.75em;
+}
+
+.noteBox {
+  margin: 0 0 1.35rem;
+  padding: 0.85rem 1rem;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.noteBox p {
+  margin: 0 0 0.85rem;
+}
+
+.noteBox em {
+  font-style: italic;
+}
+
+.noteLead {
+  font-weight: 700;
+}
+
+.noteSign {
+  margin: 0.25rem 0 0;
+}
+
+.noteDate {
+  margin: 0;
+}
+
+.thesisCover {
+  margin: 0 auto 1.25rem;
+  max-width: 37.5rem;
+  padding: 1rem 1rem 0.85rem;
+  box-sizing: border-box;
+  border: 2px solid #000;
+  text-align: center;
+}
+
+.coverLogo {
+  display: block;
+  width: 150px;
+  max-width: 60%;
+  height: auto;
+  margin: 0.5rem auto 0.85rem;
+}
+
+.coverLine1 {
+  margin: 0 0 0.15rem;
+  color: #191970;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.coverInThe {
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.coverLine2 {
+  margin: 0 0 0.85rem;
+  color: maroon;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.65rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.coverBy {
+  margin: 0 0 0.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+}
+
+.coverAuthor {
+  margin: 0 0 1.15rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.aboutBlock {
+  margin: 0;
+  padding: 0.65rem 0.25rem 0.35rem;
+  border-top: 1px solid #ccc;
+  text-align: left;
+}
+
+.aboutHeading {
+  margin: 0 0 0.65rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+}
+
+.aboutBody {
+  margin: 0 0 0.85rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.aboutContact {
+  margin: 0 0 0.35rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.aboutContact a {
+  color: #990000;
+  text-decoration: underline;
+}
+
+@media (max-width: 720px) {
+  .introRow {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .introHeading,
+  .introDate {
+    text-align: center;
+  }
+
+  .coverLine1,
+  .coverLine2 {
+    font-size: 1.25rem;
+  }
+}
