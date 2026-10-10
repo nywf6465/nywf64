@@ -14890,20 +14890,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/building19",
     nextHref: "/building21",
   },
-  "building22": {
-    slug: "building22",
-    title: 'What Went Wrong in Wonderland?',
-    metaTitle: 'What Went Wrong in Wonderland? — Building the Fair — nywf64.com',
-    metaDescription:
-      'What Went Wrong in Wonderland? — Building the Fair from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "BuildingNavChrome",
-    overviewHref: "/buildingoverview",
-    overviewLabel: "Building the Fair overview",
-    placeholder: "Building the Fair content",
-    previousHref: "/building21",
-    nextHref: "/buildingoverview",
-  },
-
 };
 
 export function getLegacyStub(slug: string): LegacyStubRoute | undefined {
