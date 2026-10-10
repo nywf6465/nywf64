@@ -14876,19 +14876,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
-  "intpar05": {
-    slug: "intpar05",
-    title: 'Where Pagodas and Minarets . . .',
-    metaTitle: 'Where Pagodas and Minarets . . . — The Hunt for International Exhibitors — nywf64.com',
-    metaDescription:
-      'Where Pagodas and Minarets . . . — The Hunt for International Exhibitors from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "IntparNavChrome",
-    overviewHref: "/intpar01",
-    overviewLabel: "The Hunt for International Exhibitors",
-    placeholder: "Hunt for International Exhibitors content",
-    previousHref: "/intpar04",
-    nextHref: "/intpar06",
-  },
   "intpar06": {
     slug: "intpar06",
     title: 'War Through Misunderstanding',
