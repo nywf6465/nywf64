@@ -14877,19 +14877,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
   },
 
 
-  "building01": {
-    slug: "building01",
-    title: 'In the Beginning: Moses',
-    metaTitle: 'In the Beginning: Moses — Building the Fair — nywf64.com',
-    metaDescription:
-      'In the Beginning: Moses — Building the Fair from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "BuildingNavChrome",
-    overviewHref: "/buildingoverview",
-    overviewLabel: "Building the Fair overview",
-    placeholder: "Building the Fair content",
-    previousHref: "/buildingoverview",
-    nextHref: "/building02",
-  },
   "building02": {
     slug: "building02",
     title: 'Preparation of the Site',
