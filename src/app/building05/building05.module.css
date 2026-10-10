@@ -242,6 +242,17 @@
   font-size: 0.65rem;
 }
 
+.sourceBanner {
+  margin: 0 0 0.45rem;
+  padding: 0;
+}
+
+.sourceBannerImg {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
 .source {
   margin: 0.65rem 0 0;
   font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
