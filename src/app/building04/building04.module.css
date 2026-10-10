@@ -1,0 +1,167 @@
+/*
+ * Building the Fair — Goals and Aspirations (legacy building05).
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.themeBlock {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 1rem 1.25rem;
+  margin: 0 0 1.35rem;
+}
+
+.logo {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.themeCopy {
+  flex: 1 1 16rem;
+  min-width: 0;
+}
+
+.sectionLabel {
+  margin: 0 0 0.65rem;
+  color: #ff3300;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+}
+
+.sectionLabelMuted {
+  margin: 0 0 0.65rem;
+  color: #666;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  line-height: 1.2;
+}
+
+.themeList {
+  margin: 0 0 0.85rem;
+  padding-left: 1.15rem;
+}
+
+.themeList li {
+  margin: 0 0 0.45rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.themeDate {
+  margin: 0.75rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.body p {
+  margin: 0 0 0.85rem;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.signOff {
+  margin: 1rem 0 1.35rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.signOff p {
+  margin: 0;
+}
+
+.figure {
+  margin: 0.85rem auto 1.25rem;
+  max-width: 100%;
+  text-align: center;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.source {
+  margin: 0.35rem 0 1.35rem;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.4;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.subHeading {
+  margin: 1.15rem 0 0.55rem;
+  font-size: 0.95rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
