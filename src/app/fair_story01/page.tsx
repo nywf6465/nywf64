@@ -13,16 +13,6 @@ export const metadata: Metadata = {
     "Bill Young’s essay on the story of the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-function BrandMark() {
-  return (
-    <span className={styles.brand}>
-      <span className={styles.brandNywf}>nywf</span>
-      <span className={styles.brandSixtyFour}>64</span>
-      <span className={styles.brandDotCom}>.com</span>
-    </span>
-  );
-}
-
 /**
  * The Story of the Fair — fair_story01 essay by Bill Young.
  * Body from legacy fair_story01.html (“an essay” removed from title byline).
@@ -110,20 +100,6 @@ export default function FairStory01Page() {
             SOURCE:{" "}
             <em>Official Guide New York World&apos;s Fair 1964/1965</em> - 1964
             Edition
-          </p>
-        </div>
-
-        <div className={styles.visitorNote}>
-          <p>
-            <strong>A note to our website visitors ...</strong> Thank you for
-            stopping by. There are literally thousands of web pages on this
-            website devoted to the 1964-1965 New York World&apos;s Fair. Use the
-            dark blue <em>Navigation Bar</em> at the top of this page to access
-            drop-down menus that will take you to those pages. You will discover
-            interesting stories, essays and a vast amount of information on the
-            many pavilions and exhibits that were a part of this fabulous
-            World&apos;s Fair. Take some time to explore the website as there is
-            surely &quot;Something for Everyone&quot; here at <BrandMark />
           </p>
         </div>
 
