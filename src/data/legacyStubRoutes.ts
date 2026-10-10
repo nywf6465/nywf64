@@ -14876,19 +14876,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
-  "intpar06": {
-    slug: "intpar06",
-    title: 'War Through Misunderstanding',
-    metaTitle: 'War Through Misunderstanding — The Hunt for International Exhibitors — nywf64.com',
-    metaDescription:
-      'War Through Misunderstanding — The Hunt for International Exhibitors from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "IntparNavChrome",
-    overviewHref: "/intpar01",
-    overviewLabel: "The Hunt for International Exhibitors",
-    placeholder: "Hunt for International Exhibitors content",
-    previousHref: "/intpar05",
-    nextHref: "/intpar07",
-  },
   "intpar07": {
     slug: "intpar07",
     title: 'Conclusion',
