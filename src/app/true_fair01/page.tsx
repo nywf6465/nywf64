@@ -65,10 +65,9 @@ export default function TrueFair01Page() {
             </h2>
             <p>
               The Paris based Bureau of International Expositions (B.I.E.)
-              sanctions World&apos;s Fairs. Unlike Olympic Games, World&apos;s
-              Fairs are not held at regular intervals. The B.I.E.&apos;s purpose
-              is to prevent too many Fairs from being held too close together and
-              to settle disputes between venues wishing to host expositions.
+              sanctions World&apos;s Fairs. The B.I.E.&apos;s purpose is to
+              prevent too many Fairs from being held too close together and to
+              settle disputes between venues wishing to host expositions.
             </p>
             <p>
               Like the International Olympic Committee member nations of the
