@@ -3330,19 +3330,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/equitoverview",
     nextHref: "/equit01",
   },
-  "fair_era01": {
-    slug: "fair_era01",
-    title: "Events of 1964",
-    metaTitle: "Events of 1964 — 1964/1965 The Era of the Fair — nywf64.com",
-    metaDescription:
-      "Events of 1964 — 1964/1965 The Era of the Fair from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "FairEraNavChrome",
-    overviewHref: "/fair_eraoverview",
-    overviewLabel: "1964/1965 The Era of the Fair overview",
-    placeholder: "1964/1965 The Era of the Fair content",
-    previousHref: "/fair_eraoverview",
-    nextHref: "/fair_era02",
-  },
   "fair_era02": {
     slug: "fair_era02",
     title: "Events of 1965",
