@@ -29,6 +29,7 @@ import { BoustrNavChrome } from "@/components/BoustrNavChrome";
 import { BoyscoNavChrome } from "@/components/BoyscoNavChrome";
 import { BraraiNavChrome } from "@/components/BraraiNavChrome";
 import { BrilionNavChrome } from "@/components/BrilionNavChrome";
+import { BuildingNavChrome } from "@/components/BuildingNavChrome";
 import { CaribbNavChrome } from "@/components/CaribbNavChrome";
 import { CarnivNavChrome } from "@/components/CarnivNavChrome";
 import { CarparNavChrome } from "@/components/CarparNavChrome";
@@ -231,6 +232,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   BoyscoNavChrome,
   BraraiNavChrome,
   BrilionNavChrome,
+  BuildingNavChrome,
   CaribbNavChrome,
   CarnivNavChrome,
   CarparNavChrome,

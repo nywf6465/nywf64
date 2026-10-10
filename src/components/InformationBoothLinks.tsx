@@ -47,7 +47,7 @@ const TOPICS = [
   {
     id: "building",
     title: "Building the Fair",
-    href: "/information/building",
+    href: "/buildingoverview",
     hoverSrc: "/images/information-hover/building.jpg",
     left: "3.400%",
     top: "51.424%",

@@ -14876,6 +14876,20 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
+
+  "building20": {
+    slug: "building20",
+    title: 'Interim Period',
+    metaTitle: 'Interim Period — Building the Fair — nywf64.com',
+    metaDescription:
+      'Interim Period — Building the Fair from the 1964/1965 New York World’s Fair on nywf64.com.',
+    nav: "BuildingNavChrome",
+    overviewHref: "/buildingoverview",
+    overviewLabel: "Building the Fair overview",
+    placeholder: "Building the Fair content",
+    previousHref: "/building19",
+    nextHref: "/building21",
+  },
 };
 
 export function getLegacyStub(slug: string): LegacyStubRoute | undefined {
