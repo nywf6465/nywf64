@@ -14877,19 +14877,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
   },
 
 
-  "building09": {
-    slug: "building09",
-    title: 'Evolution',
-    metaTitle: 'Evolution — Building the Fair — nywf64.com',
-    metaDescription:
-      'Evolution — Building the Fair from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "BuildingNavChrome",
-    overviewHref: "/buildingoverview",
-    overviewLabel: "Building the Fair overview",
-    placeholder: "Building the Fair content",
-    previousHref: "/building08",
-    nextHref: "/building10",
-  },
   "building10": {
     slug: "building10",
     title: 'The Changing Face of Flushing Meadow, 1961-1962',
