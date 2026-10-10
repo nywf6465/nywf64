@@ -14876,25 +14876,13 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     nextHref: "/wisconsin01",
   },
 
-  "true_fair01": {
-    slug: "true_fair01",
-    title: "Introduction",
-    metaTitle: "Introduction — An Unofficial World’s Fair — nywf64.com",
-    metaDescription:
-      "Introduction — An Unofficial World’s Fair from the 1964/1965 New York World’s Fair on nywf64.com.",
-    nav: "TrueFairNavChrome",
-    overviewHref: "/true_fairoverview",
-    overviewLabel: "An Unofficial World’s Fair overview",
-    placeholder: "An Unofficial World’s Fair content",
-    previousHref: "/true_fairoverview",
-    nextHref: "/true_fair02",
-  },
   "true_fair02": {
     slug: "true_fair02",
-    title: "Robert Moses & the BIE",
-    metaTitle: "Robert Moses & the BIE — An Unofficial World’s Fair — nywf64.com",
+    title: "Moses Speaks Out on the BIE",
+    metaTitle:
+      "Moses Speaks Out on the BIE — An Unofficial World’s Fair — nywf64.com",
     metaDescription:
-      "Robert Moses & the BIE — An Unofficial World’s Fair from the 1964/1965 New York World’s Fair on nywf64.com.",
+      "Moses Speaks Out on the BIE — An Unofficial World’s Fair from the 1964/1965 New York World’s Fair on nywf64.com.",
     nav: "TrueFairNavChrome",
     overviewHref: "/true_fairoverview",
     overviewLabel: "An Unofficial World’s Fair overview",

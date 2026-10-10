@@ -2,8 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * An Unofficial World’s Fair / true_fair menu — 3 topic cards.
- * Card 1 is Overview; cards 2–3 are filled when following true_fair pages
- * are created (labels from legacy true_fair01–02 for now).
+ * Overview + Page 1 (legacy true_fair02) + stub for the following page.
  */
 export const TRUE_FAIR_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -11,11 +10,11 @@ export const TRUE_FAIR_MENU_TOPICS: AttractionTopic[] = [
     href: "/true_fairoverview",
   },
   {
-    label: "Introduction",
+    label: "Robert Moses & the BIE",
     href: "/true_fair01",
   },
   {
-    label: "Robert Moses & the BIE",
+    label: "Moses Speaks Out on the BIE",
     href: "/true_fair02",
   },
 ];
