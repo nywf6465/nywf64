@@ -7,7 +7,7 @@ const TOPICS = [
   {
     id: "facts",
     title: "Fair Facts & Figures",
-    href: "/information/facts",
+    href: "/info_booth01",
     hoverSrc: "/images/information-hover/facts.jpg",
     left: "3.400%",
     top: "1.949%",
@@ -17,7 +17,7 @@ const TOPICS = [
   {
     id: "story",
     title: "The Story of the Fair",
-    href: "/information/story",
+    href: "/fair_story01",
     hoverSrc: "/images/information-hover/story.jpg",
     left: "50.498%",
     top: "1.949%",
@@ -27,7 +27,7 @@ const TOPICS = [
   {
     id: "unofficial",
     title: "An Unofficial World’s Fair",
-    href: "/information/unofficial",
+    href: "/true_fairoverview",
     hoverSrc: "/images/information-hover/unofficial.jpg",
     left: "3.400%",
     top: "25.037%",

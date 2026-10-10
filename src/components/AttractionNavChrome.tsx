@@ -15,6 +15,7 @@ import {
 export function AttractionNavChrome({
   topics,
   exploreNoun = "ATTRACTION",
+  exploreLabel,
   menuTitle,
 }: {
   topics: AttractionTopic[];
@@ -25,7 +26,12 @@ export function AttractionNavChrome({
   navLabel?: string;
   /** Noun in nav bar “EXPLORE THIS …”, e.g. ATTRACTION or PERSON. */
   exploreNoun?: string;
-  /** Optional nav menu header; defaults from exploreNoun. */
+  /**
+   * Full nav-bar explore title (e.g. “Explore Fair Information”).
+   * When set, replaces the default “EXPLORE THIS {exploreNoun}” text.
+   */
+  exploreLabel?: string;
+  /** Optional nav menu header; defaults from exploreLabel or exploreNoun. */
   menuTitle?: string;
 }) {
   const [open, setOpen] = useState(false);
@@ -41,6 +47,7 @@ export function AttractionNavChrome({
 
   const resolvedMenuTitle =
     menuTitle ??
+    exploreLabel ??
     `Explore This ${exploreNoun.charAt(0)}${exploreNoun.slice(1).toLowerCase()}`;
 
   return (
@@ -50,6 +57,7 @@ export function AttractionNavChrome({
         menuId={menuId}
         menuOpen={open}
         exploreNoun={exploreNoun}
+        exploreLabel={exploreLabel}
       />
       <AttractionTopicsMenu
         id={menuId}

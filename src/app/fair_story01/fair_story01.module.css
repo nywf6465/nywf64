@@ -1,0 +1,233 @@
+/*
+ * The Story of the Fair — fair_story01 essay.
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.mosesBox {
+  width: min(37.5rem, 100%);
+  margin: 0 auto 1.5rem;
+  padding: 1rem 1rem 0.75rem;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  background: #fff;
+}
+
+.mosesTop {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1rem;
+}
+
+.mosesPortrait {
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mosesSignature {
+  display: block;
+  width: 250px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mosesQuote {
+  margin: 0 0 0.85rem;
+  padding-left: 1.5rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.mosesSignBlock {
+  margin: 0.75rem 0 0.5rem;
+  padding-left: min(15rem, 50%);
+  font-size: 0.95rem;
+  line-height: 1.4;
+}
+
+.mosesSignBlock strong {
+  font-weight: 700;
+}
+
+.mosesSignBlock p {
+  margin: 0.15rem 0 0;
+  font-style: italic;
+}
+
+.source {
+  margin: 0.35rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.75rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.visitorNote {
+  width: min(37.5rem, 100%);
+  margin: 0 auto 1.75rem;
+  padding: 0.75rem 1rem;
+  box-sizing: border-box;
+  border: 1px solid #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.visitorNote strong {
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.visitorNote em {
+  font-style: italic;
+}
+
+.brand {
+  white-space: nowrap;
+}
+
+.brandNywf {
+  color: #191970;
+  font-weight: 700;
+}
+
+.brandSixtyFour {
+  color: maroon;
+  font-weight: 700;
+}
+
+.brandDotCom {
+  color: #191970;
+  font-size: 0.8em;
+}
+
+.essayTitle {
+  margin: 0 0 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.essayTitleYear {
+  color: #191970;
+}
+
+.essayTitleRest {
+  color: maroon;
+}
+
+.body p {
+  margin: 0 0 0.95rem;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.sectionHeading {
+  margin: 1.35rem 0 0.85rem;
+  color: maroon;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.figure {
+  margin: 1.15rem auto;
+  max-width: 100%;
+  text-align: center;
+}
+
+.photoImg {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.caption {
+  margin: 0.4rem 0 0;
+  font-size: 0.75rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.captionCourtesy {
+  display: block;
+  margin-top: 0.15rem;
+}

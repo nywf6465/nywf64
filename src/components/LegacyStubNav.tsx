@@ -56,6 +56,7 @@ import { EaskodNavChrome } from "@/components/EaskodNavChrome";
 import { EasternNavChrome } from "@/components/EasternNavChrome";
 import { EntbuiNavChrome } from "@/components/EntbuiNavChrome";
 import { EquitNavChrome } from "@/components/EquitNavChrome";
+import { FairStoryNavChrome } from "@/components/FairStoryNavChrome";
 import { FesgasNavChrome } from "@/components/FesgasNavChrome";
 import { FiestaNavChrome } from "@/components/FiestaNavChrome";
 import { FinartNavChrome } from "@/components/FinartNavChrome";
@@ -91,6 +92,7 @@ import { IbmNavChrome } from "@/components/IbmNavChrome";
 import { IllinoisNavChrome } from "@/components/IllinoisNavChrome";
 import { IndiaNavChrome } from "@/components/IndiaNavChrome";
 import { IndonesNavChrome } from "@/components/IndonesNavChrome";
+import { InfoBoothNavChrome } from "@/components/InfoBoothNavChrome";
 import { IrelandNavChrome } from "@/components/IrelandNavChrome";
 import { JapanNavChrome } from "@/components/JapanNavChrome";
 import { JaycopNavChrome } from "@/components/JaycopNavChrome";
@@ -178,6 +180,7 @@ import { TipbandNavChrome } from "@/components/TipbandNavChrome";
 import { TowersNavChrome } from "@/components/TowersNavChrome";
 import { TrantravNavChrome } from "@/components/TrantravNavChrome";
 import { TravelersNavChrome } from "@/components/TravelersNavChrome";
+import { TrueFairNavChrome } from "@/components/TrueFairNavChrome";
 import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { TwrlitNavChrome } from "@/components/TwrlitNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
@@ -255,6 +258,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   EasternNavChrome,
   EntbuiNavChrome,
   EquitNavChrome,
+  FairStoryNavChrome,
   FesgasNavChrome,
   FiestaNavChrome,
   FinartNavChrome,
@@ -290,6 +294,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   IllinoisNavChrome,
   IndiaNavChrome,
   IndonesNavChrome,
+  InfoBoothNavChrome,
   IrelandNavChrome,
   JapanNavChrome,
   JaycopNavChrome,
@@ -377,6 +382,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   TowersNavChrome,
   TrantravNavChrome,
   TravelersNavChrome,
+  TrueFairNavChrome,
   TwothoNavChrome,
   TwrlitNavChrome,
   UarNavChrome,
