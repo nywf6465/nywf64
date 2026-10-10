@@ -27,7 +27,7 @@ const TOPICS = [
   {
     id: "unofficial",
     title: "An Unofficial World’s Fair",
-    href: "/information/unofficial",
+    href: "/true_fairoverview",
     hoverSrc: "/images/information-hover/unofficial.jpg",
     left: "3.400%",
     top: "25.037%",

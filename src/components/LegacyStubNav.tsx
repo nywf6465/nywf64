@@ -180,6 +180,7 @@ import { TipbandNavChrome } from "@/components/TipbandNavChrome";
 import { TowersNavChrome } from "@/components/TowersNavChrome";
 import { TrantravNavChrome } from "@/components/TrantravNavChrome";
 import { TravelersNavChrome } from "@/components/TravelersNavChrome";
+import { TrueFairNavChrome } from "@/components/TrueFairNavChrome";
 import { TwothoNavChrome } from "@/components/TwothoNavChrome";
 import { TwrlitNavChrome } from "@/components/TwrlitNavChrome";
 import { UnisphNavChrome } from "@/components/UnisphNavChrome";
@@ -381,6 +382,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   TowersNavChrome,
   TrantravNavChrome,
   TravelersNavChrome,
+  TrueFairNavChrome,
   TwothoNavChrome,
   TwrlitNavChrome,
   UarNavChrome,
