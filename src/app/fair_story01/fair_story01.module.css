@@ -67,7 +67,8 @@
 }
 
 .mosesBox {
-  width: min(37.5rem, 100%);
+  /* Inset from viewport edges so the 1px border stays visible on mobile */
+  width: min(37.5rem, calc(100% - 2rem));
   margin: 0 auto 1.5rem;
   padding: 1rem 1rem 0.75rem;
   box-sizing: border-box;
@@ -134,7 +135,8 @@
 }
 
 .visitorNote {
-  width: min(37.5rem, 100%);
+  /* Match mosesBox inset so side borders are not clipped on mobile */
+  width: min(37.5rem, calc(100% - 2rem));
   margin: 0 auto 1.75rem;
   padding: 0.75rem 1rem;
   box-sizing: border-box;
