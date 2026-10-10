@@ -215,9 +215,6 @@ export default function Building05Page() {
             </div>
             <div className={`${styles.sourceRow} ${styles.sourceRow2}`}>
               <p className={styles.source}>
-                SOURCE: <em>The New York Times</em>, March 2, 1960
-              </p>
-              <p className={styles.source}>
                 SOURCE: <em>New York Daily News</em>, April 18, 1960
               </p>
             </div>
