@@ -13,8 +13,15 @@ export type NavBarProps = {
   menuOpen?: boolean;
   /**
    * Noun in “EXPLORE THIS …”, e.g. ATTRACTION (default) or PERSON.
+   * Ignored when `exploreLabel` is set.
    */
   exploreNoun?: string;
+  /**
+   * Full nav-bar explore title (e.g. “Explore Fair Information”).
+   * When set, replaces the default “EXPLORE THIS {exploreNoun}” text.
+   * Display is uppercased via CSS.
+   */
+  exploreLabel?: string;
   /**
    * @deprecated No longer shown on the grey nav bar (redundant with page chrome).
    * Kept optional so existing AttractionNavChrome call sites keep compiling.
@@ -35,11 +42,12 @@ export function NavBar({
   menuId,
   menuOpen = false,
   exploreNoun = "ATTRACTION",
+  exploreLabel,
 }: NavBarProps) {
   const pathname = usePathname() ?? "";
   const pageNumber = pageNumberFromPath(pathname);
-  const exploreText = `EXPLORE THIS ${exploreNoun}`;
-  const aria = `Explore this ${exploreNoun.toLowerCase()}`;
+  const exploreText = exploreLabel ?? `EXPLORE THIS ${exploreNoun}`;
+  const aria = exploreLabel ?? `Explore this ${exploreNoun.toLowerCase()}`;
 
   return (
     <div
