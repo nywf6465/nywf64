@@ -14890,19 +14890,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/building19",
     nextHref: "/building21",
   },
-  "building21": {
-    slug: "building21",
-    title: 'The Last of the Big World\'s Fairs',
-    metaTitle: 'The Last of the Big World\'s Fairs — Building the Fair — nywf64.com',
-    metaDescription:
-      'The Last of the Big World\'s Fairs — Building the Fair from the 1964/1965 New York World’s Fair on nywf64.com.',
-    nav: "BuildingNavChrome",
-    overviewHref: "/buildingoverview",
-    overviewLabel: "Building the Fair overview",
-    placeholder: "Building the Fair content",
-    previousHref: "/building20",
-    nextHref: "/building22",
-  },
   "building22": {
     slug: "building22",
     title: 'What Went Wrong in Wonderland?',
