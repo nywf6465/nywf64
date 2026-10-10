@@ -48,7 +48,7 @@ function WebmasterLinks() {
       story of the problems with the capital lights on Unisphere. Craig has also
       contributed some spectacular aerial photographs of the Fair that can be
       viewed at{" "}
-      <Link href="/information/from-the-air">The Fair from the Air</Link>. You
+      <Link href="/fair_airoverview">The Fair from the Air</Link>. You
       can contact Craig via{" "}
       <a href="mailto:CBavaro@aol.com?subject=The Fair">email</a>.
     </p>
