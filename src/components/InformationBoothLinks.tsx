@@ -37,7 +37,7 @@ const TOPICS = [
   {
     id: "international",
     title: "The Hunt for International Exhibitors",
-    href: "/information/international",
+    href: "/intpar01",
     hoverSrc: "/images/information-hover/international.jpg",
     left: "50.498%",
     top: "25.037%",
