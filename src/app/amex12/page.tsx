@@ -103,7 +103,12 @@ export default function Amex12Page() {
                 return <p key={index}>{block.text}</p>;
               case "source":
                 return (
-                  <p key={index} className={styles.source}>
+                  <p
+                    key={index}
+                    className={`${styles.source}${
+                      block.muted ? ` ${styles.sourceMuted}` : ""
+                    }`}
+                  >
                     {block.text.startsWith("SOURCE:") ? (
                       <>
                         SOURCE:{" "}
@@ -116,7 +121,12 @@ export default function Amex12Page() {
                 );
               case "caption":
                 return (
-                  <p key={index} className={styles.caption}>
+                  <p
+                    key={index}
+                    className={`${styles.caption}${
+                      block.small ? ` ${styles.captionSmall}` : ""
+                    }${block.matchImage ? ` ${styles.captionMatchImage}` : ""}`}
+                  >
                     {block.text}
                   </p>
                 );
