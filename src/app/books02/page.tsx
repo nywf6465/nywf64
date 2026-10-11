@@ -221,7 +221,7 @@ export default function Books02Page() {
                 <strong>amazon.com</strong>.
               </p>
               <p>
-                To purchase a copy, simply click on the book image to the right
+                To purchase a copy, simply click on the book image
                 for convenient ordering through <em>amazon.com</em>. I hope
                 you&apos;ll enjoy the book!
               </p>
@@ -261,7 +261,7 @@ export default function Books02Page() {
                 <strong>amazon.com</strong>.
               </p>
               <p>
-                To purchase a copy, simply click on the book image to the right
+                To purchase a copy, simply click on the book image
                 for convenient ordering through <em>amazon.com</em>. Thank you
                 for your purchases!
               </p>
@@ -297,7 +297,7 @@ export default function Books02Page() {
                 <strong>amazon.com</strong>.
               </p>
               <p>
-                To purchase a copy, simply click on the book image to the right
+                To purchase a copy, simply click on the book image
                 for convenient ordering through <em>amazon.com</em>. Thank you
                 for your purchases!
               </p>
