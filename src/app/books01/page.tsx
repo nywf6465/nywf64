@@ -7,9 +7,10 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Author! Author! — Our Books on the Fair — nywf64.com",
+  title:
+    "Essay: Author! Author! — Our Books on the Fair — nywf64.com",
   description:
-    "Author! Author! — Bill Young on co-authoring the Images of America books about the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Essay: Author! Author! — Bill Young on co-authoring the Images of America books about the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 function BrandMark() {
@@ -54,15 +55,12 @@ export default function Books01Page() {
       <article className={styles.article} aria-labelledby="books01-title">
         <header className={styles.titleBar}>
           <h1 id="books01-title" className={styles.titleBarMain}>
-            Author!{"  "}Author!
+            Essay: <em>Author! Author!</em>
           </h1>
+          <p className={styles.titleBarByline}>... by Bill Young</p>
         </header>
 
         <div className={styles.articleInner}>
-          <p className={styles.byline}>
-            <span className={styles.bylineLabel}>by: </span>Bill Young
-          </p>
-
           <p className={styles.body}>
             I&apos;ve been called a lot of things in my life, but I never figured
             &quot;author&quot; would be one of them. In fact, I hated English
