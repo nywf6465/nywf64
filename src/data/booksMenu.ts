@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Our Books on the Fair / books menu — 3 topic cards.
- * Overview + Page 1 (legacy book02) + Page 2 (legacy book03, stub until built).
+ * Overview + Page 1 (legacy book02) + Page 2 (legacy book03).
  */
 export const BOOKS_MENU_TOPICS: AttractionTopic[] = [
   {

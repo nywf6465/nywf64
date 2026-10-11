@@ -1,0 +1,276 @@
+/*
+ * Our Books on the Fair — Book Excerpt and Ordering Information (legacy book03).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.25rem 0.4rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.excerptBox {
+  border: 1px solid #000;
+  padding: 0.85rem 0.85rem 1rem;
+  margin: 0 0 1.5rem;
+  box-sizing: border-box;
+}
+
+.excerptHead {
+  margin: 0 0 0.25rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.excerptHead strong {
+  font-weight: 700;
+}
+
+.excerptByline {
+  margin: 0 0 1rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.contentsTitle {
+  margin: 0 0 0.65rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.contentsTitle .drop {
+  font-size: 1.35em;
+}
+
+.contentsTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 0 0 1rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.contentsTable td {
+  padding: 0.15rem 0.25rem;
+  vertical-align: top;
+}
+
+.contentsNum {
+  width: 2rem;
+}
+
+.contentsPage {
+  width: 2rem;
+  text-align: right;
+}
+
+.rule {
+  width: 100%;
+  margin: 1rem 0 1.25rem;
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+.chapterHead {
+  margin: 0 0 0.85rem;
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  line-height: 1.2;
+}
+
+.chapterHead .seven {
+  margin: 0;
+  font-size: 1.45rem;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.chapterHead .night {
+  margin: 0.15rem 0 0;
+  font-size: 1.75rem;
+  font-weight: 400;
+}
+
+.chapterHead .night .drop {
+  font-size: 1.35em;
+}
+
+.body {
+  margin: 0 0 0.85rem;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.pageCite {
+  margin: 0.85rem 0 1.25rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  text-align: center;
+}
+
+.photoBlock {
+  margin: 0 0 0.5rem;
+  text-align: center;
+}
+
+.photo {
+  display: block;
+  width: min(500px, 100%);
+  height: auto;
+  margin: 0 auto;
+}
+
+.caption {
+  margin: 0.65rem 0 0;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.sectionTitle {
+  margin: 1.5rem 0 0.85rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.sectionTitle .drop {
+  font-size: 1.35em;
+}
+
+.purchaseRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem 1.25rem;
+  align-items: start;
+  margin: 0 0 1.5rem;
+}
+
+.purchaseCopy {
+  min-width: 0;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.purchaseCopy p {
+  margin: 0 0 0.75rem;
+}
+
+.purchaseCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.coverLink {
+  display: block;
+  line-height: 0;
+  border: 1px solid #000;
+  flex-shrink: 0;
+}
+
+.cover {
+  display: block;
+  width: 140px;
+  height: auto;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.brandNywf {
+  color: #0066cc;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+}
+
+@media (max-width: 720px) {
+  .purchaseRow {
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+
+  .purchaseCopy {
+    text-align: left;
+    width: 100%;
+  }
+}
