@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { BuildingNavChrome } from "@/components/BuildingNavChrome";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./building15.module.css";
@@ -282,12 +281,6 @@ export default function Building15Page() {
                 </p>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building15/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized />{" "}
-              Webmaster&apos;s note... Click{" "}
-              <Link href="/unisph08" className={styles.noteLink}>HERE</Link>
-              {" "}to read more about the design &amp; construction of Unisphere!
-            </p>
             <div className={styles.photoGrid}>
               <figure className={styles.figure}>
                 <Image
@@ -367,13 +360,6 @@ export default function Building15Page() {
                 <p className={styles.source}>SOURCE: online auction</p>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building15/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized />{" "}
-              Webmaster&apos;s note... Click{" "}
-              <Link href="/newyor04" className={styles.noteLink}>HERE</Link>
-              {" "}to read more about the design &amp; construction of the New York
-              State Pavilion!
-            </p>
           </section>
 
           <section className={styles.section} aria-labelledby="sec-4">
@@ -458,13 +444,6 @@ export default function Building15Page() {
                 </p>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building15/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized />{" "}
-              Webmaster&apos;s note... Click{" "}
-              <Link href="/fesgas06" className={styles.noteLink}>HERE</Link>
-              {" "}to read about the design &amp; construction of the Gas Companies
-              Pavilion!
-            </p>
             <div className={styles.photoGrid}>
               <figure className={styles.figure}>
                 <Image
@@ -604,12 +583,6 @@ export default function Building15Page() {
                 </p>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building15/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized />{" "}
-              Webmaster&apos;s note... Click{" "}
-              <Link href="/twrlit06" className={styles.noteLink}>HERE</Link>
-              {" "}to read about the construction of the Tower of Light!
-            </p>
             <div className={styles.photoGrid}>
               <figure className={styles.figure}>
                 <Image
