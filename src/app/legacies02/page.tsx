@@ -542,7 +542,7 @@ export default function Legacies02Page() {
           <p className={styles.body}>
             Another Holmes find! Chrysler Autofare puppets can be found at the{" "}
             <a
-              href="https://www.macniderart.org/"
+              href="https://macniderart.org/"
               target="_blank"
               rel="noopener noreferrer"
             >
