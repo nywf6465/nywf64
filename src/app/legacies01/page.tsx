@@ -263,10 +263,6 @@ export default function Legacies01Page() {
             <p className={styles.docCaption}>Elsewhere</p>
             <p className={styles.docDate}>February 16, 1966</p>
             <ListTable rows={RELOCATED_PAGE_1} />
-            <p className={styles.source}>
-              SOURCE: NY World&apos;s Fair 1964-1965 Corporation, presented
-              courtesy Craig Bavaro Collection
-            </p>
           </div>
 
           <div className={styles.docBox}>
@@ -290,6 +286,11 @@ export default function Legacies01Page() {
               </div>
             </div>
           </div>
+
+          <p className={styles.source}>
+            SOURCE: NY World&apos;s Fair 1964-1965 Corporation, presented
+            courtesy Craig Bavaro Collection
+          </p>
         </div>
       </article>
 
