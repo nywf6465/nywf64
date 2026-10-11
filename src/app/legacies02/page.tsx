@@ -355,7 +355,7 @@ export default function Legacies02Page() {
             />
           </figure>
           <p className={styles.body}>
-            <Link href="/genfoo05">General Foods Arches</Link> may be found at
+            <Link href="/genfoo10">General Foods Arches</Link> may be found at
             &quot;The Enchanted Forest&quot;/Water Safari in Old Forge, NY and
             at Rocky Point, RI, a defunct amusement park. Another visitor writes
             that a third GF Archway can be found at a small strip mall at Cherry
