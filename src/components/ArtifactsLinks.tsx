@@ -17,7 +17,7 @@ const TOPICS = [
   {
     id: "fair-that-survived",
     title: "The Fair that Survived",
-    href: "/artifacts/fair-that-survived",
+    href: "/legaciesoverview",
     hoverSrc: "/images/artifacts-hover/fair-that-survived.jpg",
     left: "50.534%",
     top: "0.667%",
