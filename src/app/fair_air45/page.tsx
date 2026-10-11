@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 /**
  * See the Fair from the Air — Transportation Area.
- * Body from legacy fair_air45.html (Page 45; 1:1 with legacy numbering).
+ * Page 45 in A–Z explore-menu order (Photograph Index remains Page 1).
  *
  * Stack: airhero → FairAirNavChrome → navy title → aerial photo → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -18,11 +18,11 @@ export default function FairAir45Page() {
     <FairAirAerialPage
       pageNum={45}
       title="Transportation Area"
-      photoSrc="/images/fair_air45/aerial45.jpg"
+      photoSrc="/images/fair_air45/aerial32.jpg"
       photoAlt="Transportation Area"
-      photoWidth={1186}
-      photoHeight={944}
-      caption="Featuring the Pavilions of Ford, Century Grill, Eastern Airlines, Hall of Science (under construction) and others."
+      photoWidth={1200}
+      photoHeight={961}
+      caption="Featuring the Pavilions of Sinclair and Lowenbrau."
       previousHref="/fair_air44"
       nextHref="/fair_air46"
     />

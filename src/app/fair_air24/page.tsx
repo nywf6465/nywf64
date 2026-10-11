@@ -2,13 +2,13 @@ import type { Metadata } from "next";
 import { FairAirAerialPage } from "@/components/FairAirAerialPage";
 
 export const metadata: Metadata = {
-  title: "The Fair from the Air (model) — See the Fair from the Air — nywf64.com",
-  description: "The Fair from the Air (model) aerial photograph — See the Fair from the Air at the 1964/1965 New York World’s Fair on nywf64.com.",
+  title: "International Area — See the Fair from the Air — nywf64.com",
+  description: "International Area aerial photograph — See the Fair from the Air at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * See the Fair from the Air — The Fair from the Air (model).
- * Body from legacy fair_air24.html (Page 24; 1:1 with legacy numbering).
+ * See the Fair from the Air — International Area.
+ * Page 24 in A–Z explore-menu order (Photograph Index remains Page 1).
  *
  * Stack: airhero → FairAirNavChrome → navy title → aerial photo → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -17,12 +17,12 @@ export default function FairAir24Page() {
   return (
     <FairAirAerialPage
       pageNum={24}
-      title="The Fair from the Air (model)"
-      photoSrc="/images/fair_air24/aerial20.jpg"
-      photoAlt="The Fair from the Air"
+      title="International Area"
+      photoSrc="/images/fair_air24/aerial13.jpg"
+      photoAlt="International Area"
       photoWidth={1200}
-      photoHeight={959}
-      caption="Featuring the Fair's Official Model in the model room at World's Fair Headquarters."
+      photoHeight={958}
+      caption="Featuring the Pavilions of Philippeans, Lebanon, Greece, Morocco, and others."
       previousHref="/fair_air23"
       nextHref="/fair_air25"
     />

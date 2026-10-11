@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 /**
  * See the Fair from the Air — Industrial Area.
- * Body from legacy fair_air17.html (Page 17; 1:1 with legacy numbering).
+ * Page 17 in A–Z explore-menu order (Photograph Index remains Page 1).
  *
  * Stack: airhero → FairAirNavChrome → navy title → aerial photo → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -18,11 +18,11 @@ export default function FairAir17Page() {
     <FairAirAerialPage
       pageNum={17}
       title="Industrial Area"
-      photoSrc="/images/fair_air17/aerial16.jpg"
+      photoSrc="/images/fair_air17/aerial22.jpg"
       photoAlt="Industrial Area"
-      photoWidth={1200}
-      photoHeight={954}
-      caption="Featuring the Pavilions of Eastman Kodak, Pan American Gardens, Sermons from Science and others."
+      photoWidth={1130}
+      photoHeight={1425}
+      caption="Featuring the Fountains of the Planets."
       previousHref="/fair_air16"
       nextHref="/fair_air18"
     />

@@ -17,7 +17,7 @@ export const metadata: Metadata = {
 
 /**
  * See the Fair from the Air — photo index.
- * Body from legacy fair_air01.html (Page 1; 1:1 with legacy numbering).
+ * Body from legacy fair_air01.html (Page 1). Photo links follow A–Z menu order (Pages 2–46).
  *
  * Stack: airhero → FairAirNavChrome → navy title → thumbnail index → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.

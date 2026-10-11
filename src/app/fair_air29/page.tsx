@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 /**
  * See the Fair from the Air — State & Federal Area.
- * Body from legacy fair_air29.html (Page 29; 1:1 with legacy numbering).
+ * Page 29 in A–Z explore-menu order (Photograph Index remains Page 1).
  *
  * Stack: airhero → FairAirNavChrome → navy title → aerial photo → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -18,11 +18,11 @@ export default function FairAir29Page() {
     <FairAirAerialPage
       pageNum={29}
       title="State & Federal Area"
-      photoSrc="/images/fair_air29/aerial28.jpg"
+      photoSrc="/images/fair_air29/aerial06.jpg"
       photoAlt="State & Federal Area"
       photoWidth={1200}
-      photoHeight={930}
-      caption="Featuring the Pavilion of New Jersey."
+      photoHeight={963}
+      caption="Featuring Unisphere and the Fountains of the Continents."
       previousHref="/fair_air28"
       nextHref="/fair_air30"
     />
