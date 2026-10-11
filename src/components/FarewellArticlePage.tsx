@@ -8,7 +8,9 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export type FarewellArticlePageProps = {
   pageNum: number;
-  title: string;
+  title: ReactNode;
+  /** Optional smaller byline in the navy title bar (e.g. essay credit). */
+  byline?: ReactNode;
   previousHref: string;
   nextHref: string;
   children: ReactNode;
@@ -24,6 +26,7 @@ export type FarewellArticlePageProps = {
 export function FarewellArticlePage({
   pageNum,
   title,
+  byline,
   previousHref,
   nextHref,
   children,
@@ -56,6 +59,7 @@ export function FarewellArticlePage({
           <h1 id={titleId} className={styles.titleBarMain}>
             {title}
           </h1>
+          {byline ? <p className={styles.titleBarByline}>{byline}</p> : null}
         </header>
 
         <div className={styles.articleInner}>{children}</div>
