@@ -7,7 +7,7 @@ const TOPICS = [
   {
     id: "images-of-america",
     title: "Images of America Book Series",
-    href: "/artifacts/images-of-america",
+    href: "/booksoverview",
     hoverSrc: "/images/artifacts-hover/images-of-america.jpg",
     left: "2.058%",
     top: "0.667%",
