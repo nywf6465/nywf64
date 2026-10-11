@@ -7,7 +7,7 @@ export const metadata: Metadata = {
     "The Ottilio Building — The Fair that Survived at nywf64.com.",
 };
 
-/** Stub until the The Ottilio Building legacies page is built. */
+/** Stub until The Ottilio Building legacies page is built. */
 export default function Legacies04Page() {
   redirect("/legaciesoverview");
 }
