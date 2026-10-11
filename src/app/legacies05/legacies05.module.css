@@ -1,0 +1,244 @@
+/*
+ * The Fair that Survived — Glide-a-Rides (legacy legacies06).
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(40rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.articleInner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.quote {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.body {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.body a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.figure {
+  margin: 0 0 1.15rem;
+  text-align: center;
+}
+
+.figure::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.photo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.photoPlain {
+  border: 0;
+}
+
+.caption {
+  margin: 0.5rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.source {
+  margin: 0.35rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.photoRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 0 0 0.5rem;
+}
+
+.photoRow .photo {
+  margin: 0;
+}
+
+.floatLeft {
+  float: left;
+  margin: 0.15rem 0.85rem 0.65rem 0;
+  max-width: min(141px, 35%);
+}
+
+.floatRight {
+  float: right;
+  margin: 0.15rem 0 0.65rem 0.85rem;
+  max-width: min(150px, 35%);
+}
+
+.inlinePair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1rem;
+}
+
+.inlinePair .photo {
+  margin: 0;
+}
+
+.placeHead {
+  margin: 0 0 0.25rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.05rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.dateLine {
+  margin: 0 0 1.15rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.sectionLabel {
+  margin: 1.75rem 0 0.35rem;
+  color: #990000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.25rem, 2.8vw, 1.55rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.sectionSub {
+  margin: 0 0 0.65rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.signoff {
+  margin: 0.85rem 0 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.webmaster {
+  margin: 1.75rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.toyLead {
+  margin: 1.5rem 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.pairCaptions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem 0.75rem;
+  margin: 0.5rem 0 1rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+@media (max-width: 720px) {
+  .floatLeft,
+  .floatRight {
+    float: none;
+    display: block;
+    margin: 0 auto 0.75rem;
+    max-width: min(220px, 100%);
+  }
+
+  .pairCaptions {
+    grid-template-columns: 1fr;
+  }
+}
