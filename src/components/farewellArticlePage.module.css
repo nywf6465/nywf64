@@ -1,0 +1,113 @@
+/*
+ * The End of the Fair — article pages (legacy farewell02–11).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(47.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  color: #000;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 1rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+/* Cleaned legacy body markup */
+.legacyBody {
+  width: 100%;
+}
+
+.legacyBody :global(table) {
+  margin-left: auto;
+  margin-right: auto;
+  border-collapse: collapse;
+  max-width: 100%;
+}
+
+.legacyBody :global(td),
+.legacyBody :global(th) {
+  vertical-align: top;
+}
+
+.legacyBody :global(img) {
+  max-width: 100%;
+  height: auto;
+}
+
+.legacyBody :global(p) {
+  margin: 0 0 0.85rem;
+  text-align: left;
+}
+
+.legacyBody :global(hr) {
+  width: min(37.5rem, 100%);
+  margin: 1.25rem auto;
+  border: 0;
+  border-top: 1px solid #999;
+}
+
+.legacyBody :global(font[face*="Arial"]),
+.legacyBody :global(font[face*="arial"]) {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.legacyBody :global(font[face*="Times"]),
+.legacyBody :global(font[face*="times"]) {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.legacyBody :global(font[face*="Narrow"]),
+.legacyBody :global(font[face*="narrow"]) {
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 720px) {
+  .articleInner {
+    text-align: left;
+  }
+
+  .legacyBody :global(table) {
+    width: 100% !important;
+  }
+}
