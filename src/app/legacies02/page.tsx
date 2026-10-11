@@ -465,7 +465,7 @@ export default function Legacies02Page() {
             The AMF Monorail Cars were sent to Houston after the Fair with hopes
             that they might be put into operation at the newly completed Houston
             Intercontinental Airport. That did not happen.{" "}
-            <Link href="/amfoverview">
+            <Link href="/amf11">
               One had been sighted near Alvin, Texas. It&apos;s current status
               is unknown.
             </Link>
