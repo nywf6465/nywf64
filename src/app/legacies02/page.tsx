@@ -110,15 +110,14 @@ export default function Legacies02Page() {
           <figure className={styles.figure}>
             <Image
               src="/images/legacies02/socmobil01.jpg"
-              alt="Artist's rendering of the Socony Mobil Pavilion"
+              alt="Socony Mobil Pavilion at the NY World's Fair"
               width={400}
               height={264}
               className={styles.photo}
               unoptimized
             />
             <figcaption className={styles.caption}>
-              Artist&apos;s rendering of the Socony Mobil Pavilion at the NY
-              World&apos;s Fair
+              Socony Mobil Pavilion at the NY World&apos;s Fair
             </figcaption>
             <p className={styles.source}>
               SOURCE: Commercial Transparency by Photo Lab, Inc., Washington,
