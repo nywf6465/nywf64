@@ -60,6 +60,7 @@ import { EquitNavChrome } from "@/components/EquitNavChrome";
 import { FairAirNavChrome } from "@/components/FairAirNavChrome";
 import { FairEraNavChrome } from "@/components/FairEraNavChrome";
 import { FairStoryNavChrome } from "@/components/FairStoryNavChrome";
+import { FarewellNavChrome } from "@/components/FarewellNavChrome";
 import { FesgasNavChrome } from "@/components/FesgasNavChrome";
 import { FiestaNavChrome } from "@/components/FiestaNavChrome";
 import { FinartNavChrome } from "@/components/FinartNavChrome";
@@ -265,6 +266,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   EquitNavChrome,
   FairAirNavChrome,
   FairEraNavChrome,
+  FarewellNavChrome,
   FairStoryNavChrome,
   FesgasNavChrome,
   FiestaNavChrome,
