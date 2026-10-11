@@ -58,8 +58,7 @@ export default function FairAir01Page() {
         <div className={styles.articleInner}>
           <p className={styles.instruction}>
             Navigate this section simply by selecting the thumbnail image to see
-            a much larger image. These very detailed aerial views are in excess
-            of 300K and will be long loading with slower connections.
+            a larger image.
           </p>
 
           <ul className={styles.list}>
