@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { BuildingNavChrome } from "@/components/BuildingNavChrome";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./building14.module.css";
@@ -51,24 +50,6 @@ export default function Building14Page() {
         </header>
 
         <div className={styles.articleInner}>
-          <p className={styles.webmaster}>
-            Follow the{" "}
-            <Image
-              src="/images/building14/hand_rg.gif"
-              alt=""
-              width={33}
-              height={14}
-              className={styles.hand}
-              unoptimized
-            />{" "}
-            <strong>Webmaster&apos;s note...</strong> links to additional pages on{" "}
-            <strong>
-              <span className={styles.nywf}>nywf</span>
-              <span className={styles.nywf64}>64</span>
-            </strong>
-            .com featuring design and construction photos and stories!
-          </p>
-
           <section className={styles.section} aria-labelledby="sec-0">
             <h2 id="sec-0" className={styles.sectionLabel}>
               Pile Driving
@@ -365,12 +346,6 @@ NEWS</em><br />
               </p>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building14/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized /> 
-              Webmaster&apos;s note... Click 
-              <Link href="/gm20" className={styles.noteLink}>HERE</Link>
-               to read about the design &amp; construction of the Futu
-            </p>
             <div className={styles.photoGrid}>
               <figure className={styles.figure}>
                 <Image
@@ -494,12 +469,6 @@ Mitch Dakelman and Ray Dashner Collection (unless otherwise noted)
                 </figcaption>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building14/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized /> 
-              Webmaster&apos;s note... Click 
-              <Link href="/bell06" className={styles.noteLink}>HERE</Link>
-               to read more about the design &amp; construction of the Be
-            </p>
           </section>
 
           <section className={styles.section} aria-labelledby="sec-4">
@@ -638,12 +607,6 @@ NEWS</em><br />
               </p>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building14/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized /> 
-              Webmaster&apos;s note... Click 
-              <Link href="/genele06" className={styles.noteLink}>HERE</Link>
-               to read about the design &amp; construction of the General Electric
-            </p>
             <div className={styles.photoGrid}>
               <figure className={styles.figure}>
                 <Image
@@ -739,12 +702,6 @@ NEWS</em><br />
               </p>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building14/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized /> 
-              Webmaster&apos;s note... Click 
-              <Link href="/travelers07" className={styles.noteLink}>HERE</Link>
-               to read about the design &amp; construction of the Travelers Pavilion!&lt;
-            </p>
           </section>
 
           <section className={styles.section} aria-labelledby="sec-7">
@@ -957,12 +914,6 @@ NEWS</em><br />
               </p>
               </figure>
             </div>
-            <p className={styles.note}>
-              <Image src="/images/building14/hand_rg.gif" alt="" width={33} height={14} className={styles.hand} unoptimized /> 
-              Webmaster&apos;s note... Click 
-              <Link href="/ncr05" className={styles.noteLink}>HERE</Link>
-               to read about the design of the NCR Pavilion!&lt;/
-            </p>
             <div className={styles.photoGrid}>
               <figure className={styles.figure}>
                 <Image
