@@ -153,7 +153,7 @@ export default function Legacies02Page() {
             have. It is still in good shape.&quot; - April 17, 2000
           </p>
           <p className={styles.body}>
-            <Link href="/johwax08">The Johnson Wax Golden Rondelle</Link>, minus
+            <Link href="/johwax16">The Johnson Wax Golden Rondelle</Link>, minus
             the soaring canopy, was moved to downtown Racine, Wisconsin, where
             it became a part of the S.C. Johnson Companies&apos; corporate area.
             For many years, the Academy Award winning film, &quot;To be
