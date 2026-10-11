@@ -68,8 +68,8 @@
   line-height: 0;
   border: 1px solid #0a0a0a;
   background: #fff;
-  /* Match overview photo (319×443). */
-  aspect-ratio: 319 / 443;
+  /* Match overview photo (1055×1490). */
+  aspect-ratio: 1055 / 1490;
   overflow: hidden;
   max-width: 22rem;
   justify-self: center;
