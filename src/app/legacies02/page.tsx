@@ -244,7 +244,7 @@ export default function Legacies02Page() {
             certain that we have lost this legacy of the Fair.
           </p>
           <p className={styles.body}>
-            <Link href="/sinclair10">Sinclair Dinoland Dinosaurs</Link>: The
+            <Link href="/sinclair14">Sinclair Dinoland Dinosaurs</Link>: The
             Tyrannosaurus Rex and the Brontosaurus now reside in Dinosaur Valley
             State Park in Glen Rose, TX. The Triceratops is at the Louisville
             Science Center in Louisville, KY. The Stegosaurus can be found at
