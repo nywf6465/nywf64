@@ -276,7 +276,7 @@ export default function Legacies01Page() {
 
             <div className={styles.negotiateBlock}>
               <p className={styles.docCaption}>
-                Buildings and structures now under nogotiation
+                Buildings and structures now under negotiation
               </p>
               <p className={styles.docCaption}>
                 for possible relocation elsewhere
