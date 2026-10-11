@@ -129,7 +129,7 @@ export default function Legacies02Page() {
           <p className={styles.body}>
             The U.S. Rubber Ferris Wheel was moved to Detroit, Michigan where it
             became{" "}
-            <Link href="/usrub05">a giant road sign</Link> along Interstate
+            <Link href="/usrub09">a giant road sign</Link> along Interstate
             Highway 94.
           </p>
           <p className={styles.body}>
