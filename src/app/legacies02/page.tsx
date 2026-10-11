@@ -143,7 +143,7 @@ export default function Legacies02Page() {
           </p>
           <p className={styles.body}>
             The Parker Pen Pavilion was moved to Lake of the Ozarks, Missouri to
-            the <Link href="/parpenoverview">Lodge of Four Seasons</Link>. Mark
+            the <Link href="/parpen08">Lodge of Four Seasons</Link>. Mark
             Brown writes &quot;My family owns the Lodge of Four Seasons. It is
             true that we do indeed have the Parker Pen Pavilion onset. My
             grandfather purchased the building and brought it to the Lodge many
