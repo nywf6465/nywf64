@@ -182,13 +182,7 @@ export default function Legacies02Page() {
           </p>
           <p className={styles.body}>
             The Coca-Cola Carillon was relocated to{" "}
-            <a
-              href="https://www.stonemountainpark.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Stone Mountain Park
-            </a>{" "}
+            <Link href="/cokeoverview">Stone Mountain Park</Link>{" "}
             outside of Atlanta, Georgia, Coca-Cola&apos;s headquarters city.
             Follow the link and click-on &quot;Other Attractions&quot; within
             the Stone Mountain website to see a picture of how the Carillon looks
