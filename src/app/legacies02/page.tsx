@@ -228,7 +228,7 @@ export default function Legacies02Page() {
           </p>
           <p className={styles.body}>
             The Triumph of Man exhibit of the Travelers Insurance Companies was{" "}
-            <Link href="/travelers06">
+            <Link href="/travelers12">
               donated to the Center of Science and Industry (COSI) in Columbus,
               Ohio
             </Link>{" "}
