@@ -3,7 +3,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 /**
  * The Fair that Survived / legacies menu — 6 topic cards.
  * Card 1 is Overview; cards 2–6 map to /legacies01–05 (legacy
- * legacies02–06) and are filled when those pages are created.
+ * legacies02–06).
  */
 export const LEGACIES_MENU_TOPICS: AttractionTopic[] = [
   {
