@@ -46,7 +46,7 @@ export default function Legacies02Page() {
       <article className={styles.article} aria-labelledby="legacies02-title">
         <header className={styles.titleBar}>
           <h1 id="legacies02-title" className={styles.titleBarMain}>
-            Legacies Locations I
+            Legacy Locations
           </h1>
         </header>
 
