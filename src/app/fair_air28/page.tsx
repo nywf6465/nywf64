@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 
 /**
  * See the Fair from the Air — Main Mall.
- * Body from legacy fair_air28.html (Page 28; 1:1 with legacy numbering).
+ * Page 28 in A–Z explore-menu order (Photograph Index remains Page 1).
  *
  * Stack: airhero → FairAirNavChrome → navy title → aerial photo → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
