@@ -165,13 +165,7 @@ export default function Legacies02Page() {
           <p className={styles.body}>
             The Ten Pillars of Economic Wisdom that stood in front of the Hall
             of Free Enterprise were donated to the{" "}
-            <a
-              href="https://www.amway.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              Amway Corporation
-            </a>
+            <Link href="/halfreoverview">Amway Corporation</Link>
             . Mr. John Faye of Amway&apos;s Visitor Center writes &quot;You are
             right they were on the ten columns (pillars) on the front of the
             Economics Building at the NY World&apos;s Fair. When we were offered
