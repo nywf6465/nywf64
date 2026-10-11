@@ -15,11 +15,11 @@ export const LEGACIES_MENU_TOPICS: AttractionTopic[] = [
     href: "/legacies01",
   },
   {
-    label: "Legacies Locations I",
+    label: "Legacy Locations",
     href: "/legacies02",
   },
   {
-    label: "Legacies Locations II",
+    label: "Legacy Locations",
     href: "/legacies03",
   },
   {
