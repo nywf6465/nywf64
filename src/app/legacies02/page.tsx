@@ -134,7 +134,7 @@ export default function Legacies02Page() {
           </p>
           <p className={styles.body}>
             The Spanish Pavilion was disassembled and reconstructed{" "}
-            <Link href="/spainoverview">in downtown Saint Louis, Missouri</Link>{" "}
+            <Link href="/spain12">in downtown Saint Louis, Missouri</Link>{" "}
             at 1 S. Broadway, where it was to become a part of the city&apos;s
             Westward Expansion area that encompassed the Gateway Arch and Busch
             Stadium. After sitting neglected and unused for years it was finally
