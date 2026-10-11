@@ -23,8 +23,9 @@ function BrandMark() {
 }
 
 /**
- * The Fair from the Air overview — follows the **overview** prototype
- * (same stack as /aertowoverview / /clairoverview).
+ * See the Fair from the Air overview — follows the **overview** prototype
+ * (same stack as /aertowoverview / /fair_eraoverview).
+ * Shared airhero is reused on later fair_air pages.
  */
 export default function FairAirOverviewPage() {
   return (

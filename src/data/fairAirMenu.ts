@@ -1,24 +1,21 @@
 import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
+import { FAIR_AIR_GALLERY_ITEMS } from "@/data/fairAirGallery";
 
 /**
- * Fair from the Air menu — nav-menu topics for all routes beginning with `fair_air`.
- * Overview first; 45 photograph cards follow (labels filled as photo pages ship).
+ * See the Fair from the Air / fair_air menu — 47 topic cards.
+ * Overview + Page 1 index + Pages 2–46 (photograph cards A–Z by title).
  */
-const PHOTO_PLACEHOLDERS: AttractionTopic[] = Array.from(
-  { length: 45 },
-  (_, index) => {
-    const n = String(index + 1).padStart(2, "0");
-    return {
-      label: `Photo ${n}`,
-      href: `/fair_air${n}`,
-    };
-  },
-);
-
 export const FAIR_AIR_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "Overview",
     href: "/fair_airoverview",
   },
-  ...PHOTO_PLACEHOLDERS,
+  {
+    label: "Photograph Index",
+    href: "/fair_air01",
+  },
+  ...FAIR_AIR_GALLERY_ITEMS.map((item) => ({
+    label: item.title,
+    href: `/fair_air${String(item.num).padStart(2, "0")}`,
+  })),
 ];
