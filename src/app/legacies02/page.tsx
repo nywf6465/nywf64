@@ -189,7 +189,7 @@ export default function Legacies02Page() {
             today. Thanks to Elizabeth Klug for finding the website.
           </p>
           <p className={styles.body}>
-            <Link href="/wisconsin05">The Wisconsin Pavilion Rotunda</Link> was
+            <Link href="/wisconsin08">The Wisconsin Pavilion Rotunda</Link> was
             relocated to Neillsville, Wisconsin, as a radio station and gift
             shop. It houses the studios of WCCN radio today.
           </p>
