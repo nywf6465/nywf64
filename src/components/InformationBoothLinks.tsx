@@ -57,7 +57,7 @@ const TOPICS = [
   {
     id: "end",
     title: "The End of the Fair",
-    href: "/information/end",
+    href: "/farewelloverview",
     hoverSrc: "/images/information-hover/end.jpg",
     left: "50.498%",
     top: "51.424%",
