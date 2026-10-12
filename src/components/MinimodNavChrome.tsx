@@ -6,7 +6,7 @@ import { MINIMOD_MENU_TOPICS } from "@/data/minimodMenu";
 /**
  * Miniature Models of the Fair menu chrome — nav bar (“EXPLORE THIS TOPIC”)
  * + minimod topic cards. Use on every page whose route begins with
- * `minimod`.
+ * `minimod` / `minimods`.
  */
 export function MinimodNavChrome() {
   return (

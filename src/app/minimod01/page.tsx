@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Stub until the first Miniature Models content page is built. */
-export default function Minimod01Stub() {
-  redirect("/minimodsoverview");
+/** Alias — content page lives at `/minimods01`. */
+export default function Minimod01Alias() {
+  redirect("/minimods01");
 }
