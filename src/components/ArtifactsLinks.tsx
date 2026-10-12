@@ -27,7 +27,7 @@ const TOPICS = [
   {
     id: "miniature-models",
     title: "Miniature Models of the Fair",
-    href: "/artifacts/miniature-models",
+    href: "/minimodsoverview",
     hoverSrc: "/images/artifacts-hover/miniature-models.jpg",
     left: "2.058%",
     top: "11.593%",
