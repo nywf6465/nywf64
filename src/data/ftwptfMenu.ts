@@ -17,8 +17,8 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf02",
   },
   {
-    label: "…",
-    href: "/ftwptfsaga",
+    label: "The Saga of Flushing Meadow",
+    href: "/ftwptf03-01",
   },
   {
     label: "…",
