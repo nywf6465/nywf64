@@ -317,7 +317,7 @@ export default function Building22Page() {
                 className={styles.photo}
                 unoptimized
               />
-              <Link href="/farewell01" className={styles.farewellClick}>
+              <Link href="/farewelloverview" className={styles.farewellClick}>
                 Click HERE
               </Link>
             </figure>
@@ -348,7 +348,7 @@ export default function Building22Page() {
               <span className={styles.nywf64}>64</span>
             </strong>
             <span className={styles.nywf}>.com</span> in the Feature, &quot;
-            <Link href="/farewell01" className={styles.noteLink}>
+            <Link href="/farewelloverview" className={styles.noteLink}>
               Farewell to the Fair
             </Link>
             .&quot; You are invited to continue exploring the fascinating story
