@@ -1,0 +1,131 @@
+/*
+ * Progress Reports index (legacy report.html / report.shtml).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(52rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.intro {
+  margin: 0 0 1.25rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.5;
+}
+
+.intro strong {
+  font-weight: 700;
+}
+
+.intro u {
+  text-decoration: underline;
+  font-weight: 700;
+}
+
+.intro em {
+  font-style: italic;
+}
+
+.issueGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 1.25rem 1rem;
+  margin: 0;
+  padding: 0.75rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.issue {
+  display: flex;
+  align-items: flex-end;
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.coverLink {
+  display: block;
+  flex: 0 0 auto;
+  line-height: 0;
+}
+
+.cover {
+  display: block;
+  width: auto;
+  max-width: 118px;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.meta {
+  margin: 0;
+  padding: 0 0 0.15rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.meta dt {
+  margin: 0;
+}
+
+.meta dd {
+  margin: 0.1rem 0 0;
+}
+
+@media (max-width: 900px) {
+  .issueGrid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 560px) {
+  .issueGrid {
+    grid-template-columns: 1fr;
+  }
+}
