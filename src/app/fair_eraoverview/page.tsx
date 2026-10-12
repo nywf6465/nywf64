@@ -62,8 +62,8 @@ export default function FairEraOverviewPage() {
             <Image
               src="/images/fair_eraoverview/photo.jpg"
               alt="1964 and 1965 — The Era of the Fair"
-              width={319}
-              height={443}
+              width={1055}
+              height={1490}
               sizes="(max-width: 720px) 100vw, 22rem"
               className={styles.photo}
               unoptimized
