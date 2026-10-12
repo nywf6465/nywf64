@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Stub until Pages 01-64 / Pavilions & Attractions is converted. */
+/** Legacy menu path — Pavilions & Attractions lives at `/ftwptf04`. */
 export default function Stub() {
-  redirect("/ftwptfoverview");
+  redirect("/ftwptf04");
 }
