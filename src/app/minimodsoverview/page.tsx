@@ -77,7 +77,7 @@ export default function MinimodOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/minimodsoverview"
-        nextHref="/minimod01"
+        nextHref="/minimods01"
       />
     </>
   );
