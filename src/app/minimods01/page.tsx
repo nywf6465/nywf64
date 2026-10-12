@@ -7,9 +7,10 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Miniature Models (continued) — Miniature Models of the Fair — nywf64.com",
+  title:
+    "The Miniature Models of the Fair … by Bill Young — nywf64.com",
   description:
-    "The Mini Models of the Fair by Bill Young — rare miniature pavilion models from the 1964/1965 New York World’s Fair on nywf64.com.",
+    "The Miniature Models of the Fair by Bill Young — rare miniature pavilion models from the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 const GALLERY: { src: string; alt: string; caption: string }[] = [
@@ -103,16 +104,12 @@ export default function Minimods01Page() {
       <article className={styles.article} aria-labelledby="minimods01-title">
         <header className={styles.titleBar}>
           <h1 id="minimods01-title" className={styles.titleBarMain}>
-            Miniature Models (continued)
+            <em>The Miniature Models of the Fair</em>
+            {" … by Bill Young"}
           </h1>
         </header>
 
         <div className={styles.articleInner}>
-          <h2 className={styles.essayTitle}>The Mini Models of the Fair</h2>
-          <p className={styles.byline}>
-            by <span className={styles.bylineName}>Bill Young</span>
-          </p>
-
           <p className={styles.body}>
             I&apos;m a bona fide, die-hard model <em>nut</em>. Sitting in a box
             in my basement is the beginnings of the &apos;64 World&apos;s Fair
