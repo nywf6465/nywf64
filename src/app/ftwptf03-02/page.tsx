@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Stub until The Saga of Flushing Meadow - Page 01 is converted. */
+/** Stub until The Saga of Flushing Meadow - Page 02 is converted. */
 export default function Stub() {
   redirect("/ftwptf03-01");
 }
