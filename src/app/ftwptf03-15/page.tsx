@@ -9,13 +9,13 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title:
-    "The Saga of Flushing Meadow - Page 15 — For Those Who Produced the Fair — nywf64.com",
+    "The Saga of Flushing Meadow (continued) — For Those Who Produced the Fair — nywf64.com",
   description:
     "The Saga of Flushing Meadow page 15 from For Those Who Produced the New York World’s Fair 1964-1965 — nywf64.com.",
 };
 
 /**
- * For Those Who Produced the Fair — The Saga of Flushing Meadow - Page 15.
+ * For Those Who Produced the Fair — The Saga of Flushing Meadow (continued).
  * Subpage of /ftwptf03 (legacy ftwptfsaga15.html). No nav menu card.
  * Final saga page — left-hand only (legacy has no right-hand).
  *
@@ -50,7 +50,7 @@ export default function Ftwptf0315Page() {
       <article className={styles.article} aria-labelledby="ftwptf03-15-title">
         <header className={styles.titleBar}>
           <h1 id="ftwptf03-15-title" className={styles.titleBarMain}>
-            The Saga of Flushing Meadow - Page 15
+            The Saga of Flushing Meadow (continued)
           </h1>
         </header>
 
