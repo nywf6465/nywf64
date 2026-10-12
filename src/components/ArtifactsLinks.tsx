@@ -37,7 +37,7 @@ const TOPICS = [
   {
     id: "fair-news",
     title: "Fair News Newsletters",
-    href: "/artifacts/fair-news",
+    href: "/fairnewsoverview",
     hoverSrc: "/images/artifacts-hover/fair-news.jpg",
     left: "50.534%",
     top: "11.676%",
