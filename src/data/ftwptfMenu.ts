@@ -2,7 +2,6 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * For Those Who Produced the Fair / ftwptf menu — numerous topic cards.
- * Overview + Introduction filled; remaining cards filled as pages are created.
  */
 export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -14,8 +13,8 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf01",
   },
   {
-    label: "…",
-    href: "/ftwptfunisphere",
+    label: "Unisphere Photo",
+    href: "/ftwptf02",
   },
   {
     label: "…",

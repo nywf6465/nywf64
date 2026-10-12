@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Stub until this For Those Who Produced the Fair page is converted. */
+/** Legacy path — Unisphere Photo lives at `/ftwptf02`. */
 export default function Stub() {
-  redirect("/ftwptfoverview");
+  redirect("/ftwptf02");
 }
