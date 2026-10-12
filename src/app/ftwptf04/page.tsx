@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import Image from "next/image";
-import Link from "next/link";
 import { FtwptfNavChrome } from "@/components/FtwptfNavChrome";
 import { Nav2Bar } from "@/components/Nav2Bar";
 import styles from "./ftwptf04.module.css";
@@ -17,6 +16,7 @@ export const metadata: Metadata = {
 /**
  * For Those Who Produced the Fair — Pavilions & Attractions (legacy ftwptf01.html).
  * Book section Pages 01–64. Nav bar shows Page 4 (route number).
+ * No hand-icon bars (omitted).
  *
  * Stack: ftwptfhero → FtwptfNavChrome → navy title → article → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -65,26 +65,6 @@ export default function Ftwptf04Page() {
               unoptimized
             />
           </figure>
-
-          <p className={styles.handRowEnd}>
-            <Link href="/ftwptf05" className={styles.handPrompt}>
-              Click the Hand
-            </Link>
-            <span className={styles.handTarget}> to go to </span>
-            <Link href="/ftwptf05" className={styles.handTarget}>
-              Page Two
-            </Link>{" "}
-            <Link href="/ftwptf05" aria-label="Go to Page Two">
-              <Image
-                src="/images/ftwptf04/hand_rg.gif"
-                alt=""
-                width={33}
-                height={14}
-                className={styles.hand}
-                unoptimized
-              />
-            </Link>
-          </p>
         </div>
       </article>
 
