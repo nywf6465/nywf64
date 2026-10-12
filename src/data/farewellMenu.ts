@@ -23,8 +23,16 @@ export const FAREWELL_MENU_TOPICS: AttractionTopic[] = [
     href: "/farewell03",
   },
   {
-    label: "... an essay by Craig Bavaro",
+    label:
+      "Essay: An Almost Fond Farewell (Before the Show Even Started)",
     href: "/farewell04",
+    parts: [
+      { text: "Essay: " },
+      {
+        text: "An Almost Fond Farewell (Before the Show Even Started)",
+        italic: true,
+      },
+    ],
   },
   {
     label: "On Shaky Ground",

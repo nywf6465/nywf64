@@ -19,7 +19,10 @@
 
 .titleBar {
   display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
   justify-content: center;
+  gap: 0.35rem 0.5rem;
   width: 100%;
   box-sizing: border-box;
   margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
@@ -39,6 +42,17 @@
   font-size: 16px;
   font-weight: 700;
   line-height: 1.35;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  font-weight: 700;
 }
 
 .articleInner {
