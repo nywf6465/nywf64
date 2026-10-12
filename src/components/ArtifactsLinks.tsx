@@ -47,7 +47,8 @@ const TOPICS = [
   {
     id: "progress-reports",
     title: "World\u2019s Fair Progress Reports",
-    href: "/artifacts/progress-reports",
+    href: "/reportoverview",
+
     hoverSrc: "/images/artifacts-hover/progress-reports.jpg",
     left: "2.058%",
     top: "21.935%",
