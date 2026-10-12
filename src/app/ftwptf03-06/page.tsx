@@ -124,7 +124,7 @@ export default function Ftwptf0306Page() {
         previousHref="/ftwptf03-05"
         explicitPrevious
         overviewHref="/ftwptfoverview"
-        nextHref="/ftwptf03-07"
+        nextHref="/ftwptf04"
       />
     </>
   );
