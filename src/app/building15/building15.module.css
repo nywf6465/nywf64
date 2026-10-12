@@ -55,26 +55,6 @@
   color: #000;
 }
 
-.webmaster {
-  margin: 0 0 1.25rem;
-  font-size: 0.8rem;
-  line-height: 1.45;
-}
-
-.nywf {
-  color: #0066cc;
-}
-
-.nywf64 {
-  color: #ff3300;
-}
-
-.hand {
-  display: inline-block;
-  vertical-align: middle;
-  margin: 0 0.15rem;
-}
-
 .section {
   margin: 0 0 2rem;
 }
@@ -104,18 +84,6 @@
   margin: 0 0 0.85rem;
   font-size: 0.85rem;
   line-height: 1.5;
-}
-
-.note {
-  margin: 0.65rem 0 0.85rem;
-  font-size: 0.8rem;
-  line-height: 1.45;
-}
-
-.noteLink {
-  color: #0066cc;
-  font-weight: 700;
-  text-decoration: underline;
 }
 
 .photoGrid {

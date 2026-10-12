@@ -317,7 +317,7 @@ export default function Building22Page() {
                 className={styles.photo}
                 unoptimized
               />
-              <Link href="/farewell01" className={styles.farewellClick}>
+              <Link href="/farewelloverview" className={styles.farewellClick}>
                 Click HERE
               </Link>
             </figure>
@@ -348,7 +348,7 @@ export default function Building22Page() {
               <span className={styles.nywf64}>64</span>
             </strong>
             <span className={styles.nywf}>.com</span> in the Feature, &quot;
-            <Link href="/farewell01" className={styles.noteLink}>
+            <Link href="/farewelloverview" className={styles.noteLink}>
               Farewell to the Fair
             </Link>
             .&quot; You are invited to continue exploring the fascinating story
@@ -445,20 +445,8 @@ export default function Building22Page() {
               all, a very big Thank You to Bradd Schiffman who took the time and
               patience last year to scan in the Fair&apos;s Newsletter (
               <em>FAIR NEWS</em>) and Progress Reports. They have been an
-              invaluable resource in putting together this feature. There&apos;s
-              so much more that could have gone online and, at the risk of being
-              a shameless self-promoter, anyone can purchase a CD-Rom of the
-              complete set of these fascinating documents from the{" "}
-              <Link href="/cdsales01" className={styles.noteLink}>
-                Souvenir Stand
-              </Link>{" "}
-              here at{" "}
-              <strong>
-                <span className={styles.nywf}>nywf</span>
-                <span className={styles.nywf64}>64</span>
-              </strong>
-              <span className={styles.nywf}>.com</span> to continue their
-              exploration of the Building of the Fair. Many thanks to the major
+              invaluable resource in putting together this feature. Many thanks
+              to the major
               contributors of photographs for the feature, namely Karl Baker,
               Glen Mordacai and Ray Dashner. It&apos;s always the picture more
               than the written word that captures the imagination and these

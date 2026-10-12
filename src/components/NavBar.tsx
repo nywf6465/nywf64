@@ -44,7 +44,7 @@ export function NavBar({
   exploreLabel,
 }: NavBarProps) {
   const pathname = usePathname() ?? "";
-  const pageNumber = pageNumberFromPath(pathname);
+  const pageLabel = pageNumberFromPath(pathname);
   const exploreText = exploreLabel ?? `EXPLORE THIS ${exploreNoun}`;
   const aria =
     exploreLabel != null
@@ -76,9 +76,9 @@ export function NavBar({
           </span>
           <span className={styles.exploreText}>{exploreText}</span>
         </button>
-        {pageNumber != null ? (
-          <span className={styles.pageLabel} aria-label={`Page ${pageNumber}`}>
-            Page {pageNumber}
+        {pageLabel != null ? (
+          <span className={styles.pageLabel} aria-label={`Page ${pageLabel}`}>
+            Page {pageLabel}
           </span>
         ) : null}
       </div>

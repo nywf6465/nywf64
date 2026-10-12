@@ -4,7 +4,8 @@
   width: 100%;
   background: #fff;
   box-sizing: border-box;
-  padding: 1.25rem clamp(1rem, 3vw, 1.75rem) 1.35rem;
+  /* Tight bottom pad — hub cards sit close under the banner */
+  padding: 1rem clamp(1rem, 3vw, 1.75rem) 0.35rem;
 }
 
 .frame {

@@ -1,0 +1,169 @@
+/*
+ * The Fair that Survived — Legacies Locations I (legacy legacies03).
+ * HARD RULE — navy title banner beneath the nav.
+ * HARD RULE — photo → caption → SOURCE.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(40rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.articleInner::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.quote {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.body {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.body a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.figure {
+  margin: 0 0 1.15rem;
+  text-align: center;
+}
+
+.figure::after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.photo {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.photoPlain {
+  border: 0;
+}
+
+.caption {
+  margin: 0.5rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.source {
+  margin: 0.35rem 0 0;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.source em {
+  font-style: italic;
+}
+
+.photoRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.65rem;
+  margin: 0 0 0.5rem;
+}
+
+.photoRow .photo {
+  margin: 0;
+}
+
+.floatLeft {
+  float: left;
+  margin: 0.15rem 0.85rem 0.65rem 0;
+  max-width: min(141px, 35%);
+}
+
+.floatRight {
+  float: right;
+  margin: 0.15rem 0 0.65rem 0.85rem;
+  max-width: min(150px, 35%);
+}
+
+.inlinePair {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.75rem 1rem;
+  margin: 0 0 1rem;
+}
+
+.inlinePair .photo {
+  margin: 0;
+}
+
+@media (max-width: 720px) {
+  .floatLeft,
+  .floatRight {
+    float: none;
+    display: block;
+    margin: 0 auto 0.75rem;
+    max-width: min(220px, 100%);
+  }
+}
