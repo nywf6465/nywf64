@@ -22,8 +22,8 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf03",
   },
   {
-    label: "…",
-    href: "/ftwptfpavilions",
+    label: "Pages 01-64 / Pavilions & Attractions",
+    href: "/ftwptf04",
   },
   {
     label: "…",
