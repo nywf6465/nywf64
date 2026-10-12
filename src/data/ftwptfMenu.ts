@@ -2,6 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * For Those Who Produced the Fair / ftwptf menu — numerous topic cards.
+ * Saga subpages (ftwptf03-01, …) are hand-linked only — no menu cards.
  */
 export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -18,7 +19,7 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "The Saga of Flushing Meadow",
-    href: "/ftwptf03-01",
+    href: "/ftwptf03",
   },
   {
     label: "…",

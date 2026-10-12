@@ -9,14 +9,14 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title:
-    "The Saga of Flushing Meadow - Cover — For Those Who Produced the Fair — nywf64.com",
+    "The Saga of Flushing Meadow - Page 01 — For Those Who Produced the Fair — nywf64.com",
   description:
-    "The Saga of Flushing Meadow cover from For Those Who Produced the New York World’s Fair 1964-1965 — nywf64.com.",
+    "The Saga of Flushing Meadow page 01 from For Those Who Produced the New York World’s Fair 1964-1965 — nywf64.com.",
 };
 
 /**
- * For Those Who Produced the Fair — The Saga of Flushing Meadow - Cover.
- * First of the ftwptf03-* series (legacy ftwptfsaga.html).
+ * For Those Who Produced the Fair — The Saga of Flushing Meadow - Page 01.
+ * Subpage of /ftwptf03 (legacy ftwptfsaga01.html). No nav menu card.
  *
  * Stack: ftwptfhero → FtwptfNavChrome → navy title → article → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -49,32 +49,64 @@ export default function Ftwptf0301Page() {
       <article className={styles.article} aria-labelledby="ftwptf03-01-title">
         <header className={styles.titleBar}>
           <h1 id="ftwptf03-01-title" className={styles.titleBarMain}>
-            The Saga of Flushing Meadow - Cover
+            The Saga of Flushing Meadow - Page 01
           </h1>
         </header>
 
         <div className={styles.articleInner}>
+          <p className={styles.handRow}>
+            <Link href="/ftwptf03" aria-label="Go back to Cover">
+              <Image
+                src="/images/ftwptf03-01/hand_lf.gif"
+                alt=""
+                width={33}
+                height={14}
+                className={styles.hand}
+                unoptimized
+              />
+            </Link>{" "}
+            <Link href="/ftwptf03" className={styles.handPrompt}>
+              Click the Hand
+            </Link>
+            <span className={styles.handTarget}> to go back to </span>
+            <Link href="/ftwptf03" className={styles.handTarget}>
+              Cover
+            </Link>
+          </p>
+
           <figure className={styles.figure}>
             <Image
-              src="/images/ftwptf03-01/saga-cover.jpg"
-              alt="The Saga of Flushing Meadow… — The Valley of Ashes"
+              src="/images/ftwptf03-01/saga01-top.jpg"
+              alt="The Saga of Flushing Meadow — Page 01 photograph"
               width={900}
-              height={753}
+              height={970}
               className={styles.image}
               sizes="(max-width: 900px) 100vw, 900px"
               unoptimized
             />
           </figure>
 
-          <p className={styles.handRow}>
+          <figure className={styles.figure}>
+            <Image
+              src="/images/ftwptf03-01/saga01-bottom.jpg"
+              alt="The Saga of Flushing Meadow — Page 01 caption panel"
+              width={900}
+              height={322}
+              className={styles.image}
+              sizes="(max-width: 900px) 100vw, 900px"
+              unoptimized
+            />
+          </figure>
+
+          <p className={styles.handRowEnd}>
             <Link href="/ftwptf03-02" className={styles.handPrompt}>
               Click the Hand
             </Link>
             <span className={styles.handTarget}> to go to </span>
             <Link href="/ftwptf03-02" className={styles.handTarget}>
-              Page One
+              Page Two
             </Link>{" "}
-            <Link href="/ftwptf03-02" aria-label="Go to Page One">
+            <Link href="/ftwptf03-02" aria-label="Go to Page Two">
               <Image
                 src="/images/ftwptf03-01/hand_rg.gif"
                 alt=""
@@ -89,7 +121,7 @@ export default function Ftwptf0301Page() {
       </article>
 
       <Nav2Bar
-        previousHref="/ftwptf02"
+        previousHref="/ftwptf03"
         explicitPrevious
         overviewHref="/ftwptfoverview"
         nextHref="/ftwptf03-02"
