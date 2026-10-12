@@ -58,7 +58,8 @@ const TOPICS = [
   {
     id: "for-those-who-produced",
     title: "For Those Who Produced the Fair",
-    href: "/artifacts/for-those-who-produced",
+    href: "/ftwptfoverview",
+
     hoverSrc: "/images/artifacts-hover/for-those-who-produced.jpg",
     left: "50.534%",
     top: "22.018%",
