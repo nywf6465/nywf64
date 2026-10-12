@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Stub until this For Those Who Produced the Fair page is converted. */
+/** Legacy path — The Saga of Flushing Meadow cover lives at `/ftwptf03-01`. */
 export default function Stub() {
-  redirect("/ftwptfoverview");
+  redirect("/ftwptf03-01");
 }
