@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Miniature Models of the Fair / minimod menu — 3 topic cards.
- * Overview + Miniature Models (continued) + stub for the next page.
+ * Overview + two “Miniature Models (continued)” gallery pages.
  */
 export const MINIMOD_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -14,7 +14,7 @@ export const MINIMOD_MENU_TOPICS: AttractionTopic[] = [
     href: "/minimods01",
   },
   {
-    label: "…",
+    label: "Miniature Models (continued)",
     href: "/minimods02",
   },
 ];
