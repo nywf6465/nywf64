@@ -59,7 +59,7 @@ export default function Ftwptf22Page() {
               src="/images/ftwptf22/page19.jpg"
               alt="Pavilions & Attractions — Page 19 from For Those Who Produced the New York World’s Fair 1964-1965"
               width={900}
-              height={1125}
+              height={1126}
               className={styles.image}
               sizes="(max-width: 900px) 100vw, 900px"
               unoptimized
