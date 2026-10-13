@@ -26,8 +26,8 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf04",
   },
   {
-    label: "…",
-    href: "/ftwptfaerial",
+    label: "Aerial View of the Fair",
+    href: "/ftwptf68",
   },
   {
     label: "…",
