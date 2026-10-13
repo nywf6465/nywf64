@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Stub until Pavilions & Attractions Page Sixty-Seven (legacy ftwptf67) is converted. */
+/** Stub until the next Great Moments page is converted. */
 export default function Stub() {
-  redirect("/ftwptfyy");
+  redirect("/ftwptf69");
 }
