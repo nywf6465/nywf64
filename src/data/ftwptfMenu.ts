@@ -34,8 +34,8 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf69",
   },
   {
-    label: "…",
-    href: "/ftwptf65",
+    label: "Pages 65-94 / Dignitaries & Speeches",
+    href: "/ftwptf70",
   },
   {
     label: "…",
