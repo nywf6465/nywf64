@@ -22,7 +22,7 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf03",
   },
   {
-    label: "Pages 01-64 / Pavilions & Attractions",
+    label: "Pavilions & Attractions",
     href: "/ftwptf04",
   },
   {
