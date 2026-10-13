@@ -38,7 +38,7 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf70",
   },
   {
-    label: "…",
-    href: "/ftwptfpark",
+    label: "Invitation to Reopening of Flushing Meadows Park",
+    href: "/ftwptf100",
   },
 ];
