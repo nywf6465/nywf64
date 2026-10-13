@@ -155,6 +155,12 @@ const nextConfig: NextConfig = {
         destination: "/fair_airoverview",
         permanent: true,
       },
+      // Official Preview Book — legacy dotted slugs → previewNN
+      {
+        source: "/preview.:page(\\d{2})",
+        destination: "/preview:page",
+        permanent: true,
+      },
     ];
   },
 };

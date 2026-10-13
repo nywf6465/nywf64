@@ -1,0 +1,62 @@
+/*
+ * Official Preview Book pages (legacy preview.html / preview.NN.html).
+ * Stack: PreviewHero → PreviewNavChrome → navy title → tiled scans → Nav2Bar.
+ */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(56.375rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+}
+
+.tileFrame {
+  display: grid;
+  border: 1px solid #000;
+  background: #fff;
+  line-height: 0;
+  width: fit-content;
+  max-width: 100%;
+  overflow: hidden;
+}
+
+.tile {
+  display: block;
+  width: 100%;
+  height: auto;
+}
