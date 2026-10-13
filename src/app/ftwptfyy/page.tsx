@@ -69,10 +69,10 @@ export default function FtwptfYyPage() {
       </article>
 
       <Nav2Bar
-        previousHref="/ftwptf69"
+        previousHref="/ftwptf67"
         explicitPrevious
         overviewHref="/ftwptfoverview"
-        nextHref="/ftwptf70"
+        nextHref="/ftwptf68"
       />
     </>
   );
