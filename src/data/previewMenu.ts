@@ -9,4 +9,8 @@ export const PREVIEW_MENU_TOPICS: AttractionTopic[] = [
     label: "Official Preview",
     href: "/preview01",
   },
+  {
+    label: "Page 2",
+    href: "/preview02",
+  },
 ];
