@@ -30,8 +30,8 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf68",
   },
   {
-    label: "…",
-    href: "/ftwptfgreatmoments",
+    label: "Great Moments at the Fair",
+    href: "/ftwptf69",
   },
   {
     label: "…",
