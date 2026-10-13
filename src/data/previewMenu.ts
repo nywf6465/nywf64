@@ -25,4 +25,8 @@ export const PREVIEW_MENU_TOPICS: AttractionTopic[] = [
     label: "Page 5",
     href: "/preview05",
   },
+  {
+    label: "Page 6",
+    href: "/preview06",
+  },
 ];
