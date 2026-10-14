@@ -146,6 +146,7 @@ import { PavamiNavChrome } from "@/components/PavamiNavChrome";
 import { PavparNavChrome } from "@/components/PavparNavChrome";
 import { PennsyNavChrome } from "@/components/PennsyNavChrome";
 import { PepsiNavChrome } from "@/components/PepsiNavChrome";
+import { PeriodicalsNavChrome } from "@/components/PeriodicalsNavChrome";
 import { PhilipNavChrome } from "@/components/PhilipNavChrome";
 import { PolyneNavChrome } from "@/components/PolyneNavChrome";
 import { PoolinNavChrome } from "@/components/PoolinNavChrome";
@@ -153,8 +154,7 @@ import { PoorefNavChrome } from "@/components/PoorefNavChrome";
 import { PorautNavChrome } from "@/components/PorautNavChrome";
 import { PrebuiNavChrome } from "@/components/PrebuiNavChrome";
 import { ProortNavChrome } from "@/components/ProortNavChrome";
-import { RcaNavChrome } from "@/components/RcaNavChrome";
-import { RheingNavChrome } from "@/components/RheingNavChrome";
+import { RcaNavChrome } from "@/components/RcaNavChrome";import { RheingNavChrome } from "@/components/RheingNavChrome";
 import { RmNavChrome } from "@/components/RmNavChrome";
 import { RocthrNavChrome } from "@/components/RocthrNavChrome";
 import { RusortNavChrome } from "@/components/RusortNavChrome";
@@ -353,6 +353,7 @@ const STUB_NAV: Record<string, ComponentType> = {
   PavparNavChrome,
   PennsyNavChrome,
   PepsiNavChrome,
+  PeriodicalsNavChrome,
   PhilipNavChrome,
   PolyneNavChrome,
   PoolinNavChrome,
