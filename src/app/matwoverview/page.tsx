@@ -89,7 +89,7 @@ export default function MatwOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/matwoverview"
-        nextHref="/matwoverview"
+        nextHref="/matw01"
       />
     </>
   );
