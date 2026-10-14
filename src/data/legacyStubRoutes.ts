@@ -9114,6 +9114,19 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/newmexoverview",
     nextHref: "/newmex01",
   },
+  "newsweek640113": {
+    slug: "newsweek640113",
+    title: "World's Fair '64:  A Preview",
+    metaTitle: "World's Fair '64: A Preview — Newsweek — nywf64.com",
+    metaDescription:
+      "World's Fair '64: A Preview — Newsweek Magazine, January 13, 1964, on nywf64.com.",
+    nav: "PeriodicalsNavChrome",
+    overviewHref: "/periodicalsoverview",
+    overviewLabel: "Magazine Articles of the Fair overview",
+    placeholder: "Newsweek Magazine article",
+    previousHref: "/newsweek01",
+    nextHref: "/newsweek01",
+  },
   "newyor01": {
     slug: "newyor01",
     title: "newyor01",
