@@ -79,7 +79,7 @@ const TOPICS = [
   {
     id: "men-at-work",
     title: "The \u201cMen at Work\u201d Book",
-    href: "/artifacts/men-at-work",
+    href: "/matwoverview",
     hoverSrc: "/images/artifacts-hover/men-at-work.jpg",
     left: "50.534%",
     top: "33.111%",
