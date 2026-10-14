@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * The “Men at Work” Book / matw menu.
- * Overview + Page 2–4 (legacy MatW02–04 → /matw01–03).
+ * Overview + Page 2–5 (legacy MatW02–05 → /matw01–04).
  */
 export const MATW_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -20,5 +20,9 @@ export const MATW_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "Page 4",
     href: "/matw03",
+  },
+  {
+    label: "Page 5",
+    href: "/matw04",
   },
 ];
