@@ -8,15 +8,15 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title:
-    "Pavilions & Attractions — For Those Who Produced the Fair — nywf64.com",
+    "Great Moments at the Fair — For Those Who Produced the Fair — nywf64.com",
   description:
-    "Pavilions & Attractions (Pages 01–64) from For Those Who Produced the New York World’s Fair 1964-1965 — nywf64.com.",
+    "Great Moments at the Fair from For Those Who Produced the New York World’s Fair 1964-1965 — nywf64.com.",
 };
 
 /**
- * For Those Who Produced the Fair — Pavilions & Attractions (legacy ftwptf66.html).
- * Book section Pages 01–64. Nav bar shows Page 69 (route number).
- * No hand-icon bars (omitted per request).
+ * For Those Who Produced the Fair — Great Moments at the Fair.
+ * Body from legacy ftwptfgreatmoments.html (12-tile photo stitched into one image).
+ * Nav bar shows Page 69 (route number).
  *
  * Stack: ftwptfhero → FtwptfNavChrome → navy title → article → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -49,17 +49,17 @@ export default function Ftwptf69Page() {
       <article className={styles.article} aria-labelledby="ftwptf69-title">
         <header className={styles.titleBar}>
           <h1 id="ftwptf69-title" className={styles.titleBarMain}>
-            Pavilions &amp; Attractions
+            Great Moments at the Fair
           </h1>
         </header>
 
         <div className={styles.articleInner}>
           <figure className={styles.figure}>
             <Image
-              src="/images/ftwptf69/page66.jpg"
-              alt="Pavilions & Attractions — Page 66 from For Those Who Produced the New York World’s Fair 1964-1965"
+              src="/images/ftwptf69/greatmoments.jpg"
+              alt="Great Moments at the Fair — For Those Who Produced the New York World’s Fair 1964-1965"
               width={900}
-              height={1126}
+              height={1125}
               className={styles.image}
               sizes="(max-width: 900px) 100vw, 900px"
               unoptimized

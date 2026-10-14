@@ -69,7 +69,7 @@ const TOPICS = [
   {
     id: "official-preview-book",
     title: "Official Preview Book",
-    href: "/artifacts/official-preview-book",
+    href: "/preview01",
     hoverSrc: "/images/artifacts-hover/official-preview-book.jpg",
     left: "2.058%",
     top: "33.028%",

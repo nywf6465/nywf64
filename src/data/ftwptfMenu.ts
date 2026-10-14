@@ -26,19 +26,19 @@ export const FTWPTF_MENU_TOPICS: AttractionTopic[] = [
     href: "/ftwptf04",
   },
   {
-    label: "…",
-    href: "/ftwptfaerial",
+    label: "Aerial View of the Fair",
+    href: "/ftwptf68",
   },
   {
-    label: "…",
-    href: "/ftwptfgreatmoments",
+    label: "Great Moments at the Fair",
+    href: "/ftwptf69",
   },
   {
-    label: "…",
-    href: "/ftwptf65",
+    label: "Pages 65-94 / Dignitaries & Speeches",
+    href: "/ftwptf70",
   },
   {
-    label: "…",
-    href: "/ftwptfpark",
+    label: "Invitation to Reopening of Flushing Meadows Park",
+    href: "/ftwptf100",
   },
 ];
