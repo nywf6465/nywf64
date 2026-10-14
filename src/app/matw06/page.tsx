@@ -144,6 +144,7 @@ export default function Matw06Page() {
         previousHref="/matw05"
         explicitPrevious
         overviewHref="/matwoverview"
+        nextHref="/matw07"
       />
     </>
   );
