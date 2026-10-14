@@ -29,6 +29,10 @@
   overflow: hidden;
 }
 
+.barPreviousOnly {
+  grid-template-columns: 1fr;
+}
+
 .section {
   display: flex;
   align-items: center;

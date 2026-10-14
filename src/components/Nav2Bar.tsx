@@ -27,6 +27,11 @@ export type Nav2BarProps = {
   /** Landing for NEXT → — placeholder until wired. */
   nextHref?: string;
   /**
+   * When true, omit the NEXT control (PREVIOUS only).
+   * Used by index pages that do not advance sequentially.
+   */
+  hideNext?: boolean;
+  /**
    * @deprecated Overview control removed from nav2. Kept so call sites compile.
    */
   hideOverview?: boolean;
@@ -45,6 +50,7 @@ export function Nav2Bar({
   previousHref: previousHrefProp,
   explicitPrevious = false,
   nextHref = "#",
+  hideNext = false,
 }: Nav2BarProps) {
   const pathname = usePathname() || "/";
   const [historyPreviousHref, setHistoryPreviousHref] = useState(
@@ -63,7 +69,9 @@ export function Nav2Bar({
 
   return (
     <nav className={styles.wrap} aria-label="Attraction page navigation">
-      <div className={styles.bar}>
+      <div
+        className={hideNext ? `${styles.bar} ${styles.barPreviousOnly}` : styles.bar}
+      >
         <Link href={previousHref} className={styles.section}>
           <span className={styles.sideCluster}>
             <span className={styles.arrow} aria-hidden="true">
@@ -73,16 +81,20 @@ export function Nav2Bar({
           </span>
         </Link>
 
-        <span className={styles.divider} aria-hidden="true" />
+        {!hideNext ? (
+          <>
+            <span className={styles.divider} aria-hidden="true" />
 
-        <Link href={nextHref} className={styles.section}>
-          <span className={styles.sideCluster}>
-            <span className={styles.sideLabel}>NEXT</span>
-            <span className={styles.arrow} aria-hidden="true">
-              →
-            </span>
-          </span>
-        </Link>
+            <Link href={nextHref} className={styles.section}>
+              <span className={styles.sideCluster}>
+                <span className={styles.sideLabel}>NEXT</span>
+                <span className={styles.arrow} aria-hidden="true">
+                  →
+                </span>
+              </span>
+            </Link>
+          </>
+        ) : null}
       </div>
     </nav>
   );

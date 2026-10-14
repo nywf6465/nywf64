@@ -76,7 +76,9 @@ export default function PeriodicalsOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/periodicalsoverview"
+        nextHref="/life01"
       />
+
     </>
   );
 }
