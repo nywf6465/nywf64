@@ -131,27 +131,3 @@ export function LifeMagazineArticlePage({
     </>
   );
 }
-
-function tile(
-  slug: string,
-  file: string,
-  width: number,
-  height: number,
-): LifeTile {
-  return {
-    src: `/images/${slug}/${file}`,
-    width,
-    height,
-    alt: "",
-  };
-}
-
-/** Helper for building Life tile lists from sequential scan filenames. */
-export function lifeTiles(
-  slug: string,
-  files: string[],
-  width: number,
-  height: number,
-): LifeTile[] {
-  return files.map((file) => tile(slug, file, width, height));
-}
