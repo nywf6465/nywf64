@@ -8,15 +8,15 @@ import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
   title:
-    "Pavilions & Attractions — For Those Who Produced the Fair — nywf64.com",
+    "Aerial View of the Fair — For Those Who Produced the Fair — nywf64.com",
   description:
-    "Pavilions & Attractions (Pages 01–64) from For Those Who Produced the New York World’s Fair 1964-1965 — nywf64.com.",
+    "Aerial View of the Fair from For Those Who Produced the New York World’s Fair 1964-1965 — nywf64.com.",
 };
 
 /**
- * For Those Who Produced the Fair — Pavilions & Attractions (legacy ftwptf65.html).
- * Book section Pages 01–64. Nav bar shows Page 68 (route number).
- * No hand-icon bars (omitted per request).
+ * For Those Who Produced the Fair — Aerial View of the Fair.
+ * Body from legacy ftwptfaerial.html (9-tile aerial photo stitched into one image).
+ * Nav bar shows Page 68 (route number).
  *
  * Stack: ftwptfhero → FtwptfNavChrome → navy title → article → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -49,17 +49,17 @@ export default function Ftwptf68Page() {
       <article className={styles.article} aria-labelledby="ftwptf68-title">
         <header className={styles.titleBar}>
           <h1 id="ftwptf68-title" className={styles.titleBarMain}>
-            Pavilions &amp; Attractions
+            Aerial View of the Fair
           </h1>
         </header>
 
         <div className={styles.articleInner}>
           <figure className={styles.figure}>
             <Image
-              src="/images/ftwptf68/page65.jpg"
-              alt="Pavilions & Attractions — Page 65 from For Those Who Produced the New York World’s Fair 1964-1965"
+              src="/images/ftwptf68/aerial.jpg"
+              alt="Aerial View of the Fair — For Those Who Produced the New York World’s Fair 1964-1965"
               width={900}
-              height={1125}
+              height={684}
               className={styles.image}
               sizes="(max-width: 900px) 100vw, 900px"
               unoptimized

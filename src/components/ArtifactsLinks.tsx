@@ -69,7 +69,7 @@ const TOPICS = [
   {
     id: "official-preview-book",
     title: "Official Preview Book",
-    href: "/artifacts/official-preview-book",
+    href: "/preview01",
     hoverSrc: "/images/artifacts-hover/official-preview-book.jpg",
     left: "2.058%",
     top: "33.028%",
@@ -79,7 +79,7 @@ const TOPICS = [
   {
     id: "men-at-work",
     title: "The \u201cMen at Work\u201d Book",
-    href: "/artifacts/men-at-work",
+    href: "/matwoverview",
     hoverSrc: "/images/artifacts-hover/men-at-work.jpg",
     left: "50.534%",
     top: "33.111%",
@@ -89,8 +89,9 @@ const TOPICS = [
   {
     id: "magazine-articles",
     title: "Magazine Articles of the Fair",
-    href: "/artifacts/magazine-articles",
+    href: "/periodicalsoverview",
     hoverSrc: "/images/artifacts-hover/magazine-articles.jpg",
+
     left: "2.058%",
     top: "42.702%",
     width: "47.104%",
