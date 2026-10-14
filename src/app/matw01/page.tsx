@@ -7,13 +7,13 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Page 2 — The “Men at Work” Book — nywf64.com",
+  title: "Page 1 — The “Men at Work” Book — nywf64.com",
   description:
-    "Page 2 of Men at Work — Luciano Guarnieri’s Official Art Book of the 1964/1965 New York World’s Fair, with remarks by Robert Moses and Alessandro Olschki on nywf64.com.",
+    "Page 1 of Men at Work — Luciano Guarnieri’s Official Art Book of the 1964/1965 New York World’s Fair, with remarks by Robert Moses and Alessandro Olschki on nywf64.com.",
 };
 
 /**
- * The “Men at Work” Book — Page 2.
+ * The “Men at Work” Book — Page 1.
  * Body from legacy MatW02.html (first content page after overview).
  *
  * Stack: matwhero → MatwNavChrome → navy title → article → Nav2Bar.
@@ -47,7 +47,7 @@ export default function Matw01Page() {
       <article className={styles.article} aria-labelledby="matw01-title">
         <header className={styles.titleBar}>
           <h1 id="matw01-title" className={styles.titleBarMain}>
-            Page 2
+            Page 1
           </h1>
         </header>
 

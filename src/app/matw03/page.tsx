@@ -7,9 +7,9 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Page 4 — The “Men at Work” Book — nywf64.com",
+  title: "Page 3 — The “Men at Work” Book — nywf64.com",
   description:
-    "Page 4 of Men at Work — Luciano Guarnieri sketches of a pile driver, IBM, Equitable Life, Hall of Education, Johnson’s Wax, Austria, and Japan at the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Page 3 of Men at Work — Luciano Guarnieri sketches of a pile driver, IBM, Equitable Life, Hall of Education, Johnson’s Wax, Austria, and Japan at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 const PLATES = [
@@ -40,7 +40,7 @@ const PLATES = [
 ] as const;
 
 /**
- * The “Men at Work” Book — Page 4.
+ * The “Men at Work” Book — Page 3.
  * Body from legacy MatW04.html.
  *
  * Stack: matwhero → MatwNavChrome → navy title → article → Nav2Bar.
@@ -74,7 +74,7 @@ export default function Matw03Page() {
       <article className={styles.article} aria-labelledby="matw03-title">
         <header className={styles.titleBar}>
           <h1 id="matw03-title" className={styles.titleBarMain}>
-            Page 4
+            Page 3
           </h1>
         </header>
 
@@ -82,7 +82,7 @@ export default function Matw03Page() {
           <div className={styles.cover}>
             <Image
               src="/images/matw03/matw19.jpg"
-              alt="Men at Work — construction sketch introducing Page 4"
+              alt="Men at Work — construction sketch introducing Page 3"
               width={590}
               height={292}
               className={styles.coverImage}

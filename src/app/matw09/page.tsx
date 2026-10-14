@@ -7,9 +7,9 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Page 10 — The “Men at Work” Book — nywf64.com",
+  title: "Page 9 — The “Men at Work” Book — nywf64.com",
   description:
-    "Page 10 of Men at Work — Luciano Guarnieri sketches including the Vatican Pavilion from the Transportation Area at the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Page 9 of Men at Work — Luciano Guarnieri sketches including the Vatican Pavilion from the Transportation Area at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 const PLAIN_IMAGES = [
@@ -17,7 +17,7 @@ const PLAIN_IMAGES = [
     src: "/images/matw09/matw43.jpg",
     width: 560,
     height: 294,
-    alt: "Men at Work — construction sketch introducing Page 10",
+    alt: "Men at Work — construction sketch introducing Page 9",
   },
   {
     src: "/images/matw09/matw21.jpg",
@@ -40,7 +40,7 @@ const PLAIN_IMAGES = [
 ] as const;
 
 /**
- * The “Men at Work” Book — Page 10.
+ * The “Men at Work” Book — Page 9.
  * Body from legacy MatW10.html.
  *
  * Stack: matwhero → MatwNavChrome → navy title → article → Nav2Bar.
@@ -74,7 +74,7 @@ export default function Matw09Page() {
       <article className={styles.article} aria-labelledby="matw09-title">
         <header className={styles.titleBar}>
           <h1 id="matw09-title" className={styles.titleBarMain}>
-            Page 10
+            Page 9
           </h1>
         </header>
 
@@ -109,7 +109,7 @@ export default function Matw09Page() {
           <div className={styles.plain}>
             <Image
               src="/images/matw09/matw29.jpg"
-              alt="Men at Work — construction sketch closing Page 10"
+              alt="Men at Work — construction sketch closing Page 9"
               width={590}
               height={241}
               className={styles.plainImage}

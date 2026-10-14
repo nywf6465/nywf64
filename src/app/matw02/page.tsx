@@ -7,9 +7,9 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Page 3 — The “Men at Work” Book — nywf64.com",
+  title: "Page 2 — The “Men at Work” Book — nywf64.com",
   description:
-    "Page 3 of Men at Work — Luciano Guarnieri sketches of Indonesia, Republic of China, IBM, Travelers, Bell System, and Rheingold at the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Page 2 of Men at Work — Luciano Guarnieri sketches of Indonesia, Republic of China, IBM, Travelers, Bell System, and Rheingold at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 const PLATES = [
@@ -40,7 +40,7 @@ const PLATES = [
 ] as const;
 
 /**
- * The “Men at Work” Book — Page 3.
+ * The “Men at Work” Book — Page 2.
  * Body from legacy MatW03.html.
  *
  * Stack: matwhero → MatwNavChrome → navy title → article → Nav2Bar.
@@ -74,7 +74,7 @@ export default function Matw02Page() {
       <article className={styles.article} aria-labelledby="matw02-title">
         <header className={styles.titleBar}>
           <h1 id="matw02-title" className={styles.titleBarMain}>
-            Page 3
+            Page 2
           </h1>
         </header>
 

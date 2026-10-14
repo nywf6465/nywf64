@@ -7,13 +7,13 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Page 11 — The “Men at Work” Book — nywf64.com",
+  title: "Page 10 — The “Men at Work” Book — nywf64.com",
   description:
-    "Page 11 of Men at Work — Luciano Guarnieri sketches of Unisphere, Sudan, Sermons from Science, and New York State at the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Page 10 of Men at Work — Luciano Guarnieri sketches of Unisphere, Sudan, Sermons from Science, and New York State at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * The “Men at Work” Book — Page 11.
+ * The “Men at Work” Book — Page 10.
  * Body from legacy MatW11.html.
  *
  * Stack: matwhero → MatwNavChrome → navy title → article → Nav2Bar.
@@ -47,7 +47,7 @@ export default function Matw10Page() {
       <article className={styles.article} aria-labelledby="matw10-title">
         <header className={styles.titleBar}>
           <h1 id="matw10-title" className={styles.titleBarMain}>
-            Page 11
+            Page 10
           </h1>
         </header>
 

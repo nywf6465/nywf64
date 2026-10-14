@@ -7,13 +7,13 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Page 9 — The “Men at Work” Book — nywf64.com",
+  title: "Page 8 — The “Men at Work” Book — nywf64.com",
   description:
-    "Page 9 of Men at Work — Luciano Guarnieri sketches of the Top of the Fair Port Authority Heliport and the view toward General Motors, Socony Mobil, and Greyhound at the 1964/1965 New York World’s Fair on nywf64.com.",
+    "Page 8 of Men at Work — Luciano Guarnieri sketches of the Top of the Fair Port Authority Heliport and the view toward General Motors, Socony Mobil, and Greyhound at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * The “Men at Work” Book — Page 9.
+ * The “Men at Work” Book — Page 8.
  * Body from legacy MatW09.html.
  *
  * Stack: matwhero → MatwNavChrome → navy title → article → Nav2Bar.
@@ -47,7 +47,7 @@ export default function Matw08Page() {
       <article className={styles.article} aria-labelledby="matw08-title">
         <header className={styles.titleBar}>
           <h1 id="matw08-title" className={styles.titleBarMain}>
-            Page 9
+            Page 8
           </h1>
         </header>
 
@@ -55,7 +55,7 @@ export default function Matw08Page() {
           <div className={styles.plain}>
             <Image
               src="/images/matw08/matw39.jpg"
-              alt="Men at Work — construction sketch introducing Page 9"
+              alt="Men at Work — construction sketch introducing Page 8"
               width={530}
               height={284}
               className={styles.plainImage}
@@ -117,7 +117,7 @@ export default function Matw08Page() {
           <div className={styles.plain}>
             <Image
               src="/images/matw08/matw44.jpg"
-              alt="Men at Work — construction sketch closing Page 9"
+              alt="Men at Work — construction sketch closing Page 8"
               width={590}
               height={190}
               className={styles.plainImage}
