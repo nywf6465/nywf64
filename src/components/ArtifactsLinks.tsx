@@ -89,8 +89,9 @@ const TOPICS = [
   {
     id: "magazine-articles",
     title: "Magazine Articles of the Fair",
-    href: "/artifacts/magazine-articles",
+    href: "/periodicalsoverview",
     hoverSrc: "/images/artifacts-hover/magazine-articles.jpg",
+
     left: "2.058%",
     top: "42.702%",
     width: "47.104%",
