@@ -7890,19 +7890,6 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/logfluoverview",
     nextHref: "/logflu01",
   },
-  "looksguide03": {
-    slug: "looksguide03",
-    title: "LOOK's Guide to the N.Y. World's Fair - Family Fair Plan",
-    metaTitle: "LOOK's Guide to the N.Y. World's Fair - Family Fair Plan — nywf64.com",
-    metaDescription:
-      "LOOK's Guide to the N.Y. World's Fair — Family Fair Plan — Look Magazine guide on nywf64.com.",
-    nav: "PeriodicalsNavChrome",
-    overviewHref: "/periodicalsoverview",
-    overviewLabel: "Magazine Articles of the Fair overview",
-    placeholder: "LOOK's Guide content",
-    previousHref: "/looksguide02",
-    nextHref: "/looksguide04",
-  },
   "looksguide04": {
     slug: "looksguide04",
     title: "LOOK's Guide to the N.Y. World's Fair - Going to the Fair",
