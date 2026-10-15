@@ -10584,6 +10584,32 @@ export const LEGACY_STUB_ROUTES: Record<string, LegacyStubRoute> = {
     previousHref: "/porautoverview",
     nextHref: "/poraut01",
   },
+  "post640328": {
+    slug: "post640328",
+    title: "The Pieta: Masterpiece at the fair",
+    metaTitle: "The Pieta: Masterpiece at the fair — Saturday Evening Post — nywf64.com",
+    metaDescription:
+      "The Pieta: Masterpiece at the fair — Saturday Evening Post, March 28, 1964, on nywf64.com.",
+    nav: "PeriodicalsNavChrome",
+    overviewHref: "/periodicalsoverview",
+    overviewLabel: "Magazine Articles of the Fair overview",
+    placeholder: "Saturday Evening Post article",
+    previousHref: "/post01",
+    nextHref: "/post640523",
+  },
+  "post640523": {
+    slug: "post640523",
+    title: "The great fair / The old s.o.b. does it again / Who needs the World's Fair?",
+    metaTitle: "Saturday Evening Post — May 23, 1964 — nywf64.com",
+    metaDescription:
+      "Saturday Evening Post articles from May 23, 1964 covering the 1964/1965 New York World’s Fair on nywf64.com.",
+    nav: "PeriodicalsNavChrome",
+    overviewHref: "/periodicalsoverview",
+    overviewLabel: "Magazine Articles of the Fair overview",
+    placeholder: "Saturday Evening Post article",
+    previousHref: "/post01",
+    nextHref: "/post01",
+  },
   "prebuilt01": {
     slug: "prebuilt01",
     title: "1964 & 1965 Official Guidebook & Souvenir Map Entries",
