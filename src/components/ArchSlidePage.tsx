@@ -33,6 +33,7 @@ export function ArchSlidePage({
   titleId = `arch${slideId}-title`,
   image,
   captions,
+  category = "ATTRACTIONS",
   previousHref = "/archtray",
   nextHref,
 }: ArchSlidePageProps) {
@@ -72,7 +73,7 @@ export function ArchSlidePage({
             <div className={styles.headers}>
               <p>ARCHITECT&apos;S RENDERINGS</p>
               <p>NEW YORK WORLD&apos;S FAIR 1964-1965</p>
-              <p>ATTRACTIONS</p>
+              <p>{category}</p>
             </div>
             <Image
               src={image.src}
