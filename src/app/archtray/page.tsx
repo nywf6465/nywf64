@@ -13,8 +13,25 @@ export const metadata: Metadata = {
     "Slide tray for The Architectural Series — over 100 Photo Lab slides of architectural renderings from the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-/** Legacy arch02 slide tray — thumbs arch5401…arch5470. */
-const SLIDE_IDS = Array.from({ length: 70 }, (_, i) => 5401 + i);
+/** Legacy arch02 slide tray — thumbs arch5401…arch5470, then S180A…S187D. */
+const NUMERIC_SLIDES = Array.from({ length: 70 }, (_, i) => {
+  const id = 5401 + i;
+  return {
+    key: String(id),
+    href: `/arch${id}`,
+    thumb: `/images/arch/${id}Small.jpg`,
+    label: `Slide ${id}`,
+  };
+});
+const S_SERIES_SLIDES = [180, 181, 182, 183, 184, 185, 186, 187].flatMap((set) =>
+  (["A", "B", "C", "D"] as const).map((letter) => ({
+    key: `S${set}${letter}`,
+    href: `/archS${set}${letter}`,
+    thumb: `/images/arch/S-${set}${letter}Small.jpg`,
+    label: `Slide S${set}-${letter}`,
+  })),
+);
+const SLIDES = [...NUMERIC_SLIDES, ...S_SERIES_SLIDES];
 
 /**
  * Architectural Series Slide Tray (legacy arch02.html).
@@ -65,16 +82,16 @@ export default function ArchTrayPage() {
           </p>
 
           <div className={styles.tray} role="list" aria-label="Slide tray">
-            {SLIDE_IDS.map((id) => (
+            {SLIDES.map((slide) => (
               <Link
-                key={id}
-                href={`/arch${id}`}
+                key={slide.key}
+                href={slide.href}
                 className={styles.thumbLink}
                 role="listitem"
-                aria-label={`Slide ${id}`}
+                aria-label={slide.label}
               >
                 <Image
-                  src={`/images/arch/${id}Small.jpg`}
+                  src={slide.thumb}
                   alt=""
                   width={100}
                   height={100}
