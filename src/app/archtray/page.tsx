@@ -57,12 +57,11 @@ export default function ArchTrayPage() {
 
         <div className={styles.articleInner}>
           <p className={styles.intro}>
-            To navigate the <strong>slide tray</strong>, simply click on any
-            slide to be taken to a larger image of that slide. You may use your
-            browser&apos;s <em>Back Button</em> to return to this tray to select
-            another image or progress from larger image to larger image by using
-            the <em>Slide Show</em> links on the navigation bar of the larger
-            images.
+            To navigate the slide tray, simply click on any slide to be taken to
+            a larger image of that slide. You may use the link on the Navigation
+            Menu to return to this slide tray at any time. To progress from
+            slide to slide, select NEXT in the navigation bar. PREVIOUS will
+            return you to the prior slide.
           </p>
 
           <div className={styles.tray} role="list" aria-label="Slide tray">
