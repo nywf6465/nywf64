@@ -18,7 +18,7 @@ const SLIDE_IDS = Array.from({ length: 70 }, (_, i) => 5401 + i);
 
 /**
  * Architectural Series Slide Tray (legacy arch02.html).
- * Nav bar shows Page 1. No NEXT — return via PREVIOUS to overview.
+ * Nav bar shows Page 1. NEXT → first slide (/arch5401); PREVIOUS → overview.
  *
  * Stack: archhero → ArchNavChrome → navy title → tray → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
@@ -91,7 +91,7 @@ export default function ArchTrayPage() {
         previousHref="/archoverview"
         explicitPrevious
         overviewHref="/archoverview"
-        hideNext
+        nextHref="/arch5401"
       />
     </>
   );
