@@ -81,7 +81,7 @@ export default function ArchOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/archoverview"
-        hideNext
+        nextHref="/archtray"
       />
     </>
   );
