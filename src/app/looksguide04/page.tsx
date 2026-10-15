@@ -19,21 +19,15 @@ type PanelTile = { src: string; width: number; height: number };
 
 const SIDE_BY_SIDE: PanelTile[][] = [
   [
-    { src: "/images/looksguide04/12.1.jpg", width: 350, height: 175 },
-    { src: "/images/looksguide04/12.2.jpg", width: 350, height: 175 },
-    { src: "/images/looksguide04/12.3.jpg", width: 350, height: 175 },
+    { src: "/images/looksguide04/panel-01.jpg", width: 350, height: 523 },
   ],
   [
-    { src: "/images/looksguide04/13.1.jpg", width: 350, height: 175 },
-    { src: "/images/looksguide04/13.2.jpg", width: 350, height: 175 },
-    { src: "/images/looksguide04/13.3.jpg", width: 350, height: 175 },
+    { src: "/images/looksguide04/panel-02.jpg", width: 350, height: 523 },
   ],
 ];
 
 const CENTER_PANEL: PanelTile[] = [
-  { src: "/images/looksguide04/14.1.jpg", width: 350, height: 175 },
-  { src: "/images/looksguide04/14.2.jpg", width: 350, height: 175 },
-  { src: "/images/looksguide04/14.3.jpg", width: 350, height: 175 },
+  { src: "/images/looksguide04/panel-03.jpg", width: 350, height: 523 },
 ];
 
 export const metadata: Metadata = {

@@ -11,31 +11,15 @@ export const metadata: Metadata = {
 
 const COLLAGES: LifeCollage[] = [
   {
-    columns: 3,
+    columns: 1,
     tiles: [
-      { src: "/images/life640424/life640424.009.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life640424/life640424.008.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life640424/life640424.007.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life640424/life640424.006.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.005.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.004.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.003.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life640424/life640424.002.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life640424/life640424.001.jpg", width: 300, height: 370, alt: "" },
+      { src: "/images/life640424/collage-01.jpg", width: 898, height: 1109, alt: "" },
     ],
   },
   {
-    columns: 3,
+    columns: 1,
     tiles: [
-      { src: "/images/life640424/life640424.018.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.017.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.016.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.015.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.014.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.013.jpg", width: 300, height: 371, alt: "" },
-      { src: "/images/life640424/life640424.012.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life640424/life640424.011.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life640424/life640424.010.jpg", width: 300, height: 370, alt: "" },
+      { src: "/images/life640424/collage-02.jpg", width: 898, height: 1110, alt: "" },
     ],
   },
 ];

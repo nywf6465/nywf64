@@ -11,42 +11,21 @@ export const metadata: Metadata = {
 
 const COLLAGES: LifeCollage[] = [
   {
-    columns: 3,
+    columns: 1,
     tiles: [
-      { src: "/images/life631206/life631206.009.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.008.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.007.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.006.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.005.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.004.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.003.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.002.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.001.jpg", width: 300, height: 370, alt: "" },
+      { src: "/images/life631206/collage-01.jpg", width: 898, height: 1108, alt: "" },
     ],
   },
   {
-    columns: 3,
+    columns: 1,
     tiles: [
-      { src: "/images/life631206/life631206.015.jpg", width: 300, height: 295, alt: "" },
-      { src: "/images/life631206/life631206.014.jpg", width: 300, height: 295, alt: "" },
-      { src: "/images/life631206/life631206.013.jpg", width: 300, height: 295, alt: "" },
-      { src: "/images/life631206/life631206.012.jpg", width: 300, height: 295, alt: "" },
-      { src: "/images/life631206/life631206.011.jpg", width: 300, height: 295, alt: "" },
-      { src: "/images/life631206/life631206.010.jpg", width: 300, height: 295, alt: "" },
+      { src: "/images/life631206/collage-02.jpg", width: 898, height: 589, alt: "" },
     ],
   },
   {
-    columns: 3,
+    columns: 1,
     tiles: [
-      { src: "/images/life631206/life631206.024.jpg", width: 301, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.023.jpg", width: 301, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.022.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.021.jpg", width: 301, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.020.jpg", width: 301, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.019.jpg", width: 300, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.018.jpg", width: 301, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.017.jpg", width: 301, height: 370, alt: "" },
-      { src: "/images/life631206/life631206.016.jpg", width: 300, height: 370, alt: "" },
+      { src: "/images/life631206/collage-03.jpg", width: 900, height: 1108, alt: "" },
     ],
   },
 ];

@@ -16,9 +16,7 @@ const meta = getLooksGuidePage(PAGE)!;
 const { previous, next } = adjacentLooksGuidePages(PAGE);
 
 const PANEL = [
-  { src: "/images/looksguide08/33.1.jpg", width: 350, height: 175 },
-  { src: "/images/looksguide08/33.2.jpg", width: 350, height: 176 },
-  { src: "/images/looksguide08/33.3.jpg", width: 350, height: 175 },
+  { src: "/images/looksguide08/panel-01.jpg", width: 350, height: 524 },
 ];
 
 export const metadata: Metadata = {

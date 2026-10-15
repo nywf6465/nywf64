@@ -20,38 +20,26 @@ type PanelTile = { src: string; width: number; height: number };
 const PANEL_ROWS: PanelTile[][][] = [
   [
     [
-      { src: "/images/looksguide02/3.01.jpg", width: 350, height: 176 },
-      { src: "/images/looksguide02/3.02.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide02/3.03.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide02/panel-01.jpg", width: 350, height: 524 },
     ],
     [
-      { src: "/images/looksguide02/4.01.jpg", width: 350, height: 176 },
-      { src: "/images/looksguide02/4.02.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide02/4.03.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide02/panel-02.jpg", width: 350, height: 524 },
     ],
   ],
   [
     [
-      { src: "/images/looksguide02/5.01.jpg", width: 350, height: 176 },
-      { src: "/images/looksguide02/5.02.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide02/5.03.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide02/panel-03.jpg", width: 350, height: 524 },
     ],
     [
-      { src: "/images/looksguide02/6.01.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide02/6.02.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide02/6.03.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide02/panel-04.jpg", width: 350, height: 523 },
     ],
   ],
   [
     [
-      { src: "/images/looksguide02/7.01.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide02/7.02.jpg", width: 350, height: 176 },
-      { src: "/images/looksguide02/7.03.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide02/panel-05.jpg", width: 350, height: 524 },
     ],
     [
-      { src: "/images/looksguide02/8.01.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide02/8.02.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide02/8.03.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide02/panel-06.jpg", width: 350, height: 523 },
     ],
   ],
 ];
