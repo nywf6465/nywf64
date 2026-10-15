@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./PeopleOfTheFairLinks.module.css";
 
-/** Exact user artwork — base unchanged. Hover crops swap burgundy↔navy on text/arrows only; portraits untouched. */
+/** Exact user artwork. Hover crops swap burgundy↔navy on the circular link indicator only; text and portraits untouched. */
 const PEOPLE = [
   {
     id: "robert-moses",
