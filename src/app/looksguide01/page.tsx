@@ -66,24 +66,10 @@ export default function Looksguide01Page() {
         <div className={styles.articleInner}>
           <div className={styles.coverStack} role="group" aria-label="Guide cover">
             <Image
-              src="/images/looksguide01/cover.3.jpg"
-              alt=""
-              width={350}
-              height={200}
-              unoptimized
-            />
-            <Image
-              src="/images/looksguide01/cover.2.jpg"
-              alt=""
-              width={350}
-              height={200}
-              unoptimized
-            />
-            <Image
-              src="/images/looksguide01/cover.1.jpg"
-              alt=""
-              width={350}
-              height={200}
+              src="/images/looksguide01/cover-stack.jpg"
+                alt=""
+                width={350}
+                height={598}
               unoptimized
             />
           </div>
@@ -91,47 +77,19 @@ export default function Looksguide01Page() {
           <div className={styles.panels}>
             <div className={styles.panel} role="group" aria-label="Guide panel">
               <Image
-                src="/images/looksguide01/1.01.jpg"
+                src="/images/looksguide01/panel-01.jpg"
                 alt=""
                 width={350}
-                height={175}
-                unoptimized
-              />
-              <Image
-                src="/images/looksguide01/1.02.jpg"
-                alt=""
-                width={350}
-                height={175}
-                unoptimized
-              />
-              <Image
-                src="/images/looksguide01/1.03.jpg"
-                alt=""
-                width={350}
-                height={175}
+                height={523}
                 unoptimized
               />
             </div>
             <div className={styles.panel} role="group" aria-label="Guide panel">
               <Image
-                src="/images/looksguide01/2.01.jpg"
+                src="/images/looksguide01/panel-02.jpg"
                 alt=""
                 width={350}
-                height={175}
-                unoptimized
-              />
-              <Image
-                src="/images/looksguide01/2.02.jpg"
-                alt=""
-                width={350}
-                height={175}
-                unoptimized
-              />
-              <Image
-                src="/images/looksguide01/2.03.jpg"
-                alt=""
-                width={350}
-                height={175}
+                height={523}
                 unoptimized
               />
             </div>

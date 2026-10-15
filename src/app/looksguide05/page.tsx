@@ -18,21 +18,15 @@ const { previous, next } = adjacentLooksGuidePages(PAGE);
 type PanelTile = { src: string; width: number; height: number };
 
 const TOP_PANEL: PanelTile[] = [
-  { src: "/images/looksguide05/15.1.jpg", width: 350, height: 176 },
-  { src: "/images/looksguide05/15.2.jpg", width: 350, height: 175 },
-  { src: "/images/looksguide05/15.3.jpg", width: 350, height: 175 },
+  { src: "/images/looksguide05/panel-01.jpg", width: 350, height: 524 },
 ];
 
 const SIDE_BY_SIDE: PanelTile[][] = [
   [
-    { src: "/images/looksguide05/16.1.jpg", width: 350, height: 175 },
-    { src: "/images/looksguide05/16.2.jpg", width: 350, height: 175 },
-    { src: "/images/looksguide05/16.3.jpg", width: 350, height: 175 },
+    { src: "/images/looksguide05/panel-02.jpg", width: 350, height: 523 },
   ],
   [
-    { src: "/images/looksguide05/17.1.jpg", width: 350, height: 175 },
-    { src: "/images/looksguide05/17.2.jpg", width: 350, height: 175 },
-    { src: "/images/looksguide05/17.3.jpg", width: 350, height: 175 },
+    { src: "/images/looksguide05/panel-03.jpg", width: 350, height: 523 },
   ],
 ];
 

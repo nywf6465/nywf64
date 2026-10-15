@@ -70,10 +70,13 @@
 
 .collage {
   display: grid;
+  gap: 0;
   border: 1px solid #000;
   box-sizing: border-box;
-  background: #fff;
+  /* Avoid hairline seams if any multi-tile grid remains */
+  background: transparent;
   line-height: 0;
+  font-size: 0;
 }
 
 .collageUnbordered {
@@ -84,6 +87,8 @@
   display: block;
   width: 100%;
   height: auto;
+  margin: 0;
+  vertical-align: top;
 }
 
 .caption {
