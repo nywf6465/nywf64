@@ -14,6 +14,8 @@ export type ArchSlidePageProps = {
   image: { src: string; width: number; height: number; alt?: string };
   /** Caption lines under the slide image (legacy bold Arial lines). */
   captions: ReactNode[];
+  /** Third header line on the plate (legacy ATTRACTIONS / PUBLIC SERVICES / …). */
+  category?: string;
   previousHref?: string;
   /** When set, Nav2 shows NEXT to this slide; otherwise NEXT is hidden. */
   nextHref?: string;
