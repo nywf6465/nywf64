@@ -20,34 +20,24 @@ type PanelTile = { src: string; width: number; height: number };
 const PANEL_ROWS: PanelTile[][][] = [
   [
     [
-      { src: "/images/looksguide06/18.1.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide06/18.2.jpg", width: 350, height: 176 },
-      { src: "/images/looksguide06/18.3.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide06/panel-01.jpg", width: 350, height: 524 },
     ],
     [
-      { src: "/images/looksguide06/19.1.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide06/19.2.jpg", width: 350, height: 176 },
-      { src: "/images/looksguide06/19.3.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide06/panel-02.jpg", width: 350, height: 524 },
     ],
   ],
   [
     [
-      { src: "/images/looksguide06/20.1.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide06/20.2.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide06/20.3.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide06/panel-03.jpg", width: 350, height: 523 },
     ],
     [
-      { src: "/images/looksguide06/21.1.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide06/21.2.jpg", width: 350, height: 175 },
-      { src: "/images/looksguide06/21.3.jpg", width: 350, height: 175 },
+      { src: "/images/looksguide06/panel-04.jpg", width: 350, height: 523 },
     ],
   ],
 ];
 
 const BOTTOM_PANEL: PanelTile[] = [
-  { src: "/images/looksguide06/22.1.jpg", width: 350, height: 175 },
-  { src: "/images/looksguide06/22.2.jpg", width: 350, height: 175 },
-  { src: "/images/looksguide06/22.3.jpg", width: 350, height: 175 },
+  { src: "/images/looksguide06/panel-05.jpg", width: 350, height: 523 },
 ];
 
 export const metadata: Metadata = {

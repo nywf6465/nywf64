@@ -17,21 +17,28 @@ const { previous, next } = adjacentLooksGuidePages(PAGE);
 
 type PanelTile = { src: string; width: number; height: number };
 
-function panel(n: number, heights: [number, number, number]): PanelTile[] {
-  return [1, 2, 3].map((s, i) => ({
-    src: `/images/looksguide07/${n}.${s}.jpg`,
-    width: 350,
-    height: heights[i],
-  }));
-}
-
-const PANEL_ROWS: PanelTile[][][] = [
-  [panel(23, [175, 175, 175]), panel(24, [175, 175, 175])],
-  [panel(25, [176, 175, 175]), panel(26, [175, 175, 175])],
-  [panel(27, [175, 175, 175]), panel(28, [175, 175, 175])],
-  [panel(29, [175, 176, 175]), panel(30, [175, 175, 175])],
-  [panel(31, [176, 175, 175]), panel(32, [175, 175, 175])],
-];
+const PANEL_ROWS: PanelTile[][] = [
+  [
+    { src: "/images/looksguide07/panel-01.jpg", width: 350, height: 523 },
+    { src: "/images/looksguide07/panel-02.jpg", width: 350, height: 523 },
+  ],
+  [
+    { src: "/images/looksguide07/panel-03.jpg", width: 350, height: 524 },
+    { src: "/images/looksguide07/panel-04.jpg", width: 350, height: 523 },
+  ],
+  [
+    { src: "/images/looksguide07/panel-05.jpg", width: 350, height: 523 },
+    { src: "/images/looksguide07/panel-06.jpg", width: 350, height: 523 },
+  ],
+  [
+    { src: "/images/looksguide07/panel-07.jpg", width: 350, height: 524 },
+    { src: "/images/looksguide07/panel-08.jpg", width: 350, height: 523 },
+  ],
+  [
+    { src: "/images/looksguide07/panel-09.jpg", width: 350, height: 524 },
+    { src: "/images/looksguide07/panel-10.jpg", width: 350, height: 523 },
+  ],
+]
 
 export const metadata: Metadata = {
   title: `LOOK's Guide to the N.Y. World's Fair - ${meta.titleSuffix} — nywf64.com`,
@@ -111,23 +118,20 @@ export default function Looksguide07Page() {
           <div className={styles.panelRows}>
             {PANEL_ROWS.map((row, rowIndex) => (
               <div key={`row-${rowIndex}`} className={styles.panels}>
-                {row.map((p, panelIndex) => (
+                {row.map((tile, panelIndex) => (
                   <div
                     key={`panel-${rowIndex}-${panelIndex}`}
                     className={styles.panel}
                     role="group"
                     aria-label="Guide panel"
                   >
-                    {p.map((tile) => (
-                      <Image
-                        key={tile.src}
-                        src={tile.src}
-                        alt=""
-                        width={tile.width}
-                        height={tile.height}
-                        unoptimized
-                      />
-                    ))}
+                    <Image
+                      src={tile.src}
+                      alt=""
+                      width={tile.width}
+                      height={tile.height}
+                      unoptimized
+                    />
                   </div>
                 ))}
               </div>
