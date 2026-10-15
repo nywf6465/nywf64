@@ -23,6 +23,7 @@ export default function Arch5401Page() {
         alt: "Unisphere — architect's rendering",
       }}
       captions={["Unisphere presented by", "United States Steel"]}
+      previousHref="/archtray"
       nextHref="/arch5402"
     />
   );

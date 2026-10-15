@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 /**
  * Architectural Series slide 5402 (legacy arch5402.html).
- * Nav bar shows Page 3. No NEXT — PREVIOUS returns to /archtray.
+ * Nav bar shows Page 3. NEXT → /arch5403; PREVIOUS → /arch5401.
  */
 export default function Arch5402Page() {
   return (
@@ -24,6 +24,8 @@ export default function Arch5402Page() {
         alt: "Unisphere (Red) — architect's rendering",
       }}
       captions={["Unisphere", "(Red)"]}
+      previousHref="/arch5401"
+      nextHref="/arch5403"
     />
   );
 }
