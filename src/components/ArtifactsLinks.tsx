@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import styles from "./ArtifactsLinks.module.css";
 
-/** Exact user artwork — base unchanged. Hover crops swap burgundy↔navy on text/arrows only; thumbnails untouched. */
+/** Exact user artwork — base unchanged. Hover crops swap navy↔burgundy on the circular link indicator only; text and thumbnails untouched. */
 const TOPICS = [
   {
     id: "images-of-america",
