@@ -13,7 +13,8 @@
  * Page 1: guide page NN shows Page N+1 (looksguide01 → Page 2, …, 09 → Page 10).
  *
  * Architectural Series: `archtray` → Page 1; `arch5401`…`arch5470` → Page 2…71
- * (slide number − 5399). Overview `/archoverview` has no Page notation.
+ * (slide number − 5399); `archS180A`…`archS187D` → Page 72…103.
+ * Overview `/archoverview` has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -41,6 +42,7 @@ export function pageNumberFromPath(pathname: string): string | null {
   }
 
   // Architectural Series: archtray → Page 1; arch5401…arch5470 → Page 2…71
+  // archS180A…archS187D → Page 72…103
   if (/^archtray$/i.test(segment)) {
     return "1";
   }
@@ -49,6 +51,14 @@ export function pageNumberFromPath(pathname: string): string | null {
     const n = Number.parseInt(archSlide[1], 10);
     if (Number.isFinite(n) && n >= 5401 && n <= 5470) {
       return String(n - 5399);
+    }
+  }
+  const archS = segment.match(/^archS(\d{3})([A-D])$/i);
+  if (archS) {
+    const set = Number.parseInt(archS[1], 10);
+    const letter = archS[2].toUpperCase().charCodeAt(0) - 65; // A=0 … D=3
+    if (Number.isFinite(set) && set >= 180 && set <= 187 && letter >= 0 && letter <= 3) {
+      return String(72 + (set - 180) * 4 + letter);
     }
   }
 

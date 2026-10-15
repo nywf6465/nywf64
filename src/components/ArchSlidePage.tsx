@@ -7,15 +7,21 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export type ArchSlidePageProps = {
-  slideId: number;
+  /** Numeric slide (5401…) or S-series id string (e.g. "S180-A"). */
+  slideId: number | string;
   /** Navy title bar text, e.g. "Slide 5401 - Unisphere". */
   title: string;
   titleId?: string;
   image: { src: string; width: number; height: number; alt?: string };
   /** Caption lines under the slide image (legacy bold Arial lines). */
   captions: ReactNode[];
-  /** Third header line on the plate (legacy ATTRACTIONS / PUBLIC SERVICES / …). */
-  category?: string;
+  /**
+   * Third header line on the plate (legacy ATTRACTIONS / PUBLIC SERVICES / …).
+   * Pass `null` to omit (some S-series plates have only two header lines).
+   */
+  category?: string | null;
+  /** Optional fourth header line (legacy INDUSTRIAL PARTICIPANTS “SET A” / “SET B”). */
+  setLabel?: string;
   previousHref?: string;
   /** When set, Nav2 shows NEXT to this slide; otherwise NEXT is hidden. */
   nextHref?: string;
@@ -34,6 +40,7 @@ export function ArchSlidePage({
   image,
   captions,
   category = "ATTRACTIONS",
+  setLabel,
   previousHref = "/archtray",
   nextHref,
 }: ArchSlidePageProps) {
@@ -73,7 +80,8 @@ export function ArchSlidePage({
             <div className={styles.headers}>
               <p>ARCHITECT&apos;S RENDERINGS</p>
               <p>NEW YORK WORLD&apos;S FAIR 1964-1965</p>
-              <p>{category}</p>
+              {category ? <p>{category}</p> : null}
+              {setLabel ? <p>{setLabel}</p> : null}
             </div>
             <Image
               src={image.src}
