@@ -15,13 +15,15 @@ export type ArchSlidePageProps = {
   /** Caption lines under the slide image (legacy bold Arial lines). */
   captions: ReactNode[];
   previousHref?: string;
+  /** When set, Nav2 shows NEXT to this slide; otherwise NEXT is hidden. */
+  nextHref?: string;
 };
 
 /**
  * Architectural Series individual slide (legacy archNNNN.html).
  * Stack: archhero → ArchNavChrome → navy title → slide plate → Nav2Bar.
  * HARD RULE — navy title banner beneath the nav.
- * No NEXT — return via PREVIOUS to the slide tray.
+ * PREVIOUS defaults to the slide tray; optional NEXT for slide-to-slide.
  */
 export function ArchSlidePage({
   slideId,
@@ -30,6 +32,7 @@ export function ArchSlidePage({
   image,
   captions,
   previousHref = "/archtray",
+  nextHref,
 }: ArchSlidePageProps) {
   return (
     <>
@@ -94,7 +97,8 @@ export function ArchSlidePage({
         previousHref={previousHref}
         explicitPrevious
         overviewHref="/archoverview"
-        hideNext
+        nextHref={nextHref}
+        hideNext={!nextHref}
       />
     </>
   );
