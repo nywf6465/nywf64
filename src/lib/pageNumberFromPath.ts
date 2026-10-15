@@ -11,6 +11,9 @@
  *
  * LOOK's Guide (`looksguide01` … `looksguide09`) continues after Look Index
  * Page 1: guide page NN shows Page N+1 (looksguide01 → Page 2, …, 09 → Page 10).
+ *
+ * Architectural Series: `archtray` → Page 1; `arch5401`…`arch5470` → Page 2…71
+ * (slide number − 5399). Overview `/archoverview` has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -34,6 +37,18 @@ export function pageNumberFromPath(pathname: string): string | null {
     const n = Number.parseInt(looksguide[1], 10);
     if (Number.isFinite(n) && n >= 1 && n <= 9) {
       return String(n + 1);
+    }
+  }
+
+  // Architectural Series: archtray → Page 1; arch5401…arch5470 → Page 2…71
+  if (/^archtray$/i.test(segment)) {
+    return "1";
+  }
+  const archSlide = segment.match(/^arch(\d{4})$/i);
+  if (archSlide) {
+    const n = Number.parseInt(archSlide[1], 10);
+    if (Number.isFinite(n) && n >= 5401 && n <= 5470) {
+      return String(n - 5399);
     }
   }
 

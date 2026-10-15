@@ -110,7 +110,7 @@ const TOPICS = [
   {
     id: "architectural-slides",
     title: "The Architectural Series of Slides",
-    href: "/artifacts/architectural-slides",
+    href: "/archoverview",
     hoverSrc: "/images/artifacts-hover/architectural-slides.jpg",
     left: "2.058%",
     top: "52.794%",
