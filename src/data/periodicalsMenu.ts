@@ -2,8 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Magazine Articles / Periodicals of the Fair menu.
- * Overview + Life / Newsweek indexes; Look / Saturday Evening Post
- * indexes join as their pages land.
+ * Overview + Life / Look / Newsweek / Saturday Evening Post indexes.
  */
 export const PERIODICALS_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -15,7 +14,15 @@ export const PERIODICALS_MENU_TOPICS: AttractionTopic[] = [
     href: "/life01",
   },
   {
+    label: "Look Magazine Index",
+    href: "/look01",
+  },
+  {
     label: "Newsweek Magazine Index",
     href: "/newsweek01",
+  },
+  {
+    label: "Saturday Evening Post Index",
+    href: "/post01",
   },
 ];
