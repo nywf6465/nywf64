@@ -130,7 +130,7 @@ const TOPICS = [
   {
     id: "wolfe-slides",
     title: "The Wolfe Worldwide Films Slide Set",
-    href: "/artifacts/wolfe-slides",
+    href: "/wolfeoverview",
     hoverSrc: "/images/artifacts-hover/wolfe-slides.jpg",
     left: "2.058%",
     top: "62.969%",
