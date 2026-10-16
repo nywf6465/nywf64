@@ -79,7 +79,7 @@ export default function WolfeOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/wolfeoverview"
-        hideNext
+        nextHref="/wolfetray"
       />
     </>
   );

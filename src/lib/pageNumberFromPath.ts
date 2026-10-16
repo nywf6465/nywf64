@@ -15,6 +15,9 @@
  * Architectural Series: `archtray` → Page 1; `arch5401`…`arch5470` → Page 2…71
  * (slide number − 5399); `archS180A`…`archS187D` → Page 72…103.
  * Overview `/archoverview` has no Page notation.
+ *
+ * Wolfe Worldwide Films: `wolfetray` → Page 1. Overview `/wolfeoverview`
+ * has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -43,7 +46,7 @@ export function pageNumberFromPath(pathname: string): string | null {
 
   // Architectural Series: archtray → Page 1; arch5401…arch5470 → Page 2…71
   // archS180A…archS187D → Page 72…103
-  if (/^archtray$/i.test(segment)) {
+  if (/^archtray$/i.test(segment) || /^wolfetray$/i.test(segment)) {
     return "1";
   }
   const archSlide = segment.match(/^arch(\d{4})$/i);
