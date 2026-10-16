@@ -1,3 +1,5 @@
+import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
+
 /**
  * Extract a page label from a numbered attraction route (zero-suppressed).
  * `/trantrav05` → `"5"`, `/vatican10` → `"10"`. Overview/map/hub routes → null.
@@ -16,7 +18,8 @@
  * (slide number − 5399); `archS180A`…`archS187D` → Page 72…103.
  * Overview `/archoverview` has no Page notation.
  *
- * Wolfe Worldwide Films: `wolfetray` → Page 1. Overview `/wolfeoverview`
+ * Wolfe Worldwide Films: `wolfetray` → Page 1; tray slides in legacy order
+ * start at Page 2 (`wolfe79000` → Page 2). Overview `/wolfeoverview`
  * has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
@@ -48,6 +51,13 @@ export function pageNumberFromPath(pathname: string): string | null {
   // archS180A…archS187D → Page 72…103
   if (/^archtray$/i.test(segment) || /^wolfetray$/i.test(segment)) {
     return "1";
+  }
+  const wolfeSlide = segment.match(/^wolfe(\d{5})$/i);
+  if (wolfeSlide) {
+    const idx = WOLFE_SLIDE_IDS.indexOf(
+      wolfeSlide[1] as (typeof WOLFE_SLIDE_IDS)[number],
+    );
+    if (idx >= 0) return String(idx + 2);
   }
   const archSlide = segment.match(/^arch(\d{4})$/i);
   if (archSlide) {
