@@ -15,7 +15,7 @@ export const metadata: Metadata = {
  * Photo Lab Slide Set overview — follows the overview prototype
  * (same stack as /archoverview). Hero canvas matches ibm01 (1905×826)
  * via PhotoLabHero. No Page notation (`photolaboverview` is not a numbered route).
- * NEXT → /photolabtray1; PREVIOUS → /artifacts.
+ * NEXT → /photolabtray01; PREVIOUS → /artifacts.
  */
 export default function PhotoLabOverviewPage() {
   return (
@@ -64,7 +64,7 @@ export default function PhotoLabOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/photolaboverview"
-        nextHref="/photolabtray1"
+        nextHref="/photolabtray01"
       />
     </>
   );

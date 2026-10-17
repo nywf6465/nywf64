@@ -11,14 +11,14 @@ export const PHOTOLAB_MENU_TOPICS: AttractionTopic[] = [
   },
   {
     label: "Slide Tray #1",
-    href: "/photolabtray1",
+    href: "/photolabtray01",
   },
   {
     label: "Slide Tray #2",
-    href: "/photolabtray2",
+    href: "/photolabtray02",
   },
   {
     label: "Slide Tray #3",
-    href: "/photolabtray3",
+    href: "/photolabtray03",
   },
 ];
