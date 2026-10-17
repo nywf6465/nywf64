@@ -15,6 +15,9 @@
  * Architectural Series: `archtray` → Page 1; `arch5401`…`arch5470` → Page 2…71
  * (slide number − 5399); `archS180A`…`archS187D` → Page 72…103.
  * Overview `/archoverview` has no Page notation.
+ *
+ * Photo Lab Slide Set: `photolabtray01` → Page 1; `photolab5601`…`photolab5650`
+ * → Page 2…51. Overview `/photolaboverview` has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -43,8 +46,18 @@ export function pageNumberFromPath(pathname: string): string | null {
 
   // Architectural Series: archtray → Page 1; arch5401…arch5470 → Page 2…71
   // archS180A…archS187D → Page 72…103
-  if (/^archtray$/i.test(segment)) {
+  if (/^archtray$/i.test(segment) || /^photolabtray01$/i.test(segment)) {
     return "1";
+  }
+  const photolabSlide = segment.match(/^photolab(\d{4})$/i);
+  if (photolabSlide) {
+    const n = Number.parseInt(photolabSlide[1], 10);
+    if (Number.isFinite(n) && n >= 5601 && n <= 5650) {
+      return String(n - 5599);
+    }
+  }
+  if (/^photolab/i.test(segment)) {
+    return null;
   }
   const archSlide = segment.match(/^arch(\d{4})$/i);
   if (archSlide) {
