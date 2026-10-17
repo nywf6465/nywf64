@@ -120,7 +120,7 @@ const TOPICS = [
   {
     id: "photo-lab-slides",
     title: "The Photo Lab Slide Set",
-    href: "/artifacts/photo-lab-slides",
+    href: "/photolaboverview",
     hoverSrc: "/images/artifacts-hover/photo-lab-slides.jpg",
     left: "50.534%",
     top: "52.794%",
