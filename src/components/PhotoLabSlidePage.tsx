@@ -5,8 +5,8 @@ import { PhotoLabNavChrome } from "@/components/PhotoLabNavChrome";
 import styles from "@/styles/photolabSlidePage.module.css";
 
 export type PhotoLabSlidePageProps = {
-  /** Slide number, e.g. 5601. */
-  slideId: number;
+  /** Slide id, e.g. 5601 or S301A. */
+  slideId: number | string;
   /** Navy title bar text. */
   title: string;
   image: { src: string; width: number; height: number; alt?: string };
