@@ -120,7 +120,7 @@ const TOPICS = [
   {
     id: "photo-lab-slides",
     title: "The Photo Lab Slide Set",
-    href: "/artifacts/photo-lab-slides",
+    href: "/photolaboverview",
     hoverSrc: "/images/artifacts-hover/photo-lab-slides.jpg",
     left: "50.534%",
     top: "52.794%",
@@ -130,7 +130,7 @@ const TOPICS = [
   {
     id: "wolfe-slides",
     title: "The Wolfe Worldwide Films Slide Set",
-    href: "/artifacts/wolfe-slides",
+    href: "/wolfeoverview",
     hoverSrc: "/images/artifacts-hover/wolfe-slides.jpg",
     left: "2.058%",
     top: "62.969%",

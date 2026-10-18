@@ -1,3 +1,5 @@
+import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
+
 /**
  * Extract a page label from a numbered attraction route (zero-suppressed).
  * `/trantrav05` → `"5"`, `/vatican10` → `"10"`. Overview/map/hub routes → null.
@@ -15,6 +17,17 @@
  * Architectural Series: `archtray` → Page 1; `arch5401`…`arch5470` → Page 2…71
  * (slide number − 5399); `archS180A`…`archS187D` → Page 72…103.
  * Overview `/archoverview` has no Page notation.
+ *
+ * Photo Lab Slide Set: `photolabtray01` → Page 1; `photolab5601`…`photolab5650`
+ * → Page 2…51. `photolabtray02` → Page 1; `photolab5471`…`photolab5540`
+ * → Page 2…71. `photolabtray03` → Page 1; `photolabS301A`…`photolabS313D`
+ * → Page 2…53. The tray-2 closer is also published at `/photolab55340`
+ * (legacy plab5540) and shows Page 71. Overview `/photolaboverview` has no
+ * Page notation.
+ *
+ * Wolfe Worldwide Films: `wolfetray` → Page 1; tray slides in legacy order
+ * start at Page 2 (`wolfe79000` → Page 2). Overview `/wolfeoverview`
+ * has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -43,8 +56,45 @@ export function pageNumberFromPath(pathname: string): string | null {
 
   // Architectural Series: archtray → Page 1; arch5401…arch5470 → Page 2…71
   // archS180A…archS187D → Page 72…103
-  if (/^archtray$/i.test(segment)) {
+  if (
+    /^archtray$/i.test(segment) ||
+    /^photolabtray0[123]$/i.test(segment) ||
+    /^wolfetray$/i.test(segment)
+  ) {
     return "1";
+  }
+  const photolabSlide = segment.match(/^photolab(\d{4})$/i);
+  if (photolabSlide) {
+    const n = Number.parseInt(photolabSlide[1], 10);
+    if (Number.isFinite(n) && n >= 5601 && n <= 5650) {
+      return String(n - 5599);
+    }
+    if (Number.isFinite(n) && n >= 5471 && n <= 5540) {
+      return String(n - 5469);
+    }
+  }
+  // Tray-2 closer published at the five-digit route (legacy plab5540).
+  if (/^photolab55340$/i.test(segment)) {
+    return "71";
+  }
+  // Super Scenic Series: tray 3 is Page 1; S301A…S313D are Page 2…53.
+  const photolabScenic = segment.match(/^photolabS(\d{3})([A-D])$/i);
+  if (photolabScenic) {
+    const set = Number.parseInt(photolabScenic[1], 10);
+    const letter = photolabScenic[2].toUpperCase().charCodeAt(0) - 65;
+    if (Number.isFinite(set) && set >= 301 && set <= 313 && letter >= 0 && letter <= 3) {
+      return String(2 + (set - 301) * 4 + letter);
+    }
+  }
+  if (/^photolab/i.test(segment)) {
+    return null;
+  }
+  const wolfeSlide = segment.match(/^wolfe(\d{5})$/i);
+  if (wolfeSlide) {
+    const idx = WOLFE_SLIDE_IDS.indexOf(
+      wolfeSlide[1] as (typeof WOLFE_SLIDE_IDS)[number],
+    );
+    if (idx >= 0) return String(idx + 2);
   }
   const archSlide = segment.match(/^arch(\d{4})$/i);
   if (archSlide) {
