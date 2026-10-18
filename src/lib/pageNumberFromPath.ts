@@ -1,3 +1,5 @@
+import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
+
 /**
  * Extract a page label from a numbered attraction route (zero-suppressed).
  * `/trantrav05` → `"5"`, `/vatican10` → `"10"`. Overview/map/hub routes → null.
@@ -22,6 +24,10 @@
  * → Page 2…53. The tray-2 closer is also published at `/photolab55340`
  * (legacy plab5540) and shows Page 71. Overview `/photolaboverview` has no
  * Page notation.
+ *
+ * Wolfe Worldwide Films: `wolfetray` → Page 1; tray slides in legacy order
+ * start at Page 2 (`wolfe79000` → Page 2). Overview `/wolfeoverview`
+ * has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -52,7 +58,8 @@ export function pageNumberFromPath(pathname: string): string | null {
   // archS180A…archS187D → Page 72…103
   if (
     /^archtray$/i.test(segment) ||
-    /^photolabtray0[123]$/i.test(segment)
+    /^photolabtray0[123]$/i.test(segment) ||
+    /^wolfetray$/i.test(segment)
   ) {
     return "1";
   }
@@ -81,6 +88,13 @@ export function pageNumberFromPath(pathname: string): string | null {
   }
   if (/^photolab/i.test(segment)) {
     return null;
+  }
+  const wolfeSlide = segment.match(/^wolfe(\d{5})$/i);
+  if (wolfeSlide) {
+    const idx = WOLFE_SLIDE_IDS.indexOf(
+      wolfeSlide[1] as (typeof WOLFE_SLIDE_IDS)[number],
+    );
+    if (idx >= 0) return String(idx + 2);
   }
   const archSlide = segment.match(/^arch(\d{4})$/i);
   if (archSlide) {

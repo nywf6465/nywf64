@@ -1,0 +1,100 @@
+/*
+ * Wolfe Worldwide Films — Slide Tray (legacy wolfe02).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.hero {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  margin-top: 0;
+}
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1rem, 2.5vw, 1.5rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(40rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.intro {
+  margin: 0 0 1rem;
+  color: #26346e;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9rem;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.intro strong {
+  font-weight: 700;
+}
+
+.intro em {
+  font-style: italic;
+}
+
+.tray {
+  display: grid;
+  grid-template-columns: repeat(5, 100px);
+  gap: 4px;
+  justify-content: center;
+  width: fit-content;
+  max-width: 100%;
+  margin: 0 auto;
+  padding: 4px;
+  border: 1px solid #000;
+  background: #fff;
+  box-sizing: border-box;
+}
+
+.thumbLink {
+  display: block;
+  line-height: 0;
+  border: 0;
+}
+
+.thumb {
+  display: block;
+  width: 100px;
+  height: 100px;
+  border: 1px solid #333;
+  background: #eee;
+}
+
+@media (max-width: 560px) {
+  .tray {
+    grid-template-columns: repeat(3, 100px);
+  }
+}
