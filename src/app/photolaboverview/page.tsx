@@ -49,9 +49,9 @@ export default function PhotoLabOverviewPage() {
           <div className={styles.photoWrap}>
             <Image
               src="/images/photolaboverview/photo.jpg"
-              alt="Photo Lab slide — Unisphere and fountains at dusk, © 1964 New York World's Fair 1964-1965 Corporation"
-              width={1254}
-              height={1254}
+              alt="Unisphere and fountains at dusk"
+              width={1018}
+              height={679}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
