@@ -13,3 +13,11 @@ export const PHOTOLAB_TRAY1_IDS = Array.from({ length: 50 }, (_, index) =>
 export const PHOTOLAB_TRAY2_IDS = Array.from({ length: 70 }, (_, index) =>
   String(5471 + index),
 );
+
+/**
+ * Photo Lab Slide Set — tray 3 order from legacy photolab04.html.
+ * Thumbnails link to `/photolabS301A` … `/photolabS313D`.
+ */
+export const PHOTOLAB_TRAY3_IDS = Array.from({ length: 13 }, (_, setIndex) =>
+  ["A", "B", "C", "D"].map((letter) => `S${301 + setIndex}${letter}`),
+).flat();

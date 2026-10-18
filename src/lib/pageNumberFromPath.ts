@@ -18,7 +18,7 @@
  *
  * Photo Lab Slide Set: `photolabtray01` → Page 1; `photolab5601`…`photolab5650`
  * → Page 2…51. `photolabtray02` → Page 1; `photolab5471`…`photolab5540`
- * → Page 2…71. The tray-2 closer is also published at `/photolab55340`
+ * → Page 2…71. `photolabtray03` → Page 1. The tray-2 closer is also published at `/photolab55340`
  * (legacy plab5540) and shows Page 71. Overview `/photolaboverview` has no
  * Page notation.
  */
@@ -51,7 +51,7 @@ export function pageNumberFromPath(pathname: string): string | null {
   // archS180A…archS187D → Page 72…103
   if (
     /^archtray$/i.test(segment) ||
-    /^photolabtray0[12]$/i.test(segment)
+    /^photolabtray0[123]$/i.test(segment)
   ) {
     return "1";
   }
