@@ -12,6 +12,8 @@ export type PhotoLabSlidePageProps = {
   image: { src: string; width: number; height: number; alt?: string };
   /** Caption lines under the photograph. */
   captions: string[];
+  /** Second plate header. General Tour slides use the default. */
+  setLabel?: string;
   previousHref: string;
   nextHref?: string;
 };
@@ -26,6 +28,7 @@ export function PhotoLabSlidePage({
   title,
   image,
   captions,
+  setLabel = "GENERAL TOUR SET OF 50",
   previousHref,
   nextHref,
 }: PhotoLabSlidePageProps) {
@@ -48,7 +51,7 @@ export function PhotoLabSlidePage({
           <div className={styles.plate} role="group" aria-label={`Slide ${slideId}`}>
             <div className={styles.headers}>
               <p>NEW YORK WORLD&apos;S FAIR 1964-1965</p>
-              <p>GENERAL TOUR SET OF 50</p>
+              <p>{setLabel}</p>
             </div>
             <Image
               src={image.src}
