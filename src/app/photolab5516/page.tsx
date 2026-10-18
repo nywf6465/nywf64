@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 /**
  * Photo Lab slide 5516 (legacy plab5516.html).
- * Nav bar shows Page 47. NEXT → /photolab5516; PREVIOUS → /photolab5515.
+ * Nav bar shows Page 47. NEXT → /photolab5517; PREVIOUS → /photolab5515.
  */
 export default function PhotoLab5516Page() {
   return (
@@ -26,7 +26,7 @@ export default function PhotoLab5516Page() {
       }}
       captions={["Polynesian Restaurant"]}
       previousHref="/photolab5515"
-      nextHref="/photolab5516"
+      nextHref="/photolab5517"
     />
   );
 }
