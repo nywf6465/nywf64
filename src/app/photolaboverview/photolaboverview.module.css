@@ -69,8 +69,8 @@
   line-height: 0;
   border: 1px solid #0a0a0a;
   background: #fff;
-  /* Match overview photo (1254×1254 slide plate). */
-  aspect-ratio: 1254 / 1254;
+  /* Match overview photo (1018×679 Unisphere at dusk). */
+  aspect-ratio: 1018 / 679;
   overflow: hidden;
 }
 
