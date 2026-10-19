@@ -16,7 +16,9 @@ export default function Mainliner55515Page() {
     <MainlinerSlidePage
       slideId="555-15"
       title="Slide 555-15 - Sinclair"
-      lead="555-15 Life as it existed 165 million years ago is re-created in Sinclair's \"Dinoland\""
+      lead={
+        '555-15 Life as it existed 165 million years ago is re-created in Sinclair\'s "Dinoland"'
+      }
       image={{
         src: "/images/mainliner/555-15.jpg",
         width: 400,
