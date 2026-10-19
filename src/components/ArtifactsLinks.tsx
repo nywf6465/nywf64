@@ -140,7 +140,7 @@ const TOPICS = [
   {
     id: "blackhawk-slides",
     title: "The Blackhawk Films Slide Set",
-    href: "/artifacts/blackhawk-slides",
+    href: "/mainlineroverview",
     hoverSrc: "/images/artifacts-hover/blackhawk-slides.jpg",
     left: "50.534%",
     top: "63.053%",
