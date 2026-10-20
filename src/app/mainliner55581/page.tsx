@@ -17,7 +17,9 @@ export default function Mainliner55581Page() {
     <MainlinerSlidePage
       slideId="555-81"
       title="Slide 555-81 - Missouri"
-      lead='555-81 Missouri\'s glass-enclosed pavilion has theme, "First in Space"'
+      lead={
+        '555-81 Missouri\'s glass-enclosed pavilion has theme, "First in Space"'
+      }
       image={{
         src: "/images/mainliner/555-81.jpg",
         width: 400,
