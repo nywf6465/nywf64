@@ -30,7 +30,8 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  * has no Page notation.
  *
  * MAINLINER: `mainlinertray01` and `mainlinertray02` → Page 1.
- * `mainliner55501`…`mainliner555100` → Page 2…101. Overview
+ * `mainliner55501`…`mainliner555100` → Page 2…101.
+ * `mainliner63301`…`mainliner633100` → Page 2…101. Overview
  * `/mainlineroverview` has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
@@ -68,7 +69,7 @@ export function pageNumberFromPath(pathname: string): string | null {
   ) {
     return "1";
   }
-  const mainlinerSlide = segment.match(/^mainliner555(\d+)$/i);
+  const mainlinerSlide = segment.match(/^mainliner(?:555|633)(\d+)$/i);
   if (mainlinerSlide) {
     const n = Number.parseInt(mainlinerSlide[1], 10);
     if (Number.isFinite(n) && n >= 1 && n <= 100) return String(n + 1);
