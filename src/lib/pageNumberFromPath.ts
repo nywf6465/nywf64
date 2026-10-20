@@ -28,6 +28,11 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  * Wolfe Worldwide Films: `wolfetray` → Page 1; tray slides in legacy order
  * start at Page 2 (`wolfe79000` → Page 2). Overview `/wolfeoverview`
  * has no Page notation.
+ *
+ * MAINLINER: `mainlinertray01` and `mainlinertray02` → Page 1.
+ * `mainliner55501`…`mainliner555100` → Page 2…101.
+ * `mainliner63301`…`mainliner633100` → Page 2…101. Overview
+ * `/mainlineroverview` has no Page notation.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -59,9 +64,15 @@ export function pageNumberFromPath(pathname: string): string | null {
   if (
     /^archtray$/i.test(segment) ||
     /^photolabtray0[123]$/i.test(segment) ||
-    /^wolfetray$/i.test(segment)
+    /^wolfetray$/i.test(segment) ||
+    /^mainlinertray0[12]$/i.test(segment)
   ) {
     return "1";
+  }
+  const mainlinerSlide = segment.match(/^mainliner(?:555|633)(\d+)$/i);
+  if (mainlinerSlide) {
+    const n = Number.parseInt(mainlinerSlide[1], 10);
+    if (Number.isFinite(n) && n >= 1 && n <= 100) return String(n + 1);
   }
   const photolabSlide = segment.match(/^photolab(\d{4})$/i);
   if (photolabSlide) {
