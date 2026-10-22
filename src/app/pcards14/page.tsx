@@ -81,7 +81,7 @@ export default function Pcards14Page() {
           ],
           sources: [
             "Source: Postcard Published by Colourpicture Publishers Inc. (Plastichrome)",
-            <span key="courtesy-1" style={ color: "red" }>Presented courtesy Craig Bavaro Collection</span>,
+            <span key="courtesy-1" style={{ color: "red" }}>Presented courtesy Craig Bavaro Collection</span>,
           ],
         },
         {
@@ -104,7 +104,7 @@ export default function Pcards14Page() {
           ],
           sources: [
             "Source: Postcard Published by Colourpicture Publishers Inc. (Plastichrome)",
-            <span key="courtesy-2" style={ color: "red" }>Presented courtesy Craig Bavaro Collection</span>,
+            <span key="courtesy-2" style={{ color: "red" }}>Presented courtesy Craig Bavaro Collection</span>,
           ],
         },
         {
@@ -237,7 +237,7 @@ export default function Pcards14Page() {
           ],
           sources: [
             "Source: Postcard Published by Colourpicture Publishers Inc. (Plastichrome)",
-            <span key="courtesy-3" style={ color: "red" }>Presented courtesy Craig Bavaro Collection</span>,
+            <span key="courtesy-3" style={{ color: "red" }}>Presented courtesy Craig Bavaro Collection</span>,
           ],
         },
         {
@@ -744,7 +744,7 @@ export default function Pcards14Page() {
           ],
           sources: [
             "Source: Postcard Published by Colourpicture Publishers Inc. (Plastichrome)",
-            <span key="courtesy-4" style={ color: "red" }>Presented courtesy Craig Bavaro Collection</span>,
+            <span key="courtesy-4" style={{ color: "red" }}>Presented courtesy Craig Bavaro Collection</span>,
           ],
         },
         {
