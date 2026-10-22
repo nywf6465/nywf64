@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 /**
  * Photo Lab slide 5477 (legacy plab5477.html).
- * Nav bar shows Page 8. NEXT → /photolab5479; PREVIOUS → /photolab5476.
+ * Nav bar shows Page 8. NEXT → /photolab5478; PREVIOUS → /photolab5476.
  */
 export default function PhotoLab5477Page() {
   return (
@@ -26,7 +26,7 @@ export default function PhotoLab5477Page() {
       }}
       captions={["Eastman Kodak Exhibit"]}
       previousHref="/photolab5476"
-      nextHref="/photolab5479"
+      nextHref="/photolab5478"
     />
   );
 }
