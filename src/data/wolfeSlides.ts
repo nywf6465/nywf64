@@ -1,4 +1,10 @@
-/** Legacy wolfe02 slide order (not numeric sort). Tray is Page 1; first slide is Page 2. */
+/**
+ * Legacy wolfe02 slide order (not numeric sort). Tray is Page 1; first slide is Page 2.
+ *
+ * From `/wolfe79125` onward, nav Page numbers run sequentially starting at Page 71
+ * (79125 → 71, 79126 → 72, …). Place new ids in this list so
+ * `pageNumberFromPath` yields `index + 2` matching that Page.
+ */
 export const WOLFE_SLIDE_IDS = [
   "79000",
   "79001",
