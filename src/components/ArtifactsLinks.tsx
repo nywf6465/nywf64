@@ -150,7 +150,7 @@ const TOPICS = [
   {
     id: "postcards",
     title: "World\u2019s Fair Postcard Collection",
-    href: "/artifacts/postcards",
+    href: "/pcardsoverview",
     hoverSrc: "/images/artifacts-hover/postcards.jpg",
     left: "2.058%",
     top: "72.727%",

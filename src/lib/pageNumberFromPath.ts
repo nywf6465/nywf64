@@ -19,9 +19,18 @@
  * Photo Lab Slide Set: `photolabtray01` → Page 1; `photolab5601`…`photolab5650`
  * → Page 2…51. `photolabtray02` → Page 1; `photolab5471`…`photolab5540`
  * → Page 2…71. Overview `/photolaboverview` has no Page notation.
+ *
+ * World’s Fair Postcard Collection: `pcardsoverview` → Page 1
+ * (legacy pcards01 Introduction). Later `pcardsNN` gallery pages use
+ * their trailing digits as usual.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
+
+  // Postcard Collection overview (legacy pcards01) — Page 1 on the nav bar
+  if (/^pcardsoverview$/i.test(segment)) {
+    return "1";
+  }
 
   const saga = segment.match(/^ftwptf03-(\d+)$/i);
   if (saga) {
