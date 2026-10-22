@@ -73,8 +73,8 @@
   line-height: 0;
   border: 1px solid #0a0a0a;
   background: #fff;
-  /* Title card (1269×1240). */
-  aspect-ratio: 1269 / 1240;
+  /* MAINLINER slide 633-78 (400×259). */
+  aspect-ratio: 400 / 259;
   overflow: hidden;
 }
 

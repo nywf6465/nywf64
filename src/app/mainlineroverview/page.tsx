@@ -54,9 +54,9 @@ export default function MainlinerOverviewPage() {
           <div className={styles.photoWrap}>
             <Image
               src="/images/mainlineroverview/photo.jpg"
-              alt="Blackhawk Films title card, produced in cooperation with United Air Lines"
-              width={1269}
-              height={1240}
+              alt="Travelers Insurance has pavilion modeled after Travelers' red umbrella trademark"
+              width={400}
+              height={259}
               sizes="(max-width: 720px) 100vw, 48vw"
               className={styles.photo}
               unoptimized
