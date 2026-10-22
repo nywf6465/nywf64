@@ -3,7 +3,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 /**
  * World’s Fair Postcard Collection / pcards menu.
  * Overview (legacy pcards01) is Page 1; Official Postcards /pcards01–06
- * (Pages 2–7); Exhibitor Postcards at /pcards07–12 (Pages 8–13); Advertising at /pcards13 (Page 14); Unauthorized at /pcards14 (Page 15).
+ * (Pages 2–7); Exhibitor Postcards at /pcards07–12 (Pages 8–13); Advertising at /pcards13 (Page 14); Unauthorized at /pcards14–15 (Pages 15–16).
  */
 export const PCARDS_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -65,5 +65,9 @@ export const PCARDS_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "Unauthorized Post Cards",
     href: "/pcards14",
+  },
+  {
+    label: "Unauthorized Post Cards (2)",
+    href: "/pcards15",
   },
 ];
