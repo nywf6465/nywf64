@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * Same overview stack as /photolaboverview / /booksoverview.
  * Hero canvas matches ibm01 (1905×826) via PcardsHero.
  * Nav bar shows Page 1 (`pcardsoverview` special-cased in pageNumberFromPath).
- * PREVIOUS → /artifacts.
+ * PREVIOUS → /artifacts; NEXT → /pcards01 (Official Postcards).
  */
 export default function PcardsOverviewPage() {
   return (
@@ -68,7 +68,7 @@ export default function PcardsOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/pcardsoverview"
-        hideNext
+        nextHref="/pcards01"
       />
     </>
   );

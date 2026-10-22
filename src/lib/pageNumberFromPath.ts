@@ -21,8 +21,7 @@
  * → Page 2…71. Overview `/photolaboverview` has no Page notation.
  *
  * World’s Fair Postcard Collection: `pcardsoverview` → Page 1
- * (legacy pcards01 Introduction). Later `pcardsNN` gallery pages use
- * their trailing digits as usual.
+ * (legacy pcards01 Introduction); `pcards01`… → Page 2… (legacy pcards02…).
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -30,6 +29,14 @@ export function pageNumberFromPath(pathname: string): string | null {
   // Postcard Collection overview (legacy pcards01) — Page 1 on the nav bar
   if (/^pcardsoverview$/i.test(segment)) {
     return "1";
+  }
+  // Gallery pages: pcards01 → Page 2, pcards02 → Page 3, …
+  const pcardsGallery = segment.match(/^pcards(\d+)$/i);
+  if (pcardsGallery) {
+    const n = Number.parseInt(pcardsGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
   }
 
   const saga = segment.match(/^ftwptf03-(\d+)$/i);
