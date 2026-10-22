@@ -414,11 +414,17 @@ export default function Pcards07Page() {
             height: 297,
             alt: "The Cities Service World's Fair Band of America exhibitor postcard No. N/A",
           },
-          reverse: {
+          belowFront: {
             src: "/images/pcards07/None(21)reverseB.jpg",
             width: 450,
             height: 273,
-            alt: "Reverse — The Cities Service World's Fair Band of America exhibitor postcard",
+            alt: "Reverse B — The Cities Service World's Fair Band of America exhibitor postcard",
+          },
+          reverse: {
+            src: "/images/pcards07/None(21)reverseA.jpg",
+            width: 200,
+            height: 254,
+            alt: "Reverse A — The Cities Service World's Fair Band of America exhibitor postcard",
           },
           meta: [
             "The Cities Service World's Fair Band of America",
