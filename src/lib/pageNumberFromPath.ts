@@ -34,8 +34,8 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  * `mainliner63301`…`mainliner633100` → Page 2…101. Overview
  * `/mainlineroverview` has no Page notation.
  *
- * World’s Fair Matchbook Collection: `matchbooksoverview` → Page 1;
- * `matchbooks01`… → Page 2… (legacy matchbooks02…).
+ * World’s Fair Matchbook Collection (NEXT order):
+ * `matchbooksoverview` → Page 1; `matchbooks01`…`matchbooks08` → Page 2…9.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -44,15 +44,7 @@ export function pageNumberFromPath(pathname: string): string | null {
   if (/^matchbooksoverview$/i.test(segment)) {
     return "1";
   }
-  // Gallery pages: matchbooks01 → Page 2, matchbooks02 → Page 3, …
-  // Temporary order until full resequence: matchbooks06 → Page 7 (formula);
-  // matchbooks07 → Page 8; matchbooks08 → Page 9.
-  if (/^matchbooks07$/i.test(segment)) {
-    return "8";
-  }
-  if (/^matchbooks08$/i.test(segment)) {
-    return "9";
-  }
+  // Gallery pages in NEXT order: matchbooks01 → Page 2 … matchbooks08 → Page 9
   const matchbooksGallery = segment.match(/^matchbooks(\d+)$/i);
   if (matchbooksGallery) {
     const n = Number.parseInt(matchbooksGallery[1], 10);
