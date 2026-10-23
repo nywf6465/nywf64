@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * World’s Fair Matchbook Collection menu.
- * Overview (Page 1); Exhibitor Matchbooks at /matchbooks01–04 (Pages 2–5); Souvenir at /matchbooks05 (Page 6); Advertising at /matchbooks08 (Page 7).
+ * Overview (Page 1); Exhibitor Matchbooks at /matchbooks01–04 (Pages 2–5); Souvenir at /matchbooks05 & /matchbooks07 (Pages 6–7); Advertising at /matchbooks08 (Page 8).
  */
 export const MATCHBOOKS_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -28,6 +28,10 @@ export const MATCHBOOKS_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "Souvenir Matchbooks",
     href: "/matchbooks05",
+  },
+  {
+    label: "Souvenir Matchbooks (2)",
+    href: "/matchbooks07",
   },
   {
     label: "Advertising Matchbooks",
