@@ -160,7 +160,7 @@ const TOPICS = [
   {
     id: "matchbooks",
     title: "World\u2019s Fair Matchbook Collection",
-    href: "/artifacts/matchbooks",
+    href: "/matchbooksoverview",
     hoverSrc: "/images/artifacts-hover/matchbooks.jpg",
     left: "50.534%",
     top: "72.811%",
