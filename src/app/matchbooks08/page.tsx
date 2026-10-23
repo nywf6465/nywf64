@@ -10,7 +10,7 @@ export const metadata: Metadata = {
 
 /**
  * Advertising Matchbooks gallery (legacy matchbooks07.html → /matchbooks08).
- * Shared MatchbooksHero (1905×826). Nav Page 8.
+ * Shared MatchbooksHero (1905×826). Nav Page 9.
  * PREVIOUS → /matchbooks07; NEXT → /matchbooksoverview (legacy more → matchbooks01).
  */
 export default function Matchbooks08Page() {
