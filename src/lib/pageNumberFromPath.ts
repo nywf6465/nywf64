@@ -45,6 +45,10 @@ export function pageNumberFromPath(pathname: string): string | null {
     return "1";
   }
   // Gallery pages: matchbooks01 → Page 2, matchbooks02 → Page 3, …
+  // matchbooks08 (Advertising; legacy matchbooks07) is Page 7 per collection order.
+  if (/^matchbooks08$/i.test(segment)) {
+    return "7";
+  }
   const matchbooksGallery = segment.match(/^matchbooks(\d+)$/i);
   if (matchbooksGallery) {
     const n = Number.parseInt(matchbooksGallery[1], 10);
