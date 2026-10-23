@@ -45,12 +45,13 @@ export function pageNumberFromPath(pathname: string): string | null {
     return "1";
   }
   // Gallery pages: matchbooks01 → Page 2, matchbooks02 → Page 3, …
-  // matchbooks07 (Souvenir continuation) is Page 7; matchbooks08 (Advertising) is Page 8.
+  // Temporary order until full resequence: matchbooks06 → Page 7 (formula);
+  // matchbooks07 → Page 8; matchbooks08 → Page 9.
   if (/^matchbooks07$/i.test(segment)) {
-    return "7";
+    return "8";
   }
   if (/^matchbooks08$/i.test(segment)) {
-    return "8";
+    return "9";
   }
   const matchbooksGallery = segment.match(/^matchbooks(\d+)$/i);
   if (matchbooksGallery) {
