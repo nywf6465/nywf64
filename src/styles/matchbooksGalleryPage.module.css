@@ -1,0 +1,94 @@
+/*
+ * Matchbook gallery pages.
+ * Stack: MatchbooksHero → MatchbooksNavChrome → navy title bar →
+ * named exhibitor sections (rows of bordered matchbook scans) → Nav2Bar.
+ * HARD RULE — navy title banner beneath the attraction nav.
+ */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 910px;
+  margin: 0 auto;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+}
+
+.sections {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.section {
+  width: 100%;
+}
+
+.sectionHeading {
+  margin: 0 0 0.75rem;
+  color: #191970;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: left;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.25rem;
+  align-items: flex-start;
+}
+
+.frame {
+  line-height: 0;
+  border: 1px solid #000;
+  background: #fff;
+  flex: 0 0 auto;
+}
+
+.image {
+  display: block;
+  width: auto;
+  height: auto;
+  max-width: 100%;
+}
+
+@media (max-width: 720px) {
+  .row {
+    flex-direction: column;
+    align-items: center;
+  }
+}

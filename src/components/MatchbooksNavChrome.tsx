@@ -5,7 +5,8 @@ import { MATCHBOOKS_MENU_TOPICS } from "@/data/matchbooksMenu";
 
 /**
  * World’s Fair Matchbook Collection menu chrome — nav bar
- * (“EXPLORE THIS TOPIC”) + topic cards. Overview has no Page notation.
+ * (“EXPLORE THIS TOPIC”) + topic cards.
+ * Overview `/matchbooksoverview` shows Page 1; `/matchbooks01` → Page 2…
  * Use on every page whose route begins with `matchbooks`.
  */
 export function MatchbooksNavChrome() {
