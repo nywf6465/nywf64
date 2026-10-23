@@ -15,8 +15,8 @@ export const metadata: Metadata = {
  * World’s Fair Matchbook Collection overview — follows the overview prototype
  * (same stack as /photolaboverview / /archoverview).
  * Hero canvas matches ibm01 (1905×826) via MatchbooksHero.
- * No Page notation (`matchbooksoverview` is not a numbered route).
- * PREVIOUS → /artifacts; NEXT hidden until the first gallery page ships.
+ * Nav bar shows Page 1 (`matchbooksoverview` special-cased in pageNumberFromPath).
+ * PREVIOUS → /artifacts; NEXT → /matchbooks01 (Exhibitor Matchbooks).
  */
 export default function MatchbooksOverviewPage() {
   return (
@@ -59,7 +59,7 @@ export default function MatchbooksOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/matchbooksoverview"
-        hideNext
+        nextHref="/matchbooks01"
       />
     </>
   );

@@ -33,9 +33,25 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  * `mainliner55501`…`mainliner555100` → Page 2…101.
  * `mainliner63301`…`mainliner633100` → Page 2…101. Overview
  * `/mainlineroverview` has no Page notation.
+ *
+ * World’s Fair Matchbook Collection: `matchbooksoverview` → Page 1;
+ * `matchbooks01`… → Page 2… (legacy matchbooks02…).
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
+
+  // Matchbook Collection overview — Page 1 on the nav bar
+  if (/^matchbooksoverview$/i.test(segment)) {
+    return "1";
+  }
+  // Gallery pages: matchbooks01 → Page 2, matchbooks02 → Page 3, …
+  const matchbooksGallery = segment.match(/^matchbooks(\d+)$/i);
+  if (matchbooksGallery) {
+    const n = Number.parseInt(matchbooksGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
 
   const saga = segment.match(/^ftwptf03-(\d+)$/i);
   if (saga) {
