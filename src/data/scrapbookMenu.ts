@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * World’s Fair Scrapbook menu — ordered by nav Page / NEXT chain.
- * Page 1 Overview → Page 2 Page One (`/scrapbook01`).
+ * Page 1 Overview → Page 2 Page One → Page 3 Page Two.
  */
 export const SCRAPBOOK_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -12,5 +12,9 @@ export const SCRAPBOOK_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "1964 Scrapbook - Page One",
     href: "/scrapbook01",
+  },
+  {
+    label: "1964 Scrapbook - Page Two",
+    href: "/scrapbook02",
   },
 ];
