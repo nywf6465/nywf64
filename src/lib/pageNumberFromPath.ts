@@ -38,12 +38,18 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  * `matchbooksoverview` → Page 1; gallery slugs → Pages 2–7
  * (`matchbooks01`…`05` → 2…6; `matchbooks08` → 7).
  * Removed: `/matchbooks06`, `/matchbooks07`.
+ *
+ * World’s Fair Scrapbook: `scrapbookoverview` → Page 1.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
 
   // Matchbook Collection overview — Page 1 on the nav bar
   if (/^matchbooksoverview$/i.test(segment)) {
+    return "1";
+  }
+  // World’s Fair Scrapbook overview — Page 1 on the nav bar
+  if (/^scrapbookoverview$/i.test(segment)) {
     return "1";
   }
   // Gallery pages in NEXT order (06/07 removed — no Page label)

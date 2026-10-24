@@ -100,7 +100,7 @@ const TOPICS = [
   {
     id: "scrapbook",
     title: "World\u2019s Fair Scrapbook",
-    href: "/artifacts/scrapbook",
+    href: "/scrapbookoverview",
     hoverSrc: "/images/artifacts-hover/scrapbook.jpg",
     left: "50.534%",
     top: "42.702%",
