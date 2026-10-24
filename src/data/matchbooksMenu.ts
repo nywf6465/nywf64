@@ -3,8 +3,8 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 /**
  * World’s Fair Matchbook Collection menu — ordered by nav Page / NEXT chain.
  * Page 1 Overview → Pages 2–5 Exhibitor (01–04) → Page 6 Souvenir (05) →
- * Page 7 Souvenir (07) → Page 8 Advertising (08).
- * (Exhibitor Matchbooks (5) /matchbooks06 removed.)
+ * Page 7 Advertising (08).
+ * (Removed: Exhibitor (5) /matchbooks06, Souvenir (2) /matchbooks07.)
  */
 export const MATCHBOOKS_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -30,10 +30,6 @@ export const MATCHBOOKS_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "Souvenir Matchbooks",
     href: "/matchbooks05",
-  },
-  {
-    label: "Souvenir Matchbooks (2)",
-    href: "/matchbooks07",
   },
   {
     label: "Advertising Matchbooks",
