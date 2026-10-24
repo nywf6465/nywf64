@@ -35,7 +35,9 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  * `/mainlineroverview` has no Page notation.
  *
  * World’s Fair Matchbook Collection (NEXT order):
- * `matchbooksoverview` → Page 1; `matchbooks01`…`matchbooks08` → Page 2…9.
+ * `matchbooksoverview` → Page 1; gallery slugs → Pages 2–8
+ * (`matchbooks01`…`05` → 2…6; `matchbooks07` → 7; `matchbooks08` → 8).
+ * `/matchbooks06` was removed (Exhibitor Matchbooks (5)).
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -44,13 +46,18 @@ export function pageNumberFromPath(pathname: string): string | null {
   if (/^matchbooksoverview$/i.test(segment)) {
     return "1";
   }
-  // Gallery pages in NEXT order: matchbooks01 → Page 2 … matchbooks08 → Page 9
+  // Gallery pages in NEXT order (matchbooks06 removed — no Page label)
   const matchbooksGallery = segment.match(/^matchbooks(\d+)$/i);
   if (matchbooksGallery) {
     const n = Number.parseInt(matchbooksGallery[1], 10);
-    if (Number.isFinite(n) && n >= 1) {
+    if (n === 6) return null;
+    if (Number.isFinite(n) && n >= 1 && n <= 5) {
       return String(n + 1);
     }
+    if (n === 7 || n === 8) {
+      return String(n);
+    }
+    return null;
   }
 
   const saga = segment.match(/^ftwptf03-(\d+)$/i);
