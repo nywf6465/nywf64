@@ -10,8 +10,8 @@ export const metadata: Metadata = {
 
 /**
  * Advertising Matchbooks gallery (legacy matchbooks07.html → /matchbooks08).
- * Shared MatchbooksHero (1905×826). Nav Page 8.
- * PREVIOUS → /matchbooks07; NEXT → /matchbooksoverview (legacy more → matchbooks01).
+ * Shared MatchbooksHero (1905×826). Nav Page 7.
+ * PREVIOUS → /matchbooks05; NEXT → /matchbooksoverview (legacy more → matchbooks01).
  */
 export default function Matchbooks08Page() {
   return (
@@ -19,7 +19,7 @@ export default function Matchbooks08Page() {
       title="Advertising Matchbooks"
       titleId="matchbooks08-title"
       nav={<MatchbooksNavChrome />}
-      previousHref="/matchbooks07"
+      previousHref="/matchbooks05"
       overviewHref="/matchbooksoverview"
       nextHref="/matchbooksoverview"
       sections={[
