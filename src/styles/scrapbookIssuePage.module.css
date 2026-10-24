@@ -163,6 +163,25 @@
   line-height: 1.4;
 }
 
+.footerNote {
+  margin: 1.25rem 0 0;
+  padding: 0.85rem 0 0;
+  border-top: 1px solid #ccc;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 13px;
+  line-height: 1.45;
+  color: #000;
+}
+
+.footerNote p {
+  margin: 0 0 0.55rem;
+}
+
+.footerNote .footerSign {
+  margin: 0.35rem 0 0;
+  font-size: 12px;
+}
+
 @media (max-width: 720px) {
   .grid {
     grid-template-columns: 1fr;
