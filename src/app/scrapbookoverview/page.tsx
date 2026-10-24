@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * (same stack as /matchbooksoverview / /photolaboverview).
  * Hero canvas matches ibm01 (1905×826) via ScrapbookHero.
  * Nav bar shows Page 1 (`scrapbookoverview` special-cased in pageNumberFromPath).
- * PREVIOUS → /artifacts. NEXT hidden until the first gallery page ships.
+ * PREVIOUS → /artifacts; NEXT → /scrapbook01 (1964 Scrapbook - Page One).
  */
 export default function ScrapbookOverviewPage() {
   return (
@@ -59,7 +59,7 @@ export default function ScrapbookOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/scrapbookoverview"
-        hideNext
+        nextHref="/scrapbook01"
       />
     </>
   );
