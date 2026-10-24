@@ -39,6 +39,8 @@ export type ScrapbookIssuePageProps = {
   hideNext?: boolean;
   /** Path to the small Scrapbook title mark between features. */
   titleMarkSrc?: string;
+  /** Optional closing note after the last feature (e.g. webmaster’s note). */
+  footerNote?: ReactNode;
 };
 
 const DEFAULT_TITLE_MARK = {
@@ -63,6 +65,7 @@ export function ScrapbookIssuePage({
   overviewHref,
   hideNext = false,
   titleMarkSrc = DEFAULT_TITLE_MARK.src,
+  footerNote,
 }: ScrapbookIssuePageProps) {
   return (
     <>
@@ -198,6 +201,10 @@ export function ScrapbookIssuePage({
               </section>
             );
           })}
+
+          {footerNote ? (
+            <aside className={styles.footerNote}>{footerNote}</aside>
+          ) : null}
         </div>
       </article>
 
