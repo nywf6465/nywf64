@@ -17,7 +17,7 @@ const newsDate = (date: string) => (
 /**
  * World’s Fair Scrapbook Page Two (legacy scrapbook03.html → /scrapbook02).
  * Shared ScrapbookHero (1905×826). Nav Page 3.
- * PREVIOUS → /scrapbook01; NEXT hidden until the next issue page ships.
+ * PREVIOUS → /scrapbook01; NEXT → /scrapbook03.
  */
 export default function Scrapbook02Page() {
   return (
@@ -28,7 +28,7 @@ export default function Scrapbook02Page() {
       nav={<ScrapbookNavChrome />}
       previousHref="/scrapbook01"
       overviewHref="/scrapbookoverview"
-      hideNext
+      nextHref="/scrapbook03"
       features={[
         {
           label: "Flavor of the Orient",
