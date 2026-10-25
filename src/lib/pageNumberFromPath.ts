@@ -41,6 +41,9 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  *
  * World’s Fair Scrapbook: `scrapbookoverview` → Page 1;
  * `scrapbook01`… → Page 2… (route number + 1).
+ *
+ * The View-Masters Reels: `vmoverview` → Page 1;
+ * `vm01`… → Page 2… (route number + 1) when gallery pages exist.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -53,6 +56,18 @@ export function pageNumberFromPath(pathname: string): string | null {
   if (/^scrapbookoverview$/i.test(segment)) {
     return "1";
   }
+  // The View-Masters Reels overview — Page 1 on the nav bar
+  if (/^vmoverview$/i.test(segment)) {
+    return "1";
+  }
+  const vmGallery = segment.match(/^vm(\d+)$/i);
+  if (vmGallery) {
+    const n = Number.parseInt(vmGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
+
   const scrapbookGallery = segment.match(/^scrapbook(\d+)$/i);
   if (scrapbookGallery) {
     const n = Number.parseInt(scrapbookGallery[1], 10);

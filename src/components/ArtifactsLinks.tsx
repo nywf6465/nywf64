@@ -180,13 +180,14 @@ const TOPICS = [
   {
     id: "view-masters",
     title: "The View-Masters Reels",
-    href: "/artifacts/view-masters",
+    href: "/vmoverview",
     hoverSrc: "/images/artifacts-hover/view-masters.jpg",
     left: "50.534%",
     top: "82.485%",
     width: "47.637%",
     height: "8.841%",
   },
+
   {
     id: "edu-cards",
     title: "The \u201cEdu-Cards\u201d Set",
