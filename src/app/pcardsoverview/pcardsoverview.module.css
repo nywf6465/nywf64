@@ -1,0 +1,179 @@
+/*
+ * World’s Fair Postcard Collection — Introduction (legacy pcards01).
+ * HARD RULE — navy title banner beneath the attraction nav.
+ * Stack: PcardsHero → PcardsNavChrome → navy title → article → Nav2Bar.
+ */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 650px;
+  margin: 0 auto;
+  padding: 0.5rem clamp(0.75rem, 2vw, 1.25rem) 0;
+  box-sizing: border-box;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  line-height: 1.45;
+}
+
+.banner {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0.85rem;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 0 0 1rem;
+}
+
+.lede {
+  margin: 0 0 1rem;
+  text-align: center;
+  font-size: clamp(1.25rem, 2.4vw, 1.5rem);
+  font-weight: 400;
+  line-height: 1.3;
+}
+
+.lede .com {
+  font-size: 0.72em;
+  font-weight: 400;
+}
+
+.body {
+  margin: 0 0 1rem;
+}
+
+.body:last-child {
+  margin-bottom: 0;
+}
+
+.nywf {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.nywfMark {
+  color: #ff3300;
+  font-weight: 700;
+}
+
+.nywfCom {
+  color: #0066cc;
+  font-size: 0.85em;
+  font-weight: 400;
+}
+
+.portraitWrap {
+  display: flex;
+  justify-content: center;
+  margin: 0 0 1rem;
+}
+
+.portrait {
+  display: block;
+  width: 126px;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.note {
+  font-style: italic;
+  text-decoration: underline;
+}
+
+.categoryList {
+  margin: 0 0 1rem 1.25rem;
+  padding: 0;
+}
+
+.categoryList li {
+  margin: 0 0 0.65rem;
+}
+
+.categoryList li:last-child {
+  margin-bottom: 0;
+}
+
+.official {
+  color: #000;
+}
+
+.exhibitor {
+  color: #1e90ff;
+}
+
+.advertising {
+  color: #2e8b57;
+}
+
+.unauthorized {
+  color: red;
+}
+
+.miscellaneous {
+  color: #9400d3;
+}
+
+.extLink {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.extLink:visited {
+  color: #999999;
+}
+
+.illustrationBlock {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin: 0 0 1rem;
+  padding: 0.5rem 0;
+}
+
+.illustration {
+  display: block;
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+  border: 1px solid #000;
+}
+
+.closingBrand {
+  margin: 0;
+}

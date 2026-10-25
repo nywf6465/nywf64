@@ -150,7 +150,7 @@ const TOPICS = [
   {
     id: "postcards",
     title: "World\u2019s Fair Postcard Collection",
-    href: "/artifacts/postcards",
+    href: "/pcardsoverview",
     hoverSrc: "/images/artifacts-hover/postcards.jpg",
     left: "2.058%",
     top: "72.727%",
@@ -170,7 +170,7 @@ const TOPICS = [
   {
     id: "postage-stamps",
     title: "The Postage Stamps of the Fair",
-    href: "/artifacts/postage-stamps",
+    href: "/stampsoverview",
     hoverSrc: "/images/artifacts-hover/postage-stamps.jpg",
     left: "2.134%",
     top: "82.402%",
