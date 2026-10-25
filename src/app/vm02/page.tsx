@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 /**
  * Night Scenes & Amusement gallery (legacy vm03.html → /vm02).
  * Shared ViewMastersHero (1905×826). Nav Page 3 (overview is Page 1).
- * PREVIOUS → /vm01; NEXT hidden until /vm03 ships.
+ * PREVIOUS → /vm01; NEXT → /vm03 (International Area).
  * HARD RULE — navy title banner beneath the attraction nav.
  */
 export default function Vm02Page() {
@@ -32,7 +32,7 @@ export default function Vm02Page() {
       nav={<ViewMastersNavChrome />}
       previousHref="/vm01"
       overviewHref="/vmoverview"
-      hideNext
+      nextHref="/vm03"
       reels={[
         {
           label: "View-Master Reel One",
