@@ -44,6 +44,12 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  *
  * The View-Masters Reels: `vmoverview` → Page 1;
  * `vm01`… → Page 2… (route number + 1) when gallery pages exist.
+ *
+ * World’s Fair Postcard Collection: `pcardsoverview` → Page 1
+ * (legacy pcards01 Introduction); `pcards01`… → Page 2… (legacy pcards02…).
+ *
+ * Postage Stamps of the Fair: `stampsoverview` → Page 1;
+ * `stamps01`… → Page 2… (route number + 1).
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -60,9 +66,32 @@ export function pageNumberFromPath(pathname: string): string | null {
   if (/^vmoverview$/i.test(segment)) {
     return "1";
   }
+  // Postcard Collection overview (legacy pcards01) — Page 1 on the nav bar
+  if (/^pcardsoverview$/i.test(segment)) {
+    return "1";
+  }
+  // Postage Stamps of the Fair overview — Page 1 on the nav bar
+  if (/^stampsoverview$/i.test(segment)) {
+    return "1";
+  }
   const vmGallery = segment.match(/^vm(\d+)$/i);
   if (vmGallery) {
     const n = Number.parseInt(vmGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
+  // Gallery pages: pcards01 → Page 2, pcards02 → Page 3, …
+  const pcardsGallery = segment.match(/^pcards(\d+)$/i);
+  if (pcardsGallery) {
+    const n = Number.parseInt(pcardsGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
+  const stampsGallery = segment.match(/^stamps(\d+)$/i);
+  if (stampsGallery) {
+    const n = Number.parseInt(stampsGallery[1], 10);
     if (Number.isFinite(n) && n >= 1) {
       return String(n + 1);
     }

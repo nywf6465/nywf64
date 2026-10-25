@@ -1,0 +1,170 @@
+/*
+ * Postage Stamps of the Fair — Epilogue (legacy stamps09).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.body {
+  margin: 0 0 0.85rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.figure {
+  margin: 0.85rem auto 1rem;
+  max-width: 350px;
+  text-align: center;
+}
+
+.stamp {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.brand {
+  font-weight: 700;
+}
+
+.brandNywf {
+  color: #0066cc;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85em;
+}
+
+.signature {
+  margin: 1rem 0 1.5rem 1.5rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.noteBox {
+  margin: 0 auto;
+  max-width: 30rem;
+  border: 2px solid #000;
+  background: #fff;
+  padding: 0.75rem 0.85rem 0.65rem;
+  box-sizing: border-box;
+}
+
+.noteLead {
+  margin: 0 0 0.75rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  color: #666;
+}
+
+.noteLead strong {
+  color: #000;
+  font-weight: 700;
+}
+
+.noteBrandNywf {
+  color: #0066cc;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+}
+
+.noteBrandSixtyFour {
+  color: #ff3300;
+  font-weight: 700;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+}
+
+.noteBrandDot {
+  color: #6699cc;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+}
+
+.noteBrandCom {
+  color: #0066cc;
+  font-weight: 400;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.7rem;
+}
+
+.noteLink {
+  color: #0066cc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+}
+
+.noteLink:hover {
+  color: #ff0000;
+}
+
+.noteSign {
+  margin: 0.65rem 0 0;
+  padding: 0;
+  list-style: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.4;
+  color: #666;
+}
+
+.noteSign li {
+  margin: 0;
+}
