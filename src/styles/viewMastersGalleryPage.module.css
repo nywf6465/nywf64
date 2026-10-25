@@ -1,0 +1,219 @@
+/*
+ * View-Masters Reels gallery pages (legacy vm02–vm07).
+ * Stack: ViewMastersHero → ViewMastersNavChrome → navy title bar →
+ * packet header + black caption/image rows by reel → Nav2Bar.
+ * HARD RULE — navy title banner beneath the attraction nav.
+ */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(1.5rem, 3vw, 2.25rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 0.85rem;
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.articleInner {
+  width: 100%;
+  max-width: 481px;
+  margin: 0 auto;
+  padding: 0.75rem clamp(0.75rem, 2vw, 1rem) 0;
+  box-sizing: border-box;
+}
+
+.packetHeader {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  gap: 0.65rem;
+  align-items: start;
+  margin: 0 0 0.35rem;
+}
+
+.packetMeta {
+  min-width: 0;
+  padding-top: 0.15rem;
+}
+
+.packetName {
+  margin: 0;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.packetNo {
+  margin: 0.2rem 0 0;
+  color: #000;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.packetMedia {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: center;
+  gap: 0.5rem 0.75rem;
+}
+
+.coverFrame {
+  line-height: 0;
+  flex: 0 0 auto;
+}
+
+.cover {
+  display: block;
+  width: 200px;
+  max-width: 100%;
+  height: auto;
+}
+
+.reelBadge {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.2rem;
+  flex: 0 0 auto;
+  text-align: center;
+}
+
+.reelLabel {
+  margin: 0;
+  color: #0000ff;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 400;
+  line-height: 1.2;
+  order: 2;
+}
+
+.reelIcon {
+  display: block;
+  width: 100px;
+  height: 100px;
+  order: 1;
+}
+
+.reelDivider {
+  display: flex;
+  justify-content: flex-end;
+  margin: 0.65rem 0 0.35rem;
+  padding-right: clamp(0.5rem, 8%, 2.5rem);
+}
+
+.rows {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: minmax(6.5rem, 7.5rem) minmax(0, 1fr);
+  gap: 0;
+  align-items: stretch;
+  background: #000;
+}
+
+.captionCell {
+  display: flex;
+  gap: 0.35rem;
+  align-items: flex-start;
+  padding: 0.35rem 0.4rem 0.35rem 0.3rem;
+  box-sizing: border-box;
+}
+
+.number {
+  flex: 0 0 auto;
+  color: #fff;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.25;
+  text-align: right;
+  min-width: 1.6rem;
+}
+
+.caption {
+  margin: 0;
+  color: #fff;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  line-height: 1.25;
+}
+
+.captionCover {
+  color: #ff0000;
+}
+
+.photoCell {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  line-height: 0;
+  background: #000;
+}
+
+.photo {
+  display: block;
+  width: 350px;
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 720px) {
+  .articleInner {
+    max-width: 100%;
+  }
+
+  .packetHeader {
+    grid-template-columns: 1fr;
+  }
+
+  .row {
+    grid-template-columns: 1fr;
+  }
+
+  .captionCell {
+    padding: 0.45rem 0.6rem;
+  }
+
+  .number {
+    text-align: left;
+  }
+
+  .reelDivider {
+    justify-content: center;
+    padding-right: 0;
+  }
+}
