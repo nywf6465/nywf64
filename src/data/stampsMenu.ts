@@ -2,11 +2,15 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Postage Stamps of the Fair menu — ordered by nav Page / NEXT chain.
- * Page 1 Overview; additional stamp pages will append here.
+ * Page 1 Overview → Page 2 intro essay.
  */
 export const STAMPS_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "Overview",
     href: "/stampsoverview",
+  },
+  {
+    label: "The 1964-1965 New York World's Fair in Postage Stamps",
+    href: "/stamps01",
   },
 ];
