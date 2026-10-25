@@ -99,33 +99,13 @@ export default function Scrapbook02Page() {
               text: "NEWS COLORPHOTO BY EDMUND PETERS AND RICHARD LEWIS",
             },
             {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook02/scrapbook03.01.jpg",
-                  width: 400,
-                  height: 271,
-                  alt: "Industrial Area from a lofty perch",
-                },
-                {
-                  src: "/images/scrapbook02/scrapbook03.02.jpg",
-                  width: 400,
-                  height: 271,
-                  alt: "Industrial Area from a lofty perch",
-                },
-                {
-                  src: "/images/scrapbook02/scrapbook03.03.jpg",
-                  width: 400,
-                  height: 271,
-                  alt: "Industrial Area from a lofty perch",
-                },
-                {
-                  src: "/images/scrapbook02/scrapbook03.04.jpg",
-                  width: 400,
-                  height: 271,
-                  alt: "Industrial Area from a lofty perch",
-                },
-              ],
+              type: "photo",
+              photo: {
+                src: "/images/scrapbook02/scrapbook03.jpg",
+                width: 800,
+                height: 542,
+                alt: "Industrial Area from a lofty perch",
+              },
             },
             { type: "storyTitle", text: "SUN-DAY AT THE FAIR" },
             {
@@ -191,37 +171,14 @@ export default function Scrapbook02Page() {
             {
               type: "photo",
               photo: {
-                src: "/images/scrapbook02/scrapbook04.01.jpg",
-                width: 400,
-                height: 273,
+                src: "/images/scrapbook02/scrapbook04.jpg",
+                width: 800,
+                height: 546,
                 alt: "National Cash Register pavilion at night",
                 captionLead: "NCR Stands",
                 caption:
-                  "for National Cash Register. After dark its pavilion - color matched by the Lunar Fountain out in front - would have gladdened the heart of old King Midas.",
+                  'for National Cash Register. After dark its pavilion - color matched by the Lunar Fountain out in front - would have gladdened the heart of old King Midas.',
               },
-            },
-            {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook02/scrapbook04.02.jpg",
-                  width: 400,
-                  height: 273,
-                  alt: "National Cash Register pavilion",
-                },
-                {
-                  src: "/images/scrapbook02/scrapbook04.03.jpg",
-                  width: 400,
-                  height: 273,
-                  alt: "National Cash Register pavilion",
-                },
-                {
-                  src: "/images/scrapbook02/scrapbook04.04.jpg",
-                  width: 400,
-                  height: 273,
-                  alt: "National Cash Register pavilion",
-                },
-              ],
             },
             {
               type: "storyTitle",

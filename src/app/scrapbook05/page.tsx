@@ -109,45 +109,13 @@ export default function Scrapbook05Page() {
             { type: "date", text: newsDate("Date unknown (1965)") },
             { type: "credit", text: "NEWS COLORPHOTO BY DANIEL JACINO" },
             {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook05/scrapbook09.01.jpg",
-                  width: 401,
-                  height: 368,
-                  alt: "Mexico pavilion show",
-                },
-                {
-                  src: "/images/scrapbook05/scrapbook09.02.jpg",
-                  width: 400,
-                  height: 368,
-                  alt: "Mexico pavilion show",
-                },
-                {
-                  src: "/images/scrapbook05/scrapbook09.03.jpg",
-                  width: 401,
-                  height: 368,
-                  alt: "Mexico pavilion show",
-                },
-                {
-                  src: "/images/scrapbook05/scrapbook09.04.jpg",
-                  width: 400,
-                  height: 368,
-                  alt: "Mexico pavilion show",
-                },
-                {
-                  src: "/images/scrapbook05/scrapbook09.05.jpg",
-                  width: 401,
-                  height: 368,
-                  alt: "Mexico pavilion show",
-                },
-                {
-                  src: "/images/scrapbook05/scrapbook09.06.jpg",
-                  width: 400,
-                  height: 368,
-                  alt: "Mexico pavilion show",
-                },
-              ],
+              type: "photo",
+              photo: {
+                src: "/images/scrapbook05/scrapbook09.jpg",
+                width: 801,
+                height: 1104,
+                alt: "Mexico pavilion show",
+              },
             },
             { type: "storyTitle", text: "UP MEXICO WAY" },
             {

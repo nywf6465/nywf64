@@ -83,33 +83,13 @@ export default function Scrapbook01Page() {
             { type: "date", text: newsDate("June 14, 1964") },
             { type: "credit", text: "NEWS COLORPHOTO BY EDMUND PETERS" },
             {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook01/scrapbook07.01.jpg",
-                  width: 400,
-                  height: 266,
-                  alt: "Court of States toward the Unisphere",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook07.02.jpg",
-                  width: 400,
-                  height: 266,
-                  alt: "Court of States toward the Unisphere",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook07.03.jpg",
-                  width: 400,
-                  height: 266,
-                  alt: "Court of States toward the Unisphere",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook07.04.jpg",
-                  width: 400,
-                  height: 266,
-                  alt: "Court of States toward the Unisphere",
-                },
-              ],
+              type: "photo",
+              photo: {
+                src: "/images/scrapbook01/scrapbook07.jpg",
+                width: 800,
+                height: 532,
+                alt: "Court of States toward the Unisphere",
+              },
             },
             { type: "storyTitle", text: "CENTER OF ATTRACTION" },
             {
@@ -124,33 +104,13 @@ export default function Scrapbook01Page() {
             { type: "date", text: newsDate("Date unknown (1964)") },
             { type: "credit", text: "NEWS COLORPHOTO BY EDMUND PETERS" },
             {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook01/scrapbook05.01.jpg",
-                  width: 400,
-                  height: 268,
-                  alt: "Transportation Area from the Avenue of Automation",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook05.02.jpg",
-                  width: 400,
-                  height: 268,
-                  alt: "Transportation Area from the Avenue of Automation",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook05.03.jpg",
-                  width: 400,
-                  height: 268,
-                  alt: "Transportation Area from the Avenue of Automation",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook05.04.jpg",
-                  width: 400,
-                  height: 268,
-                  alt: "Transportation Area from the Avenue of Automation",
-                },
-              ],
+              type: "photo",
+              photo: {
+                src: "/images/scrapbook01/scrapbook05.jpg",
+                width: 800,
+                height: 536,
+                alt: "Transportation Area from the Avenue of Automation",
+              },
             },
             { type: "storyTitle", text: "TRIBUTE TO TRANSPORTATION" },
             {
@@ -262,33 +222,13 @@ export default function Scrapbook01Page() {
             { type: "date", text: newsDate("July 5, 1964") },
             { type: "credit", text: "NEWS COLORPHOTO BY EDMUND PETERS" },
             {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook01/scrapbook06.01.jpg",
-                  width: 400,
-                  height: 266,
-                  alt: "Unisphere and Fountain of the Continents",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook06.02.jpg",
-                  width: 400,
-                  height: 266,
-                  alt: "Unisphere and Fountain of the Continents",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook06.03.jpg",
-                  width: 400,
-                  height: 266,
-                  alt: "Unisphere and Fountain of the Continents",
-                },
-                {
-                  src: "/images/scrapbook01/scrapbook06.04.jpg",
-                  width: 400,
-                  height: 266,
-                  alt: "Unisphere and Fountain of the Continents",
-                },
-              ],
+              type: "photo",
+              photo: {
+                src: "/images/scrapbook01/scrapbook06.jpg",
+                width: 800,
+                height: 532,
+                alt: "Unisphere and Fountain of the Continents",
+              },
             },
             { type: "storyTitle", text: "FOUNTAIN FANTASY" },
             {
