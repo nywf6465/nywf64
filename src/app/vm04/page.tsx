@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 /**
  * Federal & State Area gallery (legacy vm05.html → /vm04).
  * Shared ViewMastersHero (1905×826). Nav Page 5 (overview is Page 1).
- * PREVIOUS → /vm03; NEXT hidden until /vm05 ships.
+ * PREVIOUS → /vm03; NEXT → /vm05 (Industrial Area).
  * HARD RULE — navy title banner beneath the attraction nav.
  */
 export default function Vm04Page() {
@@ -31,7 +31,7 @@ export default function Vm04Page() {
       nav={<ViewMastersNavChrome />}
       previousHref="/vm03"
       overviewHref="/vmoverview"
-      hideNext
+      nextHref="/vm05"
       reels={[
         {
           label: "View-Master Reel One",

@@ -5,7 +5,8 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  * Page 1 Overview → Page 2 General Tour (legacy vm02 → /vm01) →
  * Page 3 Night Scenes & Amusement (legacy vm03 → /vm02) →
  * Page 4 International Area (legacy vm04 → /vm03) →
- * Page 5 Federal & State Area (legacy vm05 → /vm04).
+ * Page 5 Federal & State Area (legacy vm05 → /vm04) →
+ * Page 6 Industrial Area (legacy vm06 → /vm05).
  * Remaining packets follow as they are converted.
  */
 export const VM_MENU_TOPICS: AttractionTopic[] = [
@@ -28,5 +29,9 @@ export const VM_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "Federal & State Area",
     href: "/vm04",
+  },
+  {
+    label: "Industrial Area",
+    href: "/vm05",
   },
 ];
