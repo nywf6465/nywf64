@@ -35,7 +35,7 @@ function NoteBrandMark() {
 /**
  * Postage Stamps of the Fair — Epilogue (legacy stamps09.html → /stamps08).
  * Shared StampsHero (1905×826). Nav Page 9.
- * PREVIOUS → /stamps07; NEXT → /stamps01 (legacy morebutton).
+ * PREVIOUS → /stamps07; NEXT → /stampsoverview.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Stamps08Page() {
@@ -142,7 +142,7 @@ export default function Stamps08Page() {
         previousHref="/stamps07"
         explicitPrevious
         overviewHref="/stampsoverview"
-        nextHref="/stamps01"
+        nextHref="/stampsoverview"
       />
     </>
   );
