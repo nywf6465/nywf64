@@ -32,6 +32,8 @@ export type ViewMastersGalleryPageProps = {
     height: number;
     alt: string;
   };
+  /** Color for the “Cover” caption accent (legacy red or yellow). */
+  coverAccentColor?: string;
   reels: ViewMasterReel[];
   nav: ReactNode;
   previousHref: string;
@@ -58,6 +60,7 @@ export function ViewMastersGalleryPage({
   packetName,
   packetNo,
   cover,
+  coverAccentColor = "#ff0000",
   reels,
   nav,
   previousHref,
@@ -73,7 +76,11 @@ export function ViewMastersGalleryPage({
 
       {nav}
 
-      <article className={styles.article} aria-labelledby={titleId}>
+      <article
+        className={styles.article}
+        aria-labelledby={titleId}
+        style={{ ["--vm-cover-accent" as string]: coverAccentColor }}
+      >
         <header className={styles.titleBar}>
           <h1 id={titleId} className={styles.titleBarMain}>
             {title}

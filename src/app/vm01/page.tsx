@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 /**
  * General Tour gallery (legacy vm02.html → /vm01).
  * Shared ViewMastersHero (1905×826). Nav Page 2 (overview is Page 1).
- * PREVIOUS → /vmoverview; NEXT hidden until /vm02 ships.
+ * PREVIOUS → /vmoverview; NEXT → /vm02 (Night Scenes & Amusement).
  * HARD RULE — navy title banner beneath the attraction nav.
  */
 export default function Vm01Page() {
@@ -19,7 +19,7 @@ export default function Vm01Page() {
     <ViewMastersGalleryPage
       title="General Tour"
       titleId="vm01-title"
-      packetName="General Tour"
+      packetName="GENERAL TOUR"
       packetNo="A 671"
       cover={{
         src: "/images/vm01/vmgt.jpg",
@@ -30,7 +30,7 @@ export default function Vm01Page() {
       nav={<ViewMastersNavChrome />}
       previousHref="/vmoverview"
       overviewHref="/vmoverview"
-      hideNext
+      nextHref="/vm02"
       reels={[
         {
           label: "View-Master Reel One",
