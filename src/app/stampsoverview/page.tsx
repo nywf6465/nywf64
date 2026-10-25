@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * (same stack as /scrapbookoverview / /matchbooksoverview).
  * Hero canvas matches ibm01 (1905×826) via StampsHero.
  * Nav bar shows Page 1 (`stampsoverview` special-cased in pageNumberFromPath).
- * PREVIOUS → /artifacts; NEXT hidden until the first stamps feature page ships.
+ * PREVIOUS → /artifacts; NEXT → /stamps01.
  */
 export default function StampsOverviewPage() {
   return (
@@ -60,7 +60,7 @@ export default function StampsOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/stampsoverview"
-        hideNext
+        nextHref="/stamps01"
       />
     </>
   );
