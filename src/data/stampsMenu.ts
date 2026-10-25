@@ -2,7 +2,7 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
 
 /**
  * Postage Stamps of the Fair menu — ordered by nav Page / NEXT chain.
- * Page 1 Overview → … → Page 7 Sierra Leone–Togo.
+ * Page 1 Overview → … → Page 8 United Nations–Yemen.
  */
 export const STAMPS_MENU_TOPICS: AttractionTopic[] = [
   {
@@ -32,5 +32,9 @@ export const STAMPS_MENU_TOPICS: AttractionTopic[] = [
   {
     label: "Sierra Leone - Togo",
     href: "/stamps06",
+  },
+  {
+    label: "United Nations - Yemen",
+    href: "/stamps07",
   },
 ];

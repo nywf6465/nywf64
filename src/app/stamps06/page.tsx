@@ -381,7 +381,7 @@ const ISSUES: StampIssue[] = [
 /**
  * Postage Stamps of the Fair — Sierra Leone–Togo (legacy stamps07.html → /stamps06).
  * Shared StampsHero (1905×826). Nav Page 7.
- * PREVIOUS → /stamps05; NEXT hidden until the next stamps page ships.
+ * PREVIOUS → /stamps05; NEXT → /stamps07.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Stamps06Page() {
@@ -459,7 +459,7 @@ export default function Stamps06Page() {
         previousHref="/stamps05"
         explicitPrevious
         overviewHref="/stampsoverview"
-        hideNext
+        nextHref="/stamps07"
       />
     </>
   );
