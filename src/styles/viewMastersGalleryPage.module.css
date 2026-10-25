@@ -38,7 +38,7 @@
 
 .articleInner {
   width: 100%;
-  max-width: 481px;
+  max-width: 540px;
   margin: 0 auto;
   padding: 0.75rem clamp(0.75rem, 2vw, 1rem) 0;
   box-sizing: border-box;
@@ -46,7 +46,7 @@
 
 .packetHeader {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.6fr);
+  grid-template-columns: minmax(7rem, 9.5rem) minmax(0, 1fr);
   gap: 0.65rem;
   align-items: start;
   margin: 0 0 0.35rem;
@@ -78,9 +78,9 @@
 
 .packetMedia {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   align-items: flex-start;
-  justify-content: center;
+  justify-content: flex-end;
   gap: 0.5rem 0.75rem;
 }
 
@@ -198,6 +198,11 @@
 
   .packetHeader {
     grid-template-columns: 1fr;
+  }
+
+  .packetMedia {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 
   .row {
