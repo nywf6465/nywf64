@@ -352,7 +352,7 @@ const ISSUES: StampIssue[] = [
 /**
  * Postage Stamps of the Fair — Congo–Guatemala (legacy stamps04.html → /stamps03).
  * Shared StampsHero (1905×826). Nav Page 4.
- * PREVIOUS → /stamps02; NEXT hidden until the next stamps page ships.
+ * PREVIOUS → /stamps02; NEXT → /stamps04.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Stamps03Page() {
@@ -482,7 +482,7 @@ export default function Stamps03Page() {
         previousHref="/stamps02"
         explicitPrevious
         overviewHref="/stampsoverview"
-        hideNext
+        nextHref="/stamps04"
       />
     </>
   );

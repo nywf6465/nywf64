@@ -1,0 +1,136 @@
+/*
+ * Postage Stamps of the Fair — Guinea–Jordan (legacy stamps05).
+ * HARD RULE — navy title banner beneath the nav.
+ */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
+
+.issue {
+  margin: 0 0 1.35rem;
+}
+
+.lead {
+  margin: 0 0 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.country {
+  color: #0000ff;
+  font-weight: 700;
+}
+
+.meta {
+  color: #ff3300;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.desc {
+  color: #000;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.paragraph {
+  margin: 0 0 0.65rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  text-align: left;
+  color: #000;
+}
+
+.extLink {
+  color: #0066cc;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  word-break: break-all;
+}
+
+.extLink:hover {
+  color: #ff0000;
+}
+
+.stampRows {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.35rem;
+}
+
+.stampRow {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 0.35rem;
+  max-width: 100%;
+}
+
+.stamp {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
+.figureNote {
+  margin: 0.45rem 0 0;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  line-height: 1.45;
+  text-align: center;
+  color: #000;
+}
+
+.figureNote .extLink {
+  display: inline;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #000;
+  margin: 0.25rem 0 1.35rem;
+}
