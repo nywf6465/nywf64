@@ -290,7 +290,7 @@ const ISSUES: StampIssue[] = [
 /**
  * Postage Stamps of the Fair — Afghanistan–Burundi (legacy stamps03.html → /stamps02).
  * Shared StampsHero (1905×826). Nav Page 3.
- * PREVIOUS → /stamps01; NEXT hidden until the next stamps page ships.
+ * PREVIOUS → /stamps01; NEXT → /stamps03.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Stamps02Page() {
@@ -349,7 +349,7 @@ export default function Stamps02Page() {
         previousHref="/stamps01"
         explicitPrevious
         overviewHref="/stampsoverview"
-        hideNext
+        nextHref="/stamps03"
       />
     </>
   );
