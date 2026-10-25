@@ -15,7 +15,7 @@ export const metadata: Metadata = {
 /**
  * Postage Stamps of the Fair — Page One (legacy stamps02.html → /stamps01).
  * Shared StampsHero (1905×826). Nav Page 2.
- * PREVIOUS → /stampsoverview; NEXT hidden until the next stamps page ships.
+ * PREVIOUS → /stampsoverview; NEXT → /stamps02.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Stamps01Page() {
@@ -125,7 +125,7 @@ export default function Stamps01Page() {
         previousHref="/stampsoverview"
         explicitPrevious
         overviewHref="/stampsoverview"
-        hideNext
+        nextHref="/stamps02"
       />
     </>
   );
