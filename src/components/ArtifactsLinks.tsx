@@ -170,7 +170,7 @@ const TOPICS = [
   {
     id: "postage-stamps",
     title: "The Postage Stamps of the Fair",
-    href: "/artifacts/postage-stamps",
+    href: "/stampsoverview",
     hoverSrc: "/images/artifacts-hover/postage-stamps.jpg",
     left: "2.134%",
     top: "82.402%",
