@@ -91,33 +91,13 @@ export default function Scrapbook06Page() {
               text: "NEWS COLORPHOTO BY EDMUND PETERS AND RICHARD LEWIS",
             },
             {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook06/scrapbook08.01.jpg",
-                  width: 400,
-                  height: 279,
-                  alt: "Belgian Village and highways",
-                },
-                {
-                  src: "/images/scrapbook06/scrapbook08.02.jpg",
-                  width: 400,
-                  height: 279,
-                  alt: "Belgian Village and highways",
-                },
-                {
-                  src: "/images/scrapbook06/scrapbook08.03.jpg",
-                  width: 400,
-                  height: 279,
-                  alt: "Belgian Village and highways",
-                },
-                {
-                  src: "/images/scrapbook06/scrapbook08.04.jpg",
-                  width: 400,
-                  height: 279,
-                  alt: "Belgian Village and highways",
-                },
-              ],
+              type: "photo",
+              photo: {
+                src: "/images/scrapbook06/scrapbook08.jpg",
+                width: 800,
+                height: 558,
+                alt: "Belgian Village and highways",
+              },
             },
             { type: "storyTitle", text: "A SUCCESSFUL TRANSPLANT" },
             {

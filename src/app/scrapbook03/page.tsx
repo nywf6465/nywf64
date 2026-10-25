@@ -100,33 +100,13 @@ export default function Scrapbook03Page() {
               text: "NEWS COLORPHOTO BY EDMUND PETERS AND RICHARD LEWIS",
             },
             {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook03/scrapbook01.01.jpg",
-                  width: 400,
-                  height: 376,
-                  alt: "Court of Nations foreign flags",
-                },
-                {
-                  src: "/images/scrapbook03/scrapbook01.02.jpg",
-                  width: 400,
-                  height: 376,
-                  alt: "Court of Nations foreign flags",
-                },
-                {
-                  src: "/images/scrapbook03/scrapbook01.03.jpg",
-                  width: 400,
-                  height: 376,
-                  alt: "Court of Nations foreign flags",
-                },
-                {
-                  src: "/images/scrapbook03/scrapbook01.04.jpg",
-                  width: 400,
-                  height: 376,
-                  alt: "Court of Nations foreign flags",
-                },
-              ],
+              type: "photo",
+              photo: {
+                src: "/images/scrapbook03/scrapbook01.jpg",
+                width: 800,
+                height: 752,
+                alt: "Court of Nations foreign flags",
+              },
             },
             { type: "storyTitle", text: "NATIONS ON PARADE" },
             {
@@ -196,37 +176,14 @@ export default function Scrapbook03Page() {
             {
               type: "photo",
               photo: {
-                src: "/images/scrapbook03/scrapbook02.01.jpg",
-                width: 400,
-                height: 305,
+                src: "/images/scrapbook03/scrapbook02.jpg",
+                width: 800,
+                height: 610,
                 alt: "Swiss Sky Ride view",
                 captionLead: "You're riding high",
                 caption:
                   "and what do you see? N.Y. State's pavilion and tower and GM off yonder, sure, but for real kicks, peek down into such swingin' spots as Africa's back yard.",
               },
-            },
-            {
-              type: "grid",
-              photos: [
-                {
-                  src: "/images/scrapbook03/scrapbook02.02.jpg",
-                  width: 400,
-                  height: 305,
-                  alt: "Swiss Sky Ride view",
-                },
-                {
-                  src: "/images/scrapbook03/scrapbook02.03.jpg",
-                  width: 400,
-                  height: 305,
-                  alt: "Swiss Sky Ride view",
-                },
-                {
-                  src: "/images/scrapbook03/scrapbook02.04.jpg",
-                  width: 400,
-                  height: 305,
-                  alt: "Swiss Sky Ride view",
-                },
-              ],
             },
             { type: "storyTitle", text: "ALPINE VISTAS" },
             {
