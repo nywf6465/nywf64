@@ -334,7 +334,7 @@ const ISSUES: StampIssue[] = [
 /**
  * Postage Stamps of the Fair — United Nations–Yemen (legacy stamps08.html → /stamps07).
  * Shared StampsHero (1905×826). Nav Page 8.
- * PREVIOUS → /stamps06; NEXT hidden until the next stamps page ships.
+ * PREVIOUS → /stamps06; NEXT → /stamps08.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Stamps07Page() {
@@ -422,7 +422,7 @@ export default function Stamps07Page() {
         previousHref="/stamps06"
         explicitPrevious
         overviewHref="/stampsoverview"
-        hideNext
+        nextHref="/stamps08"
       />
     </>
   );
