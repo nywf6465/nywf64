@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * (same stack as /matchbooksoverview / /scrapbookoverview).
  * Hero canvas matches ibm01 (1905×826) via ViewMastersHero.
  * Nav bar shows Page 1 (`vmoverview` special-cased in pageNumberFromPath).
- * PREVIOUS → /artifacts; NEXT hidden until the first gallery page exists.
+ * PREVIOUS → /artifacts; NEXT → /vm01 (General Tour).
  */
 export default function VmOverviewPage() {
   return (
@@ -63,7 +63,7 @@ export default function VmOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/vmoverview"
-        hideNext
+        nextHref="/vm01"
       />
     </>
   );
