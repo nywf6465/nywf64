@@ -349,7 +349,7 @@ const ISSUES: StampIssue[] = [
 /**
  * Postage Stamps of the Fair — Korea–Sharjah (legacy stamps06.html → /stamps05).
  * Shared StampsHero (1905×826). Nav Page 6.
- * PREVIOUS → /stamps04; NEXT hidden until the next stamps page ships.
+ * PREVIOUS → /stamps04; NEXT → /stamps06.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Stamps05Page() {
@@ -438,7 +438,7 @@ export default function Stamps05Page() {
         previousHref="/stamps04"
         explicitPrevious
         overviewHref="/stampsoverview"
-        hideNext
+        nextHref="/stamps06"
       />
     </>
   );
