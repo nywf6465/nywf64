@@ -304,7 +304,7 @@ const ISSUES: StampIssue[] = [
 /**
  * Postage Stamps of the Fair — Guinea–Jordan (legacy stamps05.html → /stamps04).
  * Shared StampsHero (1905×826). Nav Page 5.
- * PREVIOUS → /stamps03; NEXT hidden until the next stamps page ships.
+ * PREVIOUS → /stamps03; NEXT → /stamps05.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Stamps04Page() {
@@ -401,7 +401,7 @@ export default function Stamps04Page() {
         previousHref="/stamps03"
         explicitPrevious
         overviewHref="/stampsoverview"
-        hideNext
+        nextHref="/stamps05"
       />
     </>
   );
