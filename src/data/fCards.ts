@@ -46,7 +46,8 @@ const FINE_ARTS_PAVILION: FCard = {
   pavilionAlt: "Fine Arts Pavilion",
 };
 
-const FIRST_NATIONAL_CITY_BANK: FCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const FIRST_NATIONAL_CITY_BANK: FCard = {
   id: "first-national-city-bank",
   href: "/firnatoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

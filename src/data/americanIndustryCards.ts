@@ -18,7 +18,7 @@ import {
   EASTMAN_KODAK,
   EQUITABLE_LIFE,
 } from "@/data/eCards";
-import { FESTIVAL_OF_GAS } from "@/data/fCards";
+import { FESTIVAL_OF_GAS, FIRST_NATIONAL_CITY_BANK } from "@/data/fCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
@@ -40,6 +40,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 15. Eastman Kodak — Attractions from A to Z (`/E`)
  * 16. Equitable Life Assurance Society — Attractions from A to Z (`/E`)
  * 17. Festival of Gas — Attractions from A to Z (`/F`)
+ * 18. First National City Bank — Attractions from A to Z (`/F`)
  */
 export type AmericanIndustryCard = FountainsCard;
 
@@ -61,4 +62,5 @@ export const AMERICAN_INDUSTRY_CARDS: AmericanIndustryCard[] = [
   EASTMAN_KODAK,
   EQUITABLE_LIFE,
   FESTIVAL_OF_GAS,
+  FIRST_NATIONAL_CITY_BANK,
 ];
