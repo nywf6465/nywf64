@@ -3,6 +3,7 @@ import {
   ARCH_OF_THE_AMERICAS,
   ARGENTINA,
 } from "@/data/aCards";
+import { FRANCE } from "@/data/fCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
@@ -10,6 +11,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 1. American Indian Exposition — Attractions from A to Z (`/A`)
  * 2. Arch of the Americas — Attractions from A to Z (`/A`)
  * 3. Argentina — Attractions from A to Z (`/A`)
+ * 4. France — Attractions from A to Z (`/F`)
  */
 export type ProposedPavilionsCard = FountainsCard;
 
@@ -17,4 +19,5 @@ export const PROPOSED_PAVILIONS_CARDS: ProposedPavilionsCard[] = [
   AMERICAN_INDIAN_EXPOSITION,
   ARCH_OF_THE_AMERICAS,
   ARGENTINA,
+  FRANCE,
 ];

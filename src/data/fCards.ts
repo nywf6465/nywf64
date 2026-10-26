@@ -188,7 +188,8 @@ const FOUNTAIN_OF_THE_PLANETS: FCard = {
   pavilionAlt: "Fountain of the Planets",
 };
 
-const FRANCE: FCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const FRANCE: FCard = {
   id: "france",
   href: "/franceoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
