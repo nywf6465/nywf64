@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type FCard = FountainsCard;
 
-const FESTIVAL_OF_GAS: FCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const FESTIVAL_OF_GAS: FCard = {
   id: "festival-of-gas",
   href: "/fesgasoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
