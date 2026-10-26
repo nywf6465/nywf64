@@ -59,7 +59,8 @@ const BERLIN: BCard = {
   pavilionAlt: "Berlin",
 };
 
-const BETTER_LIVING_CENTER: BCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const BETTER_LIVING_CENTER: BCard = {
   id: "better-living-center",
   href: "/betlivoverview",
   // DESCRIPTION (italic under ICON) — exact

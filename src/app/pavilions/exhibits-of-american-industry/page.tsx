@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces / Proposed Pavilions pattern).
- * Links: All-State … Bell System — `/A`/`/B` cards.
+ * Links: All-State … Better Living Center — `/A`/`/B` cards.
  */
 export default function ExhibitsOfAmericanIndustryPage() {
   return (
