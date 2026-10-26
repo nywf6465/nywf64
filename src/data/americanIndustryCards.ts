@@ -5,7 +5,13 @@ import {
   AVIS_ANTIQUE_CAR_RIDE,
 } from "@/data/aCards";
 import { BELL_SYSTEM, BETTER_LIVING_CENTER } from "@/data/bCards";
-import { CHRYSLER, CHUNKY_CANDY, CLAIROL, COCA_COLA } from "@/data/cCards";
+import {
+  CHRYSLER,
+  CHUNKY_CANDY,
+  CLAIROL,
+  COCA_COLA,
+  CONTINENTAL_INSURANCE,
+} from "@/data/cCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
@@ -20,6 +26,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 8. Chunky Candy — Attractions from A to Z (`/C`)
  * 9. Clairol — Attractions from A to Z (`/C`)
  * 10. Coca-Cola — Attractions from A to Z (`/C`)
+ * 11. Continental Insurance — Attractions from A to Z (`/C`)
  */
 export type AmericanIndustryCard = FountainsCard;
 
@@ -34,4 +41,5 @@ export const AMERICAN_INDUSTRY_CARDS: AmericanIndustryCard[] = [
   CHUNKY_CANDY,
   CLAIROL,
   COCA_COLA,
+  CONTINENTAL_INSURANCE,
 ];

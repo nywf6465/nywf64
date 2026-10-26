@@ -210,7 +210,8 @@ const CONTINENTAL_CIRCUS: CCard = {
   pavilionAlt: "Continental Circus",
 };
 
-const CONTINENTAL_INSURANCE: CCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const CONTINENTAL_INSURANCE: CCard = {
   id: "continental-insurance",
   href: "/coninsoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
