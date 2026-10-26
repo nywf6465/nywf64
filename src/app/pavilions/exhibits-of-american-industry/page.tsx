@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces / Proposed Pavilions pattern).
- * Links: All-State … General Cigar — `/A`–`/G` cards.
+ * Links: All-State … General Electric — `/A`–`/G` cards.
  */
 export default function ExhibitsOfAmericanIndustryPage() {
   return (

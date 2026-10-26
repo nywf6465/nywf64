@@ -33,7 +33,8 @@ export const GENERAL_CIGAR: GCard = {
   pavilionAlt: "General Cigar",
 };
 
-const GENERAL_ELECTRIC: GCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const GENERAL_ELECTRIC: GCard = {
   id: "genele",
   href: "/geneleoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
