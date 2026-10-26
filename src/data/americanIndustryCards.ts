@@ -13,7 +13,7 @@ import {
   CONTINENTAL_INSURANCE,
 } from "@/data/cCards";
 import { DEMONSTRATION_CENTER, DUPONT } from "@/data/dCards";
-import { EASTERN_AIR_LINES } from "@/data/eCards";
+import { EASTERN_AIR_LINES, EASTMAN_KODAK } from "@/data/eCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
@@ -32,6 +32,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 12. Demonstration Center — Attractions from A to Z (`/D`)
  * 13. DuPont — Attractions from A to Z (`/D`)
  * 14. Eastern Air Lines — Attractions from A to Z (`/E`)
+ * 15. Eastman Kodak — Attractions from A to Z (`/E`)
  */
 export type AmericanIndustryCard = FountainsCard;
 
@@ -50,4 +51,5 @@ export const AMERICAN_INDUSTRY_CARDS: AmericanIndustryCard[] = [
   DEMONSTRATION_CENTER,
   DUPONT,
   EASTERN_AIR_LINES,
+  EASTMAN_KODAK,
 ];

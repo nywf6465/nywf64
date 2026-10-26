@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces / Proposed Pavilions pattern).
- * Links: All-State … Eastern Air Lines — `/A`–`/E` cards.
+ * Links: All-State … Eastman Kodak — `/A`–`/E` cards.
  */
 export default function ExhibitsOfAmericanIndustryPage() {
   return (

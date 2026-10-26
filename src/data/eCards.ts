@@ -20,7 +20,8 @@ export const EASTERN_AIR_LINES: ECard = {
   pavilionAlt: "Eastern Air Lines",
 };
 
-const EASTMAN_KODAK: ECard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const EASTMAN_KODAK: ECard = {
   id: "eastman-kodak",
   href: "/easkodoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
