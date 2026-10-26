@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces / Proposed Pavilions pattern).
- * Links: All-State … First National City Bank — `/A`–`/F` cards.
+ * Links: All-State … Ford — `/A`–`/F` cards.
  */
 export default function ExhibitsOfAmericanIndustryPage() {
   return (

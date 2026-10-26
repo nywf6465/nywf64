@@ -6,7 +6,7 @@ import styles from "./FountainsLinks.module.css";
 /**
  * Exhibits of American Industry links (below guidebook banner).
  * Same layout as Religions / Fountains / A-to-Z letter pages.
- * Rows: All-State … First National City Bank (`/A`–`/F`).
+ * Rows: All-State … Ford (`/A`–`/F`).
  */
 
 function LinkIndicator() {

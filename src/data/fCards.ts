@@ -99,7 +99,8 @@ const FLUME_RIDE: FCard = {
   pavilionAlt: "Flume Ride",
 };
 
-const FORD: FCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const FORD: FCard = {
   id: "ford",
   href: "/fordoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
