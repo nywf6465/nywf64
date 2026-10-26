@@ -124,7 +124,7 @@ const ENTRIES: FlashCardEntry[] = [
 /**
  * The “Edu-Cards” Set — Page Three (legacy educards04.html → /educards03).
  * Shared EducardsHero (1905×826). Nav Page 4 (overview is Page 1).
- * PREVIOUS → /educards02; NEXT hidden until the next gallery page ships.
+ * PREVIOUS → /educards02; NEXT → /educards04.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Educards03Page() {
@@ -198,7 +198,7 @@ export default function Educards03Page() {
         previousHref="/educards02"
         explicitPrevious
         overviewHref="/educardsoverview"
-        hideNext
+        nextHref="/educards04"
       />
     </>
   );
