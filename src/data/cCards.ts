@@ -169,7 +169,8 @@ const CITIES_SERVICE_BAND: CCard = {
   pavilionAlt: "Cities Service World's Fair Band of America",
 };
 
-const CLAIROL: CCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const CLAIROL: CCard = {
   id: "clairol",
   href: "/clairoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
