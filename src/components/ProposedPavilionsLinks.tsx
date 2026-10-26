@@ -6,7 +6,7 @@ import styles from "./FountainsLinks.module.css";
 /**
  * Proposed Pavilions Never Built links (below guidebook banner).
  * Same layout as Religions / Fountains / A-to-Z letter pages.
- * Rows: American Indian Exposition, Arch of the Americas, Argentina, France (`/A`, `/F`).
+ * Rows: American Indian Exposition … Heartland States (`/A`, `/F`, `/H`).
  */
 
 function LinkIndicator() {
