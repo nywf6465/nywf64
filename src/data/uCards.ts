@@ -6,8 +6,44 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type UCard = FountainsCard;
 
-export const U_CARDS: UCard[] = [
-  {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const US_POST_OFFICE: UCard =   {
+    id: "us-post-office",
+    href: "/uspooverview",
+    title: "U.S. Post Office",
+    body: "Visitors climb a ramp to see one of America's most mechanized Post Offices in full operation.",
+    pavilionSrc: "/images/uspo/us-post-office-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "U.S. Post Office",
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const US_RUBBER: UCard =   {
+    id: "us-rubber",
+    href: "/usruboverview",
+    title: "U.S. Rubber",
+    body: "Visitors soar 80 feet in the air around a giant auto tire for a spectacular view of the Fair.",
+    pavilionSrc: "/images/usrub/us-rubber-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "U.S. Rubber",
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const UNISPHERE: UCard =   {
+    id: "unisphere",
+    href: "/unisphoverview",
+    title: "Unisphere",
+    body: "Symbol of the Fair, this 12-story high stainless-steel model of the earth was built and presented by United States Steel.",
+    pavilionSrc: "/images/unisphere/unisphere-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "Unisphere",
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const UNDERGROUND_WORLD_HOME: UCard =   {
     id: "underground-world-home",
     href: "/undrghomeoverview",
     title: "Underground World Home",
@@ -16,7 +52,11 @@ export const U_CARDS: UCard[] = [
     pavilionWidth: 829,
     pavilionHeight: 303,
     pavilionAlt: "Underground World Home",
-  },
+  };
+
+export const U_CARDS: UCard[] = [
+  UNDERGROUND_WORLD_HOME,
+
   {
     id: "united-arab-republic",
     href: "/uaroverview",
@@ -47,34 +87,10 @@ export const U_CARDS: UCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "United States",
   },
-  {
-    id: "us-post-office",
-    href: "/uspooverview",
-    title: "U.S. Post Office",
-    body: "Visitors climb a ramp to see one of America's most mechanized Post Offices in full operation.",
-    pavilionSrc: "/images/uspo/us-post-office-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "U.S. Post Office",
-  },
-  {
-    id: "us-rubber",
-    href: "/usruboverview",
-    title: "U.S. Rubber",
-    body: "Visitors soar 80 feet in the air around a giant auto tire for a spectacular view of the Fair.",
-    pavilionSrc: "/images/usrub/us-rubber-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "U.S. Rubber",
-  },
-  {
-    id: "unisphere",
-    href: "/unisphoverview",
-    title: "Unisphere",
-    body: "Symbol of the Fair, this 12-story high stainless-steel model of the earth was built and presented by United States Steel.",
-    pavilionSrc: "/images/unisphere/unisphere-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "Unisphere",
-  },
+  US_POST_OFFICE,
+
+  US_RUBBER,
+
+  UNISPHERE,
+
 ];

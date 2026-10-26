@@ -138,7 +138,8 @@ const MISSOURI: MCard = {
   pavilionAlt: "Missouri",
 };
 
-const AMF: MCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const AMF: MCard = {
   id: "amf",
   href: "/amfoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
