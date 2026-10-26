@@ -132,7 +132,7 @@ function BrandMark() {
 /**
  * The “Edu-Cards” Set — Page One (legacy educards02.html → /educards01).
  * Shared EducardsHero (1905×826). Nav Page 2 (overview is Page 1).
- * PREVIOUS → /educardsoverview; NEXT hidden until the next gallery page ships.
+ * PREVIOUS → /educardsoverview; NEXT → /educards02.
  * HARD RULE — navy title banner beneath the nav.
  */
 export default function Educards01Page() {
@@ -231,7 +231,7 @@ export default function Educards01Page() {
         previousHref="/educardsoverview"
         explicitPrevious
         overviewHref="/educardsoverview"
-        hideNext
+        nextHref="/educards02"
       />
     </>
   );
