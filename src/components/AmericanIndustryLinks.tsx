@@ -6,7 +6,7 @@ import styles from "./FountainsLinks.module.css";
 /**
  * Exhibits of American Industry links (below guidebook banner).
  * Same layout as Religions / Fountains / A-to-Z letter pages.
- * Rows: All-State … Better Living Center (`/A`, `/B`).
+ * Rows: All-State … Chrysler (`/A`, `/B`, `/C`).
  */
 
 function LinkIndicator() {

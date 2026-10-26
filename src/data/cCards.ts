@@ -98,8 +98,11 @@ const CHRISTIAN_SCIENCE: CCard = {
   pavilionAlt: "Christian Science",
 };
 
-/** Same ICON/TEXT/href as Top Ten Chrysler row; DESCRIPTION shortened to “Chrysler”. */
-const CHRYSLER: CCard = {
+/**
+ * Same ICON/TEXT/href as Top Ten Chrysler row; DESCRIPTION shortened to “Chrysler”.
+ * Shared with Exhibits of American Industry (`americanIndustryCards.ts`).
+ */
+export const CHRYSLER: CCard = {
   id: "chrysler",
   href: "/chrysleroverview",
   // DESCRIPTION (italic under ICON)
