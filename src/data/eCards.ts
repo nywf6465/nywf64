@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type ECard = FountainsCard;
 
-const EASTERN_AIR_LINES: ECard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const EASTERN_AIR_LINES: ECard = {
   id: "eastern-air-lines",
   href: "/easternoverview",
   // DESCRIPTION (italic under ICON) — exact icon name (trimmed trailing space)

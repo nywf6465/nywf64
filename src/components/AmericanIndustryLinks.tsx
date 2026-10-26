@@ -6,7 +6,7 @@ import styles from "./FountainsLinks.module.css";
 /**
  * Exhibits of American Industry links (below guidebook banner).
  * Same layout as Religions / Fountains / A-to-Z letter pages.
- * Rows: All-State … DuPont (`/A`, `/B`, `/C`, `/D`).
+ * Rows: All-State … Eastern Air Lines (`/A`–`/E`).
  */
 
 function LinkIndicator() {
