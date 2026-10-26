@@ -6,7 +6,7 @@ import styles from "./FountainsLinks.module.css";
 /**
  * Exhibits of American Industry links (below guidebook banner).
  * Same layout as Religions / Fountains / A-to-Z letter pages.
- * Rows: All-State … Clairol (`/A`, `/B`, `/C`).
+ * Rows: All-State … Coca-Cola (`/A`, `/B`, `/C`).
  */
 
 function LinkIndicator() {

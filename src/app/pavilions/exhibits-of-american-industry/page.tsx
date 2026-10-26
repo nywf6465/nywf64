@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces / Proposed Pavilions pattern).
- * Links: All-State … Clairol — `/A`/`/B`/`/C` cards.
+ * Links: All-State … Coca-Cola — `/A`/`/B`/`/C` cards.
  */
 export default function ExhibitsOfAmericanIndustryPage() {
   return (

@@ -183,7 +183,8 @@ export const CLAIROL: CCard = {
   pavilionAlt: "Clairol",
 };
 
-const COCA_COLA: CCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const COCA_COLA: CCard = {
   id: "coca-cola",
   href: "/cokeoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
