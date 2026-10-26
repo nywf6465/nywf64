@@ -24,7 +24,11 @@ import {
   FORD,
   FORMICA,
 } from "@/data/fCards";
-import { GENERAL_CIGAR, GENERAL_ELECTRIC } from "@/data/gCards";
+import {
+  GENERAL_CIGAR,
+  GENERAL_ELECTRIC,
+  GENERAL_FOODS_ARCHES,
+} from "@/data/gCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
@@ -51,6 +55,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 20. Formica — Attractions from A to Z (`/F`)
  * 21. General Cigar — Attractions from A to Z (`/G`)
  * 22. General Electric — Attractions from A to Z (`/G`)
+ * 23. General Foods Arches — Attractions from A to Z (`/G`)
  */
 export type AmericanIndustryCard = FountainsCard;
 
@@ -77,4 +82,5 @@ export const AMERICAN_INDUSTRY_CARDS: AmericanIndustryCard[] = [
   FORMICA,
   GENERAL_CIGAR,
   GENERAL_ELECTRIC,
+  GENERAL_FOODS_ARCHES,
 ];

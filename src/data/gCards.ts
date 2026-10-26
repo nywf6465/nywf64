@@ -47,7 +47,8 @@ export const GENERAL_ELECTRIC: GCard = {
   pavilionAlt: "General Electric",
 };
 
-const GENERAL_FOODS_ARCHES: GCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const GENERAL_FOODS_ARCHES: GCard = {
   id: "genfoo",
   href: "/genfoooverview",
   // DESCRIPTION (italic under ICON) — exact icon name
