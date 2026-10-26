@@ -2,6 +2,7 @@ import {
   ALL_STATE,
   AMERICAN_EXPRESS,
   ARLINGTON_HAT,
+  AVIS_ANTIQUE_CAR_RIDE,
 } from "@/data/aCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
@@ -10,6 +11,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 1. All-State Properties & Macy's — Attractions from A to Z (`/A`)
  * 2. American Express — Attractions from A to Z (`/A`)
  * 3. Arlington Hat — Attractions from A to Z (`/A`)
+ * 4. Avis Antique Car Ride — Attractions from A to Z (`/A`)
  */
 export type AmericanIndustryCard = FountainsCard;
 
@@ -17,4 +19,5 @@ export const AMERICAN_INDUSTRY_CARDS: AmericanIndustryCard[] = [
   ALL_STATE,
   AMERICAN_EXPRESS,
   ARLINGTON_HAT,
+  AVIS_ANTIQUE_CAR_RIDE,
 ];

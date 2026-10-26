@@ -231,7 +231,8 @@ const AUTO_THRILL_SHOW: FountainsCard = {
   pavilionAlt: "Auto Thrill Show",
 };
 
-const AVIS_ANTIQUE_CAR_RIDE: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const AVIS_ANTIQUE_CAR_RIDE: FountainsCard = {
   id: "avis-antique-car-ride",
   href: "/avisoverview",
   // DESCRIPTION (italic under ICON) — exact
