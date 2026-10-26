@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces pattern).
- * Links: American Indian Exposition … Midwestern States — A/F/H/M cards.
+ * Links: American Indian Exposition … World of Food — A/F/H/M/W cards.
  */
 export default function ProposedPavilionsNeverBuiltPage() {
   return (

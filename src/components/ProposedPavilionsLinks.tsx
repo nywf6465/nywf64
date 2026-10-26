@@ -6,7 +6,7 @@ import styles from "./FountainsLinks.module.css";
 /**
  * Proposed Pavilions Never Built links (below guidebook banner).
  * Same layout as Religions / Fountains / A-to-Z letter pages.
- * Rows: American Indian Exposition … Midwestern States (`/A`, `/F`, `/H`, `/M`).
+ * Rows: American Indian Exposition … World of Food (`/A`, `/F`, `/H`, `/M`, `/W`).
  */
 
 function LinkIndicator() {
