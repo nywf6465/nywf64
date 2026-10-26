@@ -128,7 +128,8 @@ const CHUN_KING_INN: CCard = {
   pavilionAlt: "Chun King Inn",
 };
 
-const CHUNKY_CANDY: CCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const CHUNKY_CANDY: CCard = {
   id: "chunky-candy",
   href: "/chucanoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
