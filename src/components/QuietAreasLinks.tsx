@@ -7,7 +7,7 @@ import styles from "./FountainsLinks.module.css";
  * Quiet Spaces & Rest Areas links (below guidebook banner).
  * Same layout as Religions / Fountains / A-to-Z letter pages.
  * Rows: Garden of Meditation (`/G`), Main Mall (`/M`), National Maritime
- * Union Park (`/N`).
+ * Union Park (`/N`), Oklahoma (`/O`).
  */
 
 function LinkIndicator() {
