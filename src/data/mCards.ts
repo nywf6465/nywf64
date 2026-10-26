@@ -97,7 +97,8 @@ const MEXICO: MCard = {
   pavilionAlt: "Mexico",
 };
 
-const MIDWEST: MCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const MIDWEST: MCard = {
   id: "midwest",
   href: "/midwestoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

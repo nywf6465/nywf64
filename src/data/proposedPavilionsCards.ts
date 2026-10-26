@@ -5,6 +5,7 @@ import {
 } from "@/data/aCards";
 import { FRANCE } from "@/data/fCards";
 import { HEARTLAND } from "@/data/hCards";
+import { MIDWEST } from "@/data/mCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
@@ -14,6 +15,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 3. Argentina — Attractions from A to Z (`/A`)
  * 4. France — Attractions from A to Z (`/F`)
  * 5. Heartland States — Attractions from A to Z (`/H`)
+ * 6. Midwestern States — Attractions from A to Z (`/M`)
  */
 export type ProposedPavilionsCard = FountainsCard;
 
@@ -23,4 +25,5 @@ export const PROPOSED_PAVILIONS_CARDS: ProposedPavilionsCard[] = [
   ARGENTINA,
   FRANCE,
   HEARTLAND,
+  MIDWEST,
 ];
