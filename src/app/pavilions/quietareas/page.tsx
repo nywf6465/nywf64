@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { QuietAreasLinks } from "@/components/QuietAreasLinks";
 import styles from "./quietareas.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
 
@@ -10,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 /**
- * Landing: header → hero → guidebook banner → footer
+ * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Fountains pattern).
- * Quiet-area attraction links will connect here as they are built.
+ * First link: Garden of Meditation (same card as Attractions from A to Z `/G`).
  */
 export default function QuietAreasPage() {
   return (
@@ -47,6 +48,7 @@ export default function QuietAreasPage() {
           />
         </div>
       </section>
+      <QuietAreasLinks />
     </main>
   );
 }
