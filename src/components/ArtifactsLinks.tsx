@@ -191,7 +191,7 @@ const TOPICS = [
   {
     id: "edu-cards",
     title: "The \u201cEdu-Cards\u201d Set",
-    href: "/artifacts/edu-cards",
+    href: "/educardsoverview",
     hoverSrc: "/images/artifacts-hover/edu-cards.jpg",
     left: "2.134%",
     top: "91.410%",
