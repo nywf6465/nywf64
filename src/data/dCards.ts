@@ -20,7 +20,8 @@ const DANCING_WATERS: DCard = {
   pavilionAlt: "Dancing Waters",
 };
 
-const DEMONSTRATION_CENTER: DCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const DEMONSTRATION_CENTER: DCard = {
   id: "demonstration-center",
   href: "/democroverview",
   // DESCRIPTION (italic under ICON) — exact icon name

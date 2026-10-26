@@ -12,6 +12,7 @@ import {
   COCA_COLA,
   CONTINENTAL_INSURANCE,
 } from "@/data/cCards";
+import { DEMONSTRATION_CENTER } from "@/data/dCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
@@ -27,6 +28,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 9. Clairol — Attractions from A to Z (`/C`)
  * 10. Coca-Cola — Attractions from A to Z (`/C`)
  * 11. Continental Insurance — Attractions from A to Z (`/C`)
+ * 12. Demonstration Center — Attractions from A to Z (`/D`)
  */
 export type AmericanIndustryCard = FountainsCard;
 
@@ -42,4 +44,5 @@ export const AMERICAN_INDUSTRY_CARDS: AmericanIndustryCard[] = [
   CLAIROL,
   COCA_COLA,
   CONTINENTAL_INSURANCE,
+  DEMONSTRATION_CENTER,
 ];

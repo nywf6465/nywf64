@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces / Proposed Pavilions pattern).
- * Links: All-State … Continental Insurance — `/A`/`/B`/`/C` cards.
+ * Links: All-State … Demonstration Center — `/A`/`/B`/`/C`/`/D` cards.
  */
 export default function ExhibitsOfAmericanIndustryPage() {
   return (
