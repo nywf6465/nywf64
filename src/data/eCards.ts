@@ -60,7 +60,8 @@ const ENTRANCE_TOWERS: ECard = {
   pavilionAlt: "Entrance Towers",
 };
 
-const EQUITABLE_LIFE: ECard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const EQUITABLE_LIFE: ECard = {
   id: "equitable-life",
   href: "/equitoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
