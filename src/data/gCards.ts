@@ -19,7 +19,8 @@ const GARDEN_OF_MEDITATION: GCard = {
   pavilionAlt: "Garden of Meditation",
 };
 
-const GENERAL_CIGAR: GCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const GENERAL_CIGAR: GCard = {
   id: "gencig",
   href: "/gencigoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

@@ -24,6 +24,7 @@ import {
   FORD,
   FORMICA,
 } from "@/data/fCards";
+import { GENERAL_CIGAR } from "@/data/gCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
 /**
@@ -48,6 +49,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 18. First National City Bank — Attractions from A to Z (`/F`)
  * 19. Ford — Attractions from A to Z (`/F`)
  * 20. Formica — Attractions from A to Z (`/F`)
+ * 21. General Cigar — Attractions from A to Z (`/G`)
  */
 export type AmericanIndustryCard = FountainsCard;
 
@@ -72,4 +74,5 @@ export const AMERICAN_INDUSTRY_CARDS: AmericanIndustryCard[] = [
   FIRST_NATIONAL_CITY_BANK,
   FORD,
   FORMICA,
+  GENERAL_CIGAR,
 ];
