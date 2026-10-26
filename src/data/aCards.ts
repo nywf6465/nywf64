@@ -151,7 +151,8 @@ export const ARCH_OF_THE_AMERICAS: FountainsCard = {
   pavilionAlt: "Arch of the Americas",
 };
 
-const ARGENTINA: FountainsCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const ARGENTINA: FountainsCard = {
   id: "argentina",
   href: "/argentoverview",
   // DESCRIPTION (italic under ICON) — exact + trailing space

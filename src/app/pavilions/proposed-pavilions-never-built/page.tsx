@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces pattern).
- * Links: American Indian Exposition, Arch of the Americas — same `/A` cards.
+ * Links: American Indian Exposition, Arch of the Americas, Argentina — same `/A` cards.
  */
 export default function ProposedPavilionsNeverBuiltPage() {
   return (
