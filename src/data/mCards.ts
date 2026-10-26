@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type MCard = FountainsCard;
 
-const MAINMALL: MCard = {
+/** Shared with Quiet Spaces & Rest Areas (`quietareasCards.ts`). */
+export const MAINMALL: MCard = {
   id: "mainmall",
   href: "/mainmalloverview",
   // DESCRIPTION (italic under ICON) — exact icon name
