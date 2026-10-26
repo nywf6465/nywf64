@@ -164,7 +164,8 @@ const ARGENTINA: FountainsCard = {
   pavilionAlt: "Argentina ",
 };
 
-const ARLINGTON_HAT: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const ARLINGTON_HAT: FountainsCard = {
   id: "arlington-hat",
   href: "/arlhatoverview",
   // DESCRIPTION (italic under ICON) — exact
