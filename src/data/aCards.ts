@@ -137,7 +137,8 @@ const AMPHITHEATER: FountainsCard = {
   pavilionAlt: "Amphitheater ",
 };
 
-const ARCH_OF_THE_AMERICAS: FountainsCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const ARCH_OF_THE_AMERICAS: FountainsCard = {
   id: "arch-of-the-americas",
   href: "/archameroverview",
   // DESCRIPTION (italic under ICON) — exact

@@ -6,7 +6,7 @@ import styles from "./FountainsLinks.module.css";
 /**
  * Proposed Pavilions Never Built links (below guidebook banner).
  * Same layout as Religions / Fountains / A-to-Z letter pages.
- * First row is American Indian Exposition from `/A`.
+ * Rows: American Indian Exposition, then Arch of the Americas (`/A`).
  */
 
 function LinkIndicator() {
