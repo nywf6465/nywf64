@@ -22,6 +22,7 @@ import {
   FESTIVAL_OF_GAS,
   FIRST_NATIONAL_CITY_BANK,
   FORD,
+  FORMICA,
 } from "@/data/fCards";
 import type { FountainsCard } from "@/data/fountainsCards";
 
@@ -46,6 +47,7 @@ import type { FountainsCard } from "@/data/fountainsCards";
  * 17. Festival of Gas — Attractions from A to Z (`/F`)
  * 18. First National City Bank — Attractions from A to Z (`/F`)
  * 19. Ford — Attractions from A to Z (`/F`)
+ * 20. Formica — Attractions from A to Z (`/F`)
  */
 export type AmericanIndustryCard = FountainsCard;
 
@@ -69,4 +71,5 @@ export const AMERICAN_INDUSTRY_CARDS: AmericanIndustryCard[] = [
   FESTIVAL_OF_GAS,
   FIRST_NATIONAL_CITY_BANK,
   FORD,
+  FORMICA,
 ];

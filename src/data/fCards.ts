@@ -113,7 +113,8 @@ export const FORD: FCard = {
   pavilionAlt: "Ford",
 };
 
-const FORMICA: FCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const FORMICA: FCard = {
   id: "formica",
   href: "/formicaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
