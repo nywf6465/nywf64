@@ -83,7 +83,8 @@ const AMERICAN_EXPRESS: FountainsCard = {
   pavilionAlt: "American Express",
 };
 
-const AMERICAN_INDIAN_EXPOSITION: FountainsCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const AMERICAN_INDIAN_EXPOSITION: FountainsCard = {
   id: "american-indian-exposition",
   href: "/amindoverview",
   // DESCRIPTION (italic under ICON) — exact

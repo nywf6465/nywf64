@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { ProposedPavilionsLinks } from "@/components/ProposedPavilionsLinks";
 import styles from "./proposed.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
 
@@ -10,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 /**
- * Landing: header → hero → guidebook banner → footer
+ * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces pattern).
- * Phantom-pavilion attraction links will connect here as they are built.
+ * First link: American Indian Exposition (same card as Attractions from A to Z `/A`).
  */
 export default function ProposedPavilionsNeverBuiltPage() {
   return (
@@ -47,6 +48,7 @@ export default function ProposedPavilionsNeverBuiltPage() {
           />
         </div>
       </section>
+      <ProposedPavilionsLinks />
     </main>
   );
 }
