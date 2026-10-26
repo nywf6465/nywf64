@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * (same stack as /stampsoverview / /vmoverview).
  * Hero canvas matches ibm01 (1905×826) via EducardsHero.
  * Nav bar shows Page 1 (`educardsoverview` special-cased in pageNumberFromPath).
- * PREVIOUS → /artifacts; NEXT hidden until the first feature page ships.
+ * PREVIOUS → /artifacts; NEXT → /educards01.
  */
 export default function EducardsOverviewPage() {
   return (
@@ -58,7 +58,7 @@ export default function EducardsOverviewPage() {
         previousHref="/artifacts"
         explicitPrevious
         overviewHref="/educardsoverview"
-        hideNext
+        nextHref="/educards01"
       />
     </>
   );
