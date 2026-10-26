@@ -19,7 +19,8 @@ const NCR: NCard = {
   pavilionAlt: "NCR",
 };
 
-const NATMARPAR: NCard = {
+/** Shared with Quiet Spaces & Rest Areas (`quietareasCards.ts`). */
+export const NATMARPAR: NCard = {
   id: "natmarpar",
   href: "/natmarparoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

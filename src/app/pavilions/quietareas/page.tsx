@@ -13,7 +13,8 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Fountains pattern).
- * Links: Garden of Meditation (`/G`), Main Mall (`/M`) — same A-to-Z cards.
+ * Links: Garden of Meditation (`/G`), Main Mall (`/M`), National Maritime
+ * Union Park (`/N`) — same A-to-Z cards.
  */
 export default function QuietAreasPage() {
   return (
