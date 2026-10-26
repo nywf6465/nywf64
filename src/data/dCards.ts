@@ -47,7 +47,8 @@ const DENMARK: DCard = {
   pavilionAlt: "Denmark",
 };
 
-const DUPONT: DCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const DUPONT: DCard = {
   id: "dupont",
   href: "/dupontoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
