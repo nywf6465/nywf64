@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 /**
  * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces / Proposed Pavilions pattern).
- * Links: All-State Properties & Macy's — same `/A` card.
+ * Links: All-State Properties & Macy's, American Express — same `/A` cards.
  */
 export default function ExhibitsOfAmericanIndustryPage() {
   return (

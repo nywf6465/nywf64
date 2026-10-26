@@ -71,7 +71,8 @@ export const ALL_STATE: FountainsCard = {
   pavilionAlt: "All-State…",
 };
 
-const AMERICAN_EXPRESS: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const AMERICAN_EXPRESS: FountainsCard = {
   id: "american-express",
   href: "/amexoverview",
   // DESCRIPTION (italic under ICON) — exact
