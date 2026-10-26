@@ -32,7 +32,8 @@ const BELGIAN_VILLAGE: BCard = {
   pavilionAlt: "Belgian Village",
 };
 
-const BELL_SYSTEM: BCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const BELL_SYSTEM: BCard = {
   id: "bell-system",
   href: "/belloverview",
   // DESCRIPTION (italic under ICON) — exact
