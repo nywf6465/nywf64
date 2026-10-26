@@ -50,6 +50,9 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  *
  * Postage Stamps of the Fair: `stampsoverview` → Page 1;
  * `stamps01`… → Page 2… (route number + 1).
+ *
+ * The “Edu-Cards” Set: `educardsoverview` → Page 1;
+ * `educards01`… → Page 2… (route number + 1) when feature pages exist.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -74,6 +77,10 @@ export function pageNumberFromPath(pathname: string): string | null {
   if (/^stampsoverview$/i.test(segment)) {
     return "1";
   }
+  // The “Edu-Cards” Set overview — Page 1 on the nav bar
+  if (/^educardsoverview$/i.test(segment)) {
+    return "1";
+  }
   const vmGallery = segment.match(/^vm(\d+)$/i);
   if (vmGallery) {
     const n = Number.parseInt(vmGallery[1], 10);
@@ -92,6 +99,13 @@ export function pageNumberFromPath(pathname: string): string | null {
   const stampsGallery = segment.match(/^stamps(\d+)$/i);
   if (stampsGallery) {
     const n = Number.parseInt(stampsGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
+  const educardsGallery = segment.match(/^educards(\d+)$/i);
+  if (educardsGallery) {
+    const n = Number.parseInt(educardsGallery[1], 10);
     if (Number.isFinite(n) && n >= 1) {
       return String(n + 1);
     }
