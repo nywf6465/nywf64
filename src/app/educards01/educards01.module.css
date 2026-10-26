@@ -1,0 +1,178 @@
+/*
+ * The “Edu-Cards” Set — Page One (legacy educards02).
+ * HARD RULE — navy title banner beneath the nav.
+ * Tan tray (#cc9966) with white framed flash-card photos + reverse text.
+ */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.titleBar {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, #26346e 92%, #000) 0%,
+    #26346e 100%
+  );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-family: Arial, Helvetica, Geneva, Swiss, SunSans-Regular, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+}
+
+.intro {
+  margin: 0 0 0.85rem;
+  color: #663300;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.brand {
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.brandNywf {
+  color: #0066cc;
+}
+
+.brandSixtyFour {
+  color: #ff3300;
+}
+
+.brandDotCom {
+  color: #0066cc;
+  font-size: 0.72em;
+  font-weight: 400;
+}
+
+.quizNote {
+  margin: 0 0 1.25rem;
+  color: #663300;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.45;
+}
+
+.rule {
+  border: 0;
+  border-top: 1px solid #996633;
+  margin: 0 0 1rem;
+}
+
+.entries {
+  display: flex;
+  flex-direction: column;
+  gap: 1.15rem;
+}
+
+.entry {
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
+  box-sizing: border-box;
+  padding: 0.65rem;
+  background: #cc9966;
+}
+
+.entryPhotoRight {
+  align-items: flex-end;
+}
+
+.entryPhotoLeft {
+  align-items: flex-start;
+}
+
+.photoFrame {
+  box-sizing: border-box;
+  width: min(19.375rem, 100%);
+  padding: 4px;
+  border: 1px solid #0a0a0a;
+  background: #fff;
+  line-height: 0;
+}
+
+.photo {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.textFrame {
+  box-sizing: border-box;
+  width: min(15.625rem, 100%);
+  padding: 0.55rem 0.65rem;
+  border: 1px solid #0a0a0a;
+  background: #fff;
+}
+
+.cardHead {
+  display: flex;
+  gap: 0.55rem;
+  align-items: flex-start;
+  margin: 0 0 0.55rem;
+}
+
+.logo {
+  flex: 0 0 auto;
+  display: block;
+  width: 70px;
+  height: auto;
+}
+
+.cardTitle {
+  margin: 0;
+  color: #996633;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.15rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
+}
+
+.cardBody {
+  margin: 0 0 0.65rem;
+  color: #996633;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 0.85rem;
+  line-height: 1.35;
+}
+
+.cardBody:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .entryPhotoRight,
+  .entryPhotoLeft {
+    align-items: stretch;
+  }
+
+  .photoFrame,
+  .textFrame {
+    width: 100%;
+  }
+}
