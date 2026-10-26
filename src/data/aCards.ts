@@ -57,7 +57,8 @@ const ALASKA: FountainsCard = {
   pavilionAlt: "Alaska",
 };
 
-const ALL_STATE: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const ALL_STATE: FountainsCard = {
   id: "all-state",
   href: "/allstaoverview",
   // DESCRIPTION (italic under ICON) — exact; keep hyphen, &, apostrophe

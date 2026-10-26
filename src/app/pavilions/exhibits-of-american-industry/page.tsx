@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { AmericanIndustryLinks } from "@/components/AmericanIndustryLinks";
 import styles from "./industry.module.css";
 import heroBottomBar from "@/styles/heroBottomBar.module.css";
 
@@ -10,9 +11,9 @@ export const metadata: Metadata = {
 };
 
 /**
- * Landing: header → hero → guidebook banner → footer
+ * Landing: header → hero → guidebook banner → links → footer
  * (Disney Shows / Religions / Quiet Spaces / Proposed Pavilions pattern).
- * Industry attraction links will connect here as they are built.
+ * Links: All-State Properties & Macy's — same `/A` card.
  */
 export default function ExhibitsOfAmericanIndustryPage() {
   return (
@@ -47,6 +48,7 @@ export default function ExhibitsOfAmericanIndustryPage() {
           />
         </div>
       </section>
+      <AmericanIndustryLinks />
     </main>
   );
 }
