@@ -42,7 +42,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "memories",
         title: "Memories of the 1964 World\u2019s Fair",
-        href: "/stories/memories",
+        href: "/memories01",
         hoverSrc: "/images/stories-hover/memories.jpg",
         left: "50.474%",
         top: "4.502%",
