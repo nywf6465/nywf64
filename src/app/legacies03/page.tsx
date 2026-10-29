@@ -172,8 +172,14 @@ export default function Legacies03Page() {
             Bay Area&apos; along with the Marina and Shea Stadium. I believe the
             Bounty only exhibited for the &apos;64 season and had sailed on by
             the time &apos;65 rolled around. It had several owners through the
-            years including Ted Turner. Currently it is anchored and permanently
-            based in St. Petersburg, FL.&quot; - May 1, 2000
+            years including Ted Turner.&quot; - May 1, 2000
+          </p>
+          <p className={styles.body}>
+            <strong>Fate:</strong> The ship was featured in later films like{" "}
+            <em>Pirates of the Caribbean: Dead Man&apos;s Chest</em> before it
+            tragically foundered and sank off the coast of North Carolina during
+            Hurricane Sandy on October 29, 2012, claiming the lives of Captain
+            Robin Walbridge and crew member Claudene Christian.
           </p>
           <p className={styles.body}>
             Mr. Brennan also had this interesting observation on an unusual Fair
