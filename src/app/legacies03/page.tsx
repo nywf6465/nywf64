@@ -59,10 +59,10 @@ export default function Legacies03Page() {
             isn&apos;t listed on these pages, or if you have additional
             information on listings that you&apos;d like to share, please
             contact{" "}
-            <a href="mailto:webhost@nywf64.com?subject=Another%20Legacy%20to%20Report:">
+            <a href="mailto:nywf6465@gmail.com?subject=Another%20Legacy%20to%20Report:">
               Bill Young
             </a>{" "}
-            at nywf64.com. Thank you!
+            at nywf6465@gmail.com. Thank you!
           </p>
 
           <p className={styles.body}>
