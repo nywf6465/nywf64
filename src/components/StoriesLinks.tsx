@@ -52,7 +52,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "to-the-fair-or-bust",
         title: "To the Fair or Bust",
-        href: "/stories/to-the-fair-or-bust",
+        href: "/holmes01",
         hoverSrc: "/images/stories-hover/to-the-fair-or-bust.jpg",
         left: "1.423%",
         top: "36.120%",
