@@ -72,7 +72,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "hunt-for-international-exhibits",
         title: "The Hunt for International Exhibits",
-        href: "/stories/hunt-for-international-exhibits",
+        href: "/intpar01",
         hoverSrc: "/images/stories-hover/hunt-for-international-exhibits.jpg",
         left: "1.423%",
         top: "65.916%",
