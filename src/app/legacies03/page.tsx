@@ -139,20 +139,22 @@ export default function Legacies03Page() {
             />
           </figure>
 
-          <p className={styles.body}>
-            <a
-              href="http://www.bbqproductions.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              BBQ Productions&apos; website
-            </a>{" "}
-            lists a link to the Mankato State University Website where they
-            claim to have a World&apos;s Fair Fountain. It appears that it
-            might be a re-arrangement of the Fountains of the Fair. Perhaps a
-            visitor can verify what fountain it is. Elizabeth Klug - April 26,
-            2000
-          </p>
+          <figure className={styles.figure}>
+            <Image
+              src="/images/legacies03/fountain-of-progress-north.jpg"
+              alt="Fountain of Progress North at Minnesota State University, Mankato"
+              width={1206}
+              height={861}
+              className={styles.photo}
+              unoptimized
+            />
+            <figcaption className={styles.caption}>
+              The Fountain of Progress North was relocated to the Minnesota
+              State University at Mankato campus and was installed there in
+              1969. The sculpture in the center of the fountain was added in
+              1975.
+            </figcaption>
+          </figure>
           <p className={styles.body}>
             Visitor Dot Condon writes &quot;I don&apos;t know if it&apos;s still
             there, but the front of the Ireland Pavilion was used for the front
