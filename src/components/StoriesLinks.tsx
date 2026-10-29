@@ -82,7 +82,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "new-yorks-sacred-meadow",
         title: "New York\u2019s Sacred Meadow",
-        href: "/stories/new-yorks-sacred-meadow",
+        href: "/weshou15",
         hoverSrc: "/images/stories-hover/new-yorks-sacred-meadow.jpg",
         left: "50.415%",
         top: "66.024%",
