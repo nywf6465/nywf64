@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type GCard = FountainsCard;
 
-const GARDEN_OF_MEDITATION: GCard = {
+/** Shared with Quiet Spaces & Rest Areas (`quietareasCards.ts`). */
+export const GARDEN_OF_MEDITATION: GCard = {
   id: "garmed",
   href: "/garmedoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

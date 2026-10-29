@@ -1,0 +1,76 @@
+import Image from "next/image";
+import Link from "next/link";
+import { QUIETAREAS_CARDS } from "@/data/quietareasCards";
+import styles from "./FountainsLinks.module.css";
+
+/**
+ * Quiet Spaces & Rest Areas links (below guidebook banner).
+ * Same layout as Religions / Fountains / A-to-Z letter pages.
+ * Rows: Garden of Meditation (`/G`), Main Mall (`/M`), National Maritime
+ * Union Park (`/N`), Oklahoma (`/O`).
+ */
+
+function LinkIndicator() {
+  return (
+    <span className={styles.linkIndicator} aria-hidden="true">
+      <svg viewBox="0 0 24 24" width="18" height="18" focusable="false">
+        <path
+          d="M9.2 6.4 14.8 12 9.2 17.6"
+          fill="none"
+          stroke="currentColor"
+          strokeWidth="2.4"
+          strokeLinecap="round"
+          strokeLinejoin="round"
+        />
+      </svg>
+    </span>
+  );
+}
+
+export function QuietAreasLinks() {
+  if (QUIETAREAS_CARDS.length === 0) {
+    return (
+      <section
+        className={styles.section}
+        aria-label="Quiet Spaces & Rest Areas links"
+      />
+    );
+  }
+
+  return (
+    <section
+      className={styles.section}
+      aria-label="Quiet Spaces & Rest Areas links"
+    >
+      <ul className={styles.list}>
+        {QUIETAREAS_CARDS.map((row) => (
+          <li key={row.id} className={styles.item}>
+            <Link href={row.href} className={styles.row}>
+              <span className={styles.pavilion}>
+                <Image
+                  src={row.pavilionSrc}
+                  alt={row.pavilionAlt}
+                  width={row.pavilionWidth}
+                  height={row.pavilionHeight}
+                  className={styles.pavilionArt}
+                  unoptimized
+                />
+              </span>
+              <span
+                className={
+                  row.bodyItalic
+                    ? `${styles.body} ${styles.bodyItalic}`
+                    : styles.body
+                }
+              >
+                {row.body}
+              </span>
+              <span className={styles.title}>{row.title}</span>
+              <LinkIndicator />
+            </Link>
+          </li>
+        ))}
+      </ul>
+    </section>
+  );
+}
