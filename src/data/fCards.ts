@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type FCard = FountainsCard;
 
-const FESTIVAL_OF_GAS: FCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const FESTIVAL_OF_GAS: FCard = {
   id: "festival-of-gas",
   href: "/fesgasoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -45,7 +46,8 @@ const FINE_ARTS_PAVILION: FCard = {
   pavilionAlt: "Fine Arts Pavilion",
 };
 
-const FIRST_NATIONAL_CITY_BANK: FCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const FIRST_NATIONAL_CITY_BANK: FCard = {
   id: "first-national-city-bank",
   href: "/firnatoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -97,7 +99,8 @@ const FLUME_RIDE: FCard = {
   pavilionAlt: "Flume Ride",
 };
 
-const FORD: FCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const FORD: FCard = {
   id: "ford",
   href: "/fordoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -110,7 +113,8 @@ const FORD: FCard = {
   pavilionAlt: "Ford",
 };
 
-const FORMICA: FCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const FORMICA: FCard = {
   id: "formica",
   href: "/formicaoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

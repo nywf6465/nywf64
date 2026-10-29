@@ -57,7 +57,8 @@ const ALASKA: FountainsCard = {
   pavilionAlt: "Alaska",
 };
 
-const ALL_STATE: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const ALL_STATE: FountainsCard = {
   id: "all-state",
   href: "/allstaoverview",
   // DESCRIPTION (italic under ICON) — exact; keep hyphen, &, apostrophe
@@ -70,7 +71,8 @@ const ALL_STATE: FountainsCard = {
   pavilionAlt: "All-State…",
 };
 
-const AMERICAN_EXPRESS: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const AMERICAN_EXPRESS: FountainsCard = {
   id: "american-express",
   href: "/amexoverview",
   // DESCRIPTION (italic under ICON) — exact
@@ -165,7 +167,8 @@ export const ARGENTINA: FountainsCard = {
   pavilionAlt: "Argentina ",
 };
 
-const ARLINGTON_HAT: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const ARLINGTON_HAT: FountainsCard = {
   id: "arlington-hat",
   href: "/arlhatoverview",
   // DESCRIPTION (italic under ICON) — exact
@@ -231,7 +234,8 @@ const AUTO_THRILL_SHOW: FountainsCard = {
   pavilionAlt: "Auto Thrill Show",
 };
 
-const AVIS_ANTIQUE_CAR_RIDE: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const AVIS_ANTIQUE_CAR_RIDE: FountainsCard = {
   id: "avis-antique-car-ride",
   href: "/avisoverview",
   // DESCRIPTION (italic under ICON) — exact

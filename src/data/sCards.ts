@@ -6,6 +6,102 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type SCard = FountainsCard;
 
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const SCHAEFER: SCard =   {
+    id: "schaefer",
+    href: "/schcenoverview",
+    title: "Schaefer",
+    body: "A restaurant, bar and beer garden offer food and drink in a sporting atmosphere; a model of an old brewery is on view.",
+    pavilionSrc: "/images/schcen/schaefer-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Schaefer"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const SCOTT_PAPER: SCard =   {
+    id: "scott-paper",
+    href: "/scopapoverview",
+    title: "Scott Paper",
+    body: 'A tour through an "Enchanted Forest" tells the story of paper from woodland to home.',
+    pavilionSrc: "/images/scopap/scott-paper-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Scott Paper"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const SEVEN_UP: SCard =   {
+    id: "seven-up",
+    href: "/sevupoverview",
+    title: "Seven-Up",
+    body: "This open-air cafe offers musical entertainment and an international sandwich buffet.",
+    pavilionSrc: "/images/sevup/seven-up-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Seven-Up"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const SIMMONS: SCard =   {
+    id: "simmons",
+    href: "/simmonoverview",
+    title: "Simmons",
+    body: "Visitors can take half-hour naps in rest alcoves or view model rooms cleverly designed to provide extra sleeping space.",
+    pavilionSrc: "/images/simmon/simmons-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Simmons"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const SINCLAIR: SCard =   {
+    id: "sinclair",
+    href: "/sinclairoverview",
+    title: "Sinclair",
+    body: "Life as it existed 165 million years ago is re-created in a display of life-sized dinosaurs.",
+    pavilionSrc: "/images/sinclair/sinclair-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Sinclair"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const SINGER_BOWL: SCard =   {
+    id: "singer-bowl",
+    href: "/singeroverview",
+    title: "Singer Bowl",
+    body: "Music festivals, sports events and variety shows are held in this open-air stadium seating 15,000.",
+    pavilionSrc: "/images/singer/singer-bowl-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Singer Bowl"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const SKF: SCard =   {
+    id: "skf",
+    href: "/skfoverview",
+    title: "SKF",
+    body: "A mechanical man introduces a film showing man's progress in locomotion; a wide range of equipment using ball and roller bearings is displayed.",
+    pavilionSrc: "/images/skf/skf-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "SKF"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const SOCONY_MOBIL: SCard =   {
+    id: "socony-mobil",
+    href: "/socmobiloverview",
+    title: "Socony Mobil",
+    body: "Visitors take part in a simulated cross-country driving game that tests their skills at the wheel.",
+    pavilionSrc: "/images/socmobil/socony-mobil-icon.jpg",
+    pavilionWidth: 760,
+    pavilionHeight: 330,
+    pavilionAlt: "Socony Mobil"
+  };
+
 export const S_CARDS: SCard[] = [
   {
     id: "santa-maria",
@@ -17,26 +113,10 @@ export const S_CARDS: SCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Santa Maria"
   },
-  {
-    id: "schaefer",
-    href: "/schcenoverview",
-    title: "Schaefer",
-    body: "A restaurant, bar and beer garden offer food and drink in a sporting atmosphere; a model of an old brewery is on view.",
-    pavilionSrc: "/images/schcen/schaefer-icon.jpg",
-    pavilionWidth: 760,
-    pavilionHeight: 330,
-    pavilionAlt: "Schaefer"
-  },
-  {
-    id: "scott-paper",
-    href: "/scopapoverview",
-    title: "Scott Paper",
-    body: 'A tour through an "Enchanted Forest" tells the story of paper from woodland to home.',
-    pavilionSrc: "/images/scopap/scott-paper-icon.jpg",
-    pavilionWidth: 760,
-    pavilionHeight: 330,
-    pavilionAlt: "Scott Paper"
-  },
+  SCHAEFER,
+
+  SCOTT_PAPER,
+
   {
     id: "sermons-from-science",
     href: "/serscioverview",
@@ -47,16 +127,8 @@ export const S_CARDS: SCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Sermons from Science"
   },
-  {
-    id: "seven-up",
-    href: "/sevupoverview",
-    title: "Seven-Up",
-    body: "This open-air cafe offers musical entertainment and an international sandwich buffet.",
-    pavilionSrc: "/images/sevup/seven-up-icon.jpg",
-    pavilionWidth: 760,
-    pavilionHeight: 330,
-    pavilionAlt: "Seven-Up"
-  },
+  SEVEN_UP,
+
   {
     id: "shea-stadium",
     href: "/sheastaoverview",
@@ -77,56 +149,16 @@ export const S_CARDS: SCard[] = [
     pavilionHeight: 330,
     pavilionAlt: "Sierra Leone"
   },
-  {
-    id: "simmons",
-    href: "/simmonoverview",
-    title: "Simmons",
-    body: "Visitors can take half-hour naps in rest alcoves or view model rooms cleverly designed to provide extra sleeping space.",
-    pavilionSrc: "/images/simmon/simmons-icon.jpg",
-    pavilionWidth: 760,
-    pavilionHeight: 330,
-    pavilionAlt: "Simmons"
-  },
-  {
-    id: "sinclair",
-    href: "/sinclairoverview",
-    title: "Sinclair",
-    body: "Life as it existed 165 million years ago is re-created in a display of life-sized dinosaurs.",
-    pavilionSrc: "/images/sinclair/sinclair-icon.jpg",
-    pavilionWidth: 760,
-    pavilionHeight: 330,
-    pavilionAlt: "Sinclair"
-  },
-  {
-    id: "singer-bowl",
-    href: "/singeroverview",
-    title: "Singer Bowl",
-    body: "Music festivals, sports events and variety shows are held in this open-air stadium seating 15,000.",
-    pavilionSrc: "/images/singer/singer-bowl-icon.jpg",
-    pavilionWidth: 760,
-    pavilionHeight: 330,
-    pavilionAlt: "Singer Bowl"
-  },
-  {
-    id: "skf",
-    href: "/skfoverview",
-    title: "SKF",
-    body: "A mechanical man introduces a film showing man's progress in locomotion; a wide range of equipment using ball and roller bearings is displayed.",
-    pavilionSrc: "/images/skf/skf-icon.jpg",
-    pavilionWidth: 760,
-    pavilionHeight: 330,
-    pavilionAlt: "SKF"
-  },
-  {
-    id: "socony-mobil",
-    href: "/socmobiloverview",
-    title: "Socony Mobil",
-    body: "Visitors take part in a simulated cross-country driving game that tests their skills at the wheel.",
-    pavilionSrc: "/images/socmobil/socony-mobil-icon.jpg",
-    pavilionWidth: 760,
-    pavilionHeight: 330,
-    pavilionAlt: "Socony Mobil"
-  },
+  SIMMONS,
+
+  SINCLAIR,
+
+  SINGER_BOWL,
+
+  SKF,
+
+  SOCONY_MOBIL,
+
   {
     id: "solar-fountain",
     href: "/solfountoverview",

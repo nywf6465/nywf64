@@ -28,7 +28,8 @@ const PAN_AMERICAN_HIGHWAY_GARDENS: PCard = {
   pavilionAlt: "Pan American Highway Gardens",
 };
 
-const PARKER_PEN: PCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const PARKER_PEN: PCard = {
   id: "parpen",
   href: "/parpenoverview",
   title: "Parker Pen",
@@ -39,7 +40,8 @@ const PARKER_PEN: PCard = {
   pavilionAlt: "Parker Pen",
 };
 
-const PAVILION_OF_AMERICAN_INTERIORS: PCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const PAVILION_OF_AMERICAN_INTERIORS: PCard = {
   id: "pavami",
   href: "/pavamioverview",
   title: "Pavilion of American Interiors",
@@ -73,7 +75,8 @@ const PENNSYLVANIA: PCard = {
 };
 
 /** Identical to the Pepsi-Cola row on The Disney Shows links page. */
-const PEPSI_COLA: PCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const PEPSI_COLA: PCard = {
   id: "pepsi",
   href: "/pepsioverview",
   title: 'Pepsi-Cola — "It\'s a Small World"',
@@ -130,7 +133,8 @@ const POOL_OF_REFLECTIONS: PCard = {
   pavilionAlt: "Pool of Reflections",
 };
 
-const PORT_AUTHORITY_HELIPORT: PCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const PORT_AUTHORITY_HELIPORT: PCard = {
   id: "poraut",
   href: "/porautoverview",
   title: "Port Authority Heliport",

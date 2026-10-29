@@ -34,7 +34,8 @@ const JAYCOP: JCard = {
 };
 
 
-const JOHWAX: JCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const JOHWAX: JCard = {
   id: "johwax",
   href: "/johwaxoverview",
   // DESCRIPTION (italic under ICON) — exact registered icon name
@@ -62,7 +63,8 @@ const JORDAN: JCard = {
 };
 
 
-const JULFAR: JCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const JULFAR: JCard = {
   id: "julfar",
   href: "/julfaroverview",
   // DESCRIPTION (italic under ICON) — exact icon name

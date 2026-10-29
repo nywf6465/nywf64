@@ -6,6 +6,54 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type TCard = FountainsCard;
 
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const TIPARILLO_BAND_PAVILION: TCard =   {
+    id: "tiparillo-band-pavilion",
+    href: "/tipbandoverview",
+    title: "Tiparillo Band Pavilion",
+    body: "Free concerts and dancing are offered at a bandshell and large outdoor dance floor.",
+    pavilionSrc: "/images/tipband/tiparillo-band-pavilion-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "Tiparillo Band Pavilion"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const TOWER_OF_LIGHT: TCard =   {
+    id: "tower-of-light",
+    href: "/twrlitoverview",
+    title: "Tower of Light",
+    body: "A musical show depicts the benefits of electricity. Pointing skyward from the pavilion is the world's most powerful searchlight.",
+    pavilionSrc: "/images/twrlit/tower-of-light-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "Tower of Light"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const TRANSPORTATION_AND_TRAVEL: TCard =   {
+    id: "transportation-and-travel",
+    href: "/trantravoverview",
+    title: "Transportation & Travel",
+    body: "All modes of travel, from underwater to lunar, are explored in exhibits by various industries and agencies.",
+    pavilionSrc: "/images/trantrav/transportation-and-travel-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "Transportation & Travel"
+  };
+
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const TRAVELERS_INSURANCE: TCard =   {
+    id: "travelers-insurance",
+    href: "/travelersoverview",
+    title: "Travelers Insurance",
+    body: "Visitors walk past dioramas that dramatize the story of life on earth, from the first cell to man's leap into space.",
+    pavilionSrc: "/images/travelers/travelers-insurance-icon.jpg",
+    pavilionWidth: 761,
+    pavilionHeight: 331,
+    pavilionAlt: "Travelers Insurance"
+  };
+
 export const T_CARDS: TCard[] = [
   {
     id: "texas-pavilions",
@@ -37,46 +85,14 @@ export const T_CARDS: TCard[] = [
     pavilionHeight: 331,
     pavilionAlt: "Thrill Rides"
   },
-  {
-    id: "tiparillo-band-pavilion",
-    href: "/tipbandoverview",
-    title: "Tiparillo Band Pavilion",
-    body: "Free concerts and dancing are offered at a bandshell and large outdoor dance floor.",
-    pavilionSrc: "/images/tipband/tiparillo-band-pavilion-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "Tiparillo Band Pavilion"
-  },
-  {
-    id: "tower-of-light",
-    href: "/twrlitoverview",
-    title: "Tower of Light",
-    body: "A musical show depicts the benefits of electricity. Pointing skyward from the pavilion is the world's most powerful searchlight.",
-    pavilionSrc: "/images/twrlit/tower-of-light-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "Tower of Light"
-  },
-  {
-    id: "transportation-and-travel",
-    href: "/trantravoverview",
-    title: "Transportation & Travel",
-    body: "All modes of travel, from underwater to lunar, are explored in exhibits by various industries and agencies.",
-    pavilionSrc: "/images/trantrav/transportation-and-travel-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "Transportation & Travel"
-  },
-  {
-    id: "travelers-insurance",
-    href: "/travelersoverview",
-    title: "Travelers Insurance",
-    body: "Visitors walk past dioramas that dramatize the story of life on earth, from the first cell to man's leap into space.",
-    pavilionSrc: "/images/travelers/travelers-insurance-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "Travelers Insurance"
-  },
+  TIPARILLO_BAND_PAVILION,
+
+  TOWER_OF_LIGHT,
+
+  TRANSPORTATION_AND_TRAVEL,
+
+  TRAVELERS_INSURANCE,
+
   {
     id: "two-thousand-tribes",
     href: "/twothooverview",

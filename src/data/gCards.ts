@@ -20,7 +20,8 @@ export const GARDEN_OF_MEDITATION: GCard = {
   pavilionAlt: "Garden of Meditation",
 };
 
-const GENERAL_CIGAR: GCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const GENERAL_CIGAR: GCard = {
   id: "gencig",
   href: "/gencigoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -33,7 +34,8 @@ const GENERAL_CIGAR: GCard = {
   pavilionAlt: "General Cigar",
 };
 
-const GENERAL_ELECTRIC: GCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const GENERAL_ELECTRIC: GCard = {
   id: "genele",
   href: "/geneleoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -46,7 +48,8 @@ const GENERAL_ELECTRIC: GCard = {
   pavilionAlt: "General Electric",
 };
 
-const GENERAL_FOODS_ARCHES: GCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const GENERAL_FOODS_ARCHES: GCard = {
   id: "genfoo",
   href: "/genfoooverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -59,7 +62,8 @@ const GENERAL_FOODS_ARCHES: GCard = {
   pavilionAlt: "General Foods Arches",
 };
 
-const GENERAL_MOTORS: GCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const GENERAL_MOTORS: GCard = {
   id: "gm",
   href: "/gmoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -85,7 +89,8 @@ const GREECE: GCard = {
   pavilionAlt: "Greece",
 };
 
-const GREYHOUND: GCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const GREYHOUND: GCard = {
   id: "greyhound",
   href: "/greyhoundoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
