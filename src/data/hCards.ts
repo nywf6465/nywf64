@@ -58,7 +58,8 @@ const HAWAII: HCard = {
   pavilionAlt: "Hawaii",
 };
 
-const HEARTLAND: HCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const HEARTLAND: HCard = {
   id: "heartland",
   href: "/heartlandoverview",
   // DESCRIPTION (italic under ICON) — exact card description (not icon name alone)

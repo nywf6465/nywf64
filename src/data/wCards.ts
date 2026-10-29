@@ -47,16 +47,7 @@ export const W_CARDS: WCard[] = [
     pavilionHeight: 331,
     pavilionAlt: "Wisconsin",
     },
-  {
-    id: "world-of-food",
-    href: "/worfoooverview",
-    title: "World of Food",
-    body: "The World of Food pavilion was to have housed exhibits relating to nutrition and the food industry. The pavillion was started, steel framework was erected, but was never completed.",
-    pavilionSrc: "/images/worfoo/world-of-food-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "World of Food",
-    },
+  WORLD_OF_FOOD,
   {
     id: "worlds-fair-marina",
     href: "/wfmaroverview",

@@ -1,21 +1,54 @@
 import type { Metadata } from "next";
-import Link from "next/link";
+import Image from "next/image";
+import { ProposedPavilionsLinks } from "@/components/ProposedPavilionsLinks";
+import styles from "./proposed.module.css";
+import heroBottomBar from "@/styles/heroBottomBar.module.css";
 
 export const metadata: Metadata = {
-  title: "Proposed Pavilions That Were Never Built — nywf64.com",
-  description: "Proposed Pavilions That Were Never Built from Pavilions, Attractions & Exhibits at nywf64.com.",
+  title: "Proposed Pavilions Never Built — nywf64.com",
+  description:
+    "Proposed Pavilions Never Built — discover the Fair’s phantom pavilions at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
-export default function Page() {
+/**
+ * Landing: header → hero → guidebook banner → links → footer
+ * (Disney Shows / Religions / Quiet Spaces pattern).
+ * Links: American Indian Exposition … World of Food — A/F/H/M/W cards.
+ */
+export default function ProposedPavilionsNeverBuiltPage() {
   return (
-    <main style={{ maxWidth: 720, margin: "0 auto", padding: "2.5rem 1.25rem 3rem" }}>
-      <p style={{ margin: "0 0 1rem", fontSize: "0.9rem" }}>
-        <Link href="/pavilions">← Pavilions, Attractions & Exhibits</Link>
-      </p>
-      <h1 style={{ margin: 0, color: "#26346e", fontSize: "1.75rem" }}>Proposed Pavilions That Were Never Built</h1>
-      <p style={{ margin: "1rem 0 0", color: "#26346e", lineHeight: 1.5 }}>
-        Placeholder page — full pavilion content will connect here.
-      </p>
+    <main>
+      <section
+        className={styles.hero}
+        aria-label="Proposed Pavilions Never Built"
+      >
+        <div className={`${styles.frame} ${heroBottomBar.photoFrame}`}>
+          <Image
+            src="/images/proposed-pavilions-hero.jpg"
+            alt="Proposed Pavilions Never Built — discover the Fair’s phantom pavilions"
+            width={1935}
+            height={812}
+            priority
+            sizes="100vw"
+            className={styles.art}
+            unoptimized
+          />
+        </div>
+      </section>
+      <section className={styles.banner} aria-label="Guidebook banner">
+        <div className={styles.bannerFrame}>
+          <Image
+            src="/images/guidebook-banner.jpg"
+            alt=""
+            width={1206}
+            height={180}
+            sizes="100vw"
+            className={styles.bannerArt}
+            unoptimized
+          />
+        </div>
+      </section>
+      <ProposedPavilionsLinks />
     </main>
   );
 }
