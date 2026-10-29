@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type RCard = FountainsCard;
 
-const RCA: RCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const RCA: RCard = {
   id: "rca",
   href: "/rcaoverview",
   title: "RCA",
@@ -17,7 +18,8 @@ const RCA: RCard = {
   pavilionAlt: "RCA",
 };
 
-const RHEINGOLD: RCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const RHEINGOLD: RCard = {
   id: "rheingold",
   href: "/rheingoverview",
   title: "Rheingold",

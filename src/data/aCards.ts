@@ -57,7 +57,8 @@ const ALASKA: FountainsCard = {
   pavilionAlt: "Alaska",
 };
 
-const ALL_STATE: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const ALL_STATE: FountainsCard = {
   id: "all-state",
   href: "/allstaoverview",
   // DESCRIPTION (italic under ICON) — exact; keep hyphen, &, apostrophe
@@ -70,7 +71,8 @@ const ALL_STATE: FountainsCard = {
   pavilionAlt: "All-State…",
 };
 
-const AMERICAN_EXPRESS: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const AMERICAN_EXPRESS: FountainsCard = {
   id: "american-express",
   href: "/amexoverview",
   // DESCRIPTION (italic under ICON) — exact
@@ -83,7 +85,8 @@ const AMERICAN_EXPRESS: FountainsCard = {
   pavilionAlt: "American Express",
 };
 
-const AMERICAN_INDIAN_EXPOSITION: FountainsCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const AMERICAN_INDIAN_EXPOSITION: FountainsCard = {
   id: "american-indian-exposition",
   href: "/amindoverview",
   // DESCRIPTION (italic under ICON) — exact
@@ -136,7 +139,8 @@ const AMPHITHEATER: FountainsCard = {
   pavilionAlt: "Amphitheater ",
 };
 
-const ARCH_OF_THE_AMERICAS: FountainsCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const ARCH_OF_THE_AMERICAS: FountainsCard = {
   id: "arch-of-the-americas",
   href: "/archameroverview",
   // DESCRIPTION (italic under ICON) — exact
@@ -149,7 +153,8 @@ const ARCH_OF_THE_AMERICAS: FountainsCard = {
   pavilionAlt: "Arch of the Americas",
 };
 
-const ARGENTINA: FountainsCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const ARGENTINA: FountainsCard = {
   id: "argentina",
   href: "/argentoverview",
   // DESCRIPTION (italic under ICON) — exact + trailing space
@@ -162,7 +167,8 @@ const ARGENTINA: FountainsCard = {
   pavilionAlt: "Argentina ",
 };
 
-const ARLINGTON_HAT: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const ARLINGTON_HAT: FountainsCard = {
   id: "arlington-hat",
   href: "/arlhatoverview",
   // DESCRIPTION (italic under ICON) — exact
@@ -228,7 +234,8 @@ const AUTO_THRILL_SHOW: FountainsCard = {
   pavilionAlt: "Auto Thrill Show",
 };
 
-const AVIS_ANTIQUE_CAR_RIDE: FountainsCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const AVIS_ANTIQUE_CAR_RIDE: FountainsCard = {
   id: "avis-antique-car-ride",
   href: "/avisoverview",
   // DESCRIPTION (italic under ICON) — exact

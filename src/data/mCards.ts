@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type MCard = FountainsCard;
 
-const MAINMALL: MCard = {
+/** Shared with Quiet Spaces & Rest Areas (`quietareasCards.ts`). */
+export const MAINMALL: MCard = {
   id: "mainmall",
   href: "/mainmalloverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -97,7 +98,8 @@ const MEXICO: MCard = {
   pavilionAlt: "Mexico",
 };
 
-const MIDWEST: MCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const MIDWEST: MCard = {
   id: "midwest",
   href: "/midwestoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -138,7 +140,8 @@ const MISSOURI: MCard = {
   pavilionAlt: "Missouri",
 };
 
-const AMF: MCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const AMF: MCard = {
   id: "amf",
   href: "/amfoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

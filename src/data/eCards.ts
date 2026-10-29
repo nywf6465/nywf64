@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type ECard = FountainsCard;
 
-const EASTERN_AIR_LINES: ECard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const EASTERN_AIR_LINES: ECard = {
   id: "eastern-air-lines",
   href: "/easternoverview",
   // DESCRIPTION (italic under ICON) — exact icon name (trimmed trailing space)
@@ -19,7 +20,8 @@ const EASTERN_AIR_LINES: ECard = {
   pavilionAlt: "Eastern Air Lines",
 };
 
-const EASTMAN_KODAK: ECard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const EASTMAN_KODAK: ECard = {
   id: "eastman-kodak",
   href: "/easkodoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -58,7 +60,8 @@ const ENTRANCE_TOWERS: ECard = {
   pavilionAlt: "Entrance Towers",
 };
 
-const EQUITABLE_LIFE: ECard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const EQUITABLE_LIFE: ECard = {
   id: "equitable-life",
   href: "/equitoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

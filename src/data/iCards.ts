@@ -48,7 +48,8 @@ const INDONESIA: ICard = {
 };
 
 
-const IBM: ICard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const IBM: ICard = {
   id: "ibm",
   href: "/ibmoverview",
   // DESCRIPTION (italic under ICON) — exact registered icon name

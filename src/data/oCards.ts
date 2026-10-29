@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type OCard = FountainsCard;
 
-const OKLAHOMA: OCard = {
+/** Shared with Quiet Spaces & Rest Areas (`quietareasCards.ts`). */
+export const OKLAHOMA: OCard = {
   id: "oklahoma",
   href: "/oklahomaoverview",
   title: "Oklahoma",

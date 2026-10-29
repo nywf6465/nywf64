@@ -6,7 +6,8 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type HCard = FountainsCard;
 
-const HALL_OF_EDUCATION: HCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const HALL_OF_EDUCATION: HCard = {
   id: "haledu",
   href: "/haleduoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -19,7 +20,8 @@ const HALL_OF_EDUCATION: HCard = {
   pavilionAlt: "Hall of Education",
 };
 
-const HALL_OF_FREE_ENTERPRISE: HCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const HALL_OF_FREE_ENTERPRISE: HCard = {
   id: "halfre",
   href: "/halfreoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -32,7 +34,8 @@ const HALL_OF_FREE_ENTERPRISE: HCard = {
   pavilionAlt: "Hall of Free Enterprise",
 };
 
-const HALL_OF_SCIENCE: HCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const HALL_OF_SCIENCE: HCard = {
   id: "halsci",
   href: "/halscioverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -58,7 +61,8 @@ const HAWAII: HCard = {
   pavilionAlt: "Hawaii",
 };
 
-const HEARTLAND: HCard = {
+/** Shared with Proposed Pavilions Never Built (`proposedPavilionsCards.ts`). */
+export const HEARTLAND: HCard = {
   id: "heartland",
   href: "/heartlandoverview",
   // DESCRIPTION (italic under ICON) — exact card description (not icon name alone)
@@ -71,7 +75,8 @@ const HEARTLAND: HCard = {
   pavilionAlt: "Heartland States U.S.A. / Midwestern States",
 };
 
-const HERTZ: HCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const HERTZ: HCard = {
   id: "hertz",
   href: "/hertzoverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -112,7 +117,8 @@ const HONKON: HCard = {
 };
 
 
-const HOUGT: HCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const HOUGT: HCard = {
   id: "hougt",
   href: "/hougtoverview",
   // DESCRIPTION (italic under ICON) — exact icon name

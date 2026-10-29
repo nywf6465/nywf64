@@ -88,7 +88,8 @@ const LOUISIA: LCard = {
   pavilionAlt: "Louisiana",
 };
 
-const LONISLRR: LCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const LONISLRR: LCard = {
   id: "lonislrr",
   href: "/lonislrroverview",
   // DESCRIPTION (italic under ICON) — exact icon name
@@ -101,7 +102,8 @@ const LONISLRR: LCard = {
   pavilionAlt: "Long Island Rail Road",
 };
 
-const LOWENGAR: LCard = {
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const LOWENGAR: LCard = {
   id: "lowengar",
   href: "/lowengaroverview",
   // DESCRIPTION (italic under ICON) — exact icon name

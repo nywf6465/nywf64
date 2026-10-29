@@ -6,6 +6,30 @@ import type { FountainsCard } from "@/data/fountainsCards";
  */
 export type WCard = FountainsCard;
 
+/** Shared with Exhibits of American Industry (`americanIndustryCards.ts`). */
+export const WESTINGHOUSE: WCard = {
+  id: "westinghouse",
+  href: "/weshouoverview",
+  title: "Westinghouse",
+  body: "The heart of the exhibit is a torpedo-shaped Time Capsule, suspended over a reflecting pool.",
+  pavilionSrc: "/images/weshou/westinghouse-icon.jpg",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "Westinghouse",
+};
+
+/** Shared with Exhibits of American Industry + Proposed Pavilions. */
+export const WORLD_OF_FOOD: WCard = {
+  id: "world-of-food",
+  href: "/worfoooverview",
+  title: "World of Food",
+  body: "The World of Food pavilion was to have housed exhibits relating to nutrition and the food industry. The pavillion was started, steel framework was erected, but was never completed.",
+  pavilionSrc: "/images/worfoo/world-of-food-icon.jpg",
+  pavilionWidth: 761,
+  pavilionHeight: 331,
+  pavilionAlt: "World of Food",
+};
+
 export const W_CARDS: WCard[] = [
   {
     id: "walters-international-wax-museum",
@@ -16,7 +40,7 @@ export const W_CARDS: WCard[] = [
     pavilionWidth: 761,
     pavilionHeight: 330,
     pavilionAlt: "Walter's International Wax Museum",
-    },
+  },
   {
     id: "west-virginia",
     href: "/wesviroverview",
@@ -26,17 +50,8 @@ export const W_CARDS: WCard[] = [
     pavilionWidth: 761,
     pavilionHeight: 331,
     pavilionAlt: "West Virginia",
-    },
-  {
-    id: "westinghouse",
-    href: "/weshouoverview",
-    title: "Westinghouse",
-    body: "The heart of the exhibit is a torpedo-shaped Time Capsule, suspended over a reflecting pool.",
-    pavilionSrc: "/images/weshou/westinghouse-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "Westinghouse",
-    },
+  },
+  WESTINGHOUSE,
   {
     id: "wisconsin",
     href: "/wisconsinoverview",
@@ -46,17 +61,8 @@ export const W_CARDS: WCard[] = [
     pavilionWidth: 761,
     pavilionHeight: 331,
     pavilionAlt: "Wisconsin",
-    },
-  {
-    id: "world-of-food",
-    href: "/worfoooverview",
-    title: "World of Food",
-    body: "The World of Food pavilion was to have housed exhibits relating to nutrition and the food industry. The pavillion was started, steel framework was erected, but was never completed.",
-    pavilionSrc: "/images/worfoo/world-of-food-icon.jpg",
-    pavilionWidth: 761,
-    pavilionHeight: 331,
-    pavilionAlt: "World of Food",
-    },
+  },
+  WORLD_OF_FOOD,
   {
     id: "worlds-fair-marina",
     href: "/wfmaroverview",
@@ -66,7 +72,7 @@ export const W_CARDS: WCard[] = [
     pavilionWidth: 761,
     pavilionHeight: 331,
     pavilionAlt: "World's Fair Marina",
-    },
+  },
   {
     id: "worlds-fair-pavilion",
     href: "/wfpavoverview",
@@ -76,5 +82,5 @@ export const W_CARDS: WCard[] = [
     pavilionWidth: 761,
     pavilionHeight: 331,
     pavilionAlt: "World's Fair Pavilion",
-    }
+  },
 ];
