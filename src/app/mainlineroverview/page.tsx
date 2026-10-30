@@ -14,6 +14,7 @@ export const metadata: Metadata = {
 /**
  * Blackhawk Films / United Air Lines MAINLINER overview (legacy mainliner01).
  * Same stack as /wolfeoverview and /photolaboverview. No Page notation.
+ * Featured plate matches /mainliner63378 (full bordered card with writing).
  * NEXT → /mainlinertray01; PREVIOUS → /artifacts.
  */
 export default function MainlinerOverviewPage() {
@@ -51,16 +52,26 @@ export default function MainlinerOverviewPage() {
             </p>
           </div>
 
-          <div className={styles.photoWrap}>
+          <div
+            className={styles.plate}
+            role="group"
+            aria-label="MAINLINER slide 633-78"
+          >
+            <p className={styles.lead}>
+              633-78 Travelers Insurance has pavilion modeled after Travelers&apos;
+              red umbrella trademark
+            </p>
             <Image
-              src="/images/mainlineroverview/photo.jpg"
-              alt="Blackhawk Films title card, produced in cooperation with United Air Lines"
-              width={1269}
-              height={1240}
+              src="/images/mainliner/633-78.jpg"
+              alt="Travelers Insurance has pavilion modeled after Travelers' red umbrella trademark"
+              width={400}
+              height={259}
               sizes="(max-width: 720px) 100vw, 48vw"
-              className={styles.photo}
+              className={styles.slideImage}
               unoptimized
             />
+            <p className={styles.brand}>MAINLINER</p>
+            <p className={styles.series}>VACATION&nbsp;SERIES</p>
           </div>
         </div>
       </section>
