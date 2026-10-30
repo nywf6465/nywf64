@@ -13,4 +13,8 @@ export const WFFD_MENU_TOPICS: AttractionTopic[] = [
     label: "Fire Departments of City and Fair Agree on Mutual Aid Plans",
     href: "/wffd01",
   },
+  {
+    label: "World's Fair Fire Department",
+    href: "/wffd02",
+  },
 ];
