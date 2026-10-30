@@ -126,7 +126,9 @@
 /* Liberty News excerpt — legacy default face/color (Times, black) */
 .newsExcerpt {
   margin: 0 0 1.25rem;
-  padding: 0.15rem 0 0.35rem;
+  padding: 0.85rem 1rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
 }
 
 .newsExcerpt > p {
@@ -139,6 +141,10 @@
 
 .newsExcerpt > p:last-child {
   margin-bottom: 0;
+}
+
+.newsExcerpt > .figure {
+  margin-top: 0.25rem;
 }
 
 .logoWrap {

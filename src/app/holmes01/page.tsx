@@ -28,9 +28,9 @@ export default function Holmes01Page() {
       <article className={styles.article} aria-labelledby="holmes01-title">
         <header className={styles.titleBar}>
           <h1 id="holmes01-title" className={styles.titleBarMain}>
-            <em>To the Fair or Bust by Bike or by Bus!</em>
+            Essay: <em>To the Fair or Bust by Bike or by Bus!</em>
           </h1>
-          <p className={styles.titleBarByline}>... an essay by Gary Holmes</p>
+          <p className={styles.titleBarByline}>... by Gary Holmes</p>
         </header>
 
         <div className={styles.articleInner}>
@@ -44,9 +44,8 @@ export default function Holmes01Page() {
               <span className={styles.brandNy}>nywf</span>
               <span className={styles.brandWf}>64</span>
               <span className={styles.brandCom}>.com</span>. I would tell Gary
-              that it appears for good reason! He has contributed many articles,
-              pictures and even a{" "}
-              <Link href="/twrlit09">personal essay</Link> for{" "}
+              that it appears for good reason! He has contributed many articles
+              and photos to{" "}
               <span className={styles.brandNy}>nywf</span>
               <span className={styles.brandWf}>64</span>
               <span className={styles.brandCom}>.com</span>. He was one of the
@@ -60,42 +59,28 @@ export default function Holmes01Page() {
             </p>
 
             <p>
-              If any reader was fortunate to attend the &quot;Saturday in the
-              Park 2001&quot; gathering of Fair enthusiasts at Flushing Meadows
-              Park in June you would have met Gary. And one of the things that
-              you will long remember of the event is Gary serving Belgian
-              Waffles out of the back of his car in a pouring rain because he
-              wanted to recreate a special part of the Fair for those assembled,
-              despite the lousy weather. He and his cousin got up at the crack
-              of dawn to mix and bake Belgian Waffles for some 60 people.
-              That&apos;s the Gary I know: Thoughtful, creative and always with
-              something interesting up his sleeve.
+              Gary once told me that one of the local New York television
+              stations would end every evening&apos;s 11 o&apos;clock news
+              broadcast with pictures of the day&apos;s events at the Fair.
+              Little Gary would force himself to stay awake and sneak down the
+              hall so that he could watch that broadcast every night. He had to
+              be careful not to get caught as this was <em>way</em> past his
+              bedtime and he knew his parents wouldn&apos;t be pleased. And
+              that&apos;s not the only little deception he played on the family.
+              There was a rule at his house: &quot;No TV during dinner
+              Gary,&quot; which was <em>always</em> at 6PM. So it wasn&apos;t
+              beneath him to set the clocks ahead a few minutes if he knew a
+              really juicy World&apos;s Fair news tidbit was coming up on the
+              6:25 Fair Update on Chanel 4 so the family would be finished
+              eating before the broadcast! Gary told me &quot;Oh, I was nuts for
+              the Fair! I couldn&apos;t get enough of it.&quot; Little did I
+              know!
             </p>
 
             <p>
-              Now &quot;Saturday in the Park&quot; isn&apos;t the first time
-              Gary has lost sleep because of the Fair. He once told me that one
-              of the local New York television stations would end every
-              evening&apos;s 11 o&apos;clock news broadcast with pictures of the
-              day&apos;s events at the Fair. Little Gary would force himself to
-              stay awake and sneak down the hall so that he could watch that
-              broadcast every night. He had to be careful not to get caught as
-              this was <em>way</em> past his bedtime and he knew his parents
-              wouldn&apos;t be pleased. And that&apos;s not the only little
-              deception he played on the family. There was a rule at his house:
-              &quot;No TV during dinner Gary,&quot; which was <em>always</em> at
-              6PM. So it wasn&apos;t beneath him to set the clocks ahead a few
-              minutes if he knew a really juicy World&apos;s Fair news tidbit
-              was coming up on the 6:25 Fair Update on Chanel 4 so the family
-              would be finished eating before the broadcast! Gary told me
-              &quot;Oh, I was nuts for the Fair! I couldn&apos;t get enough of
-              it.&quot; Little did I know!
-            </p>
-
-            <p>
-              This past summer, I was invited to spend a couple of days with him
-              at his family&apos;s lake home in Upstate New York (actually, I
-              think I probably invited myself). It was a great time and Gary is
+              I was invited to spend a couple of days with him at his
+              family&apos;s lake home in Upstate New York (actually, I think I
+              probably invited myself). It was a great time and Gary is
               a wonderful host. He showed me some of his collection, of which he
               has a wealth of information on the Fair in articles and pictures
               clipped from newspapers and magazines at the time. Regulars to the
@@ -254,27 +239,25 @@ export default function Holmes01Page() {
                 Place, a crowning touch to the adventure which had its beginning
                 at the World&apos;s Fair through the adventurous mind of a boy.
               </p>
-            </div>
 
-            <figure className={styles.figure}>
-              <Image
-                src="/images/holmes/holmes01.jpg"
-                alt="Gary Holmes introduces Uncle Ben at Liberty High School Science Fair"
-                width={250}
-                height={276}
-                className={styles.photo}
-                unoptimized
-              />
-              <figcaption className={styles.caption}>
-                <span className={styles.captionStrong}>
-                  Gary Holmes introduces his &quot;Uncle Ben&quot; to visitors
-                  at Liberty High School Science Fair.
-                </span>{" "}
-                [Photo courtesy Liberty News]
-              </figcaption>
-            </figure>
+              <figure className={styles.figure}>
+                <Image
+                  src="/images/holmes/holmes01.jpg"
+                  alt="Gary Holmes introduces Uncle Ben at Liberty High School Science Fair"
+                  width={250}
+                  height={276}
+                  className={styles.photo}
+                  unoptimized
+                />
+                <figcaption className={styles.caption}>
+                  <span className={styles.captionStrong}>
+                    Gary Holmes introduces his &quot;Uncle Ben&quot; to visitors
+                    at Liberty High School Science Fair.
+                  </span>{" "}
+                  [Photo courtesy Liberty News]
+                </figcaption>
+              </figure>
 
-            <div className={styles.newsExcerpt}>
               <p>
                 Following the success of the Science Fair, Uncle Ben was put on
                 exhibit again in the lobby of the Liberty Office, visited daily
@@ -349,20 +332,13 @@ export default function Holmes01Page() {
             </p>
 
             <p>
-              Nearly 40 years later Gary&apos;s still enjoying the Fair as a
+              More than 50 years later Gary&apos;s still enjoying the Fair as a
               collector and enthusiast. His interests have lead him on other life
               paths away from World&apos;s Fair planning. He didn&apos;t become a
               doctor either. An attorney now, by trade, he still enjoys the
               puzzles that legal research offers and he is a world traveler with
               an enthusiasm to explore and discover and learn. Obviously that
               hasn&apos;t changed since the days of the Fair either.
-            </p>
-
-            <p>
-              Now would you like to hear the story about how Gary got to go to
-              Expo &apos;70 in Japan? I think we&apos;ll save <em>that</em> for
-              the next &quot;Saturday in the Park.&quot; I think it&apos;d be
-              great with slides and audio! Right Gary?
             </p>
           </div>
 
