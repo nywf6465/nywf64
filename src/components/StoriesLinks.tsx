@@ -32,7 +32,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "robert-moses",
         title: "My Encounter with Robert Moses",
-        href: "/stories/robert-moses",
+        href: "/rm01",
         hoverSrc: "/images/stories-hover/robert-moses.jpg",
         left: "1.423%",
         top: "4.502%",
