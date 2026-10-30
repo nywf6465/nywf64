@@ -56,6 +56,9 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  *
  * A World’s Fair Odyssey: `odysseyoverview` → Page 1;
  * `odyssey01`… → Page 2… (route number + 1) when essay pages exist.
+ *
+ * Perisphere’s Perspective: `perspectiveoverview` → Page 1;
+ * `perspective01`… → Page 2… (route number + 1) when essay pages exist.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -86,6 +89,10 @@ export function pageNumberFromPath(pathname: string): string | null {
   }
   // A World’s Fair Odyssey overview — Page 1 on the nav bar
   if (/^odysseyoverview$/i.test(segment)) {
+    return "1";
+  }
+  // Perisphere’s Perspective overview — Page 1 on the nav bar
+  if (/^perspectiveoverview$/i.test(segment)) {
     return "1";
   }
   const vmGallery = segment.match(/^vm(\d+)$/i);
@@ -120,6 +127,13 @@ export function pageNumberFromPath(pathname: string): string | null {
   const odysseyGallery = segment.match(/^odyssey(\d+)$/i);
   if (odysseyGallery) {
     const n = Number.parseInt(odysseyGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
+  const perspectiveGallery = segment.match(/^perspective(\d+)$/i);
+  if (perspectiveGallery) {
+    const n = Number.parseInt(perspectiveGallery[1], 10);
     if (Number.isFinite(n) && n >= 1) {
       return String(n + 1);
     }
