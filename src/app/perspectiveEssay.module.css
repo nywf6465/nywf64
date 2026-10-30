@@ -200,6 +200,58 @@
   text-align: left;
 }
 
+.letterFrame {
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid #999;
+  padding: 0.85rem 1rem 1rem;
+  background: #fff;
+}
+
+.letterFrameTitle {
+  margin: 0 0 0.15rem;
+  color: #9999cc;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.letterFrameBody {
+  margin: 0.85rem 0 0;
+}
+
+.letterFrameBody > p {
+  margin: 0 0 0.85rem;
+  color: #000;
+  font-size: 0.95rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.letterFrameBody > p:last-child {
+  margin-bottom: 0;
+}
+
+.letterSignBlock {
+  margin: 0.85rem 0 0;
+  line-height: 1.4;
+}
+
+.secondEssay {
+  margin-top: 2rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid #999;
+}
+
+.lbjQuote {
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  color: #000;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+
 .bannerFigure {
   margin: 0 auto 1.35rem;
   max-width: min(18.75rem, 100%);
