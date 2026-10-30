@@ -28,9 +28,9 @@ export default function Holmes01Page() {
       <article className={styles.article} aria-labelledby="holmes01-title">
         <header className={styles.titleBar}>
           <h1 id="holmes01-title" className={styles.titleBarMain}>
-            <em>To the Fair or Bust by Bike or by Bus!</em>
+            Essay: <em>To the Fair or Bust by Bike or by Bus!</em>
           </h1>
-          <p className={styles.titleBarByline}>... an essay by Gary Holmes</p>
+          <p className={styles.titleBarByline}>... by Gary Holmes</p>
         </header>
 
         <div className={styles.articleInner}>
