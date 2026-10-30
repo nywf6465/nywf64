@@ -954,6 +954,33 @@
   border: 1px solid #000;
 }
 
+.continentalLogo {
+  margin: 0 auto 1rem;
+  max-width: min(37.5rem, 100%);
+  text-align: center;
+}
+
+.continentalLogoPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.continentalTimetable {
+  margin: 1.25rem auto;
+  max-width: min(13.625rem, 100%);
+  text-align: center;
+}
+
+.continentalTimetablePhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
 .matchbookFigure {
   margin: 1.25rem auto;
   max-width: min(12.5rem, 100%);
