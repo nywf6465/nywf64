@@ -342,13 +342,6 @@ export default function Holmes01Page() {
               an enthusiasm to explore and discover and learn. Obviously that
               hasn&apos;t changed since the days of the Fair either.
             </p>
-
-            <p>
-              Now would you like to hear the story about how Gary got to go to
-              Expo &apos;70 in Japan? I think we&apos;ll save <em>that</em> for
-              the next &quot;Saturday in the Park.&quot; I think it&apos;d be
-              great with slides and audio! Right Gary?
-            </p>
           </div>
 
           <div className={styles.logoWrap}>
