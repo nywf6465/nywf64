@@ -52,6 +52,15 @@ export default function LegaciesOverviewPage() {
               <strong>Legacies</strong> of the New York World&apos;s Fair can be
               found in buildings and artifacts salvaged from the Fair.
             </p>
+            <p className={styles.body}>
+              It should be noted that this list of surviving legacies of the
+              fair was recorded prior to 2010 and some of them may no longer
+              exist. For example, the fate of the glide-a-ride vehicles is
+              currently unknown. We also know that the former Austria pavilion
+              has been destroyed by fire. If you know that a building or object
+              still exists, drop me a line using the contact feature. I will
+              update this presentation with that information.
+            </p>
           </div>
 
           <div className={styles.photoWrap}>
