@@ -110,7 +110,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "fire-and-police",
         title: "Fire & Police",
-        href: "/stories/fire-and-police",
+        href: "/wffdoverview",
         hoverSrc: "/images/stories-hover/fire-and-police.jpg",
         left: "50.534%",
         top: "6.109%",
