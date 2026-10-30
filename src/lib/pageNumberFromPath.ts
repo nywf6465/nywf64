@@ -53,6 +53,9 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  *
  * The “Edu-Cards” Set: `educardsoverview` → Page 1;
  * `educards01`… → Page 2… (route number + 1) when feature pages exist.
+ *
+ * World’s Fair Fire & Police Departments: `wffdoverview` → Page 1;
+ * `wffd01`… → Page 2… (route number + 1) when feature pages exist.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -81,6 +84,10 @@ export function pageNumberFromPath(pathname: string): string | null {
   if (/^educardsoverview$/i.test(segment)) {
     return "1";
   }
+  // World’s Fair Fire & Police Departments overview — Page 1 on the nav bar
+  if (/^wffdoverview$/i.test(segment)) {
+    return "1";
+  }
   const vmGallery = segment.match(/^vm(\d+)$/i);
   if (vmGallery) {
     const n = Number.parseInt(vmGallery[1], 10);
@@ -106,6 +113,13 @@ export function pageNumberFromPath(pathname: string): string | null {
   const educardsGallery = segment.match(/^educards(\d+)$/i);
   if (educardsGallery) {
     const n = Number.parseInt(educardsGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
+  const wffdGallery = segment.match(/^wffd(\d+)$/i);
+  if (wffdGallery) {
+    const n = Number.parseInt(wffdGallery[1], 10);
     if (Number.isFinite(n) && n >= 1) {
       return String(n + 1);
     }
