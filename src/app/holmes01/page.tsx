@@ -239,27 +239,25 @@ export default function Holmes01Page() {
                 Place, a crowning touch to the adventure which had its beginning
                 at the World&apos;s Fair through the adventurous mind of a boy.
               </p>
-            </div>
 
-            <figure className={styles.figure}>
-              <Image
-                src="/images/holmes/holmes01.jpg"
-                alt="Gary Holmes introduces Uncle Ben at Liberty High School Science Fair"
-                width={250}
-                height={276}
-                className={styles.photo}
-                unoptimized
-              />
-              <figcaption className={styles.caption}>
-                <span className={styles.captionStrong}>
-                  Gary Holmes introduces his &quot;Uncle Ben&quot; to visitors
-                  at Liberty High School Science Fair.
-                </span>{" "}
-                [Photo courtesy Liberty News]
-              </figcaption>
-            </figure>
+              <figure className={styles.figure}>
+                <Image
+                  src="/images/holmes/holmes01.jpg"
+                  alt="Gary Holmes introduces Uncle Ben at Liberty High School Science Fair"
+                  width={250}
+                  height={276}
+                  className={styles.photo}
+                  unoptimized
+                />
+                <figcaption className={styles.caption}>
+                  <span className={styles.captionStrong}>
+                    Gary Holmes introduces his &quot;Uncle Ben&quot; to visitors
+                    at Liberty High School Science Fair.
+                  </span>{" "}
+                  [Photo courtesy Liberty News]
+                </figcaption>
+              </figure>
 
-            <div className={styles.newsExcerpt}>
               <p>
                 Following the success of the Science Fair, Uncle Ben was put on
                 exhibit again in the lobby of the Liberty Office, visited daily
