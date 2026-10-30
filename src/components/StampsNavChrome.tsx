@@ -5,15 +5,15 @@ import { STAMPS_MENU_TOPICS } from "@/data/stampsMenu";
 
 /**
  * Postage Stamps of the Fair menu chrome — nav bar
- * (“EXPLORE THIS TOPIC”) + topic cards.
+ * (“EXPLORE THE STAMPS”) + topic cards.
  * Overview `/stampsoverview` shows Page 1. Use on every `stamps*` route.
  */
 export function StampsNavChrome() {
   return (
     <AttractionNavChrome
       topics={STAMPS_MENU_TOPICS}
-      exploreNoun="TOPIC"
-      menuTitle="Explore This Topic"
+      exploreLabel="EXPLORE THE STAMPS"
+      menuTitle="Explore The Stamps"
     />
   );
 }
