@@ -44,9 +44,8 @@ export default function Holmes01Page() {
               <span className={styles.brandNy}>nywf</span>
               <span className={styles.brandWf}>64</span>
               <span className={styles.brandCom}>.com</span>. I would tell Gary
-              that it appears for good reason! He has contributed many articles,
-              pictures and even a{" "}
-              <Link href="/twrlit09">personal essay</Link> for{" "}
+              that it appears for good reason! He has contributed many articles
+              and photos to{" "}
               <span className={styles.brandNy}>nywf</span>
               <span className={styles.brandWf}>64</span>
               <span className={styles.brandCom}>.com</span>. He was one of the
