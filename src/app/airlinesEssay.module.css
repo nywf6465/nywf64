@@ -278,6 +278,16 @@
   margin: 0 auto;
 }
 
+.photoGridTableTwo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  width: 100%;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
 .photoGridPhoto {
   display: block;
   width: 100%;
@@ -1052,6 +1062,10 @@
 @media (max-width: 720px) {
   .photoGridTable {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .photoGridTableTwo {
+    max-width: 100%;
   }
 }
 
