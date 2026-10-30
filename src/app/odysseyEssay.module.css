@@ -111,6 +111,18 @@
   margin: 0;
 }
 
+.gridFigure {
+  margin: 0 auto 1.35rem;
+  max-width: min(31.25rem, 100%);
+}
+
+.gridRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: start;
+}
+
 .caption {
   margin: 0.45rem 0 0;
   color: #555;
