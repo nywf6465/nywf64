@@ -59,19 +59,6 @@ export default function Holmes01Page() {
             </p>
 
             <p>
-              If any reader was fortunate to attend the &quot;Saturday in the
-              Park 2001&quot; gathering of Fair enthusiasts at Flushing Meadows
-              Park in June you would have met Gary. And one of the things that
-              you will long remember of the event is Gary serving Belgian
-              Waffles out of the back of his car in a pouring rain because he
-              wanted to recreate a special part of the Fair for those assembled,
-              despite the lousy weather. He and his cousin got up at the crack
-              of dawn to mix and bake Belgian Waffles for some 60 people.
-              That&apos;s the Gary I know: Thoughtful, creative and always with
-              something interesting up his sleeve.
-            </p>
-
-            <p>
               Now &quot;Saturday in the Park&quot; isn&apos;t the first time
               Gary has lost sleep because of the Fair. He once told me that one
               of the local New York television stations would end every
