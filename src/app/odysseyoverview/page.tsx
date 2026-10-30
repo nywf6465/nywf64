@@ -17,7 +17,7 @@ export const metadata: Metadata = {
  * Hero canvas matches ibm01 (1905×826) via OdysseyHero.
  * Nav bar shows Page 1 (`odysseyoverview` special-cased in pageNumberFromPath).
  * Body from legacy odyssey01.html Introduction.
- * PREVIOUS → /stories; NEXT hidden until essay gallery pages exist.
+ * PREVIOUS → /stories; NEXT → /odyssey01 (essay page 1 / nav Page 2).
  */
 export default function OdysseyOverviewPage() {
   return (
@@ -57,7 +57,11 @@ export default function OdysseyOverviewPage() {
         </div>
       </section>
 
-      <Nav2Bar previousHref="/stories" explicitPrevious hideNext />
+      <Nav2Bar
+        previousHref="/stories"
+        explicitPrevious
+        nextHref="/odyssey01"
+      />
     </>
   );
 }
