@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * (same stack as /wffdoverview / /odysseyoverview).
  * Hero canvas matches ibm01 (1905×826) via AirlinesHero.
  * Nav bar shows Page 1 (`airlinesoverview` special-cased in pageNumberFromPath).
- * PREVIOUS → /stories; NEXT hidden until feature pages exist.
+ * PREVIOUS → /stories; NEXT → /airlines01 (feature page 1 / nav Page 2).
  */
 export default function AirlinesOverviewPage() {
   return (
@@ -55,7 +55,11 @@ export default function AirlinesOverviewPage() {
         </div>
       </section>
 
-      <Nav2Bar previousHref="/stories" explicitPrevious hideNext />
+      <Nav2Bar
+        previousHref="/stories"
+        explicitPrevious
+        nextHref="/airlines01"
+      />
     </>
   );
 }
