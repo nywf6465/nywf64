@@ -27,11 +27,9 @@ export default function Memories01Page() {
       <article className={styles.article} aria-labelledby="memories01-title">
         <header className={styles.titleBar}>
           <h1 id="memories01-title" className={styles.titleBarMain}>
-            <em>Memories of the 1964 World&apos;s Fair</em>
+            Essay: <em>Memories of the 1964 World&apos;s Fair</em>
           </h1>
-          <p className={styles.titleBarByline}>
-            ... an essay by Katherine Khalife
-          </p>
+          <p className={styles.titleBarByline}>... by Katherine Khalife</p>
         </header>
 
         <div className={styles.articleInner}>
