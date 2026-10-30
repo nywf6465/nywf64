@@ -26,7 +26,7 @@ export default function Wffd03Page() {
       <article className={styles.article} aria-labelledby="wffd03-title">
         <header className={styles.titleBar}>
           <h1 id="wffd03-title" className={styles.titleBarMain}>
-            Page 4
+            Police Gazette Excerpts
           </h1>
         </header>
 
