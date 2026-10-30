@@ -26,8 +26,9 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  * Page notation.
  *
  * Wolfe Worldwide Films: `wolfetray` → Page 1; tray slides in legacy order
- * start at Page 2 (`wolfe79000` → Page 2). Overview `/wolfeoverview`
- * has no Page notation.
+ * start at Page 2 (`wolfe79000` → Page 2). From `/wolfe79125` onward,
+ * Page numbers run sequentially starting at Page 71 (79125 → 71, …).
+ * Overview `/wolfeoverview` has no Page notation.
  *
  * MAINLINER: `mainlinertray01` and `mainlinertray02` → Page 1.
  * `mainliner55501`…`mainliner555100` → Page 2…101.
