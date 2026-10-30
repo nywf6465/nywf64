@@ -26,9 +26,10 @@ export default function Odyssey01Page() {
       <article className={styles.article} aria-labelledby="odyssey01-title">
         <header className={styles.titleBar}>
           <h1 id="odyssey01-title" className={styles.titleBarMain}>
+            Essay:{" "}
             <em>A World&apos;s Fair Odyssey &amp; An Afternoon of Delight</em>
           </h1>
-          <p className={styles.titleBarByline}>... an essay by Craig Bavaro</p>
+          <p className={styles.titleBarByline}>... by Craig Bavaro</p>
         </header>
 
         <div className={styles.articleInner}>
