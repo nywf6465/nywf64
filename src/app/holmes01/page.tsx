@@ -334,7 +334,7 @@ export default function Holmes01Page() {
             </p>
 
             <p>
-              Nearly 40 years later Gary&apos;s still enjoying the Fair as a
+              More than 50 years later Gary&apos;s still enjoying the Fair as a
               collector and enthusiast. His interests have lead him on other life
               paths away from World&apos;s Fair planning. He didn&apos;t become a
               doctor either. An attorney now, by trade, he still enjoys the
