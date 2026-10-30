@@ -59,10 +59,10 @@ export default function Legacies03Page() {
             isn&apos;t listed on these pages, or if you have additional
             information on listings that you&apos;d like to share, please
             contact{" "}
-            <a href="mailto:webhost@nywf64.com?subject=Another%20Legacy%20to%20Report:">
+            <a href="mailto:nywf6465@gmail.com?subject=Another%20Legacy%20to%20Report:">
               Bill Young
             </a>{" "}
-            at nywf64.com. Thank you!
+            at nywf6465@gmail.com. Thank you!
           </p>
 
           <p className={styles.body}>
@@ -139,20 +139,22 @@ export default function Legacies03Page() {
             />
           </figure>
 
-          <p className={styles.body}>
-            <a
-              href="http://www.bbqproductions.com/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              BBQ Productions&apos; website
-            </a>{" "}
-            lists a link to the Mankato State University Website where they
-            claim to have a World&apos;s Fair Fountain. It appears that it
-            might be a re-arrangement of the Fountains of the Fair. Perhaps a
-            visitor can verify what fountain it is. Elizabeth Klug - April 26,
-            2000
-          </p>
+          <figure className={styles.figure}>
+            <Image
+              src="/images/legacies03/fountain-of-progress-north.jpg"
+              alt="Fountain of Progress North at Minnesota State University, Mankato"
+              width={1206}
+              height={861}
+              className={styles.photo}
+              unoptimized
+            />
+            <figcaption className={styles.caption}>
+              The Fountain of Progress North was relocated to the Minnesota
+              State University at Mankato campus and was installed there in
+              1969. The sculpture in the center of the fountain was added in
+              1975.
+            </figcaption>
+          </figure>
           <p className={styles.body}>
             Visitor Dot Condon writes &quot;I don&apos;t know if it&apos;s still
             there, but the front of the Ireland Pavilion was used for the front
@@ -170,8 +172,14 @@ export default function Legacies03Page() {
             Bay Area&apos; along with the Marina and Shea Stadium. I believe the
             Bounty only exhibited for the &apos;64 season and had sailed on by
             the time &apos;65 rolled around. It had several owners through the
-            years including Ted Turner. Currently it is anchored and permanently
-            based in St. Petersburg, FL.&quot; - May 1, 2000
+            years including Ted Turner.&quot; - May 1, 2000
+          </p>
+          <p className={styles.body}>
+            <strong>Fate:</strong> The ship was featured in later films like{" "}
+            <em>Pirates of the Caribbean: Dead Man&apos;s Chest</em> before it
+            tragically foundered and sank off the coast of North Carolina during
+            Hurricane Sandy on October 29, 2012, claiming the lives of Captain
+            Robin Walbridge and crew member Claudene Christian.
           </p>
           <p className={styles.body}>
             Mr. Brennan also had this interesting observation on an unusual Fair

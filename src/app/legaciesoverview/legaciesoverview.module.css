@@ -49,6 +49,10 @@
   line-height: 1.45;
 }
 
+.body + .body {
+  margin-top: 0.85rem;
+}
+
 .body strong {
   font-weight: 700;
 }

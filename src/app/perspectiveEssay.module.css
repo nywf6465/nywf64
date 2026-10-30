@@ -1,0 +1,323 @@
+/* Perisphere’s Perspective — essay body (shared hero via PerspectiveHero) */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.essayHeading {
+  margin: 0 0 0.35rem;
+  color: #000099;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.35rem, 3vw, 1.65rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.essayByline {
+  margin: 0 0 0.75rem;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.essayRule {
+  display: block;
+  width: 100%;
+  height: 1px;
+  margin: 0 0 1.15rem;
+  border: 0;
+  background: #999;
+}
+
+.body > p {
+  margin: 0 0 1rem;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.body > p:last-child {
+  margin-bottom: 0;
+}
+
+.body a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.body a:visited {
+  color: #999999;
+}
+
+.lead {
+  font-size: 1.05rem;
+}
+
+.epigraph {
+  margin: 0 0 0.35rem;
+  color: #000;
+  font-size: 1rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.epigraphAttr {
+  margin: 0 0 1rem;
+  color: #000;
+  font-size: 0.92rem;
+  font-style: italic;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.sectionHead {
+  margin: 1.35rem 0 0.85rem;
+  color: #000;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  line-height: 1.3;
+}
+
+.letter {
+  margin: 0 auto 1.25rem;
+  max-width: 28rem;
+  padding: 0.85rem 1rem 1rem;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
+  color: #000;
+  font-style: italic;
+  line-height: 1.5;
+}
+
+.letterPlace {
+  margin: 0;
+  font-style: italic;
+}
+
+.letterDate {
+  margin: 0.85rem 0 0.85rem;
+  text-align: right;
+  font-style: italic;
+}
+
+.letterBody {
+  margin: 0 0 0.75rem;
+  font-style: italic;
+}
+
+.letterSign {
+  margin: 0.85rem 0 0;
+  font-style: italic;
+}
+
+.letterName {
+  margin: 0.15rem 0 0;
+  font-style: normal;
+  font-weight: 700;
+}
+
+.verse {
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  color: #000;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+  white-space: pre-line;
+}
+
+.closingQuote {
+  margin: 1.25rem 0 1rem;
+  padding: 0 1.5rem;
+  color: #000;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.copyright {
+  margin: 0.35rem 0 1rem;
+  color: #555;
+  font-size: 0.72rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.letterFrame {
+  margin: 1.25rem 0 1.5rem;
+  border: 1px solid #999;
+  padding: 0.85rem 1rem 1rem;
+  background: #fff;
+}
+
+.letterFrameTitle {
+  margin: 0 0 0.15rem;
+  color: #9999cc;
+  font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.letterFrameBody {
+  margin: 0.85rem 0 0;
+}
+
+.letterFrameBody > p {
+  margin: 0 0 0.85rem;
+  color: #000;
+  font-size: 0.95rem;
+  font-style: normal;
+  line-height: 1.5;
+}
+
+.letterFrameBody > p:last-child {
+  margin-bottom: 0;
+}
+
+.letterSignBlock {
+  margin: 0.85rem 0 0;
+  line-height: 1.4;
+}
+
+.secondEssay {
+  margin-top: 2rem;
+  padding-top: 0.25rem;
+  border-top: 1px solid #999;
+}
+
+.lbjQuote {
+  margin: 0 0 1rem;
+  padding-left: 1rem;
+  color: #000;
+  font-size: 1rem;
+  font-style: italic;
+  line-height: 1.55;
+}
+
+.bannerFigure {
+  margin: 0 auto 1.35rem;
+  max-width: min(18.75rem, 100%);
+  text-align: center;
+}
+
+.bannerPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.source {
+  margin: 0.4rem 0 0;
+  color: #555;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.singleFigure {
+  margin: 0 auto 1.35rem;
+  max-width: min(28.125rem, 100%);
+}
+
+.singlePhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.pairFigure {
+  margin: 0 auto 1.35rem;
+  max-width: min(31.25rem, 100%);
+}
+
+.pairRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.5rem;
+  align-items: start;
+}
+
+.pairPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.caption {
+  margin: 0.45rem 0 0;
+  color: #555;
+  font-size: 0.72rem;
+  font-weight: 400;
+  font-style: italic;
+  line-height: 1.35;
+  text-align: left;
+}
+
+@media (max-width: 520px) {
+  .pairRow {
+    grid-template-columns: 1fr;
+  }
+}

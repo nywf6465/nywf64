@@ -32,7 +32,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "robert-moses",
         title: "My Encounter with Robert Moses",
-        href: "/stories/robert-moses",
+        href: "/rm01",
         hoverSrc: "/images/stories-hover/robert-moses.jpg",
         left: "1.423%",
         top: "4.502%",
@@ -42,7 +42,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "memories",
         title: "Memories of the 1964 World\u2019s Fair",
-        href: "/stories/memories",
+        href: "/memories01",
         hoverSrc: "/images/stories-hover/memories.jpg",
         left: "50.474%",
         top: "4.502%",
@@ -52,7 +52,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "to-the-fair-or-bust",
         title: "To the Fair or Bust",
-        href: "/stories/to-the-fair-or-bust",
+        href: "/holmes01",
         hoverSrc: "/images/stories-hover/to-the-fair-or-bust.jpg",
         left: "1.423%",
         top: "36.120%",
@@ -62,7 +62,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "worlds-fair-odyssey",
         title: "A World\u2019s Fair Odyssey",
-        href: "/stories/worlds-fair-odyssey",
+        href: "/odysseyoverview",
         hoverSrc: "/images/stories-hover/worlds-fair-odyssey.jpg",
         left: "50.474%",
         top: "36.120%",
@@ -72,7 +72,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "hunt-for-international-exhibits",
         title: "The Hunt for International Exhibits",
-        href: "/stories/hunt-for-international-exhibits",
+        href: "/intpar01",
         hoverSrc: "/images/stories-hover/hunt-for-international-exhibits.jpg",
         left: "1.423%",
         top: "65.916%",
@@ -82,7 +82,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "new-yorks-sacred-meadow",
         title: "New York\u2019s Sacred Meadow",
-        href: "/stories/new-yorks-sacred-meadow",
+        href: "/weshou15",
         hoverSrc: "/images/stories-hover/new-yorks-sacred-meadow.jpg",
         left: "50.415%",
         top: "66.024%",
@@ -100,7 +100,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "fairs-and-flushing-meadows",
         title: "Fairs and Flushing Meadows",
-        href: "/stories/fairs-and-flushing-meadows",
+        href: "/perspectiveoverview",
         hoverSrc: "/images/stories-hover/fairs-and-flushing-meadows.jpg",
         left: "1.186%",
         top: "6.109%",
@@ -110,7 +110,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "fire-and-police",
         title: "Fire & Police",
-        href: "/stories/fire-and-police",
+        href: "/wffdoverview",
         hoverSrc: "/images/stories-hover/fire-and-police.jpg",
         left: "50.534%",
         top: "6.109%",
