@@ -47,17 +47,7 @@ export default function Perspective02Page() {
             <p className={styles.essayHeading}>Camelot at Flushing Meadows:</p>
             <p className={styles.essayHeading}>The Kennedys and the Fair</p>
             <p className={styles.essayByline}>
-              by David Oats, November 22, 2003
-            </p>
-
-            <p className={styles.epigraph}>
-              &quot;We hope that you will bring us luck - the luck of the
-              Kennedys and the United States of America.&quot;
-            </p>
-            <p className={styles.epigraphAttr}>
-              - Mayor Robert F. Wagner to President John F. Kennedy at the
-              Groundbreaking for the United States Pavilion for the 1964-1965
-              New York World&apos;s Fair, Flushing Meadows, December 14, 1962
+              by David Oats, September 23, 2003
             </p>
             <hr className={styles.essayRule} />
 
