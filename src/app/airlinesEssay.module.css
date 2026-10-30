@@ -600,6 +600,106 @@
   text-align: left;
 }
 
+.easternCopy p {
+  margin: 0 0 0.85rem;
+  color: #0000cc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.easternCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.easternAdBlock {
+  margin: 0.75rem auto 0.35rem;
+  max-width: min(30rem, 100%);
+  text-align: center;
+}
+
+.easternAdTitle {
+  margin: 0 0 0.65rem;
+  color: #ff3300;
+  font-size: clamp(1.15rem, 2.6vw, 1.45rem);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.easternAdBody {
+  margin: 0 0 0.5rem;
+  color: #ff3300;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.easternAdNote {
+  margin: 0 0 0.75rem;
+  color: #ff3300;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.easternAdPhoto {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.rulerCaption {
+  margin: 1rem 0 0.35rem;
+  color: #0000cc;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.rulerFigure {
+  margin: 0 0 0.85rem;
+  max-width: min(30rem, 100%);
+}
+
+.rulerPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.pavilionRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: center;
+  margin: 0 0 0.5rem;
+}
+
+.pavilionThumb {
+  display: block;
+  width: auto;
+  max-width: min(9.375rem, 40vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.pavilionCopy {
+  margin: 0;
+  color: #0000cc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.pavilionCopy a {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
 .matchbookFigure {
   margin: 1.25rem auto;
   max-width: min(12.5rem, 100%);
@@ -719,7 +819,8 @@
   .chicagoRow,
   .jacketPair,
   .checkListRow,
-  .pamphletCols {
+  .pamphletCols,
+  .pavilionRow {
     grid-template-columns: 1fr;
   }
 
@@ -728,7 +829,8 @@
   .adPhoto,
   .treasurePhoto,
   .chicagoCover,
-  .checkListCover {
+  .checkListCover,
+  .pavilionThumb {
     max-width: min(13.3rem, 100%);
     justify-self: start;
   }
