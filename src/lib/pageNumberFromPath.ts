@@ -62,6 +62,9 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  *
  * World’s Fair Fire & Police Departments: `wffdoverview` → Page 1;
  * `wffd01`… → Page 2… (route number + 1) when feature pages exist.
+ *
+ * Airlines & The Fair: `airlinesoverview` → Page 1;
+ * `airlines01`… → Page 2… (route number + 1) when feature pages exist.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -100,6 +103,10 @@ export function pageNumberFromPath(pathname: string): string | null {
   }
   // World’s Fair Fire & Police Departments overview — Page 1 on the nav bar
   if (/^wffdoverview$/i.test(segment)) {
+    return "1";
+  }
+  // Airlines & The Fair overview — Page 1 on the nav bar
+  if (/^airlinesoverview$/i.test(segment)) {
     return "1";
   }
   const vmGallery = segment.match(/^vm(\d+)$/i);
@@ -148,6 +155,13 @@ export function pageNumberFromPath(pathname: string): string | null {
   const wffdGallery = segment.match(/^wffd(\d+)$/i);
   if (wffdGallery) {
     const n = Number.parseInt(wffdGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
+  const airlinesGallery = segment.match(/^airlines(\d+)$/i);
+  if (airlinesGallery) {
+    const n = Number.parseInt(airlinesGallery[1], 10);
     if (Number.isFinite(n) && n >= 1) {
       return String(n + 1);
     }

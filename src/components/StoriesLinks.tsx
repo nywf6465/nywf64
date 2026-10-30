@@ -130,7 +130,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "airlines",
         title: "Airlines",
-        href: "/stories/airlines",
+        href: "/airlinesoverview",
         hoverSrc: "/images/stories-hover/airlines.jpg",
         left: "50.534%",
         top: "36.120%",
