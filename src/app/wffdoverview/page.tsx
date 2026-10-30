@@ -16,7 +16,7 @@ export const metadata: Metadata = {
  * prototype (same stack as /educardsoverview / /perspectiveoverview).
  * Hero canvas matches ibm01 (1905×826) via WffdHero.
  * Nav bar shows Page 1 (`wffdoverview` special-cased in pageNumberFromPath).
- * PREVIOUS → /stories.
+ * PREVIOUS → /stories; NEXT → /wffd01 (feature page 1 / nav Page 2).
  */
 export default function WffdOverviewPage() {
   return (
@@ -59,7 +59,12 @@ export default function WffdOverviewPage() {
         </div>
       </section>
 
-      <Nav2Bar previousHref="/stories" explicitPrevious hideNext />
+      <Nav2Bar
+        previousHref="/stories"
+        explicitPrevious
+        nextHref="/wffd01"
+      />
     </>
   );
 }
+
