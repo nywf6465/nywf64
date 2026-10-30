@@ -14,4 +14,8 @@ export const AIRLINES_MENU_TOPICS: AttractionTopic[] = [
     href: "/airlines01",
     parts: [{ text: "To the FAir", italic: true }],
   },
+  {
+    label: "Northwest Orient Airlines",
+    href: "/airlines02",
+  },
 ];

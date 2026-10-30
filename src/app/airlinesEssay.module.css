@@ -140,13 +140,134 @@
   line-height: 1.35;
 }
 
+.sourceCenter {
+  margin: 0 0 1.25rem;
+  color: #333;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.carrierRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1rem;
+}
+
+.carrierCover {
+  display: block;
+  width: auto;
+  max-width: min(13.3rem, 42vw);
+  height: auto;
+  margin: 0;
+}
+
+.carrierCopy {
+  min-width: 0;
+}
+
+.carrierMap {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 0.85rem;
+}
+
+.carrierCopy p {
+  margin: 0 0 0.85rem;
+  color: #000099;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.carrierCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.note {
+  margin: 0 0 1.25rem;
+  color: #000099;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.brandNy {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.brandWf {
+  color: #ff3300;
+  font-weight: 700;
+}
+
+.brandCom {
+  color: #0066cc;
+  font-size: 0.85em;
+}
+
+.adRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1.1rem;
+  align-items: start;
+  margin: 0 0 0.5rem;
+}
+
+.adPhoto {
+  display: block;
+  width: auto;
+  max-width: min(15.45rem, 45vw);
+  height: auto;
+  margin: 0;
+}
+
+.adCopy {
+  min-width: 0;
+}
+
+.adHeadline {
+  margin: 0 0 0.85rem;
+  color: #ff3300;
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.adHeadline u {
+  text-decoration: underline;
+}
+
+.adBody {
+  margin: 0;
+  color: #666699;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.adBody p {
+  margin: 0 0 0.65rem;
+}
+
+.adBody p:last-child {
+  margin-bottom: 0;
+}
+
 @media (max-width: 520px) {
-  .timetableRow {
+  .timetableRow,
+  .carrierRow,
+  .adRow {
     grid-template-columns: 1fr;
   }
 
-  .timetablePhoto {
-    max-width: min(10.75rem, 100%);
+  .timetablePhoto,
+  .carrierCover,
+  .adPhoto {
+    max-width: min(13.3rem, 100%);
     justify-self: start;
   }
 }
