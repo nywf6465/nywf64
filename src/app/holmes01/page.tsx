@@ -59,23 +59,22 @@ export default function Holmes01Page() {
             </p>
 
             <p>
-              Now &quot;Saturday in the Park&quot; isn&apos;t the first time
-              Gary has lost sleep because of the Fair. He once told me that one
-              of the local New York television stations would end every
-              evening&apos;s 11 o&apos;clock news broadcast with pictures of the
-              day&apos;s events at the Fair. Little Gary would force himself to
-              stay awake and sneak down the hall so that he could watch that
-              broadcast every night. He had to be careful not to get caught as
-              this was <em>way</em> past his bedtime and he knew his parents
-              wouldn&apos;t be pleased. And that&apos;s not the only little
-              deception he played on the family. There was a rule at his house:
-              &quot;No TV during dinner Gary,&quot; which was <em>always</em> at
-              6PM. So it wasn&apos;t beneath him to set the clocks ahead a few
-              minutes if he knew a really juicy World&apos;s Fair news tidbit
-              was coming up on the 6:25 Fair Update on Chanel 4 so the family
-              would be finished eating before the broadcast! Gary told me
-              &quot;Oh, I was nuts for the Fair! I couldn&apos;t get enough of
-              it.&quot; Little did I know!
+              Gary once told me that one of the local New York television
+              stations would end every evening&apos;s 11 o&apos;clock news
+              broadcast with pictures of the day&apos;s events at the Fair.
+              Little Gary would force himself to stay awake and sneak down the
+              hall so that he could watch that broadcast every night. He had to
+              be careful not to get caught as this was <em>way</em> past his
+              bedtime and he knew his parents wouldn&apos;t be pleased. And
+              that&apos;s not the only little deception he played on the family.
+              There was a rule at his house: &quot;No TV during dinner
+              Gary,&quot; which was <em>always</em> at 6PM. So it wasn&apos;t
+              beneath him to set the clocks ahead a few minutes if he knew a
+              really juicy World&apos;s Fair news tidbit was coming up on the
+              6:25 Fair Update on Chanel 4 so the family would be finished
+              eating before the broadcast! Gary told me &quot;Oh, I was nuts for
+              the Fair! I couldn&apos;t get enough of it.&quot; Little did I
+              know!
             </p>
 
             <p>
