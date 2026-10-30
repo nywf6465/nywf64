@@ -62,7 +62,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "worlds-fair-odyssey",
         title: "A World\u2019s Fair Odyssey",
-        href: "/stories/worlds-fair-odyssey",
+        href: "/odysseyoverview",
         hoverSrc: "/images/stories-hover/worlds-fair-odyssey.jpg",
         left: "50.474%",
         top: "36.120%",

@@ -53,6 +53,9 @@ import { WOLFE_SLIDE_IDS } from "@/data/wolfeSlides";
  *
  * The “Edu-Cards” Set: `educardsoverview` → Page 1;
  * `educards01`… → Page 2… (route number + 1) when feature pages exist.
+ *
+ * A World’s Fair Odyssey: `odysseyoverview` → Page 1;
+ * `odyssey01`… → Page 2… (route number + 1) when essay pages exist.
  */
 export function pageNumberFromPath(pathname: string): string | null {
   const segment = pathname.replace(/\/+$/, "").split("/").pop() ?? "";
@@ -81,6 +84,10 @@ export function pageNumberFromPath(pathname: string): string | null {
   if (/^educardsoverview$/i.test(segment)) {
     return "1";
   }
+  // A World’s Fair Odyssey overview — Page 1 on the nav bar
+  if (/^odysseyoverview$/i.test(segment)) {
+    return "1";
+  }
   const vmGallery = segment.match(/^vm(\d+)$/i);
   if (vmGallery) {
     const n = Number.parseInt(vmGallery[1], 10);
@@ -106,6 +113,13 @@ export function pageNumberFromPath(pathname: string): string | null {
   const educardsGallery = segment.match(/^educards(\d+)$/i);
   if (educardsGallery) {
     const n = Number.parseInt(educardsGallery[1], 10);
+    if (Number.isFinite(n) && n >= 1) {
+      return String(n + 1);
+    }
+  }
+  const odysseyGallery = segment.match(/^odyssey(\d+)$/i);
+  if (odysseyGallery) {
+    const n = Number.parseInt(odysseyGallery[1], 10);
     if (Number.isFinite(n) && n >= 1) {
       return String(n + 1);
     }
