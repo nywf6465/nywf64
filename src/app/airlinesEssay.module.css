@@ -257,17 +257,287 @@
   margin-bottom: 0;
 }
 
+.articleInnerWide {
+  width: min(56.25rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.photoGrid {
+  margin: 0 0 0.35rem;
+}
+
+.photoGridTable {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 0 auto;
+}
+
+.photoGridPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.sourceLeft {
+  margin: 0 0 1.25rem;
+  color: #000;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.twaCopy p {
+  margin: 0 0 0.85rem;
+  color: #ff3300;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.twaCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.scheduleWrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 0 0 0.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scheduleTable {
+  width: 100%;
+  min-width: 37.5rem;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  margin: 0 auto 0.35rem;
+  background: #fff;
+}
+
+.scheduleTable th,
+.scheduleTable td {
+  border: 1px solid #999;
+  padding: 0.2rem 0.25rem;
+  vertical-align: top;
+  font-size: 0.65rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.scheduleTitle {
+  color: #003399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  text-align: left;
+}
+
+.scheduleFare {
+  color: #666699;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.scheduleLabel {
+  color: #666699;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.scheduleHead {
+  color: #003399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.scheduleNum {
+  color: #003399;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.scheduleTime {
+  color: #666699;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.scheduleTimeBold {
+  color: #003399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.scheduleFoot {
+  margin: 0 0 0.25rem;
+  color: #666699;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.scheduleStation {
+  white-space: normal;
+  min-width: 7.5rem;
+  max-width: 9.5rem;
+}
+
+.chicagoRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1rem;
+}
+
+.chicagoCover {
+  display: block;
+  width: auto;
+  max-width: min(11.625rem, 42vw);
+  height: auto;
+  margin: 0;
+}
+
+.matchbookFigure {
+  margin: 1.25rem auto;
+  max-width: min(12.5rem, 100%);
+  text-align: center;
+}
+
+.matchbookPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.adFullFigure {
+  margin: 0 auto 0.35rem;
+  max-width: min(34.2rem, 100%);
+}
+
+.adFullPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.framedFigure {
+  margin: 1.25rem auto;
+  max-width: min(13.75rem, 100%);
+  border: 1px solid #000;
+  line-height: 0;
+}
+
+.framedPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.rule {
+  display: block;
+  width: min(37.5rem, 100%);
+  height: 1px;
+  margin: 0 auto 1.35rem;
+  border: 0;
+  background: #999;
+}
+
+.treasureTitle {
+  margin: 0 0 0.15rem;
+  color: #ff3300;
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.treasureBy {
+  margin: 0 0 0.85rem;
+  color: #ff3300;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.treasureRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: end;
+  margin: 0 0 1rem;
+}
+
+.treasurePhoto {
+  display: block;
+  width: auto;
+  max-width: min(13.45rem, 45vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.treasureCopy p {
+  margin: 0 0 0.85rem;
+  color: #ff0000;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.treasureCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.treasureBody p {
+  margin: 0 0 1rem;
+  color: #ff0000;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.treasureBody p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .photoGridTable {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (max-width: 520px) {
   .timetableRow,
   .carrierRow,
-  .adRow {
+  .adRow,
+  .treasureRow,
+  .chicagoRow {
     grid-template-columns: 1fr;
   }
 
   .timetablePhoto,
   .carrierCover,
-  .adPhoto {
+  .adPhoto,
+  .treasurePhoto,
+  .chicagoCover {
     max-width: min(13.3rem, 100%);
     justify-self: start;
+  }
+
+  .photoGridTable {
+    grid-template-columns: 1fr;
   }
 }
