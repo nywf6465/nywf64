@@ -14,4 +14,8 @@ export const PERSPECTIVE_MENU_TOPICS: AttractionTopic[] = [
     label: "A Moment in Time",
     href: "/perspective01",
   },
+  {
+    label: "Camelot at Flushing Meadows",
+    href: "/perspective02",
+  },
 ];

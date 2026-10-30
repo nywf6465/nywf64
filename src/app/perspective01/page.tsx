@@ -196,7 +196,7 @@ Of years that soon get old."`}
             <figure className={styles.singleFigure}>
               <Image
                 src="/images/perspective01/doats05.jpg"
-                alt="Koch & Time Capsule replica"
+                alt="Koch and Time Capsule replica"
                 width={420}
                 height={300}
                 className={styles.singlePhoto}
