@@ -17,4 +17,8 @@ export const WFFD_MENU_TOPICS: AttractionTopic[] = [
     label: "World's Fair Fire Department",
     href: "/wffd02",
   },
+  {
+    label: "One of the Finest Days",
+    href: "/wffd03",
+  },
 ];

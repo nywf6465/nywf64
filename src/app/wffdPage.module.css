@@ -326,8 +326,136 @@
   margin: 0 0 0.35rem;
 }
 
+.essayLogoBlock {
+  margin: 0 0 1rem;
+  text-align: center;
+}
+
+.essayLogo {
+  display: block;
+  width: auto;
+  max-width: 8.25rem;
+  height: auto;
+  margin: 0 auto 0.65rem;
+}
+
+.essayLeadArial {
+  margin: 0 0 1rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: clamp(1.1rem, 2.5vw, 1.35rem);
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.essayBodyArial {
+  margin: 0 0 1.5rem;
+}
+
+.essayBodyArial > p {
+  margin: 0 0 1rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.essayBodyArial > p:last-child {
+  margin-bottom: 0;
+}
+
+.essayListArial {
+  margin: 0 0 1rem;
+  padding-left: 1.35rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.essayListArial li {
+  margin: 0 0 0.55rem;
+}
+
+.essayListArial li:last-child {
+  margin-bottom: 0;
+}
+
+.synopsisLead {
+  margin: 0 0 0.85rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.45;
+  text-align: center;
+}
+
+.synopsisColumns {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem 1.1rem;
+  align-items: start;
+  margin: 0 0 1.25rem;
+}
+
+.synopsisCol {
+  min-width: 0;
+}
+
+.synopsisCol > p {
+  margin: 0;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.quoteLead {
+  margin: 0 0 0.85rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.essayQuote {
+  margin: 0 auto 1.35rem;
+  max-width: 32rem;
+  padding: 0 1rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+  text-align: left;
+}
+
+.webmasterNote {
+  margin: 1.25rem auto 0;
+  max-width: 30rem;
+  padding: 0.55rem 0.75rem;
+  border: 1px solid #000;
+  box-sizing: border-box;
+}
+
+.webmasterNote p {
+  margin: 0;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
 @media (max-width: 640px) {
   .columns {
+    grid-template-columns: 1fr;
+  }
+
+  .synopsisColumns {
     grid-template-columns: 1fr;
   }
 }
