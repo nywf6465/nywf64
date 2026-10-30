@@ -6,11 +6,12 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const HOLMES_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "To the Fair or Bust by Bike or by Bus! ... an essay by Gary Holmes",
+    label: "Essay: To the Fair or Bust by Bike or by Bus! ... by Gary Holmes",
     href: "/holmes01",
     parts: [
+      { text: "Essay: " },
       { text: "To the Fair or Bust by Bike or by Bus!", italic: true },
-      { text: " ... an essay by Gary Holmes" },
+      { text: " ... by Gary Holmes" },
     ],
   },
 ];
