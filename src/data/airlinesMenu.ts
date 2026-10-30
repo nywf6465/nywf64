@@ -38,4 +38,8 @@ export const AIRLINES_MENU_TOPICS: AttractionTopic[] = [
     label: "American Airlines",
     href: "/airlines07",
   },
+  {
+    label: "Delta Air Lines",
+    href: "/airlines08",
+  },
 ];
