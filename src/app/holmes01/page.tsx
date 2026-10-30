@@ -78,9 +78,9 @@ export default function Holmes01Page() {
             </p>
 
             <p>
-              This past summer, I was invited to spend a couple of days with him
-              at his family&apos;s lake home in Upstate New York (actually, I
-              think I probably invited myself). It was a great time and Gary is
+              I was invited to spend a couple of days with him at his
+              family&apos;s lake home in Upstate New York (actually, I think I
+              probably invited myself). It was a great time and Gary is
               a wonderful host. He showed me some of his collection, of which he
               has a wealth of information on the Fair in articles and pictures
               clipped from newspapers and magazines at the time. Regulars to the
