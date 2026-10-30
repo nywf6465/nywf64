@@ -100,7 +100,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "fairs-and-flushing-meadows",
         title: "Fairs and Flushing Meadows",
-        href: "/stories/fairs-and-flushing-meadows",
+        href: "/perspectiveoverview",
         hoverSrc: "/images/stories-hover/fairs-and-flushing-meadows.jpg",
         left: "1.186%",
         top: "6.109%",
