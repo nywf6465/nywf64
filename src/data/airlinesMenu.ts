@@ -10,9 +10,13 @@ export const AIRLINES_MENU_TOPICS: AttractionTopic[] = [
     href: "/airlinesoverview",
   },
   {
-    label: "To the FAir",
+    label: "Essay: To the FAir ... by Bill Young",
     href: "/airlines01",
-    parts: [{ text: "To the FAir", italic: true }],
+    parts: [
+      { text: "Essay: " },
+      { text: "To the FAir", italic: true },
+      { text: " ... by Bill Young" },
+    ],
   },
   {
     label: "Northwest Orient Airlines",

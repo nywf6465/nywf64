@@ -26,11 +26,9 @@ export default function Airlines01Page() {
       <article className={styles.article} aria-labelledby="airlines01-title">
         <header className={styles.titleBar}>
           <h1 id="airlines01-title" className={styles.titleBarMain}>
-            <em>To the FAir</em>
+            Essay: <em>To the FAir</em>
           </h1>
-          <p className={styles.titleBarByline}>
-            ... an essay by Bill Young
-          </p>
+          <p className={styles.titleBarByline}>... by Bill Young</p>
         </header>
 
         <div className={styles.articleInner}>
