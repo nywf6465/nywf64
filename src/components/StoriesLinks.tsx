@@ -150,7 +150,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "detailed-models",
         title: "Detailed Models",
-        href: "/stories/detailed-models",
+        href: "/amex12",
         hoverSrc: "/images/stories-hover/detailed-models.jpg",
         left: "50.474%",
         top: "66.024%",
