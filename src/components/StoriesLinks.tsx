@@ -178,7 +178,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "almost-fond-farewell",
         title: "Almost Fond Farewell",
-        href: "/stories/almost-fond-farewell",
+        href: "/farewell05",
         hoverSrc: "/images/stories-hover/almost-fond-farewell.jpg",
         left: "50.456%",
         top: "4.980%",
