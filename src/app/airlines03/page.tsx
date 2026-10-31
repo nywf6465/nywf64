@@ -11,15 +11,6 @@ export const metadata: Metadata = {
     "TWA Flight Center, Fair helicopter service, and Bill Young’s treasured TWA collectible — on nywf64.com.",
 };
 
-const GRID_PHOTOS = [
-  "airlines43.1.jpg",
-  "airlines43.2.jpg",
-  "airlines43.3.jpg",
-  "airlines43.4.jpg",
-  "airlines43.5.jpg",
-  "airlines43.6.jpg",
-] as const;
-
 /** Morning (gray Times) vs afternoon (bold blue Arial) — matches legacy timetable. */
 function TimeCell({
   time,
@@ -55,24 +46,19 @@ export default function Airlines03Page() {
         </header>
 
         <div className={styles.articleInnerWide}>
-          <div className={styles.photoGrid}>
-            <div className={styles.photoGridTable}>
-              {GRID_PHOTOS.map((file) => (
-                <Image
-                  key={file}
-                  src={`/images/airlines03/${file}`}
-                  alt=""
-                  width={300}
-                  height={240}
-                  className={styles.photoGridPhoto}
-                  unoptimized
-                />
-              ))}
-            </div>
-            <p className={styles.sourceLeft}>
-              SOURCE: Souvenir Map &amp; Guide
-            </p>
-          </div>
+          <figure className={styles.combinedFigure}>
+            <Image
+              src="/images/airlines03/airlines43.jpg"
+              alt="TWA Your Gateway to the Fair souvenir map advertisement"
+              width={900}
+              height={480}
+              className={styles.combinedPhoto}
+              unoptimized
+            />
+          </figure>
+          <p className={styles.sourceLeft}>
+            SOURCE: Souvenir Map &amp; Guide
+          </p>
 
           <div className={styles.carrierRow}>
             <Image
