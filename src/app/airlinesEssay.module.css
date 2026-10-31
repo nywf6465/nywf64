@@ -269,6 +269,20 @@
   margin: 0 0 0.35rem;
 }
 
+.combinedFigure {
+  margin: 0 auto 0.35rem;
+  max-width: min(56.25rem, 100%);
+  line-height: 0;
+}
+
+.combinedPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
 .photoGridTable {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
