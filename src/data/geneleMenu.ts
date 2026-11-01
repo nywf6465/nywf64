@@ -102,9 +102,11 @@ export const GENELE_MENU_TOPICS: AttractionTopic[] = [
     href: "/genele21",
   },
   {
-    label: "Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow",
+    label:
+      "Essay: Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow",
     href: "/genele22",
     parts: [
+      { text: "Essay: " },
       {
         text: "Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow",
         italic: true,
