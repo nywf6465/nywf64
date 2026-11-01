@@ -319,10 +319,10 @@ export default function Airlines03Page() {
                 a whopping $754 for First Class travel.
               </p>
               <p>
-                TWA has faded into history along with the Fair having recently
-                been acquired by American Airlines. Their magnificent Flight
-                Center sits abandoned at Kennedy Airport, its fate uncertain. A
-                ghostly reminder of the Space Age.
+                TWA has faded into history along with the Fair, having been
+                acquired by American Airlines. Its magnificent Flight Center at
+                Kennedy Airport has become a spectacular hotel with many exhibits
+                celebrating the history of this legendary airline.
               </p>
             </div>
             <Image
