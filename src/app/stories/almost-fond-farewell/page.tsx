@@ -1,6 +1,6 @@
 import { redirect } from "next/navigation";
 
-/** Legacy Stories stub — opens `/farewell05`. */
+/** Legacy Stories stub — essay lives at `/farewell04`. */
 export default function Page() {
-  redirect("/farewell05");
+  redirect("/farewell04");
 }
