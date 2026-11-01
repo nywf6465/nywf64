@@ -48,8 +48,7 @@ export default function Airlines04Page() {
             </div>
             <div className={styles.twaCopy}>
               <p>
-                Today&apos;s giant US Airways had humble origins in Allegheny
-                Airlines. The majority of Fair visitors would come from East
+                Giant US Airways had humble origins in Allegheny Airlines. The majority of Fair visitors would come from East
                 Coast cities, the market Allegheny primarily served. This
                 regional carrier, known fondly to its customers as &quot;Agony
                 Air,&quot; promoted the Fair just like the national carriers.
