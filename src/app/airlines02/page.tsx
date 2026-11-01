@@ -51,7 +51,7 @@ export default function Airlines02Page() {
               />
               <p>
                 In 1964, Northwest Airlines was far from the globe-girdling
-                giant that it is today as this route map shows. Considered a
+                giant that it became as this route map shows. Considered a
                 trunk carrier, it was a major player in the New
                 York/Midwest/Pacific Northwest/Far East market. Northwest hosted
                 an exhibit at the Seattle World&apos;s Fair in 1962 but chose
