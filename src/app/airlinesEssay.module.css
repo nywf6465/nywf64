@@ -981,6 +981,19 @@
   margin: 0;
 }
 
+.unitedLogo {
+  margin: 1.25rem auto 0;
+  max-width: min(37.5rem, 100%);
+  text-align: center;
+}
+
+.unitedLogoPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
 .continentalTimetable {
   margin: 1.25rem auto;
   max-width: min(13.625rem, 100%);

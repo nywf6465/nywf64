@@ -73,10 +73,16 @@ export default function Airlines09Page() {
             />
           </figure>
 
-          <p className={styles.sourceLeft}>
-            Source: All Photos are Copyright Continental Airlines, Inc., All
-            Rights Reserved
-          </p>
+          <figure className={styles.unitedLogo}>
+            <Image
+              src="/images/airlines09/united-airlines-logo.jpg"
+              alt="United Airlines logo"
+              width={600}
+              height={200}
+              className={styles.unitedLogoPhoto}
+              unoptimized
+            />
+          </figure>
         </div>
       </article>
 
