@@ -21,7 +21,7 @@ type Panel = {
   topics: readonly Hotspot[];
 };
 
-/** Exact user artwork — base unchanged. Hover crops swap burgundy↔navy on text/arrows only; thumbnails untouched. */
+/** Exact user artwork — base unchanged. Hover crops swap navy↔burgundy on the circular link logo only; text and thumbnails untouched. */
 const PANELS: readonly Panel[] = [
   {
     src: "/images/stories-links-01.jpg",
