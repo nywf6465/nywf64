@@ -360,6 +360,20 @@ export default function Odyssey03Page() {
               I can never spend too much time at the Fair myself -- even if
               it&apos;s only in my dreams.
             </p>
+
+            <footer className={styles.authorFooter}>
+              <p className={styles.authorBio}>
+                Craig remains an avid collector of the 1964/1965 New York
+                World&apos;s Fair with a focus on collecting the many items
+                published by and for the Fair Corporation. He resides today in
+                sunny California and works as an executive in the Mortgage
+                Finance Industry.
+              </p>
+              <p className={styles.authorCopyright}>
+                Story and Photographs © Copyright 2001Craig Bavaro, All Rights
+                Reserved
+              </p>
+            </footer>
           </div>
         </div>
       </article>
