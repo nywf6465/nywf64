@@ -268,15 +268,13 @@ export default function Airlines07Page() {
           <div className={styles.toweletteRow}>
             <div className={styles.americanCopy}>
               <p>
-                Today, America&apos;s airlines are retiring the venerable Boeing
-                727 tri-jet from their fleets at a rapid pace as newer, quieter,
-                more efficient aircraft take its place. In 1964,{" "}
-                <em>everyone</em> wanted to ride this sleek new jet with its
-                rocket fast takeoff. The 727 was designed to operate from
-                mid-sized airports and that meant pure jet travel was now
-                available to more and more travelers. A quick look at that April
-                timetable shows American Airlines was operating their first and
-                only 727 on the New York, Chicago, Dallas roundtrip run.{" "}
+                In 1964, <em>everyone</em> wanted to ride the sleek new Boeing
+                727 tri-jet with its rocket fast takeoff. The 727 was designed
+                to operate from mid-sized airports and that meant pure jet
+                travel was now available to more and more travelers. A quick
+                look at that April timetable shows American Airlines was
+                operating their first and only 727 on the New York, Chicago,
+                Dallas roundtrip run.{" "}
                 <em>Fly to the Fair on American&apos;s new 727 Astrojet!</em>
               </p>
             </div>
