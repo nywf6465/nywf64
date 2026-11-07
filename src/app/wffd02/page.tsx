@@ -26,7 +26,7 @@ export default function Wffd02Page() {
       <article className={styles.article} aria-labelledby="wffd02-title">
         <header className={styles.titleBar}>
           <h1 id="wffd02-title" className={styles.titleBarMain}>
-            Page 3
+            Badges of the Bravest Excerpt
           </h1>
         </header>
 

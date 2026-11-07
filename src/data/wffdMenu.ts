@@ -10,15 +10,15 @@ export const WFFD_MENU_TOPICS: AttractionTopic[] = [
     href: "/wffdoverview",
   },
   {
-    label: "Fire Departments of City and Fair Agree on Mutual Aid Plans",
+    label: "FAIR NEWS Information",
     href: "/wffd01",
   },
   {
-    label: "World's Fair Fire Department",
+    label: "Badges of the Bravest Excerpt",
     href: "/wffd02",
   },
   {
-    label: "One of the Finest Days",
+    label: "Police Gazette Excerpts",
     href: "/wffd03",
   },
 ];

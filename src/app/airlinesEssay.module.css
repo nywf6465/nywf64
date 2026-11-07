@@ -1,0 +1,1167 @@
+/* Airlines & The Fair — essay body (shared hero via AirlinesHero) */
+
+.article {
+  width: 100%;
+  box-sizing: border-box;
+  background: #fff;
+  padding: 0 0 clamp(2rem, 4vw, 3rem);
+}
+
+.articleInner {
+  width: min(37.5rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.titleBar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  justify-content: center;
+  gap: 0.35rem 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+  margin: 0 0 clamp(1.25rem, 3vw, 1.75rem);
+  padding: 0.55rem 0.85rem;
+  background:
+    linear-gradient(
+      180deg,
+      color-mix(in srgb, #26346e 92%, #000) 0%,
+      #26346e 100%
+    );
+  color: #fff;
+  text-align: center;
+}
+
+.titleBarMain {
+  margin: 0;
+  font-size: clamp(0.95rem, 2.2vw, 1.1rem);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.titleBarMain em {
+  font-style: italic;
+}
+
+.titleBarByline {
+  margin: 0;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.body > p {
+  margin: 0 0 1rem;
+  color: #000;
+  font-size: 1rem;
+  line-height: 1.55;
+}
+
+.body > p:last-child {
+  margin-bottom: 0;
+}
+
+.body a {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+.leadFigure {
+  margin: 0 auto 1.25rem;
+  max-width: min(20.75rem, 100%);
+  background: #999;
+  padding: 0.35rem;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.leadPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.centerFigure {
+  margin: 0 auto 1.25rem;
+  max-width: min(26.875rem, 100%);
+  text-align: center;
+}
+
+.centerPhoto {
+  display: inline-block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.timetableRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1.25rem;
+  max-width: 100%;
+}
+
+.timetablePhoto {
+  display: block;
+  width: auto;
+  max-width: min(10.75rem, 40vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.timetableCopy {
+  min-width: 0;
+}
+
+.timetableCopy p {
+  margin: 0 0 0.75rem;
+  color: #000;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.timetableCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.source {
+  margin: 0.75rem 0 0;
+  color: #333;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.35;
+}
+
+.sourceCenter {
+  margin: 0 0 1.25rem;
+  color: #333;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.carrierRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1rem;
+}
+
+.carrierCover {
+  display: block;
+  width: auto;
+  max-width: min(13.3rem, 42vw);
+  height: auto;
+  margin: 0;
+}
+
+.carrierCopy {
+  min-width: 0;
+}
+
+.carrierMap {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0 0 0.85rem;
+}
+
+.carrierCopy p {
+  margin: 0 0 0.85rem;
+  color: #000099;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.carrierCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.note {
+  margin: 0 0 1.25rem;
+  color: #000099;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.brandNy {
+  color: #0066cc;
+  font-weight: 700;
+}
+
+.brandWf {
+  color: #ff3300;
+  font-weight: 700;
+}
+
+.brandCom {
+  color: #0066cc;
+  font-size: 0.85em;
+}
+
+.adRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1.1rem;
+  align-items: start;
+  margin: 0 0 0.5rem;
+}
+
+.adPhoto {
+  display: block;
+  width: auto;
+  max-width: min(15.45rem, 45vw);
+  height: auto;
+  margin: 0;
+}
+
+.adCopy {
+  min-width: 0;
+}
+
+.adHeadline {
+  margin: 0 0 0.85rem;
+  color: #ff3300;
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.25;
+}
+
+.adHeadline u {
+  text-decoration: underline;
+}
+
+.adBody {
+  margin: 0;
+  color: #666699;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.adBody p {
+  margin: 0 0 0.65rem;
+}
+
+.adBody p:last-child {
+  margin-bottom: 0;
+}
+
+.articleInnerWide {
+  width: min(56.25rem, 100%);
+  margin: 0 auto;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.photoGrid {
+  margin: 0 0 0.35rem;
+}
+
+.combinedFigure {
+  margin: 0 auto 0.35rem;
+  max-width: min(56.25rem, 100%);
+  line-height: 0;
+}
+
+.combinedPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.photoGridTable {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0;
+  width: 100%;
+  max-width: 56.25rem;
+  margin: 0 auto;
+}
+
+.photoGridTableTwo {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0;
+  width: 100%;
+  max-width: 37.5rem;
+  margin: 0 auto;
+  border: 1px solid #000;
+}
+
+.photoGridPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.sourceLeft {
+  margin: 0 0 1.25rem;
+  color: #000;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.twaCopy p {
+  margin: 0 0 0.85rem;
+  color: #ff3300;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.twaCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.scheduleWrap {
+  width: 100%;
+  overflow-x: auto;
+  margin: 0 0 0.5rem;
+  -webkit-overflow-scrolling: touch;
+}
+
+.scheduleTable {
+  width: 100%;
+  min-width: 37.5rem;
+  border-collapse: collapse;
+  border: 1px solid #000;
+  margin: 0 auto 0.35rem;
+  background: #fff;
+}
+
+.scheduleTable th,
+.scheduleTable td {
+  border: 1px solid #999;
+  padding: 0.2rem 0.25rem;
+  vertical-align: top;
+  font-size: 0.65rem;
+  line-height: 1.25;
+  white-space: nowrap;
+}
+
+.scheduleTitle {
+  color: #003399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 700;
+  text-align: left;
+}
+
+.scheduleFare {
+  color: #666699;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  font-weight: 400;
+}
+
+.scheduleLabel {
+  color: #666699;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.scheduleHead {
+  color: #003399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+}
+
+.scheduleNum {
+  color: #003399;
+  font-family: "Times New Roman", Times, serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.scheduleTime {
+  color: #666699;
+  font-family: "Times New Roman", Times, serif;
+  text-align: center;
+}
+
+.scheduleTimeBold {
+  color: #003399;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: 700;
+  text-align: center;
+}
+
+.scheduleFoot {
+  margin: 0 0 0.25rem;
+  color: #666699;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.65rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.scheduleStation {
+  white-space: normal;
+  min-width: 7.5rem;
+  max-width: 9.5rem;
+}
+
+.chicagoRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1rem;
+}
+
+.chicagoCover {
+  display: block;
+  width: auto;
+  max-width: min(11.625rem, 42vw);
+  height: auto;
+  margin: 0;
+}
+
+.alleghenyQuote,
+.twaCopy .alleghenyQuote {
+  margin: 0 0 0.85rem;
+  color: #000099;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.5;
+}
+
+.alleghenyQuote:last-child,
+.twaCopy .alleghenyQuote:last-child {
+  margin-bottom: 0;
+}
+
+.jacketPair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+  align-items: start;
+  justify-items: center;
+  margin: 1.25rem auto 0.35rem;
+  max-width: min(31.25rem, 100%);
+}
+
+.jacketPhoto {
+  display: block;
+  width: 100%;
+  max-width: 15.625rem;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.jacketCaption {
+  margin: 0 0 0.5rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.78rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.unitedCopy p {
+  margin: 0 0 0.85rem;
+  color: #0033cc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.unitedCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.unitedAdLead {
+  margin: 0.85rem 0 0.35rem;
+  color: #0033cc;
+  font-size: 1rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.unitedAdLeadSub {
+  margin: 0 0 0.75rem;
+  color: #0033cc;
+  font-size: 0.85rem;
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.35;
+}
+
+.unitedAdLeadSub u {
+  text-decoration: underline;
+}
+
+.unitedAdBody {
+  margin: 0 0 0.65rem;
+  color: #0033cc;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.unitedAdBody:last-child {
+  margin-bottom: 0;
+}
+
+.unitedAdPhoto {
+  display: block;
+  width: auto;
+  max-width: min(21.55rem, 55vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.interiorFigure {
+  margin: 0.75rem 0 1rem;
+  max-width: min(26.75rem, 100%);
+}
+
+.interiorPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.checkListHeading {
+  margin: 0 0 0.65rem;
+  color: #0033cc;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.checkListRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1rem;
+}
+
+.checkListCover {
+  display: block;
+  width: auto;
+  max-width: min(12.8rem, 42vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.checkListInterior {
+  margin: 0 0 0.75rem;
+  max-width: 100%;
+}
+
+.checkListInteriorPhoto {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.pamphletCols {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1.25rem;
+  margin: 0 0 1.25rem;
+}
+
+.pamphletCols p {
+  margin: 0 0 0.35rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.35;
+}
+
+.pamphletTitle {
+  margin: 0 0 0.45rem;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.slideStack {
+  margin: 0 auto 0.35rem;
+  max-width: min(21.875rem, 100%);
+  text-align: center;
+}
+
+.slidePhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0 0 0.5rem;
+}
+
+.slideCaption {
+  margin: 0 0 1rem;
+  color: #0033cc;
+  font-size: 1rem;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.easternCopy p {
+  margin: 0 0 0.85rem;
+  color: #0000cc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.easternCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.easternAdBlock {
+  margin: 0.75rem auto 0.35rem;
+  max-width: min(30rem, 100%);
+  text-align: center;
+}
+
+.easternAdTitle {
+  margin: 0 0 0.65rem;
+  color: #ff3300;
+  font-size: clamp(1.15rem, 2.6vw, 1.45rem);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.easternAdBody {
+  margin: 0 0 0.5rem;
+  color: #ff3300;
+  font-size: 0.85rem;
+  line-height: 1.45;
+  text-align: left;
+}
+
+.easternAdNote {
+  margin: 0 0 0.75rem;
+  color: #ff3300;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.easternAdPhoto {
+  display: block;
+  width: 100%;
+  max-width: 30rem;
+  height: auto;
+  margin: 0 auto;
+}
+
+.rulerCaption {
+  margin: 1rem 0 0.35rem;
+  color: #0000cc;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: right;
+}
+
+.rulerFigure {
+  margin: 0 0 0.85rem;
+  max-width: min(30rem, 100%);
+}
+
+.rulerPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.pavilionRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: center;
+  margin: 0 0 0.5rem;
+}
+
+.pavilionThumb {
+  display: block;
+  width: auto;
+  max-width: min(9.375rem, 40vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.pavilionCopy {
+  margin: 0;
+  color: #0000cc;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.pavilionCopy a {
+  color: #0000ff;
+  text-decoration: underline;
+}
+
+.americanCopy p {
+  margin: 0 0 0.85rem;
+  color: #006666;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.americanCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.americanCaption,
+.americanCopy .americanCaption {
+  margin: 0 0 0.5rem;
+  color: #006666;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.72rem;
+  line-height: 1.35;
+  text-align: left;
+}
+
+.americanLeadPhoto {
+  display: block;
+  width: auto;
+  max-width: min(12.5rem, 100%);
+  height: auto;
+  margin: 0 0 0.85rem;
+}
+
+.qaTitle {
+  margin: 1.25rem 0 0.85rem;
+  color: #006666;
+  font-family: "Times New Roman", Times, serif;
+  font-size: clamp(1.35rem, 3vw, 1.75rem);
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.qaGrid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+  margin: 0 0 0.75rem;
+  color: #006666;
+  font-family: "Times New Roman", Times, serif;
+}
+
+.qaItem {
+  margin: 0 0 0.75rem;
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.qaItem strong {
+  font-weight: 700;
+}
+
+.qaPhoto {
+  display: block;
+  width: auto;
+  max-width: 100%;
+  height: auto;
+  margin: 0.5rem auto;
+  border: 1px solid #000;
+}
+
+.qaToken {
+  float: left;
+  width: 3.75rem;
+  height: auto;
+  margin: 0 0.5rem 0.35rem 0;
+  border: 1px solid #000;
+}
+
+.escapeRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: end;
+  margin: 1rem 0;
+}
+
+.escapeAd {
+  display: block;
+  width: auto;
+  max-width: min(12.55rem, 42vw);
+  height: auto;
+  margin: 0;
+}
+
+.escapeHeading {
+  margin: 0 0 0.65rem;
+  color: #006666;
+  font-size: 1.15rem;
+  font-weight: 700;
+  line-height: 1.3;
+  text-align: center;
+}
+
+.toweletteRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 1rem;
+}
+
+.towelettePhoto {
+  display: block;
+  width: auto;
+  max-width: min(14.8rem, 45vw);
+  height: auto;
+  margin: 0;
+}
+
+.guidePair {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.75rem 1rem;
+  justify-items: center;
+  margin: 0.75rem 0 1rem;
+}
+
+.guidePhoto {
+  display: block;
+  width: 100%;
+  max-width: 14.375rem;
+  height: auto;
+  margin: 0;
+}
+
+.posterRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 0 0 0.5rem;
+}
+
+.posterPhoto {
+  display: block;
+  width: auto;
+  max-width: min(10.3rem, 40vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.posterCaption {
+  margin: 0.35rem 0 0;
+  color: #006666;
+  font-size: 0.85rem;
+  line-height: 1.35;
+  text-align: center;
+}
+
+.posterCopy h3 {
+  margin: 0 0 0.65rem;
+  color: #006666;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.posterCopy p {
+  margin: 0 0 0.75rem;
+  color: #006666;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.posterCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.brochureRow {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.75rem 1rem;
+  align-items: start;
+  margin: 1rem 0 0.35rem;
+}
+
+.brochureHead {
+  margin: 0 0 0.35rem;
+  color: #006666;
+  font-size: clamp(1.15rem, 2.6vw, 1.4rem);
+  font-style: italic;
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.brochureHeadAccent {
+  color: #ff3300;
+}
+
+.brochureCopy {
+  text-align: right;
+}
+
+.brochureCopy p {
+  margin: 0 0 0.75rem;
+  color: #006666;
+  font-size: 0.85rem;
+  line-height: 1.45;
+}
+
+.brochureCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.brochurePhoto {
+  display: block;
+  width: auto;
+  max-width: min(13.25rem, 42vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.periodicalFigure {
+  margin: 1.25rem auto 0.35rem;
+  max-width: min(22.2rem, 100%);
+  text-align: center;
+}
+
+.periodicalCaption {
+  margin: 0 0 0.5rem;
+  color: #006666;
+  font-size: 0.85rem;
+  line-height: 1.4;
+  text-align: center;
+}
+
+.periodicalPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.continentalLogo {
+  margin: 0 auto 1rem;
+  max-width: min(37.5rem, 100%);
+  text-align: center;
+}
+
+.continentalLogoPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.unitedLogo {
+  margin: 1.25rem auto 0;
+  max-width: min(37.5rem, 100%);
+  text-align: center;
+}
+
+.unitedLogoPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.continentalTimetable {
+  margin: 1.25rem auto;
+  max-width: min(13.625rem, 100%);
+  text-align: center;
+}
+
+.continentalTimetablePhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.matchbookFigure {
+  margin: 1.25rem auto;
+  max-width: min(12.5rem, 100%);
+  text-align: center;
+}
+
+.matchbookPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.adFullFigure {
+  margin: 0 auto 0.35rem;
+  max-width: min(34.2rem, 100%);
+}
+
+.adFullPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.framedFigure {
+  margin: 1.25rem auto;
+  max-width: min(13.75rem, 100%);
+  border: 1px solid #000;
+  line-height: 0;
+}
+
+.framedPhoto {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 0;
+}
+
+.rule {
+  display: block;
+  width: min(37.5rem, 100%);
+  height: 1px;
+  margin: 0 auto 1.35rem;
+  border: 0;
+  background: #999;
+}
+
+.treasureTitle {
+  margin: 0 0 0.15rem;
+  color: #ff3300;
+  font-size: clamp(1.05rem, 2.4vw, 1.25rem);
+  font-weight: 700;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.treasureBy {
+  margin: 0 0 0.85rem;
+  color: #ff3300;
+  font-size: 0.85rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.treasureRow {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 0.75rem 1rem;
+  align-items: end;
+  margin: 0 0 1rem;
+}
+
+.treasurePhoto {
+  display: block;
+  width: auto;
+  max-width: min(13.45rem, 45vw);
+  height: auto;
+  margin: 0;
+  border: 1px solid #000;
+}
+
+.treasureCopy p {
+  margin: 0 0 0.85rem;
+  color: #ff0000;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.treasureCopy p:last-child {
+  margin-bottom: 0;
+}
+
+.treasureBody p {
+  margin: 0 0 1rem;
+  color: #ff0000;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.treasureBody p:last-child {
+  margin-bottom: 0;
+}
+
+@media (max-width: 720px) {
+  .photoGridTable {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .photoGridTableTwo {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 520px) {
+  .timetableRow,
+  .carrierRow,
+  .adRow,
+  .treasureRow,
+  .chicagoRow,
+  .jacketPair,
+  .checkListRow,
+  .pamphletCols,
+  .pavilionRow,
+  .qaGrid,
+  .escapeRow,
+  .toweletteRow,
+  .guidePair,
+  .posterRow,
+  .brochureRow {
+    grid-template-columns: 1fr;
+  }
+
+  .timetablePhoto,
+  .carrierCover,
+  .adPhoto,
+  .treasurePhoto,
+  .chicagoCover,
+  .checkListCover,
+  .pavilionThumb,
+  .escapeAd,
+  .towelettePhoto,
+  .posterPhoto,
+  .brochurePhoto {
+    max-width: min(13.3rem, 100%);
+    justify-self: start;
+  }
+
+  .brochureCopy {
+    text-align: left;
+  }
+
+  .photoGridTable {
+    grid-template-columns: 1fr;
+  }
+}

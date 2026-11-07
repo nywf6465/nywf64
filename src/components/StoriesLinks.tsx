@@ -21,7 +21,7 @@ type Panel = {
   topics: readonly Hotspot[];
 };
 
-/** Exact user artwork — base unchanged. Hover crops swap burgundy↔navy on text/arrows only; thumbnails untouched. */
+/** Exact user artwork — base unchanged. Hover crops swap navy↔burgundy on the circular link logo only; text and thumbnails untouched. */
 const PANELS: readonly Panel[] = [
   {
     src: "/images/stories-links-01.jpg",
@@ -130,7 +130,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "airlines",
         title: "Airlines",
-        href: "/stories/airlines",
+        href: "/airlinesoverview",
         hoverSrc: "/images/stories-hover/airlines.jpg",
         left: "50.534%",
         top: "36.120%",
@@ -150,7 +150,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "detailed-models",
         title: "Detailed Models",
-        href: "/stories/detailed-models",
+        href: "/amex12",
         hoverSrc: "/images/stories-hover/detailed-models.jpg",
         left: "50.474%",
         top: "66.024%",
@@ -168,7 +168,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "rob-biancos-model",
         title: "Rob Bianco\u2019s Model",
-        href: "/stories/rob-biancos-model",
+        href: "/amex10",
         hoverSrc: "/images/stories-hover/rob-biancos-model.jpg",
         left: "1.302%",
         top: "4.980%",
@@ -178,7 +178,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "almost-fond-farewell",
         title: "Almost Fond Farewell",
-        href: "/stories/almost-fond-farewell",
+        href: "/farewell04",
         hoverSrc: "/images/stories-hover/almost-fond-farewell.jpg",
         left: "50.456%",
         top: "4.980%",
@@ -218,7 +218,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "carousel-of-progress",
         title: "Carousel of Progress",
-        href: "/stories/carousel-of-progress",
+        href: "/genele22",
         hoverSrc: "/images/stories-hover/carousel-of-progress.jpg",
         left: "50.456%",
         top: "61.914%",

@@ -6,11 +6,12 @@ import type { AttractionTopic } from "@/components/AttractionTopicsMenu";
  */
 export const MEMORIES_MENU_TOPICS: AttractionTopic[] = [
   {
-    label: "Memories of the 1964 World's Fair ... an essay by Katherine Khalife",
+    label: "Essay: Memories of the 1964 World's Fair ... by Katherine Khalife",
     href: "/memories01",
     parts: [
+      { text: "Essay: " },
       { text: "Memories of the 1964 World's Fair", italic: true },
-      { text: " ... an essay by Katherine Khalife" },
+      { text: " ... by Katherine Khalife" },
     ],
   },
 ];

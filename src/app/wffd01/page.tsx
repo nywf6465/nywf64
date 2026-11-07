@@ -27,7 +27,7 @@ export default function Wffd01Page() {
       <article className={styles.article} aria-labelledby="wffd01-title">
         <header className={styles.titleBar}>
           <h1 id="wffd01-title" className={styles.titleBarMain}>
-            Page 2
+            FAIR NEWS Information
           </h1>
         </header>
 

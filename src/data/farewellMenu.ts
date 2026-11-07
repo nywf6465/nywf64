@@ -35,8 +35,12 @@ export const FAREWELL_MENU_TOPICS: AttractionTopic[] = [
     ],
   },
   {
-    label: "On Shaky Ground",
+    label: "Essay: On Shaky Ground",
     href: "/farewell05",
+    parts: [
+      { text: "Essay: " },
+      { text: "On Shaky Ground", italic: true },
+    ],
   },
   {
     label: "The End of the Fair",

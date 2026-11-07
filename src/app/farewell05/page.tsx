@@ -4,12 +4,13 @@ import styles from "@/components/farewellArticlePage.module.css";
 import { FAREWELL_05_BODY_HTML } from "./content";
 
 export const metadata: Metadata = {
-  title: "On Shaky Ground \u2014 The End of the Fair \u2014 nywf64.com",
-  description: "On Shaky Ground \u2014 The End of the Fair at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
+  title: "Essay: On Shaky Ground — The End of the Fair — nywf64.com",
+  description:
+    "Essay: On Shaky Ground — The End of the Fair at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * The End of the Fair — On Shaky Ground.
+ * The End of the Fair — Essay: On Shaky Ground.
  * Body from legacy farewell06.html (Page 5).
  *
  * Stack: farewellhero → FarewellNavChrome → navy title → article → Nav2Bar.
@@ -19,7 +20,12 @@ export default function Farewell05Page() {
   return (
     <FarewellArticlePage
       pageNum={5}
-      title="On Shaky Ground"
+      title={
+        <>
+          Essay:{"  "}
+          <em>On Shaky Ground</em>
+        </>
+      }
       previousHref="/farewell04"
       nextHref="/farewell06"
     >

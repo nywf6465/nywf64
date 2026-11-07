@@ -41,6 +41,10 @@
   line-height: 1.35;
 }
 
+.titleBarMain em {
+  font-style: italic;
+}
+
 .titleBarSub {
   margin: 0;
   width: 100%;

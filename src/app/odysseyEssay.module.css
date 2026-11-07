@@ -133,6 +133,37 @@
   text-align: left;
 }
 
+/* Author bio + copyright footer (legacy odyssey04.html table) */
+.authorFooter {
+  margin: 1.5rem 0 0;
+  max-width: 30.0625rem; /* 481px legacy table width */
+}
+
+.authorBio {
+  margin: 0;
+  padding: 0.35rem 0.45rem;
+  background: #cccccc;
+  border: 2px solid #666;
+  box-shadow:
+    inset 1px 1px 0 #fff,
+    inset -1px -1px 0 #999;
+  color: #000;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem; /* ~size=-1 */
+  font-weight: 700;
+  line-height: 1.45;
+}
+
+.authorCopyright {
+  margin: 0.45rem 0 0;
+  color: #000;
+  font-family: "Arial Narrow", Arial, Helvetica, sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  line-height: 1.35;
+  text-align: left;
+}
+
 @media (max-width: 520px) {
   .pairRow {
     grid-template-columns: 1fr;
