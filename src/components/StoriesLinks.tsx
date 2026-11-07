@@ -168,7 +168,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "rob-biancos-model",
         title: "Rob Bianco\u2019s Model",
-        href: "/stories/rob-biancos-model",
+        href: "/amex10",
         hoverSrc: "/images/stories-hover/rob-biancos-model.jpg",
         left: "1.302%",
         top: "4.980%",
