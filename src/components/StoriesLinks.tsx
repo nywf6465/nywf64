@@ -218,7 +218,7 @@ const PANELS: readonly Panel[] = [
       {
         id: "carousel-of-progress",
         title: "Carousel of Progress",
-        href: "/stories/carousel-of-progress",
+        href: "/genele22",
         hoverSrc: "/images/stories-hover/carousel-of-progress.jpg",
         left: "50.456%",
         top: "61.914%",
