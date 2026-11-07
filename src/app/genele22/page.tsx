@@ -7,13 +7,14 @@ import heroBottomBar from "@/styles/heroBottomBar.module.css";
 import overviewHeroStyles from "@/styles/overviewPageHero.module.css";
 
 export const metadata: Metadata = {
-  title: "Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow \u2014 General Electric \u2014 nywf64.com",
+  title:
+    "Essay: Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow — General Electric — nywf64.com",
   description:
-    "Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow \u2014 General Electric Progressland at the 1964/1965 New York World\u2019s Fair on nywf64.com.",
+    "Essay: Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow by Eric Paddon — General Electric Progressland at the 1964/1965 New York World’s Fair on nywf64.com.",
 };
 
 /**
- * General Electric — Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow.
+ * General Electric — Essay: Beyond the Fair: the Carousel of Progress' Beautiful Tomorrow.
  * Body from legacy genele22.html (custom topic page).
  * Stack: hero → GeneleNavChrome → navy title → article → Nav2Bar.
  */
@@ -42,9 +43,12 @@ export default function Genele22Page() {
       <article className={styles.article} aria-labelledby="genele22-title">
         <header className={styles.titleBar}>
           <h1 id="genele22-title" className={styles.titleBarMain}>
-            Beyond the Fair: the Carousel of Progress&apos; Beautiful Tomorrow
+            Essay:{" "}
+            <em>
+              Beyond the Fair: the Carousel of Progress&apos; Beautiful Tomorrow
+            </em>
           </h1>
-          <p className={styles.titleBarSub}>... an essay by Eric Paddon</p>
+          <p className={styles.titleBarSub}>... by Eric Paddon</p>
         </header>
 
         <div className={`${styles.articleInner} ${styles.wide}`}>
