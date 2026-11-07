@@ -253,7 +253,7 @@ export default function Unisph13Page() {
               </Link>{" "}
               - the story of how the Fair&apos;s archives were donated to the
               NY&nbsp;Public Library and{" "}
-              <Link href="/stories/detailed-models">
+              <Link href="/amex12">
                 <em>We&apos;re Going to Need Some Really Detailed Models</em>
               </Link>{" "}
               - the story of the scale models of the Fair. Craig has also
